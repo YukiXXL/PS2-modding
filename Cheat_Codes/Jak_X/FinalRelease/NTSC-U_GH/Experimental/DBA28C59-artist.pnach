@@ -1,0 +1,15 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=For launching artist-artist-task
+
+//Save game mode to currently used address
+patch=1,EE,E0020002,extended,00F21938
+patch=1,EE,20F21934,extended,24040012
+patch=1,EE,20F21938,extended,A0640005
+
+//Fix spawning (circuit event)
+//patch=1,EE,E001BE03,extended,00EB5D1C
+//patch=1,EE,20EB5D1C,extended,8EE2BECB
+
+//remove infinite black-screen
+patch=1,EE,E0010008,extended,00A8C844
+patch=1,EE,20A8C844,extended,00000000
