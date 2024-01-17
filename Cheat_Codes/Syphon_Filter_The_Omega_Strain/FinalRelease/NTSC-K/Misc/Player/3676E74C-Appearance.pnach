@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=MISC: PLAYER - APPEARANCE
+
+//Random outfits during missions
+patch=1,EE,2042D48C,extended,10400020
+
+//Disable mission disguises
+patch=1,EE,0042D498,extended,24420000

@@ -1,0 +1,13 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=MISC EVENTS
+
+//Fixes for Split-Screen
+patch=1,EE,E0031701,extended,0098F510
+//kras-training
+patch=1,EE,209931B0,extended,009931C4
+//cliffs-training
+patch=1,EE,2098FCC0,extended,00992E84
+//kratour-final-boss-start
+patch=1,EE,2098F510,extended,0098F524
+//snow-training2
+patch=1,EE,2098FC70,extended,00992BA4

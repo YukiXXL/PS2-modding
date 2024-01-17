@@ -1,0 +1,12 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=CHEATS
+
+//Jak Vehicle Unkillable (Debug)
+patch=1,EE,E002012B,extended,00F16B60
+patch=1,EE,20F16B60,extended,66E30004
+patch=1,EE,20F16B64,extended,AEE317DB
+
+//cheat_default_gun_in_race
+patch=1,EE,E002DC63,extended,00F2194C
+patch=1,EE,20F2194C,extended,66E30004
+patch=1,EE,20F21950,extended,AEE3DC63

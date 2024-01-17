@@ -1,0 +1,16 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=OFFLINE CODENAMES: CODENAME STUFF: CODENAME ONLY - GAMEPLAY
+
+//Show correct codename
+patch=1,EE,202B15B8,extended,3C010049
+patch=1,EE,202B15BC,extended,8C224178
+
+//Radio comms
+patch=1,EE,2018C870,extended,3C010049
+patch=1,EE,2018C874,extended,8C224178
+
+//Minimap
+patch=1,EE,2026DB40,extended,3C010049
+patch=1,EE,2026DB44,extended,8C254178
+patch=1,EE,202C9210,extended,3C010049
+patch=1,EE,202C9214,extended,8C234178

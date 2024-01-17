@@ -1,0 +1,10 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=ADDONS
+
+//Activate menu buttons
+patch=1,EE,003F2E98,extended,8F390014
+
+//60 FPS
+patch=1,EE,00170528,extended,2402003C
+patch=1,EE,00170568,extended,2402003C
+patch=1,EE,001707E0,extended,2402003C

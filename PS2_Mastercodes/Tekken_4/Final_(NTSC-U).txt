@@ -1,0 +1,5 @@
+"Tekken 4 /ID SLUS_203.28"
+//ELF CRC=833FE0A4
+sceSifSendCmd   : 90281328 0C0A0472
+scePadRead      : 902937CC 0C0A88C5
+main            : 90196A18 0C0A6998

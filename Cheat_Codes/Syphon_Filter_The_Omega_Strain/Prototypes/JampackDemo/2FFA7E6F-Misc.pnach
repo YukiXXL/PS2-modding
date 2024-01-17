@@ -1,0 +1,13 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo (Custom ISO)
+comment=MISC
+
+//Force everyone to use one weapon (Only change last 2 Hex values)
+patch=1,EE,20260A08,extended,2405005D
+
+//Give weapons to workers
+patch=1,EE,00260A30,extended,2A020003
+
+//Enable all spawns
+patch=1,EE,2025F0E4,extended,00000000
+//Memory fix
+patch=1,EE,0025F230,extended,14800011

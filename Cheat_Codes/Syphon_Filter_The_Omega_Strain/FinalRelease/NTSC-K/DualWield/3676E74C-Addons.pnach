@@ -1,0 +1,11 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=DUAL WIELD - ADDONS
+
+//Back = Goggles
+patch=1,EE,002CA274,extended,24020006
+//Auxiliary = Flashlight
+patch=1,EE,002CA318,extended,24020007
+
+//Show goggles and P.I.D in Equip
+patch=1,EE,002CBC7C,extended,24040004
+patch=1,EE,002CBC80,extended,24050004

@@ -1,0 +1,11 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=MISC - OTHER
+
+//Scene Player Act 3 = PSP Scan
+patch=1,EE,E002D9A4,extended,012D6494
+patch=1,EE,012D63B0,extended,14640038
+patch=1,EE,112D6494,extended,66E8D4D4
+
+//Falcon = Mongoose for customization
+patch=1,EE,E001D24D,extended,012E4888
+patch=1,EE,212E4888,extended,002CC5B1

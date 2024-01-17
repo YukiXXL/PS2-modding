@@ -1,0 +1,5 @@
+gametitle=Champions of Norrath Final Release (NTSC-U)
+comment=CHEATS
+
+//All difficulties available
+patch=1,EE,0042E300,extended,00000003

@@ -1,0 +1,15 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=SPLITSCREEN - TOURS MAPS
+
+//Enable Tours in SS Circuit
+//Due to missing map for SS, SP one is loaded
+//Check in case to avoid crashes
+patch=1,EE,E004726B,extended,00991E18
+//Western Tour (kratour-start-1)
+patch=1,EE,20991E00,extended,00991E14
+//Eastern Tour (havtour-junglec-1)
+patch=1,EE,20991D90,extended,00991DA4
+//Northern Tour (spatour-templea-1)
+patch=1,EE,20991AB0,extended,00991AC4
+//Southern Tour (icetour-start)
+patch=1,EE,20991290,extended,009912A4

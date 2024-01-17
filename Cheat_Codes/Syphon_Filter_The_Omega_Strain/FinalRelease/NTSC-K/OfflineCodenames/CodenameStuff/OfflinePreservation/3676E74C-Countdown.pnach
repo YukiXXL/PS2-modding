@@ -1,0 +1,17 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=COUNTDOWN CODES. If not enabled, "START fix" is needed!
+
+//EQS CountDown
+//Fake Word for EQS
+patch=1,EE,204F7A80,extended,009E5F10
+//Load the fake word
+patch=1,EE,202AE4B0,extended,3C01004F
+patch=1,EE,202AE4B4,extended,8C257A80
+patch=1,EE,202AE4CC,extended,AC853584
+
+//Show timer instead of "WAITING FOR HOST"
+patch=1,EE,002AF99C,extended,9022F8E4
+
+//Show timer and count in Equipment Modify
+patch=1,EE,002CCCF0,extended,9023F8E4
+patch=1,EE,002CD72C,extended,9022F8E4

@@ -1,0 +1,11 @@
+gametitle=Tekken 5 Final Release (NTSC-U)
+comment=ADDONS
+
+//Enable Extra Costumes for every character
+patch=1,EE,E001102D,extended,003084FC
+patch=1,EE,203084FC,extended,24020001
+
+//Enable Hidden Stages
+patch=1,EE,E002001E,extended,0024BE90
+patch=1,EE,2021D854,extended,24020001
+patch=1,EE,0024BE90,extended,2A220012

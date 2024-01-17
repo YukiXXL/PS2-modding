@@ -1,0 +1,17 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=CHEATS - OTHER
+
+//Plant infinite C4s on B2
+patch=1,EE,203FEE90,extended,00000000
+
+//Write Par Time with minimum objectives completed
+patch=1,EE,2033DD3C,extended,64140001
+
+//Open Weapons
+patch=1,EE,2033ACBC,extended,24020001
+
+//Open Levels
+patch=1,EE,2033B190,extended,24020001
+
+//Invisible
+patch=1,EE,2016B61C,extended,0805B37A

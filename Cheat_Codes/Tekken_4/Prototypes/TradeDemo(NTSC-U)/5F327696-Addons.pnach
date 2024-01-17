@@ -1,0 +1,5 @@
+gametitle= Tekken 4 (NTSC-U Trade Demo)
+comment=ADDONS
+
+//Force Progressive Scan picker
+patch=1,EE,001EC98C,extended,24020000

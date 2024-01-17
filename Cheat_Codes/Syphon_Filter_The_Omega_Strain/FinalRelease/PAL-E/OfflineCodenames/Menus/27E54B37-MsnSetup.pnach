@@ -1,0 +1,11 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=OFFLINE CODENAMES: MENUS - MISSION SETUP
+
+//Enable Mission Setup & Join Mission offline
+patch=1,EE,203425F8,extended,00000000
+patch=1,EE,20342600,extended,24020001
+
+//Join any mission
+patch=1,EE,2029712C,extended,00000000
+//Join Training Center
+patch=1,EE,00297120,extended,28410018

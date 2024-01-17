@@ -1,0 +1,18 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=ADDONS - DEBUG
+
+//Target Status (Debug)
+patch=1,EE,E003012B,extended,00F16B88
+patch=1,EE,10A888F0,extended,8EE30137
+patch=1,EE,20F16B88,extended,66E30004
+patch=1,EE,20F16B8C,extended,AEE317C3
+
+//Enable pausing using SELECT (Like in Jak 2/3)
+patch=1,EE,E003012B,extended,00F18A4C
+patch=1,EE,10A7F51C,extended,8EE30137
+patch=1,EE,10A8BB54,extended,8EE30137
+patch=1,EE,10F18A4C,extended,8EE30137
+
+//Enable 2nd to pause
+patch=1,EE,E001012B,extended,00A8BB88
+patch=1,EE,10A8BB88,extended,8EE30137

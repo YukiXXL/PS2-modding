@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=MISC - WEAPONS
+
+//Force a weapon that picks-up each time
+patch=1,EE,E0000018,extended,00F1CDFC
+patch=1,EE,20F1CDFC,extended,24050007

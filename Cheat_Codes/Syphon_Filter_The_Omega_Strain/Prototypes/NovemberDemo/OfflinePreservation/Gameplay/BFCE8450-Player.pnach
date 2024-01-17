@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=OFFLINE PRESERVATION: GAMEPLAY - PLAYER
+
+//Skin based on codename (Bonus missions "online")
+patch=1,EE,001ABDB0,extended,90242204
+patch=1,EE,001ABDF0,extended,90222204

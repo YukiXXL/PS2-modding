@@ -1,0 +1,15 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo (Custom ISO)
+comment=ADDONS - MENUS
+
+//BOOT_FRONTEND
+patch=1,EE,20451550,extended,00010100
+
+//LAN button
+patch=1,EE,2031604C,extended,00000000
+
+//Activate menu buttons
+patch=1,EE,001ACA48,extended,8F390014
+
+//Multi-Status Display (End Screen)
+patch=1,EE,002EB10C,extended,902201BC
+patch=1,EE,002EB134,extended,28420001

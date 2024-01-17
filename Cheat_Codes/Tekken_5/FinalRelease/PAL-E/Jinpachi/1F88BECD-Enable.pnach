@@ -1,0 +1,10 @@
+gametitle=Tekken 5 Final Release (PAL)
+comment=JINPACHI - ENABLE
+
+//Memory Check
+patch=1,EE,E0020020,extended,004921CC
+
+//Random Select = 31
+patch=1,EE,00258A4C,extended,2403001F
+//Jinpachi replaces Random select
+patch=1,EE,004921CC,extended,1D18001E

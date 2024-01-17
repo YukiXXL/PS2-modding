@@ -1,0 +1,43 @@
+For loading event options
+013CB230 - isCircuit
+013CB244 - Circuit
+013CB2F0 - Circuit
+013CB4B0 - isTimeAttack
+013CB4DC - TimeAttack
+013CB588 - TimeAttack
+013CB748 - isTurboDash
+013CB760 - TurboDash
+013CB80C - TurboDash
+013CB8A4 - isFreezeRally
+013CB8BC - FreezeRally
+013CB968 - FreezeRally
+013CB9EC - isRushHour
+013CBA04 - RushHour
+013CBAB0 - RushHour
+013CBB48 - isDeathRace
+013CBB60 - DeathRace
+013CBC0C - DeathRace
+013CBCA4 - CheckDeathmatch
+013CBCB8 - CheckSportHunt
+013CBCCC - CheckCollectathon
+013CBCE0 - ArtifactRace
+013CBCF4 - Capture
+013CBD2C - CheckDeathmatch
+013CBD40 - CheckAssassin
+013CBD60 - Arena Events
+013CBE0C - Arena Events
+013CBEB8 - isCollectathon
+013CBED0 - Collectathon
+013CBF7C - Collectathon
+013CC028 - isArtifactRace
+013CC040 - ArtifactRace
+013CC0EC - ArtifactRace
+013CC1AC - isAssassin
+013CC1C4 - Assassin
+013CC270 - Assassin
+013CC394 - isCapture
+013CC3AC - Capture
+013CC458 - Capture
+013CC52C - isOther
+013CC538 - Other
+013CC5E4 - Other

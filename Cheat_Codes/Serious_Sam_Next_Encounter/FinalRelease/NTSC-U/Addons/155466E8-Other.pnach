@@ -1,0 +1,23 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=ADDONS - OTHER
+
+//Enable single Deagle/Uzi
+patch=1,EE,00224D24,extended,30420002
+
+//Get Medals on Easy Difficulty
+patch=1,EE,20270B70,extended,04410005
+patch=1,EE,20271688,extended,04410014
+
+//Texture quality on all gamemodes
+//Single Player (sharp)
+patch=1,EE,00343844,byte,0
+//Split-Screen (blurred)
+//patch=1,EE,00343844,byte,1
+
+//Remove letterbox on cutscenes
+patch=1,EE,2068D19C,extended,00000000
+
+//Enable female sounds for female models ( Cheerleader, Vampire and Nesbot )
+patch=1,EE,20694014,byte,1
+patch=1,EE,206940F4,byte,1
+patch=1,EE,2069412C,byte,1

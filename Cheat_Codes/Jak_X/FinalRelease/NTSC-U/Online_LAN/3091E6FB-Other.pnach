@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=ONLINE/LAN - OTHER
+
+//5 CPUs, 6 Players for events
+//Saves onto the event and map when trying to start the event
+patch=1,EE,E0045567,extended,01313A9C
+patch=1,EE,21313A8C,extended,28630006
+patch=1,EE,11313A98,extended,24030506
+patch=1,EE,21313A9C,extended,10000095
+patch=1,EE,21313AA0,extended,A443000C
+
+//Fake players on LAN
+//patch=1,EE,E0010105,extended,01309F84
+//patch=1,EE,21309F84,extended,16E30105

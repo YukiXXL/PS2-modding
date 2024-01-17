@@ -1,0 +1,14 @@
+gametitle=Tekken 5 Final Release (PAL)
+comment=MOKUJIN CODES
+
+//Enable Mokujin in Customization
+patch=1,EE,E0010012,extended,002DFE3C
+patch=1,EE,002DFE3C,extended,2404001F
+
+//Enable Command List for Mokujin
+patch=1,EE,E0010012,extended,00204510
+patch=1,EE,00204510,extended,2403001E
+
+//Enable Jinpachi moveset for Mokujin
+patch=1,EE,E001001D,extended,002248E0
+patch=1,EE,002248E0,extended,2A02001E

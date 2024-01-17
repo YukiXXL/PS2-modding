@@ -1,0 +1,5 @@
+gametitle=Champions Return to Arms Final Release (PAL)
+comment=CHEATS
+
+//All difficulties available
+patch=1,EE,004FA838,extended,00000040

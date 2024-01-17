@@ -1,0 +1,5 @@
+"Return to Castle Wolfenstein /ID SLUS_202.97"
+//ELF CRC=5F4DB1DD
+sceSifSendCmd   : 901ECA60 0C07B240
+scePadRead      : 901EDC44 0C07F80F
+main            : 90107D8C 0C0784B6

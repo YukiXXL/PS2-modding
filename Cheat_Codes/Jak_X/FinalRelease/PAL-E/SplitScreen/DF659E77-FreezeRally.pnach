@@ -1,0 +1,46 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=SPLITSCREEN - FREEZE RALLY FIXES
+
+//Fix for Freeze Rally SS maps (mapname-timebox)
+//Check in case to avoid crashes
+patch=1,EE,E0147073,extended,00992FA8
+//Kras City (krasx-start)
+patch=1,EE,20991B60,extended,009929A4
+//Loading Docks (docksx-1)
+patch=1,EE,20990DA0,extended,009930A4
+//Deathdrome (drome-dromex-1)
+patch=1,EE,20990CB0,extended,00992DF4
+//Waterfront Loop (dockkrax-start)
+patch=1,EE,20992600,extended,00991E34
+//Seaport Strip (dromdocx-start)
+patch=1,EE,20990A80,extended,00992F14
+//Forbidden Jungle (junglex-start)
+patch=1,EE,20992C00,extended,00992554
+//Haven City (havenx-start)
+patch=1,EE,20990580,extended,00992024
+//Sewer Raceway (sewerx-start)
+patch=1,EE,20991590,extended,009927E4
+//City Outskirts (havjungx-start)
+patch=1,EE,20990620,extended,00992304
+//Waterworks Circuit (havsewx-start)
+patch=1,EE,20991830,extended,00991694
+//Spargus City (spargusx-start)
+patch=1,EE,20992F90,extended,00993134
+//Canyon Run (canyonx-start)
+patch=1,EE,20991FC0,extended,00992394
+//Precursor Temple (templex-start)
+patch=1,EE,20990C60,extended,00992AF4
+//Beachfront Drive (cansparx-start)
+patch=1,EE,209912A0,extended,00992754
+//Badland Sanctuary (spartemx-start)
+patch=1,EE,2098F8B0,extended,00992224
+//Frozen Speedway (snowx-start)
+patch=1,EE,20990B70,extended,00992B84
+//Mountaintop Highway (peakx-start)
+patch=1,EE,20991A20,extended,00992CD4
+//Icebound Citadel (icex-start)
+patch=1,EE,20991DD0,extended,00992D64
+//Glacier Alley (icebergx-start)
+patch=1,EE,2098F770,extended,00992144
+//Timberline Track (icepassx-start)
+patch=1,EE,2098F7C0,extended,00992A14

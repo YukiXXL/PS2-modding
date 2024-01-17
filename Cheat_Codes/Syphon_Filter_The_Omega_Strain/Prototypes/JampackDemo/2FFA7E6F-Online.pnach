@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo (Custom ISO)
+comment=ONLINE
+
+//Enable Online mode
+patch=1,EE,10315BE0,extended,24A5C6D0
+patch=1,EE,10315BE8,extended,24C6C6E8

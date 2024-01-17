@@ -1,0 +1,5 @@
+"Jak X: Combat Racing /ID GK_BS.ELF"
+//ELF CRC=64309A5D
+sceSifSendCmd   : 90113550 0C044CFC
+scePad2Read     : 901B08A8 0C042889
+main            : 901FFDB4 0C0428F6

@@ -1,0 +1,16 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=ADDONS - EQUIPMENT MODIFY
+
+//Enable equiping P.I.D and Goggles
+//WARNING! Changing weapons from P.I.D crashes the game!
+patch=1,EE,003733A8,extended,28610008
+patch=1,EE,002479B8,extended,28420008
+
+//Equip button shows goggles to equip
+//Need "Open Weapons" code in order to see any goggles
+patch=1,EE,202C85E4,extended,24030006
+patch=1,EE,202C85F0,extended,AEA30084
+patch=1,EE,202C85F4,extended,AEA20088
+patch=1,EE,102C8618,extended,0C0B26D8
+//Show P.I.D instead
+//patch=1,EE,002C85E8,extended,24020007

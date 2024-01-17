@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=OFFLINE CODENAMES: CODENAME STUFF: OFFLINE PRESERVATION - MAIN
+
+//Online controller (Responsible for codenames)
+patch=1,EE,001B77D0,extended,9022F8E4
+
+//Mission end fix (Not needed. Kept for reference)
+//patch=1,EE,0012EFF4,extended,9022F8E4

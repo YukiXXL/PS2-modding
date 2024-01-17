@@ -1,0 +1,20 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL)
+comment=OFFLINE PRESERVATION: GAMEPLAY - MAIN
+
+//Enable online objectives + dialogues
+patch=1,EE,0012F818,extended,90224884
+
+//Team Par
+patch=1,EE,00460F88,extended,90254884
+patch=1,EE,0046105C,extended,90224884
+//Check if completed Par
+patch=1,EE,00464574,extended,90254884
+
+//Checking objectives and writing Par time
+//patch=1,EE,00336358,extended,90254884
+patch=1,EE,00336440,extended,90224884
+
+//Buddy Climb
+patch=1,EE,0016FFC4,extended,90224884
+//Animation Change
+patch=1,EE,0018D774,extended,24030031

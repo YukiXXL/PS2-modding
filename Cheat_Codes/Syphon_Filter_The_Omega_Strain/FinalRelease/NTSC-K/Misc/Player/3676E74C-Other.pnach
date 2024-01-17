@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=MISC: PLAYER - OTHER
+
+//Count kill as Collateral
+patch=1,EE,201875D8,extended,1040001F
+
+//Toss Body instead of laying it down
+patch=1,EE,00240234,extended,2402002D

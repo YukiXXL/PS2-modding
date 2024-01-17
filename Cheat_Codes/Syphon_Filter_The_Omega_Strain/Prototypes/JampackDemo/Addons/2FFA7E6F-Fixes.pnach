@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo (Custom ISO)
+comment=ADDONS - FIXES
+
+//Create Mission and Join Mission fix
+patch=1,EE,20230E14,extended,1000002E

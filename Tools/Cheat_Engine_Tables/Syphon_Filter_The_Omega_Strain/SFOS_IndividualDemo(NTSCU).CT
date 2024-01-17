@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="29">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"Online Lobby"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"CommandCenter"</Description>
+          <VariableType>String</VariableType>
+          <Length>13</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>20443953</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"CommandCenter"</Description>
+          <VariableType>String</VariableType>
+          <Length>13</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>20444C23</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>0</ID>
+          <Description>"CMDCENTR"</Description>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>20443968</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"CMDCENTR"</Description>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>20444C38</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"OFF/ON"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>20537C8D</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>59</ID>
+          <Description>"Mission Setup"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>20537C8E</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>60</ID>
+          <Description>"Online Enabler"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>204B09D8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"Dossier"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"Missions Completed"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D724</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Shots"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D708</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Hits"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D70C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"Headshots"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D714</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"Headshots Rating"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6E0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"Knife"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6DC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Grenades"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6E8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"Non-Lethal"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6F0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"Collateral"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6FC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"Kills"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6D8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>23</ID>
+          <Description>"Deaths"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D704</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>57</ID>
+      <Description>"Other in Dossier"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"Unknown"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6E4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>48</ID>
+          <Description>"Unknown"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D6EC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"Objectives,1stPart"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D74C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>50</ID>
+          <Description>"Objectives,1stPart"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D750</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>51</ID>
+          <Description>"Objectives,2ndPart"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D754</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"Objectives,2ndPart"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D758</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>53</ID>
+          <Description>"Unknown"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D75C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Unknown"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D760</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"Unknown"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D764</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>56</ID>
+          <Description>"Unknown"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>2082D768</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>41</ID>
+      <Description>"BOOT"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>37</ID>
+          <Description>"CD"</Description>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>207EE1EC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"Main Menu"</Description>
+          <VariableType>String</VariableType>
+          <Length>15</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>207EE20B</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>40</ID>
+          <Description>"Immortal"</Description>
+          <VariableType>String</VariableType>
+          <Length>19</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>207EE22E</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"E3 Build"</Description>
+          <VariableType>String</VariableType>
+          <Length>10</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>207EE05A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>43</ID>
+          <Description>"Sequential Levels"</Description>
+          <VariableType>String</VariableType>
+          <Length>19</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>207EE066</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"Restrict Levels"</Description>
+          <VariableType>String</VariableType>
+          <Length>17</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>207EE07B</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>45</ID>
+          <Description>"Use Valid Levels"</Description>
+          <VariableType>String</VariableType>
+          <Length>18</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>207EE11B</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>46</ID>
+      <Description>"All stuff"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>178</ByteLength>
+      <Address>2082D6D8</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

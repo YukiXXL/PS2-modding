@@ -1,0 +1,12 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=CHEATS
+
+//Jak Vehicle Unkillable (Debug)
+patch=1,EE,E002012B,extended,00F16AB0
+patch=1,EE,20F16AB0,extended,66E30004
+patch=1,EE,20F16AB4,extended,AEE317DB
+
+//cheat_default_gun_in_race
+patch=1,EE,E001DC63,extended,00F2189C
+patch=1,EE,20F2189C,extended,66E30004
+patch=1,EE,20F218A0,extended,AEE3DC63

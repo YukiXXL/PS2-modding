@@ -1,0 +1,17 @@
+gametitle=Champions Return to Arms Final Release (PAL)
+comment=MISC
+
+//No interlacing
+patch=1,EE,0019E2E8,extended,ACA00008
+
+// D-Pad Down + R1 = Level up
+// L2 + R2 + Start = Debug menu
+//Enable Debug Mode
+patch=1,EE,004FA7E0,extended,00000001
+
+//LAN mode?
+patch=1,EE,201E2610,extended,10000006
+
+//Increase selected difficulty by 1
+//Legendary = Epic difficulty (cut diff)
+patch=1,EE,001E2854,extended,26900002

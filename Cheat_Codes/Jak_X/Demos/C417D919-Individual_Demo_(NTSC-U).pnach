@@ -1,0 +1,11 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=by YukiXXL. Credits to Luminar Light.
+
+// Retail Mode ( demo = play )
+//patch=1,EE,2020E6B8,extended,79616C70
+
+// Kiosk Mode ( demo = kiosk )
+patch=1,EE,101FDFD0,extended,24C6A950
+
+// Beta Mode ( demo = beta )
+//patch=1,EE,101FDFD0,extended,24C6A980

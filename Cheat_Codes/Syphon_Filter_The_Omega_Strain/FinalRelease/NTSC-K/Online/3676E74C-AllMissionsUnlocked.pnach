@@ -1,0 +1,11 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=ONLINE - ALL MISSIONS UNLOCKED
+
+//All missions online
+patch=1,EE,404B8230,extended,00040001
+patch=1,EE,01010101,extended,00000000
+//Alternative
+//patch=1,EE,202994CC,extended,24020000
+
+//Training Mission enabled
+patch=1,EE,202994A8,extended,24020000

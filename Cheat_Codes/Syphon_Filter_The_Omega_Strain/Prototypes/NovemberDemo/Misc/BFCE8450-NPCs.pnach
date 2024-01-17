@@ -1,0 +1,13 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=MISC - NPCs
+
+//Force everyone to use one weapon (Only change last 2 Hex values)
+patch=1,EE,201AC0CC,extended,2405005D
+
+//Give weapons to workers
+patch=1,EE,001AC0F8,extended,2A020003
+
+//Enable all spawns
+patch=1,EE,201AA46C,extended,00000000
+//Memory fix
+patch=1,EE,001AA57C,extended,1440000E

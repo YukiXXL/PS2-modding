@@ -1,0 +1,9 @@
+gametitle=God Hand Final Release (PAL)
+comment=CHEATS
+
+//Costumes have Double God Hands
+patch=1,EE,E004802D,extended,015386D8
+patch=1,EE,215386D8,extended,24100001
+patch=1,EE,015386FC,extended,24100005
+patch=1,EE,01538704,extended,24100007
+patch=1,EE,01538708,extended,24100003

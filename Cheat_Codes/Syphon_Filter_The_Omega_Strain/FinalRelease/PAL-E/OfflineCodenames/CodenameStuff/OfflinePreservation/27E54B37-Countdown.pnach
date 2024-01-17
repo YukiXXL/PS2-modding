@@ -1,0 +1,17 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=COUNTDOWN CODES. If not enabled, "START fix" is needed!
+
+//EQS CountDown
+//Fake Word for EQS
+patch=1,EE,204F1C80,extended,009AB5B0
+//Load the fake word
+patch=1,EE,202AC7B0,extended,3C01004F
+patch=1,EE,202AC7B4,extended,8C251C80
+patch=1,EE,202AC7CC,extended,AC853584
+
+//Show timer instead of "WAITING FOR HOST"
+patch=1,EE,002ADC2C,extended,9022D424
+
+//Show timer and count in Equipment Modify
+patch=1,EE,002CAED0,extended,9023D424
+patch=1,EE,002CB90C,extended,9022D424

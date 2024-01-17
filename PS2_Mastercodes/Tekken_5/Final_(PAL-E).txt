@@ -1,0 +1,5 @@
+"Tekken 5 /ID SCES_532.02"
+//ELF CRC=1F88BECD
+sceSifSendCmd   : 90114458 0C0450BE
+scePadRead      : 9010C2C0 0C04A905
+main            : 901FA6AC 0C048EEA

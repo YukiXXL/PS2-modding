@@ -1,0 +1,8 @@
+gametitle=Soul Calibur III (PAL-E)
+comment=ADDONS
+
+//Add ProScan option (Replaces NTSC-60Hz)
+patch=1,EE,00509ED4,extended,00070003
+
+//Fix Progressive scan option
+patch=1,EE,00509ECC,extended,00000006

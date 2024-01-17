@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="34">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>27</ID>
+      <Description>"Dossier"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"Missions"</Description>
+          <LastState Value="3" RealAddress="20A8172C"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A8172C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"Shots"</Description>
+          <LastState Value="1412" RealAddress="20A8171C"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A8171C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"Hits"</Description>
+          <LastState Value="396" RealAddress="20A81720"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81720</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"Headshots"</Description>
+          <LastState Value="1267" RealAddress="20A81700"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81700</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"Knife"</Description>
+          <LastState Value="453" RealAddress="20A816FC"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A816FC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Grenades"</Description>
+          <LastState Value="500" RealAddress="20A81708"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81708</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"Non-Lethal"</Description>
+          <LastState Value="367" RealAddress="20A81710"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81710</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8</ID>
+          <Description>"Collateral"</Description>
+          <LastState Value="2" RealAddress="20A81714"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81714</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"Marksmanship1"</Description>
+          <LastState Value="591" RealAddress="20A81724"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81724</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"Marksmanship2"</Description>
+          <LastState Value="183" RealAddress="20A81728"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81728</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"Deaths"</Description>
+          <LastState Value="14" RealAddress="20A81718"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A81718</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"Kills"</Description>
+          <LastState Value="1548" RealAddress="20A816F8"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>20A816F8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>29</ID>
+          <Description>"Team Rating"</Description>
+          <LastState Value="9" RealAddress="20A81734"/>
+          <VariableType>Byte</VariableType>
+          <Address>20A81734</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>32</ID>
+      <Description>"Online Lobby"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>33</ID>
+          <Description>"CMDCENTR"</Description>
+          <LastState RealAddress="204AAE98"/>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204AAE98</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"CMDCENTR"</Description>
+          <LastState RealAddress="204B99F8"/>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204B99F8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"CommandCenter"</Description>
+          <LastState RealAddress="204AAE83"/>
+          <VariableType>String</VariableType>
+          <Length>13</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204AAE83</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"CommandCenter"</Description>
+          <LastState RealAddress="204B99E3"/>
+          <VariableType>String</VariableType>
+          <Length>13</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204B99E3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"OFF/ON"</Description>
+          <LastState Value="0" RealAddress="205C7F90"/>
+          <VariableType>Byte</VariableType>
+          <Address>205C7F90</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>36</ID>
+          <Description>"Mission Setup"</Description>
+          <LastState Value="0" RealAddress="205C7F92"/>
+          <VariableType>Byte</VariableType>
+          <Address>205C7F92</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>37</ID>
+          <Description>"Online Enabler"</Description>
+          <LastState Value="0" RealAddress="205721C8"/>
+          <VariableType>Byte</VariableType>
+          <Address>205721C8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>57</ID>
+      <Description>"Extra"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Setup"</Description>
+          <LastState RealAddress="2049C49C"/>
+          <VariableType>String</VariableType>
+          <Length>6</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>2049C49C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>56</ID>
+          <Description>"eqsetup"</Description>
+          <LastState RealAddress="2049C4A8"/>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>2049C4A8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"SCORES"</Description>
+          <LastState RealAddress="204C1BE8"/>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204C1BE8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>59</ID>
+          <Description>"SCORES"</Description>
+          <LastState RealAddress="204C2668"/>
+          <VariableType>String</VariableType>
+          <Length>8</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204C2668</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>66</ID>
+      <Description>"Animations"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>61</ID>
+          <Description>"EquipmentSetup"</Description>
+          <LastState RealAddress="204AB2A0"/>
+          <VariableType>String</VariableType>
+          <Length>19</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204AB2A0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>62</ID>
+          <Description>"EquipmentModify"</Description>
+          <LastState RealAddress="204AC600"/>
+          <VariableType>String</VariableType>
+          <Length>19</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204AC600</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>63</ID>
+          <Description>"ScoresEquip"</Description>
+          <LastState RealAddress="204BB640"/>
+          <VariableType>String</VariableType>
+          <Length>19</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204BB640</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>65</ID>
+          <Description>"No description"</Description>
+          <LastState RealAddress="204A2984"/>
+          <VariableType>String</VariableType>
+          <Length>11</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>204A2984</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>67</ID>
+      <Description>"No description"</Description>
+      <LastState RealAddress="204ACA50"/>
+      <VariableType>String</VariableType>
+      <Length>8</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>204ACA50</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>73</ID>
+      <Description>"No description"</Description>
+      <LastState Value="4" RealAddress="205C81B4"/>
+      <VariableType>Byte</VariableType>
+      <Address>205C81B4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>74</ID>
+      <Description>"No description"</Description>
+      <LastState Value="4" RealAddress="205C80E0"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>205C80E0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>79</ID>
+      <Description>"Lobby"</Description>
+      <LastState Value="4294967295" RealAddress="205C81A8"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>205C81A8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>80</ID>
+      <Description>"No description"</Description>
+      <LastState Value="0" RealAddress="205CA140"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>205CA140</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Agent"</Description>
+      <LastState Value="0" RealAddress="205C81B0"/>
+      <VariableType>Byte</VariableType>
+      <Address>205C81B0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Equip"</Description>
+      <LastState Value="42" RealAddress="205C81B1"/>
+      <VariableType>Byte</VariableType>
+      <Address>205C81B1</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>81</ID>
+      <Description>"Something"</Description>
+      <LastState Value="0" RealAddress="204FFD28"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>204FFD28</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>83</ID>
+      <Description>"Codename string"</Description>
+      <LastState RealAddress="205DB0D0"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>String</VariableType>
+      <Length>11</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>205DB0D0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>86</ID>
+      <Description>"Codenames strings"</Description>
+      <LastState RealAddress="204FFC40"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>String</VariableType>
+      <Length>10</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>204FFC40</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>84</ID>
+      <Description>"Codename ?"</Description>
+      <LastState Value="11015920" RealAddress="204FFD18"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>204FFD18</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

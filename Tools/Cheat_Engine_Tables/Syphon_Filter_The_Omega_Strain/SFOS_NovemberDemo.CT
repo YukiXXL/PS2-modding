@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Kills"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>20846A58</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Knife"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>20846A5C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Headshots"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>20846A60</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Non-Lethal"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>20846A70</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Grenades"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>20846A68</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Toronto 1 Solo Time"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>20847B40</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

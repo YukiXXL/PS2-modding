@@ -1,0 +1,5 @@
+"Jak X: Combat Racing /ID SCES_532.86"
+//ELF CRC=DF659E77
+sceSifSendCmd   : 90117510 0C045CEC
+scePad2Read     : 901C7438 0C042C85
+main            : 90275FBC 0C042CF2

@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=DUAL WIELD - OLD CODES
+
+//All weapons under sidearm (Equipment Modify)
+patch=1,EE,202CBA14,extended,24030003
+//All weapons in sidearm weapon slot
+patch=1,EE,20147370,extended,24030003
+patch=1,EE,20147268,extended,24030003

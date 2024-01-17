@@ -1,0 +1,10 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=MISC: PLAYER - OTHER
+
+//Count kill as Collateral
+patch=1,EE,20186FD8,extended,1040001F
+
+//Toss Body instead of laying it down
+//patch=1,EE,0024A254,extended,2402002D
+//Enable Tossing Bodies
+patch=1,EE,20250760,extended,A2060138

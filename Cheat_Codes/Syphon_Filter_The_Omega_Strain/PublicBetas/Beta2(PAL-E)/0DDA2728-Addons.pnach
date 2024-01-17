@@ -1,0 +1,9 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL)
+comment=ADDONS
+
+//Enable TEST button
+patch=1,EE,202A0064,extended,8C24B928
+patch=1,EE,20505B28,byte,0
+
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,004928AC,extended,0000FF02

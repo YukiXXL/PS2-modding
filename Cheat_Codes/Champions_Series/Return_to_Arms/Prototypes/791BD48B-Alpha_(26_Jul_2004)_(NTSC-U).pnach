@@ -1,0 +1,19 @@
+gametitle=Champions Return to Arms Alpha (NTSC-U)
+comment=by YukiXXL
+
+// D-Pad Down + R1 = Level up
+// L2 + R2 + Start = Debug menu
+//Enable Debug Mode
+patch=1,EE,004D0F90,extended,00000001
+
+//Enable Difficulty select in Offline
+patch=1,EE,001E1E08,extended,10400023
+
+//tormentc is missing so replace it with:
+//torment0
+//patch=1,EE,2050E5EC,extended,30746E65
+//torment1
+//patch=1,EE,2050E5EC,extended,31746E65
+//torbonus
+patch=1,EE,2050E5E8,extended,62726F74
+patch=1,EE,2050E5EC,extended,73756E6F

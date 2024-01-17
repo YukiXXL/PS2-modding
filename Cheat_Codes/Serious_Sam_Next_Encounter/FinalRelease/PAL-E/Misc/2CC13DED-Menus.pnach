@@ -1,0 +1,11 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL)
+comment=MISC - MENUS
+
+//Enable Online in Offline
+patch=1,EE,1025CB00,extended,0C0A83A0
+//Bypass connecting errors
+//patch=1,EE,0029A110,extended,24020000
+//patch=1,EE,00295E70,extended,24020000
+
+//Maximum number of options = 11
+patch=1,EE,2025114C,extended,2403000B

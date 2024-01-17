@@ -1,0 +1,14 @@
+gametitle=Champions Return to Arms Final Release (NTSC-U)
+comment=MISC
+
+// D-Pad Down + R1 = Level up
+// L2 + R2 + Start = Debug menu
+//Enable Debug Mode
+patch=1,EE,004F8EE0,extended,00000001
+
+//LAN mode?
+patch=1,EE,201E1848,extended,10000006
+
+//Increase selected difficulty by 1
+//Legendary = Epic difficulty (cut diff)
+patch=1,EE,001E1A8C,extended,26900002

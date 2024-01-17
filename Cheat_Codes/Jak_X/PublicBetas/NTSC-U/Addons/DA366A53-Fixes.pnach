@@ -1,0 +1,47 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=ADDONS - FIXES
+
+// Patch fixes inability to boot.
+// Patched by Luminar Light
+patch=1,EE,00265ACB,word,00000000
+
+// replace non-exisitng videos of non-existing tracks
+// fixes crashes
+//Check just in case
+patch=1,EE,E0187073,extended,0099CFB8
+// Frozen Speedway - snow
+patch=1,EE,2099A948,extended,6F676F6C
+patch=1,EE,2099A94C,extended,00000000
+// Haven City - haven
+patch=1,EE,20995118,extended,6F676F6C
+patch=1,EE,2099511C,extended,00000000
+// Sewer Raceway - sewer
+patch=1,EE,20998CE8,extended,6F676F6C
+patch=1,EE,20998CEC,extended,00000000
+// City Outskirts - havjung
+patch=1,EE,20996628,extended,6F676F6C
+patch=1,EE,2099662C,extended,00000000
+// Spargus City - spargus
+patch=1,EE,2099CFB8,extended,6F676F6C
+patch=1,EE,2099CFBC,extended,00000000
+// Waterworks Circuit - havsew
+patch=1,EE,20993948,extended,6F676F6C
+patch=1,EE,2099394C,extended,00000000
+// Canyon Run - canyon
+patch=1,EE,209969D8,extended,6F676F6C
+patch=1,EE,209969DC,extended,00000000
+// Beachfront Drive - canspar
+patch=1,EE,20998968,extended,6F676F6C
+patch=1,EE,2099896C,extended,00000000
+// Mar Coliseum - coliseum
+patch=1,EE,20999068,extended,6F676F6C
+patch=1,EE,2099906C,extended,00000000
+// Desert Arena - desarena
+patch=1,EE,20996D58,extended,6F676F6C
+patch=1,EE,20996D5C,extended,00000000
+// Wasteland Isle - desisle
+patch=1,EE,20985888,extended,6F676F6C
+patch=1,EE,2098588C,extended,00000000
+// Ice Pit - snobowl
+patch=1,EE,209920F8,extended,6F676F6C
+patch=1,EE,209920FC,extended,00000000

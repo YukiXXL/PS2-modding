@@ -1,0 +1,16 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL)
+comment=CHEATS - OTHER
+
+// FLY CHEAT INSTRUCTIONS:
+// D-PAD LEFT/RIGHT = ENABLE/DISABLE
+// L2 = GO DOWN; R2 = GO UP
+
+//Enable all cheats, including Fly Mode.
+patch=1,EE,2016472C,extended,24020001
+
+//Enable Fly cheat
+//patch=1,EE,201646CC,extended,24020001
+
+//Enable cheats in all other gamemodes
+patch=1,EE,00270730,extended,2442FFFB
+patch=1,EE,0020CF5C,extended,2463FFFB

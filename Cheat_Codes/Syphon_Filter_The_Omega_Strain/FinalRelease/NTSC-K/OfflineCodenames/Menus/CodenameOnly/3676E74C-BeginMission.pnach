@@ -1,0 +1,11 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=OFFLINE CODENAMES: MENUS: CODENAME ONLY - BEGIN MISSION
+
+//Write codename and join filter
+patch=1,EE,202AD168,extended,90820045
+patch=1,EE,202AD16C,extended,8C840040
+patch=1,EE,202AD174,extended,3C01004A
+patch=1,EE,202AD178,extended,2484FFFF
+patch=1,EE,202AD17C,extended,AC2412A8
+patch=1,EE,202AD180,extended,3C010059
+patch=1,EE,202AD188,extended,9022F8E4

@@ -1,0 +1,13 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment="Enable all sub-options all the time" required.
+
+//5 MAX CPUs on any game modes
+patch=1,EE,E001000D,extended,0130BADC
+patch=1,EE,2130BADC,extended,24030005
+
+//Load selected CPUs on all gamemodes
+patch=1,EE,E0030027,extended,00BCD348
+patch=1,EE,20BCD348,extended,10000027
+//Save 5 CPUs as a MAX
+patch=1,EE,20BCD428,extended,24050005
+patch=1,EE,20BCD458,extended,A045000D

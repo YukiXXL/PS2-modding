@@ -1,0 +1,5 @@
+"Soulcalibur III /ID SLUS_212.16"
+//ELF CRC=027C604C
+sceSifSendCmd   : 9043A0D8 0C10E7DE
+scePadRead      : 90422268 0C10B4AB
+main            : 9018E254 0C10A3DE

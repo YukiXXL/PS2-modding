@@ -1,0 +1,21 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=OFFLINE CODENAMES: GAMEPLAY - MAIN
+
+//Enable online objectives + dialogues
+patch=1,EE,0012FA88,extended,9022F8E4
+
+//Team Par
+patch=1,EE,0046D348,extended,9025F8E4
+patch=1,EE,0046D41C,extended,9022F8E4
+//Check if completed Par
+patch=1,EE,00470914,extended,9025F8E4
+
+//Checking Team objectives
+//patch=1,EE,0033DC80,extended,9025F8E4
+//Write Par if all objectives completed
+patch=1,EE,0033DD68,extended,9022F8E4
+
+//Buddy Climb
+patch=1,EE,00170444,extended,9022F8E4
+//Animation Change
+patch=1,EE,0018DE6C,extended,24030031

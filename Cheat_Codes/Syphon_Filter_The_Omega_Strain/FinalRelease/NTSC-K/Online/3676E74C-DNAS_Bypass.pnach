@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=ONLINE - DNAS BYPASS
+
+//DNAS Bypass
+patch=1,EE,20384D30,extended,03E00008
+patch=1,EE,20384D34,extended,00000000

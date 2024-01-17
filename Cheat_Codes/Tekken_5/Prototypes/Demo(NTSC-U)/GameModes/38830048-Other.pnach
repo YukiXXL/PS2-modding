@@ -1,0 +1,22 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=GAMEMODES - OTHER
+
+//Demo like Gamemode (Random chars/stages)
+patch=1,EE,10123670,extended,0C04A1D2
+//Special Gamemode No. 9
+//patch=1,EE,20122B48,extended,24040009
+//Alternative GM No. 9
+//patch=1,EE,10123670,extended,0C04A25A
+
+
+//Force a Gamemode
+// 0 = Arcade
+// 1 = Demo Mode
+// 2 = Story Mode
+// 3 = Versus
+// 4 = Team Battle
+// 5 = Time Attack
+// 6 = Survival
+// 7 = Practice
+
+//patch=1,EE,002B8900,byte,6

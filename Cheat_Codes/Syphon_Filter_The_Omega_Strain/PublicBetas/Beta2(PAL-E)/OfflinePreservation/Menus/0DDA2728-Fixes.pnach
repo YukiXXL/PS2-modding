@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL)
+comment=OFFLINE PRESERVATION: MENUS - FIXES
+
+//Host Game fix
+patch=1,EE,2033E110,extended,00000000
+
+//Pick Region crash fix
+patch=1,EE,202B6060,extended,00000000

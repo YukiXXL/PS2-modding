@@ -1,0 +1,9 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 1 (NTSC-U)
+comment=OFFLINE PRESERVATION: MENUS - MISSION SETUP
+
+//Enable Mission Setup & Join Mission offline
+patch=1,EE,2031B340,extended,00000000
+patch=1,EE,2031B348,extended,24020001
+
+//Join any mission
+patch=1,EE,20281854,extended,00000000

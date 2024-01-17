@@ -1,0 +1,21 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=Change weather on missions that support it.
+
+//Copy data value and paste it after ",extended,":
+// Myanmar Fog - 0C08CC14
+// Toronto 3 Fog - 0C08CBE4
+// Tokyo Rain - 0C08CBAC
+// Lorelei Rain - 0C08CB74
+// Snowing - 0C08CB3C
+// Atmospheric effect - 0C08CC6C
+
+//Myanmar
+patch=1,EE,10232CD8,extended,
+//Toronto 3
+patch=1,EE,10232CB8,extended,
+//Tokyo
+patch=1,EE,10232C98,extended,
+//Lorelei
+patch=1,EE,10232C78,extended,
+//Belarus 2
+patch=1,EE,10232C58,extended,

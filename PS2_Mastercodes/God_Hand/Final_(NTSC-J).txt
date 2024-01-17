@@ -1,0 +1,5 @@
+"God Hand /ID SLPM_665.50"
+//ELF CRC=AEDAEE99
+sceSifSendCmd   : 903B1D30 0C0EC6F4
+scePadRead      : 903973F0 0C0E91EE
+main            : 9030A368 0C0C7472

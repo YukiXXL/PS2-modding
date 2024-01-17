@@ -1,0 +1,14 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=OFFLINE CODENAMES: CODENAME STUFF: OFFLINE PRESERVATION - FIXES
+
+//Belarus 2 C4 stacks bug fix
+patch=1,EE,001790F8,extended,9023F8E4
+patch=1,EE,20179104,extended,00000000
+//START button
+patch=1,EE,002AE454,extended,9022F8E4
+//START fix
+//patch=1,EE,002AE4D4,extended,24050000
+
+//Quit fix
+patch=1,EE,00134C2C,extended,9022F8E4
+patch=1,EE,00134CBC,extended,10400008

@@ -1,0 +1,5 @@
+"Syphon Filter: The Omega Strain Jampack Demo /ID SCE_DD.ELF"
+//ELF CRC=2FFA7E6F
+sceSifSendCmd   : 901D80F0 0C075FE4
+scePad2Read     : 902EFE08 0C07B752
+main            : 901FE444 0C0722CC

@@ -1,0 +1,11 @@
+gametitle=Tekken 5 Final Release (PAL)
+comment=TETSUJIN CODES. P1 hold L1+L2 and press [].
+
+//Player 1 Holds L1 + L2 to replace Tetsujin with Mokujin
+//Select with square (LP)
+//For use with 2nd player, replace D015BB02 -> D015BC02
+patch=1,EE,D015BB02,extended,0000FAFF
+patch=1,EE,0047B9A0,extended,0000004F
+//Let go of all buttons to reset back to Mokujin
+patch=1,EE,D015BB02,extended,0000FFFF
+patch=1,EE,0047B9A0,extended,0000002D

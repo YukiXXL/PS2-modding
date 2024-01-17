@@ -1,0 +1,13 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=ADDONS - 256 LAPS
+
+//Safe Check
+patch=1,EE,E006200B,extended,013CB2D4
+//Increase the number of max laps
+patch=1,EE,213CB24C,extended,240600FF
+patch=1,EE,213CB250,extended,ACA60004
+patch=1,EE,213CB254,extended,8CA50004
+//Minimum number of laps is 0
+patch=1,EE,213CB2CC,extended,0000302D
+patch=1,EE,213CB2D0,extended,ACA60000
+patch=1,EE,213CB2D4,extended,8CA50000

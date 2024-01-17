@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=MISC - OTHER
+
+//Freeze Rally with Circuit options
+patch=1,EE,E001002C,extended,013CB8B4
+patch=1,EE,113CB8B4,extended,1000FE8E

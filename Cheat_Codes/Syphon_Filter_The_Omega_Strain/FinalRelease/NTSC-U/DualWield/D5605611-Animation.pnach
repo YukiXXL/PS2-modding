@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=DUAL WIELD - ANIMATION
+
+//Animation change for all weapons
+patch=1,EE,20143540,extended,24020001
+patch=1,EE,20489D60,extended,00000000
+//Dual Wield Ability enabled
+patch=1,EE,202BD704,extended,00000000

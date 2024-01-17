@@ -1,0 +1,4 @@
+"Champions: Return to Arms Alpha /ID SLUS_209.73"
+//ELF CRC=791BD48B
+sceSifSendCmd   : 90346A58 0C0D1A3E
+main            : 9032B428 0C0E0C8E

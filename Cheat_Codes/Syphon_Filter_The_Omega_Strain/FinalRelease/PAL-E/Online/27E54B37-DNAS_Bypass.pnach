@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=ONLINE - DNAS BYPASS
+
+//DNAS Bypass
+patch=1,EE,20382390,extended,03E00008
+patch=1,EE,20382394,extended,00000000

@@ -1,0 +1,22 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=ADDONS - EVENTS
+
+//Unlock all events (Needed if in Beta Mode!)
+patch=1,EE,E00161A4,extended,002D78F8
+patch=1,EE,102D78F8,extended,00B86204
+
+//Enable all events for SS
+patch=1,EE,E001FFFE,extended,012CFCFC
+patch=1,EE,012CFCFC,extended,64A6FFFD
+
+//Enable Reversi on Dirt Stadium
+//Replaces Mar Coliseum
+patch=1,EE,E0026F63,extended,009A01B8
+patch=1,EE,209A0194,extended,009A3A44
+patch=1,EE,209A0198,extended,009A3A24
+
+//Enable Reversi on Clifftop Battlefield
+//Replaces Desert Arena
+patch=1,EE,E0026564,extended,009A06F8
+patch=1,EE,209A06D4,extended,009A38A4
+patch=1,EE,209A06D8,extended,009A3884

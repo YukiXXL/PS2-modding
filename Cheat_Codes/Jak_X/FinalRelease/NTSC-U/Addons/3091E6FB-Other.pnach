@@ -1,0 +1,15 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=ADDONS - OTHER
+
+//Scan and get all secret characters + Daxtermobile
+patch=1,EE,E003FE79,extended,013E7D44
+patch=1,EE,213E7D44,extended,2404000F
+patch=1,EE,213E7D48,extended,14E0FE78
+patch=1,EE,213E7D4C,extended,24050001
+
+//Enable customizing Sand Shark, Naughty Dog, Daxtermobile
+patch=1,EE,E00406BB,extended,01353A94
+patch=1,EE,21353A8C,extended,1000000C
+patch=1,EE,21353500,extended,00000000
+patch=1,EE,213535D8,extended,00000000
+patch=1,EE,21353718,extended,00000000

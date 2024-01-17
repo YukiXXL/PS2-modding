@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=OFFLINE CODENAMES: CODENAME STUFF - GAMEPLAY
+
+//Quickchat enabled
+patch=1,EE,00475568,extended,9022d424
+
+//Show codename on the right
+patch=1,EE,00465B3C,extended,9022D424

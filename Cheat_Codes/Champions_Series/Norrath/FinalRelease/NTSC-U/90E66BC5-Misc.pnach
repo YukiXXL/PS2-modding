@@ -1,0 +1,10 @@
+gametitle=Champions of Norrath Final Release (NTSC-U)
+comment=MISC
+
+// D-Pad Down + R1 = Level up
+// L2 + R2 + Start = Debug menu
+//Enable Debug Mode
+patch=1,EE,00485AAC,extended,00000001
+
+//Increase Champion difficulty by 1 (when selected)
+patch=1,EE,001C92DC,extended,26820002

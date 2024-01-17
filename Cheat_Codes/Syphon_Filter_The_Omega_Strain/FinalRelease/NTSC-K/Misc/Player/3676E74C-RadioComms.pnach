@@ -1,0 +1,19 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=MISC: PLAYER - RADIO COMMS
+
+//Disable radio logs
+patch=1,EE,201C6F78,extended,10600003
+
+//Change comms voice. (Only change last 2 Hex values)
+// 15 = Teresa?
+// 16 = Imani
+// 17 = Stone
+// 18 = Zohar
+// 19 = Meggie
+// 1A = Mujari
+// 1B = Lian
+// 1C = Gabe
+// 1E = Quickchat Lady
+
+//Comms voice
+patch=1,EE,20338D50,extended,24020018

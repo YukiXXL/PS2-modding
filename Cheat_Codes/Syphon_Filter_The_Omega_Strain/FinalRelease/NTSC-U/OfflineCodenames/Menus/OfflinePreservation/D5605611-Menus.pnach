@@ -1,0 +1,10 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=OFFLINE CODENAMES: MENUS: OFFLINE PRESERVATION - MENUS
+
+//Enable Online lobby in offline
+patch=1,EE,002A0244,extended,24A5AEB0
+patch=1,EE,002A024C,extended,24C6AEC8
+patch=1,EE,202CB78C,extended,00000000
+
+//Min num agents = 1
+patch=1,EE,002A159C,extended,24050001

@@ -1,0 +1,11 @@
+gametitle=Tekken 5 Final Release (PAL)
+comment=MISC
+
+//Red color health bars
+patch=1,EE,E001000D,extended,002E810C
+patch=1,EE,002E810C,extended,2405000C
+
+//Maximum Handicap in VS = 200%
+patch=1,EE,E0020097,extended,00258C24
+patch=1,EE,00258C08,extended,240600C8
+patch=1,EE,00258C24,extended,2A0300C9

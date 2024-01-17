@@ -1,0 +1,13 @@
+gametitle=Jak X Final Release (PAL-E)
+comment="Enable all sub-options all the time" required.
+
+//5 MAX CPUs on any game modes
+patch=1,EE,E001000D,extended,0130BA2C
+patch=1,EE,2130BA2C,extended,24030005
+
+//Load selected CPUs on all gamemodes
+patch=1,EE,E0030027,extended,00BCD298
+patch=1,EE,20BCD298,extended,10000027
+//Save 5 CPUs as a MAX
+patch=1,EE,20BCD378,extended,24050005
+patch=1,EE,20BCD3A8,extended,A045000D

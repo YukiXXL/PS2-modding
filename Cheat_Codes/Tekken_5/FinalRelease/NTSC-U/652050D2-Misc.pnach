@@ -1,0 +1,11 @@
+gametitle=Tekken 5 Final Release (NTSC-U)
+comment=MISC
+
+//Red color health bars
+patch=1,EE,E001000D,extended,002D59C4
+patch=1,EE,002D59C4,extended,2405000C
+
+//Maximum Handicap in VS = 200%
+patch=1,EE,E0020097,extended,0024C374
+patch=1,EE,0024C358,extended,240600C8
+patch=1,EE,0024C374,extended,2A0300C9

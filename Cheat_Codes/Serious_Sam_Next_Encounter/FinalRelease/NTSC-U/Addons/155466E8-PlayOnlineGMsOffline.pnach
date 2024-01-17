@@ -1,0 +1,15 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=PLAY ONLINE GAMEMODES CODES
+
+//Host Game = Select Profiles
+patch=1,EE,00264D30,extended,24050099
+//For Online
+patch=1,EE,D036D498,extended,00000001
+patch=1,EE,2027C840,extended,24050001
+//For Offline
+patch=1,EE,D036D498,extended,00000000
+patch=1,EE,2027C840,extended,00000000
+//Return to "Host Game" after exiting
+patch=1,EE,10267690,extended,240500D0
+//End Screen names fix
+patch=1,EE,20220DAC,extended,0000102D

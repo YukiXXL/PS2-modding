@@ -1,0 +1,15 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL)
+comment=MISC - GAMEPLAY
+
+//Spawn on the start
+patch=1,EE,20275FAC,extended,00000000
+// For Temple of Mars crash fix
+//Giant Hornet fixed
+patch=1,EE,203B3C80,extended,001E7030
+
+//Stop auto-killing entities
+patch=1,EE,201F7F58,extended,03E00008
+patch=1,EE,201F7F5C,extended,00000000
+
+//Giant Hornet replaces Witch Harpy
+//patch=1,EE,003BE308,extended,00000004

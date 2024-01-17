@@ -1,0 +1,17 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=CHARACTER SELECT - CHARACTER TABLE
+
+//31 characters
+patch=1,EE,0015E1CC,extended,24040000
+//31 characters with Jinpachi
+patch=1,EE,2019A9E8,extended,26E5DDA0
+patch=1,EE,0015E204,extended,24020006
+//
+//29 characters
+//patch=1,EE,0015E214,extended,24040000
+//26 characters
+//patch=1,EE,0015E22C,extended,24040000
+//23 characters
+//patch=1,EE,0015E244,extended,24040000
+//21 characters
+//patch=1,EE,0015E25C,extended,24040000

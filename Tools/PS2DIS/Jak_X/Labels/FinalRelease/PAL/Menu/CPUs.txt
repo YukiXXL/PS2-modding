@@ -1,0 +1,19 @@
+For spawning CPUs
+00BCD22C - isTimeAttack
+00BCD294 - Artist_GM
+00BCD298 - Check_GM
+00BCD318 - Sport Hunt
+00BCD32C - Other GMs
+00BCD338 - isCircuit
+00BCD340 - Load CPUs
+00BCD36C - CPU set to MAX
+00BCD394 - Load MAX CPUs
+00BCD3B8 - 2nd Check
+00BCD3BC - Death Race
+00BCD3CC - Rush Hour
+00BCD3F4 - Freeze Rally
+00BCD400 - Spawn Number
+00BCD408 - Death Race / Rush Hour
+00BCD414 - isMizo
+00BCD42C - No CPUs
+00BCD438 - Limit of vehicles

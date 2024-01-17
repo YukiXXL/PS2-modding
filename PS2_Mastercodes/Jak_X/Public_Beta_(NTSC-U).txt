@@ -1,0 +1,5 @@
+"Jak X: Combat Racing Public Beta /ID SCUS_974.88"
+//ELF CRC=DA366A53
+sceSifSendCmd   : 901151D0 0C04541C
+scePad2Read     : 901C8F90 0C042C69
+main            : 90265D90 0C042CD6

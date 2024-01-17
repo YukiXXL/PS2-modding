@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=ONLINE/LAN - OTHER
+
+//5 CPUs, 6 Players for events
+//Saves onto the event and map when trying to start the event
+patch=1,EE,E0045567,extended,013144DC
+patch=1,EE,213144CC,extended,28630006
+patch=1,EE,113144D8,extended,24030506
+patch=1,EE,213144DC,extended,10000095
+patch=1,EE,213144E0,extended,A443000C
+
+//Fake players on LAN
+//patch=1,EE,E0010105,extended,0130A9C4
+//patch=1,EE,2130A9C4,extended,16E30105

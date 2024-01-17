@@ -1,0 +1,14 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=OFFLINE PRESERVATION: MENUS - BEGIN MISSION
+
+//Write codename & SuccessLobbyConnect
+patch=1,EE,20281EE8,extended,8E4200F4
+patch=1,EE,20281EF0,extended,8C420040
+patch=1,EE,20281EF4,extended,2442FFFF
+patch=1,EE,20281EF8,extended,3C010044
+patch=1,EE,20281EFC,extended,10000041
+patch=1,EE,20281F00,extended,AC220468
+
+//Online, Offline enabler
+patch=1,EE,00172C74,extended,A0232204
+patch=1,EE,00172CDC,extended,A0202204

@@ -1,0 +1,5 @@
+"Tekken 5 /ID SLUS_210.59"
+//ELF CRC=652050D2
+sceSifSendCmd   : 901124D8 0C0448DE
+scePadRead      : 9010C200 0C04A125
+main            : 901F07AC 0C04870A

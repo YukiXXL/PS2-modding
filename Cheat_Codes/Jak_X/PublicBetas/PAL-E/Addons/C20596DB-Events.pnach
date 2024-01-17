@@ -1,0 +1,22 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=ADDONS - EVENTS
+
+//Unlock all events (Needed if in Beta Mode!)
+patch=1,EE,E00162A4,extended,002D79F8
+patch=1,EE,102D79F8,extended,00B86304
+
+//Enable all events for SS
+patch=1,EE,E001FFFE,extended,012CFDFC
+patch=1,EE,012CFDFC,extended,64A6FFFD
+
+//Enable Reversi on Dirt Stadium
+//Replaces Mar Coliseum
+patch=1,EE,E0026F63,extended,009A02B8
+patch=1,EE,209A0294,extended,009A3B44
+patch=1,EE,209A0298,extended,009A3B24
+
+//Enable Reversi on Clifftop Battlefield
+//Replaces Desert Arena
+patch=1,EE,E0026564,extended,009A07F8
+patch=1,EE,209A07D4,extended,009A39A4
+patch=1,EE,209A07D8,extended,009A3984

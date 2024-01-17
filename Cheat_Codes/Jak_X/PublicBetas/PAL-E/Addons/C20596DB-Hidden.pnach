@@ -1,0 +1,10 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=ADDONS - HIDDEN
+
+//Enable Mongoose
+patch=1,EE,E0010009,extended,012CE8B8
+patch=1,EE,012CE8B8,extended,80840006
+
+//Enable Taryn
+patch=1,EE,E001FFF9,extended,00BCC180
+patch=1,EE,00BCC180,extended,6463FFF8

@@ -1,0 +1,9 @@
+gametitle=RTCW: Operation Resurrection Final Release (NTSC-U)
+comment=CHEATS
+
+//Extra Ammo
+patch=1,EE,001BBFDC,extended,00501021
+
+//Extra Weapons (Pass 1 Level To Activate This Code)
+patch=1,EE,205C6C78,extended,FFFFFFFF
+patch=1,EE,205C6C7C,extended,FFFFFFFF

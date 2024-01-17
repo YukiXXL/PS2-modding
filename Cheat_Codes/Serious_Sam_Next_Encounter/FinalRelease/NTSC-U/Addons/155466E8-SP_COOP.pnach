@@ -1,0 +1,32 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=ADDONS - SP/COOP
+
+//Multiplayer model in Single Player
+patch=1,EE,2020BF9C,extended,10000005
+patch=1,EE,20211584,extended,10000003
+
+//Don't restart from a Checkpoint in SP (like in COOP)
+patch=1,EE,00202840,extended,28420001
+
+//Prevent teleporting players in COOP
+patch=1,EE,001E2AE8,extended,28420009
+
+//
+//Fake Byte
+//Used for stuff below.
+//Enabled (1) = COOP; Disabled (0) = SP
+//patch=1,EE,0036B808,byte,1
+
+//Pickup effects
+patch=1,EE,002419B4,extended,8C64B808
+
+//Ricochet bullets
+patch=1,EE,0027573C,extended,8C43B808
+
+//Get Medals
+patch=1,EE,00270B5C,extended,8C43B808
+patch=1,EE,00271668,extended,8C43B808
+
+//
+// END of Fake Byte usage
+//
