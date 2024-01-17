@@ -1,0 +1,19 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=EXTRA EVENTS
+
+//Change load location
+patch=1,EE,E001FF94,extended,002E8BF8
+patch=1,EE,002E8BF8,extended,00B5FF84
+//Add events
+patch=1,EE,E006FF84,extended,002E8BF8
+patch=1,EE,20B5FF80,extended,002FB0E4
+patch=1,EE,20B5FF84,extended,0000000F
+patch=1,EE,20B5FF88,extended,0000000F
+patch=1,EE,20B5FF8C,extended,00B5B234
+patch=1,EE,40B5FF90,extended,00040001
+patch=1,EE,00B60140,extended,00000010
+//Add event modes
+patch=1,EE,E003B234,extended,00B5FF8C
+patch=1,EE,00B60148,extended,0000000C
+patch=1,EE,40B60158,extended,00030004
+patch=1,EE,0000000F,extended,00000001

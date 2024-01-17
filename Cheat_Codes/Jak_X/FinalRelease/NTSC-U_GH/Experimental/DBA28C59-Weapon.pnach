@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=WEAPON CODES
+
+patch=1,EE,00f65074,word,1000000a
+patch=1,EE,00f650a4,word,1000000a
+patch=1,EE,00f650d4,word,00000000
+
+patch=1,EE,00f64850,word,24040001
+patch=1,EE,00f648f0,word,24050001
+patch=1,EE,00f64950,word,00000000

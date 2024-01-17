@@ -1,0 +1,19 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EXTRA EVENTS
+
+//Change load location
+patch=1,EE,E0010214,extended,002E8DF8
+patch=1,EE,002E8DF8,extended,00B60204
+//Add events
+patch=1,EE,E0060204,extended,002E8DF8
+patch=1,EE,20B60200,extended,002FB2E4
+patch=1,EE,20B60204,extended,0000000F
+patch=1,EE,20B60208,extended,0000000F
+patch=1,EE,20B6020C,extended,00B5B4B4
+patch=1,EE,40B60210,extended,00040001
+patch=1,EE,00B603C0,extended,00000010
+//Add event modes
+patch=1,EE,E003B4B4,extended,00B6020C
+patch=1,EE,00B603C8,extended,0000000C
+patch=1,EE,40B603D8,extended,00030004
+patch=1,EE,0000000F,extended,00000001
