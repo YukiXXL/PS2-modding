@@ -3,7 +3,7 @@ Any contributers are welcome. :)
 
 # Table of contents <br/>
 ### **Cheat Codes** (The name already tells) <br/>
-### **Save files** (Premade modded save files) <br/>
+### **Save files** (Custom save files) <br/>
 ### **Tools** (Tools for modding purposes):
 - **Cheat Engine Tables** (Tables for use with Cheat Engine)
 - **PS2DIS** (Premade files with labels for use with PS2DIS)
