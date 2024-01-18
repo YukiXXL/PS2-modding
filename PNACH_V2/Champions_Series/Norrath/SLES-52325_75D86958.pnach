@@ -1,0 +1,20 @@
+gametitle=Champions of Norrath Final Release (PAL)
+
+[No interlacing]
+gsinterlacemode=1
+patch=1,EE,20196238,extended,AE200008
+
+[Cheats\All difficulties available]
+author=YukiXXL
+description=Unlocks all difficulties.
+patch=1,EE,00443168,extended,00000003
+
+[Misc\Enable Debug Mode]
+author=YukiXXL
+description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
+patch=1,EE,2025C6B0,extended,00000000
+
+[Misc\Increase difficulty by 1]
+author=YukiXXL
+description=Increases the selected difficulty by one.
+patch=1,EE,001D0014,extended,26A20002

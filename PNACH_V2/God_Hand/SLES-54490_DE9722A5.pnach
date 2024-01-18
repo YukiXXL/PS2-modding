@@ -1,0 +1,18 @@
+gametitle=God Hand Final Release (PAL)
+
+[Addons\DEAD PAN]
+author=TCRF.net
+description=Enables DEAD PAN Roullete.
+patch=1,EE,201250A8,extended,00001021
+patch=1,EE,201251CC,extended,00001021
+patch=1,EE,20125264,extended,00002021
+patch=1,EE,20125338,extended,00001821
+
+[Cheats\Costumes have Double God Hands]
+author=YukiXXL
+description=Selecting any costume gives Double God Hands.
+patch=1,EE,E004802D,extended,015386D8
+patch=1,EE,215386D8,extended,24100001
+patch=1,EE,015386FC,extended,24100005
+patch=1,EE,01538704,extended,24100007
+patch=1,EE,01538708,extended,24100003

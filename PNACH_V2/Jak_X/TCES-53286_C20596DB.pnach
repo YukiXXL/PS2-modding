@@ -1,0 +1,50 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+[Addons\Offline\Online = Mode Select]
+patch=1,EE,E0017C79,extended,012CB4D8
+patch=1,EE,212CB4D8,extended,002CA2F1
+
+[Addons\Events\Unlock all events]
+patch=1,EE,E00162A4,extended,002D79F8
+patch=1,EE,102D79F8,extended,00B86304
+
+[Addons\Events\Enable all events for SS]
+patch=1,EE,E001FFFE,extended,012CFDFC
+patch=1,EE,012CFDFC,extended,64A6FFFD
+
+[Addons\Events\Reversi\Enable Reversi on Dirt Stadium]
+description=Replaces Mar Coliseum.
+patch=1,EE,E0026F63,extended,009A02B8
+patch=1,EE,209A0294,extended,009A3B44
+patch=1,EE,209A0298,extended,009A3B24
+
+[Addons\Events\Reversi\Enable Reversi on Clifftop Battlefield]
+description=Replaces Desert Arena.
+patch=1,EE,E0026564,extended,009A07F8
+patch=1,EE,209A07D4,extended,009A39A4
+patch=1,EE,209A07D8,extended,009A3984
+
+[Addons\Hidden\Enable Mongoose]
+patch=1,EE,E0010009,extended,012CE8B8
+patch=1,EE,012CE8B8,extended,80840006
+
+[Addons\Hidden\Enable Taryn]
+patch=1,EE,E001FFF9,extended,00BCC180
+patch=1,EE,00BCC180,extended,6463FFF8
+
+[Misc\Bypasses\5 CPUs, 6 Players for event]
+description=Saves when trying to start the game.
+patch=1,EE,E0035567,extended,012D2AC4
+patch=1,EE,112D2AC0,extended,24030506
+patch=1,EE,212D2AC4,extended,1000003F
+patch=1,EE,212D2AC8,extended,A443000C
+
+[Misc\Other\Scene Player Act 3 = PSP Scan]
+patch=1,EE,E002D9A4,extended,012D6494
+patch=1,EE,012D63B0,extended,14640038
+patch=1,EE,112D6494,extended,66E8D4D4
+
+[Misc\Other\Falcon = Mongoose for customization]
+patch=1,EE,E001D24D,extended,012E4888
+patch=1,EE,212E4888,extended,002CC5B1

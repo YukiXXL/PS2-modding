@@ -1,4 +1,4 @@
-"Jak X: Combat Racing /ID GK_BS.ELF"
+"Jak X: Combat Racing /ID SCED_536.60"
 //ELF CRC=64309A5D
 sceSifSendCmd   : 90113550 0C044CFC
 scePad2Read     : 901B08A8 0C042889

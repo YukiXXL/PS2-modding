@@ -5,7 +5,7 @@ comment=MISC - GAMEPLAY
 patch=1,EE,20275B84,extended,00000000
 // For Temple of Mars crash fix
 //Giant Hornet fixed
-patch=1,EE,203B31B0,extended,001e71e0
+patch=1,EE,203B31B0,extended,001E71E0
 
 //Stop auto-killing entities
 patch=1,EE,201F8108,extended,03E00008

@@ -3,6 +3,7 @@ Any contributers are welcome. :)
 
 # Table of contents <br/>
 ### **Cheat Codes** (The name already tells) <br/>
+### **PNACH_V2** (Codes for the new pnach system) <br/>
 ### **Save files** (Custom save files) <br/>
 ### **Tools** (Tools for modding purposes):
 - **Cheat Engine Tables** (Tables for use with Cheat Engine)

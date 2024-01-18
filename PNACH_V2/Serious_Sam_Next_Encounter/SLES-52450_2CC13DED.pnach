@@ -1,0 +1,188 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL)
+
+// ADDONS - GAMEPLAY
+
+[Addons\Gameplay\480p]
+author=YukiXXL
+patch=1,EE,202F97DC,extended,3C050000
+patch=1,EE,202F97E4,extended,3C060050
+patch=1,EE,202F97EC,extended,3C070001
+
+[Addons\Gameplay\60 FPS]
+patch=1,EE,201273A8,extended,00000000
+
+[Addons\Gameplay\Alternative Screen Mode\Enable]
+author=YukiXXL
+description=Saved after starting Split-Screen game second time!
+patch=1,EE,2027C57C,extended,AC510018
+patch=1,EE,2027C580,extended,16200004
+
+[Addons\Gameplay\Alternative Screen Mode\Restore]
+author=YukiXXL
+description=Saved after starting Split-Screen game second time!
+patch=1,EE,2027C57C,extended,AC400018
+
+// ADDONS - MENUS
+
+[Addons\Menus\Make a cool loading screen]
+author=YukiXXL
+patch=1,EE,203A79A4,extended,00676E69
+patch=1,EE,003A79A8,extended,00000000
+
+[Addons\Menus\Replace SamLogo video with Gotham games]
+author=YukiXXL
+patch=1,EE,203BE840,extended,68746F47
+patch=1,EE,203BE844,extended,00006D61
+
+[Addons\Menus\Replace Main Menu music with Hidden music]
+author=YukiXXL
+patch=1,EE,2033DC30,extended,7C63E0AA
+
+// ADDONS - OTHER
+
+[Addons\Other\Enable single Deagle/Uzi]
+author=YukiXXL
+description=Enables switching to only one Deagle/Uzi.
+patch=1,EE,00224B74,extended,30420002
+
+[Addons\Other\Get Medals on Easy Difficulty]
+author=YukiXXL
+patch=1,EE,20270F98,extended,04410005
+patch=1,EE,20271AB0,extended,04410014
+
+[Addons\Other\Texture quality\High]
+author=YukiXXL
+patch=1,EE,00344344,byte,0
+
+[Addons\Other\Texture quality\Low]
+author=YukiXXL
+patch=1,EE,00344344,byte,1
+
+[Addons\Other\Remove letterbox on cutscenes]
+author=YukiXXL
+patch=1,EE,2068D9DC,extended,00000000
+
+[Addons\Other\Enable female sounds for female models]
+author=YukiXXL
+description=Cheerleader, Vampire and Nesbot
+patch=1,EE,20694854,byte,1
+patch=1,EE,20694934,byte,1
+patch=1,EE,2069496C,byte,1
+
+// ADDONS - SP/COOP
+
+[Addons\SP-COOP\Multiplayer model in Single Player]
+author=YukiXXL
+patch=1,EE,2020BDEC,extended,10000005
+patch=1,EE,202113D4,extended,10000003
+
+[Addons\SP-COOP\Don't restart from a Checkpoint in SP]
+author=YukiXXL
+description=Like in COOP
+patch=1,EE,00202690,extended,28420001
+
+[Addons\SP-COOP\Prevent teleporting players in COOP]
+author=YukiXXL
+patch=1,EE,001E2938,extended,28420009
+
+[Addons\SP-COOP\Fake Byte\Enable for COOP-like]
+author=YukiXXL
+description=Used for stuff below.
+patch=1,EE,0036C350,byte,1
+
+[Addons\SP-COOP\Fake Byte\Pickup effects]
+author=YukiXXL
+patch=1,EE,00241914,extended,8C64C350
+
+[Addons\SP-COOP\Fake Byte\Ricochet bullets]
+author=YukiXXL
+patch=1,EE,00275B64,extended,8C43C350
+
+[Addons\SP-COOP\Fake Byte\Get Medals]
+author=YukiXXL
+patch=1,EE,00270F84,extended,8C43C350
+patch=1,EE,00271A90,extended,8C43C350
+
+// ADDONS - ONLINE LEVELS IN OFFLINE CODES
+
+[Addons\Online-Offline\ONLINE LEVELS IN OFFLINE CODES]
+author=YukiXXL
+description=LevelSet saved!
+//Enable Online levels in Offline
+patch=1,EE,2025F9F4,extended,24050003
+patch=1,EE,2025F9F8,extended,AC450018
+//Load Offline LevelSet in Online
+patch=1,EE,10260E60,extended,2631F978
+//Change levels for Offline mode
+patch=1,EE,00264800,extended,24040000
+//Load Online LevelSet instead of Offline
+patch=1,EE,4025F460,extended,00030006
+patch=1,EE,26084E58,extended,00000000
+
+// ADDONS - PLAY ONLINE GAMEMODES CODES
+
+[Addons\Online-Offline\PLAY ONLINE GAMEMODES CODES]
+author=YukiXXL
+description=Online button is used.
+//Enable Online in Offline
+patch=1,EE,1025CB00,extended,0C0A83A0
+//Host Game = Select Profiles
+patch=1,EE,00264D98,extended,24050099
+//For Online
+patch=1,EE,D036DFE8,extended,00000001
+patch=1,EE,2027CFF0,extended,24050001
+//For Offline
+patch=1,EE,D036DFE8,extended,00000000
+patch=1,EE,2027CFF0,extended,00000000
+//Return to "Host Game" after exiting
+patch=1,EE,10267A78,extended,240500D0
+//End Screen names fix
+patch=1,EE,20220BFC,extended,0000102D
+
+// CHEATS - PROFILE
+
+[Cheats\Profile\Have All Gold Medals]
+author=YukiXXL
+description=Save the game and restart with cheat disabled.
+patch=1,EE,20221340,extended,3C04C000
+patch=1,EE,20221348,extended,AC440018
+
+[Cheats\Profile\Unlock All Levels]
+author=YukiXXL
+description=Saved onto profile!
+patch=1,EE,202207FC,extended,2403001F
+patch=1,EE,20220800,extended,AC430018
+
+// CHEATS - OTHER
+
+[Cheats\Other\Enable all cheats]
+author=YukiXXL
+description=Fly: D-PAD LEFT/RIGHT = Enable/Disable. L2 = GO DOWN; R2 = GO UP.
+patch=1,EE,2016472C,extended,24020001
+
+[Cheats\Other\Enable cheats in all other gamemodes]
+author=YukiXXL
+patch=1,EE,00270730,extended,2442FFFB
+patch=1,EE,0020CF5C,extended,2463FFFB
+
+// MISC - MENUS
+
+[Misc\Menus\Maximum number of options = 11]
+author=YukiXXL
+description=For 'Seriously Silly' weapons type.
+patch=1,EE,2025114C,extended,2403000B
+
+// MISC - GAMEPLAY
+
+[Misc\Gameplay\Spawn on the start]
+author=YukiXXL
+description=Spawns all enemies on the start.
+//Spawn on the start
+patch=1,EE,20275FAC,extended,00000000
+//Giant Hornet fixed
+patch=1,EE,203B3C80,extended,001E7030
+
+[Misc\Gameplay\Stop auto-killing entities]
+author=YukiXXL
+patch=1,EE,201F7F58,extended,03E00008
+patch=1,EE,201F7F5C,extended,00000000
