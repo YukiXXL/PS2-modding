@@ -1,0 +1,10 @@
+gametitle= Tekken 4 Trade Demo (NTSC-U)
+
+[Addons\Force Progressive Scan picker]
+author=YukiXXL
+description=Enables the ProScan menu on Fast Boot mode.
+patch=1,EE,001EC98C,extended,24020000
+
+[Misc\Turbo Mode]
+author=TCRF.net
+patch=1,EE,0036DC8C,extended,00000001

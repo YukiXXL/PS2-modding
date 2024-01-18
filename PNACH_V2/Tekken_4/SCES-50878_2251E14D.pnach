@@ -1,5 +1,5 @@
 gametitle= Tekken 4 (PAL-E)
-comment=from TCRF
 
-//Turbo Mode
+[Misc\Turbo Mode]
+author=TCRF.net
 patch=1,EE,00359E8C,extended,00000001
