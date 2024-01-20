@@ -1,0 +1,410 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+// CHEATS
+
+[Cheats\Jak Vehicle Unkillable]
+description=From Debug menu
+patch=1,EE,E002012B,extended,00F16B60
+patch=1,EE,20F16B60,extended,66E30004
+patch=1,EE,20F16B64,extended,AEE317DB
+
+[Cheats\cheat_default_gun_in_race]
+patch=1,EE,E002DC63,extended,00F2194C
+patch=1,EE,20F2194C,extended,66E30004
+patch=1,EE,20F21950,extended,AEE3DC63
+
+// ADDONS
+// - DEBUG
+[Addons\Debug\Target Status]
+description=Shows HP and MPH.
+patch=1,EE,E003012B,extended,00F16B88
+patch=1,EE,10A888F0,extended,8EE30137
+patch=1,EE,20F16B88,extended,66E30004
+patch=1,EE,20F16B8C,extended,AEE317C3
+
+[Addons\Debug\Enable pausing using SELECT]
+description=Like in Jak 2/3
+patch=1,EE,E003012B,extended,00F18A4C
+patch=1,EE,10A7F51C,extended,8EE30137
+patch=1,EE,10A8BB54,extended,8EE30137
+patch=1,EE,10F18A4C,extended,8EE30137
+
+[Addons\Debug\Enable 2nd Player to pause]
+patch=1,EE,E001012B,extended,00A8BB88
+patch=1,EE,10A8BB88,extended,8EE30137
+
+// - EVENTS
+[Addons\Events\Enable all sub-options all the time]
+patch=1,EE,E00197CC,extended,00E27CB0
+patch=1,EE,00E27CB0,extended,66E497D0
+
+[Addons\Events\Other events have Collectathon options]
+description=Tutorial, Mizo Race, etc.
+patch=1,EE,E001002C,extended,013CC5E0
+patch=1,EE,113CC5E0,extended,1000FE92
+
+// - MORE LAPS / MORE TIME
+[Addons\More Laps and More Time]
+//Safe Check
+patch=1,EE,E006200B,extended,013CCFA4
+//Increase the number of max laps
+patch=1,EE,213CCF1C,extended,240600FF
+patch=1,EE,213CCF20,extended,ACA60004
+patch=1,EE,213CCF24,extended,8CA50004
+//Minimum number of laps is 0
+patch=1,EE,213CCF9C,extended,0000302D
+patch=1,EE,213CCFA0,extended,ACA60000
+patch=1,EE,213CCFA4,extended,8CA50000
+
+// - OFFLINE WITH WORKING ONLINE MENUS
+[Addons\Offline with working Online menus]
+//Memory Check
+patch=1,EE,E00600DC,extended,0131A950
+//Drop to Screen Select
+patch=1,EE,0131A950,extended,9C630050
+patch=1,EE,0131A9E0,extended,9C630050
+//"Create Game" drops to offline lobby
+patch=1,EE,01316784,extended,9C63009C
+//Skip DNAS check for Online
+patch=1,EE,0131682C,extended,24030000
+//Skip the "Quit Message". Fixes crashes if attempting to create the game again.
+patch=1,EE,2130C428,extended,10000007
+//Disable "Invite Buddy" option which softlocks the game.
+patch=1,EE,21312598,extended,10000005
+//Minimum number of Humans = 1
+patch=1,EE,E0020002,extended,0131A9B8
+patch=1,EE,0131A928,extended,24030001
+patch=1,EE,0131A9B8,extended,24030001
+
+[Addons\Other\Scan and get all secret characters + Daxtermobile]
+patch=1,EE,E003FE79,extended,013E9A14
+patch=1,EE,213E9A14,extended,2404000F
+patch=1,EE,213E9A18,extended,14E0FE78
+patch=1,EE,213E9A1C,extended,24050001
+
+[Addons\Other\Enable customizing Sand Shark, Naughty Dog, Daxtermobile]
+patch=1,EE,E00406BB,extended,01354864
+patch=1,EE,2135485C,extended,1000000C
+patch=1,EE,213542D0,extended,00000000
+patch=1,EE,213543A8,extended,00000000
+patch=1,EE,213544E8,extended,00000000
+
+// EXPERIMENTAL
+// - ARTIST
+[Experimental\artist-artist-task]
+//Save game mode to currently used address
+patch=1,EE,E0020002,extended,00F21938
+patch=1,EE,20F21934,extended,24040012
+patch=1,EE,20F21938,extended,A0640005
+//remove infinite black-screen
+patch=1,EE,E0010008,extended,00A8C844
+patch=1,EE,20A8C844,extended,00000000
+
+// - BACKWARDS
+[Experimental\Drive Backwards\Load SS maps in SP]
+description="Jak Vehicle Unkillable" NEEDED!
+patch=1,EE,E0010018,extended,00BD18F8
+patch=1,EE,00BD18F8,extended,9C65001C
+
+[Experimental\Drive Backwards\Region Fixes]
+description=When in-game, press SELECT. Press START to reset.
+//want-load does nothing
+patch=1,EE,E000FFFF,extended,00A5D6C8
+patch=1,EE,10A5D6C8,extended,64630000
+//Region, on-enter(want-display), as in SS
+patch=1,EE,E001000A,extended,00BBA37C
+patch=1,EE,20BBA37C,extended,1000000A
+//want-display 2
+patch=1,EE,E001001A,extended,009C89D4
+patch=1,EE,209C89D4,extended,00000000
+//SELECT = fix the display thingy
+patch=1,EE,E001FFFE,extended,0028361C
+patch=1,EE,20A820A0,extended,00000000
+//START = Default
+patch=1,EE,E001FFF7,extended,0028361C
+patch=1,EE,20A820A0,extended,10600031
+
+// - EXTRA EVENTS
+[Experimental\Extra Events]
+//Change load location
+patch=1,EE,E0010214,extended,002E8DF8
+patch=1,EE,002E8DF8,extended,00B60204
+//Add events
+patch=1,EE,E0060204,extended,002E8DF8
+patch=1,EE,20B60200,extended,002FB2E4
+patch=1,EE,20B60204,extended,0000000F
+patch=1,EE,20B60208,extended,0000000F
+patch=1,EE,20B6020C,extended,00B5B4B4
+patch=1,EE,40B60210,extended,00040001
+patch=1,EE,00B603C0,extended,00000010
+//Add event modes
+patch=1,EE,E003B4B4,extended,00B6020C
+patch=1,EE,00B603C8,extended,0000000C
+patch=1,EE,40B603D8,extended,00030004
+patch=1,EE,0000000F,extended,00000001
+
+// MISC
+//CPUs
+[Misc\CPUs\5 CPUs on Death Race and Rush Hour]
+patch=1,EE,E0010004,extended,00BCD4B8
+patch=1,EE,00BCD4B8,extended,24130005
+
+[Misc\CPUs\5 CPUs on Freeze Rally]
+patch=1,EE,E0010000,extended,00BCD4DC
+patch=1,EE,00BCD4DC,extended,24130005
+
+[Misc\CPUs\Selectable CPUs]
+description="Enable all sub-options all the time" required!
+//5 MAX CPUs on any game modes
+patch=1,EE,E001000D,extended,0130BADC
+patch=1,EE,2130BADC,extended,24030005
+//Load selected CPUs on all gamemodes
+patch=1,EE,E0030027,extended,00BCD348
+patch=1,EE,20BCD348,extended,10000027
+//Save 5 CPUs as a MAX
+patch=1,EE,20BCD428,extended,24050005
+patch=1,EE,20BCD458,extended,A045000D
+
+// - EVENTS
+[Misc\Events\Force a GameMode onto selected event\Mizo]
+description=Select the event, change the car or body color, goto previous menu.
+patch=1,EE,E0020000,extended,00F2193C
+patch=1,EE,20F21934,extended,24040011
+patch=1,EE,20F2193C,extended,A0640005
+
+[Misc\Events\Freeze Rally = Training]
+patch=1,EE,E0010002,extended,00B60298
+patch=1,EE,00B60298,extended,0000000F
+
+[Misc\Events\Rush Hour = Training 2]
+patch=1,EE,E001000D,extended,00B60278
+patch=1,EE,00B60278,extended,00000010
+
+[Misc\Events\Time Attack = Mizo]
+patch=1,EE,E0010003,extended,00B60268
+patch=1,EE,00B60268,extended,00000011
+
+// - OTHER
+[Misc\Other\Freeze Rally with Circuit options]
+patch=1,EE,E001002C,extended,013CB964
+patch=1,EE,113CB964,extended,1000FE8E
+
+// ONLINE-LAN
+// - DNAS BYPASS
+[Online-Lan\DNAS Bypass\Enable]
+author=Erdrick The Hero
+description=Connect to online games more reliably.
+patch=1,EE,D1080274,extended,00000006
+patch=1,EE,01080268,extended,00000000
+patch=1,EE,D1080274,extended,00000006
+patch=1,EE,01080274,extended,00000005
+
+[Online-Lan\DNAS Bypass\Enable Alternative Version]
+author=Erdrick The Hero
+description=Likely unneeded, try this instead if the above doesn't work.
+patch=1,EE,D1080274,extended,24020006
+patch=1,EE,01080268,extended,00000000
+patch=1,EE,D1080274,extended,24020006
+patch=1,EE,01080274,extended,00000005
+
+// - EVENTS
+[Online-Lan\Events\Enable All Events]
+patch=1,EE,E001182F,extended,0131D9C4
+patch=1,EE,2131D9C4,extended,0000182D
+
+[Online-Lan\Events\Enable Freeze Rally, Death Race, Rush Hour]
+patch=1,EE,E002FFFF,extended,0131D968
+patch=1,EE,0131D950,extended,6463FFFD
+patch=1,EE,0131D968,extended,6464FFFD
+
+[Online-Lan\Events\Enable Time Trial for LAN]
+patch=1,EE,E001FFFD,extended,0131D9E8
+patch=1,EE,0131D9E8,extended,6463FFFC
+
+[Online-Lan\Events\Enable Time Trial for more players]
+patch=1,EE,E002FFFD,extended,0131DAE4
+patch=1,EE,0131DAB0,extended,6464FFFC
+patch=1,EE,0131DAE4,extended,6464FFFC
+
+// - OTHER
+[Online-Lan\5 CPUs, 6 Players for events]
+description=Saves onto the event and map when trying to start the event.
+patch=1,EE,E0045567,extended,0131458C
+patch=1,EE,2131457C,extended,28630006
+patch=1,EE,11314588,extended,24030506
+patch=1,EE,2131458C,extended,10000095
+patch=1,EE,21314590,extended,A443000C
+
+// SPLIT-SCREEN
+// - BYPASSES
+[Split-Screen\Bypasses\Bypass Event Checks]
+//Bypass event check for SS
+patch=1,EE,E001FFFE,extended,0130C584
+patch=1,EE,0130C584,extended,6464FFFD
+//Bypass event check for SS (LAN/Online)
+patch=1,EE,E001FFFE,extended,0130CA50
+patch=1,EE,0130CA50,extended,6464FFFD
+//Rush Hour check (LAN/Online)
+patch=1,EE,E001FFF3,extended,01314230
+patch=1,EE,01314230,extended,6464FFF0
+//Time Attack check (LAN/Online)
+patch=1,EE,E001FFFD,extended,013141F8
+patch=1,EE,013141F8,extended,6463FFFA
+
+[Split-Screen\Bypasses\Bypass Maps Checks]
+description=Use this if NOT the host (Online-LAN).
+//Bypass SS checking for SS maps
+patch=1,EE,E001FFFE,extended,0130C630
+patch=1,EE,0130C630,extended,6463FFFD
+//Bypass SS checking for SS maps (LAN/Online)
+patch=1,EE,E001FFFE,extended,0130CAFC
+patch=1,EE,0130CAFC,extended,6464FFFD
+
+[Split-Screen\Bypasses\Start the SS game with bypasses (LAN/Online)]
+patch=1,EE,E001001C,extended,01314308
+patch=1,EE,01314308,extended,9C630018
+
+// - MAP FIXES
+[Split-Screen\Map Fixes\Tours]
+description=Due to missing map for SS, SP one is loaded.
+//Check in case to avoid crashes
+patch=1,EE,E004726B,extended,00992018
+//Western Tour (kratour-start-1)
+patch=1,EE,20992000,extended,00992014
+//Eastern Tour (havtour-junglec-1)
+patch=1,EE,20991F90,extended,00991FA4
+//Northern Tour (spatour-templea-1)
+patch=1,EE,20991CB0,extended,00991CC4
+//Southern Tour (icetour-start)
+patch=1,EE,20991490,extended,009914A4
+
+[Split-Screen\Map Fixes\Freeze Rally]
+//Check in case to avoid crashes
+patch=1,EE,E0147073,extended,009930A8
+//Kras City (krasx-start)
+patch=1,EE,20991C60,extended,00992AA4
+//Loading Docks (docksx-1)
+patch=1,EE,20990EA0,extended,009931A4
+//Deathdrome (drome-dromex-1)
+patch=1,EE,20990DB0,extended,00992EF4
+//Waterfront Loop (dockkrax-start)
+patch=1,EE,20992700,extended,00991F34
+//Seaport Strip (dromdocx-start)
+patch=1,EE,20990B80,extended,00993014
+//Forbidden Jungle (junglex-start)
+patch=1,EE,20992D00,extended,00992654
+//Haven City (havenx-start)
+patch=1,EE,20990680,extended,00992124
+//Sewer Raceway (sewerx-start)
+patch=1,EE,20991690,extended,009928E4
+//City Outskirts (havjungx-start)
+patch=1,EE,20990720,extended,00992404
+//Waterworks Circuit (havsewx-start)
+patch=1,EE,20991930,extended,00991794
+//Spargus City (spargusx-start)
+patch=1,EE,20993090,extended,00993234
+//Canyon Run (canyonx-start)
+patch=1,EE,209920C0,extended,00992494
+//Precursor Temple (templex-start)
+patch=1,EE,20990D60,extended,00992BF4
+//Beachfront Drive (cansparx-start)
+patch=1,EE,209913A0,extended,00992854
+//Badland Sanctuary (spartemx-start)
+patch=1,EE,2098F9B0,extended,00992324
+//Frozen Speedway (snowx-start)
+patch=1,EE,20990C70,extended,00992C84
+//Mountaintop Highway (peakx-start)
+patch=1,EE,20991B20,extended,00992DD4
+//Icebound Citadel (icex-start)
+patch=1,EE,20991ED0,extended,00992E64
+//Glacier Alley (icebergx-start)
+patch=1,EE,2098F870,extended,00992244
+//Timberline Track (icepassx-start)
+patch=1,EE,2098F8C0,extended,00992B14
+
+[Split-Screen\Map Fixes\Time Attack]
+//Check in case to avoid crashes
+patch=1,EE,E018726B,extended,00990648
+//Kras City
+patch=1,EE,20990630,extended,00992AA4
+//Loading Docks
+patch=1,EE,209905E0,extended,009931A4
+//Deathdrome
+patch=1,EE,20990590,extended,00992EF4
+//Waterfront Loop
+patch=1,EE,20990540,extended,00991F34
+//Seaport Strip
+patch=1,EE,209904F0,extended,00993014
+//Forbidden Jungle
+patch=1,EE,20990450,extended,00992654
+//Haven City
+patch=1,EE,20990400,extended,00992124
+//Sewer Raceway
+patch=1,EE,209903B0,extended,009928E4
+//City Outskirts
+patch=1,EE,20990360,extended,00992404
+//Waterworks Circuit
+patch=1,EE,20990310,extended,00991794
+//Spargus City
+patch=1,EE,20990270,extended,00993234
+//Canyon Run
+patch=1,EE,20990220,extended,00992494
+//Precursor Temple
+patch=1,EE,209901D0,extended,00992BF4
+//Beachfront Drive
+patch=1,EE,20990180,extended,00992854
+//Badland Sanctuary
+patch=1,EE,20990130,extended,00992324
+//Frozen Speedway
+patch=1,EE,20990090,extended,00992C84
+//Mountaintop Highway
+patch=1,EE,20990040,extended,00992DD4
+//Icebound Citadel
+patch=1,EE,2098FFF0,extended,00992E64
+//Glacier Alley
+patch=1,EE,2098FFA0,extended,00992244
+//Timberline Track
+patch=1,EE,2098FF50,extended,00992B14
+
+[Split-Screen\Map Fixes\Tutorials and Mizo]
+//Fixes for Split-Screen
+patch=1,EE,E0041801,extended,0098FD70
+//kras-training
+patch=1,EE,209932B0,extended,009932C4
+//cliffs-training
+patch=1,EE,2098FDC0,extended,00992F84
+//kratour-final-boss-start
+patch=1,EE,2098F610,extended,0098F624
+//snow-training2
+patch=1,EE,2098FD70,extended,00992CA4
+
+// - TOURS
+[Split-Screen\Tours\Tours Fix\Enable]
+description=L3+SELECT when on Tour; L3+START when not.
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E005FFFC,extended,0028371C
+//Region, on-enter(want-display), as in SP
+patch=1,EE,00BBA3AC,extended,9C730044
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A5D6C4,extended,8EE3745B
+patch=1,EE,20A5D6C8,extended,28630001
+patch=1,EE,20A5D6CC,extended,AEE3745B
+//Reset the counter on start/restart
+patch=1,EE,20EB68F8,extended,AEE0745B
+//2nd controller: L3+START to deactivate
+patch=1,EE,E005FFF5,extended,0028371C
+//Region, on-enter(want-display), as in SP
+patch=1,EE,00BBA3AC,extended,9C730048
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A5D6C4,extended,8EE3745F
+patch=1,EE,20A5D6C8,extended,6463FFFF
+patch=1,EE,20A5D6CC,extended,66E40004
+//Reset the counter on start/restart
+patch=1,EE,20EB68F8,extended,00000000
+
+[Split-Screen\Tours\Tours Fix\Next Level Insta Load]
+description=Don't change the display command from display.
+patch=1,EE,E0020004,extended,009C95F0
+patch=1,EE,209C9578,extended,00000000
+patch=1,EE,209C95F0,extended,00000000

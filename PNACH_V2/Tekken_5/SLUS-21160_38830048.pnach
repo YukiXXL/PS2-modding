@@ -1,0 +1,454 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+
+// ADDONS
+
+[Addons\Enable P2 to join]
+author=YukiXXL
+patch=1,EE,201178A4,extended,8F82C838
+
+[Addons\Bypass Demo protection]
+author=YukiXXL
+description=MUST HAVE!
+patch=1,EE,20123FD0,extended,0461001D
+
+// MISC
+
+[Misc\Red color health bars]
+author=YukiXXL
+patch=1,EE,001D190C,extended,2405000C
+
+// - STAGE
+
+[Misc\Force stage\Dragon's Nest]
+author=YukiXXL
+patch=1,EE,002B8B48,extended,00000000
+
+[Misc\Force stage\Burning Temple]
+author=YukiXXL
+patch=1,EE,002B8B48,extended,00000001
+
+[Misc\Force stage\Waterfall]
+author=YukiXXL
+patch=1,EE,002B8B48,extended,00000002
+
+[Misc\Force stage\City at Sunset]
+author=YukiXXL
+patch=1,EE,002B8B48,extended,00000004
+
+[Misc\Force stage\The Final Frontier]
+author=YukiXXL
+patch=1,EE,002B8B48,extended,00000012
+
+// - ROUNDS
+
+[Misc\Number of Rounds\2]
+author=YukiXXL
+patch=1,EE,00121F74,extended,24040002
+
+[Misc\Number of Rounds\3]
+author=YukiXXL
+patch=1,EE,00121F74,extended,24040003
+
+[Misc\Number of Rounds\4]
+author=YukiXXL
+patch=1,EE,00121F74,extended,24040004
+
+[Misc\Number of Rounds\5]
+author=YukiXXL
+patch=1,EE,00121F74,extended,24040005
+
+// GAMEMODES
+
+[GameModes\Training]
+author=YukiXXL
+description=Needs Character Select!
+//Launch Training Mode
+patch=1,EE,20122B48,extended,24040007
+//Crash fix
+patch=1,EE,0012EE2C,extended,24030001
+
+[GameModes\Demo like Gamemode]
+author=YukiXXL
+description=Random chars/stages.
+patch=1,EE,10123670,extended,0C04A1D2
+
+// GAMEMODE NUMBER 9
+
+[GameModes\Number 9\Enable]
+author=YukiXXL
+patch=1,EE,20122B48,extended,24040009
+
+[GameModes\Number 9\Enable Alternative Version]
+author=YukiXXL
+patch=1,EE,10123670,extended,0C04A25A
+
+// LEFT CHAR
+
+// PAUL
+[GameModes\Number 9\ForceEnableCharacters\Left\Paul (Costume 1)]
+patch=1,EE,00128978,extended,24050000
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Paul (Costume 2)]
+patch=1,EE,00128978,extended,24050001
+// LAW
+[GameModes\Number 9\ForceEnableCharacters\Left\Law (Costume 1)]
+patch=1,EE,00128978,extended,24050002
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Law (Costume 2)]
+patch=1,EE,00128978,extended,24050003
+// LEI
+[GameModes\Number 9\ForceEnableCharacters\Left\Lei (Costume 1)]
+patch=1,EE,00128978,extended,24050005
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Lei (Costume 2)]
+patch=1,EE,00128978,extended,24050006
+// KING
+[GameModes\Number 9\ForceEnableCharacters\Left\King (Costume 1)]
+patch=1,EE,00128978,extended,24050007
+
+[GameModes\Number 9\ForceEnableCharacters\Left\King (Costume 2)]
+patch=1,EE,00128978,extended,24050008
+// YOSHIMITSU
+[GameModes\Number 9\ForceEnableCharacters\Left\Yoshimitsu (Costume 1)]
+patch=1,EE,00128978,extended,24050009
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Yoshimitsu (Costume 2)]
+patch=1,EE,00128978,extended,2405000A
+// NINA
+[GameModes\Number 9\ForceEnableCharacters\Left\Nina (Costume 1)]
+patch=1,EE,00128978,extended,2405000C
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Nina (Costume 2)]
+patch=1,EE,00128978,extended,2405000D
+// HOWARANG
+[GameModes\Number 9\ForceEnableCharacters\Left\Howarang (Costume 1)]
+patch=1,EE,00128978,extended,2405000E
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Howarang (Costume 2)]
+patch=1,EE,00128978,extended,2405000F
+// XIAOLING
+[GameModes\Number 9\ForceEnableCharacters\Left\Xiaoling (Costume 1)]
+patch=1,EE,00128978,extended,24050010
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Xiaoling (Costume 2)]
+patch=1,EE,00128978,extended,24050011
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Xiaoling (Costume 3)]
+patch=1,EE,00128978,extended,24050012
+// CHRISTIE
+[GameModes\Number 9\ForceEnableCharacters\Left\Christie (Costume 1)]
+patch=1,EE,00128978,extended,24050015
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Christie (Costume 2)]
+patch=1,EE,00128978,extended,24050016
+// JIN
+[GameModes\Number 9\ForceEnableCharacters\Left\Jin (Costume 1)]
+patch=1,EE,00128978,extended,24050019
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Jin (Costume 2)]
+patch=1,EE,00128978,extended,2405001A
+// JULIA
+[GameModes\Number 9\ForceEnableCharacters\Left\Julia (Costume 1)]
+patch=1,EE,00128978,extended,2405001C
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Julia (Costume 2)]
+patch=1,EE,00128978,extended,2405001D
+// BRIAN
+[GameModes\Number 9\ForceEnableCharacters\Left\Brian (Costume 1)]
+patch=1,EE,00128978,extended,24050020
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Brian (Costume 2)]
+patch=1,EE,00128978,extended,24050021
+// KAZUYA
+[GameModes\Number 9\ForceEnableCharacters\Left\Kazuya (Costume 1)]
+patch=1,EE,00128978,extended,24050024
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Kazuya (Costume 2)]
+patch=1,EE,00128978,extended,24050025
+// LEE
+[GameModes\Number 9\ForceEnableCharacters\Left\Lee (Costume 1)]
+patch=1,EE,00128978,extended,24050026
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Lee (Costume 2)]
+patch=1,EE,00128978,extended,24050027
+// STEVE
+[GameModes\Number 9\ForceEnableCharacters\Left\Steve (Costume 1)]
+patch=1,EE,00128978,extended,24050029
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Steve (Costume 2)]
+patch=1,EE,00128978,extended,2405002A
+// MARDUK
+[GameModes\Number 9\ForceEnableCharacters\Left\Marduk (Costume 1)]
+patch=1,EE,00128978,extended,2405002B
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Marduk (Costume 2)]
+patch=1,EE,00128978,extended,2405002C
+// JAK-5
+[GameModes\Number 9\ForceEnableCharacters\Left\Jak-5 (Costume 1)]
+patch=1,EE,00128978,extended,2405002F
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Jak-5 (Costume 2)]
+patch=1,EE,00128978,extended,24050030
+// ASUKA
+[GameModes\Number 9\ForceEnableCharacters\Left\Asuka (Costume 1)]
+patch=1,EE,00128978,extended,2405003B
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Asuka (Costume 2)]
+patch=1,EE,00128978,extended,2405003C
+// RAVEN
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 1)]
+patch=1,EE,00128978,extended,24050046
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 2)]
+patch=1,EE,00128978,extended,24050047
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 3)]
+patch=1,EE,00128978,extended,24050048
+// FENG
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 1)]
+patch=1,EE,00128978,extended,24050049
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 2)]
+patch=1,EE,00128978,extended,2405004A
+
+// RIGHT CHAR
+
+// PAUL
+[GameModes\Number 9\ForceEnableCharacters\Left\Paul (Costume 1)]
+patch=1,EE,00128984,extended,24050000
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Paul (Costume 2)]
+patch=1,EE,00128984,extended,24050001
+// LAW
+[GameModes\Number 9\ForceEnableCharacters\Left\Law (Costume 1)]
+patch=1,EE,00128984,extended,24050002
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Law (Costume 2)]
+patch=1,EE,00128984,extended,24050003
+// LEI
+[GameModes\Number 9\ForceEnableCharacters\Left\Lei (Costume 1)]
+patch=1,EE,00128984,extended,24050005
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Lei (Costume 2)]
+patch=1,EE,00128984,extended,24050006
+// KING
+[GameModes\Number 9\ForceEnableCharacters\Left\King (Costume 1)]
+patch=1,EE,00128984,extended,24050007
+
+[GameModes\Number 9\ForceEnableCharacters\Left\King (Costume 2)]
+patch=1,EE,00128984,extended,24050008
+// YOSHIMITSU
+[GameModes\Number 9\ForceEnableCharacters\Left\Yoshimitsu (Costume 1)]
+patch=1,EE,00128984,extended,24050009
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Yoshimitsu (Costume 2)]
+patch=1,EE,00128984,extended,2405000A
+// NINA
+[GameModes\Number 9\ForceEnableCharacters\Left\Nina (Costume 1)]
+patch=1,EE,00128984,extended,2405000C
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Nina (Costume 2)]
+patch=1,EE,00128984,extended,2405000D
+// HOWARANG
+[GameModes\Number 9\ForceEnableCharacters\Left\Howarang (Costume 1)]
+patch=1,EE,00128984,extended,2405000E
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Howarang (Costume 2)]
+patch=1,EE,00128984,extended,2405000F
+// XIAOLING
+[GameModes\Number 9\ForceEnableCharacters\Left\Xiaoling (Costume 1)]
+patch=1,EE,00128984,extended,24050010
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Xiaoling (Costume 2)]
+patch=1,EE,00128984,extended,24050011
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Xiaoling (Costume 3)]
+patch=1,EE,00128984,extended,24050012
+// CHRISTIE
+[GameModes\Number 9\ForceEnableCharacters\Left\Christie (Costume 1)]
+patch=1,EE,00128984,extended,24050015
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Christie (Costume 2)]
+patch=1,EE,00128984,extended,24050016
+// JIN
+[GameModes\Number 9\ForceEnableCharacters\Left\Jin (Costume 1)]
+patch=1,EE,00128984,extended,24050019
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Jin (Costume 2)]
+patch=1,EE,00128984,extended,2405001A
+// JULIA
+[GameModes\Number 9\ForceEnableCharacters\Left\Julia (Costume 1)]
+patch=1,EE,00128984,extended,2405001C
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Julia (Costume 2)]
+patch=1,EE,00128984,extended,2405001D
+// BRIAN
+[GameModes\Number 9\ForceEnableCharacters\Left\Brian (Costume 1)]
+patch=1,EE,00128984,extended,24050020
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Brian (Costume 2)]
+patch=1,EE,00128984,extended,24050021
+// KAZUYA
+[GameModes\Number 9\ForceEnableCharacters\Left\Kazuya (Costume 1)]
+patch=1,EE,00128984,extended,24050024
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Kazuya (Costume 2)]
+patch=1,EE,00128984,extended,24050025
+// LEE
+[GameModes\Number 9\ForceEnableCharacters\Left\Lee (Costume 1)]
+patch=1,EE,00128984,extended,24050026
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Lee (Costume 2)]
+patch=1,EE,00128984,extended,24050027
+// STEVE
+[GameModes\Number 9\ForceEnableCharacters\Left\Steve (Costume 1)]
+patch=1,EE,00128984,extended,24050029
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Steve (Costume 2)]
+patch=1,EE,00128984,extended,2405002A
+// MARDUK
+[GameModes\Number 9\ForceEnableCharacters\Left\Marduk (Costume 1)]
+patch=1,EE,00128984,extended,2405002B
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Marduk (Costume 2)]
+patch=1,EE,00128984,extended,2405002C
+// JAK-5
+[GameModes\Number 9\ForceEnableCharacters\Left\Jak-5 (Costume 1)]
+patch=1,EE,00128984,extended,2405002F
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Jak-5 (Costume 2)]
+patch=1,EE,00128984,extended,24050030
+// ASUKA
+[GameModes\Number 9\ForceEnableCharacters\Left\Asuka (Costume 1)]
+patch=1,EE,00128984,extended,2405003B
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Asuka (Costume 2)]
+patch=1,EE,00128984,extended,2405003C
+// RAVEN
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 1)]
+patch=1,EE,00128984,extended,24050046
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 2)]
+patch=1,EE,00128984,extended,24050047
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 3)]
+patch=1,EE,00128984,extended,24050048
+// FENG
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 1)]
+patch=1,EE,00128984,extended,24050049
+
+[GameModes\Number 9\ForceEnableCharacters\Left\Raven (Costume 2)]
+patch=1,EE,00128984,extended,2405004A
+
+// CHARACTER SELECT
+
+[Character Select\Enable]
+author=YukiXXL
+//Enable CharSelect after start
+patch=1,EE,201222F4,extended,0C0488EE
+patch=1,EE,201222FC,extended,00000000
+patch=1,EE,20122300,extended,00000000
+patch=1,EE,20122304,extended,8FA30000
+//Enable Char Select after match for Arcade and GM No 9
+patch=1,EE,2039D300,extended,00124998
+//Character Select Fix 1
+patch=1,EE,2015DE18,extended,0C04279C
+patch=1,EE,2015E024,extended,0C04279C
+//Character Select Fix 2
+patch=1,EE,20109E70,extended,27BDFFE0
+patch=1,EE,20109E74,extended,30C2F000
+patch=1,EE,20109E78,extended,FFB00000
+patch=1,EE,20109E7C,extended,0000802D
+patch=1,EE,20109E80,extended,FFB10008
+patch=1,EE,20109E84,extended,00A0882D
+patch=1,EE,20109E88,extended,10400024
+patch=1,EE,20109E8C,extended,FFBF0010
+patch=1,EE,20109E90,extended,8C82009C
+patch=1,EE,20109E94,extended,10400010
+patch=1,EE,20109E98,extended,30C22000
+patch=1,EE,20109E9C,extended,10400004
+patch=1,EE,20109EA0,extended,30C28000
+patch=1,EE,20109EA4,extended,10000016
+patch=1,EE,20109EA8,extended,24100001
+patch=1,EE,20109EAC,extended,00000000
+patch=1,EE,20109EB0,extended,14400013
+patch=1,EE,20109EB4,extended,30C21000
+patch=1,EE,20109EB8,extended,54400011
+patch=1,EE,20109EBC,extended,24100003
+patch=1,EE,20109EC0,extended,30C24000
+patch=1,EE,20109EC4,extended,1040000E
+patch=1,EE,20109EC8,extended,00000000
+patch=1,EE,20109ECC,extended,1000000C
+patch=1,EE,20109ED0,extended,24100002
+patch=1,EE,20109ED4,extended,00000000
+patch=1,EE,20109ED8,extended,10400003
+patch=1,EE,20109EDC,extended,30C28000
+patch=1,EE,20109EE0,extended,10000007
+patch=1,EE,20109EE4,extended,24100003
+patch=1,EE,20109EE8,extended,54400005
+patch=1,EE,20109EEC,extended,24100002
+patch=1,EE,20109EF0,extended,30C21000
+patch=1,EE,20109EF4,extended,14400002
+patch=1,EE,20109EF8,extended,30C24000
+patch=1,EE,20109EFC,extended,0002802B
+patch=1,EE,20109F00,extended,0C057354
+patch=1,EE,20109F04,extended,8E240000
+patch=1,EE,20109F08,extended,24040005
+patch=1,EE,20109F0C,extended,00501021
+patch=1,EE,20109F10,extended,90430002
+patch=1,EE,20109F14,extended,0C056E4C
+patch=1,EE,20109F18,extended,AE230000
+patch=1,EE,20109F1C,extended,DFB00000
+patch=1,EE,20109F20,extended,DFB10008
+patch=1,EE,20109F24,extended,DFBF0010
+patch=1,EE,20109F28,extended,03E00008
+patch=1,EE,20109F2C,extended,27BD0020
+
+[Character Select\Skip Character Select]
+author=YukiXXL
+description=Character select needs to be enabled. This skips to get into fight faster.
+patch=1,EE,0012ADAC,extended,24040000
+
+// - STAGES
+
+[Character Select\Stages\Enable Selecting Stages]
+author=YukiXXL
+//Enable selecting stages
+patch=1,EE,203A9BC0,extended,0015DCC0
+//Allow selecting a stage in CharSelect for Arcade
+patch=1,EE,2012A92C,extended,00000000
+//Allow selecting a stage in CharSelect for GM. 9
+patch=1,EE,20128990,extended,00000000
+
+[Character Select\Stages\Unlock all stages]
+author=YukiXXL
+patch=1,EE,2015D258,extended,24E70001
+patch=1,EE,2015D25C,extended,24E4FFFF
+patch=1,EE,0015D264,extended,28E50010
+
+// - TABLE
+
+[Character Select\Table\21 characters]
+author=YukiXXL
+patch=1,EE,0015E25C,extended,24040000
+
+[Character Select\Table\23 characters]
+author=YukiXXL
+patch=1,EE,0015E244,extended,24040000
+
+[Character Select\Table\26 characters]
+author=YukiXXL
+patch=1,EE,0015E22C,extended,24040000
+
+[Character Select\Table\29 characters]
+author=YukiXXL
+patch=1,EE,0015E214,extended,24040000
+
+[Character Select\Table\31 characters]
+author=YukiXXL
+patch=1,EE,0015E1CC,extended,24040000
+
+[Character Select\Table\31 characters with Jinpachi]
+author=YukiXXL
+patch=1,EE,2019A9E8,extended,26E5DDA0
+patch=1,EE,0015E204,extended,24020006

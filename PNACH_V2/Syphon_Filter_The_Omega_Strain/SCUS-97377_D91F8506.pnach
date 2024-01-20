@@ -1,0 +1,62 @@
+gametitle=Syphon Filter: The Omega Strain Individual Demo (NTSC-U)
+
+// CHEATS
+// - 100 %
+[Cheats\COMPLETE]
+author=YukiXXL
+description=Unlock Everything. Get T4.
+//Play once for all objectives
+patch=1,EE,203C2978,extended,2401FFFF
+patch=1,EE,203C297C,extended,AC41007C
+patch=1,EE,203C2988,extended,24020001
+//All Ratings
+patch=1,EE,203C1ABC,extended,24010520
+patch=1,EE,203C1AC0,extended,AC610008
+patch=1,EE,203C1AC8,extended,24020001
+//All Solo Pars
+patch=1,EE,203C4470,extended,2403024E
+patch=1,EE,203C4478,extended,AE230000
+//All Team Pars
+patch=1,EE,203C44A8,extended,240301D6
+patch=1,EE,203C44B0,extended,AE230004
+//All Missions, No Collateral
+patch=1,EE,203C44E8,extended,24020000
+patch=1,EE,203C44F0,extended,AE220010
+//All Missions, No Deaths
+patch=1,EE,203C44D0,extended,24020000
+patch=1,EE,203C44D8,extended,AE220014
+
+// ADDONS
+// - MENUS
+[Addons\Menus\BOOT_FRONTEND]
+author=YukiXXL
+description=Enable booting into Main Menu.
+patch=1,EE,204CA150,extended,00010100
+
+[Addons\Menus\Enable LAN button]
+author=YukiXXL
+patch=1,EE,20340058,extended,8C2478E8
+patch=1,EE,204E5D18,byte,0
+
+[Addons\Menus\Enable Mission Setup]
+author=YukiXXL
+patch=1,EE,00338E4C,extended,9082002D
+
+// - PLAYER
+[Addons\Player\Enable Quickchat + Buddy Climb Solo]
+author=YukiXXL
+//FakeByte
+patch=1,EE,004B09D4,byte,1
+//Quickchat
+patch=1,EE,002F0F6C,extended,902209D4
+//Buddy climb
+patch=1,EE,00240784,extended,902209D4
+//Animation change
+patch=1,EE,00258174,extended,2403002E
+
+// ONLINE
+
+[Addons\Online\Enable online lobby]
+author=YukiXXL
+patch=1,EE,2033FA6C,extended,24A53980
+patch=1,EE,2033FA74,extended,24C63998
