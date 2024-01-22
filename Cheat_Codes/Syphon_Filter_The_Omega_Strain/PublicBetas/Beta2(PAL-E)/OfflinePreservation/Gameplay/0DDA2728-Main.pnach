@@ -10,8 +10,9 @@ patch=1,EE,0046105C,extended,90224884
 //Check if completed Par
 patch=1,EE,00464574,extended,90254884
 
-//Checking objectives and writing Par time
+//Check Team objectives
 //patch=1,EE,00336358,extended,90254884
+//Write Time
 patch=1,EE,00336440,extended,90224884
 
 //Buddy Climb

@@ -1,0 +1,12 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=OFFLINE PRESERVATION: CODENAME STUFF: COUNTDOWN - ENABLE
+
+//SetStatus
+patch=1,EE,2017E7C0,extended,3C030051
+patch=1,EE,2017E7C4,extended,246321D4
+//GetStatus
+patch=1,EE,2017E7E0,extended,3C020051
+patch=1,EE,2017E7E4,extended,244221D4
+//HasHeadset
+patch=1,EE,2017E800,extended,3C020051
+patch=1,EE,2017E804,extended,244221D4

@@ -1,0 +1,125 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo (Custom ISO)
+
+// CHEATS
+// - 100 %
+[Cheats\COMPLETE]
+author=YukiXXL
+description=Unlock everything possible. Temporary T4.
+//Play once for all objectives
+patch=1,EE,203924A8,extended,2401FFFF
+patch=1,EE,203924AC,extended,AC41004C
+patch=1,EE,203924B0,extended,24020001
+//Open Levels
+patch=1,EE,20392200,extended,2401FFFF
+patch=1,EE,20392204,extended,AC4108A0
+patch=1,EE,20392208,extended,24020001
+//Open Ratings (Temporary T4)
+patch=1,EE,20392188,extended,2401FFFF
+patch=1,EE,2039218C,extended,AC4108A0
+patch=1,EE,20392190,extended,24020001
+
+[Cheats\Unvulnerable after closing the map]
+author=YukiXXL
+patch=1,EE,202C36DC,extended,24050001
+
+// MISC
+
+[Misc\Enable All Spawns]
+//Enable all spawns
+patch=1,EE,2025F0E4,extended,00000000
+//Memory fix
+patch=1,EE,0025F230,extended,14800011
+
+// ONLINE
+
+[Online\Enable Online mode]
+author=YukiXXL
+patch=1,EE,10315BE0,extended,24A5C6D0
+patch=1,EE,10315BE8,extended,24C6C6E8
+
+// ADDONS
+// - MENUS
+[Addons\Menus\BOOT_FRONTEND]
+author=YukiXXL
+description=Enable booting into Main Menu.
+patch=1,EE,20451550,extended,00010100
+
+[Addons\Menus\Enable LAN button]
+author=YukiXXL
+patch=1,EE,2031604C,extended,00000000
+
+[Addons\Menus\Enable all greyed-out buttons]
+author=YukiXXL
+patch=1,EE,001ACA48,extended,8F390014
+
+[Addons\Menus\Multi-Status Display]
+author=YukiXXL
+description=Displays different status screen at the end of the mission.
+patch=1,EE,002EB10C,extended,902201BC
+patch=1,EE,002EB134,extended,28420001
+
+// - FIXES
+[Addons\Menus\Create Mission and Join Mission fix]
+author=YukiXXL
+patch=1,EE,20230E14,extended,1000002E
+
+// - MODIFY AGENT
+[Addons\Menus\Extended Agent Modify]
+author=YukiXXL
+description=Change Game Type in Create Mission and return to New Agent menu.
+//Single = Enable
+patch=1,EE,E0080001,extended,004D5ED4
+//Body Shape => Boot Style
+patch=1,EE,103B0694,extended,00000000
+//Skin Tone => Boot Color
+patch=1,EE,103B067C,extended,00000001
+//Face => Pants Style
+patch=1,EE,103B0680,extended,00000100
+//Face Shape => Pants Color
+patch=1,EE,103B0684,extended,00000101
+//Hair Style => Shirt Style
+patch=1,EE,103B0688,extended,00000B00
+//Hair Color => Shirt Color
+patch=1,EE,103B068C,extended,00000B01
+//Beard Style => Vest Style
+patch=1,EE,103B0698,extended,00000F00
+//Beard Color => Vest Color
+patch=1,EE,103B069C,extended,00000F01
+//Story = Disable
+patch=1,EE,E0080000,extended,004D5ED4
+patch=1,EE,103B0694,extended,00000004
+patch=1,EE,103B067C,extended,00000201
+patch=1,EE,103B0680,extended,0000080B
+patch=1,EE,103B0684,extended,00000805
+patch=1,EE,103B0688,extended,00000A06
+patch=1,EE,103B068C,extended,00000A01
+patch=1,EE,103B0698,extended,00000907
+patch=1,EE,103B069C,extended,00000908
+
+// - GAMEPLAY
+[Addons\Gameplay\PAL video mode]
+author=YukiXXL
+patch=1,EE,2022E9D0,extended,00000000
+
+[Addons\Gameplay\ProScan video mode]
+author=YukiXXL
+//Disable videos (SOLMOVIE,EOLMOVIE)
+patch=1,EE,201F7464,extended,00000000
+patch=1,EE,201F7474,extended,00000000
+//ProScan (videos need to be disabled)
+patch=1,EE,2022EA1C,extended,00000000
+
+[Addons\Gameplay\60 FPS]
+patch=1,EE,0022EA58,extended,2402003C
+
+// - PLAYER
+[Addons\Player\Enable Quickchat + Buddy Climb Solo]
+author=YukiXXL
+//Fake Byte
+patch=1,EE,004301BC,byte,1
+//Quickchat
+patch=1,EE,002CAB1C,extended,902201BC
+//Buddy climb
+patch=1,EE,00229BC4,extended,902201BC
+//Animation change
+patch=1,EE,00240EA4,extended,2403002D

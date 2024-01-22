@@ -14,3 +14,6 @@ patch=1,EE,0041B7A0,extended,90222204
 //Position
 patch=1,EE,00331C04,extended,90222204
 patch=1,EE,20330D24,extended,2AA10004
+
+//START button
+patch=1,EE,00282F2C,extended,90222204

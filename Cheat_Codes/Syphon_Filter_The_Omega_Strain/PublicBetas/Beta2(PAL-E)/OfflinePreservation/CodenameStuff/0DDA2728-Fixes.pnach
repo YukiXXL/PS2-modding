@@ -4,10 +4,6 @@ comment=OFFLINE PRESERVATION: CODENAME STUFF - FIXES
 //Belarus 2 C4 stacks bug fix
 patch=1,EE,20178C0C,extended,90224884
 patch=1,EE,20178C18,extended,00000000
-//START button
-patch=1,EE,002A84D4,extended,90224884
-//START fix
-//patch=1,EE,002A8554,extended,24050000
 
 //Quit fix
 patch=1,EE,0013489C,extended,90224884

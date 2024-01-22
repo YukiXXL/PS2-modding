@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo
-comment=CHEATS
-
-//Open Weapons
-patch=1,EE,2030149C,extended,00000000
-
-//Open Levels
-patch=1,EE,20301920,extended,24020001

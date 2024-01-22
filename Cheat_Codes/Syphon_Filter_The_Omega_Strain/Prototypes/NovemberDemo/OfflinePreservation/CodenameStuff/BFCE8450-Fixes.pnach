@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo
-comment=OFFLINE PRESERVATION: CODENAME STUFF - FIXES
-
-//START button
-patch=1,EE,00282F2C,extended,90222204
-//START fix
-patch=1,EE,00282FAC,extended,24050000
-patch=1,EE,00282FBC,extended,24020000

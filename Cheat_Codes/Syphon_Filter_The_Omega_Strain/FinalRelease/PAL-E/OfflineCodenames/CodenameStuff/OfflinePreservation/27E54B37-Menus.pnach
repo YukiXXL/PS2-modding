@@ -12,6 +12,9 @@ patch=1,EE,002C78C8,extended,9022D424
 patch=1,EE,00374B54,extended,9022D424
 patch=1,EE,0046B098,extended,9022D424
 
+//START button
+patch=1,EE,002AC754,extended,9022D424
+
 //END MISSION
 //Marks and Eff award
 patch=1,EE,0046C040,extended,9022D424

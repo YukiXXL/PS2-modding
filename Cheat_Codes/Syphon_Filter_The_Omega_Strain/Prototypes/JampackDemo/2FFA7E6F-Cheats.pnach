@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Jampack Demo (Custom ISO)
-comment=CHEATS
-
-//SetInvulnerable to 1 after closing map
-patch=1,EE,202C36DC,extended,24050001

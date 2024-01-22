@@ -1,0 +1,28 @@
+gametitle=Syphon Filter: The Omega Strain Individual Demo (NTSC-U)
+comment=100% COMPLETE / T4
+
+//Play once for all objectives
+patch=1,EE,203C2978,extended,2401FFFF
+patch=1,EE,203C297C,extended,AC41007C
+patch=1,EE,203C2988,extended,24020001
+
+//All Ratings
+patch=1,EE,203C1ABC,extended,24010520
+patch=1,EE,203C1AC0,extended,AC610008
+patch=1,EE,203C1AC8,extended,24020001
+
+//All Solo Pars
+patch=1,EE,203C4470,extended,2403024E
+patch=1,EE,203C4478,extended,AE230000
+
+//All Team Pars
+patch=1,EE,203C44A8,extended,240301D6
+patch=1,EE,203C44B0,extended,AE230004
+
+//All Missions, No Collateral
+patch=1,EE,203C44E8,extended,24020000
+patch=1,EE,203C44F0,extended,AE220010
+
+//All Missions, No Deaths
+patch=1,EE,203C44D0,extended,24020000
+patch=1,EE,203C44D8,extended,AE220014

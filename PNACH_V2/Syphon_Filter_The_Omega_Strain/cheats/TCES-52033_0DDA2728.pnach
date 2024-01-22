@@ -1,0 +1,240 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
+
+// CHEATS
+
+[Cheats\COMPLETE]
+author=YukiXXL
+description=Unlock Everything possible.
+//Play once for all objectives
+patch=1,EE,20334438,extended,2401FFFF
+patch=1,EE,2033443C,extended,AC410084
+patch=1,EE,20334448,extended,24020001
+//All Ratings
+patch=1,EE,203337CC,extended,24010520
+patch=1,EE,203337D0,extended,AC610008
+patch=1,EE,203337D8,extended,24020001
+//All Solo Pars
+patch=1,EE,20336808,extended,24030122
+patch=1,EE,20336810,extended,AE030000
+//All Team Pars
+patch=1,EE,20336820,extended,240300AA
+patch=1,EE,20336830,extended,AE030004
+//All Missions, No Collateral
+patch=1,EE,20336870,extended,24020000
+patch=1,EE,20336878,extended,AE020010
+//All Missions, No Deaths
+patch=1,EE,20336858,extended,24020000
+patch=1,EE,20336860,extended,AE020014
+
+[Cheats\Open weapons]
+author=YukiXXL
+patch=1,EE,2033343C,extended,24020001
+
+[Cheats\Open levels]
+author=YukiXXL
+patch=1,EE,20333910,extended,24020001
+
+[Cheats\Double armor]
+author=YukiXXL
+patch=1,EE,2048A0C8,extended,000001F4
+
+[Cheats\Stop timer]
+author=YukiXXL
+patch=1,EE,2023A944,extended,24003634
+
+// LAN
+
+[Experimental\LAN]
+author=YukiXXL
+description=Replaces "Play Online".
+//LAN lobby instead of Play Online
+patch=1,EE,2029F904,extended,A0450032
+patch=1,EE,0029F914,extended,24A5ACD0
+patch=1,EE,0029F91C,extended,24C6ACE8
+//Create Mission
+patch=1,EE,202A7298,extended,90620032
+patch=1,EE,202A729C,extended,A0620033
+patch=1,EE,202A72A4,extended,A0620035
+//Bypasses
+patch=1,EE,20374430,extended,24020000
+patch=1,EE,202A739C,extended,24020001
+patch=1,EE,202A73BC,extended,14830003
+//Keep Online button
+patch=1,EE,2029FCF4,extended,24030000
+
+// ONLINE
+
+[Online\All levels available in online mode]
+author=YukiXXL
+patch=1,EE,20296728,extended,24020000
+patch=1,EE,2029674C,extended,24020000
+
+// ADDONS
+
+[Addons\Enable TEST button]
+author=YukiXXL
+patch=1,EE,202A0064,extended,8C24B928
+patch=1,EE,20505B28,byte,0
+
+[Addons\Awards 2 ratings/ranks on the back (Awards 3)]
+author=YukiXXL
+patch=1,EE,004928AC,extended,0000FF02
+
+// MISC
+// - WEATHER - TORONTO 3
+[Misc\Change weather on missions that support it\Toronto 3\Myanmar Fog]
+author=YukiXXL
+patch=1,EE,10232778,extended,0C08CAC4
+
+[Misc\Change weather on missions that support it\Toronto 3\Tokyo Rain]
+author=YukiXXL
+patch=1,EE,10232778,extended,0C08CA5C
+
+[Misc\Change weather on missions that support it\Toronto 3\Lorelei Rain]
+author=YukiXXL
+patch=1,EE,10232778,extended,0C08CA24
+
+[Misc\Change weather on missions that support it\Toronto 3\Snowing]
+author=YukiXXL
+patch=1,EE,10232778,extended,0C08C9EC
+
+[Misc\Change weather on missions that support it\Toronto 3\Atmospheric effect]
+author=YukiXXL
+patch=1,EE,10232778,extended,0C08CB1C
+// - WEATHER - BELARUS 2
+[Misc\Change weather on missions that support it\Belarus 2\Myanmar Fog]
+author=YukiXXL
+patch=1,EE,10232718,extended,0C08CAC4
+
+[Misc\Change weather on missions that support it\Belarus 2\Tokyo Rain]
+author=YukiXXL
+patch=1,EE,10232718,extended,0C08CA5C
+
+[Misc\Change weather on missions that support it\Belarus 2\Lorelei Rain]
+author=YukiXXL
+patch=1,EE,10232718,extended,0C08CA24
+
+[Misc\Change weather on missions that support it\Belarus 2\Toronto 3 Fog]
+author=YukiXXL
+patch=1,EE,10232718,extended,0C08CA94
+
+[Misc\Change weather on missions that support it\Belarus 2\Atmospheric effect]
+author=YukiXXL
+patch=1,EE,10232718,extended,0C08CB1C
+
+// OFFLINE PRESERVATION
+
+[Offline Preservation Mod\Enable]
+author=YukiXXL
+description=Online-like experience in offline.
+// MENUS
+// - BEGIN MISSION
+//Write codename
+patch=1,EE,002A728C,extended,3C010049
+patch=1,EE,202A7298,extended,2484FFFF
+patch=1,EE,202A729C,extended,AC244518
+//SuccessLobbyConnect
+patch=1,EE,002A72B0,extended,12400046
+//Somekind of error fix
+patch=1,EE,2012EEA8,extended,00000000
+//Online, Offline enabler
+patch=1,EE,00134DC4,extended,A0204884
+patch=1,EE,001783D8,extended,A0234884
+// - FIXES
+//Host Game fix
+patch=1,EE,2033E110,extended,00000000
+//Pick Region crash fix
+patch=1,EE,202B6060,extended,00000000
+// - MENUS
+//Enable Online lobby in offline
+patch=1,EE,0029F914,extended,24A5ACD0
+patch=1,EE,0029F91C,extended,24C6ACE8
+patch=1,EE,202A3FAC,extended,00000000
+//Min num agents = 1
+patch=1,EE,002A788C,extended,24050001
+// - MISSION SETUP
+//Enable Mission Setup & Join Mission offline
+patch=1,EE,2033CEF8,extended,00000000
+patch=1,EE,2033CF00,extended,24020001
+//Join any mission
+patch=1,EE,20295394,extended,00000000
+// GAMEPLAY
+//Enable online objectives + dialogues
+patch=1,EE,0012F818,extended,90224884
+//Team Par
+patch=1,EE,00460F88,extended,90254884
+patch=1,EE,0046105C,extended,90224884
+//Check if completed Par Time
+patch=1,EE,00464574,extended,90254884
+//Write Time
+patch=1,EE,00336440,extended,90224884
+//Buddy Climb
+patch=1,EE,0016FFC4,extended,90224884
+//Animation Change
+patch=1,EE,0018D774,extended,24030031
+// CODENAME STUFF
+// - FIXES
+//Belarus 2 C4 stacks bug fix
+patch=1,EE,20178C0C,extended,90224884
+patch=1,EE,20178C18,extended,00000000
+//Quit fix
+patch=1,EE,0013489C,extended,90224884
+patch=1,EE,0013492C,extended,10400008
+// - GAMEPLAY
+//Show correct codename
+patch=1,EE,002B78B8,extended,90224884
+//Radio comms
+patch=1,EE,0018C854,extended,90224884
+//Out of time (Team)
+patch=1,EE,0023A950,extended,90304884
+//Show codename on the right
+patch=1,EE,0045EE9C,extended,90224884
+//Minimap
+patch=1,EE,0026D9F4,extended,90234884
+patch=1,EE,002A19D4,extended,90234884
+//Codename spelling and dependecies
+patch=1,EE,0012EE54,extended,90234884
+patch=1,EE,0013681C,extended,90234884
+patch=1,EE,00185CC4,extended,90224884
+// - MAIN
+//Online controller (Responsible for codenames)
+patch=1,EE,001B7060,extended,90244884
+// - MENUS
+//EQUIPMENT SETUP
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,001789B8,extended,90224884
+//After pressing square or triangle
+patch=1,EE,002C3084,extended,90224884
+patch=1,EE,002C3158,extended,90224884
+//Stats
+patch=1,EE,0036E1F4,extended,90224884
+patch=1,EE,004643F8,extended,90224884
+//START button
+patch=1,EE,002A84D4,extended,90224884
+//END MISSION
+//Marks and Eff award
+patch=1,EE,004653A0,extended,90224884
+//<Codename> managed to not get killed
+patch=1,EE,00465580,extended,90224884
+//Medals and stuff
+patch=1,EE,00462494,extended,90224884
+// - COUNTDOWN
+//SetStatus
+patch=1,EE,20184CA0,extended,3C030057
+patch=1,EE,20184CA4,extended,24634854
+//GetStatus
+patch=1,EE,20184CC0,extended,3C020057
+patch=1,EE,20184CC4,extended,24424854
+//HasHeadset
+patch=1,EE,20184CE0,extended,3C020057
+patch=1,EE,20184CE4,extended,24424854
+//Show timer instead of "WAITING FOR HOST"
+patch=1,EE,002A99AC,extended,90224884
+//Show timer and count in Equipment Modify
+patch=1,EE,002C6760,extended,90234884
+patch=1,EE,002C719C,extended,90224884
+
+[Offline Preservation Mod\Check Team objectives]
+author=YukiXXL
+description=Write Par Time if Team objectives are also completed.
+patch=1,EE,00336358,extended,90254884

@@ -1,0 +1,17 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo (Custom ISO)
+comment=100% COMPLETE / T4
+
+//Play once for all objectives
+patch=1,EE,203924A8,extended,2401FFFF
+patch=1,EE,203924AC,extended,AC41004C
+patch=1,EE,203924B0,extended,24020001
+
+//Open Levels
+patch=1,EE,20392200,extended,2401FFFF
+patch=1,EE,20392204,extended,AC4108A0
+patch=1,EE,20392208,extended,24020001
+
+//Open Ratings (Temporary T4)
+patch=1,EE,20392188,extended,2401FFFF
+patch=1,EE,2039218C,extended,AC4108A0
+patch=1,EE,20392190,extended,24020001

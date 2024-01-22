@@ -1,6 +1,0 @@
-gametitle=Champions of Norrath Beta Build (NTSC-U)
-
-[Misc\Enable Debug Mode]
-author=punk7890
-description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
-patch=1,EE,0052EA24,extended,00000001

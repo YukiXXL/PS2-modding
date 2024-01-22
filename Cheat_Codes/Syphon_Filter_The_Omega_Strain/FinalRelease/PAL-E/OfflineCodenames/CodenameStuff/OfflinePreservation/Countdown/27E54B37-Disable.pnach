@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=OFFLINE CODENAMES: CODENAME STUFF: OFFLINE PRESERVATION: COUNTDOWN DISABLED
+
+//START fix
+patch=1,EE,002AC7D4,extended,24050000

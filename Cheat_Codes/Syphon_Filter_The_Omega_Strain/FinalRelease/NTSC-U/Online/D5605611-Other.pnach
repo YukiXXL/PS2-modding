@@ -1,7 +1,7 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 comment=ONLINE - OTHER
 
-//num_agnets (1-8)
+//num_agents (1-8)
 patch=1,EE,002A159C,extended,24050001
 patch=1,EE,002A15B4,extended,24060008
 
