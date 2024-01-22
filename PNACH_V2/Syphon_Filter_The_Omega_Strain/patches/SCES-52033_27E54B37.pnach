@@ -1,0 +1,24 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+
+// WIDESCREEN
+[Patches\Widescreen 16:9]
+author=nemesis2000
+gsaspectratio=16:9
+//gameplay
+patch=1,EE,003972E0,extended,3C043F40
+patch=1,EE,203972E4,extended,44841800
+patch=1,EE,203972E8,extended,46030003
+patch=1,EE,203972EC,extended,460318C3
+patch=1,EE,203972F0,extended,46031840
+patch=1,EE,20397364,extended,E603007C
+
+//FMV's fix
+patch=1,EE,20418F3C,extended,241016D0
+patch=1,EE,20418F44,extended,24127490
+
+// OTHER
+[Patches\NV and Flashlight Fix]
+author=YukiXXL
+description=Cop2 problems.
+patch=1,EE,203953F8,extended,48438000
+patch=1,EE,203735FC,extended,4B06521B
