@@ -26,11 +26,10 @@ patch=1,EE,20335F98,extended,AE020010
 patch=1,EE,20335F78,extended,24020000
 patch=1,EE,20335F80,extended,AE020014
 
-// - LEVITATION
+// - GAMEHACKING
 [Cheats\Levitation Code]
 author=gamehacking.org
 description=Press L3 to activate; R3 to deactivate. L3+/\ to go UP; L3+X to go DOWN.
-//Levitation code
 patch=1,EE,100FFE00,extended,00000000
 patch=1,EE,D055A35C,extended,0000EFFD
 patch=1,EE,100FFE00,extended,00003F80
@@ -52,14 +51,75 @@ patch=1,EE,200FFE0C,extended,46020000
 patch=1,EE,200FFE10,extended,E4400008
 patch=1,EE,200FFE14,extended,08067D23
 
-// - OTHER
-[Cheats\Plant infinite C4s on B2]
-author=YukiXXL
-patch=1,EE,203D9880,extended,00000000
+[Cheats\Quick Hero Only (X3)]
+author=gamehacking.org
+patch=1,EE,200FFF00,extended,3C03004F
+patch=1,EE,200FFF04,extended,8C637858
+patch=1,EE,200FFF08,extended,24632ED0
+patch=1,EE,200FFF0C,extended,14A30002
+patch=1,EE,200FFF10,extended,3C013F80
+patch=1,EE,200FFF14,extended,3C014040
+patch=1,EE,200FFF1C,extended,44810000
+patch=1,EE,200FFF20,extended,080EB6A5
+patch=1,EE,203ADA90,extended,0803FFC0
 
-[Cheats\Write Par Time with minimum objectives completed]
-author=YukiXXL
-patch=1,EE,20335B34,extended,64140001
+[Cheats\Infinite Ammo/No Reload]
+author=gamehacking.org
+patch=1,EE,20140B9C,extended,00000000
+
+[Cheats\Infinite Health]
+author=gamehacking.org
+patch=1,EE,200C2000,extended,00062821
+patch=1,EE,200C2004,extended,44850000
+patch=1,EE,200C2008,extended,46800020
+patch=1,EE,200C200C,extended,08091078
+patch=1,EE,200C2010,extended,E6200040
+patch=1,EE,2024CED8,extended,0C030800
+
+[Cheats\Infinite Armor]
+author=gamehacking.org
+patch=1,EE,20187988,extended,00000000
+
+[Cheats\Immune To Fire/Falls/Bullets]
+author=gamehacking.org
+patch=1,EE,200FFFC0,extended,3C01004F
+patch=1,EE,200FFFC4,extended,8C217858
+patch=1,EE,200FFFC8,extended,10240002
+patch=1,EE,200FFFD0,extended,E6800040
+patch=1,EE,200FFFD8,extended,080F32EE
+patch=1,EE,203CCBB0,extended,0803FFF0
+
+[Cheats\Invisible (No Awareness)]
+author=gamehacking.org
+patch=1,EE,2016CA2C,extended,0805B37A
+
+[Cheats\Non-Aggressive AI]
+author=gamehacking.org
+patch=1,EE,2016DDB0,extended,03E00008
+
+[Cheats\1 Hit Kill]
+author=gamehacking.org
+patch=1,EE,200FFEC0,extended,3C01004F
+patch=1,EE,200FFEC4,extended,8C217858
+patch=1,EE,200FFEC8,extended,14350002
+patch=1,EE,200FFED0,extended,08061E1E
+patch=1,EE,200FFED8,extended,08061DDA
+patch=1,EE,20187760,extended,0803FFB0
+
+[Cheats\Max Ammo (All Weapons)]
+author=gamehacking.org
+patch=1,EE,2013FC2C,extended,340203E7
+patch=1,EE,2013FC30,extended,00401023
+patch=1,EE,2013FC34,extended,AE22000C
+
+[Cheats\Stop Timer]
+author=gamehacking.org
+patch=1,EE,20244FE4,extended,24003634
+
+[Cheats\Freeze Timer]
+author=gamehacking.org
+patch=1,EE,20245870,extended,AE0006DC
+patch=1,EE,20245874,extended,44800000
 
 [Cheats\Open Weapons]
 author=gamehacking.org
@@ -69,9 +129,22 @@ patch=1,EE,20332B5C,extended,24020001
 author=gamehacking.org
 patch=1,EE,20333030,extended,24020001
 
-[Cheats\Invisible]
+[Cheats\Unlock All Weapons]
 author=gamehacking.org
-patch=1,EE,2016CA2C,extended,0805B37A
+patch=1,EE,20332B50,extended,2003FFFF
+
+[Cheats\Unlock All Levels]
+author=gamehacking.org
+patch=1,EE,20333020,extended,2002FFFF
+
+// - OTHER
+[Cheats\Plant infinite C4s on B2]
+author=YukiXXL
+patch=1,EE,203D9880,extended,00000000
+
+[Cheats\Write Par Time with minimum objectives completed]
+author=YukiXXL
+patch=1,EE,20335B34,extended,64140001
 
 // LAN
 
