@@ -26,14 +26,30 @@ patch=1,EE,2033E198,extended,AE220010
 patch=1,EE,2033E178,extended,24020000
 patch=1,EE,2033E180,extended,AE220014
 
-// - OTHER
-[Cheats\Plant infinite C4s on B2]
-author=YukiXXL
-patch=1,EE,203FEE90,extended,00000000
-
-[Cheats\Write Par Time with minimum objectives completed]
-author=YukiXXL
-patch=1,EE,2033DD3C,extended,64140001
+// - GAMEHACKING
+[Cheats\Levitation Code]
+author=gamehacking.org
+description=L3 To Activate/R3 to Deactivate, L3+Triangle to go up/L3+X to go down.
+patch=1,EE,200FFDF0,extended,3C010050
+patch=1,EE,200FFDF4,extended,8C215458
+patch=1,EE,200FFDF8,extended,14310006
+patch=1,EE,100FFE00,extended,00000000
+patch=1,EE,100FFE02,extended,00003C01
+patch=1,EE,200FFE04,extended,C4400008
+patch=1,EE,200FFE08,extended,44811000
+patch=1,EE,200FFE0C,extended,46020000
+patch=1,EE,200FFE10,extended,E4400008
+patch=1,EE,200FFE14,extended,08067EF3
+patch=1,EE,D0571FDC,extended,0000EFFD
+patch=1,EE,100FFE00,extended,00003F80
+patch=1,EE,D0571FDC,extended,0000BFFD
+patch=1,EE,100FFE00,extended,0000BF80
+patch=1,EE,E002FFFD,extended,00571FDC
+patch=1,EE,201E2DD4,extended,24020000
+patch=1,EE,2019FBC8,extended,0803FF7C
+patch=1,EE,E002FFFB,extended,00571FDC
+patch=1,EE,201E2DD4,extended,92A20012
+patch=1,EE,2019FBC8,extended,C4400008
 
 [Cheats\Open Weapons]
 author=gamehacking.org
@@ -46,6 +62,15 @@ patch=1,EE,2033B190,extended,24020001
 [Cheats\Invisible]
 author=gamehacking.org
 patch=1,EE,2016B61C,extended,0805B37A
+
+// - OTHER
+[Cheats\Plant infinite C4s on B2]
+author=YukiXXL
+patch=1,EE,203FEE90,extended,00000000
+
+[Cheats\Write Par Time with minimum objectives completed]
+author=YukiXXL
+patch=1,EE,2033DD3C,extended,64140001
 
 // LAN
 

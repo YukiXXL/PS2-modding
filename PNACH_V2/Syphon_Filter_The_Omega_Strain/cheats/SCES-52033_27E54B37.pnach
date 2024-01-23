@@ -26,6 +26,103 @@ patch=1,EE,2033BF78,extended,AE020010
 patch=1,EE,2033BF58,extended,24020000
 patch=1,EE,2033BF60,extended,AE020014
 
+// - GAMEHACKING
+[Cheats\Levitation Code]
+author=AgentMoose
+description=Press L3 To Activate, Press R3 To Stop. Whilst In Levitation Mode; Press L3+Triangle To Go Up; L3+X To Go Down.
+patch=1,EE,100FFE00,extended,00000000
+patch=1,EE,D056549C,extended,0000EFFD
+patch=1,EE,100FFE00,extended,00003F80
+patch=1,EE,D056549C,extended,0000BFFD
+patch=1,EE,100FFE00,extended,0000BF80
+patch=1,EE,E002FFFD,extended,0056549C
+patch=1,EE,201E2CC4,extended,24020000
+patch=1,EE,2019F9F8,extended,0803FF7C
+patch=1,EE,E002FFFB,extended,0056549C
+patch=1,EE,201E2CC4,extended,92A20012
+patch=1,EE,2019F9F8,extended,C4400008
+patch=1,EE,200FFDF0,extended,3C010050
+patch=1,EE,200FFDF4,extended,8C21F658
+patch=1,EE,200FFDF8,extended,14310006
+patch=1,EE,100FFE02,extended,00003C01
+patch=1,EE,200FFE04,extended,C4400008
+patch=1,EE,200FFE08,extended,44811000
+patch=1,EE,200FFE0C,extended,46020000
+patch=1,EE,200FFE10,extended,E4400008
+patch=1,EE,200FFE14,extended,08067E7F
+
+[Cheats\Quick Hero Only (X3)]
+patch=1,EE,200FFF00,extended,3C030050
+patch=1,EE,200FFF04,extended,8C63F658
+patch=1,EE,200FFF08,extended,24632ED0
+patch=1,EE,200FFF0C,extended,14A30002
+patch=1,EE,200FFF10,extended,3C013F80
+patch=1,EE,200FFF14,extended,3C014040
+patch=1,EE,200FFF1C,extended,44810000
+patch=1,EE,200FFF20,extended,080F3D19
+patch=1,EE,203CF460,extended,0803FFC0
+
+[Cheats\Unlimited Health]
+patch=1,EE,200C2000,extended,24052710
+patch=1,EE,200C2004,extended,44850000
+patch=1,EE,200C2008,extended,46800020
+patch=1,EE,200C200C,extended,0808E824
+patch=1,EE,200C2010,extended,E6200040
+patch=1,EE,20242E00,extended,0C030800
+
+[Cheats\Unlimited Armor]
+patch=1,EE,20187E18,extended,00000000
+
+[Cheats\Unlimited Ammo (No Reload)]
+patch=1,EE,2014404C,extended,00000000
+
+[Cheats\Unlimited Grenades]
+patch=1,EE,20145508,extended,24003634
+
+[Cheats\Invisible (No Awareness)]
+patch=1,EE,2016B53C,extended,0805AE3E
+
+[Cheats\Non Aggressive AI]
+patch=1,EE,2016C8C0,extended,03E00008
+
+[Cheats\Freeze Timer]
+patch=1,EE,2023B720,extended,AE0006DC
+patch=1,EE,2023B724,extended,44800000
+
+[Cheats\Stop Timer]
+patch=1,EE,2023AE8C,extended,3C104270
+patch=1,EE,2023AE94,extended,44900000
+
+[Cheats\1 Hit Kill]
+patch=1,EE,200FFEC0,extended,3C010050
+patch=1,EE,200FFEC4,extended,8C21F658
+patch=1,EE,200FFEC8,extended,14350002
+patch=1,EE,200FFED0,extended,08061F42
+patch=1,EE,200FFED8,extended,08061EFE
+patch=1,EE,20187BF0,extended,0803FFB0
+
+[Cheats\God Mode]
+patch=1,EE,200FFFC0,extended,3C010050
+patch=1,EE,200FFFC4,extended,8C21F658
+patch=1,EE,200FFFC8,extended,10240002
+patch=1,EE,200FFFD0,extended,E6800040
+patch=1,EE,200FFFD8,extended,080FB962
+patch=1,EE,203EE580,extended,0803FFF0
+
+[Cheats\Open Levels]
+author=gamehacking.org
+patch=1,EE,20338F6C,extended,24020001
+
+[Cheats\Open Weapons]
+author=gamehacking.org
+patch=1,EE,20338AFC,extended,24020001
+
+[Cheats\Unlock All Levels]
+patch=1,EE,20338FC0,extended,2002FFFF
+
+[Cheats\Unlock All Weapons]
+patch=1,EE,20338AF0,extended,2003FFFF
+
 // - OTHER
 [Cheats\Plant infinite C4s on B2]
 author=YukiXXL
@@ -34,18 +131,6 @@ patch=1,EE,203FB290,extended,00000000
 [Cheats\Write Par Time with minimum objectives completed]
 author=YukiXXL
 patch=1,EE,2033BB14,extended,64140001
-
-[Cheats\Open Weapons]
-author=gamehacking.org
-patch=1,EE,20338AFC,extended,24020001
-
-[Cheats\Open Levels]
-author=gamehacking.org
-patch=1,EE,20338F6C,extended,24020001
-
-[Cheats\Invisible]
-author=gamehacking.org
-patch=1,EE,2016B53C,extended,0805AE3E
 
 // LAN
 
