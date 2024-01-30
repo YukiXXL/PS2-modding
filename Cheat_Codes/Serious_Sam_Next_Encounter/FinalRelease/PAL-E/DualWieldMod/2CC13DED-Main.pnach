@@ -1,0 +1,6 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=DUAL WIELD MOD - MAIN
+
+//Double All Weapons
+patch=1,EE,20221F7C,extended,24020002
+patch=1,EE,20221F80,extended,AC620000

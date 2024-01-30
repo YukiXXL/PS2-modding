@@ -40,9 +40,9 @@ patch=1,EE,2033DC30,extended,7C63E0AA
 
 // ADDONS - OTHER
 
-[Addons\Other\Enable single Deagle/Uzi]
+[Addons\Other\Switch between two weapons]
 author=YukiXXL
-description=Enables switching to only one Deagle/Uzi.
+description=Enables switching between one or two Deagles/Uzis.
 patch=1,EE,00224B74,extended,30420002
 
 [Addons\Other\Get Medals on Easy Difficulty]
@@ -174,7 +174,13 @@ patch=1,EE,2025114C,extended,2403000B
 
 // MISC - GAMEPLAY
 
-[Misc\Gameplay\Spawn on the start]
+[Misc\Gameplay\Apply Fall Damage]
+author=YukiXXL
+patch=1,EE,20204100,extended,24030001
+
+// MISC - MINIONS
+
+[Misc\Minions\Spawn on the start]
 author=YukiXXL
 description=Spawns all enemies on the start.
 //Spawn on the start
@@ -182,7 +188,25 @@ patch=1,EE,20275FAC,extended,00000000
 //Giant Hornet fixed
 patch=1,EE,203B3C80,extended,001E7030
 
-[Misc\Gameplay\Stop auto-killing entities]
+[Misc\Minions\Stop auto-killing entities]
 author=YukiXXL
 patch=1,EE,201F7F58,extended,03E00008
 patch=1,EE,201F7F5C,extended,00000000
+
+// MODS
+// - DUAL WIELD MOD
+[Mods\Dual Wield Mod\Main]
+author=YukiXXL
+description=Enables dual wielding of all weapons. "Switch between two weapons" recommended!
+patch=1,EE,20221F7C,extended,24020002
+patch=1,EE,20221F80,extended,AC620000
+
+[Mods\Dual Wield Mod\Main]
+author=YukiXXL
+description=Increases ammo pickups and max ammo is set to 10,000.
+//PickupCount = GreenAmmoPackCount
+patch=1,EE,001FBCF0,extended,24A55B20
+//GreenAmmoPackCount = MaxAmmoCount
+patch=1,EE,001FBD98,extended,24A55B10
+//MaxAmmoCount = 10,000
+patch=1,EE,201FBD80,extended,24032710

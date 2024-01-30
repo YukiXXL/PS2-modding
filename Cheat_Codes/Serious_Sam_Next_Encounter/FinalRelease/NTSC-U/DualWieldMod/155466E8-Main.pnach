@@ -1,0 +1,6 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=DUAL WIELD MOD - MAIN
+
+//Double All Weapons
+patch=1,EE,2022212C,extended,24020002
+patch=1,EE,20222130,extended,AC620000

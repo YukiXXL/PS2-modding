@@ -1,0 +1,9 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=DUAL WIELD MOD - AMMO
+
+//PickupCount = GreenAmmoPackCount
+patch=1,EE,001FBCF0,extended,24A55B20
+//GreenAmmoPackCount = MaxAmmoCount
+patch=1,EE,001FBD98,extended,24A55B10
+//MaxAmmoCount = 10,000
+patch=1,EE,201FBD80,extended,24032710
