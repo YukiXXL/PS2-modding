@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Fixes crashes on real hardware.
+
+//TLB Miss fix
+patch=1,EE,E0010002,extended,00BCDA54
+patch=1,EE,20BCDA54,extended,00000000
