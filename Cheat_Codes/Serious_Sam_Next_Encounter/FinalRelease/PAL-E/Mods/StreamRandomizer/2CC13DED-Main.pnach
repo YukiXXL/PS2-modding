@@ -1,0 +1,16 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Replaces DNAS Shutdown code. Don't go online!
+
+//Random Stream Load
+patch=1,EE,20112D5C,extended,080995F2
+patch=1,EE,202657C8,extended,3C030034
+patch=1,EE,202657CC,extended,8072DB84
+patch=1,EE,202657D0,extended,24020003
+patch=1,EE,202657D4,extended,16420002
+patch=1,EE,202657D8,extended,26520001
+patch=1,EE,202657DC,extended,0000902D
+patch=1,EE,202657E0,extended,A072DB84
+patch=1,EE,202657E4,extended,0C044AAA
+patch=1,EE,202657E8,extended,0092202D
+patch=1,EE,202657EC,extended,08044B59
+patch=1,EE,202657F0,extended,00000000

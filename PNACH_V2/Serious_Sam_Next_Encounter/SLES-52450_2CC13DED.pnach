@@ -22,22 +22,6 @@ author=YukiXXL
 description=Saved after starting Split-Screen game second time!
 patch=1,EE,2027C57C,extended,AC400018
 
-// ADDONS - MENUS
-
-[Addons\Menus\Make a cool loading screen]
-author=YukiXXL
-patch=1,EE,203A79A4,extended,00676E69
-patch=1,EE,003A79A8,extended,00000000
-
-[Addons\Menus\Replace SamLogo video with Gotham games]
-author=YukiXXL
-patch=1,EE,203BE840,extended,68746F47
-patch=1,EE,203BE844,extended,00006D61
-
-[Addons\Menus\Replace Main Menu music with Hidden music]
-author=YukiXXL
-patch=1,EE,2033DC30,extended,7C63E0AA
-
 // ADDONS - OTHER
 
 [Addons\Other\Switch between two weapons]
@@ -172,6 +156,20 @@ author=YukiXXL
 description=For 'Seriously Silly' weapons type.
 patch=1,EE,2025114C,extended,2403000B
 
+[Misc\Menus\Make a cool loading screen]
+author=YukiXXL
+patch=1,EE,203A79A4,extended,00676E69
+patch=1,EE,003A79A8,extended,00000000
+
+[Misc\Menus\Replace SamLogo video with Gotham games]
+author=YukiXXL
+patch=1,EE,203BE840,extended,68746F47
+patch=1,EE,203BE844,extended,00006D61
+
+[Misc\Menus\Replace Main Menu music with Hidden music]
+author=YukiXXL
+patch=1,EE,00279788,extended,24040009
+
 // MISC - GAMEPLAY
 
 [Misc\Gameplay\Apply Fall Damage]
@@ -208,5 +206,39 @@ description=Increases ammo pickups and max ammo is set to 10,000.
 patch=1,EE,001FBCF0,extended,24A55B20
 //GreenAmmoPackCount = MaxAmmoCount
 patch=1,EE,001FBD98,extended,24A55B10
-//MaxAmmoCount = 10,000
-patch=1,EE,201FBD80,extended,24032710
+//MaxAmmoCount = 5,000
+patch=1,EE,201FBD80,extended,24031388
+
+// - STREAM RANDOMIZER
+
+[Mods\Stream Randomizer\Main]
+author=YukiXXL
+description=Random music and speech. (Replaces DNAS Shutdown code. Don't go online!)
+//Random Stream Load
+patch=1,EE,20112D5C,extended,080995F2
+patch=1,EE,202657C8,extended,3C030034
+patch=1,EE,202657CC,extended,8072DB84
+patch=1,EE,202657D0,extended,24020003
+patch=1,EE,202657D4,extended,16420002
+patch=1,EE,202657D8,extended,26520001
+patch=1,EE,202657DC,extended,0000902D
+patch=1,EE,202657E0,extended,A072DB84
+patch=1,EE,202657E4,extended,0C044AAA
+patch=1,EE,202657E8,extended,0092202D
+patch=1,EE,202657EC,extended,08044B59
+patch=1,EE,202657F0,extended,00000000
+
+[Mods\Stream Randomizer\Seperate\One]
+author=YukiXXL
+description=Only load streams increased by one.
+patch=1,EE,20112AB4,extended,64920001
+
+[Mods\Stream Randomizer\Seperate\Two]
+author=YukiXXL
+description=Only load streams increased by two.
+patch=1,EE,20112AB4,extended,64920002
+
+[Mods\Stream Randomizer\Seperate\Three]
+author=YukiXXL
+description=Only load streams increased by three.
+patch=1,EE,20112AB4,extended,64920003

@@ -1,0 +1,11 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Only load streams increased by...
+
+//One
+patch=1,EE,20112AB4,extended,64920001
+
+//Two
+patch=1,EE,20112AB4,extended,64920002
+
+//Three
+patch=1,EE,20112AB4,extended,64920003

@@ -9,3 +9,14 @@ patch=1,EE,1025CB00,extended,0C0A83A0
 
 //Maximum number of options = 11
 patch=1,EE,2025114C,extended,2403000B
+
+//Make a cool loading screen
+patch=1,EE,203A79A4,extended,00676E69
+patch=1,EE,003A79A8,extended,00000000
+
+//Replace SamLogo video with Gotham games
+patch=1,EE,203BE840,extended,68746F47
+patch=1,EE,203BE844,extended,00006D61
+
+//Replace Main Menu music with Hidden music
+patch=1,EE,00279788,extended,24040009

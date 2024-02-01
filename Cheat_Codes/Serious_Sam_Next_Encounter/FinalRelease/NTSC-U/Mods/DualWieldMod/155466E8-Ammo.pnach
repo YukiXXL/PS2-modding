@@ -5,5 +5,5 @@ comment=DUAL WIELD MOD - AMMO
 patch=1,EE,001FBEA0,extended,24A55050
 //GreenAmmoPackCount = MaxAmmoCount
 patch=1,EE,001FBF48,extended,24A55040
-//MaxAmmoCount = 10,000
-patch=1,EE,201FBF30,extended,24032710
+//MaxAmmoCount = 5,000
+patch=1,EE,201FBF30,extended,24031388
