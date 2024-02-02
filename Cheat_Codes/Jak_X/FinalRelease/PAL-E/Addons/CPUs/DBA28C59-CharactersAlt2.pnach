@@ -1,0 +1,7 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Alternative Version 2
+
+//Memory Check
+patch=1,EE,E0011025,extended,00BCBE3C
+//CPUs use all characters
+patch=1,EE,20BCBE3C,extended,00000000

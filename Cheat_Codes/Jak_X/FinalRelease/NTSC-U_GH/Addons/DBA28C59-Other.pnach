@@ -13,3 +13,7 @@ patch=1,EE,2135485C,extended,1000000C
 patch=1,EE,213542D0,extended,00000000
 patch=1,EE,213543A8,extended,00000000
 patch=1,EE,213544E8,extended,00000000
+
+//Enable Colors for Daxtermobile
+patch=1,EE,E001000E,extended,0131013C
+patch=1,EE,0131013C,extended,2403000F
