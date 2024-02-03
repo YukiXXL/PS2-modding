@@ -77,6 +77,7 @@ patch=1,EE,E0020002,extended,0131A9B8
 patch=1,EE,0131A928,extended,24030001
 patch=1,EE,0131A9B8,extended,24030001
 
+// - OTHER
 [Addons\Other\Scan and get all secret characters + Daxtermobile]
 patch=1,EE,E003FE79,extended,013E9A14
 patch=1,EE,213E9A14,extended,2404000F
@@ -89,6 +90,32 @@ patch=1,EE,2135485C,extended,1000000C
 patch=1,EE,213542D0,extended,00000000
 patch=1,EE,213543A8,extended,00000000
 patch=1,EE,213544E8,extended,00000000
+
+[Addons\Other\Enable Colors for Daxtermobile]
+patch=1,EE,E001000E,extended,0131013C
+patch=1,EE,0131013C,extended,2403000F
+
+// - CPUs
+[Addons\CPUs\Use all characters\Version 1]
+description=CPUs can use all chars + saves as enabled.
+//Memory Check
+patch=1,EE,E0011025,extended,00BCBEEC
+//CPUs use all characters + save
+patch=1,EE,20BCBEE0,extended,9C620040
+patch=1,EE,20BCBEE4,extended,12E20002
+patch=1,EE,20BCBEEC,extended,AC770040
+
+[Addons\CPUs\Use all characters\Version 2]
+description=CPUs can use all chars.
+//Memory Check
+patch=1,EE,E0011025,extended,00BCBEEC
+//CPUs use all characters
+patch=1,EE,20BCBEEC,extended,00000000
+
+[Addons\CPUs\Use all characters\Fixes]
+description=Fixes TLB Misses. Fixes crash on real hardware.
+patch=1,EE,E0010002,extended,00BCDA54
+patch=1,EE,20BCDA54,extended,00000000
 
 // EXPERIMENTAL
 // - ARTIST
