@@ -1,9 +1,21 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
 comment=DUAL WIELD MOD - AMMO
 
-//PickupCount = GreenAmmoPackCount
-patch=1,EE,001FBEA0,extended,24A55050
-//GreenAmmoPackCount = MaxAmmoCount
-patch=1,EE,001FBF48,extended,24A55040
-//MaxAmmoCount = 5,000
-patch=1,EE,201FBF30,extended,24031388
+//Double Ammo Function
+patch=1,EE,202669B8,extended,00631821
+patch=1,EE,202669BC,extended,A6030000
+//Fix the replaced function
+patch=1,EE,002650CC,extended,0C099A70
+
+//PickupCount
+patch=1,EE,201FBED8,word,0C099A6E
+patch=1,EE,201FBEDC,word,8C430018
+//MaxAmmoCount
+patch=1,EE,201FBF30,word,0C099A6E
+patch=1,EE,201FBF34,word,8C430018
+//GreenAmmoPackCount
+patch=1,EE,201FBF80,word,0C099A6E
+patch=1,EE,201FBF84,word,8C430018
+//RedAmmoPackCount
+patch=1,EE,201FBFD0,word,0C099A6E
+patch=1,EE,201FBFD4,word,8C430018

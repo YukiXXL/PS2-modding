@@ -97,11 +97,12 @@ patch=1,EE,004BABA0,byte,1
 author=YukiXXL
 patch=1,EE,001ADC48,extended,2A020003
 
-[Misc\NPCs\Enable all spawns]
+[Misc\NPCs\Enable All Spawns\Enable]
 author=YukiXXL
-//Enable all spawns
 patch=1,EE,201ABC34,extended,00000000
-//Memory fix
+[Misc\NPCs\Enable All Spawns\Memory fix]
+author=YukiXXL
+description=Fixes crashing and black screen when dying.
 patch=1,EE,001ABD44,extended,1440000E
 
 // - PLAYER

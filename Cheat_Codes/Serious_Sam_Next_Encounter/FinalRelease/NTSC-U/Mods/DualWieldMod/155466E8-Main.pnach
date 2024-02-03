@@ -1,6 +1,15 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
 comment=DUAL WIELD MOD - MAIN
 
-//Double All Weapons
-patch=1,EE,2022212C,extended,24020002
-patch=1,EE,20222130,extended,AC620000
+//Changeable weapons (Single/Dual)
+//Other weapons
+patch=1,EE,00222054,extended,24030003
+//Uzis
+patch=1,EE,0022205C,extended,24050003
+
+//Enable Dual Weapons
+patch=1,EE,002221D8,extended,30420000
+
+//Keep Deagles changeable
+patch=1,EE,00225BE8,extended,3463FFFF
+patch=1,EE,00226284,extended,3442FFFF

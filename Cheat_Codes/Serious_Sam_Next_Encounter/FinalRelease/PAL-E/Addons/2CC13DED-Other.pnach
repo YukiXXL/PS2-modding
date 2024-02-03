@@ -1,7 +1,7 @@
 gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 comment=ADDONS - OTHER
 
-//Switch between two weapons
+//Switch between dual weapons
 patch=1,EE,00224B74,extended,30420002
 
 //Get Medals on Easy Difficulty

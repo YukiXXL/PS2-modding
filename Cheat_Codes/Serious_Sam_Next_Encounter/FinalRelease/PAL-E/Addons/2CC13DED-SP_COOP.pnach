@@ -27,6 +27,9 @@ patch=1,EE,00275B64,extended,8C43C350
 patch=1,EE,00270F84,extended,8C43C350
 patch=1,EE,00271A90,extended,8C43C350
 
+//Killing Spree Music
+patch=1,EE,00212250,extended,8C43C350
+
 //
 // END of Fake Byte usage
 //

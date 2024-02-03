@@ -10,6 +10,8 @@ patch=1,EE,203B31B0,extended,001E71E0
 //Stop auto-killing entities
 patch=1,EE,201F8108,extended,03E00008
 patch=1,EE,201F810C,extended,00000000
+//Fix for Bosses
+patch=1,EE,203841C4,extended,00197188
 
 //Giant Hornet replaces Witch Harpy
 //patch=1,EE,003BD6E8,extended,00000004

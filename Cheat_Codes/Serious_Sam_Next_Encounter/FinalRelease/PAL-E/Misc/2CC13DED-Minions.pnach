@@ -10,6 +10,8 @@ patch=1,EE,203B3C80,extended,001E7030
 //Stop auto-killing minions
 patch=1,EE,201F7F58,extended,03E00008
 patch=1,EE,201F7F5C,extended,00000000
+//Fix for Bosses
+patch=1,EE,20384D04,extended,00196FD8
 
 //Giant Hornet replaces Witch Harpy
 //patch=1,EE,003BE308,extended,00000004

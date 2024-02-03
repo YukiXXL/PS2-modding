@@ -1,7 +1,7 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
 comment=ADDONS - OTHER
 
-//Enable single Deagle/Uzi
+//Switch between dual weapons
 patch=1,EE,00224D24,extended,30420002
 
 //Get Medals on Easy Difficulty

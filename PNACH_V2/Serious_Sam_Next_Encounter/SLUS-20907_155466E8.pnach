@@ -24,7 +24,7 @@ patch=1,EE,2027BDCC,extended,AC400018
 
 // ADDONS - OTHER
 
-[Addons\Other\Enable single Deagle/Uzi]
+[Addons\Other\Switch between dual weapons]
 author=YukiXXL
 description=Enables switching to only one Deagle/Uzi.
 patch=1,EE,00224D24,extended,30420002
@@ -74,18 +74,22 @@ author=YukiXXL
 description=Used for stuff below.
 patch=1,EE,0036B808,byte,1
 
-[Addons\SP-COOP\Fake Byte\Pickup effects]
+[Addons\SP-COOP\Fake Byte\Stuff\Pickup effects]
 author=YukiXXL
 patch=1,EE,002419B4,extended,8C64B808
 
-[Addons\SP-COOP\Fake Byte\Ricochet bullets]
+[Addons\SP-COOP\Fake Byte\Stuff\Ricochet bullets]
 author=YukiXXL
 patch=1,EE,0027573C,extended,8C43B808
 
-[Addons\SP-COOP\Fake Byte\Get Medals]
+[Addons\SP-COOP\Fake Byte\Stuff\Get Medals]
 author=YukiXXL
 patch=1,EE,00270B5C,extended,8C43B808
 patch=1,EE,00271668,extended,8C43B808
+
+[Addons\SP-COOP\Fake Byte\Stuff\Killing Spree Music]
+author=YukiXXL
+patch=1,EE,00212400,extended,8C43B808
 
 // ADDONS - ONLINE LEVELS IN OFFLINE CODES
 
@@ -190,24 +194,45 @@ patch=1,EE,203B31B0,extended,001E71E0
 author=YukiXXL
 patch=1,EE,201F8108,extended,03E00008
 patch=1,EE,201F810C,extended,00000000
+//Fix for Bosses
+patch=1,EE,203841C4,extended,00197188
 
 // MODS
 // - DUAL WIELD MOD
 [Mods\Dual Wield Mod\Main]
 author=YukiXXL
-description=Enables dual wielding of all weapons. "Switch between two weapons" recommended!
-patch=1,EE,2022212C,extended,24020002
-patch=1,EE,20222130,extended,AC620000
+description=Enables dual wielding of all weapons.
+//Changeable weapons (Single/Dual)
+//Other weapons
+patch=1,EE,00222054,extended,24030003
+//Uzis
+patch=1,EE,0022205C,extended,24050003
+//Enable Dual Weapons
+patch=1,EE,002221D8,extended,30420000
+//Keep Deagles changeable
+patch=1,EE,00225BE8,extended,3463FFFF
+patch=1,EE,00226284,extended,3442FFFF
 
-[Mods\Dual Wield Mod\Main]
+[Mods\Dual Wield Mod\Ammo]
 author=YukiXXL
-description=Increases ammo pickups and max ammo is set to 10,000.
-//PickupCount = GreenAmmoPackCount
-patch=1,EE,001FBEA0,extended,24A55050
-//GreenAmmoPackCount = MaxAmmoCount
-patch=1,EE,001FBF48,extended,24A55040
-//MaxAmmoCount = 5,000
-patch=1,EE,201FBF30,extended,24031388
+description=Double the ammo.
+//Double Ammo Function
+patch=1,EE,202669B8,extended,00631821
+patch=1,EE,202669BC,extended,A6030000
+//Fix the replaced function
+patch=1,EE,002650CC,extended,0C099A70
+//PickupCount
+patch=1,EE,201FBED8,word,0C099A6E
+patch=1,EE,201FBEDC,word,8C430018
+//MaxAmmoCount
+patch=1,EE,201FBF30,word,0C099A6E
+patch=1,EE,201FBF34,word,8C430018
+//GreenAmmoPackCount
+patch=1,EE,201FBF80,word,0C099A6E
+patch=1,EE,201FBF84,word,8C430018
+//RedAmmoPackCount
+patch=1,EE,201FBFD0,word,0C099A6E
+patch=1,EE,201FBFD4,word,8C430018
 
 // - STREAM RANDOMIZER
 
@@ -242,3 +267,8 @@ patch=1,EE,20112CDC,extended,64920002
 author=YukiXXL
 description=Only load streams increased by three.
 patch=1,EE,20112CDC,extended,64920003
+
+[Mods\Stream Randomizer\Seperate\Four]
+author=YukiXXL
+description=Only load streams increased by four.
+patch=1,EE,20112CDC,extended,64920004

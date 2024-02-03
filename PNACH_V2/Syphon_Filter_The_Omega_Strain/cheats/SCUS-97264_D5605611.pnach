@@ -277,14 +277,16 @@ patch=1,EE,002A3AE0,extended,28410001
 
 // MISC
 // - GAMEPLAY
-[Misc\Spawn on different location]
+[Misc\Spawn on different location\Enable]
 author=YukiXXL
 description=Spawn on different location instead of enemy/friend.
 //Spawn on different location instead of enemy/friend
 patch=1,EE,201C2098,extended,00000000
 //Bonus missions
 patch=1,EE,201C1FC8,extended,00000000
-//Fix for crashes
+[Misc\Spawn on different location\Fix for crashes]
+author=YukiXXL
+description=In some cases works without or works with "Enable All Spawns".
 patch=1,EE,201B7020,extended,24040001
 
 [Misc\Everyone invisible]
@@ -301,11 +303,12 @@ patch=1,EE,20186DDC,extended,24110002
 author=YukiXXL
 patch=1,EE,001B6718,extended,2A020003
 
-[Misc\NPCs\Enable All Spawns]
+[Misc\NPCs\Enable All Spawns\Enable]
 author=YukiXXL
-//Enable all spawns
 patch=1,EE,201B422C,extended,00000000
-//Memory fix
+[Misc\NPCs\Enable All Spawns\Memory fix]
+author=YukiXXL
+description=Fixes crashing and black screen when dying.
 patch=1,EE,001B433C,extended,1440000E
 
 // - NPCs - ENEMIES AIM FASTER
