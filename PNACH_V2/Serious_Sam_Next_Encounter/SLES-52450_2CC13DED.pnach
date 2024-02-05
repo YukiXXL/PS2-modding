@@ -197,6 +197,10 @@ patch=1,EE,201F7F5C,extended,00000000
 //Fix for Bosses
 patch=1,EE,20384D04,extended,00196FD8
 
+[Misc\Minions\No Friendly Fire between minions]
+author=YukiXXL
+patch=1,EE,201F02F8,extended,10000048
+
 // MODS
 // - DUAL WIELD MOD
 [Mods\Dual Wield Mod\Main]

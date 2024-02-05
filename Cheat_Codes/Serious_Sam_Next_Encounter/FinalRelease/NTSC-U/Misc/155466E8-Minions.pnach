@@ -15,3 +15,6 @@ patch=1,EE,203841C4,extended,00197188
 
 //Giant Hornet replaces Witch Harpy
 //patch=1,EE,003BD6E8,extended,00000004
+
+//No Friendly Fire between minions
+patch=1,EE,201F04A8,extended,10000048
