@@ -1,6 +1,9 @@
 gametitle=Tekken 5 Demo (NTSC-U)
 comment=GAMEMODES - GAMEMODE NUMBER 9
 
+//Alternative GM No. 9
+//patch=1,EE,10123670,extended,0C04A25A
+
 //Change character for GM No. 9 (Last two numbers!)
 // 00,01 = Paul
 // 02,03 = Law

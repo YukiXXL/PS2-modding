@@ -1,17 +1,5 @@
 gametitle=Tekken 5 Demo (NTSC-U)
 comment=MISC
 
-//Number of Rounds (Change the last number)
-patch=1,EE,00121F74,extended,24040002
-
 //Red color health bars
 patch=1,EE,001D190C,extended,2405000C
-
-//Force stage (Change the last two numbers!)
-patch=1,EE,002B8B48,extended,00000002
-//Available stages
-// 00 = Dragon's Nest
-// 01 = Burning Temple
-// 02 = Waterfall
-// 04 = City at Sunset
-// 12 = The Final Frontier

@@ -1,0 +1,11 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=STAGES - FORCE A STAGE
+
+//Force stage (Change the last two numbers!)
+patch=1,EE,002B8B48,byte,2
+//Available stages
+// 0 = Dragon's Nest
+// 1 = Burning Temple
+// 2 = Waterfall
+// 4 = City at Sunset
+// C = The Final Frontier

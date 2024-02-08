@@ -1,5 +1,5 @@
 gametitle=Tekken 5 Demo (NTSC-U)
-comment=CHARACTER SELECT - STAGES. NON-EXISTING STAGE CRASHES THE GAME!
+comment=CHARACTER SELECT - STAGES
 
 //Enable selecting stages
 patch=1,EE,203A9BC0,extended,0015DCC0

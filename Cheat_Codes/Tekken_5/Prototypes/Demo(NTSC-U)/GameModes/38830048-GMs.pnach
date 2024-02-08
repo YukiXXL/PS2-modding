@@ -1,0 +1,19 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=GAMEMODES - GAMEMODES
+
+//Available Gamemodes
+// 0 = Arcade
+// 1 = Demo Mode
+// 2 = Story Mode
+// 3 = Versus
+// 4 = Team Battle
+// 5 = Time Attack
+// 6 = Survival
+// 7 = Practice
+
+
+//Load a Gamemode
+patch=1,EE,00122B48,byte,0
+
+//Alternative (Forces the current gamemode)
+//patch=1,EE,002B8900,byte,6
