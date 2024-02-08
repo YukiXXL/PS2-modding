@@ -444,11 +444,15 @@ patch=1,EE,0015E22C,extended,24040000
 author=YukiXXL
 patch=1,EE,0015E214,extended,24040000
 
-[Character Select\Table\31 characters]
+[Character Select\Table\31 characters\Enable]
 author=YukiXXL
 patch=1,EE,0015E1CC,extended,24040000
 
-[Character Select\Table\31 characters with Jinpachi]
+[Character Select\Table\31 characters\Jinpachi layout]
 author=YukiXXL
 patch=1,EE,2019A9E8,extended,26E5DDA0
+
+[Character Select\Table\31 characters\Unfinished]
+author=YukiXXL
+description=Broken/Missing character table visual.
 patch=1,EE,0015E204,extended,24020006

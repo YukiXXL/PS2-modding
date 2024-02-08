@@ -3,9 +3,10 @@ comment=CHARACTER SELECT - CHARACTER TABLE
 
 //31 characters
 patch=1,EE,0015E1CC,extended,24040000
-//31 characters with Jinpachi
+//31 characters with Jinpachi layout
 patch=1,EE,2019A9E8,extended,26E5DDA0
-patch=1,EE,0015E204,extended,24020006
+//Unfinished ("31 characters" code needed!)
+//patch=1,EE,0015E204,extended,24020006
 //
 //29 characters
 //patch=1,EE,0015E214,extended,24040000
