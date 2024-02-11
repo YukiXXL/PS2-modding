@@ -42,26 +42,6 @@ patch=1,EE,2048A0C8,extended,000001F4
 author=YukiXXL
 patch=1,EE,2023A944,extended,24003634
 
-// LAN
-
-[Experimental\LAN]
-author=YukiXXL
-description=Replaces "Play Online".
-//LAN lobby instead of Play Online
-patch=1,EE,2029F904,extended,A0450032
-patch=1,EE,0029F914,extended,24A5ACD0
-patch=1,EE,0029F91C,extended,24C6ACE8
-//Create Mission
-patch=1,EE,202A7298,extended,90620032
-patch=1,EE,202A729C,extended,A0620033
-patch=1,EE,202A72A4,extended,A0620035
-//Bypasses
-patch=1,EE,20374430,extended,24020000
-patch=1,EE,202A739C,extended,24020001
-patch=1,EE,202A73BC,extended,14830003
-//Keep Online button
-patch=1,EE,2029FCF4,extended,24030000
-
 // ONLINE
 
 [Online\All levels available in online mode]
