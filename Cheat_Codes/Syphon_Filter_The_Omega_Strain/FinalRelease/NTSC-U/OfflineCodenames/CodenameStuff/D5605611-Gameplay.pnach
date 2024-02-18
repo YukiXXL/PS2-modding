@@ -2,7 +2,7 @@ gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 comment=OFFLINE CODENAMES: CODENAME STUFF - GAMEPLAY
 
 //Quickchat enabled
-patch=1,EE,00464D44,extended,902221C4
+patch=1,EE,00464D44,extended,902221C9
 
 //Show codename on the right
-patch=1,EE,0045E33C,extended,902221C4
+patch=1,EE,0045E33C,extended,902221C9

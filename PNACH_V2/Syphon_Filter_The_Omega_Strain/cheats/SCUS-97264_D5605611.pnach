@@ -535,23 +535,23 @@ patch=1,EE,20295E94,extended,00000000
 patch=1,EE,00295E88,extended,28410018
 // GAMEPLAY
 //Enable online objectives + dialogues
-patch=1,EE,0012F818,extended,902221C4
+patch=1,EE,0012F818,extended,902221C9
 //Team Par
-patch=1,EE,00368CB8,extended,902521C4
-patch=1,EE,00368D8C,extended,902221C4
+patch=1,EE,00368CB8,extended,902521C9
+patch=1,EE,00368D8C,extended,902221C9
 //Check if completed Par Time
-patch=1,EE,00462594,extended,902521C4
+patch=1,EE,00462594,extended,902521C9
 //Write Time
-patch=1,EE,00335B60,extended,902221C4
+patch=1,EE,00335B60,extended,902221C9
 //Buddy Climb
-patch=1,EE,00171894,extended,902221C4
+patch=1,EE,00171894,extended,902221C9
 //Animation Change
 patch=1,EE,0018D734,extended,24030031
 // CODENAME STUFF
 //Quickchat enabled
-patch=1,EE,00464D44,extended,902221C4
+patch=1,EE,00464D44,extended,902221C9
 //Show codename on the right
-patch=1,EE,0045E33C,extended,902221C4
+patch=1,EE,0045E33C,extended,902221C9
 
 [Mods\Offline Codenames\Variant\Codename Only]
 author=YukiXXL
@@ -565,7 +565,7 @@ patch=1,EE,202A0FA4,extended,3C010049
 patch=1,EE,202A0FA8,extended,2484FFFF
 patch=1,EE,202A0FAC,extended,AC244178
 patch=1,EE,202A0FB0,extended,3C010057
-patch=1,EE,202A0FB8,extended,A02221C4
+patch=1,EE,202A0FB8,extended,A02221C9
 // - MENUS
 //Join Mission button
 patch=1,EE,20297508,extended,00000000
@@ -617,8 +617,8 @@ patch=1,EE,002A0FC0,extended,12400046
 //Somekind of error fix
 patch=1,EE,2012EEA8,extended,00000000
 //Online, Offline enabler
-patch=1,EE,00167FF8,extended,A02321C4
-patch=1,EE,001680A4,extended,A02021C4
+patch=1,EE,00167FF8,extended,A02321C9
+patch=1,EE,001680A4,extended,A02021C9
 // - FIXES
 //Host Game fix
 patch=1,EE,2033D830,extended,00000000
@@ -634,70 +634,70 @@ patch=1,EE,002A159C,extended,24050001
 // CODENAME STUFF
 // - FIXES
 //Belarus 2 C4 stacks bug fix
-patch=1,EE,0016882C,extended,902221C4
+patch=1,EE,0016882C,extended,902221C9
 patch=1,EE,20168838,extended,00000000
 //Quit fix
-patch=1,EE,0013489C,extended,902221C4
+patch=1,EE,0013489C,extended,902221C9
 patch=1,EE,0013492C,extended,10400008
 // - GAMEPLAY
 //Show correct codename
-patch=1,EE,002B1558,extended,902221C4
+patch=1,EE,002B1558,extended,902221C9
 //Radio comms
-patch=1,EE,0018C814,extended,902221C4
+patch=1,EE,0018C814,extended,902221C9
 //Out of time (Team)
-patch=1,EE,00244FF0,extended,903021C4
+patch=1,EE,00244FF0,extended,903021C9
 //Minimap
-patch=1,EE,0026DAE4,extended,902221C4
-patch=1,EE,002C91B4,extended,902221C4
+patch=1,EE,0026DAE4,extended,902221C9
+patch=1,EE,002C91B4,extended,902221C9
 //Codename spelling and dependecies
-patch=1,EE,0013681C,extended,902221C4
-patch=1,EE,00185C84,extended,902221C4
-patch=1,EE,0012EE54,extended,902221C4
+patch=1,EE,0013681C,extended,902221C9
+patch=1,EE,00185C84,extended,902221C9
+patch=1,EE,0012EE54,extended,902221C9
 // - MAIN
 //Online controller (Responsible for codenames)
-patch=1,EE,001B7020,extended,902221C4
+patch=1,EE,001B7020,extended,902221C9
 // - MENUS
 //EQUIPMENT SETUP
 //Beginning at it (Can crash if disabled when using codenames)
-patch=1,EE,001685D8,extended,902221C4
+patch=1,EE,001685D8,extended,902221C9
 //After pressing square or triangle
-patch=1,EE,002BCD24,extended,902221C4
-patch=1,EE,002BCDF8,extended,902221C4
+patch=1,EE,002BCD24,extended,902221C9
+patch=1,EE,002BCDF8,extended,902221C9
 //Stats
-patch=1,EE,00456434,extended,902221C4
-patch=1,EE,00462418,extended,902221C4
+patch=1,EE,00456434,extended,902221C9
+patch=1,EE,00462418,extended,902221C9
 //START button
-patch=1,EE,002A21E4,extended,902221C4
+patch=1,EE,002A21E4,extended,902221C9
 //END MISSION
 //Marks and Eff award
-patch=1,EE,004633C0,extended,902221C4
+patch=1,EE,004633C0,extended,902221C9
 //<Codename> managed to not get killed
-patch=1,EE,004635A0,extended,902221C4
+patch=1,EE,004635A0,extended,902221C9
 //Medals and stuff
-patch=1,EE,004604B4,extended,902221C4
+patch=1,EE,004604B4,extended,902221C9
 // COUNTDOWN
 //SetStatus
 patch=1,EE,20184C60,extended,3C030057
-patch=1,EE,20184C64,extended,24632194
+patch=1,EE,20184C64,extended,24632198
 //GetStatus
 patch=1,EE,20184C80,extended,3C020057
-patch=1,EE,20184C84,extended,24422194
+patch=1,EE,20184C84,extended,24422198
 //HasHeadset
 patch=1,EE,20184CA0,extended,3C020057
-patch=1,EE,20184CA4,extended,24422194
+patch=1,EE,20184CA4,extended,24422198
 //Show timer instead of "WAITING FOR HOST"
-patch=1,EE,002A36BC,extended,902221C4
+patch=1,EE,002A36BC,extended,902221C9
 //Show timer and count in Equipment Modify
-patch=1,EE,002C0400,extended,902321C4
-patch=1,EE,002C0E3C,extended,902221C4
+patch=1,EE,002C0400,extended,902321C9
+patch=1,EE,002C0E3C,extended,902221C9
 
 [Mods\Offline Codenames\Optional\Check Team objectives]
 author=YukiXXL
 description=Write Par Time if Team objectives are also completed.
-patch=1,EE,00335A78,extended,902521C4
+patch=1,EE,00335A78,extended,902521C9
 
 [Mods\Offline Codenames\Optional\Skin based on codename]
 author=YukiXXL
 description=Bonus missions "online".
-patch=1,EE,001B6378,extended,902421C4
-patch=1,EE,001B63B8,extended,902221C4
+patch=1,EE,001B6378,extended,902421C9
+patch=1,EE,001B63B8,extended,902221C9

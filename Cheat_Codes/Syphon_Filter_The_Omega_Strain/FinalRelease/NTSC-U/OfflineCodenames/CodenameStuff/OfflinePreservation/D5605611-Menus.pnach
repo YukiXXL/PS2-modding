@@ -3,22 +3,22 @@ comment=OFFLINE CODENAMES: CODENAME STUFF: OFFLINE PRESERVATION - MENUS
 
 //EQUIPMENT SETUP
 //Beginning at it (Can crash if disabled when using codenames)
-patch=1,EE,001685D8,extended,902221C4
+patch=1,EE,001685D8,extended,902221C9
 //After pressing square or triangle
-patch=1,EE,002BCD24,extended,902221C4
-patch=1,EE,002BCDF8,extended,902221C4
+patch=1,EE,002BCD24,extended,902221C9
+patch=1,EE,002BCDF8,extended,902221C9
 
 //Stats
-patch=1,EE,00456434,extended,902221C4
-patch=1,EE,00462418,extended,902221C4
+patch=1,EE,00456434,extended,902221C9
+patch=1,EE,00462418,extended,902221C9
 
 //START button
-patch=1,EE,002A21E4,extended,902221C4
+patch=1,EE,002A21E4,extended,902221C9
 
 //END MISSION
 //Marks and Eff award
-patch=1,EE,004633C0,extended,902221C4
+patch=1,EE,004633C0,extended,902221C9
 //<Codename> managed to not get killed
-patch=1,EE,004635A0,extended,902221C4
+patch=1,EE,004635A0,extended,902221C9
 //Medals and stuff
-patch=1,EE,004604B4,extended,902221C4
+patch=1,EE,004604B4,extended,902221C9

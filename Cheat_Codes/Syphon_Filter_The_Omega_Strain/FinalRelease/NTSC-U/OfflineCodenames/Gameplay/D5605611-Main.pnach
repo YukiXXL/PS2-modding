@@ -2,20 +2,20 @@ gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 comment=OFFLINE CODENAMES: GAMEPLAY - MAIN
 
 //Enable online objectives + dialogues
-patch=1,EE,0012F818,extended,902221C4
+patch=1,EE,0012F818,extended,902221C9
 
 //Team Par
-patch=1,EE,00368CB8,extended,902521C4
-patch=1,EE,00368D8C,extended,902221C4
+patch=1,EE,00368CB8,extended,902521C9
+patch=1,EE,00368D8C,extended,902221C9
 //Check if completed Par Time
-patch=1,EE,00462594,extended,902521C4
+patch=1,EE,00462594,extended,902521C9
 
 //Check Team objectives
-//patch=1,EE,00335A78,extended,902521C4
+//patch=1,EE,00335A78,extended,902521C9
 //Write Time
-patch=1,EE,00335B60,extended,902221C4
+patch=1,EE,00335B60,extended,902221C9
 
 //Buddy Climb
-patch=1,EE,00171894,extended,902221C4
+patch=1,EE,00171894,extended,902221C9
 //Animation Change
 patch=1,EE,0018D734,extended,24030031

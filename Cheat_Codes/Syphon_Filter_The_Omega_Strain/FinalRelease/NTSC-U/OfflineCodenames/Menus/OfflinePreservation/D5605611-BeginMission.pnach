@@ -11,5 +11,5 @@ patch=1,EE,002A0FC0,extended,12400046
 patch=1,EE,2012EEA8,extended,00000000
 
 //Online, Offline enabler
-patch=1,EE,00167FF8,extended,A02321C4
-patch=1,EE,001680A4,extended,A02021C4
+patch=1,EE,00167FF8,extended,A02321C9
+patch=1,EE,001680A4,extended,A02021C9
