@@ -31,7 +31,7 @@ patch=1,EE,203C44D8,extended,AE220014
 [Addons\Menus\BOOT_FRONTEND]
 author=YukiXXL
 description=Enable booting into Main Menu.
-patch=1,EE,204CA150,extended,00010100
+patch=1,EE,202456B4,extended,00000000
 
 [Addons\Menus\Enable LAN button]
 author=YukiXXL

@@ -1,0 +1,13 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo #1 (Ripped)
+comment=MISC
+
+//Change the last two HEX values!
+
+//Load Level Specific Weapon Data (WPN:)
+patch=1,EE,20207CF0,extended,2409001A
+
+//Force everyone to use one weapon
+patch=1,EE,20260A08,extended,2405001A
+
+//Force a specific weapon into all weapon crates
+patch=1,EE,202D2504,extended,2415001A

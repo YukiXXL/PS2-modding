@@ -12,3 +12,7 @@ patch=1,EE,2022EA1C,extended,00000000
 
 //60 FPS
 patch=1,EE,0022EA58,extended,2402003C
+
+//Enable activation of "E3 Extended Features"
+//Hold LS to the left and RS to the right. Press buttons in order: L1, R1, L2, R2.
+patch=1,EE,003DB0A0,extended,24020000

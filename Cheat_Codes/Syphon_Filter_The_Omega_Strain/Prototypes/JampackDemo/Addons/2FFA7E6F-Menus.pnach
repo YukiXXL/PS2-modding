@@ -2,7 +2,8 @@ gametitle=Syphon Filter: The Omega Strain Jampack Demo #1 (Ripped)
 comment=ADDONS - MENUS
 
 //BOOT_FRONTEND
-patch=1,EE,20451550,extended,00010100
+//patch=1,EE,20451550,extended,00010100
+patch=1,EE,2022EB34,extended,00000000
 
 //LAN button
 patch=1,EE,2031604C,extended,00000000

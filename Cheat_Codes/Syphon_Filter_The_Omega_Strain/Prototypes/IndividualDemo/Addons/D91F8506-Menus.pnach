@@ -2,7 +2,8 @@ gametitle=Syphon Filter: The Omega Strain Individual Demo (NTSC-U)
 comment=ADDONS - MENUS
 
 //BOOT_FRONTEND
-patch=1,EE,204CA150,extended,00010100
+//patch=1,EE,204CA150,extended,00010100
+patch=1,EE,202456B4,extended,00000000
 
 //Enable LAN button
 patch=1,EE,20340058,extended,8C2478E8

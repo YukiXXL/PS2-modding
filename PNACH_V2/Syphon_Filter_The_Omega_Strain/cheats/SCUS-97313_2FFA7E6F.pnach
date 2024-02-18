@@ -42,7 +42,7 @@ patch=1,EE,10315BE8,extended,24C6C6E8
 [Addons\Menus\BOOT_FRONTEND]
 author=YukiXXL
 description=Enable booting into Main Menu.
-patch=1,EE,20451550,extended,00010100
+patch=1,EE,2022EB34,extended,00000000
 
 [Addons\Menus\Enable LAN button]
 author=YukiXXL
@@ -111,6 +111,11 @@ patch=1,EE,2022EA1C,extended,00000000
 
 [Addons\Gameplay\60 FPS]
 patch=1,EE,0022EA58,extended,2402003C
+
+[Addons\Gameplay\Enable activation of "E3 Extended Features"]
+author=YukiXXL
+description=Hold LS to left, RS to right. Press L1, R1, L2, R2.
+patch=1,EE,003DB0A0,extended,24020000
 
 // - PLAYER
 [Addons\Player\Enable Quickchat + Buddy Climb Solo]
