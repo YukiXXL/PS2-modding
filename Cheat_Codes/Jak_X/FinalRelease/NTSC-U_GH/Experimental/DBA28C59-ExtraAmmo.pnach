@@ -1,0 +1,18 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=MISC - EXTRA AMMO
+
+//Grenades
+patch=1,EE,E1000003,extended,00F519A4
+patch=1,EE,00F519A4,extended,24020006
+//Missiles
+patch=1,EE,E1000002,extended,00F5052C
+patch=1,EE,00F5052C,extended,24020003
+//Vipers
+patch=1,EE,E1000032,extended,00F53514
+patch=1,EE,00F53514,extended,24020064
+//Chicken_Drone
+patch=1,EE,E1000001,extended,01E6986C
+patch=1,EE,01E6986C,extended,24020064
+//Peacemaker
+patch=1,EE,E1000001,extended,01E69D2C
+patch=1,EE,01E69D2C,extended,24020003
