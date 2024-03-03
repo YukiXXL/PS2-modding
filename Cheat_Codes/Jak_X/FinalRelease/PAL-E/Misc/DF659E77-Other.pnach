@@ -4,3 +4,15 @@ comment=MISC - OTHER
 //Freeze Rally with Circuit options
 patch=1,EE,E001002C,extended,013CB8B4
 patch=1,EE,113CB8B4,extended,1000FE8E
+
+//Other events have Circuit options
+patch=1,EE,E001002C,extended,013CC530
+patch=1,EE,113CC530,extended,1000FB6F
+
+//Circuit with Turbo Dash options
+patch=1,EE,E000E5BF,extended,013CB354
+patch=1,EE,113CB354,extended,8EE5E797
+
+//Enable selecting laps on Tours
+patch=1,EE,E0000004,extended,013CB440
+patch=1,EE,013CB440,extended,66E30000
