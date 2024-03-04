@@ -11,6 +11,8 @@ patch=1,EE,201F7474,extended,00000000
 patch=1,EE,2022EA1C,extended,00000000
 
 //60 FPS
+patch=1,EE,0022E9E8,extended,2402003C
+patch=1,EE,0022EA34,extended,2402003C
 patch=1,EE,0022EA58,extended,2402003C
 
 //Enable activation of "E3 Extended Features"

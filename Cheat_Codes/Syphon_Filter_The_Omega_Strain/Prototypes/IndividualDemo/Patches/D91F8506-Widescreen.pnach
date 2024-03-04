@@ -1,0 +1,10 @@
+gametitle=Syphon Filter: The Omega Strain Individual Demo (NTSC-U)
+comment=PATCHES - WIDESCREEN
+
+//gameplay
+patch=1,EE,0010D4F0,extended,3C043F40
+patch=1,EE,2010D4F4,extended,44841800
+patch=1,EE,2010D4F8,extended,46030003
+patch=1,EE,2010D4FC,extended,460318C3
+patch=1,EE,2010D500,extended,46031840
+patch=1,EE,2010D574,extended,E603007C
