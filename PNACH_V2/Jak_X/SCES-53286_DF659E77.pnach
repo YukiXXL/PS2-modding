@@ -34,29 +34,6 @@ patch=1,EE,10F1899C,extended,8EE30137
 patch=1,EE,E001012B,extended,00A8BA88
 patch=1,EE,10A8BA88,extended,8EE30137
 
-// - EVENTS
-[Addons\Events\Enable all sub-options all the time]
-patch=1,EE,E00197CC,extended,00E27C00
-patch=1,EE,00E27C00,extended,66E497D0
-
-[Addons\Events\Other events have Collectathon options]
-description=Tutorial, Mizo Race, etc.
-patch=1,EE,E001002C,extended,013CC530
-patch=1,EE,113CC530,extended,1000FE92
-
-// - MORE LAPS / MORE TIME
-[Addons\More Laps and More Time]
-//Safe Check
-patch=1,EE,E006200B,extended,013CCEF0
-//Increase the number of max laps
-patch=1,EE,213CCE6C,extended,240600FF
-patch=1,EE,213CCE70,extended,ACA60004
-patch=1,EE,213CCE74,extended,8CA50004
-//Minimum number of laps is 0
-patch=1,EE,213CCEEC,extended,0000302D
-patch=1,EE,213CCEF0,extended,ACA60000
-patch=1,EE,213CCEF4,extended,8CA50000
-
 // - OFFLINE WITH WORKING ONLINE MENUS
 [Addons\Offline with working Online menus]
 //Memory Check
@@ -117,6 +94,93 @@ description=Fixes TLB Misses. Fixes crash on real hardware.
 patch=1,EE,E0010002,extended,00BCD9A4
 patch=1,EE,20BCD9A4,extended,00000000
 
+// EVENTS
+
+// - CPUs
+[Events\CPUs\5 CPUs on Death Race and Rush Hour]
+patch=1,EE,E0010004,extended,00BCD408
+patch=1,EE,00BCD408,extended,24130005
+
+[Events\CPUs\5 CPUs on Freeze Rally]
+patch=1,EE,E0010000,extended,00BCD42C
+patch=1,EE,00BCD42C,extended,24130005
+
+[Events\CPUs\Enable setting a CPU on any gamemode]
+description="Enable all sub-options all the time" required.
+//5 MAX CPUs on any game modes
+patch=1,EE,E001000D,extended,0130BA2C
+patch=1,EE,2130BA2C,extended,24030005
+//Load selected CPUs on all gamemodes
+patch=1,EE,E0030027,extended,00BCD298
+patch=1,EE,20BCD298,extended,10000027
+//Save 5 CPUs as a MAX
+patch=1,EE,20BCD378,extended,24050005
+patch=1,EE,20BCD3A8,extended,A045000D
+
+// - GAMEMODE
+[Events\GameMode\Force a gamemode\Mizo]
+description=The gamemode changes when switching vehicle/colors.
+patch=1,EE,E0020000,extended,00F2188C
+patch=1,EE,20F21884,extended,24040011
+patch=1,EE,20F2188C,extended,A0640005
+
+[Events\GameMode\Replace\Freeze Rally = Training]
+patch=1,EE,E0010002,extended,00B60198
+patch=1,EE,00B60198,extended,0000000F
+
+[Events\GameMode\Replace\Rush Hour = Training 2]
+patch=1,EE,E001000D,extended,00B60178
+patch=1,EE,00B60178,extended,00000010
+
+[Events\GameMode\Replace\Time Attack = Mizo]
+patch=1,EE,E0010003,extended,00B60168
+patch=1,EE,00B60168,extended,00000011
+
+// - MISC
+[Events\Misc\Enable all sub-options all the time]
+patch=1,EE,E00197CC,extended,00E27C00
+patch=1,EE,00E27C00,extended,66E497D0
+
+[Events\Misc\Allow changing teams in any event]
+description=The Teams setting must be enabled.
+patch=1,EE,E001A825,extended,00BD0E14
+patch=1,EE,20BD0E14,extended,00000000
+
+[Events\Misc\Enable selecting laps on Tours]
+patch=1,EE,E0000004,extended,013CB440
+patch=1,EE,013CB440,extended,66E30000
+
+// - MORE LAPS
+[Events\More laps and Time]
+description=Minimum is 0, Maximum is 255.
+//Safe Check
+patch=1,EE,E006200B,extended,013CCEF0
+//Increase the number of max laps
+patch=1,EE,213CCE6C,extended,240600FF
+patch=1,EE,213CCE70,extended,ACA60004
+patch=1,EE,213CCE74,extended,8CA50004
+//Minimum number of laps is 0
+patch=1,EE,213CCEEC,extended,0000302D
+patch=1,EE,213CCEF0,extended,ACA60000
+patch=1,EE,213CCEF4,extended,8CA50000
+
+// - OPTIONS
+[Events\Options\Collectathon options for any gamemode]
+patch=1,EE,E0010002,extended,013CB224
+patch=1,EE,113CB224,extended,10000327
+
+[Events\Options\Other events have Collectathon options]
+patch=1,EE,E001002C,extended,013CC530
+patch=1,EE,113CC530,extended,1000FE92
+
+[Events\Options\Other events have Circuit options]
+patch=1,EE,E001002C,extended,013CC530
+patch=1,EE,113CC530,extended,1000FB6F
+
+[Events\Options\Freeze Rally with Circuit options]
+patch=1,EE,E001002C,extended,013CB8B4
+patch=1,EE,113CB8B4,extended,1000FE8E
+
 // EXPERIMENTAL
 
 [Experimental\Extra Events]
@@ -136,52 +200,6 @@ patch=1,EE,E003B3B4,extended,00B6010C
 patch=1,EE,00B602C8,extended,0000000C
 patch=1,EE,40B602D8,extended,00030004
 patch=1,EE,0000000F,extended,00000001
-
-// MISC
-//CPUs
-[Misc\CPUs\5 CPUs on Death Race and Rush Hour]
-patch=1,EE,E0010004,extended,00BCD408
-patch=1,EE,00BCD408,extended,24130005
-
-[Misc\CPUs\5 CPUs on Freeze Rally]
-patch=1,EE,E0010000,extended,00BCD42C
-patch=1,EE,00BCD42C,extended,24130005
-
-[Misc\CPUs\Selectable CPUs]
-description="Enable all sub-options all the time" required!
-//5 MAX CPUs on any game modes
-patch=1,EE,E001000D,extended,0130BA2C
-patch=1,EE,2130BA2C,extended,24030005
-//Load selected CPUs on all gamemodes
-patch=1,EE,E0030027,extended,00BCD298
-patch=1,EE,20BCD298,extended,10000027
-//Save 5 CPUs as a MAX
-patch=1,EE,20BCD378,extended,24050005
-patch=1,EE,20BCD3A8,extended,A045000D
-
-// - EVENTS
-[Misc\Events\Force a GameMode onto selected event\Mizo]
-description=Select the event, change the car or body color, goto previous menu.
-patch=1,EE,E0020000,extended,00F2188C
-patch=1,EE,20F21884,extended,24040011
-patch=1,EE,20F2188C,extended,A0640005
-
-[Misc\Events\Freeze Rally = Training]
-patch=1,EE,E0010002,extended,00B60198
-patch=1,EE,00B60198,extended,0000000F
-
-[Misc\Events\Rush Hour = Training 2]
-patch=1,EE,E001000D,extended,00B60178
-patch=1,EE,00B60178,extended,00000010
-
-[Misc\Events\Time Attack = Mizo]
-patch=1,EE,E0010003,extended,00B60168
-patch=1,EE,00B60168,extended,00000011
-
-// - OTHER
-[Misc\Other\Freeze Rally with Circuit options]
-patch=1,EE,E001002C,extended,013CB8B4
-patch=1,EE,113CB8B4,extended,1000FE8E
 
 // ONLINE-LAN
 // - DNAS BYPASS

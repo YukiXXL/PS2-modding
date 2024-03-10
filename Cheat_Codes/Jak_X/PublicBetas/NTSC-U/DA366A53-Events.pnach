@@ -1,5 +1,5 @@
 gametitle=Jak X Beta Trial Code (NTSC-U)
-comment=ADDONS - EVENTS
+comment=EVENTS
 
 //Unlock all events (Needed if in Beta Mode!)
 patch=1,EE,E00161A4,extended,002D78F8

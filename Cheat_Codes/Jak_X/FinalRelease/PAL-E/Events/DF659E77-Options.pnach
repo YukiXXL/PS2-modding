@@ -1,0 +1,18 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=EVENTS - OPTIONS
+
+//Collectathon options for any gamemode
+patch=1,EE,E0010002,extended,013CB224
+patch=1,EE,113CB224,extended,10000327
+
+//Other events have Collectathon options
+patch=1,EE,E001002C,extended,013CC530
+patch=1,EE,113CC530,extended,1000FE92
+
+//Other events have Circuit options
+patch=1,EE,E001002C,extended,013CC530
+patch=1,EE,113CC530,extended,1000FB6F
+
+//Freeze Rally with Circuit options
+patch=1,EE,E001002C,extended,013CB8B4
+patch=1,EE,113CB8B4,extended,1000FE8E

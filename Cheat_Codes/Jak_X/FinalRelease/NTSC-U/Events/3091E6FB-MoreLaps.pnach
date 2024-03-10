@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (NTSC-U)
-comment=ADDONS - 256 LAPS
+comment=EVENTS - MORE LAPS AND TIME
 
 //Safe Check
 patch=1,EE,E006200B,extended,013CB2D4

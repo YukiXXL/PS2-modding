@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (PAL-E)
-comment=ADDONS - EVENTS
+comment=EVENTS - MISC
 
 //Enable all sub-options all the time
 patch=1,EE,E00197CC,extended,00E27C00
@@ -9,6 +9,6 @@ patch=1,EE,00E27C00,extended,66E497D0
 patch=1,EE,E001A825,extended,00BD0E14
 patch=1,EE,20BD0E14,extended,00000000
 
-//Other events have Collectathon options
-patch=1,EE,E001002C,extended,013CC530
-patch=1,EE,113CC530,extended,1000FE92
+//Enable selecting laps on Tours
+patch=1,EE,E0000004,extended,013CB440
+patch=1,EE,013CB440,extended,66E30000

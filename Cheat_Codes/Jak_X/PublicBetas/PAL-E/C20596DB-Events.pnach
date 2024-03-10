@@ -1,5 +1,5 @@
 gametitle=Jak X Beta Trial Code (PAL-E)
-comment=ADDONS - EVENTS
+comment=EVENTS
 
 //Unlock all events (Needed if in Beta Mode!)
 patch=1,EE,E00162A4,extended,002D79F8

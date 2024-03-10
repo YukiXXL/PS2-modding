@@ -1,6 +1,7 @@
 gametitle=Jak X Beta Trial Code (NTSC-U)
 comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
+// BOOT
 [Boot Mode\Retail]
 description=Boots the game into the Retail mode.
 patch=1,EE,E0016562,extended,00272638
@@ -11,6 +12,7 @@ description=Boots the game into the Kiosk mode.
 patch=1,EE,E0012638,extended,0025BDA0
 patch=1,EE,1025BDA0,extended,24C6D370
 
+// - FIXES
 [Boot Mode\Fixes for Missing Events]
 description=ENABLE if using Retail or Kiosk!
 //Check just in case
@@ -52,29 +54,10 @@ patch=1,EE,2098588C,extended,00000000
 patch=1,EE,209920F8,extended,6F676F6C
 patch=1,EE,209920FC,extended,00000000
 
+// ADDONS
 [Addons\Offline\Online = Mode Select]
 patch=1,EE,E0017B79,extended,012CB3D8
 patch=1,EE,212CB3D8,extended,002CA1F1
-
-[Addons\Events\Unlock all events]
-patch=1,EE,E00161A4,extended,002D78F8
-patch=1,EE,102D78F8,extended,00B86204
-
-[Addons\Events\Enable all events for SS]
-patch=1,EE,E001FFFE,extended,012CFCFC
-patch=1,EE,012CFCFC,extended,64A6FFFD
-
-[Addons\Events\Reversi\Enable Reversi on Dirt Stadium]
-description=Replaces Mar Coliseum.
-patch=1,EE,E0026F63,extended,009A01B8
-patch=1,EE,209A0194,extended,009A3A44
-patch=1,EE,209A0198,extended,009A3A24
-
-[Addons\Events\Reversi\Enable Reversi on Clifftop Battlefield]
-description=Replaces Desert Arena.
-patch=1,EE,E0026564,extended,009A06F8
-patch=1,EE,209A06D4,extended,009A38A4
-patch=1,EE,209A06D8,extended,009A3884
 
 [Addons\Hidden\Enable Mongoose]
 patch=1,EE,E0010009,extended,012CE7B8
@@ -84,6 +67,29 @@ patch=1,EE,012CE7B8,extended,80840006
 patch=1,EE,E001FFF9,extended,00BCC080
 patch=1,EE,00BCC080,extended,6463FFF8
 
+// EVENTS
+[Events\Unlock all events]
+description=Needed if in Beta Mode!
+patch=1,EE,E00161A4,extended,002D78F8
+patch=1,EE,102D78F8,extended,00B86204
+
+[Events\Enable all events for SS]
+patch=1,EE,E001FFFE,extended,012CFCFC
+patch=1,EE,012CFCFC,extended,64A6FFFD
+
+[Events\Reversi\Enable Reversi on Dirt Stadium]
+description=Replaces Mar Coliseum.
+patch=1,EE,E0026F63,extended,009A01B8
+patch=1,EE,209A0194,extended,009A3A44
+patch=1,EE,209A0198,extended,009A3A24
+
+[Events\Reversi\Enable Reversi on Clifftop Battlefield]
+description=Replaces Desert Arena.
+patch=1,EE,E0026564,extended,009A06F8
+patch=1,EE,209A06D4,extended,009A38A4
+patch=1,EE,209A06D8,extended,009A3884
+
+// MISC
 [Misc\Bypasses\5 CPUs, 6 Players for event]
 description=Saves when trying to start the game.
 patch=1,EE,E0035567,extended,012D29C4

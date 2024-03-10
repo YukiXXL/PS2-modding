@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (NTSC-U)
-comment=MISC - EVENTS
+comment=EVENTS - GAMEMODE
 
 //Save game mode to currently used address
 //Change the last hex-byte in second line
