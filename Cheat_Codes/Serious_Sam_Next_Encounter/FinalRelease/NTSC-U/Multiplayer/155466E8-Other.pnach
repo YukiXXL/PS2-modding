@@ -1,5 +1,5 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=ADDONS - SP/COOP
+comment=MULTIPLAYER - OTHER
 
 //Multiplayer model in Single Player
 patch=1,EE,2020BF9C,extended,10000005

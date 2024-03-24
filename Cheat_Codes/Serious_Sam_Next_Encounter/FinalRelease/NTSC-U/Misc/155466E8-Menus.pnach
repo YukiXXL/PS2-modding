@@ -1,11 +1,11 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
 comment=MISC - MENUS
 
-//Enable Online in Offline
-patch=1,EE,1025CA98,extended,0C0A80E0
-//Bypass connecting errors
-//patch=1,EE,00295370,extended,24020000
-//patch=1,EE,00299610,extended,24020000
+//Run "Init Menu" at the start
+patch=1,EE,00276F5C,extended,24040006
+
+//Credits replaced with "Init Menu"
+patch=1,EE,0025CBCC,extended,24050006
 
 //Maximum number of options = 11
 patch=1,EE,202511EC,extended,2403000B

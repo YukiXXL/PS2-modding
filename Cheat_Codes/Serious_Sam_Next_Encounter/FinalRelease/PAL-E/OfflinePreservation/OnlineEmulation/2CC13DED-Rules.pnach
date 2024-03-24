@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Offline Preservation - Online Emulation - Rules
+
+//Rules
+patch=1,EE,00279C58,extended,0C0A57FE //Level
+patch=1,EE,0027CEC8,extended,0C0A57FE //WeaponSet
+
+//Time Position
+patch=1,EE,0027D998,extended,0C0A57FE
+
+//Texture Quality
+patch=1,EE,00273F04,extended,0C0A57FE

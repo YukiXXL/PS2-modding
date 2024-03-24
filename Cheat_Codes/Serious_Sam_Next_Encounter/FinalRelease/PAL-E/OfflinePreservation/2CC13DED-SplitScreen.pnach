@@ -1,5 +1,5 @@
 gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=PLAY ONLINE GAMEMODES CODES
+comment=Offline Preservation - Split Screen
 
 //Host Game = Select Profiles
 patch=1,EE,00264D98,extended,24050099
