@@ -2,7 +2,7 @@ gametitle=Champions Return to Arms Final Release (PAL-E)
 comment=MISC
 
 //No interlacing
-patch=1,EE,0019E2E8,extended,ACA00008
+patch=1,EE,2019E2E8,extended,ACA00008
 
 // D-Pad Down + R1 = Level up
 // L2 + R2 + Start = Debug menu
@@ -22,3 +22,5 @@ patch=1,EE,204F8778,extended,0053F100 //Load "menu_net_client". Also loads the s
 patch=1,EE,2053F104,extended,7261685F
 patch=1,EE,2053F108,extended,74736564
 patch=1,EE,2053F10C,extended,00000032
+//Remove the settings for clearer screen
+//patch=1,EE,204F8788,extended,00000000

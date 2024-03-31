@@ -2,5 +2,5 @@ gametitle=Jak X Final Release (PAL-E)
 comment=Fixes crashes on real hardware.
 
 //TLB Miss fix
-patch=1,EE,E0010002,extended,00BCD9A4
-patch=1,EE,20BCD9A4,extended,00000000
+patch=1,EE,E0010003,extended,00BCD99C
+patch=1,EE,20BCD99C,extended,10000003
