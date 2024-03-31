@@ -1,5 +1,5 @@
 gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=Offline Preservation - Online Emulation - Online Features
+comment=Offline Preservation - Online Emulation - Features
 
 //Populate Player List. Gets rid of TLB Misses on game start.
 patch=1,EE,2029B338,extended,ACC6FFFC
@@ -22,3 +22,14 @@ patch=1,EE,0026F8F4,extended,0C0A57FE //Pause Menu options
 //
 patch=1,EE,0026F990,extended,0C0A57FE //Fix crashes
 patch=1,EE,0026FAFC,extended,0C0A57FE //Allow changing "NetSetup.UseChat"
+
+//Spawn Dummies
+//patch=1,EE,0027C06C,extended,0C0A57FE //Lots of TLB Misses!
+
+//Check if the game is running
+//patch=1,EE,0027D7E8,extended,0C0A57FE //Only needed if "Spawn Dummies" is enabled.
+//patch=1,EE,0027BA1C,extended,0C0A57FE
+//patch=1,EE,00279FD4,extended,0C0A57FE
+
+//Enable changing levels after getting back to Staging Area
+patch=1,EE,102634B0,extended,0C0A57FE

@@ -11,4 +11,11 @@ patch=1,EE,201E1848,extended,10000006
 
 //Increase selected difficulty by 1
 //Legendary = Epic difficulty (cut diff)
-patch=1,EE,001E1A8C,extended,26900002
+//patch=1,EE,001E1A8C,extended,26900002
+
+//Enable Epic Difficulty
+patch=1,EE,204F6DB8,extended,0053CBF0 //Load "menu_net_client". Also loads the settings!
+//menu_net_client -> menu_hardest2
+patch=1,EE,2053CBF4,extended,7261685F
+patch=1,EE,2053CBF8,extended,74736564
+patch=1,EE,2053CBFC,extended,00000032

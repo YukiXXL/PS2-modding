@@ -1,0 +1,5 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=ADDONS - MENUS
+
+//Enable starting Multiplayer game with only one player
+patch=1,EE,00260478,extended,24030000

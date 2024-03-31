@@ -6,6 +6,7 @@ patch=1,EE,2025F98C,extended,24050003
 patch=1,EE,2025F990,extended,AC450018
 
 //Load Offline LevelSet in Online (Use "Enable Online in Offline" + OPTIONAL fix below!)
+//Fixes showing grey box when the above code is enabled
 patch=1,EE,10260DF8,extended,2631F910
 
 //OPTIONAL! Fix for correctly showing Online levels in Offline

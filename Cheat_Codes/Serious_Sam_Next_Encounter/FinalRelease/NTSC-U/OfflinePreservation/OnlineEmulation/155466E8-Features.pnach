@@ -1,5 +1,5 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=Offline Preservation - Online Emulation - Online Features
+comment=Offline Preservation - Online Emulation - Features
 
 //Populate Player List. Gets rid of TLB Misses on game start.
 patch=1,EE,2029A838,extended,ACC6FFFC

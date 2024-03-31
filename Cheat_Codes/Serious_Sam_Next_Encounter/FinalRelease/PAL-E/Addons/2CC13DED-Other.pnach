@@ -8,12 +8,6 @@ patch=1,EE,00224B74,extended,30420002
 patch=1,EE,20270F98,extended,04410005
 patch=1,EE,20271AB0,extended,04410014
 
-//Texture quality on all gamemodes
-//Single Player (sharp)
-patch=1,EE,00344344,byte,0
-//Split-Screen (blurred)
-//patch=1,EE,00344344,byte,1
-
 //Remove letterbox on cutscenes
 patch=1,EE,2068D9DC,extended,00000000
 
