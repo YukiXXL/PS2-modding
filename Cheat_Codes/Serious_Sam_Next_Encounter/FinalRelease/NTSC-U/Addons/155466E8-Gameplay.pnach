@@ -7,7 +7,9 @@ patch=1,EE,202F8CE4,extended,3C060050
 patch=1,EE,202F8CEC,extended,3C070001
 
 //60 FPS
-patch=1,EE,20127580,extended,00000000
+//patch=1,EE,20127580,extended,00000000
+//Alternative
+patch=1,EE,00126E4C,extended,24020000
 
 //Alternative Screen Mode (Saved after starting Split-Screen game second time!)
 patch=1,EE,2027BDCC,extended,AC510018

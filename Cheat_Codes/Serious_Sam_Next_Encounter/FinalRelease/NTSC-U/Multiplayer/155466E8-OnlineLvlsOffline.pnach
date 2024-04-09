@@ -10,7 +10,7 @@ patch=1,EE,2025F990,extended,AC450018
 patch=1,EE,10260DF8,extended,2631F910
 
 //OPTIONAL! Fix for correctly showing Online levels in Offline
-//Change levels for Offline mode
+//Change level rules for Offline mode
 patch=1,EE,00264798,extended,24040000
 //Load Online LevelSet instead of Offline
 patch=1,EE,4025F3F8,extended,00030006

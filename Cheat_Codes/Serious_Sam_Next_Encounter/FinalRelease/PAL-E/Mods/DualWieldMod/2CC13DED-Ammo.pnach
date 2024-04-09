@@ -5,7 +5,7 @@ comment=DUAL WIELD MOD - AMMO
 patch=1,EE,20266DA0,extended,00631821
 patch=1,EE,20266DA4,extended,A6030000
 //Fix the replaced function
-patch=1,EE,00265164,extended,0C099B6A
+patch=1,EE,20265164,extended,00000000
 
 //PickupCount
 patch=1,EE,201FBD28,extended,0C099B68

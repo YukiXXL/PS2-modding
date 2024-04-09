@@ -1,13 +1,13 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=MISC - GAMEPLAY
+comment=MISC - MINIONS
 
-//Spawn on the start
+//Spawn all on the start
 patch=1,EE,20275B84,extended,00000000
 // For Temple of Mars crash fix
 //Giant Hornet fixed
 patch=1,EE,203B31B0,extended,001E71E0
 
-//Stop auto-killing entities
+//Stop auto-killing minions
 patch=1,EE,201F8108,extended,03E00008
 patch=1,EE,201F810C,extended,00000000
 //Fix for Bosses
@@ -18,3 +18,6 @@ patch=1,EE,203841C4,extended,00197188
 
 //No Friendly Fire between minions
 patch=1,EE,201F04A8,extended,10000048
+
+//Killing a Boss doesn't Trigger ending
+patch=1,EE,203841C4,extended,00333ED0

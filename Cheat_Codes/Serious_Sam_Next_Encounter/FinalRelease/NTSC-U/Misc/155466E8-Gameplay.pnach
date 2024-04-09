@@ -4,6 +4,12 @@ comment=MISC - GAMEPLAY
 //Apply Fall Damage
 patch=1,EE,202042B0,extended,24030001
 
+//Texture quality on all gamemodes
+//Single Player (sharp)
+//patch=1,EE,00343844,byte,0
+//Split-Screen (blurred)
+patch=1,EE,00343844,byte,1
+
 //Change how much texture quality decreases in Multiplayer (Only change the last number!)
 patch=1,EE,0013F9A0,extended,24050007 //Normal
 patch=1,EE,0013F9B4,extended,24050007 //Details

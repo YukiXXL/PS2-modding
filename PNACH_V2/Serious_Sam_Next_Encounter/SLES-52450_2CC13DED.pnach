@@ -10,8 +10,10 @@ patch=1,EE,202F97E4,extended,3C060050
 patch=1,EE,202F97EC,extended,3C070001
 
 [Addons\Gameplay\60 FPS]
-patch=1,EE,201273A8,extended,00000000
+author=YukiXXL
+patch=1,EE,00126C74,extended,24020000
 
+// -- ALTERNATIVE SCREEN MODE
 [Addons\Gameplay\Alternative Screen Mode\Enable]
 author=YukiXXL
 description=Saved after starting Split-Screen game second time!
@@ -22,6 +24,11 @@ patch=1,EE,2027C580,extended,16200004
 author=YukiXXL
 description=Saved after starting Split-Screen game second time!
 patch=1,EE,2027C57C,extended,AC400018
+
+// - MENUS
+[Addons\Menus\Enable starting Multiplayer game with only one player]
+author=YukiXXL
+patch=1,EE,00260478,extended,24030000
 
 // - OTHER
 [Addons\Other\Switch between dual weapons]
@@ -78,86 +85,91 @@ patch=1,EE,20220800,extended,AC430018
 author=YukiXXL
 patch=1,EE,20204100,extended,24030001
 
-//TEXTURE QUALITY (NORMAL)
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 0]
+[Misc\Gameplay\Multiplayer quality on any gamemode]
 author=YukiXXL
-description=Don't decrease texture quality (normal) in Multiplayer.
+description=Enable the multiplayer quality on any gamemode.
+patch=1,EE,00344344,byte,1
+
+//TEXTURE AND MODEL QUALITY (NORMAL)
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 0]
+author=YukiXXL
+description=Don't decrease Texture and Model quality (normal) in Multiplayer.
 patch=1,EE,0013F7C0,extended,24050000
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 1]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 1]
 author=YukiXXL
 description=Default.
 patch=1,EE,0013F7C0,extended,24050001
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 2]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 2]
 author=YukiXXL
-description=Decreases textures quality (normal) in Multiplayer by 2.
+description=Decreases Texture and Models quality (normal) in Multiplayer by 2.
 patch=1,EE,0013F7C0,extended,24050002
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 3]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 3]
 author=YukiXXL
-description=Decreases textures quality (normal) in Multiplayer by 3.
+description=Decreases Texture and Models quality (normal) in Multiplayer by 3.
 patch=1,EE,0013F7C0,extended,24050003
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 4]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 4]
 author=YukiXXL
-description=Decreases textures quality (normal) in Multiplayer by 4.
+description=Decreases Texture and Models quality (normal) in Multiplayer by 4.
 patch=1,EE,0013F7C0,extended,24050004
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 5]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 5]
 author=YukiXXL
-description=Decreases textures quality (normal) in Multiplayer by 5.
+description=Decreases Texture and Models quality (normal) in Multiplayer by 5.
 patch=1,EE,0013F7C0,extended,24050005
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 6]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 6]
 author=YukiXXL
-description=Decreases textures quality (normal) in Multiplayer by 6.
+description=Decreases Texture and Models quality (normal) in Multiplayer by 6.
 patch=1,EE,0013F7C0,extended,24050006
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Normal)\Decrease by 7]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 7]
 author=YukiXXL
-description=Decreases textures quality (normal) in Multiplayer by 7.
+description=Decreases Texture and Models quality (normal) in Multiplayer by 7.
 patch=1,EE,0013F7C0,extended,24050007
 
-//TEXTURE QUALITY (DETAILS)
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 0]
+//Texture and Model QUALITY (DETAILS)
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 0]
 author=YukiXXL
-description=Don't decrease texture quality (details) in Multiplayer.
+description=Don't decrease Texture and Model quality (details) in Multiplayer.
 patch=1,EE,0013F7D4,extended,24050000
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 1]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 1]
 author=YukiXXL
 description=Default.
 patch=1,EE,0013F7D4,extended,24050001
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 2]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 2]
 author=YukiXXL
-description=Decreases textures quality (details) in Multiplayer by 2.
+description=Decreases Texture and Models quality (details) in Multiplayer by 2.
 patch=1,EE,0013F7D4,extended,24050002
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 3]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 3]
 author=YukiXXL
-description=Decreases textures quality (details) in Multiplayer by 3.
+description=Decreases Texture and Models quality (details) in Multiplayer by 3.
 patch=1,EE,0013F7D4,extended,24050003
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 4]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 4]
 author=YukiXXL
-description=Decreases textures quality (details) in Multiplayer by 4.
+description=Decreases Texture and Models quality (details) in Multiplayer by 4.
 patch=1,EE,0013F7D4,extended,24050004
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 5]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 5]
 author=YukiXXL
-description=Decreases textures quality (details) in Multiplayer by 5.
+description=Decreases Texture and Models quality (details) in Multiplayer by 5.
 patch=1,EE,0013F7D4,extended,24050005
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 6]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 6]
 author=YukiXXL
-description=Decreases textures quality (details) in Multiplayer by 6.
+description=Decreases Texture and Models quality (details) in Multiplayer by 6.
 patch=1,EE,0013F7D4,extended,24050006
 
-[Misc\Gameplay\Texture Quality in Multiplayer (Details)\Decrease by 7]
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 7]
 author=YukiXXL
-description=Decreases textures quality (details) in Multiplayer by 7.
+description=Decreases Texture and Models quality (details) in Multiplayer by 7.
 patch=1,EE,0013F7D4,extended,24050007
 
 // - MENUS
@@ -191,15 +203,15 @@ author=YukiXXL
 patch=1,EE,00279788,extended,24040009
 
 // - MINIONS
-[Misc\Minions\Spawn on the start]
+[Misc\Minions\Spawn all on the start]
 author=YukiXXL
-description=Spawns all enemies on the start.
+description=Spawns all minions on the start.
 //Spawn on the start
 patch=1,EE,20275FAC,extended,00000000
 //Giant Hornet fixed
 patch=1,EE,203B3C80,extended,001E7030
 
-[Misc\Minions\Stop auto-killing entities]
+[Misc\Minions\Stop auto-killing minions]
 author=YukiXXL
 patch=1,EE,201F7F58,extended,03E00008
 patch=1,EE,201F7F5C,extended,00000000
@@ -214,6 +226,10 @@ patch=1,EE,003BE308,extended,00000004
 [Misc\Minions\No Friendly Fire between minions]
 author=YukiXXL
 patch=1,EE,201F02F8,extended,10000048
+
+[Misc\Minions\Killing a Boss doesn't Trigger ending]
+author=YukiXXL
+patch=1,EE,20384D04,extended,003349D0
 
 // MODS
 
@@ -252,6 +268,44 @@ patch=1,EE,201FBDD4,extended,8C430018
 //RedAmmoPackCount
 patch=1,EE,201FBE20,extended,0C099B68
 patch=1,EE,201FBE24,extended,8C430018
+
+// - MINIONS MULT
+[Mods\Dual Wield Mod\Multiply Minions\Enable]
+author=YukiXXL
+description=Multiply the minions. Enable this code and choose the multiplier number!
+//Multiply x2
+patch=1,EE,201D79AC,extended,0C099B86 //jal to Joker Code
+patch=1,EE,201D79B4,extended,AC64000C //Save TotalCount
+patch=1,EE,201D79B8,extended,8CC37FC4 //Fix for lw Count_Enemies
+patch=1,EE,201D79D4,extended,ACC37FC4 //Fix for lw Count_Enemies
+//Joker Code
+patch=1,EE,20266E18,extended,8C64000C //Load TotalCount
+patch=1,EE,20266E24,extended,00852018 //Multiply TotalCount with Multiplier(a1)
+//Fix the replaced function
+patch=1,EE,20265194,extended,00000000 //JR-RA function as nop
+patch=1,EE,202651A4,extended,00000000 //JR-RA function as nop
+//Fix the Infinite Loop
+patch=1,EE,201F8564,extended,2402FFFF //Safer fix
+
+[Mods\Dual Wield Mod\Multiply Minions\by 2]
+author=YukiXXL
+description=Multiply the minions by 2.
+patch=1,EE,20266E1C,extended,24050002
+
+[Mods\Dual Wield Mod\Multiply Minions\by 3]
+author=YukiXXL
+description=Multiply the minions by 3.
+patch=1,EE,20266E1C,extended,24050003
+
+[Mods\Dual Wield Mod\Multiply Minions\by 4]
+author=YukiXXL
+description=Multiply the minions by 4.
+patch=1,EE,20266E1C,extended,24050004
+
+[Mods\Dual Wield Mod\Multiply Minions\by 5]
+author=YukiXXL
+description=Multiply the minions by 5.
+patch=1,EE,20266E1C,extended,24050005
 
 // - STREAM RANDOMIZER
 [Mods\Stream Randomizer\Main]
@@ -406,7 +460,7 @@ patch=1,EE,00279C58,extended,0C0A57FE //Level
 patch=1,EE,0027CEC8,extended,0C0A57FE //WeaponSet
 //Time Position
 patch=1,EE,0027D998,extended,0C0A57FE
-//Texture Quality
+//Texture and Model Quality
 patch=1,EE,00273F04,extended,0C0A57FE
 
 [Offline Preservation\Online Emulated\Features]

@@ -1,7 +1,8 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
 
-// ADDONS - GAMEPLAY
+// ADDONS
 
+// - GAMEPLAY
 [Addons\Gameplay\480p]
 author=YukiXXL
 patch=1,EE,202F8CDC,extended,3C050000
@@ -9,8 +10,10 @@ patch=1,EE,202F8CE4,extended,3C060050
 patch=1,EE,202F8CEC,extended,3C070001
 
 [Addons\Gameplay\60 FPS]
-patch=1,EE,20127580,extended,00000000
+author=YukiXXL
+patch=1,EE,00126E4C,extended,24020000
 
+// -- ALTERNATIVE SCREEN MODE
 [Addons\Gameplay\Alternative Screen Mode\Enable]
 author=YukiXXL
 description=Saved after starting Split-Screen game second time!
@@ -22,8 +25,12 @@ author=YukiXXL
 description=Saved after starting Split-Screen game second time!
 patch=1,EE,2027BDCC,extended,AC400018
 
-// ADDONS - OTHER
+// - MENUS
+[Addons\Menus\Enable starting Multiplayer game with only one player]
+author=YukiXXL
+patch=1,EE,00260410,extended,24030000
 
+// - OTHER
 [Addons\Other\Switch between dual weapons]
 author=YukiXXL
 description=Enables switching to only one Deagle/Uzi.
@@ -33,14 +40,6 @@ patch=1,EE,00224D24,extended,30420002
 author=YukiXXL
 patch=1,EE,20270B70,extended,04410005
 patch=1,EE,20271688,extended,04410014
-
-[Addons\Other\Texture quality\High]
-author=YukiXXL
-patch=1,EE,00343844,byte,0
-
-[Addons\Other\Texture quality\Low]
-author=YukiXXL
-patch=1,EE,00343844,byte,1
 
 [Addons\Other\Remove letterbox on cutscenes]
 author=YukiXXL
@@ -53,96 +52,9 @@ patch=1,EE,20694014,byte,1
 patch=1,EE,206940F4,byte,1
 patch=1,EE,2069412C,byte,1
 
-// ADDONS - SP/COOP
+// CHEATS
 
-[Addons\SP-COOP\Multiplayer model in Single Player]
-author=YukiXXL
-patch=1,EE,2020BF9C,extended,10000005
-patch=1,EE,20211584,extended,10000003
-
-[Addons\SP-COOP\Don't restart from a Checkpoint in SP]
-author=YukiXXL
-description=Like in COOP
-patch=1,EE,00202840,extended,28420001
-
-[Addons\SP-COOP\Prevent teleporting players in COOP]
-author=YukiXXL
-patch=1,EE,001E2AE8,extended,28420009
-
-[Addons\SP-COOP\Fake Byte\Enable for COOP-like]
-author=YukiXXL
-description=Used for stuff below.
-patch=1,EE,0036B808,byte,1
-
-[Addons\SP-COOP\Fake Byte\Stuff\Pickup effects]
-author=YukiXXL
-patch=1,EE,002419B4,extended,8C64B808
-
-[Addons\SP-COOP\Fake Byte\Stuff\Ricochet bullets]
-author=YukiXXL
-patch=1,EE,0027573C,extended,8C43B808
-
-[Addons\SP-COOP\Fake Byte\Stuff\Get Medals]
-author=YukiXXL
-patch=1,EE,00270B5C,extended,8C43B808
-patch=1,EE,00271668,extended,8C43B808
-
-[Addons\SP-COOP\Fake Byte\Stuff\Killing Spree Music]
-author=YukiXXL
-patch=1,EE,00212400,extended,8C43B808
-
-// ADDONS - ONLINE LEVELS IN OFFLINE CODES
-
-[Addons\Online-Offline\ONLINE LEVELS IN OFFLINE CODES]
-author=YukiXXL
-description=LevelSet saved!
-//Enable Online levels in Offline
-patch=1,EE,2025F98C,extended,24050003
-patch=1,EE,2025F990,extended,AC450018
-//Load Offline LevelSet in Online
-patch=1,EE,10260DF8,extended,2631F910
-//Change levels for Offline mode
-patch=1,EE,00264798,extended,24040000
-//Load Online LevelSet instead of Offline
-patch=1,EE,4025F3F8,extended,00030006
-patch=1,EE,26084E58,extended,00000000
-
-// ADDONS - PLAY ONLINE GAMEMODES CODES
-
-[Addons\Online-Offline\PLAY ONLINE GAMEMODES CODES]
-author=YukiXXL
-description=Online button is used.
-//Enable Online in Offline
-patch=1,EE,1025CA98,extended,0C0A80E0
-//Host Game = Select Profiles
-patch=1,EE,00264D30,extended,24050099
-//For Online
-patch=1,EE,D036D498,extended,00000001
-patch=1,EE,2027C840,extended,24050001
-//For Offline
-patch=1,EE,D036D498,extended,00000000
-patch=1,EE,2027C840,extended,00000000
-//Return to "Host Game" after exiting
-patch=1,EE,10267690,extended,240500D0
-//End Screen names fix
-patch=1,EE,20220DAC,extended,0000102D
-
-// CHEATS - PROFILE
-
-[Cheats\Profile\Have All Gold Medals]
-author=YukiXXL
-description=Save the game and restart with cheat disabled.
-patch=1,EE,202214f0,extended,3C04C000
-patch=1,EE,202214f8,extended,AC440018
-
-[Cheats\Profile\Unlock All Levels]
-author=YukiXXL
-description=Saved onto profile!
-patch=1,EE,202209AC,extended,2403001F
-patch=1,EE,202209B0,extended,AC430018
-
-// CHEATS - OTHER
-
+// - OTHER
 [Cheats\Other\Enable all cheats]
 author=YukiXXL
 description=Fly: D-PAD LEFT/RIGHT = Enable/Disable. L2 = GO DOWN; R2 = GO UP.
@@ -153,7 +65,123 @@ author=YukiXXL
 patch=1,EE,00270308,extended,2442FFFB
 patch=1,EE,0020D10C,extended,2463FFFB
 
-// MISC - MENUS
+// - PROFILE
+[Cheats\Profile\Have All Gold Medals]
+author=YukiXXL
+description=Save the game and restart with cheat disabled.
+patch=1,EE,202214F0,extended,3C04C000
+patch=1,EE,202214F8,extended,AC440018
+
+[Cheats\Profile\Unlock All Levels]
+author=YukiXXL
+description=Saved onto profile!
+patch=1,EE,202209AC,extended,2403001F
+patch=1,EE,202209B0,extended,AC430018
+
+// MISC
+
+// - GAMEPLAY
+[Misc\Gameplay\Apply Fall Damage]
+author=YukiXXL
+patch=1,EE,202042B0,extended,24030001
+
+[Misc\Gameplay\Multiplayer quality on any gamemode]
+author=YukiXXL
+description=Enable the multiplayer quality on any gamemode.
+patch=1,EE,00343844,byte,1
+
+//TEXTURE AND MODEL QUALITY (NORMAL)
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 0]
+author=YukiXXL
+description=Don't decrease Texture and Model quality (normal) in Multiplayer.
+patch=1,EE,0013F9A0,extended,24050000
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 1]
+author=YukiXXL
+description=Default.
+patch=1,EE,0013F9A0,extended,24050001
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 2]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) in Multiplayer by 2.
+patch=1,EE,0013F9A0,extended,24050002
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 3]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) in Multiplayer by 3.
+patch=1,EE,0013F9A0,extended,24050003
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 4]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) in Multiplayer by 4.
+patch=1,EE,0013F9A0,extended,24050004
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 5]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) in Multiplayer by 5.
+patch=1,EE,0013F9A0,extended,24050005
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 6]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) in Multiplayer by 6.
+patch=1,EE,0013F9A0,extended,24050006
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 7]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) in Multiplayer by 7.
+patch=1,EE,0013F9A0,extended,24050007
+
+//Texture and Model QUALITY (DETAILS)
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 0]
+author=YukiXXL
+description=Don't decrease Texture and Model quality (details) in Multiplayer.
+patch=1,EE,0013F9B4,extended,24050000
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 1]
+author=YukiXXL
+description=Default.
+patch=1,EE,0013F9B4,extended,24050001
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 2]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) in Multiplayer by 2.
+patch=1,EE,0013F9B4,extended,24050002
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 3]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) in Multiplayer by 3.
+patch=1,EE,0013F9B4,extended,24050003
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 4]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) in Multiplayer by 4.
+patch=1,EE,0013F9B4,extended,24050004
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 5]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) in Multiplayer by 5.
+patch=1,EE,0013F9B4,extended,24050005
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 6]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) in Multiplayer by 6.
+patch=1,EE,0013F9B4,extended,24050006
+
+[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 7]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) in Multiplayer by 7.
+patch=1,EE,0013F9B4,extended,24050007
+
+// - MENUS
+[Misc\Menus\Run "Init Menu"\at the start]
+author=YukiXXL
+description=Run Testing Menu after loading data.
+patch=1,EE,00276F5C,extended,24040006
+
+[Misc\Menus\Run "Init Menu"\instead of Credits Scene]
+author=YukiXXL
+description=Replace Credits with Testing Menu.
+patch=1,EE,0025CBCC,extended,24050006
 
 [Misc\Menus\Maximum number of options = 11]
 author=YukiXXL
@@ -174,15 +202,8 @@ patch=1,EE,203BDC24,extended,00006D61
 author=YukiXXL
 patch=1,EE,00278FE0,extended,24040009
 
-// MISC - GAMEPLAY
-
-[Misc\Gameplay\Apply Fall Damage]
-author=YukiXXL
-patch=1,EE,202042B0,extended,24030001
-
-// MISC - MINIONS
-
-[Misc\Minions\Spawn on the start]
+// - MINIONS
+[Misc\Minions\Spawn all on the start]
 author=YukiXXL
 description=Spawns all enemies on the start.
 //Spawn on the start
@@ -190,7 +211,7 @@ patch=1,EE,20275B84,extended,00000000
 //Giant Hornet fixed
 patch=1,EE,203B31B0,extended,001E71E0
 
-[Misc\Minions\Stop auto-killing entities]
+[Misc\Minions\Stop auto-killing minions]
 author=YukiXXL
 patch=1,EE,201F8108,extended,03E00008
 patch=1,EE,201F810C,extended,00000000
@@ -201,7 +222,12 @@ patch=1,EE,203841C4,extended,00197188
 author=YukiXXL
 patch=1,EE,201F04A8,extended,10000048
 
+[Misc\Minions\Killing a Boss doesn't Trigger ending]
+author=YukiXXL
+patch=1,EE,203841C4,extended,00333ED0
+
 // MODS
+
 // - DUAL WIELD MOD
 [Mods\Dual Wield Mod\Main]
 author=YukiXXL
@@ -237,6 +263,44 @@ patch=1,EE,201FBF84,word,8C430018
 //RedAmmoPackCount
 patch=1,EE,201FBFD0,word,0C099A6E
 patch=1,EE,201FBFD4,word,8C430018
+
+// - MINIONS MULT
+[Mods\Dual Wield Mod\Multiply Minions\Enable]
+author=YukiXXL
+description=Multiply the minions. Enable this code and choose the multiplier number!
+//Multiply x2
+patch=1,EE,201D7B5C,extended,0C099A8C //jal to Joker Code
+patch=1,EE,201D7B64,extended,AC64000C //Save TotalCount
+patch=1,EE,201D7B68,extended,8CC37504 //Fix for lw Count_Enemies
+patch=1,EE,201D7B84,extended,ACC37504 //Fix for lw Count_Enemies
+//Joker Code
+patch=1,EE,20266A30,extended,8C64000C //Load TotalCount
+patch=1,EE,20266A3C,extended,00852018 //Multiply TotalCount with Multiplier(a1)
+//Fix the replaced function
+patch=1,EE,202650FC,extended,00000000 //JR-RA function as nop
+patch=1,EE,2026510C,extended,00000000 //JR-RA function as nop
+//Fix the Infinite Loop
+patch=1,EE,201F8714,extended,2402FFFF //Safer fix
+
+[Mods\Dual Wield Mod\Multiply Minions\by 2]
+author=YukiXXL
+description=Multiply the minions by 2.
+patch=1,EE,20266A34,extended,24050002
+
+[Mods\Dual Wield Mod\Multiply Minions\by 3]
+author=YukiXXL
+description=Multiply the minions by 3.
+patch=1,EE,20266A34,extended,24050003
+
+[Mods\Dual Wield Mod\Multiply Minions\by 4]
+author=YukiXXL
+description=Multiply the minions by 4.
+patch=1,EE,20266A34,extended,24050004
+
+[Mods\Dual Wield Mod\Multiply Minions\by 5]
+author=YukiXXL
+description=Multiply the minions by 5.
+patch=1,EE,20266A34,extended,24050005
 
 // - STREAM RANDOMIZER
 
@@ -276,3 +340,143 @@ patch=1,EE,20112CDC,extended,64920003
 author=YukiXXL
 description=Only load streams increased by four.
 patch=1,EE,20112CDC,extended,64920004
+
+// MULTIPLAYER
+
+// - ONLINE LEVELS IN OFFLINE CODES
+[Multiplayer\Online Levels in Offline\Enable and Save]
+author=YukiXXL
+description=Enables Online-Only levels and saves them onto profile.
+patch=1,EE,2025F98C,extended,24050003
+patch=1,EE,2025F990,extended,AC450018
+//Fixes showing grey box when the above code is enabled
+patch=1,EE,10260DF8,extended,2631F910
+
+[Multiplayer\Online Levels in Offline\Enable and Save]
+author=YukiXXL
+description=Fixes showing the Online levels thumbnails.
+//Change level rules for Offline mode
+patch=1,EE,00264798,extended,24040000
+//Load Online LevelSet instead of Offline
+patch=1,EE,4025F3F8,extended,00030006
+patch=1,EE,26084E58,extended,00000000
+
+// - OTHER
+[Multiplayer\Other\Multiplayer model in Single Player]
+author=YukiXXL
+patch=1,EE,2020BF9C,extended,10000005
+patch=1,EE,20211584,extended,10000003
+
+[Multiplayer\Other\Don't restart from a Checkpoint in SP]
+author=YukiXXL
+description=Like in COOP.
+patch=1,EE,00202840,extended,28420001
+
+[Multiplayer\Other\Prevent teleporting players in COOP]
+author=YukiXXL
+description=When triggering checkpoints and whatnot.
+patch=1,EE,001E2AE8,extended,28420009
+
+// - FAKE BYTE
+[Multiplayer\Other\Fake Byte Usage\Enable]
+author=YukiXXL
+description=Disabled = Single Player like; Enabled = Multiplayer like
+patch=1,EE,0036B808,byte,1
+
+[Multiplayer\Other\Fake Byte Usage\Pickup effects]
+author=YukiXXL
+patch=1,EE,002419B4,extended,8C64B808
+
+[Multiplayer\Other\Fake Byte Usage\Ricochet bullets]
+author=YukiXXL
+patch=1,EE,0027573C,extended,8C43B808
+
+[Multiplayer\Other\Fake Byte Usage\Get Medals]
+author=YukiXXL
+patch=1,EE,00270B5C,extended,8C43B808
+patch=1,EE,00271668,extended,8C43B808
+
+[Multiplayer\Other\Fake Byte Usage\Killing Spree Music]
+author=YukiXXL
+patch=1,EE,00212400,extended,8C43B808
+
+// OFFLINE PRESERVATION
+
+// - MENU
+[Offline Preservation\Enable Online in Offline]
+author=YukiXXL
+description=Enables Online menu in offline.
+patch=1,EE,1025CA98,extended,0C0A553E
+
+[Offline Preservation\Split-Screen]
+author=YukiXXL
+description=Play Split-Screen using Online lobby.
+//Host Game = Select Profiles
+patch=1,EE,00264D30,extended,24050099
+//For Online
+patch=1,EE,D036D498,extended,00000001
+patch=1,EE,2027C840,extended,24050001
+//For Offline
+patch=1,EE,D036D498,extended,00000000
+patch=1,EE,2027C840,extended,00000000
+//Return to "Host Game" after exiting
+patch=1,EE,10267690,extended,240500D0
+//End Screen names fix
+patch=1,EE,20220DAC,extended,0000102D
+
+[Offline Preservation\Online Emulated (Unstable)]
+author=YukiXXL
+description=Emulates what Online would look like (but broken).
+//Join Staging Room
+patch=1,EE,2029A0F0,extended,00000000
+//DNAS authorized
+patch=1,EE,20265D88,extended,AE225DA4
+//ConnectCallback
+patch=1,EE,202994E8,extended,24050001
+//Host Game
+patch=1,EE,2029530C,extended,00000000
+
+[Offline Preservation\Online Emulated\Staging Area]
+author=YukiXXL
+description=Emulates what Online would look like - Staging Area.
+//Bypass connecting errors
+patch=1,EE,00295370,extended,24020000
+patch=1,EE,00299610,extended,24020000
+//Set LobbyState = 9. Starts the game.
+patch=1,EE,0026698C,extended,10000003
+patch=1,EE,2026699C,extended,3C030037
+patch=1,EE,202669A0,extended,24020009
+patch=1,EE,202669A4,extended,AC62D560
+
+[Offline Preservation\Online Emulated\Rules]
+author=YukiXXL
+description=Emulates what Online would look like - Rules.
+//Rules
+patch=1,EE,002794B0,extended,0C0A553E //Level
+patch=1,EE,0027C718,extended,0C0A553E //WeaponSet
+//Time Position
+patch=1,EE,0027D178,extended,0C0A553E
+//Texture Quality
+patch=1,EE,00273ADC,extended,0C0A553E
+
+[Offline Preservation\Online Emulated\Features]
+author=YukiXXL
+description=Emulates what Online would look like - Features.
+//Populate Player List. Gets rid of TLB Misses on game start.
+patch=1,EE,2029A838,extended,ACC6FFFC
+//Scores Table
+patch=1,EE,0020BD74,extended,0C0A553E //Loads Network Profile
+patch=1,EE,00214A94,extended,0C0A553E //Fix crashes on Pause menu
+patch=1,EE,00215A60,extended,0C0A553E //Fix crashes on loading
+//
+patch=1,EE,0021C494,extended,0C0A553E //Fix crashes when trying to open Scores
+patch=1,EE,0021D1CC,extended,0C0A553E //Fix displaying the list
+patch=1,EE,00218C28,extended,0C0A553E //Displays correct player list
+//Chat
+patch=1,EE,00217250,extended,0C0A553E //Enables Chat
+//Pause menu
+patch=1,EE,00259FE8,extended,0C0A553E //Don't pause the game
+patch=1,EE,0026F4CC,extended,0C0A553E //Pause Menu options
+//
+patch=1,EE,0026F568,extended,0C0A553E //Fix crashes
+patch=1,EE,0026F6D4,extended,0C0A553E //Allow changing "NetSetup.UseChat"

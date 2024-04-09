@@ -8,7 +8,7 @@ patch=1,EE,20204100,extended,24030001
 //Single Player (sharp)
 //patch=1,EE,00344344,byte,0
 //Split-Screen (decreased)
-//patch=1,EE,00344344,byte,1
+patch=1,EE,00344344,byte,1
 
 //Change how much texture quality decreases in Multiplayer (Only change the last number!)
 patch=1,EE,0013F7C0,extended,24050007 //Normal
