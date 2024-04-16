@@ -1,0 +1,32 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Replaces DNAS Status Result code. Don't go online!
+
+//jump to Joker function
+patch=1,EE,20112D5C,extended,08099604
+// - Joker function -
+patch=1,EE,20265810,extended,28820011 //check if it is not a music stream
+patch=1,EE,20265814,extended,10400009 //branch if it is not
+patch=1,EE,20265818,extended,3C030034 //lui v1, $0034
+//Music stream
+patch=1,EE,2026581C,extended,80724320 //lb frames_2
+patch=1,EE,20265820,extended,00922021 //stream = stream + frames_2
+patch=1,EE,20265824,extended,A064DB84 //sb stream to joker byte
+patch=1,EE,20265828,extended,9064DB84 //lbu stream from joker byte
+patch=1,EE,2026582C,extended,28820011 //check if it is music stream
+patch=1,EE,20265830,extended,1040FFFA //branch if it is not
+patch=1,EE,20265834,extended,00000000
+patch=1,EE,20265838,extended,10000009 //beq zero, zero
+//Speech stream
+patch=1,EE,2026583C,extended,80724320 //lb frames_2
+patch=1,EE,20265840,extended,00922021 //stream = stream + frames_2
+patch=1,EE,20265844,extended,A064DB84 //sb stream to joker byte
+patch=1,EE,20265848,extended,9064DB84 //lbu stream from joker byte
+patch=1,EE,2026584C,extended,2C820011 //check if it is music stream
+patch=1,EE,20265850,extended,1440FFFA //branch if it is
+patch=1,EE,20265854,extended,2882008D //check if the stream is valid
+patch=1,EE,20265858,extended,1040FFF8 //branch if it is not
+patch=1,EE,2026585C,extended,00000000
+patch=1,EE,20265860,extended,0C044AAA //jal to LoadStream function
+patch=1,EE,20265864,extended,24120001 //s2 = 1
+patch=1,EE,20265868,extended,08044B59 //jump back
+patch=1,EE,2026586C,extended,00000000

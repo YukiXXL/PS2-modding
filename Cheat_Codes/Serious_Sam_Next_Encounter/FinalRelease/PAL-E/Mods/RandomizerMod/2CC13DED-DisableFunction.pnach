@@ -1,0 +1,4 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Disable DNAS Status Result function
+
+patch=1,EE,202650A4,extended,00000000

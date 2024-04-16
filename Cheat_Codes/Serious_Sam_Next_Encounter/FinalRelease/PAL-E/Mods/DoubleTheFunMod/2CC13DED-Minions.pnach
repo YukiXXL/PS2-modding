@@ -1,7 +1,7 @@
 gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=DUAL WIELD MOD - MINIONS
+comment=DOUBLE THE FUN MOD - MINIONS
 
-//Multiply x2
+//Multiply minions
 patch=1,EE,201D79AC,extended,0C099B86 //jal to Joker Code
 patch=1,EE,201D79B4,extended,AC64000C //Save TotalCount
 patch=1,EE,201D79B8,extended,8CC37FC4 //Fix for lw Count_Enemies
@@ -11,10 +11,9 @@ patch=1,EE,20266E18,extended,8C64000C //Load TotalCount
 patch=1,EE,20266E1C,extended,24050002 //Multiplier(a1) = 2
 patch=1,EE,20266E24,extended,00852018 //Multiply TotalCount with Multiplier(a1)
 
-
-//Fix the replaced function
-patch=1,EE,20265194,extended,00000000 //JR-RA function as nop
-patch=1,EE,202651A4,extended,00000000 //JR-RA function as nop
+//Fix the replaced functions
+patch=1,EE,20265194,extended,00000000
+patch=1,EE,202651A4,extended,00000000
 //Fix the Infinite Loop
 //patch=1,EE,201F10BC,extended,00000000 //bgez > nop
 patch=1,EE,201F8564,extended,2402FFFF //Safer fix

@@ -1,0 +1,21 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Replaces DNAS Status Result code. Don't go online!
+
+//jal to Joker function
+patch=1,EE,2027587C,extended,0C0995F2
+//Joker Function
+patch=1,EE,202657C8,extended,8C470004 //copy replaced command
+patch=1,EE,202657CC,extended,24020037 //check for SeriousBomb
+patch=1,EE,202657D0,extended,10510002 //branch if item is SeriousBomb
+patch=1,EE,202657D4,extended,2E22002E //check if item is a key or treasure
+patch=1,EE,202657D8,extended,10400008 //branch if it is to jr ra
+patch=1,EE,202657DC,extended,3C040034 //lui a0, $0034
+patch=1,EE,202657E0,extended,80834320 //lb frames_2
+patch=1,EE,202657E4,extended,02238821 //item = item + frames
+patch=1,EE,202657E8,extended,A091DB84 //sw item to joker byte
+patch=1,EE,202657EC,extended,9091DB84 //lbu joker byte
+patch=1,EE,202657F0,extended,2E22002E //check if the item is valid
+patch=1,EE,202657F4,extended,1040FFFB //loop if it is not
+patch=1,EE,202657F8,extended,00000000
+patch=1,EE,202657FC,extended,03E00008 //jr ra
+patch=1,EE,20265800,extended,00000000

@@ -231,120 +231,6 @@ patch=1,EE,201F02F8,extended,10000048
 author=YukiXXL
 patch=1,EE,20384D04,extended,003349D0
 
-// MODS
-
-// - DUAL WIELD MOD
-[Mods\Dual Wield Mod\Main]
-author=YukiXXL
-description=Enables dual wielding of all weapons.
-//Changeable weapons (Single/Dual)
-//Other weapons
-patch=1,EE,00221EA4,extended,24030003
-//Uzis
-patch=1,EE,00221EAC,extended,24050003
-//Enable Dual Weapons
-patch=1,EE,00222028,extended,30420000
-//Keep Deagles changeable
-patch=1,EE,002260D4,extended,3442FFFF
-patch=1,EE,00225A38,extended,3463FFFF
-
-[Mods\Dual Wield Mod\Ammo]
-author=YukiXXL
-description=Double the ammo.
-//Double Ammo Function
-patch=1,EE,20266DA0,extended,00631821
-patch=1,EE,20266DA4,extended,A6030000
-//Fix the replaced function
-patch=1,EE,00265164,extended,0C099B6A
-//PickupCount
-patch=1,EE,201FBD28,extended,0C099B68
-patch=1,EE,201FBD2C,extended,8C430018
-//MaxAmmoCount
-patch=1,EE,201FBD80,extended,0C099B68
-patch=1,EE,201FBD84,extended,8C430018
-//GreenAmmoPackCount
-patch=1,EE,201FBDD0,extended,0C099B68
-patch=1,EE,201FBDD4,extended,8C430018
-//RedAmmoPackCount
-patch=1,EE,201FBE20,extended,0C099B68
-patch=1,EE,201FBE24,extended,8C430018
-
-// - MINIONS MULT
-[Mods\Dual Wield Mod\Multiply Minions\Enable]
-author=YukiXXL
-description=Multiply the minions. Enable this code and choose the multiplier number!
-//Multiply x2
-patch=1,EE,201D79AC,extended,0C099B86 //jal to Joker Code
-patch=1,EE,201D79B4,extended,AC64000C //Save TotalCount
-patch=1,EE,201D79B8,extended,8CC37FC4 //Fix for lw Count_Enemies
-patch=1,EE,201D79D4,extended,ACC37FC4 //Fix for lw Count_Enemies
-//Joker Code
-patch=1,EE,20266E18,extended,8C64000C //Load TotalCount
-patch=1,EE,20266E24,extended,00852018 //Multiply TotalCount with Multiplier(a1)
-//Fix the replaced function
-patch=1,EE,20265194,extended,00000000 //JR-RA function as nop
-patch=1,EE,202651A4,extended,00000000 //JR-RA function as nop
-//Fix the Infinite Loop
-patch=1,EE,201F8564,extended,2402FFFF //Safer fix
-
-[Mods\Dual Wield Mod\Multiply Minions\by 2]
-author=YukiXXL
-description=Multiply the minions by 2.
-patch=1,EE,20266E1C,extended,24050002
-
-[Mods\Dual Wield Mod\Multiply Minions\by 3]
-author=YukiXXL
-description=Multiply the minions by 3.
-patch=1,EE,20266E1C,extended,24050003
-
-[Mods\Dual Wield Mod\Multiply Minions\by 4]
-author=YukiXXL
-description=Multiply the minions by 4.
-patch=1,EE,20266E1C,extended,24050004
-
-[Mods\Dual Wield Mod\Multiply Minions\by 5]
-author=YukiXXL
-description=Multiply the minions by 5.
-patch=1,EE,20266E1C,extended,24050005
-
-// - STREAM RANDOMIZER
-[Mods\Stream Randomizer\Main]
-author=YukiXXL
-description=Random music and speech. (Replaces DNAS Shutdown code. Don't go online!)
-//Random Stream Load
-patch=1,EE,20112D5C,extended,080995F2
-patch=1,EE,202657C8,extended,3C030034
-patch=1,EE,202657CC,extended,8072DB84
-patch=1,EE,202657D0,extended,24020003
-patch=1,EE,202657D4,extended,16420002
-patch=1,EE,202657D8,extended,26520001
-patch=1,EE,202657DC,extended,0000902D
-patch=1,EE,202657E0,extended,A072DB84
-patch=1,EE,202657E4,extended,0C044AAA
-patch=1,EE,202657E8,extended,0092202D
-patch=1,EE,202657EC,extended,08044B59
-patch=1,EE,202657F0,extended,00000000
-
-[Mods\Stream Randomizer\Seperate\One]
-author=YukiXXL
-description=Only load streams increased by one.
-patch=1,EE,20112AB4,extended,64920001
-
-[Mods\Stream Randomizer\Seperate\Two]
-author=YukiXXL
-description=Only load streams increased by two.
-patch=1,EE,20112AB4,extended,64920002
-
-[Mods\Stream Randomizer\Seperate\Three]
-author=YukiXXL
-description=Only load streams increased by three.
-patch=1,EE,20112AB4,extended,64920003
-
-[Mods\Stream Randomizer\Seperate\Four]
-author=YukiXXL
-description=Only load streams increased by four.
-patch=1,EE,20112AB4,extended,64920004
-
 // MULTIPLAYER
 
 // - ONLINE LEVELS IN OFFLINE CODES
@@ -484,3 +370,163 @@ patch=1,EE,0026F8F4,extended,0C0A57FE //Pause Menu options
 //
 patch=1,EE,0026F990,extended,0C0A57FE //Fix crashes
 patch=1,EE,0026FAFC,extended,0C0A57FE //Allow changing "NetSetup.UseChat"
+
+// MODS
+
+//DOUBLE THE FUN
+
+//- DUAL WIELD
+[Mods\Double The Fun\Dual Wield]
+author=YukiXXL
+description=Dual wield the weapons.
+//Changeable weapons (Single/Dual)
+patch=1,EE,00221EA4,extended,24030003 //Other weapons
+patch=1,EE,00221EAC,extended,24050003 //Uzis
+//Enable Dual Weapons
+patch=1,EE,00222028,extended,30420000
+//Keep Deagles changeable
+patch=1,EE,002260D4,extended,3442FFFF
+patch=1,EE,00225A38,extended,3463FFFF
+
+//- AMMO
+[Mods\Double The Fun\Ammo\Enable]
+author=YukiXXL
+description=Enable this first!
+//Double Ammo Function
+patch=1,EE,20266DA4,extended,00651818 //mult v1, v1, a1
+patch=1,EE,20266DAC,extended,A6030000 //sh v1(ammo)
+//PickupCount
+patch=1,EE,201FBD28,extended,0C099B68 //jal to joker function
+patch=1,EE,201FBD2C,extended,8C430018 //lw v1(ammo)
+//MaxAmmoCount
+patch=1,EE,201FBD80,extended,0C099B68
+patch=1,EE,201FBD84,extended,8C430018
+//GreenAmmoPackCount
+patch=1,EE,201FBDD0,extended,0C099B68
+patch=1,EE,201FBDD4,extended,8C430018
+//RedAmmoPackCount
+patch=1,EE,201FBE20,extended,0C099B68
+patch=1,EE,201FBE24,extended,8C430018
+//Fix the replaced functions
+patch=1,EE,20265164,extended,00000000
+patch=1,EE,20265174,extended,00000000
+
+[Mods\Double The Fun\Ammo\Double]
+author=YukiXXL
+description=Double the ammo.
+patch=1,EE,20266DA0,extended,24050002
+
+[Mods\Double The Fun\Ammo\Triple]
+author=YukiXXL
+description=Triple the ammo.
+patch=1,EE,20266DA0,extended,24050003
+
+[Mods\Double The Fun\Ammo\Quadruple]
+author=YukiXXL
+description=Quadruple the ammo.
+patch=1,EE,20266DA0,extended,24050004
+
+[Mods\Double The Fun\Ammo\Quintuple]
+author=YukiXXL
+description=Quintuple the ammo.
+patch=1,EE,20266DA0,extended,24050005
+
+//- MINIONS
+[Mods\Double The Fun\Minions\Enable]
+author=YukiXXL
+description=Enable this first!
+//Multiply minions
+patch=1,EE,201D79AC,extended,0C099B86 //jal to Joker Code
+patch=1,EE,201D79B4,extended,AC64000C //Save TotalCount
+patch=1,EE,201D79B8,extended,8CC37FC4 //Fix for lw Count_Enemies
+patch=1,EE,201D79D4,extended,ACC37FC4 //Fix for lw Count_Enemies
+//Joker Code
+patch=1,EE,20266E18,extended,8C64000C //Load TotalCount
+patch=1,EE,20266E24,extended,00852018 //Multiply TotalCount with Multiplier(a1)
+//Fix the replaced functions
+patch=1,EE,20265194,extended,00000000
+patch=1,EE,202651A4,extended,00000000
+//Fix the Infinite Loop
+patch=1,EE,201F8564,extended,2402FFFF //Safer fix
+
+[Mods\Double The Fun\Minions\Double]
+author=YukiXXL
+description=Double the ammount of minions.
+patch=1,EE,20266E1C,extended,24050002
+
+[Mods\Double The Fun\Minions\Triple]
+author=YukiXXL
+description=Triple the ammount of minions.
+patch=1,EE,20266E1C,extended,24050003
+
+[Mods\Double The Fun\Minions\Quadruple]
+author=YukiXXL
+description=Quadruple the ammount of minions.
+patch=1,EE,20266E1C,extended,24050004
+
+[Mods\Double The Fun\Minions\Quintuple]
+author=YukiXXL
+description=Quintuple the ammount of minions.
+patch=1,EE,20266E1C,extended,24050005
+
+//RANDOMIZER MOD
+
+[Mods\Randomizer\Disable the replaced function]
+author=YukiXXL
+description=A failsafe code. Enable it to be safe.
+patch=1,EE,202650A4,extended,00000000
+
+[Mods\Randomizer\Items]
+author=YukiXXL
+description=Randomizes items.
+//jal to Joker function
+patch=1,EE,2027587C,extended,0C0995F2
+//Joker Function
+patch=1,EE,202657C8,extended,8C470004 //copy replaced command
+patch=1,EE,202657CC,extended,24020037 //check for SeriousBomb
+patch=1,EE,202657D0,extended,10510002 //branch if item is SeriousBomb
+patch=1,EE,202657D4,extended,2E22002E //check if item is a key or treasure
+patch=1,EE,202657D8,extended,10400008 //branch if it is to jr ra
+patch=1,EE,202657DC,extended,3C040034 //lui a0, $0034
+patch=1,EE,202657E0,extended,80834320 //lb frames_2
+patch=1,EE,202657E4,extended,02238821 //item = item + frames
+patch=1,EE,202657E8,extended,A091DB84 //sw item to joker byte
+patch=1,EE,202657EC,extended,9091DB84 //lbu joker byte
+patch=1,EE,202657F0,extended,2E22002E //check if the item is valid
+patch=1,EE,202657F4,extended,1040FFFB //loop if it is not
+patch=1,EE,202657F8,extended,00000000
+patch=1,EE,202657FC,extended,03E00008 //jr ra
+patch=1,EE,20265800,extended,00000000
+
+[Mods\Randomizer\Stream (Music and Speech)]
+author=YukiXXL
+description=Randomizes streams (music and speech).
+//jump to Joker function
+patch=1,EE,20112D5C,extended,08099604
+// - Joker function -
+patch=1,EE,20265810,extended,28820011 //check if it is not a music stream
+patch=1,EE,20265814,extended,10400009 //branch if it is not
+patch=1,EE,20265818,extended,3C030034 //lui v1, $0034
+//Music stream
+patch=1,EE,2026581C,extended,80724320 //lb frames_2
+patch=1,EE,20265820,extended,00922021 //stream = stream + frames_2
+patch=1,EE,20265824,extended,A064DB84 //sb stream to joker byte
+patch=1,EE,20265828,extended,9064DB84 //lbu stream from joker byte
+patch=1,EE,2026582C,extended,28820011 //check if it is music stream
+patch=1,EE,20265830,extended,1040FFFA //branch if it is not
+patch=1,EE,20265834,extended,00000000
+patch=1,EE,20265838,extended,10000009 //beq zero, zero
+//Speech stream
+patch=1,EE,2026583C,extended,80724320 //lb frames_2
+patch=1,EE,20265840,extended,00922021 //stream = stream + frames_2
+patch=1,EE,20265844,extended,A064DB84 //sb stream to joker byte
+patch=1,EE,20265848,extended,9064DB84 //lbu stream from joker byte
+patch=1,EE,2026584C,extended,2C820011 //check if it is music stream
+patch=1,EE,20265850,extended,1440FFFA //branch if it is
+patch=1,EE,20265854,extended,2882008D //check if the stream is valid
+patch=1,EE,20265858,extended,1040FFF8 //branch if it is not
+patch=1,EE,2026585C,extended,00000000
+patch=1,EE,20265860,extended,0C044AAA //jal to LoadStream function
+patch=1,EE,20265864,extended,24120001 //s2 = 1
+patch=1,EE,20265868,extended,08044B59 //jump back
+patch=1,EE,2026586C,extended,00000000

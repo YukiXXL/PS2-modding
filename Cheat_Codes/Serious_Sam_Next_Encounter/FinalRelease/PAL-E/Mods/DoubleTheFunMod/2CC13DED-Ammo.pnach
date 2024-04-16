@@ -1,0 +1,24 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=DOUBLE THE FUN MOD - AMMO
+
+//Double Ammo Function
+patch=1,EE,20266DA0,extended,24050002 //a1 = multiplier
+patch=1,EE,20266DA4,extended,00651818 //mult v1, v1, a1
+patch=1,EE,20266DAC,extended,A6030000 //sh v1(ammo)
+
+//PickupCount
+patch=1,EE,201FBD28,extended,0C099B68 //jal to joker function
+patch=1,EE,201FBD2C,extended,8C430018 //lw v1(ammo)
+//MaxAmmoCount
+patch=1,EE,201FBD80,extended,0C099B68
+patch=1,EE,201FBD84,extended,8C430018
+//GreenAmmoPackCount
+patch=1,EE,201FBDD0,extended,0C099B68
+patch=1,EE,201FBDD4,extended,8C430018
+//RedAmmoPackCount
+patch=1,EE,201FBE20,extended,0C099B68
+patch=1,EE,201FBE24,extended,8C430018
+
+//Fix the replaced functions
+patch=1,EE,20265164,extended,00000000
+patch=1,EE,20265174,extended,00000000
