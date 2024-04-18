@@ -41,10 +41,6 @@ author=YukiXXL
 patch=1,EE,20270B70,extended,04410005
 patch=1,EE,20271688,extended,04410014
 
-[Addons\Other\Remove letterbox on cutscenes]
-author=YukiXXL
-patch=1,EE,2068D19C,extended,00000000
-
 [Addons\Other\Enable female sounds for female models]
 author=YukiXXL
 description=Cheerleader, Vampire and Nesbot
@@ -79,6 +75,20 @@ patch=1,EE,202209AC,extended,2403001F
 patch=1,EE,202209B0,extended,AC430018
 
 // MISC
+
+// - CUTSCENES
+
+[Misc\Cutscenes\Remove letterbox on cutscenes]
+author=YukiXXL
+patch=1,EE,2068D19C,extended,00000000
+
+[Misc\Cutscenes\Disable Cutscenes]
+author=YukiXXL
+patch=1,EE,001D45D8,extended,24020000
+
+[Misc\Cutscenes\No time foward after skipping Cutscene]
+author=YukiXXL
+patch=1,EE,103B0888,extended,001D448C
 
 // - GAMEPLAY
 [Misc\Gameplay\Apply Fall Damage]
@@ -304,6 +314,10 @@ patch=1,EE,2027C840,extended,24050001
 //For Offline
 patch=1,EE,D036D498,extended,00000000
 patch=1,EE,2027C840,extended,00000000
+
+[Offline Preservation\Match End]
+author=YukiXXL
+description=Fixes names at match end and drops back to Online menu.
 //Return to "Host Game" after exiting
 patch=1,EE,10267690,extended,240500D0
 //End Screen names fix
@@ -365,6 +379,60 @@ patch=1,EE,0026F4CC,extended,0C0A553E //Pause Menu options
 //
 patch=1,EE,0026F568,extended,0C0A553E //Fix crashes
 patch=1,EE,0026F6D4,extended,0C0A553E //Allow changing "NetSetup.UseChat"
+
+[Offline Preservation\Unused PVP Levels]
+author=YukiXXL
+description=Replaces Online exclusive levels.
+//egypt > canyon
+patch=1,EE,203BCBA0,extended,796E6163
+patch=1,EE,103BCBA4,extended,00006E6F
+//text replacement
+patch=1,EE,E00228AC,extended,0087DDD8 //check for memory
+patch=1,EE,0087DDCC,extended,00882884 //Ancient Egypt > Canyon World
+patch=1,EE,0087DDD8,extended,00882891 //Egyptian Valley > Canyon Level
+//flight > teeth
+patch=1,EE,203BCBA8,extended,74656574
+patch=1,EE,103BCBAC,extended,00000068
+//text replacement
+patch=1,EE,E00228C6,extended,0087DDF0 //check for memory
+patch=1,EE,1087DDE4,extended,0088296A //Low Orbit > Teeth World
+patch=1,EE,1087DDF0,extended,00882976 //Flight > Teeth Level
+//fort > venice
+patch=1,EE,203BCBB0,extended,696E6576
+patch=1,EE,103BCBB4,extended,00006563
+//text replacement
+patch=1,EE,E00228DE,extended,0087DE08 //check for memory
+patch=1,EE,1087DDFC,extended,00882982 //Penal Colony 303 > Venice World
+patch=1,EE,1087DE08,extended,0088298F //Fort > Venice Level
+//maya > vertigo
+patch=1,EE,203BCBB8,extended,74726576
+patch=1,EE,203BCBBC,extended,006F6769
+//text replacement
+patch=1,EE,E00228ED,extended,0087DE20 //check for memory
+patch=1,EE,1087DE14,extended,0088299C //Mayan Era > Vertigo World
+patch=1,EE,1087DE20,extended,008829AA //Palenque > Vertigo Level
+//medieval > military
+patch=1,EE,203BCBC0,extended,696C696D
+patch=1,EE,203BCBC4,extended,79726174
+//text replacement
+patch=1,EE,E00228FF,extended,0087DE38 //check for memory
+patch=1,EE,1087DE2C,extended,00882906 //Medieval > Military World
+patch=1,EE,1087DE38,extended,00882915 //Castle > Military Level
+//neo_tokyo > offworld
+patch=1,EE,203BCBD0,extended,7766666F
+patch=1,EE,203BCBD4,extended,646C726F
+patch=1,EE,003BCBD8,extended,00000000
+//text replacement
+patch=1,EE,E0022930,extended,0087DE68 //check for memory
+patch=1,EE,0087DE5C,extended,0088293A //Dark Future > Offworld World
+patch=1,EE,0087DE68,extended,00882949 //Neo Tokyo > Offworld Level
+//russia > western
+patch=1,EE,203BCBE0,extended,74736577
+patch=1,EE,203BCBE4,extended,006E7265
+//text replacement
+patch=1,EE,E0022963,extended,0087DE98 //check for memory
+patch=1,EE,0087DE8C,extended,008829CD //Red Europe > Western World
+patch=1,EE,0087DE98,extended,008829DB //Russia > Western Level
 
 // MODS
 

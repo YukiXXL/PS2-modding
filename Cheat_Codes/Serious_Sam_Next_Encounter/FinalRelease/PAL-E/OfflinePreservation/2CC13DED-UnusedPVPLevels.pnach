@@ -1,0 +1,59 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Replaces Online exclusive levels.
+
+//egypt > canyon
+patch=1,EE,203BD7C0,extended,796E6163
+patch=1,EE,103BD7C4,extended,00006E6F
+//text replacement
+patch=1,EE,E0023082,extended,0089E678 //check for memory
+patch=1,EE,0089E66C,extended,008A305A //Ancient Egypt > Canyon World
+patch=1,EE,0089E678,extended,008A3067 //Egyptian Valley > Canyon Level
+
+//flight > teeth
+patch=1,EE,203BD7C8,extended,74656574
+patch=1,EE,103BD7CC,extended,00000068
+//text replacement
+patch=1,EE,E002309C,extended,0089E690 //check for memory
+patch=1,EE,1089E684,extended,008A3140 //Low Orbit > Teeth World
+patch=1,EE,1089E690,extended,008A314C //Flight > Teeth Level
+
+//fort > venice
+patch=1,EE,203BD7D0,extended,696E6576
+patch=1,EE,103BD7D4,extended,00006563
+//text replacement
+patch=1,EE,E00230B4,extended,0089E6A8 //check for memory
+patch=1,EE,1089E69C,extended,008A3158 //Penal Colony 303 > Venice World
+patch=1,EE,1089E6A8,extended,008A3165 //Fort > Venice Level
+
+//maya > vertigo
+patch=1,EE,203BD7D8,extended,74726576
+patch=1,EE,203BD7DC,extended,006F6769
+//text replacement
+patch=1,EE,E00230C3,extended,0089E6C0 //check for memory
+patch=1,EE,1089E6B4,extended,008A3172 //Mayan Era > Vertigo World
+patch=1,EE,1089E6C0,extended,008A3180 //Palenque > Vertigo Level
+
+//medieval > military
+patch=1,EE,203BD7E0,extended,696C696D
+patch=1,EE,203BD7E4,extended,79726174
+//text replacement
+patch=1,EE,E00230D5,extended,0089E6D8 //check for memory
+patch=1,EE,0089E6CC,extended,008A30DC //Medieval > Military World
+patch=1,EE,0089E6D8,extended,008A30EB //Castle > Military Level
+
+//neo_tokyo > offworld
+patch=1,EE,203BD7F0,extended,7766666F
+patch=1,EE,203BD7F4,extended,646C726F
+patch=1,EE,003BD7F8,extended,00000000
+//text replacement
+patch=1,EE,E0023106,extended,0089E708 //check for memory
+patch=1,EE,1089E6FC,extended,008A3110 //Dark Future > Offworld World
+patch=1,EE,0089E708,extended,008A311F //Neo Tokyo > Offworld Level
+
+//russia > western
+patch=1,EE,203BD800,extended,74736577
+patch=1,EE,203BD804,extended,006E7265
+//text replacement
+patch=1,EE,E0023139,extended,0089E738 //check for memory
+patch=1,EE,0089E72C,extended,008A31A3 //Red Europe > Western World
+patch=1,EE,0089E738,extended,008A31B1 //Russia > Western Level

@@ -181,6 +181,14 @@ patch=1,EE,113CC5E0,extended,1000FB6F
 patch=1,EE,E001002C,extended,013CB964
 patch=1,EE,113CB964,extended,1000FE8E
 
+[Events\Options\Circuit with Turbo Dash options]
+patch=1,EE,E001002C,extended,013CB2EC
+patch=1,EE,113CB2EC,extended,10000173
+
+[Events\Options\Circuit with Collectathon options]
+patch=1,EE,E001002C,extended,013CB2EC
+patch=1,EE,113CB2EC,extended,1000034F
+
 // EXPERIMENTAL
 // - ARTIST
 [Experimental\artist-artist-task]

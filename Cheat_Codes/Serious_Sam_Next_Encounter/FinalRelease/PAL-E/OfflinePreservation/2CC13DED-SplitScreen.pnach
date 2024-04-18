@@ -9,7 +9,3 @@ patch=1,EE,2027CFF0,extended,24050001
 //For Offline
 patch=1,EE,D036DFE8,extended,00000000
 patch=1,EE,2027CFF0,extended,00000000
-//Return to "Host Game" after exiting
-patch=1,EE,10267A78,extended,240500D0
-//End Screen names fix
-patch=1,EE,20220BFC,extended,0000102D
