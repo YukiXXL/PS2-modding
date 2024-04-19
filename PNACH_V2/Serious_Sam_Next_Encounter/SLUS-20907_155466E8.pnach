@@ -213,13 +213,16 @@ author=YukiXXL
 patch=1,EE,00278FE0,extended,24040009
 
 // - MINIONS
+
+[Misc\Minions\Fix Giant Hornet model]
+author=YukiXXL
+description=Temple of Mars. Fixes crashes.
+patch=1,EE,203B31B0,extended,001E71E0
+
 [Misc\Minions\Spawn all on the start]
 author=YukiXXL
 description=Spawns all enemies on the start.
-//Spawn on the start
 patch=1,EE,20275B84,extended,00000000
-//Giant Hornet fixed
-patch=1,EE,203B31B0,extended,001E71E0
 
 [Misc\Minions\Stop auto-killing minions]
 author=YukiXXL
@@ -227,6 +230,11 @@ patch=1,EE,201F8108,extended,03E00008
 patch=1,EE,201F810C,extended,00000000
 //Fix for Bosses
 patch=1,EE,203841C4,extended,00197188
+
+[Misc\Minions\Giant Hornet replaces Witch Harpy]
+author=YukiXXL
+description=Fix for model needed!
+patch=1,EE,003BD6E8,extended,00000004
 
 [Misc\Minions\No Friendly Fire between minions]
 author=YukiXXL

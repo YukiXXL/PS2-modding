@@ -1,11 +1,11 @@
 gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 comment=MISC - MINIONS
 
+//Fix Giant Hornet model (Temple of Mars)
+patch=1,EE,203B3C80,extended,001E7030
+
 //Spawn all on the start
 patch=1,EE,20275FAC,extended,00000000
-// For Temple of Mars crash fix
-//Giant Hornet fixed
-patch=1,EE,203B3C80,extended,001E7030
 
 //Stop auto-killing minions
 patch=1,EE,201F7F58,extended,03E00008
