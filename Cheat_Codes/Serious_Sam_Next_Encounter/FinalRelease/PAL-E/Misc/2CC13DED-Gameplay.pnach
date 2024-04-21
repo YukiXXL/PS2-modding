@@ -1,6 +1,9 @@
 gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 comment=MISC - GAMEPLAY
 
+//Load Hidden Music stream in game
+patch=1,EE,201DD8B0,extended,8C44DC60
+
 //Apply Fall Damage
 patch=1,EE,20204100,extended,24030001
 

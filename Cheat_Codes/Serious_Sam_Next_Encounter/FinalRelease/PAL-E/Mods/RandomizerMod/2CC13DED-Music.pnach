@@ -1,0 +1,21 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Replaces DNAS Status Result code. Don't go online!
+
+//jal to Joker function
+patch=1,EE,201DD89C,extended,0C099604
+//Joker function
+patch=1,EE,20265810,extended,90444320 //lbu a0, (frames_2,1)
+patch=1,EE,20265814,extended,90454321 //lbu a1 (frames_2,2)
+patch=1,EE,20265818,extended,00852021 //addu a0, a0, a1
+patch=1,EE,2026581C,extended,A044DB84 //sb a0, (fake byte)
+patch=1,EE,20265820,extended,9044DB84 //lbu a0, (fake byte)
+patch=1,EE,20265824,extended,28850007 //check if a0 is valid (lower than 7)
+patch=1,EE,20265828,extended,10A0FFFA //branch if it is not to "lbu a1"
+patch=1,EE,2026582C,extended,2443DB88 //v1 = Music Number 0
+patch=1,EE,20265830,extended,10000002 //branch to the "while a1 not equal a0"
+patch=1,EE,20265834,extended,0000282D //a1 = 0
+patch=1,EE,20265838,extended,24630018 //increase v1 by one stream
+patch=1,EE,2026583C,extended,14A4FFFE //while a1 not equal a0
+patch=1,EE,20265840,extended,24A50001 //a1 = a1 + 1
+patch=1,EE,20265844,extended,03E00008 //jr ra
+patch=1,EE,20265848,extended,00000000 //nop
