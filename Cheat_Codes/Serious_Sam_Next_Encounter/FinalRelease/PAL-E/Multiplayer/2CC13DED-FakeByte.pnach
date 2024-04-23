@@ -1,0 +1,18 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Used for stuff below.
+
+//Enabled (1) = COOP; Disabled (0) = SP
+patch=1,EE,0036C350,byte,1
+
+//Pickup effects
+patch=1,EE,00241914,extended,8C64C350
+
+//Ricochet bullets
+patch=1,EE,00275B64,extended,8C43C350
+
+//Get Medals
+patch=1,EE,00270F84,extended,8C43C350
+patch=1,EE,00271A90,extended,8C43C350
+
+//Killing Spree Music
+patch=1,EE,00212250,extended,8C43C350
