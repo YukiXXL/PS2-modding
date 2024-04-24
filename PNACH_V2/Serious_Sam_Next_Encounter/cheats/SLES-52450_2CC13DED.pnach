@@ -3,6 +3,7 @@ gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 // ADDONS
 
 // - GAMEPLAY
+
 [Addons\Gameplay\480p]
 author=YukiXXL
 patch=1,EE,202F97DC,extended,3C050000
@@ -14,6 +15,7 @@ author=YukiXXL
 patch=1,EE,00126C74,extended,24020000
 
 // -- ALTERNATIVE SCREEN MODE
+
 [Addons\Gameplay\Alternative Screen Mode\Enable]
 author=YukiXXL
 description=Saved after starting Split-Screen game second time!
@@ -26,11 +28,13 @@ description=Saved after starting Split-Screen game second time!
 patch=1,EE,2027C57C,extended,AC400018
 
 // - MENUS
+
 [Addons\Menus\Enable starting Multiplayer game with only one player]
 author=YukiXXL
 patch=1,EE,00260478,extended,24030000
 
 // - OTHER
+
 [Addons\Other\Switch between dual weapons]
 author=YukiXXL
 description=Enables switching between one or two Deagles/Uzis.
@@ -51,6 +55,7 @@ patch=1,EE,2069496C,byte,1
 // CHEATS
 
 // - OTHER
+
 [Cheats\Other\Enable all cheats]
 author=YukiXXL
 description=Fly: D-PAD LEFT/RIGHT = Enable/Disable. L2 = GO DOWN; R2 = GO UP.
@@ -62,6 +67,7 @@ patch=1,EE,00270730,extended,2442FFFB
 patch=1,EE,0020CF5C,extended,2463FFFB
 
 // - PROFILE
+
 [Cheats\Profile\Have All Gold Medals]
 author=YukiXXL
 description=Save the game and restart with cheat disabled.
@@ -105,7 +111,8 @@ author=YukiXXL
 description=Enable the multiplayer quality on any gamemode.
 patch=1,EE,00344344,byte,1
 
-//TEXTURE AND MODEL QUALITY (NORMAL)
+// -- TEXTURE AND MODEL QUALITY (NORMAL)
+
 [Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 0]
 author=YukiXXL
 description=Don't decrease Texture and Model quality (normal) in Multiplayer.
@@ -146,7 +153,8 @@ author=YukiXXL
 description=Decreases Texture and Models quality (normal) in Multiplayer by 7.
 patch=1,EE,0013F7C0,extended,24050007
 
-//Texture and Model QUALITY (DETAILS)
+// -- TEXTURE AND MODEL QUALITY (DETAILS)
+
 [Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 0]
 author=YukiXXL
 description=Don't decrease Texture and Model quality (details) in Multiplayer.
@@ -188,6 +196,7 @@ description=Decreases Texture and Models quality (details) in Multiplayer by 7.
 patch=1,EE,0013F7D4,extended,24050007
 
 // - MENUS
+
 [Misc\Menus\Run "Init Menu"\at the start]
 author=YukiXXL
 description=Run Testing Menu after loading data.
@@ -252,6 +261,7 @@ patch=1,EE,20384D04,extended,003349D0
 // MULTIPLAYER
 
 // - ONLINE LEVELS IN OFFLINE CODES
+
 [Multiplayer\Online Levels in Offline\Enable and Save]
 author=YukiXXL
 description=Enables Online-Only levels and saves them onto profile.
@@ -270,6 +280,7 @@ patch=1,EE,4025F460,extended,00030006
 patch=1,EE,26084E58,extended,00000000
 
 // - OTHER
+
 [Multiplayer\Other\Multiplayer model in Single Player]
 author=YukiXXL
 patch=1,EE,2020BDEC,extended,10000005
@@ -285,7 +296,13 @@ author=YukiXXL
 description=When triggering checkpoints and whatnot.
 patch=1,EE,001E2938,extended,28420009
 
+[Multiplayer\Other\Enable Netricsa and in-game messages in Split-Screen]
+author=YukiXXL
+description=Enables usage of Netricsa and shows the text of collected items.
+patch=1,EE,0022153C,extended,2C820008
+
 // - FAKE BYTE
+
 [Multiplayer\Other\Fake Byte Usage\Enable]
 author=YukiXXL
 description=Disabled = Single Player like; Enabled = Multiplayer like
@@ -310,7 +327,6 @@ patch=1,EE,00212250,extended,8C43C350
 
 // OFFLINE PRESERVATION
 
-// - MENU
 [Offline Preservation\Enable Online in Offline]
 author=YukiXXL
 description=Enables Online menu in offline.
@@ -347,6 +363,8 @@ patch=1,EE,202660C8,extended,AE2268B8
 patch=1,EE,20299FE8,extended,24050001
 //Host Game
 patch=1,EE,20295E0C,extended,00000000
+
+// -- ONLINE EMULATED
 
 [Offline Preservation\Online Emulated\Staging Area]
 author=YukiXXL
@@ -451,7 +469,8 @@ patch=1,EE,0089E738,extended,008A31B1 //Russia > Western Level
 
 //DOUBLE THE FUN
 
-//- DUAL WIELD
+// - DUAL WIELD
+
 [Mods\Double The Fun\Dual Wield]
 author=YukiXXL
 description=Dual wield the weapons.
@@ -464,7 +483,8 @@ patch=1,EE,00222028,extended,30420000
 patch=1,EE,002260D4,extended,3442FFFF
 patch=1,EE,00225A38,extended,3463FFFF
 
-//- AMMO
+// - AMMO
+
 [Mods\Double The Fun\Ammo\Enable]
 author=YukiXXL
 description=Enable this first!
@@ -507,7 +527,8 @@ author=YukiXXL
 description=Quintuple the ammo.
 patch=1,EE,20266DA0,extended,24050005
 
-//- MINIONS
+// - MINIONS
+
 [Mods\Double The Fun\Minions\Enable]
 author=YukiXXL
 description=Enable this first!
@@ -603,18 +624,19 @@ description=Randomizes speech stream.
 patch=1,EE,201DFCAC,extended,0C099614
 //Joker function
 patch=1,EE,20265850,extended,3C020034 //lui v0, $0034
-patch=1,EE,20265854,extended,8C444320 //lw a0, (frames_2)
-patch=1,EE,20265858,extended,00842021 //addu a0, a0, a0
-patch=1,EE,2026585C,extended,A044DB84 //sb a0, (fake byte)
-patch=1,EE,20265860,extended,9044DB84 //lbu a0, (fake byte)
-patch=1,EE,20265864,extended,2C85000B //check if not music (a0 > 10)
-patch=1,EE,20265868,extended,14A0FFFB //branch if it is not (to "addu a0, a0, a0")
-patch=1,EE,2026586C,extended,2885008D //check if valid stream (a0 < 8D)
-patch=1,EE,20265870,extended,10A0FFF9 //branch if it is not (to "addu a0, a0, a0")
-patch=1,EE,20265874,extended,00000000 //nop
-patch=1,EE,20265878,extended,2442DB6C //have v0 be at streams address
-patch=1,EE,2026587C,extended,24420018 //increase v0 by one stream
-patch=1,EE,20265880,extended,14A4FFFE //branch if a1 is not equal to a0
-patch=1,EE,20265884,extended,24A50001 //a1 = a1 + 1
-patch=1,EE,20265888,extended,03E00008 //jr ra
-patch=1,EE,2026588C,extended,0000282D //a1 = 0
+patch=1,EE,20265854,extended,90444320 //lbu a0, (frames_2,1)
+patch=1,EE,20265858,extended,90454321 //lbu a1, (frames_2,2)
+patch=1,EE,2026585C,extended,00852021 //addu a0, a0, a1
+patch=1,EE,20265860,extended,A044DB84 //sb a0, (fake byte)
+patch=1,EE,20265864,extended,9044DB84 //lbu a0, (fake byte)
+patch=1,EE,20265868,extended,2C85000B //check if not music (a0 > 10)
+patch=1,EE,2026586C,extended,14A0FFFA //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,20265870,extended,2885008D //check if valid stream (a0 < 8D)
+patch=1,EE,20265874,extended,10A0FFF8 //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,20265878,extended,00000000 //nop
+patch=1,EE,2026587C,extended,2442DB6C //have v0 be at streams address
+patch=1,EE,20265880,extended,24420018 //increase v0 by one stream
+patch=1,EE,20265884,extended,14A4FFFE //branch if a1 is not equal to a0
+patch=1,EE,20265888,extended,24A50001 //a1 = a1 + 1
+patch=1,EE,2026588C,extended,03E00008 //jr ra
+patch=1,EE,20265890,extended,0000282D //a1 = 0
