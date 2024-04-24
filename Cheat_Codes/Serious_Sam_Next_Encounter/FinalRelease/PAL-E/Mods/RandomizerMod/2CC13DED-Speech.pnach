@@ -16,7 +16,7 @@ patch=1,EE,20265870,extended,2885008D //check if valid stream (a0 < 8D)
 patch=1,EE,20265874,extended,10A0FFF8 //branch if it is not (to "addu a0, a0, a0")
 patch=1,EE,20265878,extended,00000000 //nop
 patch=1,EE,2026587C,extended,2442DB6C //have v0 be at streams address
-patch=1,EE,20265870,extended,24420018 //increase v0 by one stream
+patch=1,EE,20265880,extended,24420018 //increase v0 by one stream
 patch=1,EE,20265884,extended,14A4FFFE //branch if a1 is not equal to a0
 patch=1,EE,20265888,extended,24A50001 //a1 = a1 + 1
 patch=1,EE,2026588C,extended,03E00008 //jr ra

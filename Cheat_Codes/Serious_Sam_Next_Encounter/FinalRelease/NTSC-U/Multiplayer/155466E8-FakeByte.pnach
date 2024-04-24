@@ -1,0 +1,18 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=Used for stuff below.
+
+//Enabled (1) = COOP; Disabled (0) = SP
+patch=1,EE,0036B808,byte,1
+
+//Pickup effects
+patch=1,EE,002419B4,extended,8C64B808
+
+//Ricochet bullets
+patch=1,EE,0027573C,extended,8C43B808
+
+//Get Medals
+patch=1,EE,00270B5C,extended,8C43B808
+patch=1,EE,00271668,extended,8C43B808
+
+//Killing Spree Music
+patch=1,EE,00212400,extended,8C43B808
