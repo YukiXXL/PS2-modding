@@ -32,6 +32,9 @@ patch=1,EE,2027C57C,extended,AC400018
 [Addons\Menus\Enable starting Multiplayer game with only one player]
 author=YukiXXL
 patch=1,EE,00260478,extended,24030000
+//Fix Homing Bullets in COOP
+patch=1,EE,001B3744,extended,8C43C384 //Load Number of players
+patch=1,EE,201B374C,extended,2463FFFF //-1
 
 // - OTHER
 
@@ -56,9 +59,19 @@ patch=1,EE,2069496C,byte,1
 
 // - OTHER
 
-[Cheats\Other\Enable all cheats]
+[Cheats\Other\Allow Fly Cheat]
 author=YukiXXL
-description=Fly: D-PAD LEFT/RIGHT = Enable/Disable. L2 = GO DOWN; R2 = GO UP.
+description=D-PAD LEFT/RIGHT = Enable/Disable. L2 = GO DOWN; R2 = GO UP.
+patch=1,EE,201646CC,extended,24020001
+
+[Cheats\Other\Allow Level Cheat]
+author=YukiXXL
+description=On profile select, Hold L1 = ALL LEVELS; R1 = START LAST SAVED LEVEL.
+patch=1,EE,201646FC,extended,24020001
+
+[Cheats\Other\Allow All Cheat]
+author=YukiXXL
+description=All cheats available, including Fly Cheat.
 patch=1,EE,2016472C,extended,24020001
 
 [Cheats\Other\Enable cheats in all other gamemodes]
@@ -418,52 +431,45 @@ description=Replaces Online exclusive levels.
 patch=1,EE,203BD7C0,extended,796E6163
 patch=1,EE,103BD7C4,extended,00006E6F
 //text replacement
-patch=1,EE,E0023082,extended,0089E678 //check for memory
-patch=1,EE,0089E66C,extended,008A305A //Ancient Egypt > Canyon World
-patch=1,EE,0089E678,extended,008A3067 //Egyptian Valley > Canyon Level
+patch=1,EE,0036C160,extended,00000117
+patch=1,EE,0036C164,extended,00000118
 //flight > teeth
 patch=1,EE,203BD7C8,extended,74656574
 patch=1,EE,103BD7CC,extended,00000068
 //text replacement
-patch=1,EE,E002309C,extended,0089E690 //check for memory
-patch=1,EE,1089E684,extended,008A3140 //Low Orbit > Teeth World
-patch=1,EE,1089E690,extended,008A314C //Flight > Teeth Level
+patch=1,EE,0036C16C,extended,0000012B
+patch=1,EE,0036C170,extended,0000012C
 //fort > venice
 patch=1,EE,203BD7D0,extended,696E6576
 patch=1,EE,103BD7D4,extended,00006563
 //text replacement
-patch=1,EE,E00230B4,extended,0089E6A8 //check for memory
-patch=1,EE,1089E69C,extended,008A3158 //Penal Colony 303 > Venice World
-patch=1,EE,1089E6A8,extended,008A3165 //Fort > Venice Level
+patch=1,EE,0036C178,extended,0000012D
+patch=1,EE,0036C17C,extended,0000012E
 //maya > vertigo
 patch=1,EE,203BD7D8,extended,74726576
 patch=1,EE,203BD7DC,extended,006F6769
 //text replacement
-patch=1,EE,E00230C3,extended,0089E6C0 //check for memory
-patch=1,EE,1089E6B4,extended,008A3172 //Mayan Era > Vertigo World
-patch=1,EE,1089E6C0,extended,008A3180 //Palenque > Vertigo Level
+patch=1,EE,0036C184,extended,0000012F
+patch=1,EE,0036C188,extended,00000130
 //medieval > military
 patch=1,EE,203BD7E0,extended,696C696D
 patch=1,EE,203BD7E4,extended,79726174
 //text replacement
-patch=1,EE,E00230D5,extended,0089E6D8 //check for memory
-patch=1,EE,0089E6CC,extended,008A30DC //Medieval > Military World
-patch=1,EE,0089E6D8,extended,008A30EB //Castle > Military Level
+patch=1,EE,0036C190,extended,00000123
+patch=1,EE,0036C194,extended,00000124
 //neo_tokyo > offworld
 patch=1,EE,203BD7F0,extended,7766666F
 patch=1,EE,203BD7F4,extended,646C726F
 patch=1,EE,003BD7F8,extended,00000000
 //text replacement
-patch=1,EE,E0023106,extended,0089E708 //check for memory
-patch=1,EE,1089E6FC,extended,008A3110 //Dark Future > Offworld World
-patch=1,EE,0089E708,extended,008A311F //Neo Tokyo > Offworld Level
+patch=1,EE,0036C19C,extended,00000127
+patch=1,EE,0036C1A0,extended,00000128
 //russia > western
 patch=1,EE,203BD800,extended,74736577
 patch=1,EE,203BD804,extended,006E7265
 //text replacement
-patch=1,EE,E0023139,extended,0089E738 //check for memory
-patch=1,EE,0089E72C,extended,008A31A3 //Red Europe > Western World
-patch=1,EE,0089E738,extended,008A31B1 //Russia > Western Level
+patch=1,EE,0036C1A8,extended,00000133
+patch=1,EE,0036C1AC,extended,00000134
 
 // MODS
 
