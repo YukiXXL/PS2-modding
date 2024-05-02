@@ -194,7 +194,7 @@ patch=1,EE,2025F990,extended,AC450018
 //Fixes showing grey box when the above code is enabled
 patch=1,EE,10260DF8,extended,2631F910
 
-[Multiplayer\Online Levels in Offline\Enable and Save]
+[Multiplayer\Online Levels in Offline\Fix level thumbnails]
 author=YukiXXL
 description=Fixes showing the Online levels thumbnails.
 //Change level rules for Offline mode
