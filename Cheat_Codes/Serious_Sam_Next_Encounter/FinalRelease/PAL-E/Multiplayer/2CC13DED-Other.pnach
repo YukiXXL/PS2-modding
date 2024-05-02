@@ -12,4 +12,4 @@ patch=1,EE,00202690,extended,28420001
 patch=1,EE,001E2938,extended,28420009
 
 //Enable Netricsa and in-game messages in Split-Screen
-patch=1,EE,0022153C,extended,2C820008
+patch=1,EE,0022153C,extended,2C820020

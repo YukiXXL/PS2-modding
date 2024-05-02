@@ -119,95 +119,6 @@ patch=1,EE,201DD8B0,extended,8C44DC60
 author=YukiXXL
 patch=1,EE,20204100,extended,24030001
 
-[Misc\Gameplay\Multiplayer quality on any gamemode]
-author=YukiXXL
-description=Enable the multiplayer quality on any gamemode.
-patch=1,EE,00344344,byte,1
-
-// -- TEXTURE AND MODEL QUALITY (NORMAL)
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 0]
-author=YukiXXL
-description=Don't decrease Texture and Model quality (normal) in Multiplayer.
-patch=1,EE,0013F7C0,extended,24050000
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 1]
-author=YukiXXL
-description=Default.
-patch=1,EE,0013F7C0,extended,24050001
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 2]
-author=YukiXXL
-description=Decreases Texture and Models quality (normal) in Multiplayer by 2.
-patch=1,EE,0013F7C0,extended,24050002
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 3]
-author=YukiXXL
-description=Decreases Texture and Models quality (normal) in Multiplayer by 3.
-patch=1,EE,0013F7C0,extended,24050003
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 4]
-author=YukiXXL
-description=Decreases Texture and Models quality (normal) in Multiplayer by 4.
-patch=1,EE,0013F7C0,extended,24050004
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 5]
-author=YukiXXL
-description=Decreases Texture and Models quality (normal) in Multiplayer by 5.
-patch=1,EE,0013F7C0,extended,24050005
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 6]
-author=YukiXXL
-description=Decreases Texture and Models quality (normal) in Multiplayer by 6.
-patch=1,EE,0013F7C0,extended,24050006
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Normal)\Decrease by 7]
-author=YukiXXL
-description=Decreases Texture and Models quality (normal) in Multiplayer by 7.
-patch=1,EE,0013F7C0,extended,24050007
-
-// -- TEXTURE AND MODEL QUALITY (DETAILS)
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 0]
-author=YukiXXL
-description=Don't decrease Texture and Model quality (details) in Multiplayer.
-patch=1,EE,0013F7D4,extended,24050000
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 1]
-author=YukiXXL
-description=Default.
-patch=1,EE,0013F7D4,extended,24050001
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 2]
-author=YukiXXL
-description=Decreases Texture and Models quality (details) in Multiplayer by 2.
-patch=1,EE,0013F7D4,extended,24050002
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 3]
-author=YukiXXL
-description=Decreases Texture and Models quality (details) in Multiplayer by 3.
-patch=1,EE,0013F7D4,extended,24050003
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 4]
-author=YukiXXL
-description=Decreases Texture and Models quality (details) in Multiplayer by 4.
-patch=1,EE,0013F7D4,extended,24050004
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 5]
-author=YukiXXL
-description=Decreases Texture and Models quality (details) in Multiplayer by 5.
-patch=1,EE,0013F7D4,extended,24050005
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 6]
-author=YukiXXL
-description=Decreases Texture and Models quality (details) in Multiplayer by 6.
-patch=1,EE,0013F7D4,extended,24050006
-
-[Misc\Gameplay\Texture and Model Quality in Multiplayer (Details)\Decrease by 7]
-author=YukiXXL
-description=Decreases Texture and Models quality (details) in Multiplayer by 7.
-patch=1,EE,0013F7D4,extended,24050007
-
 // - MENUS
 
 [Misc\Menus\Run "Init Menu"\at the start]
@@ -312,7 +223,7 @@ patch=1,EE,001E2938,extended,28420009
 [Multiplayer\Other\Enable Netricsa and in-game messages in Split-Screen]
 author=YukiXXL
 description=Enables usage of Netricsa and shows the text of collected items.
-patch=1,EE,0022153C,extended,2C820008
+patch=1,EE,0022153C,extended,2C820020
 
 // - FAKE BYTE
 
@@ -473,9 +384,14 @@ patch=1,EE,0036C1AC,extended,00000134
 
 // MODS
 
-//DOUBLE THE FUN
+// - DOUBLE THE FUN
 
-// - DUAL WIELD
+[Mods\Double The Fun\Disable the replaced function]
+author=YukiXXL
+description=A failsafe code. Enable it to be safe.
+patch=1,EE,202650B4,extended,00000000
+
+// -- DUAL WIELD
 
 [Mods\Double The Fun\Dual Wield]
 author=YukiXXL
@@ -489,90 +405,86 @@ patch=1,EE,00222028,extended,30420000
 patch=1,EE,002260D4,extended,3442FFFF
 patch=1,EE,00225A38,extended,3463FFFF
 
-// - AMMO
+// -- AMMO
 
 [Mods\Double The Fun\Ammo\Enable]
 author=YukiXXL
 description=Enable this first!
 //Double Ammo Function
-patch=1,EE,20266DA4,extended,00651818 //mult v1, v1, a1
-patch=1,EE,20266DAC,extended,A6030000 //sh v1(ammo)
+patch=1,EE,2026594C,extended,00651818 //mult v1, v1, a1
+patch=1,EE,20265950,extended,03E00008 //jr ra
+patch=1,EE,20265954,extended,A6030000 //sh v1(ammo)
 //PickupCount
-patch=1,EE,201FBD28,extended,0C099B68 //jal to joker function
+patch=1,EE,201FBD28,extended,0C099652 //jal to joker function
 patch=1,EE,201FBD2C,extended,8C430018 //lw v1(ammo)
 //MaxAmmoCount
-patch=1,EE,201FBD80,extended,0C099B68
+patch=1,EE,201FBD80,extended,0C099652
 patch=1,EE,201FBD84,extended,8C430018
 //GreenAmmoPackCount
-patch=1,EE,201FBDD0,extended,0C099B68
+patch=1,EE,201FBDD0,extended,0C099652
 patch=1,EE,201FBDD4,extended,8C430018
 //RedAmmoPackCount
-patch=1,EE,201FBE20,extended,0C099B68
+patch=1,EE,201FBE20,extended,0C099652
 patch=1,EE,201FBE24,extended,8C430018
-//Fix the replaced functions
-patch=1,EE,20265164,extended,00000000
-patch=1,EE,20265174,extended,00000000
 
 [Mods\Double The Fun\Ammo\Double]
 author=YukiXXL
 description=Double the ammo.
-patch=1,EE,20266DA0,extended,24050002
+patch=1,EE,20265948,extended,24050002
 
 [Mods\Double The Fun\Ammo\Triple]
 author=YukiXXL
 description=Triple the ammo.
-patch=1,EE,20266DA0,extended,24050003
+patch=1,EE,20265948,extended,24050003
 
 [Mods\Double The Fun\Ammo\Quadruple]
 author=YukiXXL
 description=Quadruple the ammo.
-patch=1,EE,20266DA0,extended,24050004
+patch=1,EE,20265948,extended,24050004
 
 [Mods\Double The Fun\Ammo\Quintuple]
 author=YukiXXL
 description=Quintuple the ammo.
-patch=1,EE,20266DA0,extended,24050005
+patch=1,EE,20265948,extended,24050005
 
-// - MINIONS
+// -- MINIONS
 
 [Mods\Double The Fun\Minions\Enable]
 author=YukiXXL
 description=Enable this first!
 //Multiply minions
-patch=1,EE,201D79AC,extended,0C099B86 //jal to Joker Code
+patch=1,EE,201D79AC,extended,0C099658 //jal to Joker Code
 patch=1,EE,201D79B4,extended,AC64000C //Save TotalCount
 patch=1,EE,201D79B8,extended,8CC37FC4 //Fix for lw Count_Enemies
 patch=1,EE,201D79D4,extended,ACC37FC4 //Fix for lw Count_Enemies
 //Joker Code
-patch=1,EE,20266E18,extended,8C64000C //Load TotalCount
-patch=1,EE,20266E24,extended,00852018 //Multiply TotalCount with Multiplier(a1)
-//Fix the replaced functions
-patch=1,EE,20265194,extended,00000000
-patch=1,EE,202651A4,extended,00000000
+patch=1,EE,20265960,extended,8C64000C //Load TotalCount
+patch=1,EE,20265968,extended,03E00008 //jr ra
+patch=1,EE,2026596C,extended,00852018 //Multiply TotalCount with Multiplier(a1)
 //Fix the Infinite Loop
 patch=1,EE,201F8564,extended,2402FFFF //Safer fix
 
 [Mods\Double The Fun\Minions\Double]
 author=YukiXXL
 description=Double the ammount of minions.
-patch=1,EE,20266E1C,extended,24050002
+patch=1,EE,20265964,extended,24050002
 
 [Mods\Double The Fun\Minions\Triple]
 author=YukiXXL
 description=Triple the ammount of minions.
-patch=1,EE,20266E1C,extended,24050003
+patch=1,EE,20265964,extended,24050003
 
 [Mods\Double The Fun\Minions\Quadruple]
 author=YukiXXL
 description=Quadruple the ammount of minions.
-patch=1,EE,20266E1C,extended,24050004
+patch=1,EE,20265964,extended,24050004
 
 [Mods\Double The Fun\Minions\Quintuple]
 author=YukiXXL
 description=Quintuple the ammount of minions.
-patch=1,EE,20266E1C,extended,24050005
+patch=1,EE,20265964,extended,24050005
 
-//RANDOMIZER MOD
+// - RANDOMIZER MOD
 
 [Mods\Randomizer\Disable the replaced function]
 author=YukiXXL
@@ -646,3 +558,137 @@ patch=1,EE,20265884,extended,14A4FFFE //branch if a1 is not equal to a0
 patch=1,EE,20265888,extended,24A50001 //a1 = a1 + 1
 patch=1,EE,2026588C,extended,03E00008 //jr ra
 patch=1,EE,20265890,extended,0000282D //a1 = 0
+
+// RENDERING
+
+//TEXTURES
+
+[Rendering\Textures\Lowered quality\Enable in Main Menu]
+author=YukiXXL
+description=Enable decreasing texture (Multiplayer) quality in main menu.
+patch=1,EE,20272D68,extended,24050001
+
+[Rendering\Textures\Lowered quality\Enable in Single Player / Online]
+author=YukiXXL
+description=Enable decreasing texture (Multiplayer) quality in SP or Online.
+patch=1,EE,20273F44,extended,24050001
+
+// -- TEXTURE AND MODEL QUALITY (NORMAL)
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 0]
+author=YukiXXL
+description=Don't decrease Texture and Model quality (normal).
+patch=1,EE,0013F7C0,extended,24050000
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 1]
+author=YukiXXL
+description=Default.
+patch=1,EE,0013F7C0,extended,24050001
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 2]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) by 2.
+patch=1,EE,0013F7C0,extended,24050002
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 3]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) by 3.
+patch=1,EE,0013F7C0,extended,24050003
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 4]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) by 4.
+patch=1,EE,0013F7C0,extended,24050004
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 5]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) by 5.
+patch=1,EE,0013F7C0,extended,24050005
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 6]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) by 6.
+patch=1,EE,0013F7C0,extended,24050006
+
+[Rendering\Textures\Lowered quality (Normal)\Decrease by 7]
+author=YukiXXL
+description=Decreases Texture and Models quality (normal) by 7.
+patch=1,EE,0013F7C0,extended,24050007
+
+// -- TEXTURE AND MODEL QUALITY (DETAILS)
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 0]
+author=YukiXXL
+description=Don't decrease Texture and Model quality (details).
+patch=1,EE,0013F7D4,extended,24050000
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 1]
+author=YukiXXL
+description=Default.
+patch=1,EE,0013F7D4,extended,24050001
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 2]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) by 2.
+patch=1,EE,0013F7D4,extended,24050002
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 3]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) by 3.
+patch=1,EE,0013F7D4,extended,24050003
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 4]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) by 4.
+patch=1,EE,0013F7D4,extended,24050004
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 5]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) by 5.
+patch=1,EE,0013F7D4,extended,24050005
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 6]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) by 6.
+patch=1,EE,0013F7D4,extended,24050006
+
+[Rendering\Textures\Lowered quality (Details)\Decrease by 7]
+author=YukiXXL
+description=Decreases Texture and Models quality (details) by 7.
+patch=1,EE,0013F7D4,extended,24050007
+
+// - LOD
+
+[Rendering\Generic LOD\Disable SS changing]
+author=YukiXXL
+description=Disable LOD chaning for Split-Screen.
+patch=1,EE,0012650C,extended,28820020
+
+[Rendering\Generic LOD\Always enabled]
+author=YukiXXL
+description=Don't use level defined LOD.
+patch=1,EE,201442A8,extended,00000000
+
+// -- SP
+
+[Rendering\Generic LOD\Single Player\3.5 (Split-Screen Default)]
+author=YukiXXL
+description=Change the generic LOD in Single Player to 3.5.
+patch=1,EE,101442B0,extended,3C014060
+
+[Rendering\Generic LOD\Single Player\-1]
+author=YukiXXL
+description=Change the generic LOD in Single Player to -1.
+patch=1,EE,101442B0,extended,3C01BF80
+
+// -- MP
+
+[Rendering\Generic LOD\Multiplayer\1.75 (Single-Player Default)]
+author=YukiXXL
+description=Change the generic LOD in Multiplayer to 1.75.
+patch=1,EE,10126518,extended,3C013FE0
+
+[Rendering\Generic LOD\Multiplayer\-1]
+author=YukiXXL
+description=Change the generic LOD in Multiplayer to -1.
+patch=1,EE,10126518,extended,3C01BF80
