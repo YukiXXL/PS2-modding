@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=MISC: RENDERING - Load Of Detail
+
+//LOD in Single-Player at 3.5 (SS default)
+patch=1,EE,10144490,extended,3C014060
+
+//LOD in Split-Screen at 1.75 (SP Default)
+patch=1,EE,101266F0,extended,3C013FE0
+
+//LOD at -1 (Unlimited)
+patch=1,EE,101266F0,extended,3C01BF80 //Split-Screen
+patch=1,EE,10144490,extended,3C01BF80 //Single Player

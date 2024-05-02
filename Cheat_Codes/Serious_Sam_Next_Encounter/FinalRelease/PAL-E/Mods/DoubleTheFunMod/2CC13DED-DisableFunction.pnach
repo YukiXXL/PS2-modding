@@ -1,0 +1,4 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Disable DNAS Shutdown function
+
+patch=1,EE,202650B4,extended,00000000

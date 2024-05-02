@@ -1,0 +1,13 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=MISC: RENDERING - TEXTURES
+
+//Enable lowered texture quality in Main Menu
+patch=1,EE,20272940,extended,24050001
+
+//Enable lowered texture quality in SP/Online
+patch=1,EE,20273B1C,extended,24050001
+
+
+//Change how much texture quality decreases in Multiplayer (Only change the last number!)
+patch=1,EE,0013F9A0,extended,24050007 //Normal
+patch=1,EE,0013F9B4,extended,24050007 //Details

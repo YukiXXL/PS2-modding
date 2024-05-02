@@ -2,18 +2,16 @@ gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
 comment=DOUBLE THE FUN MOD - MINIONS
 
 //Multiply minions
-patch=1,EE,201D7B5C,extended,0C099A8C //jal to Joker Code
+patch=1,EE,201D7B5C,extended,0C0995A8 //jal to Joker Code
 patch=1,EE,201D7B64,extended,AC64000C //Save TotalCount
 patch=1,EE,201D7B68,extended,8CC37504 //Fix for lw Count_Enemies
 patch=1,EE,201D7B84,extended,ACC37504 //Fix for lw Count_Enemies
 //Joker Code
-patch=1,EE,20266A30,extended,8C64000C //Load TotalCount
-patch=1,EE,20266A34,extended,24050002 //Multiplier(a1) = 2
-patch=1,EE,20266A3C,extended,00852018 //Multiply TotalCount with Multiplier(a1)
+patch=1,EE,202656A0,extended,8C64000C //Load TotalCount
+patch=1,EE,202656A4,extended,24050002 //Multiplier(a1) = 2
+patch=1,EE,202656A8,extended,03E00008 //jr ra
+patch=1,EE,202656AC,extended,00852018 //Multiply TotalCount with Multiplier(a1)
 
-//Fix the replaced functions
-patch=1,EE,202650FC,extended,00000000
-patch=1,EE,2026510C,extended,00000000
 //Fix the Infinite Loop
 //patch=1,EE,201F126C,extended,00000000 //bgez > nop
 patch=1,EE,201F8714,extended,2402FFFF //Safer fix
