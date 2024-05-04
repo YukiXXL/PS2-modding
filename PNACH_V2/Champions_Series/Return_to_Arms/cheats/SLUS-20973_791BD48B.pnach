@@ -5,10 +5,19 @@ author=YukiXXL
 description=Enables selecting difficulty in offline.
 patch=1,EE,001E1E08,extended,10400023
 
+// DEBUG
+
 [Misc\Enable Debug Mode]
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,004D0F90,extended,00000001
+
+[Misc\Enable Debug Mode (Alternative)]
+author=YukiXXL
+description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
+patch=1,EE,20223C40,extended,00000000
+
+// TORMENTC
 
 ['tormentc' is missing so replace it with:\torment0]
 author=YukiXXL

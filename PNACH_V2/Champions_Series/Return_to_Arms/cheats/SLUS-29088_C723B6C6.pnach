@@ -14,21 +14,34 @@ author=YukiXXL
 description=Enables selecting difficulty in offline.
 patch=1,EE,001E1F88,extended,10400023
 
+// MISC
+
 [Misc\Enable selecting other characters]
 author=YukiXXL
 description=Non-Demo characters crashes the game upon loading!
 patch=1,EE,20215604,extended,00000000
+
+// DEBUG
 
 [Misc\Enable Debug Mode]
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,004D69A8,extended,00000001
 
-[Misc\Disable Demo Mode]
+[Misc\Enable Debug Mode (Alternative)]
 author=YukiXXL
-description=Disables Demo mode for unlimited playtime.
-//Turn off Demo end checks
+description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
+patch=1,EE,20224740,extended,00000000
+
+// DISABLE DEMO MODE
+
+[Misc\Disable Demo Mode\Turn off Demo end checks]
+author=YukiXXL
+description=Disables checks that end the Demo.
 patch=1,EE,0032E200,extended,24020000
 patch=1,EE,0032E274,extended,24020000
-//Disable Demo Timer
+
+[Misc\Disable Demo Mode\Turn off Demo Timer]
+author=YukiXXL
+description=Turns off the timer.
 patch=1,EE,0032E0EC,extended,24420000

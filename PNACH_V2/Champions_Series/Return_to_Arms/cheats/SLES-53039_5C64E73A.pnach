@@ -1,19 +1,60 @@
 gametitle=Champions Return to Arms Final Release (PAL-E)
 
+// CHEATS
+
 [Cheats\All difficulties available]
 author=YukiXXL
 description=Unlocks all difficulties.
 patch=1,EE,004FA838,extended,00000040
+
+[Cheats\Select any difficulty]
+author=YukiXXL
+description=Allows selecting locked difficulties.
+patch=1,EE,201E285C,extended,00000000
+
+// MISC
+
+// - DEBUG
 
 [Misc\Enable Debug Mode]
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,004FA7E0,extended,00000001
 
+[Misc\Enable Debug Mode (Alternative)]
+author=YukiXXL
+description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
+patch=1,EE,20218070,extended,00000000
+
+// - DIFFICULTY
+
 [Misc\Increase difficulty by 1]
 author=YukiXXL
 description=Legendary = Epic difficulty (cut diff)
 patch=1,EE,001E2854,extended,26900002
+
+[Misc\Epic Arena]
+author=YukiXXL
+description=Change Arena difficulty to Epic.
+patch=1,EE,001E2784,extended,24020005
+
+// -- EPIC
+
+[Misc\Epic Difficulty\Enable]
+author=YukiXXL
+description=Enables Epic difficulty menu.
+patch=1,EE,204F8778,extended,0053F100
+//menu_net_client -> menu_hardest2
+patch=1,EE,2053F104,extended,7261685F
+patch=1,EE,2053F108,extended,74736564
+patch=1,EE,2053F10C,extended,00000032
+
+[Misc\Epic Difficulty\Remove settings menu]
+author=YukiXXL
+description=Removes and disables settings menu for clean diff select menu.
+patch=1,EE,204F8788,extended,00000000
+
+// - OTHER
 
 [Misc\LAN Mode]
 author=YukiXXL
