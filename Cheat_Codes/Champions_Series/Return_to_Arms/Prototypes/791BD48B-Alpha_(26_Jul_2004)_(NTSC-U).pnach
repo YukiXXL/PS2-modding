@@ -4,7 +4,9 @@ comment=by YukiXXL
 // D-Pad Down + R1 = Level up
 // L2 + R2 + Start = Debug menu
 //Enable Debug Mode
-patch=1,EE,004D0F90,extended,00000001
+//patch=1,EE,004D0F90,extended,00000001
+//Alternative
+patch=1,EE,20223C40,extended,00000000
 
 //Enable Difficulty select in Offline
 patch=1,EE,001E1E08,extended,10400023

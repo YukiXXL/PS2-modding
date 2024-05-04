@@ -3,3 +3,6 @@ comment=CHEATS
 
 //All difficulties available
 patch=1,EE,004F8F38,extended,00000040
+
+//Select any difficulty
+patch=1,EE,201E1A94,extended,00000000

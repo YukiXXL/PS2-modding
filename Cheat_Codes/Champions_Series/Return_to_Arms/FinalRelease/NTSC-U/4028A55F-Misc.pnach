@@ -7,7 +7,9 @@ patch=1,EE,2019D9D4,extended,ACA00008
 // D-Pad Down + R1 = Level up
 // L2 + R2 + Start = Debug menu
 //Enable Debug Mode
-patch=1,EE,004F8EE0,extended,00000001
+//patch=1,EE,004F8EE0,extended,00000001
+//Alternative
+patch=1,EE,20217440,extended,00000000
 
 //LAN mode?
 patch=1,EE,201E1848,extended,10000006
@@ -24,3 +26,7 @@ patch=1,EE,2053CBF8,extended,74736564
 patch=1,EE,2053CBFC,extended,00000032
 //Remove the settings for clearer screen
 //patch=1,EE,204F6E88,extended,00000000
+
+
+//Change Arena difficulty
+patch=1,EE,001E19BC,extended,24020005

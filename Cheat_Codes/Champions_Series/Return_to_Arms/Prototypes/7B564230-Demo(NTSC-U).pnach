@@ -4,7 +4,9 @@ comment=by YukiXXL
 // D-Pad Down + R1 = Level up
 // L2 + R2 + Start = Debug menu
 //Enable Debug Mode
-patch=1,EE,004D69A8,extended,00000001
+//patch=1,EE,004D69A8,extended,00000001
+//Alternative
+patch=1,EE,20224740,extended,00000000
 
 //Super Main Menu
 //patch=1,EE,1051C580,extended,001E1DF0
