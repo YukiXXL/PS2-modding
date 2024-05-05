@@ -1,2 +1,6 @@
 Misc
 00F65F44 - Load Weapon
+
+Secrets
+207B9BF1 - Mirrored
+207B9BF2 - Bad Weather

@@ -1,0 +1,20 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=MISC - BAD WEATHER
+
+// ACTIVATE
+
+//Hero Mode unlocked
+patch=1,EE,E0018001,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00FF0001
+//Hero Mode locked
+patch=1,EE,E0018000,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00FF0000
+
+// RESET
+
+//Hero Mode unlocked
+patch=1,EE,E0018001,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00008001
+//Hero Mode locked
+patch=1,EE,E0018000,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00008000

@@ -189,6 +189,16 @@ patch=1,EE,113CB2EC,extended,10000173
 patch=1,EE,E001002C,extended,013CB2EC
 patch=1,EE,113CB2EC,extended,1000034F
 
+// - TEAM MODE
+
+[Events\Team Mode on any challenge]
+description=Change the driver, go to event options, reset to defaults.
+patch=1,EE,E0040012,extended,00BCFA10 //Memory Check
+patch=1,EE,20BCFA04,extended,91030078 //lbu v1, $0078(t0)
+patch=1,EE,20BCFA08,extended,38630020 //xori v1, v1, $0020
+patch=1,EE,20BCFA0C,extended,A1030078 //sb v1, $0078(t0)
+patch=1,EE,20BCFA10,extended,91080005 //lbu t0, $0005(t0)
+
 // EXPERIMENTAL
 // - ARTIST
 [Experimental\artist-artist-task]
@@ -242,6 +252,34 @@ patch=1,EE,E003B4B4,extended,00B6020C
 patch=1,EE,00B603C8,extended,0000000C
 patch=1,EE,40B603D8,extended,00030004
 patch=1,EE,0000000F,extended,00000001
+
+// MISC
+
+[Misc\Mirror the entire world]
+description=In Secrets Shop, change "Mirrored Advanture Mode".
+patch=1,EE,E002043C,extended,00BAE6F8
+patch=1,EE,20BAE6F8,extended,3863FF00
+patch=1,EE,20BAE700,extended,FEA3043C
+
+// - BAD WEATHER
+
+[Misc\Bad Weather\Enable (Mirrored must be off!)]
+description=In Secrets Shop, change "Mirrored Advanture Mode".
+//Hero Mode unlocked
+patch=1,EE,E0018001,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00FF0001
+//Hero Mode locked
+patch=1,EE,E0018000,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00FF0000
+
+[Misc\Bad Weather\Disable (Mirrored must be off!)]
+description=In Secrets Shop, change "Mirrored Advanture Mode".
+//Hero Mode unlocked
+patch=1,EE,E0018001,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00008001
+//Hero Mode locked
+patch=1,EE,E0018000,extended,007B9BF0
+patch=1,EE,207B9BF0,extended,00008000
 
 // ONLINE-LAN
 // - DNAS BYPASS
