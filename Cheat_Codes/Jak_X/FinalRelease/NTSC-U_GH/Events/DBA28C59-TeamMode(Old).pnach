@@ -4,6 +4,6 @@ comment=Changing the driver changes the Default Team setting.
 //t0 = task address
 patch=1,EE,E0040012,extended,00BCFA10 //Memory Check
 patch=1,EE,20BCFA04,extended,91030078 //lbu v1, $0078(t0)
-patch=1,EE,20BCFA08,extended,38630020 //xori v1, v1, $0020
+patch=1,EE,20BCFA08,extended,34630020 //ori v1, v1, $0020
 patch=1,EE,20BCFA0C,extended,A1030078 //sb v1, $0078(t0)
 patch=1,EE,20BCFA10,extended,91080005 //lbu t0, $0005(t0)
