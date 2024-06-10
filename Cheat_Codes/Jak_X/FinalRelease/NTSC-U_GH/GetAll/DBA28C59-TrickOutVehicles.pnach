@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Trick Out Vehicles
+
+patch=1,EE,E0011825,extended,00BAE954 //Memory Check
+patch=1,EE,20BAE954,extended,2403FFFF

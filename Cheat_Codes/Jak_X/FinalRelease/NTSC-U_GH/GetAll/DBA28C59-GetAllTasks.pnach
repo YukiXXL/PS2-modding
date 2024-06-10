@@ -1,0 +1,46 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Get All Tasks (Adventure Mode COmpleted)
+
+patch=1,EE,E0081825,extended,00BAEADC //Memory Check
+patch=1,EE,20BAEAA0,extended,1000000B //beq zero, zero, $00baead0
+patch=1,EE,20BAEAC4,extended,34840001 //ori a0, a0, $0001
+patch=1,EE,20BAEAC8,extended,ACA40000 //sw a0, $0000(a1)
+patch=1,EE,20BAEACC,extended,64630001 //daddiu v1, v1, $0001
+patch=1,EE,20BAEAD0,extended,8E840008 //lw a0, $0008(s4)
+patch=1,EE,20BAEAD4,extended,0064202A //slt a0, v1, a0
+patch=1,EE,20BAEAD8,extended,1480FFF3 //bne a0, zero, $00bae97c
+patch=1,EE,20BAEADC,extended,00000000 //nop
+//
+patch=1,EE,E00C0054,extended,00BAEFA8 //Memory Check
+patch=1,EE,20BAEF7C,extended,000430B8 //dsll a2, a0, 2
+patch=1,EE,20BAEF80,extended,00043078 //dsll a2, a0, 1
+patch=1,EE,20BAEF84,extended,0266302D //daddu a2, s3, a2
+patch=1,EE,20BAEF88,extended,84C60000 //lh a2, $0000(a2)
+patch=1,EE,20BAEF8C,extended,000630B8 //dsll a2, a2, 2
+patch=1,EE,20BAEF90,extended,9EA70480 //lwu a3, $0480(s5)
+patch=1,EE,20BAEF94,extended,00C7302D //daddu a2, a2, a3
+patch=1,EE,20BAEF98,extended,9CC6000C //lwu a2, $000c(a2)
+patch=1,EE,20BAEF9C,extended,24050003 //addiu a1, zero, $0003
+patch=1,EE,20BAEFA0,extended,A0C50054 //sb a1, $0054(a2)
+patch=1,EE,20BAEFA4,extended,24050001 //addiu a1, zero, $0001
+patch=1,EE,20BAEFA8,extended,A0C50056 //sb a1, $0056(a2)
+//
+patch=1,EE,E0081825,extended,00BAEE48 //Memory Check
+patch=1,EE,20BAEDE8,extended,10000015 //beq zero, zero, $00baee40
+patch=1,EE,20BAEE10,extended,14C0000A //bne a2, zero, $00baee3c
+patch=1,EE,20BAEE34,extended,34A50001 //ori a1, a1, $0001
+patch=1,EE,20BAEE38,extended,ACC50064 //sw a1, $0064(a2)
+patch=1,EE,20BAEE3C,extended,64840001 //daddiu a0, a0, $0001
+patch=1,EE,20BAEE40,extended,0083282A //slt a1, a0, v1
+patch=1,EE,20BAEE44,extended,14A0FFEA //bne a1, zero, $00baedf4
+patch=1,EE,20BAEE48,extended,00000000 //nop
+//
+patch=1,EE,E0081825,extended,00BAEA80 //Memory Check
+patch=1,EE,20BAEA40,extended,1000000C //beq zero, zero, $00baea74
+patch=1,EE,20BAEA68,extended,34840003 //ori a0, a0, $0003
+patch=1,EE,20BAEA6C,extended,ACA40008 //sw a0, $0008(a1)
+patch=1,EE,20BAEA70,extended,64630001 //daddiu v1, v1, $0001
+patch=1,EE,20BAEA74,extended,8E840008 //lw a0, $0008(s4)
+patch=1,EE,20BAEA78,extended,0064202A //slt a0, v1, a0
+patch=1,EE,20BAEA7C,extended,1480FFF2 //bne a0, zero, $00baea4c
+patch=1,EE,20BAEA80,extended,00000000 //nop

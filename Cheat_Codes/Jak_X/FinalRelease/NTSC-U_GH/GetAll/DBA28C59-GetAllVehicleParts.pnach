@@ -1,0 +1,12 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Get All Vehicle Parts
+
+patch=1,EE,E0081825,extended,00BAE9C4 //Memory Check
+patch=1,EE,20BAE98C,extended,1000000A //beq zero, zero, $00bae9b8
+patch=1,EE,20BAE9AC,extended,34A50006 //ori a1, a1, $0006
+patch=1,EE,20BAE9B0,extended,A0C5000A //sb a1, $000a(a2)
+patch=1,EE,20BAE9B4,extended,64840001 //daddiu a0, a0, $0001
+patch=1,EE,20BAE9B8,extended,8E850008 //lw a1, $0008(s4)
+patch=1,EE,20BAE9BC,extended,0085282A //slt a1, a0, a1
+patch=1,EE,20BAE9C0,extended,14A0FFF4 //bne a1, zero, $00bae980
+patch=1,EE,20BAE9C4,extended,00000000 //nop
