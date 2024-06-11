@@ -1,5 +1,8 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Trick Out Vehicles
 
-patch=1,EE,E0011825,extended,00BAE954 //Memory Check
-patch=1,EE,20BAE954,extended,2403FFFF
+patch=1,EE,E004302A,extended,00BAE944 //Memory Check
+patch=1,EE,20BAE898,extended,0000382D //Engine
+patch=1,EE,20BAE8D4,extended,0000382D //Gearbox
+patch=1,EE,20BAE910,extended,0000382D //Armor
+patch=1,EE,20BAE944,extended,0000302D //Turbo
