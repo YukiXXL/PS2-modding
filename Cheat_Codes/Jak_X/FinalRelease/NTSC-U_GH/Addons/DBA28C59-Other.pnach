@@ -2,17 +2,9 @@ gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=ADDONS - OTHER
 
 //Scan and get all secret characters + Daxtermobile
-patch=1,EE,E003FE79,extended,013E9A14
-patch=1,EE,213E9A14,extended,2404000F
-patch=1,EE,213E9A18,extended,14E0FE78
-patch=1,EE,213E9A1C,extended,24050001
-
-//Enable customizing Sand Shark, Naughty Dog, Daxtermobile
-patch=1,EE,E00406BB,extended,01354864
-patch=1,EE,2135485C,extended,1000000C
-patch=1,EE,213542D0,extended,00000000
-patch=1,EE,213543A8,extended,00000000
-patch=1,EE,213544E8,extended,00000000
+patch=1,EE,E0020010,extended,00B9BB14 //Memory Check
+patch=1,EE,20274424,extended,2402000F //PS2 Characters
+patch=1,EE,20B9BB14,extended,241C0001 //PSP Exclusives
 
 //Enable Colors for Daxtermobile
 patch=1,EE,E001000E,extended,0131013C

@@ -14,6 +14,10 @@ patch=1,EE,E002DC63,extended,00F2194C
 patch=1,EE,20F2194C,extended,66E30004
 patch=1,EE,20F21950,extended,AEE3DC63
 
+[Cheats\256 Vehicles Stats]
+patch=1,EE,E0011825,extended,00BAE954
+patch=1,EE,20BAE954,extended,2403FFFF
+
 // ADDONS
 // - DEBUG
 [Addons\Debug\Target Status]
@@ -36,6 +40,7 @@ patch=1,EE,10A8BB88,extended,8EE30137
 
 // - OFFLINE WITH WORKING ONLINE MENUS
 [Addons\Offline with working Online menus]
+description=Uses dynamic memory so it doesn't always work.
 //Memory Check
 patch=1,EE,E00600DC,extended,0131A950
 //Drop to Screen Select
@@ -56,19 +61,34 @@ patch=1,EE,0131A9B8,extended,24030001
 
 // - OTHER
 [Addons\Other\Scan and get all secret characters + Daxtermobile]
-patch=1,EE,E003FE79,extended,013E9A14
-patch=1,EE,213E9A14,extended,2404000F
-patch=1,EE,213E9A18,extended,14E0FE78
-patch=1,EE,213E9A1C,extended,24050001
+patch=1,EE,E0020010,extended,00B9BB14 //Memory Check
+patch=1,EE,20274424,extended,2402000F //PS2 Characters
+patch=1,EE,20B9BB14,extended,241C0001 //PSP Exclusives
 
 [Addons\Other\Enable customizing Sand Shark, Naughty Dog, Daxtermobile]
-patch=1,EE,E00406BB,extended,01354864
-patch=1,EE,2135485C,extended,1000000C
-patch=1,EE,213542D0,extended,00000000
-patch=1,EE,213543A8,extended,00000000
-patch=1,EE,213544E8,extended,00000000
+patch=1,EE,E0090000,extended,102E0828 //Condition Check
+patch=1,EE,209F0044,extended,8EE3BF07 //lw v1, bf07(s7)
+patch=1,EE,209F0048,extended,9C630194 //lwu v1, $0194(v1)
+patch=1,EE,209F004C,extended,10600004 //beq if v1 = zero
+patch=1,EE,209F0050,extended,9C630020 //lwu v1, $0020(v1)
+patch=1,EE,209F0054,extended,AC60043C //sw zero, $043c(v1)
+patch=1,EE,209F0058,extended,AC600514 //sw zero, $0514(v1)
+patch=1,EE,209F005C,extended,AC600654 //sw zero, $0654(v1)
+patch=1,EE,209F0060,extended,1000001A //beq zero, zero
+patch=1,EE,209F0064,extended,02E01825 //or v1, s7, zero
+//Change Visuals
+//Tune Performance
+patch=1,EE,602E0828,extended,00000000
+patch=1,EE,00010000,extended,00000010
+//Modify Body Parts
+patch=1,EE,602E0598,extended,00000000
+patch=1,EE,00010000,extended,00000010
+//Respray Paint Job
+patch=1,EE,602DF814,extended,00000000
+patch=1,EE,00010000,extended,00000010
 
 [Addons\Other\Enable Colors for Daxtermobile]
+description=Uses dynamic memory so it doesn't always work.
 patch=1,EE,E001000E,extended,0131013C
 patch=1,EE,0131013C,extended,2403000F
 
@@ -88,6 +108,36 @@ description=CPUs can use all chars.
 patch=1,EE,E0011025,extended,00BCBEEC
 //CPUs use all characters
 patch=1,EE,20BCBEEC,extended,00000000
+
+[Addons\CPUs\Use all characters\Version 2]
+description=Enables secret drivers for CPUs and disables the default ones.
+//Enable Secret Drivers
+patch=1,EE,E00B1805,extended,00B43AE0 //Memory Check
+patch=1,EE,00B43250,extended,002E1801 // - OSMO
+patch=1,EE,00B432E0,extended,002E1801 // - XIMON
+patch=1,EE,00B43380,extended,002E1801 // - PECKER
+patch=1,EE,00B43420,extended,002E1801 // - G.T. BLITZ
+patch=1,EE,00B434D0,extended,002E1801 // - DAXTER
+patch=1,EE,00B43560,extended,002E1801 // - JAK3
+patch=1,EE,00B435F0,extended,002E1801 // - JAK II
+patch=1,EE,00B43680,extended,002E1801 // - JAK I
+patch=1,EE,00B43710,extended,002E1801 // - RATCHET
+patch=1,EE,00B43850,extended,002E1801 // - KAEDEN
+patch=1,EE,00B43AE0,extended,002E1801 // - TARYN
+//Disable Default Drivers
+patch=1,EE,E00B1801,extended,00B43FF0 //Memory Check
+patch=1,EE,00B437B0,extended,002E1805 // - RAYN
+patch=1,EE,00B438F0,extended,002E1805 // - UR-86
+patch=1,EE,00B43990,extended,002E1805 // - SIG
+patch=1,EE,00B43A40,extended,002E1805 // - TORN
+patch=1,EE,00B43B80,extended,002E1805 // - CUTTER
+patch=1,EE,00B43C20,extended,002E1805 // - EDJE
+patch=1,EE,00B43CC0,extended,002E1805 // - SHIV
+patch=1,EE,00B43D70,extended,002E1805 // - KEIRA
+patch=1,EE,00B43E10,extended,002E1805 // - KLEIVER
+patch=1,EE,00B43EB0,extended,002E1805 // - RAZER
+patch=1,EE,00B43F50,extended,002E1805 // - ASHELIN
+patch=1,EE,00B43FF0,extended,002E1805 // - JAK
 
 [Addons\CPUs\Use all characters\Fixes]
 description=Fixes TLB Misses. Fixes crash on real hardware.
@@ -151,8 +201,8 @@ patch=1,EE,E0000004,extended,013CB4F0
 patch=1,EE,013CB4F0,extended,66E30000
 
 // - MORE LAPS
-[Events\More laps and Time]
-description=Minimum is 0, Maximum is 255.
+[Events\More laps and Time (Old)]
+description=Uses dynamic memory so it doesn't always work.
 //Safe Check
 patch=1,EE,E006200B,extended,013CCFA4
 //Increase the number of max laps
@@ -163,6 +213,21 @@ patch=1,EE,213CCF24,extended,8CA50004
 patch=1,EE,213CCF9C,extended,0000302D
 patch=1,EE,213CCFA0,extended,ACA60000
 patch=1,EE,213CCFA4,extended,8CA50000
+
+[Events\More laps and Time (New)]
+description=Minimum is 0, Maximum is 255.
+patch=1,EE,E00B012B,extended,00A87308 //Memory Check
+patch=1,EE,20A87308,extended,8EE3E5E7 //load pointer addr for event
+patch=1,EE,20A87314,extended,8EE3E5E7 //load pointer again
+patch=1,EE,20A87318,extended,10600032 //beq if zero
+patch=1,EE,20A8731C,extended,02E01825 //or v1, s7
+patch=1,EE,20A87320,extended,8EE3E5E7 //load pointer again
+patch=1,EE,20A87324,extended,9C630000 //load addr from pointer
+patch=1,EE,20A87328,extended,A0600000 //sb zero for min
+patch=1,EE,20A8732C,extended,241900FF //t9 = 255
+patch=1,EE,20A87330,extended,A0790004 //sb t9 for max
+patch=1,EE,20A87334,extended,1000002E //beq zero, zero
+patch=1,EE,20A87338,extended,02E01825 //or v1, s7
 
 // - OPTIONS
 [Events\Options\Collectathon options for any gamemode]
@@ -191,13 +256,22 @@ patch=1,EE,113CB2EC,extended,1000034F
 
 // - TEAM MODE
 
-[Events\Team Mode on any challenge]
+[Events\Team Mode on any challenge (Old)]
 description=Change the driver, go to event options, reset to defaults.
 patch=1,EE,E0040012,extended,00BCFA10 //Memory Check
 patch=1,EE,20BCFA04,extended,91030078 //lbu v1, $0078(t0)
 patch=1,EE,20BCFA08,extended,38630020 //xori v1, v1, $0020
 patch=1,EE,20BCFA0C,extended,A1030078 //sb v1, $0078(t0)
 patch=1,EE,20BCFA10,extended,91080005 //lbu t0, $0005(t0)
+
+[Events\Team Mode on any challenge (New)]
+description=Change the event (where Performance option is), go to event options, reset to defaults.
+patch=1,EE,E0050007,extended,00BD16E4 //Memory Check
+patch=1,EE,20BD16D4,extended,90830078 //lbu v1, $0078(a0)
+patch=1,EE,20BD16D8,extended,38630020 //xori v1, v1, $0020
+patch=1,EE,20BD16DC,extended,A0830078 //sb v1, $0078(a0)
+patch=1,EE,20BD16E0,extended,90840005 //lbu a0, $0005(a0)
+patch=1,EE,20BD16E4,extended,00000000 //nop
 
 // EXPERIMENTAL
 // - ARTIST
@@ -252,6 +326,64 @@ patch=1,EE,E003B4B4,extended,00B6020C
 patch=1,EE,00B603C8,extended,0000000C
 patch=1,EE,40B603D8,extended,00030004
 patch=1,EE,0000000F,extended,00000001
+
+// GET All
+
+[Get All]
+description=Load the save!
+
+[Get All\Drivers]
+description=Get all drivers including secret ones.
+patch=1,EE,E0012025,extended,00BAE728
+patch=1,EE,20BAE72C,extended,2403FFFF
+
+[Get All\Tasks]
+description=Adventure Mode complete with all Gold Medals.
+patch=1,EE,E001202D,extended,00BAEAAC //Memory Check
+patch=1,EE,20BAEAB0,extended,24040001 //addiu a0, zero, $0001
+//
+patch=1,EE,E002282D,extended,00BAEF84 //Memory Check
+patch=1,EE,20BAEF84,extended,3C050001 //lui a1, $0001
+patch=1,EE,20BAEF88,extended,24A50003 //addiu a1, a1, $0003
+//
+patch=1,EE,E001282D,extended,00BAEDF8 //Memory Check
+patch=1,EE,20BAEDFC,extended,24050001 //addiu a1, zero, $0001
+//
+patch=1,EE,E0020008,extended,00BAEA68 //Memory Check
+patch=1,EE,20BAEA54,extended,24040003 //addiu a0, zero, $0003
+patch=1,EE,20BAEA68,extended,A4A40008 //sh a0, $0008(a1)
+
+[Get All\Vehicle Parts]
+patch=1,EE,E001282D,extended,00BAE998 //Memory Check
+patch=1,EE,20BAE99C,extended,24050006 //addiu a1, zero, $0006
+
+[Get All\Vehicles]
+description=Get all vehicles including Daxtermobile.
+patch=1,EE,E0030030,extended,00BAE82C //Memory Check
+patch=1,EE,20BAE82C,extended,34630001 //ori v1, v1, $0001
+patch=1,EE,20BAE830,extended,AE430030 //sw v1, $0030(s2)
+patch=1,EE,20BAE838,extended,24030000 //v1 = 0
+
+[Get All\Venues]
+description=Get all tracks.
+patch=1,EE,E001202D,extended,00BAEAAC //Memory Check
+patch=1,EE,20BAEAB0,extended,24040001 //addiu a0, zero, $0001
+
+[Get All\Mad Cash]
+description=Get 1500000 orbs.
+patch=1,EE,E004001C,extended,00BAEAFC //Memory Check
+patch=1,EE,20BAEAF8,extended,3C0349B7 //lui v1, $49b7
+patch=1,EE,20BAEAFC,extended,24631B00 //addiu v1, v1, $1b00
+patch=1,EE,20BAEB00,extended,AEA3001C //sw v1, $001c(s5)
+patch=1,EE,20BAEB08,extended,44030000 //mfc1 v1, $f0
+
+[Get All\Trick Out Vehicles]
+description=Upgrade all vehicles to their max.
+patch=1,EE,E004302A,extended,00BAE944 //Memory Check
+patch=1,EE,20BAE898,extended,0000382D //Engine
+patch=1,EE,20BAE8D4,extended,0000382D //Gearbox
+patch=1,EE,20BAE910,extended,0000382D //Armor
+patch=1,EE,20BAE944,extended,0000302D //Turbo
 
 // MISC
 
