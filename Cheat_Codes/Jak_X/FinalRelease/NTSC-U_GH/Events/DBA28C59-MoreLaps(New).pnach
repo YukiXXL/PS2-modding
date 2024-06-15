@@ -1,7 +1,8 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=0-255 Laps/Time
 
-patch=1,EE,E00B012B,extended,00A87308 //Memory Check
+//Check if not equal to zero
+patch=1,EE,E00B0000,extended,102DA6D8 //Memory Check
 patch=1,EE,20A87308,extended,8EE3E5E7 //load pointer addr for event
 patch=1,EE,20A87314,extended,8EE3E5E7 //load pointer again
 patch=1,EE,20A87318,extended,10600032 //beq if zero
@@ -13,3 +14,7 @@ patch=1,EE,20A8732C,extended,241900FF //t9 = 255
 patch=1,EE,20A87330,extended,A0790004 //sb t9 for max
 patch=1,EE,20A87334,extended,1000002E //beq zero, zero
 patch=1,EE,20A87338,extended,02E01825 //or v1, s7
+
+//Check if equal to zero
+patch=1,EE,E0010000,extended,002DA6D8 //Memory Check
+patch=1,EE,20A87308,extended,8EE3012B //revert to default
