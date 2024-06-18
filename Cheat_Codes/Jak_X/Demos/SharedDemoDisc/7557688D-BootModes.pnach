@@ -1,0 +1,10 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=BOOT MODES
+
+// Retail Mode ( demo = play )
+patch=1,EE,20209338,extended,79616C70
+patch=1,EE,2020933C,extended,00000000
+
+// Beta Mode ( demo = beta )
+//patch=1,EE,20209338,extended,61746562
+//patch=1,EE,2020933C,extended,00000000

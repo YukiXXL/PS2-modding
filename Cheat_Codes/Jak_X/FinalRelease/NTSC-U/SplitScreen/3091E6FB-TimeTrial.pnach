@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (NTSC-U)
-comment=SPLITSCREEN - TIME ATTACK MAPS
+comment=SPLITSCREEN - TIME TRIAL MAPS
 
 //Fix for Time Trial (mapname-timetrial)
 //Check in case to avoid crashes

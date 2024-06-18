@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (PAL-E)
-comment=SPLITSCREEN - TIME ATTACK FIXES
+comment=SPLITSCREEN - TIME TRIAL FIXES
 
 //Fix for Time Trial (mapname-timetrial)
 //Check in case to avoid crashes
