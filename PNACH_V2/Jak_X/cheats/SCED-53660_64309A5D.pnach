@@ -6,43 +6,59 @@ description=Boots the game into the Retail mode.
 patch=1,EE,20209338,extended,79616C70
 patch=1,EE,2020933C,extended,00000000
 
-[Retail Mode\Secrets Shop menu\Fix exiting from Secrets menu]
+[Boot Mode\Beta]
+description=Boots the game into the Beta mode.
+patch=1,EE,001F88CC,extended,3C060020
+patch=1,EE,101F88E0,extended,24C65510
+
+[Retail/Beta Mode\Secrets Shop menu\Fix exiting from Secrets menu]
 description=To unlock secrets, use "Get All Tasks".
 patch=1,EE,50B13E90,extended,00000004
 patch=1,EE,00B13E7C,extended,00000000
 
+[Retail/Beta Mode\Adventure menu\All Movies Skipped]
+description=This code causes some issues and can get stuck in infinite loading loop.
+patch=1,EE,E0012024,extended,009125F0
+patch=1,EE,209125F0,extended,24040001
+
 // GET ALL
 
-[Retail Mode\Cheats\Get All\Vehicles]
+[Retail/Beta Mode\Cheats\Get All\Vehicles]
 patch=1,EE,E0010004,extended,009122B0
 patch=1,EE,209122B0,extended,00000000
 
-[Retail Mode\Cheats\Get All\Vehicles Parts]
+[Retail/Beta Mode\Cheats\Get All\Vehicles Parts]
 patch=1,EE,E0010012,extended,00912530
 patch=1,EE,20912530,extended,00000000
 
-[Retail Mode\Cheats\Get All\Tasks]
+[Retail/Beta Mode\Cheats\Get All\Tasks]
+//All Gold Medals
 patch=1,EE,E005004A,extended,0091265C
 patch=1,EE,20912650,extended,ACA60020
 patch=1,EE,20912654,extended,ACA60058
 patch=1,EE,20912658,extended,A0A60048
 patch=1,EE,2091265C,extended,A0A6004A
 patch=1,EE,209126C0,extended,24060003
+//All Grand Prixes
+patch=1,EE,E0020008,extended,009126E8
+patch=1,EE,209126D4,extended,24060003
+patch=1,EE,209126E8,extended,A4860008
 
-[Retail Mode\Cheats\Get All\Drivers]
+[Retail/Beta Mode\Cheats\Get All\Drivers]
 patch=1,EE,E0010080,extended,0091279C
 patch=1,EE,2091279C,extended,2403FFFF
 
-[Retail Mode\Cheats\Get All\Drivers (Alternative)]
+[Retail/Beta Mode\Cheats\Get All\Drivers (Alternative)]
 patch=1,EE,E001DFA7,extended,00B6C588
 patch=1,EE,20B6C588,extended,AEE2DFA7
 
-[Retail Mode\Cheats\Get All\C.R.E.A.M - Mad Cash]
-patch=1,EE,E0021825,extended,009121F8
+[Retail/Beta Mode\Cheats\Get All\C.R.E.A.M - Mad Cash]
+patch=1,EE,E0031825,extended,009121F8
 patch=1,EE,209121F8,extended,3C064974
 patch=1,EE,20912204,extended,34C62400
+patch=1,EE,20912218,extended,44860000
 
-[Retail Mode\Cheats\Get All\Trick Out Vehicles]
+[Retail/Beta Mode\Cheats\Get All\Trick Out Vehicles]
 patch=1,EE,E0040034,extended,00912480
 patch=1,EE,0091240C,extended,90650005
 patch=1,EE,00912430,extended,90650015

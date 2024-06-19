@@ -1,6 +1,7 @@
 gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=GET ALL - C.R.E.A.M - Mad Cash
 
-patch=1,EE,E0021825,extended,009121F8
+patch=1,EE,E0031825,extended,009121F8
 patch=1,EE,209121F8,extended,3C064974
 patch=1,EE,20912204,extended,34C62400
+patch=1,EE,20912218,extended,44860000
