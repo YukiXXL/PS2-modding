@@ -6,10 +6,19 @@ description=Boots the game into the Retail mode.
 patch=1,EE,20209338,extended,79616C70
 patch=1,EE,2020933C,extended,00000000
 
+// BETA MODE
+
 [Boot Mode\Beta]
 description=Boots the game into the Beta mode.
 patch=1,EE,001F88CC,extended,3C060020
 patch=1,EE,101F88E0,extended,24C65510
+
+[Beta Mode\Enable All Events]
+description=Enables all events.
+patch=1,EE,E001FA14,extended,0026B4F8
+patch=1,EE,0026B4F8,extended,00B0FA74
+
+// RETAIL/BETA MODE
 
 [Retail/Beta Mode\Secrets Shop menu\Fix exiting from Secrets menu]
 description=To unlock secrets, use "Get All Tasks".
@@ -64,3 +73,16 @@ patch=1,EE,0091240C,extended,90650005
 patch=1,EE,00912430,extended,90650015
 patch=1,EE,00912454,extended,90650025
 patch=1,EE,00912480,extended,90630035
+
+
+[Gamemodes\Disable check for Split-Screen]
+description=Applies at screen selection.
+patch=1,EE,E004FFFE,extended,00B13B80
+patch=1,EE,20B13B7C,extended,9C63FFFC
+patch=1,EE,20B13B80,extended,9C630090
+patch=1,EE,20B13B84,extended,9C630020
+patch=1,EE,20B13B88,extended,A07701B8
+
+[Split-Screen\continue-points\Freeze Rally (Forbidden Jungle)]
+patch=1,EE,E0013F01,extended,00928E58
+patch=1,EE,20928E58,extended,009286A4
