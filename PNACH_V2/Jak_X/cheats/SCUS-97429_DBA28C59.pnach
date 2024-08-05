@@ -318,7 +318,7 @@ patch=1,EE,20A820A0,extended,10600031
 patch=1,EE,E0010214,extended,002E8DF8
 patch=1,EE,002E8DF8,extended,00B60204
 //Add events
-patch=1,EE,E0060204,extended,002E8DF8
+patch=1,EE,E0050204,extended,002E8DF8
 patch=1,EE,20B60200,extended,002FB2E4
 patch=1,EE,20B60204,extended,0000000F
 patch=1,EE,20B60208,extended,0000000F
@@ -330,6 +330,12 @@ patch=1,EE,E003B4B4,extended,00B6020C
 patch=1,EE,00B603C8,extended,0000000C
 patch=1,EE,40B603D8,extended,00030004
 patch=1,EE,0000000F,extended,00000001
+//Fix ID strings for Event names
+patch=1,EE,E0040550,extended,00B603F0
+patch=1,EE,00B603C0,extended,00000660
+patch=1,EE,10B603D0,extended,0000067A
+patch=1,EE,10B603E0,extended,00000794
+patch=1,EE,00B603F0,extended,0000055A
 
 // GET All
 

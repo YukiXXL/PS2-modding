@@ -218,6 +218,12 @@ patch=1,EE,E003B3B4,extended,00B6010C
 patch=1,EE,00B602C8,extended,0000000C
 patch=1,EE,40B602D8,extended,00030004
 patch=1,EE,0000000F,extended,00000001
+//Fix ID strings for Event names
+patch=1,EE,E0040550,extended,00B602F0
+patch=1,EE,00B602C0,extended,00000660
+patch=1,EE,10B602D0,extended,0000067A
+patch=1,EE,10B602E0,extended,00000794
+patch=1,EE,00B602F0,extended,0000055A
 
 // MISC
 
