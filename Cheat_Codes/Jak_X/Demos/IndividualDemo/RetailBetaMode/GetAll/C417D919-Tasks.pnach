@@ -1,0 +1,10 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=GET ALL - TASKS
+
+//All Gold Medals
+patch=1,EE,E005004A,extended,009165A0
+patch=1,EE,20916594,extended,ACA60020
+patch=1,EE,20916598,extended,ACA60058
+patch=1,EE,2091659C,extended,A0A60048
+patch=1,EE,209165A0,extended,A0A6004A
+patch=1,EE,209165B8,extended,24060003

@@ -1,7 +1,8 @@
 gametitle=Jak X Beta Trial Code (PAL-E)
 comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
-// BOOT
+// BOOT MODES
+
 [Boot Mode\Retail]
 description=Boots the game into the Retail mode.
 patch=1,EE,E0016562,extended,00272738
@@ -54,10 +55,19 @@ patch=1,EE,2098598C,extended,00000000
 patch=1,EE,209921F8,extended,6F676F6C
 patch=1,EE,209921FC,extended,00000000
 
-// ADDONS
-[Addons\Offline\Online = Mode Select]
+// BETA
+
+[Beta Mode\Online = Mode Select]
 patch=1,EE,E0017C79,extended,012CB4D8
 patch=1,EE,212CB4D8,extended,002CA2F1
+
+[Beta Mode\Online = Exhibition]
+description=Replaces Online button with Exhibition.
+patch=1,EE,E0010006,extended,012CB824
+patch=1,EE,512CB834,extended,00000004
+patch=1,EE,012CB000,extended,00000000
+
+// ADDONS
 
 [Addons\Hidden\Enable Mongoose]
 patch=1,EE,E0010009,extended,012CE8B8
@@ -68,6 +78,7 @@ patch=1,EE,E001FFF9,extended,00BCC180
 patch=1,EE,00BCC180,extended,6463FFF8
 
 // EVENTS
+
 [Events\Unlock all events]
 description=Needed if in Beta Mode!
 patch=1,EE,E00162A4,extended,002D79F8
@@ -90,6 +101,7 @@ patch=1,EE,209A07D4,extended,009A39A4
 patch=1,EE,209A07D8,extended,009A3984
 
 // MISC
+
 [Misc\Bypasses\5 CPUs, 6 Players for event]
 description=Saves when trying to start the game.
 patch=1,EE,E0035567,extended,012D2AC4

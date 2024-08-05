@@ -1,0 +1,10 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=BOOT MODES
+
+// Retail Mode ( beta = play )
+patch=1,EE,E0016562,extended,00272638
+patch=1,EE,20272638,extended,79616C70
+
+// Kiosk Mode ( beta = kiosk )
+patch=1,EE,E0012638,extended,0025BDA0
+patch=1,EE,1025BDA0,extended,24C6D370
