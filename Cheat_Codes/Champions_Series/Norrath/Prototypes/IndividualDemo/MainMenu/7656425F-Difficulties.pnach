@@ -1,0 +1,5 @@
+gametitle=Champions of Norrath Demo (NTSC-U)
+comment=UNLOCK OTHER DIFFICULTIES
+
+patch=1,EE,004167B8,extended,00000003
+patch=1,EE,201C3888,extended,00000000

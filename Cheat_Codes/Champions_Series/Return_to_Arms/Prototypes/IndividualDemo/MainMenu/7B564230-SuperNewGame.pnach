@@ -1,0 +1,8 @@
+gametitle=Champions Return to Arms Demo (NTSC-U)
+comment=SUPER NEW GAME
+
+patch=1,EE,201E1BE0,extended,3C08004D
+patch=1,EE,201E1BE8,extended,250209E8
+patch=1,EE,201E1BEC,extended,24030001
+patch=1,EE,201E1BF0,extended,AE220000
+patch=1,EE,201E1BF8,extended,AD03097C

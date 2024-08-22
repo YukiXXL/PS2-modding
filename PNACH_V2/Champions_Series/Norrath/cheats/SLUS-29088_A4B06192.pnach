@@ -21,7 +21,7 @@ patch=1,EE,201C3888,extended,00000000
 [Misc\Enable selecting other characters]
 author=YukiXXL
 description=Non-Demo characters crashes the game upon loading!
-patch=1,EE,202721d8,extended,00000000
+patch=1,EE,202721D8,extended,00000000
 
 // DEBUG
 
@@ -34,3 +34,15 @@ patch=1,EE,0046974C,extended,00000001
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,202487C4,extended,00000000
+
+// DISABLE DEMO MODE
+
+[Misc\Disable Demo Mode\Turn off Demo end checks]
+author=YukiXXL
+description=Disables checks that end the Demo.
+patch=1,EE,202C2948,extended,10000007
+
+[Misc\Disable Demo Mode\Turn off Demo Timer]
+author=YukiXXL
+description=Turns off the timer.
+patch=1,EE,002C293C,extended,24630000

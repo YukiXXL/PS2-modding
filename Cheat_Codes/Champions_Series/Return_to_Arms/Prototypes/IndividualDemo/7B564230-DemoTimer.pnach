@@ -1,0 +1,12 @@
+gametitle=Champions Return to Arms Demo (NTSC-U)
+comment=DEMO TIMER
+
+//Extended Demo time (40 minutes)
+//patch=1,EE,0035D0E8,extended,0000102D
+
+//Turn off Demo end checks
+patch=1,EE,0032E200,extended,24020000
+patch=1,EE,0032E274,extended,24020000
+
+//Disable Demo Timer
+patch=1,EE,0032E0EC,extended,24420000

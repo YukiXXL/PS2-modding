@@ -1,0 +1,4 @@
+gametitle=Champions Return to Arms Demo (NTSC-U)
+comment=ENABLE DIFFICULTY SELECT IN OFFLINE
+
+patch=1,EE,001E1F88,extended,10400023

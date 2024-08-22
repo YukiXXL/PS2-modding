@@ -1,0 +1,5 @@
+gametitle=Champions Return to Arms Demo (NTSC-U)
+comment=NON-DEMO CHARACTERS CRASHES THE GAME UPON LOADING!
+
+//Enable selecting other characters
+patch=1,EE,20215604,extended,00000000

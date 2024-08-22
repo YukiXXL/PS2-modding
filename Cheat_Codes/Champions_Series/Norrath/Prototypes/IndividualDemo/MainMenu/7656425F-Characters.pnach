@@ -1,0 +1,5 @@
+gametitle=Champions of Norrath Demo (NTSC-U)
+comment=NON-DEMO CHARACTERS CRASHES THE GAME UPON LOADING!
+
+//Enable selecting other characters
+patch=1,EE,202721D8,extended,00000000
