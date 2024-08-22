@@ -60,3 +60,20 @@ patch=1,EE,204F6E88,extended,00000000
 author=YukiXXL
 description=Enables LAN Mode?
 patch=1,EE,201E1848,extended,10000006
+
+// EXPERIMENTAL
+
+[Experimental\Highest difficulty 128]
+patch=1,EE,101E37BC,extended,28430080
+
+[Experimental\Difficulty multiplier]
+patch=1,EE,201E5C28,extended,00000000
+patch=1,EE,101E5C38,extended,3C0148F6
+
+[Experimental\PVP Arenas in Normal Arenas]
+//Disable MP checks
+patch=1,EE,20306C54,extended,00000000
+patch=1,EE,20306C98,extended,00000000
+patch=1,EE,20307D60,extended,00000000
+//Make sure that arena is set to 0
+patch=1,EE,001EBA08,extended,24040000

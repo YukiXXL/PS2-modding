@@ -1,0 +1,12 @@
+gametitle=Champions Return to Arms Alpha (NTSC-U)
+comment=TORMENTC IS MISSING SO REPLACE IT WITH:
+
+//torment0
+patch=1,EE,2050E5E8,extended,6D726F74
+patch=1,EE,2050E5EC,extended,30746E65
+//torment1
+patch=1,EE,2050E5E8,extended,6D726F74
+patch=1,EE,2050E5EC,extended,31746E65
+//torbonus
+patch=1,EE,2050E5E8,extended,62726F74
+patch=1,EE,2050E5EC,extended,73756E6F
