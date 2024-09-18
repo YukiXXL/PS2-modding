@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (NTSC-U)
-comment=MISC - GAME
+comment=MISC - MIRRORED GAME
 
 //Mirror the entire game
 patch=1,EE,E002043C,extended,00BADC00

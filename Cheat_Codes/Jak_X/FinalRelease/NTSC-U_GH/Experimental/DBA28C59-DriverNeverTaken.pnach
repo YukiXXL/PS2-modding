@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Allows to reuse the taken driver.
+comment=Allows to reuse the taken driver
 
 //Selection checks
 patch=1,EE,E00B012B,extended,00A868F8 //Condition check
