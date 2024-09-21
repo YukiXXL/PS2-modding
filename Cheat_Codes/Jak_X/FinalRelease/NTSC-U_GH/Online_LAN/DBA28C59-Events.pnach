@@ -10,10 +10,10 @@ patch=1,EE,0131D968,extended,6464FFFD
 patch=1,EE,E001FFFD,extended,0131D9E8
 patch=1,EE,0131D9E8,extended,6463FFFC
 //Enable Time Trial for more players
-//patch=1,EE,E002FFFD,extended,0131DAE4
-//patch=1,EE,0131DAB0,extended,6464FFFC
-//patch=1,EE,0131DAE4,extended,6464FFFC
+patch=1,EE,E002FFFD,extended,0131DAE4
+patch=1,EE,0131DAB0,extended,6464FFFC
+patch=1,EE,0131DAE4,extended,6464FFFC
 
 //Enable all events for LAN and Online
-//patch=1,EE,E001182F,extended,0131D9C4
-//patch=1,EE,2131D9C4,extended,0000182D
+patch=1,EE,E001182F,extended,0131D9C4
+patch=1,EE,2131D9C4,extended,0000182D
