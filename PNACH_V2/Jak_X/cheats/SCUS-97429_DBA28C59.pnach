@@ -3,7 +3,7 @@ comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
 // CHEATS
 
-[Cheats\Jak Vehicle Unkillable]
+[Cheats\Jak Vehicle Unkillable + Infinite Turbo]
 description=From Debug menu
 patch=1,EE,E002012B,extended,00F16B60
 patch=1,EE,20F16B60,extended,66E30004
@@ -14,9 +14,32 @@ patch=1,EE,E002DC63,extended,00F2194C
 patch=1,EE,20F2194C,extended,66E30004
 patch=1,EE,20F21950,extended,AEE3DC63
 
-[Cheats\256 Vehicles Stats]
+[Cheats\default_gun_in_any_race]
+patch=1,EE,E0020002,extended,00F21944
+patch=1,EE,20F21944,extended,10000058
+patch=1,EE,20F21948,extended,00801825
+
+[Cheats\255 Vehicles Stats]
 patch=1,EE,E0011825,extended,00BAE954
 patch=1,EE,20BAE954,extended,2403FFFF
+
+[Cheats\Max Vehicle Stats + Hex(30)]
+//Engine
+patch=1,EE,E002280A,extended,00BAE89C //Memory Check
+patch=1,EE,20BAE898,extended,24C60030 //addiu a2, a2, $0030
+patch=1,EE,20BAE89C,extended,00C02825 //or a1, a2, zero
+//Gearbox
+patch=1,EE,E002280A,extended,00BAE8D8 //Memory Check
+patch=1,EE,20BAE8D4,extended,24C60030 //addiu a2, a2, $0030
+patch=1,EE,20BAE8D8,extended,00C02825 //or a1, a2, zero
+//Armor
+patch=1,EE,E002280A,extended,00BAE914 //Memory Check
+patch=1,EE,20BAE910,extended,24C60030 //addiu a2, a2, $0030
+patch=1,EE,20BAE914,extended,00C02825 //or a1, a2, zero
+//Turbo
+patch=1,EE,E002280A,extended,00BAE948 //Memory Check
+patch=1,EE,20BAE944,extended,24630030 //addiu v1, v1, $0030
+patch=1,EE,20BAE948,extended,00602825 //or a1, v1, zero
 
 // ADDONS
 // - DEBUG
@@ -65,7 +88,7 @@ patch=1,EE,E0020010,extended,00B9BB14 //Memory Check
 patch=1,EE,20274424,extended,2402000F //PS2 Characters
 patch=1,EE,20B9BB14,extended,241C0001 //PSP Exclusives
 
-[Addons\Other\Enable customizing Sand Shark, Naughty Dog, Daxtermobile]
+[Addons\Other\Enable customizing Secret Vehicles]
 patch=1,EE,E0090000,extended,102E0828 //Condition Check
 patch=1,EE,209F0044,extended,8EE3BF07 //lw v1, bf07(s7)
 patch=1,EE,209F0048,extended,9C630194 //lwu v1, $0194(v1)
@@ -87,10 +110,32 @@ patch=1,EE,00010000,extended,00000010
 patch=1,EE,602DF814,extended,00000000
 patch=1,EE,00010000,extended,00000010
 
+[Addons\Other\Enable customizing Secret Vehicles (Extra Parts)]
+//Daxtermobile
+patch=1,EE,E001000B,extended,00488DD4
+patch=1,EE,40488DE0,extended,00080001
+patch=1,EE,00000003,extended,00000000
+//Sand Shark
+patch=1,EE,E001000B,extended,00488E14
+patch=1,EE,40488E20,extended,00080001
+patch=1,EE,00000003,extended,00000000
+//Naughty Dog
+patch=1,EE,E001000B,extended,00489154
+patch=1,EE,40489160,extended,00050001
+patch=1,EE,00000003,extended,00000000
+patch=1,EE,0048917C,extended,00000003
+
 [Addons\Other\Enable Colors for Daxtermobile]
 description=Uses dynamic memory so it doesn't always work.
-patch=1,EE,E001000E,extended,0131013C
-patch=1,EE,0131013C,extended,2403000F
+patch=1,EE,E008012B,extended,007AB568 //Check
+patch=1,EE,107AB568,extended,8EE3C0E7 //load first pointer addr
+patch=1,EE,007AB56C,extended,52E30004 //beq if it is #f
+patch=1,EE,207AB570,extended,00000000 //nop (fixes not loading other pointers)
+patch=1,EE,207AB574,extended,9C630044 //load second pointer addr
+patch=1,EE,007AB578,extended,9C630020 //load third pointer addr
+patch=1,EE,207AB57C,extended,AC600E98 //sw zero at a specific offset
+patch=1,EE,207AB580,extended,10000005 //beq zero, zero
+patch=1,EE,207AB584,extended,02E01825 //or v1, s7, zero
 
 // - CPUs
 [Addons\CPUs\Use all characters\Version 1]
@@ -109,7 +154,7 @@ patch=1,EE,E0011025,extended,00BCBEEC
 //CPUs use all characters
 patch=1,EE,20BCBEEC,extended,00000000
 
-[Addons\CPUs\Use all characters\Version 2]
+[Addons\CPUs\Use all characters\Only secret characters]
 description=Enables secret drivers for CPUs and disables the default ones.
 //Enable Secret Drivers
 patch=1,EE,E00B1805,extended,00B43AE0 //Memory Check
@@ -139,7 +184,7 @@ patch=1,EE,00B43EB0,extended,002E1805 // - RAZER
 patch=1,EE,00B43F50,extended,002E1805 // - ASHELIN
 patch=1,EE,00B43FF0,extended,002E1805 // - JAK
 
-[Addons\CPUs\Use all characters\Fixes]
+[Addons\CPUs\Use all characters\Crash fix]
 description=Fixes TLB Misses. Fixes crash on real hardware.
 patch=1,EE,E0010002,extended,00BCDA54
 patch=1,EE,20BCDA54,extended,00000000
@@ -195,10 +240,6 @@ patch=1,EE,00E27CB0,extended,66E497D0
 description=The Teams setting must be enabled.
 patch=1,EE,E001A825,extended,00BD0EC4
 patch=1,EE,20BD0EC4,extended,00000000
-
-[Events\Misc\Enable selecting laps on Tours]
-patch=1,EE,E0000004,extended,013CB4F0
-patch=1,EE,013CB4F0,extended,66E30000
 
 // - MORE LAPS
 [Events\More laps and Time (Old)]
@@ -259,15 +300,6 @@ patch=1,EE,E001002C,extended,013CB2EC
 patch=1,EE,113CB2EC,extended,1000034F
 
 // - TEAM MODE
-
-[Events\Team Mode on any challenge (Old)]
-description=Change the driver, go to event options, reset to defaults.
-patch=1,EE,E0040012,extended,00BCFA10 //Memory Check
-patch=1,EE,20BCFA04,extended,91030078 //lbu v1, $0078(t0)
-patch=1,EE,20BCFA08,extended,38630020 //xori v1, v1, $0020
-patch=1,EE,20BCFA0C,extended,A1030078 //sb v1, $0078(t0)
-patch=1,EE,20BCFA10,extended,91080005 //lbu t0, $0005(t0)
-
 [Events\Team Mode on any challenge (New)]
 description=Change the event (where Performance option is), go to event options, reset to defaults.
 patch=1,EE,E0050007,extended,00BD16E4 //Memory Check
@@ -312,6 +344,25 @@ patch=1,EE,20A820A0,extended,00000000
 patch=1,EE,E001FFF7,extended,0028361C
 patch=1,EE,20A820A0,extended,10600031
 
+// - DRIVER NEVER TAKEN
+[Experimental\Driver Never Taken]
+//Selection checks
+patch=1,EE,E00B012B,extended,00A868F8 //Condition check
+patch=1,EE,20A868F8,extended,8EE3C0E7 //lw v1, $c0e7(s7)
+patch=1,EE,20A86900,extended,9C63FFFC //lwu v1, $fffc(v1)
+patch=1,EE,20A86904,extended,9C6300D4 //lwu v1, $00d4(v1)
+patch=1,EE,20A86908,extended,9C630020 //lwu v1, $0020(v1)
+patch=1,EE,20A8690C,extended,AC600964 //sw zero, $0964(v1)
+patch=1,EE,20A86910,extended,AC600A9C //sw zero, $0a9c(v1)
+patch=1,EE,20A86914,extended,AC6009B0 //sw zero, $09b0(v1)
+patch=1,EE,20A86918,extended,AC600AE8 //sw zero, $0ae8(v1)
+patch=1,EE,20A8691C,extended,AC600188 //sw zero, $0188(v1)
+patch=1,EE,20A86920,extended,1000002C //beq zero, zero, $00a869d4
+patch=1,EE,20A86924,extended,02E01825 //or v1, s7, zero
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCF9C0
+patch=1,EE,20BCF9C4,extended,10000003 //beq zero, zero
+
 // - EXTRA EVENTS
 [Experimental\Extra Events]
 //Change load location
@@ -337,24 +388,65 @@ patch=1,EE,10B603D0,extended,0000067A
 patch=1,EE,10B603E0,extended,00000794
 patch=1,EE,00B603F0,extended,0000055A
 
-// - DRIVER NEVER TAKEN
-[Experimental\Driver Never Taken]
-//Selection checks
-patch=1,EE,E00B012B,extended,00A868F8 //Condition check
-patch=1,EE,20A868F8,extended,8EE3C0E7 //lw v1, $c0e7(s7)
-patch=1,EE,20A86900,extended,9C63FFFC //lwu v1, $fffc(v1)
-patch=1,EE,20A86904,extended,9C6300D4 //lwu v1, $00d4(v1)
-patch=1,EE,20A86908,extended,9C630020 //lwu v1, $0020(v1)
-patch=1,EE,20A8690C,extended,AC600964 //sw zero, $0964(v1)
-patch=1,EE,20A86910,extended,AC600A9C //sw zero, $0a9c(v1)
-patch=1,EE,20A86914,extended,AC6009B0 //sw zero, $09b0(v1)
-patch=1,EE,20A86918,extended,AC600AE8 //sw zero, $0ae8(v1)
-patch=1,EE,20A8691C,extended,AC600188 //sw zero, $0188(v1)
-patch=1,EE,20A86920,extended,1000002C //beq zero, zero, $00a869d4
-patch=1,EE,20A86924,extended,02E01825 //or v1, s7, zero
-//Allow writing the character
-patch=1,EE,E00103BC,extended,00BCF9C0
-patch=1,EE,20BCF9C4,extended,10000003 //beq zero, zero
+// - MORE LAPS 2
+[Experimental\More Laps 2]
+//Safe Check
+patch=1,EE,E006200B,extended,013CCFA4
+//Increase the number of max laps
+patch=1,EE,213CCF1C,extended,2406FFFF
+patch=1,EE,213CCF20,extended,ACA60004
+patch=1,EE,213CCF24,extended,8CA50004
+//Minimum number of laps is 0
+patch=1,EE,213CCF9C,extended,0000302D
+patch=1,EE,213CCFA0,extended,ACA60000
+patch=1,EE,213CCFA4,extended,8CA50000
+//Check
+patch=1,EE,E00F0081,extended,013CCFAC
+//half-words
+patch=1,EE,202FDC74,extended,84860000
+patch=1,EE,202FDC78,extended,A4660000
+patch=1,EE,213CCF00,extended,84640081
+patch=1,EE,213CCF08,extended,A4640081
+patch=1,EE,213CCF0C,extended,84640081
+patch=1,EE,213CCF28,extended,A4640081
+patch=1,EE,213CCF2C,extended,84640081
+patch=1,EE,213CCF48,extended,A4640081
+patch=1,EE,213CCF60,extended,84640081
+patch=1,EE,213CCF68,extended,A4640081
+patch=1,EE,213CCF6C,extended,84640081
+patch=1,EE,213CCF88,extended,A4640081
+patch=1,EE,213CCF8C,extended,84640081
+patch=1,EE,213CCFA8,extended,A4640081
+patch=1,EE,213CCFAC,extended,84630081
+//Save the laps
+patch=1,EE,E0020000,extended,002FDCB0
+patch=1,EE,202FDCB0,extended,86A40000
+patch=1,EE,202FDCB4,extended,A6840000
+//1st
+patch=1,EE,E00B005A,extended,01C6FCB8
+patch=1,EE,21C6FCB8,extended,8463005A
+patch=1,EE,20EC2E94,extended,84A8005A
+patch=1,EE,20EC1078,extended,8484005A
+patch=1,EE,20EC1148,extended,8463005A
+patch=1,EE,20EC1154,extended,A483005A
+patch=1,EE,20EC1164,extended,8484005A
+patch=1,EE,20EC11AC,extended,8463005A
+patch=1,EE,20EC1368,extended,8463005A
+patch=1,EE,20EBD8B8,extended,8473005A
+patch=1,EE,20EC13E0,extended,8463005A
+patch=1,EE,20EC13FC,extended,8463005A
+//2nd
+patch=1,EE,E00B005A,extended,01C6FCB8
+patch=1,EE,20EC11B0,extended,A78301D8
+patch=1,EE,20EC11DC,extended,878501D8
+patch=1,EE,20EC1264,extended,878301D8
+patch=1,EE,20EC12BC,extended,878301D8
+patch=1,EE,20E6AE20,extended,846301D8
+patch=1,EE,20EBFE40,extended,878301D8
+//nop
+patch=1,EE,E002005B,extended,00EBF324
+patch=1,EE,20EBF324,extended,00000000
+patch=1,EE,20EBF3A4,extended,00000000
 
 // GET All
 
@@ -423,7 +515,6 @@ patch=1,EE,20BAE6F8,extended,3863FF00
 patch=1,EE,20BAE700,extended,FEA3043C
 
 // - BAD WEATHER
-
 [Misc\Bad Weather\Enable (Mirrored must be off!)]
 description=In Secrets Shop, change "Mirrored Advanture Mode".
 //Hero Mode unlocked
@@ -490,6 +581,12 @@ patch=1,EE,21314590,extended,A443000C
 
 // SPLIT-SCREEN
 // - BYPASSES
+[Split-Screen\Bypasses\Button Bypass]
+description=Using 2nd controller = L3+R3 when on car select
+patch=1,EE,E001FFF9,extended,0028371C
+patch=1,EE,602DD8E8,extended,002E1805
+patch=1,EE,00000000,extended,00000148
+
 [Split-Screen\Bypasses\Bypass Event Checks]
 //Bypass event check for SS
 patch=1,EE,E001FFFE,extended,0130C584
@@ -621,15 +718,25 @@ patch=1,EE,2098FF50,extended,00992B14
 
 [Split-Screen\Map Fixes\Tutorials and Mizo]
 //Fixes for Split-Screen
-patch=1,EE,E0041801,extended,0098FD70
+patch=1,EE,E0051801,extended,0098FD70
 //kras-training
 patch=1,EE,209932B0,extended,009932C4
+//jungle-training
+patch=1,EE,2098FD20,extended,00992D14
 //cliffs-training
 patch=1,EE,2098FDC0,extended,00992F84
-//kratour-final-boss-start
-patch=1,EE,2098F610,extended,0098F624
 //snow-training2
 patch=1,EE,2098FD70,extended,00992CA4
+//kratour-final-boss-start
+patch=1,EE,2098F610,extended,0098F624
+
+[Split-Screen\Map Fixes\Tutorials and Mizo\Fix crashes]
+patch=1,EE,E006001C,extended,00B28C38
+patch=1,EE,20B28C24,extended,10850005
+patch=1,EE,20B28C28,extended,9C620014
+patch=1,EE,00B28C2C,extended,9C62001C
+patch=1,EE,20B28C30,extended,14570002
+patch=1,EE,00B28C38,extended,9C620014
 
 // - TOURS
 [Split-Screen\Tours\Tours Fix\Enable]

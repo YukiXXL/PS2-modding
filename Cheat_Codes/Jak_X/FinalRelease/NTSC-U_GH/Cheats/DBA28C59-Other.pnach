@@ -10,3 +10,8 @@ patch=1,EE,20F16B64,extended,AEE317DB
 patch=1,EE,E002DC63,extended,00F2194C
 patch=1,EE,20F2194C,extended,66E30004
 patch=1,EE,20F21950,extended,AEE3DC63
+
+//default_gun_in_any_race
+patch=1,EE,E0020002,extended,00F21944
+patch=1,EE,20F21944,extended,10000058
+patch=1,EE,20F21948,extended,00801825
