@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Alternative Version 2
+comment=CPUs use all drivers - Version 2
 
 //Memory Check
 patch=1,EE,E0011025,extended,00BCBEEC

@@ -1,0 +1,17 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Allows to reuse the taken driver
+
+//Allow selecting more Jaks
+//patch=1,EE,E0010000,extended,102DD978
+//patch=1,EE,602DD978,extended,1000008E
+//patch=1,EE,00020000,extended,0000005C
+
+//Allow selecting the same driver
+patch=1,EE,E0030010,extended,00BCF894
+patch=1,EE,20BCF864,extended,8EE3C0E7
+patch=1,EE,20BCF868,extended,80630144
+patch=1,EE,00BCF894,extended,28660000
+
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCF9C0
+patch=1,EE,20BCF9C4,extended,10000003
