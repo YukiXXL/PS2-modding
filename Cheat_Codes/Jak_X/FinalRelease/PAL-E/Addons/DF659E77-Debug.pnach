@@ -13,6 +13,6 @@ patch=1,EE,10A7F41C,extended,8EE30137
 patch=1,EE,10A8BA54,extended,8EE30137
 patch=1,EE,10F1899C,extended,8EE30137
 
-//Enable 2nd to pause
+//Enable 2nd controller to pause
 patch=1,EE,E001012B,extended,00A8BA88
 patch=1,EE,10A8BA88,extended,8EE30137

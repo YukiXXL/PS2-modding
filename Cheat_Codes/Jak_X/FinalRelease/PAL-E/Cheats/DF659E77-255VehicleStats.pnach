@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Max Vehicle Stats = 255, 255, 255, 255
+
+patch=1,EE,E0011825,extended,00BAE89C //Memory Check
+patch=1,EE,20BAE89C,extended,2403FFFF //addiu v1, zero, $ffff

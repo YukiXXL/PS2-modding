@@ -1,19 +1,3 @@
 gametitle=Jak X Final Release (PAL-E)
 comment=ADDONS - OTHER
 
-//Scan and get all secret characters + Daxtermobile
-patch=1,EE,E003FE79,extended,013E9964
-patch=1,EE,213E9964,extended,2404000F
-patch=1,EE,213E9968,extended,14E0FE78
-patch=1,EE,213E996C,extended,24050001
-
-//Enable customizing Sand Shark, Naughty Dog, Daxtermobile
-patch=1,EE,E00406BB,extended,013547B4
-patch=1,EE,213547AC,extended,1000000C
-patch=1,EE,21354220,extended,00000000
-patch=1,EE,213542F8,extended,00000000
-patch=1,EE,21354438,extended,00000000
-
-//Enable Colors for Daxtermobile
-patch=1,EE,E001000E,extended,0131008C
-patch=1,EE,0131008C,extended,2403000F
