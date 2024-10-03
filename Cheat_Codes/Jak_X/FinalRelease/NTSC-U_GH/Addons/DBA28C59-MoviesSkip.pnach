@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=MOVIES SKIP
+
+//Pointer code
+patch=1,EE,607BA148,extended,66E30004
+patch=1,EE,00020000,extended,0000032C
+
+//Dynamic memory
+//patch=1,EE,E001012B,extended,0097B738
+//patch=1,EE,2097B738,extended,66E30004

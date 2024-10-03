@@ -1,0 +1,8 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=8 players lobby
+
+patch=1,EE,6172F084,extended,16E30009
+patch=1,EE,00020000,extended,0000000C
+
+//patch=1,EE,E0010009,extended,01728A40
+//patch=1,EE,01728A40,extended,16E30009
