@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Fixes not collectable
+comment=Fixes collectables
 
 patch=1,EE,E006001C,extended,00B28C38
 patch=1,EE,20B28C24,extended,10850005

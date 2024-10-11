@@ -18,57 +18,82 @@
               <Description>"Raining"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
-              <Address>207B9BF2</Address>
+              <Address>eemem</Address>
+              <Offsets>
+                <Offset>007B9BF2</Offset>
+              </Offsets>
             </CheatEntry>
             <CheatEntry>
               <ID>3</ID>
               <Description>"Mirrored"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
-              <Address>20327D09</Address>
+              <Address>eemem</Address>
+              <Offsets>
+                <Offset>00327D09</Offset>
+              </Offsets>
             </CheatEntry>
             <CheatEntry>
               <ID>4</ID>
               <Description>"Time of Day"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
-              <Address>20327D3A</Address>
+              <Address>eemem</Address>
+              <Offsets>
+                <Offset>00327D3A</Offset>
+              </Offsets>
             </CheatEntry>
             <CheatEntry>
               <ID>5</ID>
               <Description>"Laps"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
-              <Address>20327D15</Address>
+              <Address>eemem</Address>
+              <Offsets>
+                <Offset>00327D15</Offset>
+              </Offsets>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>9</ID>
           <Description>"Current Menu"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>20326D70</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>00326D70</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>7</ID>
           <Description>"Offline options"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>2033FDD4</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>0033FDD4</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>10</ID>
           <Description>"isConnected (LAN/Online)"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
-          <Address>20326E20</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>00326E20</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>26</ID>
           <Description>"Max CPUs"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>20B60054</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>00B60054</Offset>
+          </Offsets>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -83,28 +108,40 @@
           <Description>"Single/Split"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>202DB250</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002DB250</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>13</ID>
           <Description>"ScreenType"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>2048D600</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>0048D600</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>14</ID>
           <Description>"Players-Screen"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>2048D604</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>0048D604</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>15</ID>
           <Description>"Number of Players"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>202E8C60</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002E8C60</Offset>
+          </Offsets>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -120,7 +157,10 @@
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>209CB200</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>009CB200</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>18</ID>
@@ -128,14 +168,21 @@
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>209CB280</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>009CB280</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>23</ID>
           <Description>"Player-1"</Description>
           <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>209CB134</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>009CB134</Offset>
+          </Offsets>
         </CheatEntry>
         <CheatEntry>
           <ID>24</ID>
@@ -143,7 +190,300 @@
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>209CB138</Address>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>009CB138</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>29</ID>
+      <Description>"addr"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>eemem</Address>
+      <Offsets>
+        <Offset>00F892D4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>30</ID>
+      <Description>"No description"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Byte</VariableType>
+      <Address>eemem</Address>
+      <Offsets>
+        <Offset>00B60268</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>31</ID>
+      <Description>"kratour-boss-ss"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>eemem</Address>
+      <Offsets>
+        <Offset>0098F610</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"WeaponTables"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>32</ID>
+          <Description>"get-game-mgr-type"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002E75D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>33</ID>
+          <Description>"*weapon-select-table-red-race-penultimate*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002E75D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"*weapon-select-table-yellow-deathmatch-tailing*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75DC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"*weapon-select-table-red-race-last*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75E0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"*weapon-select-table-red-race-second*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75E4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>36</ID>
+          <Description>"*weapon-select-table-yellow-race-second*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75E8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>37</ID>
+          <Description>"*weapon-select-table-yellow-deathmatch-leading*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75EC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>38</ID>
+          <Description>"*weapon-select-table-red-race-middle*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75F0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"*weapon-select-table-yellow-race-first*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75F4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>39</ID>
+          <Description>"*weapon-select-table-red-deathmatch-leading*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75F8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>40</ID>
+          <Description>"*weapon-select-table-yellow-race-middle*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E75FC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"*weapon-select-table-yellow-race-last*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E7600</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"*weapon-select-table-red-race-first*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E7604</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"*weapon-select-table-yellow-deathmatch-middle*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E7608</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"*weapon-select-table-red-deathmatch-tailing*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E760C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"*weapon-select-table-red-deathmatch-middle*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E7610</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>43</ID>
+          <Description>"*weapon-select-table-yellow-race-penultimate*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E7614</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"*weapon-select-table-yellow-deathrace*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002E85D8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>45</ID>
+          <Description>"*weapon-select-table-red-deathrace*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>2E85DC</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>46</ID>
+      <Description>"GrandPrix"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"All"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>007B9D84</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>48</ID>
+          <Description>"Current"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>007B9D88</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"CurrentEventNumber"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>7B9D8C</Offset>
+          </Offsets>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>

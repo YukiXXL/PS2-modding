@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=8 players lobby
+comment=Debug mode fix for LAN
 
 patch=1,EE,6172F084,extended,16E30009
 patch=1,EE,00020000,extended,0000000C
