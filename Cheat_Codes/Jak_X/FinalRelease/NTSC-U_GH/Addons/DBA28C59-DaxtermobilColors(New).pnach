@@ -1,0 +1,7 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=ADDONS - DAXTERMOBIL COLORS
+
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,00000000
+patch=1,EE,00020003,extended,000000D4
+patch=1,EE,00000020,extended,00000E98

@@ -2,4 +2,4 @@ gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Make ID zero
 
 patch=1,EE,60F892D4,extended,A3800844
-patch=1,EE,00020000,extended,00000020
+patch=1,EE,00020001,extended,00000020

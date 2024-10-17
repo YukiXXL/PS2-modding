@@ -1,20 +1,17 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=0-255 Laps/Time
 
-//Check if not equal to zero
-patch=1,EE,E00B0000,extended,102DA6D8 //Memory Check
-patch=1,EE,20A87308,extended,8EE3E5E7 //load pointer addr for event
-patch=1,EE,20A87314,extended,8EE3E5E7 //load pointer again
-patch=1,EE,20A87318,extended,10600032 //beq if zero
-patch=1,EE,20A8731C,extended,02E01825 //or v1, s7
-patch=1,EE,20A87320,extended,8EE3E5E7 //load pointer again
-patch=1,EE,20A87324,extended,9C630000 //load addr from pointer
-patch=1,EE,20A87328,extended,A0600000 //sb zero for min
-patch=1,EE,20A8732C,extended,241900FF //t9 = 255
-patch=1,EE,20A87330,extended,A0790004 //sb t9 for max
-patch=1,EE,20A87334,extended,1000002E //beq zero, zero
-patch=1,EE,20A87338,extended,02E01825 //or v1, s7
+//For writing minimum
+patch=1,EE,E0031801,extended,102DFDE8
+patch=1,EE,602DFDE8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0031801,extended,102DFDE8
+patch=1,EE,602DFDE8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
 
 //Check if equal to zero
 patch=1,EE,E0010000,extended,002DA6D8 //Memory Check
-patch=1,EE,20A87308,extended,8EE3012B //revert to default
+patch=1,EE,202DFDE8,extended,002E1801 //revert to default

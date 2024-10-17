@@ -1,0 +1,37 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=SPLITSCREEN - BYPASSES
+
+//Bypass event check for SS
+patch=1,EE,002DD708,extended,6464FFFD
+patch=1,EE,00000003,extended,000000A0
+patch=1,EE,00000020,extended,000001C0
+
+//Bypass event check for SS (LAN/Online)
+patch=1,EE,002DD708,extended,6464FFFD
+patch=1,EE,00000003,extended,000000A0
+patch=1,EE,00000020,extended,0000068C
+
+//Rush Hour check (LAN/Online)
+patch=1,EE,002DD708,extended,6464FFF0
+patch=1,EE,00000003,extended,000000D0
+patch=1,EE,00000020,extended,00000D6C
+
+//Time Attack check (LAN/Online)
+patch=1,EE,002DD708,extended,6463FFFA
+patch=1,EE,00000003,extended,000000D0
+patch=1,EE,00000020,extended,00000D34
+
+//Bypass SS checking for SS maps
+//patch=1,EE,002DD708,extended,6463FFFD
+//patch=1,EE,00000003,extended,000000A0
+//patch=1,EE,00000020,extended,0000026C
+
+//Bypass SS checking for SS maps (LAN/Online)
+//patch=1,EE,002DD708,extended,6464FFFD
+//patch=1,EE,00000003,extended,000000A0
+//patch=1,EE,00000020,extended,00000738
+
+//Start the SS game with bypasses (LAN/Online)
+//patch=1,EE,002DD708,extended,9C630018
+//patch=1,EE,00000003,extended,000000D0
+//patch=1,EE,00000020,extended,00000E44

@@ -3,17 +3,6 @@ comment=ADDONS - OTHER
 
 //Scan ONLY ONCE and get all secret drivers + Daxtermobile
 patch=1,EE,602E0AA0,extended,241C0001 //PSP Exclusives
-patch=1,EE,00020000,extended,00000030
+patch=1,EE,00020001,extended,00000030
 patch=1,EE,602853F4,extended,2402000F //PS2 Drivers
-patch=1,EE,00020000,extended,00000044
-
-//Enable Colors for Daxtermobile
-patch=1,EE,E008012B,extended,007AB568 //Check
-patch=1,EE,107AB568,extended,8EE3C0E7 //load first pointer addr
-patch=1,EE,007AB56C,extended,52E30004 //beq if it is #f
-patch=1,EE,207AB570,extended,00000000 //nop (fixes not loading other pointers)
-patch=1,EE,207AB574,extended,9C630044 //load second pointer addr
-patch=1,EE,007AB578,extended,9C630020 //load third pointer addr
-patch=1,EE,207AB57C,extended,AC600E98 //sw zero at a specific offset
-patch=1,EE,207AB580,extended,10000005 //beq zero, zero
-patch=1,EE,207AB584,extended,02E01825 //or v1, s7, zero
+patch=1,EE,00020001,extended,00000044
