@@ -17,3 +17,10 @@ Weapons:
 Grand Prix:
 00E6D614 - Check
 00BD25AC - Check for last event
+
+Clan Challenge (Race Results):
+patch=1,EE,00e6d534,word,56e2000c //first
+patch=1,EE,00e70da4,word,56e2000c //second
+//patch=1,EE,00e6d58c,word,1060000a //checks
+//patch=1,EE,00e6d598,word,00000000 //jals here
+//patch=1,EE,00e6d5bc,word,00000000 //jals here
