@@ -1,9 +1,9 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=CPUs use all drivers - Version 1
+comment=CPUs use all drivers - Version 1 (Saving)
 
-//Memory Check
-patch=1,EE,E0011025,extended,00BCBEEC
-//CPUs use all characters + save
-patch=1,EE,20BCBEE0,extended,9C620040
-patch=1,EE,20BCBEE4,extended,12E20002
-patch=1,EE,20BCBEEC,extended,AC770040
+patch=1,EE,602E0C58,extended,9C620040
+patch=1,EE,00020001,extended,000000B4
+patch=1,EE,602E0C58,extended,12E20002
+patch=1,EE,00020001,extended,000000B8
+patch=1,EE,602E0C58,extended,AC770040
+patch=1,EE,00020001,extended,000000C0
