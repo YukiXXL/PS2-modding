@@ -1,1 +1,2 @@
 NTSC-U Greatest Hits = 2E1801 (#f) ; 2E1805 (#t)
+NTSC-U Greatest Hits (Debug) = 002DF7F1 (#f) ; 002DF7F5 (#t)
