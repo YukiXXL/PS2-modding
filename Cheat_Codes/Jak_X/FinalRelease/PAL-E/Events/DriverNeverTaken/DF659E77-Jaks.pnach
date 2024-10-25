@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Allow selecting more Jaks
+
+patch=1,EE,602DD878,extended,1000008E
+patch=1,EE,00020000,extended,0000005C

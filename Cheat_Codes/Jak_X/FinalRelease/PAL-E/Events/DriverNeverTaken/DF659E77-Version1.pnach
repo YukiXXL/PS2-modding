@@ -1,0 +1,20 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Allows to reuse the taken driver
+
+//Selection checks
+patch=1,EE,E00B012B,extended,00A867F8 //Condition check
+patch=1,EE,20A867F8,extended,8EE3C0E7 //lw v1, $c0e7(s7)
+patch=1,EE,20A86800,extended,9C63FFFC //lwu v1, $fffc(v1)
+patch=1,EE,20A86804,extended,9C6300D4 //lwu v1, $00d4(v1)
+patch=1,EE,20A86808,extended,9C630020 //lwu v1, $0020(v1)
+patch=1,EE,20A8680C,extended,AC600964 //sw zero, $0964(v1)
+patch=1,EE,20A86810,extended,AC600A9C //sw zero, $0a9c(v1)
+patch=1,EE,20A86814,extended,AC6009B0 //sw zero, $09b0(v1)
+patch=1,EE,20A86818,extended,AC600AE8 //sw zero, $0ae8(v1)
+patch=1,EE,20A8681C,extended,AC600188 //sw zero, $0188(v1)
+patch=1,EE,20A86820,extended,1000002C //beq zero, zero, $00a869d4
+patch=1,EE,20A86824,extended,02E01825 //or v1, s7, zero
+
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCF910
+patch=1,EE,20BCF914,extended,10000003 //beq zero, zero

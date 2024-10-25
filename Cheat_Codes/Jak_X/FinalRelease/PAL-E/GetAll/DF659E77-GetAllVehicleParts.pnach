@@ -1,0 +1,11 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Get All Vehicle Parts
+
+patch=1,EE,E0071825,extended,00BAE910 //Memory Check
+patch=1,EE,00BAE8D4,extended,1000000A //beq zero, zero, $00bae9b8
+patch=1,EE,20BAE8F4,extended,34A50006 //ori a1, a1, $0006
+patch=1,EE,20BAE8FC,extended,A0C5000A //sb a1, $000a(a2)
+patch=1,EE,20BAE900,extended,8E850008 //lw a1, $0008(s4)
+patch=1,EE,20BAE904,extended,0085282A //slt a1, a0, a1
+patch=1,EE,20BAE908,extended,14A0FFF4 //bne a1, zero, $00bae994
+patch=1,EE,20BAE90C,extended,00000000 //nop

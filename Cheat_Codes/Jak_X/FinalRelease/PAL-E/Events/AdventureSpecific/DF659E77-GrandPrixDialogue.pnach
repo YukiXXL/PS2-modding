@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Adventure Specific - Sabotage
+
+//Enable
+patch=1,EE,E0011825,extended,00EC5074
+patch=1,EE,20EC5078,extended,66E37880
+
+//Enable without saving to profile
+patch=1,EE,E001202D,extended,00A55414
+patch=1,EE,20A55418,extended,0000202D
+
+//Enable with saving to profile
+patch=1,EE,E001382D,extended,00BAE6E8
+patch=1,EE,20BAE6EC,extended,A4E0000C

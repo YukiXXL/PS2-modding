@@ -2,7 +2,7 @@ gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Changing back to the task changes the Default Team mode
 
 //a0 = task address
-patch=1,EE,E0050007,extended,00BD16E4 //Memory Check
+patch=1,EE,E0051825,extended,00BD16E8 //Memory Check
 patch=1,EE,20BD16D4,extended,90830078 //lbu v1, $0078(a0)
 patch=1,EE,20BD16D8,extended,38630020 //xori v1, v1, $0020
 patch=1,EE,20BD16DC,extended,A0830078 //sb v1, $0078(a0)
