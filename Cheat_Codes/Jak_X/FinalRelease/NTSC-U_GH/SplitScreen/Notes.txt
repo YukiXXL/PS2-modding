@@ -1,4 +1,0 @@
-SS location to load map address = 0130C668
-SplitScreen_ScreenType = 2048D600
-Players-Screen = 2048D604
-NumberOfPlayers = 202E8C60
