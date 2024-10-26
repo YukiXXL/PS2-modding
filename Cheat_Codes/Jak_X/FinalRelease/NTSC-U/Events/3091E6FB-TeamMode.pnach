@@ -1,9 +1,10 @@
 gametitle=Jak X Final Release (NTSC-U)
 comment=Changing the driver changes the Default Team setting.
 
-//t0 = task address
-patch=1,EE,E0040012,extended,00BCEF20 //Memory Check
-patch=1,EE,20BCEF14,extended,91030078 //lbu v1, $0078(t0)
-patch=1,EE,20BCEF18,extended,38630020 //xori v1, v1, $0020
-patch=1,EE,20BCEF1C,extended,A1030078 //sb v1, $0078(t0)
-patch=1,EE,20BCEF20,extended,91080005 //lbu t0, $0005(t0)
+//a0 = task address
+patch=1,EE,E0051825,extended,00BD0BF8 //Memory Check
+patch=1,EE,20BD0BE4,extended,90830078 //lbu v1, $0078(a0)
+patch=1,EE,20BD0BE8,extended,38630020 //xori v1, v1, $0020
+patch=1,EE,20BD0BEC,extended,A0830078 //sb v1, $0078(a0)
+patch=1,EE,20BD0BF0,extended,90840005 //lbu a0, $0005(a0)
+patch=1,EE,20BD0BF4,extended,00000000 //nop

@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Adventure Specific - Sabotage
+
+//Enable
+patch=1,EE,E0017880,extended,00B6BE44
+patch=1,EE,20B6BE48,extended,66E47880
+
+//Text ID
+patch=1,EE,E0017361,extended,00B43D28
+patch=1,EE,10B43D30,extended,00000033

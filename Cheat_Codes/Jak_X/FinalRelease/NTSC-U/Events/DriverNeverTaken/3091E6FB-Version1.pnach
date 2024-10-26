@@ -1,0 +1,20 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Allows to reuse the taken driver
+
+//Selection checks
+patch=1,EE,E00B0035,extended,00A8667C //Condition check
+patch=1,EE,20A86678,extended,8EE3C0E7 //lw v1, $c0e7(s7)
+patch=1,EE,20A86680,extended,9C63FFFC //lwu v1, $fffc(v1)
+patch=1,EE,20A86684,extended,9C6300D4 //lwu v1, $00d4(v1)
+patch=1,EE,20A86688,extended,9C630020 //lwu v1, $0020(v1)
+patch=1,EE,20A8668C,extended,AC600964 //sw zero, $0964(v1)
+patch=1,EE,20A86690,extended,AC600A9C //sw zero, $0a9c(v1)
+patch=1,EE,20A86694,extended,AC6009B0 //sw zero, $09b0(v1)
+patch=1,EE,20A86698,extended,AC600AE8 //sw zero, $0ae8(v1)
+patch=1,EE,20A8669C,extended,AC600188 //sw zero, $0188(v1)
+patch=1,EE,20A866A0,extended,1000002C //beq zero, zero, $00a869d4
+patch=1,EE,20A866A4,extended,02E01825 //or v1, s7, zero
+
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCEED0
+patch=1,EE,20BCEED4,extended,10000003 //beq zero, zero

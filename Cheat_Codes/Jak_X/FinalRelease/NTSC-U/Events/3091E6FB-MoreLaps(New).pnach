@@ -1,0 +1,17 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=0-255 Laps/Time
+
+//For writing minimum
+patch=1,EE,E0031601,extended,102DFBE8
+patch=1,EE,602DFBE8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0031601,extended,102DFBE8
+patch=1,EE,602DFBE8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
+
+//Check if equal to zero
+patch=1,EE,E0010000,extended,002DA4D8 //Memory Check
+patch=1,EE,202DFBE8,extended,002E1601 //revert to default

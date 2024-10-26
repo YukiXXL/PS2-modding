@@ -1,0 +1,11 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Get All Venues
+
+patch=1,EE,E0071825,extended,00BADFE8 //Memory Check
+patch=1,EE,00BADFA8,extended,1000000B //beq zero, zero, $00baead0
+patch=1,EE,20BADFCC,extended,34840001 //ori a0, a0, $0001
+patch=1,EE,20BADFD4,extended,ACA40000 //sw a0, $0000(a1)
+patch=1,EE,20BADFD8,extended,8E840008 //lw a0, $0008(s4)
+patch=1,EE,20BADFDC,extended,0064202A //slt a0, v1, a0
+patch=1,EE,20BADFE0,extended,1480FFF3 //bne a0, zero, $00baeaa8
+patch=1,EE,20BADFE4,extended,00000000 //nop

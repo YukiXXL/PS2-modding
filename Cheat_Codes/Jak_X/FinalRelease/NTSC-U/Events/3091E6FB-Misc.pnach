@@ -2,13 +2,9 @@ gametitle=Jak X Final Release (NTSC-U)
 comment=EVENTS - MISC
 
 //Enable all sub-options all the time
-patch=1,EE,E00197CC,extended,00E271C0
+patch=1,EE,E001002B,extended,00E271C4
 patch=1,EE,00E271C0,extended,66E497D0
 
 //Allow changing teams in any event
-patch=1,EE,E001A825,extended,00BD03D4
+patch=1,EE,E0019AD7,extended,00BD03D8
 patch=1,EE,20BD03D4,extended,00000000
-
-//Enable selecting laps on Tours
-patch=1,EE,E0000004,extended,013C9820
-patch=1,EE,013C9820,extended,66E30000

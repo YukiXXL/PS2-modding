@@ -2,12 +2,14 @@ gametitle=Jak X Final Release (NTSC-U)
 comment=MISC EVENTS
 
 //Fixes for Split-Screen
-patch=1,EE,E0031601,extended,0098F410
+patch=1,EE,E0051801,extended,0098F410
 //kras-training
 patch=1,EE,209930B0,extended,009930C4
+//jungle-training
+patch=1,EE,2098FB20,extended,00992B14
 //cliffs-training
 patch=1,EE,2098FBC0,extended,00992D84
-//kratour-final-boss-start
-patch=1,EE,2098F410,extended,0098F424
 //snow-training2
 patch=1,EE,2098FB70,extended,00992AA4
+//kratour-final-boss-start
+patch=1,EE,2098F410,extended,0098F424
