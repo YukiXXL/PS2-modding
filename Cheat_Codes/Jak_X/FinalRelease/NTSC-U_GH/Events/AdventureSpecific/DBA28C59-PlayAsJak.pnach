@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Adventure Specific - Sabotage
+comment=Adventure Specific - Play as Jak
 
 //Enable
 patch=1,EE,E0017880,extended,00B6C0D4

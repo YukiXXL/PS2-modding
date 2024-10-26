@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Adventure Specific - Sabotage
+comment=Adventure Specific - Grand Prix Dialogue
 
 //Enable
 patch=1,EE,E0011825,extended,00EC5124
