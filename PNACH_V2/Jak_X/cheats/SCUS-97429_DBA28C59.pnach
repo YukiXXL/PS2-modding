@@ -361,7 +361,7 @@ patch=1,EE,207B9D88,extended,00993600
 patch=1,EE,E002FF79,extended,0028361C
 patch=1,EE,207B9D88,extended,00993530
 
-[Events\Grand Prix (ENABLE ONLY ONE!)\Enable (Dynamic Memory)]
+[Events\Grand Prix (ENABLE ONLY ONE!)\Enable]
 description=...hold L3+R3 after pressing D-Pad and then release it.
 patch=1,EE,E0051825,extended,00A7F544
 patch=1,EE,20A7F528,extended,8EE41D9F
