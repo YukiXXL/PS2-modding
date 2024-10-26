@@ -1,9 +1,0 @@
-gametitle=Jak X Final Release (NTSC-U)
-comment=Alternative Version 1.
-
-//Memory Check
-patch=1,EE,E0011025,extended,00BCB3FC
-//CPUs use all characters + save
-patch=1,EE,20BCB3F0,extended,9C620040
-patch=1,EE,20BCB3F4,extended,12E20002
-patch=1,EE,20BCB3FC,extended,AC770040

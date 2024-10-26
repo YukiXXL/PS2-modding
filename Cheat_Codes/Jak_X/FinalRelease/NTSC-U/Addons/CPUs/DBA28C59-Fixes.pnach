@@ -1,6 +1,0 @@
-gametitle=Jak X Final Release (NTSC-U)
-comment=Fixes crashes on real hardware.
-
-//TLB Miss fix
-patch=1,EE,E0010003,extended,00BCCF5C
-patch=1,EE,20BCCF5C,extended,10000003

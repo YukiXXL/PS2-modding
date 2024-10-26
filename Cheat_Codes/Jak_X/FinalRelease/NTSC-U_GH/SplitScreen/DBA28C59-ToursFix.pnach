@@ -24,6 +24,6 @@ patch=1,EE,20A5D6CC,extended,66E40004
 patch=1,EE,20EB68F8,extended,00000000
 
 //don't change the display command from display
-patch=1,EE,E0020004,extended,009C95F0
+patch=1,EE,E0022178,extended,009C95F4
 patch=1,EE,209C9578,extended,00000000
 patch=1,EE,209C95F0,extended,00000000

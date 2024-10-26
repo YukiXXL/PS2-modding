@@ -1,7 +1,7 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Codes for testing "Clan Challenge"
 
-patch=1,EE,E0040008,extended,00B843B4
+patch=1,EE,E004E82D,extended,00B843B8
 patch=1,EE,20B843B4,extended,66E20004
 patch=1,EE,20B843B8,extended,02E3100B
 patch=1,EE,20B843BC,extended,03E00008

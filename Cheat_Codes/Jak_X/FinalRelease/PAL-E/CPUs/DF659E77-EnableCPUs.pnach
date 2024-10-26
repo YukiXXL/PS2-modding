@@ -8,7 +8,7 @@ patch=1,EE,00020002,extended,000002C0
 patch=1,EE,00000180,extended,00000000
 
 //Load selected CPUs on all gamemodes
-patch=1,EE,E0030027,extended,00BCD298
+patch=1,EE,E0030012,extended,00BCD294
 patch=1,EE,20BCD298,extended,10000027
 //Save 5 CPUs as a MAX
 patch=1,EE,20BCD378,extended,24050005

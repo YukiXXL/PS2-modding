@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Fixes TLB Misses
+
+patch=1,EE,602DC730,extended,00000000
+patch=1,EE,00020001,extended,000000D8

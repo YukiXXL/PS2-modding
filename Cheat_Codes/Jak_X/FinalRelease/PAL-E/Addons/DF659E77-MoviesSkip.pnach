@@ -6,5 +6,5 @@ patch=1,EE,607BA048,extended,66E30004
 patch=1,EE,00020001,extended,0000032C
 
 //Dynamic memory
-//patch=1,EE,E001012B,extended,0097B638
+//patch=1,EE,E0011825,extended,0097B640
 //patch=1,EE,2097B638,extended,66E30004

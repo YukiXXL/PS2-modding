@@ -2,7 +2,7 @@ gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=ADDONS - DAXTERMOBIL COLORS
 
 //Enable Colors for Daxtermobile
-patch=1,EE,E008012B,extended,007AB568 //Check
+patch=1,EE,E0081825,extended,007AB564 //Check
 patch=1,EE,107AB568,extended,8EE3C0E7 //load first pointer addr
 patch=1,EE,007AB56C,extended,52E30004 //beq if it is #f
 patch=1,EE,207AB570,extended,00000000 //nop (fixes not loading other pointers)

@@ -1,0 +1,12 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Debug mode fix for LAN
+
+patch=1,EE,E003945D,extended,002D9448
+patch=1,EE,602DB478,extended,12E30009
+patch=1,EE,00020003,extended,0000013C
+patch=1,EE,00000010,extended,0000000C
+
+patch=1,EE,E0039459,extended,002D9448
+patch=1,EE,602DB478,extended,16E30009
+patch=1,EE,00020003,extended,0000013C
+patch=1,EE,00000010,extended,0000000C

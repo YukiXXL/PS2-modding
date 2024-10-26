@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Max Vehicle Stats = 255, 255, 255, 255
 
-patch=1,EE,E0011825,extended,00BAE954 //Memory Check
+patch=1,EE,E001002C,extended,00BAE958 //Memory Check
 patch=1,EE,20BAE954,extended,2403FFFF //addiu v1, zero, $ffff

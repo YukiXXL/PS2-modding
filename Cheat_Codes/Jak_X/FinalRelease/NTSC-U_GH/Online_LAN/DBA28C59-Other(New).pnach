@@ -3,7 +3,7 @@ comment=ONLINE/LAN - OTHER
 
 //5 CPUs, 6 Players for events
 //Saves onto the event and map when trying to start the event
-patch=1,EE,E0030012,extended,00BCCD24
+patch=1,EE,E0031825,extended,00BCCD2C
 patch=1,EE,20BCCD18,extended,24030506
 patch=1,EE,20BCCD1C,extended,A483000C
 patch=1,EE,20BCCD24,extended,90840005

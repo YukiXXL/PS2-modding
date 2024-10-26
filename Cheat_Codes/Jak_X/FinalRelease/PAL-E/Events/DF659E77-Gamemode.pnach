@@ -3,7 +3,7 @@ comment=EVENTS - GAMEMODE
 
 //Save game mode to currently used address
 //Change the last hex-byte in second line
-patch=1,EE,E0020000,extended,00F2188C
+patch=1,EE,E0020012,extended,00F21890
 patch=1,EE,20F21884,extended,24040011
 patch=1,EE,20F2188C,extended,A0640005
 

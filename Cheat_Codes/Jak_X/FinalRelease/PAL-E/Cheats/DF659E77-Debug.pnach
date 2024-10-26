@@ -2,6 +2,6 @@ gametitle=Jak X Final Release (PAL-E)
 comment=CHEATS
 
 //Jak Vehicle Unkillable + Infinite Turbo (Debug)
-patch=1,EE,E002012B,extended,00F16AB0
+patch=1,EE,E0021825,extended,00F16AB8
 patch=1,EE,20F16AB0,extended,66E30004
 patch=1,EE,20F16AB4,extended,AEE317DB
