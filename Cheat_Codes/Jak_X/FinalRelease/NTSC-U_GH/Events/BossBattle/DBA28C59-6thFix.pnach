@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Spawn 6th Mizo
+
+patch=1,EE,E0028FA3,extended,00EDBEE4 //Memory Check
+patch=1,EE,00EDBEE8,extended,9C640020 //Spawn 6th player ID
+patch=1,EE,10EDBF0C,extended,A48302A4 //Write race state to 6th player ID

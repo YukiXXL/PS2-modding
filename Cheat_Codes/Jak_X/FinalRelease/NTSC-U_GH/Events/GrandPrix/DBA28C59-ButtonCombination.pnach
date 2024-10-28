@@ -2,14 +2,14 @@ gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Enable Grand Prix 1-4 (Dynamic Memory)
 
 // L3+R3+UP ARROW (Red Eco Cup)
-patch=1,EE,E002FFE9,extended,0028361C
+patch=1,EE,E001FFE9,extended,0028361C
 patch=1,EE,207B9D88,extended,009937B0
 // L3+R3+UP RIGHT (Green Eco Cup)
-patch=1,EE,E002FFD9,extended,0028361C
+patch=1,EE,E001FFD9,extended,0028361C
 patch=1,EE,207B9D88,extended,009936E0
 // L3+R3+UP DOWN (Blue Eco Cup)
-patch=1,EE,E002FFB9,extended,0028361C
+patch=1,EE,E001FFB9,extended,0028361C
 patch=1,EE,207B9D88,extended,00993600
 // L3+R3+UP LEFT (Yellow Eco Cup)
-patch=1,EE,E002FF79,extended,0028361C
+patch=1,EE,E001FF79,extended,0028361C
 patch=1,EE,207B9D88,extended,00993530

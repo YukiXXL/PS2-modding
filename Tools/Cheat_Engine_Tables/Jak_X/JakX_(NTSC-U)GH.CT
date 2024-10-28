@@ -202,6 +202,17 @@
             <Offset>002E3F74</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>64</ID>
+          <Description>"*advanced-options*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002DFA04</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
@@ -605,6 +616,17 @@
       <Address>eemem</Address>
       <Offsets>
         <Offset>002DF7F0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>65</ID>
+      <Description>"*race-state*"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>eemem</Address>
+      <Offsets>
+        <Offset>002E85C4</Offset>
       </Offsets>
     </CheatEntry>
   </CheatEntries>
