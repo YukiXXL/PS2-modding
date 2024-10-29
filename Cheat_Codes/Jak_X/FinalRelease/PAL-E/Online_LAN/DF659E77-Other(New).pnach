@@ -9,7 +9,7 @@ patch=1,EE,20BCCC6C,extended,A483000C
 patch=1,EE,20BCCC74,extended,90840005
 
 //Fake players on LAN
-patch=1,EE,E0030000,extended,102DA5D8
+patch=1,EE,E0031705,extended,002E0F78
 patch=1,EE,602DD608,extended,16E30105
 patch=1,EE,00020002,extended,000002D0
 patch=1,EE,000001F0,extended,00000000

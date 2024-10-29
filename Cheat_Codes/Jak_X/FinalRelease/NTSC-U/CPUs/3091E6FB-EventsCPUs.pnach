@@ -8,3 +8,7 @@ patch=1,EE,00BCC9C8,extended,24130005
 //5 CPUs on Freeze Rally
 patch=1,EE,E0011825,extended,00BCC9F4
 patch=1,EE,00BCC9EC,extended,24130005
+
+//5 CPUs on Boss Battle
+patch=1,EE,E0010002,extended,00BCC9E4
+patch=1,EE,00BCC9E0,extended,24130005

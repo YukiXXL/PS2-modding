@@ -5,6 +5,8 @@ comment=Adventure Specific - Grand Prix Dialogue
 patch=1,EE,E0011825,extended,00EC5124
 patch=1,EE,20EC5128,extended,66E37880
 
+// In case the dialogue isn't played
+
 //Enable without saving to profile
 patch=1,EE,E001202D,extended,00A55514
 patch=1,EE,20A55518,extended,0000202D
