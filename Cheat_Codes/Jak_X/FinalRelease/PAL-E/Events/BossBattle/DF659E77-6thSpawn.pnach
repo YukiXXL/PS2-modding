@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Spawn 6th Mizo
+
+patch=1,EE,E0028FA3,extended,00EDBE34 //Memory Check
+patch=1,EE,00EDBE38,extended,9C640020 //Spawn 6th player ID
+patch=1,EE,10EDBE5C,extended,A48302A4 //Write race state to 6th player ID

@@ -1,0 +1,31 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Load more Mizos
+
+//Memory Check
+patch=1,EE,E0190008,extended,00EDB420
+//Rewrite the whole function
+patch=1,EE,20EDB394,extended,24140000
+patch=1,EE,20EDB3C0,extended,001418B8
+patch=1,EE,20EDB3C4,extended,8EE48FA3
+patch=1,EE,20EDB3C8,extended,0064182D
+patch=1,EE,20EDB3CC,extended,9C64000C
+patch=1,EE,20EDB3D0,extended,0320F809
+patch=1,EE,20EDB3D4,extended,001F1000
+patch=1,EE,20EDB3D8,extended,66940001
+patch=1,EE,20EDB3DC,extended,8EE38F9F
+patch=1,EE,20EDB3E0,extended,0283182A
+patch=1,EE,20EDB3E4,extended,1460FFEC
+patch=1,EE,20EDB3E8,extended,00401825
+patch=1,EE,20EDB3EC,extended,24140000
+patch=1,EE,20EDB3F0,extended,24030060
+patch=1,EE,20EDB3F4,extended,00741818
+patch=1,EE,20EDB3F8,extended,64630070
+patch=1,EE,20EDB3FC,extended,8EE46DC3
+patch=1,EE,20EDB400,extended,0064882D
+patch=1,EE,20EDB404,extended,2403006B
+patch=1,EE,20EDB408,extended,A6230054
+patch=1,EE,20EDB40C,extended,66940001
+patch=1,EE,20EDB410,extended,8EE36DC3
+patch=1,EE,20EDB414,extended,80630041
+patch=1,EE,20EDB418,extended,0283182A
+patch=1,EE,20EDB41C,extended,1460FFF4

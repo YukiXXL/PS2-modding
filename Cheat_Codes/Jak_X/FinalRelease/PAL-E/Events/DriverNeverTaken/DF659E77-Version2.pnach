@@ -7,11 +7,11 @@ patch=1,EE,00B4585C,extended,00BCF7AC
 //Allow selecting the same driver
 patch=1,EE,E0060010,extended,00BCF7E4
 patch=1,EE,20BCF7A8,extended,002F9824
-patch=1,EE,20BCF7AC,extended,8EE3C0E7
-patch=1,EE,20BCF7B0,extended,80630144
-patch=1,EE,20BCF7B4,extended,8EE218B7
-patch=1,EE,20BCF7B8,extended,80420098
-patch=1,EE,20BCF7BC,extended,0040182D
+patch=1,EE,20BCF7AC,extended,82C20144
+patch=1,EE,20BCF7B0,extended,8EE318B7
+patch=1,EE,20BCF7B4,extended,8C630098
+patch=1,EE,20BCF7B8,extended,00031878
+patch=1,EE,20BCF7BC,extended,0062182D
 
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF910
