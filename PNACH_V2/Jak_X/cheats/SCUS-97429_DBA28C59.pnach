@@ -23,29 +23,29 @@ patch=1,EE,20F21948,extended,00801825
 
 [Cheats\Vehicle Status\Load Custom + Increase by 32\Engine]
 description=Load the upgrades + improve them by 32
-patch=1,EE,E0022E3C,extended,00BAE8A0 //Memory Check
-patch=1,EE,20BAE898,extended,24C60020 //addiu a2, a2, $0020
-patch=1,EE,20BAE89C,extended,00C02825 //or a1, a2, zero
+patch=1,EE,E0022E3C,extended,00BAE8A0
+patch=1,EE,20BAE898,extended,24C60020
+patch=1,EE,20BAE89C,extended,00C02825
 
 [Cheats\Vehicle Status\Load Custom + Increase by 32\Gearbox]
-patch=1,EE,E0022E3C,extended,00BAE8DC //Memory Check
-patch=1,EE,20BAE8D4,extended,24C60020 //addiu a2, a2, $0020
-patch=1,EE,20BAE8D8,extended,00C02825 //or a1, a2, zero
+patch=1,EE,E0022E3C,extended,00BAE8DC
+patch=1,EE,20BAE8D4,extended,24C60020
+patch=1,EE,20BAE8D8,extended,00C02825
 
 [Cheats\Vehicle Status\Load Custom + Increase by 32\Armor]
-patch=1,EE,E0022E3C,extended,00BAE918 //Memory Check
-patch=1,EE,20BAE910,extended,24C60020 //addiu a2, a2, $0020
-patch=1,EE,20BAE914,extended,00C02825 //or a1, a2, zero
+patch=1,EE,E0022E3C,extended,00BAE918
+patch=1,EE,20BAE910,extended,24C60020
+patch=1,EE,20BAE914,extended,00C02825
 
 [Cheats\Vehicle Status\Load Custom + Increase by 32\Turbo]
-patch=1,EE,E0021E3C,extended,00BAE94C //Memory Check
-patch=1,EE,20BAE944,extended,24630020 //addiu v1, v1, $0020
-patch=1,EE,20BAE948,extended,00602825 //or a1, v1, zero
+patch=1,EE,E0021E3C,extended,00BAE94C
+patch=1,EE,20BAE944,extended,24630020
+patch=1,EE,20BAE948,extended,00602825
 
 [Cheats\Vehicle Status\All Status at 255]
 description=Engine, Gearbox, Armor, Turbo at 255
-patch=1,EE,E001002C,extended,00BAE958 //Memory Check
-patch=1,EE,20BAE954,extended,2403FFFF //addiu v1, zero, $ffff
+patch=1,EE,E001002C,extended,00BAE958
+patch=1,EE,20BAE954,extended,2403FFFF
 
 // ADDONS
 
@@ -147,7 +147,7 @@ patch=1,EE,00020001,extended,000000D0
 // CUSTOMIZATION
 
 [Customization\Enable customizing secret vehicles\Tune Performance]
-patch=1,EE,E0030000,extended,102E0828
+patch=1,EE,E0031805,extended,002E1078
 patch=1,EE,602DD708,extended,00000000
 patch=1,EE,00020003,extended,00000194
 patch=1,EE,00000020,extended,0000043C
@@ -156,7 +156,7 @@ patch=1,EE,602E0828,extended,00000000
 patch=1,EE,00010000,extended,00000010
 
 [Customization\Enable customizing secret vehicles\Modify Body Parts]
-patch=1,EE,E0030000,extended,102E0598
+patch=1,EE,E0031805,extended,002E1078
 patch=1,EE,602DD708,extended,00000000
 patch=1,EE,00020003,extended,00000194
 patch=1,EE,00000020,extended,00000514
@@ -165,7 +165,7 @@ patch=1,EE,602E0598,extended,00000000
 patch=1,EE,00010000,extended,00000010
 
 [Customization\Enable customizing secret vehicles\Respray Paint Job]
-patch=1,EE,E0030000,extended,102DF814
+patch=1,EE,E0031805,extended,002E1078
 patch=1,EE,602DD708,extended,00000000
 patch=1,EE,00020003,extended,00000194
 patch=1,EE,00000020,extended,00000654
@@ -219,6 +219,7 @@ patch=1,EE,20BD0EC4,extended,00000000
 
 [Events\More Laps/Time Limit]
 description=0-255 Laps/Time
+//For writing minimum
 patch=1,EE,E0031801,extended,102DFDE8
 patch=1,EE,602DFDE8,extended,00000000
 patch=1,EE,00000002,extended,00000000
@@ -229,17 +230,17 @@ patch=1,EE,602DFDE8,extended,000000FF
 patch=1,EE,00000002,extended,00000000
 patch=1,EE,00000004,extended,00000000
 //Check if equal to zero
-patch=1,EE,E0010000,extended,002DA6D8 //Memory Check
-patch=1,EE,202DFDE8,extended,002E1801 //revert to default
+patch=1,EE,E0010000,extended,002DA6D8
+patch=1,EE,202DFDE8,extended,002E1801
 
 [Events\Team Mode on any event]
 description=Advance Options > L1+R1. If not applying, change event/location and retry.
-patch=1,EE,E0051825,extended,00BD16E8 //Memory Check
-patch=1,EE,20BD16D4,extended,90830078 //lbu v1, $0078(a0)
-patch=1,EE,20BD16D8,extended,38630020 //xori v1, v1, $0020
-patch=1,EE,20BD16DC,extended,A0830078 //sb v1, $0078(a0)
-patch=1,EE,20BD16E0,extended,90840005 //lbu a0, $0005(a0)
-patch=1,EE,20BD16E4,extended,00000000 //nop
+patch=1,EE,E0051825,extended,00BD16E8
+patch=1,EE,20BD16D4,extended,90830078
+patch=1,EE,20BD16D8,extended,38630020
+patch=1,EE,20BD16DC,extended,A0830078
+patch=1,EE,20BD16E0,extended,90840005
+patch=1,EE,20BD16E4,extended,00000000
 
 [Events\Options\Circuit Race with Collectathon options]
 description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
@@ -260,14 +261,21 @@ description=Do not change the Time Limit or anything like that!
 patch=1,EE,502E01D0,extended,00000003
 patch=1,EE,002DFA04,extended,00000000
 
-[Events\Mizo gamemode\Save gamemode to selected task]
+[Events\Force Gamemode\Save Mizo gamemode to selected task]
 description=Change vehicle/color to apply.
 patch=1,EE,E0020012,extended,00F21940
 patch=1,EE,20F21934,extended,24040011
 patch=1,EE,20F2193C,extended,A0640005
 
-[Events\Mizo gamemode\Time Attack = Mizo]
-description=Replace Time Attack with Mizo tasks
+[Events\Force Gamemode\Freeze Rally = Training]
+patch=1,EE,E0010002,extended,00B60298
+patch=1,EE,00B60298,extended,0000000F
+
+[Events\Force Gamemode\Rush Hour = Training 2]
+patch=1,EE,E001000D,extended,00B60278
+patch=1,EE,00B60278,extended,00000010
+
+[Events\Force Gamemode\Time Attack = Mizo]
 patch=1,EE,E0010003,extended,00B60268
 patch=1,EE,00B60268,extended,00000011
 
@@ -275,12 +283,12 @@ patch=1,EE,00B60268,extended,00000011
 patch=1,EE,E0011825,extended,00EC5124
 patch=1,EE,20EC5128,extended,66E37880
 
-[Events\Adventure Specific\Grand Prix Special Dialogue\Enable without saving to profile]
+[Events\Adventure Specific\Grand Prix Special Dialogue\Dialogue fix without saving to profile]
 description=If dialogue doesn't play, enable this.
 patch=1,EE,E001202D,extended,00A55514
 patch=1,EE,20A55518,extended,0000202D
 
-[Events\Adventure Specific\Grand Prix Special Dialogue\Enable with saving to profile]
+[Events\Adventure Specific\Grand Prix Special Dialogue\Dialogue fix with saving to profile]
 description=If dialogue doesn't play, enable this.
 patch=1,EE,E001382D,extended,00BAE7A0
 patch=1,EE,20BAE7A4,extended,A4E0000C
@@ -293,7 +301,7 @@ patch=1,EE,20B6C0D8,extended,66E47880
 patch=1,EE,E0011825,extended,00EC1F18
 patch=1,EE,20EC1F1C,extended,66E37880
 
-[Events\Adventure Specific\Sabotage\Enable one-time dialogue (Saves to profile!)]
+[Events\Adventure Specific\Sabotage\Dialogue fix (Saves to profile!)]
 description=If dialogue doesn't play, enable this.
 patch=1,EE,E0012825,extended,00BAE28C
 patch=1,EE,20BAE290,extended,24040001
@@ -379,23 +387,25 @@ patch=1,EE,602DD978,extended,1000008E
 patch=1,EE,00020000,extended,0000005C
 
 [Events\Driver Never Taken\Allow selecting any (Version 1)]
-patch=1,EE,E00B0035,extended,00A868FC //Condition check
-patch=1,EE,20A868F8,extended,8EE3C0E7 //lw v1, $c0e7(s7)
-patch=1,EE,20A86900,extended,9C63FFFC //lwu v1, $fffc(v1)
-patch=1,EE,20A86904,extended,9C6300D4 //lwu v1, $00d4(v1)
-patch=1,EE,20A86908,extended,9C630020 //lwu v1, $0020(v1)
-patch=1,EE,20A8690C,extended,AC600964 //sw zero, $0964(v1)
-patch=1,EE,20A86910,extended,AC600A9C //sw zero, $0a9c(v1)
-patch=1,EE,20A86914,extended,AC6009B0 //sw zero, $09b0(v1)
-patch=1,EE,20A86918,extended,AC600AE8 //sw zero, $0ae8(v1)
-patch=1,EE,20A8691C,extended,AC600188 //sw zero, $0188(v1)
-patch=1,EE,20A86920,extended,1000002C //beq zero, zero, $00a869d4
-patch=1,EE,20A86924,extended,02E01825 //or v1, s7, zero
+//Selection checks
+patch=1,EE,E00B0035,extended,00A868FC
+patch=1,EE,20A868F8,extended,8EE3C0E7
+patch=1,EE,20A86900,extended,9C63FFFC
+patch=1,EE,20A86904,extended,9C6300D4
+patch=1,EE,20A86908,extended,9C630020
+patch=1,EE,20A8690C,extended,AC600964
+patch=1,EE,20A86910,extended,AC600A9C
+patch=1,EE,20A86914,extended,AC6009B0
+patch=1,EE,20A86918,extended,AC600AE8
+patch=1,EE,20A8691C,extended,AC600188
+patch=1,EE,20A86920,extended,1000002C
+patch=1,EE,20A86924,extended,02E01825
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF9C0
-patch=1,EE,20BCF9C4,extended,10000003 //beq zero, zero
+patch=1,EE,20BCF9C4,extended,10000003
 
 [Events\Driver Never Taken\Allow selecting any (Version 2)]
+//Change load location
 patch=1,EE,E001F864,extended,00B4595C
 patch=1,EE,00B4595C,extended,00BCF85C
 //Allow selecting the same driver
@@ -488,6 +498,7 @@ patch=1,EE,20BD25B0,extended,10600028
 // EXPERIMENTAL
 
 [Experimental\Drive Backwards]
+description=Press SELECT to fix displaying; START to reset.
 patch=1,EE,E0010018,extended,00BD18F8
 patch=1,EE,00BD18F8,extended,9C65001C
 //want-load does nothing
@@ -505,14 +516,6 @@ patch=1,EE,20A820A0,extended,00000000
 //START = Default
 patch=1,EE,E001FFF7,extended,0028361C
 patch=1,EE,20A820A0,extended,10600031
-//Jak Vehicle Unkillable (Debug)
-patch=1,EE,E002012B,extended,00F16B60
-patch=1,EE,20F16B60,extended,66E30004
-patch=1,EE,20F16B64,extended,AEE317DB
-
-[Experimental\Make ID Zero]
-patch=1,EE,60F892D4,extended,A3800844
-patch=1,EE,00020001,extended,00000020
 
 [Experimental\More Laps 2]
 patch=1,EE,E006200B,extended,013CCFA4
@@ -575,69 +578,69 @@ patch=1,EE,20EBF3A4,extended,00000000
 // GET ALL
 
 [Get All (Load Profile)\Get All Drivers]
-patch=1,EE,E0012025,extended,00BAE728 //Memory Check
+patch=1,EE,E0012025,extended,00BAE728
 patch=1,EE,20BAE72C,extended,2403FFFF
 
 [Get All (Load Profile)\Get All Tasks]
-patch=1,EE,E0061825,extended,00BAEAE0 //Memory Check
-patch=1,EE,00BAEAA0,extended,1000000B //beq zero, zero, $00baead0
-patch=1,EE,20BAEAC4,extended,34840001 //ori a0, a0, $0001
-patch=1,EE,20BAEACC,extended,ACA40000 //sw a0, $0000(a1)
-patch=1,EE,20BAEAD0,extended,8E840008 //lw a0, $0008(s4)
-patch=1,EE,20BAEAD4,extended,0064202A //slt a0, v1, a0
-patch=1,EE,20BAEAD8,extended,1480FFF3 //bne a0, zero, $00baeaa8
-patch=1,EE,20BAEADC,extended,00000000 //nop
+patch=1,EE,E0061825,extended,00BAEAE0
+patch=1,EE,00BAEAA0,extended,1000000B
+patch=1,EE,20BAEAC4,extended,34840001
+patch=1,EE,20BAEACC,extended,ACA40000
+patch=1,EE,20BAEAD0,extended,8E840008
+patch=1,EE,20BAEAD4,extended,0064202A
+patch=1,EE,20BAEAD8,extended,1480FFF3
+patch=1,EE,20BAEADC,extended,00000000
 //
-patch=1,EE,E00230B8,extended,00BAEF80 //Memory Check
-patch=1,EE,20BAEF84,extended,3C050001 //lui a1, $0001
-patch=1,EE,20BAEF88,extended,24A50003 //addiu a1, a1, $0003
+patch=1,EE,E00230B8,extended,00BAEF80
+patch=1,EE,20BAEF84,extended,3C050001
+patch=1,EE,20BAEF88,extended,24A50003
 //
-patch=1,EE,E001282D,extended,00BAEDF8 //Memory Check
-patch=1,EE,20BAEDFC,extended,24050001 //addiu a1, zero, $0001
+patch=1,EE,E001282D,extended,00BAEDF8
+patch=1,EE,20BAEDFC,extended,24050001
 //
-patch=1,EE,E002282D,extended,00BAEA60 //Memory Check
-patch=1,EE,20BAEA54,extended,24040003 //addiu a0, zero, $0003
-patch=1,EE,20BAEA68,extended,A4A40008 //sh a0, $0008(a1)
+patch=1,EE,E002282D,extended,00BAEA60
+patch=1,EE,20BAEA54,extended,24040003
+patch=1,EE,20BAEA68,extended,A4A40008
 
 [Get All (Load Profile)\Get All Vehicle Parts]
-patch=1,EE,E0071825,extended,00BAE9C8 //Memory Check
-patch=1,EE,00BAE98C,extended,1000000A //beq zero, zero, $00bae9b8
-patch=1,EE,20BAE9AC,extended,34A50006 //ori a1, a1, $0006
-patch=1,EE,20BAE9B4,extended,A0C5000A //sb a1, $000a(a2)
-patch=1,EE,20BAE9B8,extended,8E850008 //lw a1, $0008(s4)
-patch=1,EE,20BAE9BC,extended,0085282A //slt a1, a0, a1
-patch=1,EE,20BAE9C0,extended,14A0FFF4 //bne a1, zero, $00bae994
-patch=1,EE,20BAE9C4,extended,00000000 //nop
+patch=1,EE,E0071825,extended,00BAE9C8
+patch=1,EE,00BAE98C,extended,1000000A
+patch=1,EE,20BAE9AC,extended,34A50006
+patch=1,EE,20BAE9B4,extended,A0C5000A
+patch=1,EE,20BAE9B8,extended,8E850008
+patch=1,EE,20BAE9BC,extended,0085282A
+patch=1,EE,20BAE9C0,extended,14A0FFF4
+patch=1,EE,20BAE9C4,extended,00000000
 
 [Get All (Load Profile)\Get All Vehicles]
-patch=1,EE,E003001C,extended,00BAE828 //Memory Check
-patch=1,EE,20BAE82C,extended,34630001 //ori v1, v1, $0001
-patch=1,EE,20BAE830,extended,AE430030 //sw v1, $0030(s2)
-patch=1,EE,20BAE838,extended,24030000 //v1 = 0
+patch=1,EE,E003001C,extended,00BAE828
+patch=1,EE,20BAE82C,extended,34630001
+patch=1,EE,20BAE830,extended,AE430030
+patch=1,EE,20BAE838,extended,24030000
 
 [Get All (Load Profile)\Get All Venues]
-patch=1,EE,E0071825,extended,00BAEAE0 //Memory Check
-patch=1,EE,00BAEAA0,extended,1000000B //beq zero, zero, $00baead0
-patch=1,EE,20BAEAC4,extended,34840001 //ori a0, a0, $0001
-patch=1,EE,20BAEACC,extended,ACA40000 //sw a0, $0000(a1)
-patch=1,EE,20BAEAD0,extended,8E840008 //lw a0, $0008(s4)
-patch=1,EE,20BAEAD4,extended,0064202A //slt a0, v1, a0
-patch=1,EE,20BAEAD8,extended,1480FFF3 //bne a0, zero, $00baeaa8
-patch=1,EE,20BAEADC,extended,00000000 //nop
+patch=1,EE,E0071825,extended,00BAEAE0
+patch=1,EE,00BAEAA0,extended,1000000B
+patch=1,EE,20BAEAC4,extended,34840001
+patch=1,EE,20BAEACC,extended,ACA40000
+patch=1,EE,20BAEAD0,extended,8E840008
+patch=1,EE,20BAEAD4,extended,0064202A
+patch=1,EE,20BAEAD8,extended,1480FFF3
+patch=1,EE,20BAEADC,extended,00000000
 
 [Get All (Load Profile)\Mad Cash]
-patch=1,EE,E0042025,extended,00BAEAF4 //Memory Check
-patch=1,EE,20BAEAF8,extended,3C0349B7 //lui v1, $49b7
-patch=1,EE,20BAEAFC,extended,24631B00 //addiu v1, v1, $1b00
-patch=1,EE,20BAEB00,extended,AEA3001C //sw v1, $001c(s5)
-patch=1,EE,20BAEB08,extended,44030000 //mfc1 v1, $f0
+patch=1,EE,E0042025,extended,00BAEAF4
+patch=1,EE,20BAEAF8,extended,3C0349B7
+patch=1,EE,20BAEAFC,extended,24631B00
+patch=1,EE,20BAEB00,extended,AEA3001C
+patch=1,EE,20BAEB08,extended,44030000
 
 [Get All (Load Profile)\Trick Out Vehicles]
-patch=1,EE,E004280A,extended,00BAE948 //Memory Check
-patch=1,EE,20BAE898,extended,0000382D //Engine
-patch=1,EE,20BAE8D4,extended,0000382D //Gearbox
-patch=1,EE,20BAE910,extended,0000382D //Armor
-patch=1,EE,20BAE944,extended,0000302D //Turbo
+patch=1,EE,E004280A,extended,00BAE948
+patch=1,EE,20BAE898,extended,0000382D
+patch=1,EE,20BAE8D4,extended,0000382D
+patch=1,EE,20BAE910,extended,0000382D
+patch=1,EE,20BAE944,extended,0000302D
 
 // MISC
 
@@ -686,13 +689,6 @@ patch=1,EE,01080268,extended,00000000
 patch=1,EE,D1080274,extended,00000006
 patch=1,EE,01080274,extended,00000005
 
-[Online-LAN\DNAS Bypass (Alternative)]
-description=Likely unneeded, try this instead if the above doesn't work
-patch=1,EE,D1080274,extended,24020006
-patch=1,EE,01080268,extended,00000000
-patch=1,EE,D1080274,extended,24020006
-patch=1,EE,01080274,extended,00000005
-
 [Online-LAN\Events\Enable only Freeze Rally, Death Race, Rush Hour]
 patch=1,EE,602DF004,extended,6463FFFD
 patch=1,EE,00000001,extended,0000006C
@@ -731,7 +727,8 @@ patch=1,EE,20B28C30,extended,14570002
 patch=1,EE,00B28C38,extended,9C620014
 
 [Split-Screen\Tours\Enable Fix]
-description=2nd controller: L3+SELECT to activate, 2nd controller: L3+START to deactivate
+description=2nd controller: L3+SELECT to activate, L3+START to deactivate
+//2nd controller: L3+SELECT to activate
 patch=1,EE,E005FFFC,extended,0028371C
 //Region, on-enter(want-display), as in SP
 patch=1,EE,00BBA3AC,extended,9C730044
@@ -741,7 +738,7 @@ patch=1,EE,20A5D6C8,extended,28630001
 patch=1,EE,20A5D6CC,extended,AEE3745B
 //Reset the counter on start/restart
 patch=1,EE,20EB68F8,extended,AEE0745B
-//RESET
+//2nd controller: L3+START to deactivate
 patch=1,EE,E005FFF5,extended,0028371C
 //Region, on-enter(want-display), as in SP
 patch=1,EE,00BBA3AC,extended,9C730048
@@ -875,25 +872,25 @@ patch=1,EE,602DD8E8,extended,002E1805
 patch=1,EE,00000001,extended,00000148
 
 [Split-Screen\Bypasses\Bypass event check for SS]
-patch=1,EE,E0030000,extended,102DA6D8
+patch=1,EE,E0031805,extended,002E1078
 patch=1,EE,002DD708,extended,6464FFFD
 patch=1,EE,00000003,extended,000000A0
 patch=1,EE,00000020,extended,000001C0
 
 [Split-Screen\Bypasses\Bypass event check for SS (LAN/Online)]
-patch=1,EE,E0030000,extended,102DA6D8
+patch=1,EE,E0031805,extended,002E1078
 patch=1,EE,002DD708,extended,6464FFFD
 patch=1,EE,00000003,extended,000000A0
 patch=1,EE,00000020,extended,0000068C
 
 [Split-Screen\Bypasses\Rush Hour check (LAN/Online)]
-patch=1,EE,E0030000,extended,102DA6D8
+patch=1,EE,E0031805,extended,002E1078
 patch=1,EE,002DD708,extended,6464FFF0
 patch=1,EE,00000003,extended,000000D0
 patch=1,EE,00000020,extended,00000D6C
 
 [Split-Screen\Bypasses\Time Attack check (LAN/Online)]
-patch=1,EE,E0030000,extended,102DA6D8
+patch=1,EE,E0031805,extended,002E1078
 patch=1,EE,002DD708,extended,6463FFFA
 patch=1,EE,00000003,extended,000000D0
 patch=1,EE,00000020,extended,00000D34

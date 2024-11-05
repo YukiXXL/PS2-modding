@@ -1,7 +1,7 @@
 gametitle=Jak X Final Release (PAL-E)
 comment=MISC EVENTS
 
-//Fixes for Split-Screen
+//Memory Check
 patch=1,EE,E0051701,extended,0098F510
 //kras-training
 patch=1,EE,209931B0,extended,009931C4

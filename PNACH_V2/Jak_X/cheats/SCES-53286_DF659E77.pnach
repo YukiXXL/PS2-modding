@@ -3,210 +3,196 @@ comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
 // CHEATS
 
-[Cheats\Jak Vehicle Unkillable]
+[Cheats\Jak Vehicle Unkillable + Infinite Turbo]
 description=From Debug menu
-patch=1,EE,E002012B,extended,00F16AB0
+patch=1,EE,E0021825,extended,00F16AB8
 patch=1,EE,20F16AB0,extended,66E30004
 patch=1,EE,20F16AB4,extended,AEE317DB
 
-[Cheats\cheat_default_gun_in_race]
-patch=1,EE,E001DC63,extended,00F2189C
+[Cheats\Default Gun\Enabled in Circuit Race]
+description=Have the Deathmatch machine guns in Circuit Race
+patch=1,EE,E0021825,extended,00F218A4
 patch=1,EE,20F2189C,extended,66E30004
 patch=1,EE,20F218A0,extended,AEE3DC63
 
+[Cheats\Default Gun\Enabled in Other Events]
+description=Have the Deathmatch machine guns in Other Events
+patch=1,EE,E0020012,extended,00F21890
+patch=1,EE,20F21894,extended,10000058
+patch=1,EE,20F21898,extended,00801825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Engine]
+description=Load the upgrades + improve them by 32
+patch=1,EE,E0022E3C,extended,00BAE7E8
+patch=1,EE,20BAE7E0,extended,24C60020
+patch=1,EE,20BAE7E4,extended,00C02825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Gearbox]
+patch=1,EE,E0022E3C,extended,00BAE824
+patch=1,EE,20BAE81C,extended,24C60020
+patch=1,EE,20BAE820,extended,00C02825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Armor]
+patch=1,EE,E0022E3C,extended,00BAE860
+patch=1,EE,20BAE858,extended,24C60020
+patch=1,EE,20BAE85C,extended,00C02825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Turbo]
+patch=1,EE,E0021E3C,extended,00BAE894
+patch=1,EE,20BAE88C,extended,24630020
+patch=1,EE,20BAE890,extended,00602825
+
+[Cheats\Vehicle Status\All Status at 255]
+description=Engine, Gearbox, Armor, Turbo at 255
+patch=1,EE,E001002C,extended,00BAE8A0
+patch=1,EE,20BAE89C,extended,2403FFFF
+
 // ADDONS
-// - DEBUG
-[Addons\Debug\Target Status]
-description=Shows HP and MPH.
-patch=1,EE,E003012B,extended,00F16AD8
+
+[Addons\Skip Intro Movies]
+description=Skip THX, Dolby, etc.
+patch=1,EE,607BA048,extended,66E30004
+patch=1,EE,00020001,extended,0000032C
+
+[Addons\Scan ONLY ONCE and get all secret drivers + Daxtermobile]
+patch=1,EE,602E09A0,extended,241C0001 //PSP Exclusives
+patch=1,EE,00020001,extended,00000030
+patch=1,EE,60285274,extended,2402000F //PS2 Drivers
+patch=1,EE,00020001,extended,00000044
+
+[Addons\Enable colors for Daxtermobil]
+patch=1,EE,E0031705,extended,002E0F78
+patch=1,EE,602DD608,extended,00000000
+patch=1,EE,00020003,extended,000000D4
+patch=1,EE,00000020,extended,00000E98
+
+[Addons\From Debug Menu\Target Status]
+description=Show some info like MPH
+patch=1,EE,E00302BC,extended,00F16AD0
 patch=1,EE,10A887F0,extended,8EE30137
 patch=1,EE,20F16AD8,extended,66E30004
 patch=1,EE,20F16ADC,extended,AEE317C3
 
-[Addons\Debug\Enable pausing using SELECT]
-description=Like in Jak 2/3
-patch=1,EE,E003012B,extended,00F1899C
+[Addons\From Debug Menu\Pausing\Enable pausing using SELECT]
+description=Pause like in Jak 2/3
+patch=1,EE,E0031825,extended,00F18998
 patch=1,EE,10A7F41C,extended,8EE30137
 patch=1,EE,10A8BA54,extended,8EE30137
 patch=1,EE,10F1899C,extended,8EE30137
 
-[Addons\Debug\Enable 2nd Player to pause]
-patch=1,EE,E001012B,extended,00A8BA88
+[Addons\From Debug Menu\Pausing\Enable 2nd controller to pause]
+description=Enable the code above first!
+patch=1,EE,E0011825,extended,00A8BA90
 patch=1,EE,10A8BA88,extended,8EE30137
 
-// - OFFLINE WITH WORKING ONLINE MENUS
-[Addons\Offline with working Online menus]
-//Memory Check
-patch=1,EE,E00600DC,extended,0131A8A0
-//Drop to Screen Select
-patch=1,EE,0131A8A0,extended,9C630050
-patch=1,EE,0131A930,extended,9C630050
-//"Create Game" drops to offline lobby
-patch=1,EE,013166D4,extended,9C63009C
-//Skip DNAS check for Online
-patch=1,EE,0131677C,extended,24030000
-//Skip the "Quit Message". Fixes crashes if attempting to create the game again.
-patch=1,EE,2130C378,extended,10000007
-//Disable "Invite Buddy" option which softlocks the game.
-patch=1,EE,213124E8,extended,10000005
-//Minimum number of Humans = 1
-patch=1,EE,E0020002,extended,0131A908
-patch=1,EE,0131A878,extended,24030001
-patch=1,EE,0131A908,extended,24030001
+// CPUs
 
-// - OTHER
-[Addons\Other\Scan and get all secret characters + Daxtermobile]
-patch=1,EE,E003FE79,extended,013E9964
-patch=1,EE,213E9964,extended,2404000F
-patch=1,EE,213E9968,extended,14E0FE78
-patch=1,EE,213E996C,extended,24050001
+[CPUs\Enable Novas]
+description=Allows CPUs to get Novas
+patch=1,EE,602DD650,extended,00000020
+patch=1,EE,00000001,extended,000000CC
 
-[Addons\Other\Enable customizing Sand Shark, Naughty Dog, Daxtermobile]
-patch=1,EE,E00406BB,extended,013547B4
-patch=1,EE,213547AC,extended,1000000C
-patch=1,EE,21354220,extended,00000000
-patch=1,EE,213542F8,extended,00000000
-patch=1,EE,21354438,extended,00000000
+[CPUs\Enable Turbo Locks]
+description=Allows CPUs to get Turbo Locks
+patch=1,EE,602DC644,extended,00000020
+patch=1,EE,00000001,extended,00000164
 
-[Addons\Other\Enable Colors for Daxtermobile]
-patch=1,EE,E001000E,extended,0131008C
-patch=1,EE,0131008C,extended,2403000F
-
-// - CPUs
-[Addons\CPUs\Use all characters\Version 1]
-description=CPUs can use all chars + saves as enabled.
-//Memory Check
-patch=1,EE,E0011025,extended,00BCBE3C
-//CPUs use all characters + save
-patch=1,EE,20BCBE30,extended,9C620040
-patch=1,EE,20BCBE34,extended,12E20002
-patch=1,EE,20BCBE3C,extended,AC770040
-
-[Addons\CPUs\Use all characters\Version 2]
-description=CPUs can use all chars.
-//Memory Check
-patch=1,EE,E0011025,extended,00BCBE3C
-//CPUs use all characters
-patch=1,EE,20BCBE3C,extended,00000000
-
-[Addons\CPUs\Use all characters\Fixes]
-description=Fixes TLB Misses. Fixes crash on real hardware.
-patch=1,EE,E0010002,extended,00BCD9A4
-patch=1,EE,20BCD9A4,extended,00000000
-
-// EVENTS
-
-// - CPUs
-[Events\CPUs\5 CPUs on Death Race and Rush Hour]
-patch=1,EE,E0010004,extended,00BCD408
+[CPUs\Events\5 CPUs on Death Race and Rush Hour]
+patch=1,EE,E0010008,extended,00BCD40C
 patch=1,EE,00BCD408,extended,24130005
 
-[Events\CPUs\5 CPUs on Freeze Rally]
-patch=1,EE,E0010000,extended,00BCD42C
+[CPUs\Events\5 CPUs on Freeze Rally]
+patch=1,EE,E0011825,extended,00BCD434
 patch=1,EE,00BCD42C,extended,24130005
 
-[Events\CPUs\Enable setting a CPU on any gamemode]
-description="Enable all sub-options all the time" required.
-//5 MAX CPUs on any game modes
-patch=1,EE,E001000D,extended,0130BA2C
-patch=1,EE,2130BA2C,extended,24030005
+[CPUs\Events\5 CPUs on Boss Battle (Mizo)]
+patch=1,EE,E0010002,extended,00BCD424
+patch=1,EE,00BCD420,extended,24130005
+
+[CPUs\Events\Select any number of CPUs on any event]
+description="Enable all sub-options all the time" required!
+patch=1,EE,E0031705,extended,002E0F78
+patch=1,EE,602DD608,extended,24030005
+patch=1,EE,00020002,extended,000002C0
+patch=1,EE,00000180,extended,00000000
 //Load selected CPUs on all gamemodes
-patch=1,EE,E0030027,extended,00BCD298
+patch=1,EE,E0030012,extended,00BCD294
 patch=1,EE,20BCD298,extended,10000027
 //Save 5 CPUs as a MAX
 patch=1,EE,20BCD378,extended,24050005
 patch=1,EE,20BCD3A8,extended,A045000D
 
-// - GAMEMODE
-[Events\GameMode\Force a gamemode\Mizo]
-description=The gamemode changes when switching vehicle/colors.
-patch=1,EE,E0020000,extended,00F2188C
-patch=1,EE,20F21884,extended,24040011
-patch=1,EE,20F2188C,extended,A0640005
+[CPUs\Drivers\Force CPUs to use players driver]
+description=CPUs will use the driver that the player uses
+patch=1,EE,602DC82C,extended,938303BC
+patch=1,EE,00020001,extended,000000D8
+patch=1,EE,602DC82C,extended,286200FF
+patch=1,EE,00020001,extended,000000DC
+patch=1,EE,602DC82C,extended,0062A00B
+patch=1,EE,00020001,extended,000000E0
 
-[Events\GameMode\Replace\Freeze Rally = Training]
-patch=1,EE,E0010002,extended,00B60198
-patch=1,EE,00B60198,extended,0000000F
+[CPUs\Drivers\Secret Drivers\Default + Secret]
+patch=1,EE,602E0B58,extended,00000000
+patch=1,EE,00020001,extended,00000070
 
-[Events\GameMode\Replace\Rush Hour = Training 2]
-patch=1,EE,E001000D,extended,00B60178
-patch=1,EE,00B60178,extended,00000010
+[CPUs\Drivers\Secret Drivers\Only Secret]
+patch=1,EE,602E0B58,extended,16E30002
+patch=1,EE,00020001,extended,000000B8
 
-[Events\GameMode\Replace\Time Attack = Mizo]
-patch=1,EE,E0010003,extended,00B60168
-patch=1,EE,00B60168,extended,00000011
+[CPUs\Drivers\Secret Drivers\Fix Crashes]
+description=In case the game crashes when changing drivers or in lobby
+patch=1,EE,602DC830,extended,10000003
+patch=1,EE,00020001,extended,000000D0
 
-// - MISC
-[Events\Misc\Enable all sub-options all the time]
-patch=1,EE,E00197CC,extended,00E27C00
-patch=1,EE,00E27C00,extended,66E497D0
+// CUSTOMIZATION
 
-[Events\Misc\Allow changing teams in any event]
-description=The Teams setting must be enabled.
-patch=1,EE,E001A825,extended,00BD0E14
-patch=1,EE,20BD0E14,extended,00000000
+[Customization\Enable customizing secret vehicles\Tune Performance]
+patch=1,EE,E0031705,extended,002E0F78
+patch=1,EE,602DD608,extended,00000000
+patch=1,EE,00020003,extended,00000194
+patch=1,EE,00000020,extended,0000043C
+//Visuals
+patch=1,EE,602E0728,extended,00000000
+patch=1,EE,00010000,extended,00000010
 
-[Events\Misc\Enable selecting laps on Tours]
-patch=1,EE,E0000004,extended,013CB440
-patch=1,EE,013CB440,extended,66E30000
+[Customization\Enable customizing secret vehicles\Modify Body Parts]
+patch=1,EE,E0031705,extended,002E0F78
+patch=1,EE,602DD608,extended,00000000
+patch=1,EE,00020003,extended,00000194
+patch=1,EE,00000020,extended,00000514
+//Visuals
+patch=1,EE,602E0498,extended,00000000
+patch=1,EE,00010000,extended,00000010
 
-// - MORE LAPS
-[Events\More laps and Time]
-description=Minimum is 0, Maximum is 255.
-//Safe Check
-patch=1,EE,E006200B,extended,013CCEF0
-//Increase the number of max laps
-patch=1,EE,213CCE6C,extended,240600FF
-patch=1,EE,213CCE70,extended,ACA60004
-patch=1,EE,213CCE74,extended,8CA50004
-//Minimum number of laps is 0
-patch=1,EE,213CCEEC,extended,0000302D
-patch=1,EE,213CCEF0,extended,ACA60000
-patch=1,EE,213CCEF4,extended,8CA50000
+[Customization\Enable customizing secret vehicles\Respray Paint Job]
+patch=1,EE,E0031705,extended,002E0F78
+patch=1,EE,602DD608,extended,00000000
+patch=1,EE,00020003,extended,00000194
+patch=1,EE,00000020,extended,00000654
+//Visuals
+patch=1,EE,602DF714,extended,00000000
+patch=1,EE,00010000,extended,00000010
 
-// - OPTIONS
-[Events\Options\Collectathon options for any gamemode]
-patch=1,EE,E0010002,extended,013CB224
-patch=1,EE,113CB224,extended,10000327
+[Customization\Customize more parts for secret vehicles\Daxtermobile]
+patch=1,EE,40488CE0,extended,00080001
+patch=1,EE,00000003,extended,00000000
 
-[Events\Options\Other events have Collectathon options]
-patch=1,EE,E001002C,extended,013CC530
-patch=1,EE,113CC530,extended,1000FE92
+[Customization\Customize more parts for secret vehicles\Sand Shark]
+patch=1,EE,40488D20,extended,00080001
+patch=1,EE,00000003,extended,00000000
 
-[Events\Options\Other events have Circuit options]
-patch=1,EE,E001002C,extended,013CC530
-patch=1,EE,113CC530,extended,1000FB6F
+[Customization\Customize more parts for secret vehicles\Naughty Dog]
+patch=1,EE,40489060,extended,00050001
+patch=1,EE,00000003,extended,00000000
+patch=1,EE,0048907C,extended,00000003
 
-[Events\Options\Freeze Rally with Circuit options]
-patch=1,EE,E001002C,extended,013CB8B4
-patch=1,EE,113CB8B4,extended,1000FE8E
+// EVENTS
 
-[Events\Options\Circuit with Turbo Dash options]
-patch=1,EE,E001002C,extended,013CB23C
-patch=1,EE,113CB23C,extended,10000173
-
-[Events\Options\Circuit with Collectathon options]
-patch=1,EE,E001002C,extended,013CB23C
-patch=1,EE,113CB23C,extended,1000034F
-
-// - TEAM MODE
-
-[Events\Team Mode on any challenge]
-description=Change the driver, go to event options, reset to defaults.
-patch=1,EE,E0040012,extended,00BCF960 //Memory Check
-patch=1,EE,20BCF954,extended,91030078 //lbu v1, $0078(t0)
-patch=1,EE,20BCF958,extended,38630020 //xori v1, v1, $0020
-patch=1,EE,20BCF95C,extended,A1030078 //sb v1, $0078(t0)
-patch=1,EE,20BCF960,extended,91080005 //lbu t0, $0005(t0)
-
-// EXPERIMENTAL
-
-[Experimental\Extra Events]
+[Events\Extra Events]
+patch=1,EE,E00EB319,extended,00B602F4
 //Change load location
-patch=1,EE,E0010114,extended,002E8CF8
 patch=1,EE,002E8CF8,extended,00B60104
 //Add events
-patch=1,EE,E0060104,extended,002E8CF8
 patch=1,EE,20B60100,extended,002FB1E4
 patch=1,EE,20B60104,extended,0000000F
 patch=1,EE,20B60108,extended,0000000F
@@ -214,237 +200,454 @@ patch=1,EE,20B6010C,extended,00B5B3B4
 patch=1,EE,40B60110,extended,00040001
 patch=1,EE,00B602C0,extended,00000010
 //Add event modes
-patch=1,EE,E003B3B4,extended,00B6010C
 patch=1,EE,00B602C8,extended,0000000C
 patch=1,EE,40B602D8,extended,00030004
 patch=1,EE,0000000F,extended,00000001
 //Fix ID strings for Event names
-patch=1,EE,E0040550,extended,00B602F0
 patch=1,EE,00B602C0,extended,00000660
 patch=1,EE,10B602D0,extended,0000067A
 patch=1,EE,10B602E0,extended,00000794
 patch=1,EE,00B602F0,extended,0000055A
 
+[Events\Enable all sub-options all the time]
+patch=1,EE,E001002B,extended,00E27C04
+patch=1,EE,00E27C00,extended,66E497D0
+
+[Events\Allow changing teams in any event]
+patch=1,EE,E0019AD7,extended,00BD0E18
+patch=1,EE,20BD0E14,extended,00000000
+
+[Events\More Laps/Time Limit]
+description=0-255 Laps/Time
+//For writing minimum
+patch=1,EE,E0031801,extended,102DFCE8
+patch=1,EE,602DFCE8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0031801,extended,102DFCE8
+patch=1,EE,602DFCE8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
+//Check if equal to zero
+patch=1,EE,E0010000,extended,002DA5D8
+patch=1,EE,202DFCE8,extended,002E1701
+
+[Events\Team Mode on any event]
+description=Advance Options > L1+R1. If not applying, change event/location and retry.
+patch=1,EE,E0051825,extended,00BD1638
+patch=1,EE,20BD1624,extended,90830078
+patch=1,EE,20BD1628,extended,38630020
+patch=1,EE,20BD162C,extended,A0830078
+patch=1,EE,20BD1630,extended,90840005
+patch=1,EE,20BD1634,extended,00000000
+
+[Events\Options\Circuit Race with Collectathon options]
+description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
+patch=1,EE,502E00D0,extended,00000003
+patch=1,EE,002DFCC0,extended,00000000
+patch=1,EE,502DFE9C,extended,00000003
+patch=1,EE,002DFCC4,extended,00000000
+
+[Events\Options\Freeze Rally with Turbo Dash options
+description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
+patch=1,EE,502DFE98,extended,00000003
+patch=1,EE,002E3E74,extended,00000000
+patch=1,EE,502DFE9C,extended,00000003
+patch=1,EE,002E3E78,extended,00000000
+
+[Events\Options\Other events with Collectathon options
+description=Do not change the Time Limit or anything like that!
+patch=1,EE,502E00D0,extended,00000003
+patch=1,EE,002DF904,extended,00000000
+
+[Events\Force Gamemode\Save Mizo gamemode to selected task]
+description=Change vehicle/color to apply.
+patch=1,EE,E0020012,extended,00F21890
+patch=1,EE,20F21884,extended,24040011
+patch=1,EE,20F2188C,extended,A0640005
+
+[Events\Force Gamemode\Freeze Rally = Training]
+patch=1,EE,E0010002,extended,00B60198
+patch=1,EE,00B60198,extended,0000000F
+
+[Events\Force Gamemode\Rush Hour = Training 2]
+patch=1,EE,E001000D,extended,00B60178
+patch=1,EE,00B60178,extended,00000010
+
+[Events\Force Gamemode\Time Attack = Mizo]
+patch=1,EE,E0010003,extended,00B60168
+patch=1,EE,00B60168,extended,00000011
+
+[Events\Adventure Specific\Grand Prix Special Dialogue\Enable (Enable first!)]
+patch=1,EE,E0011825,extended,00EC5074
+patch=1,EE,20EC5078,extended,66E37880
+
+[Events\Adventure Specific\Grand Prix Special Dialogue\Dialogue fix without saving to profile]
+description=If dialogue doesn't play, enable this.
+patch=1,EE,E001202D,extended,00A55414
+patch=1,EE,20A55418,extended,0000202D
+
+[Events\Adventure Specific\Grand Prix Special Dialogue\Dialogue fix with saving to profile]
+description=If dialogue doesn't play, enable this.
+patch=1,EE,E001382D,extended,00BAE6E8
+patch=1,EE,20BAE6EC,extended,A4E0000C
+
+[Events\Adventure Specific\Play as Jak]
+patch=1,EE,E0017880,extended,00B6BFD4
+patch=1,EE,20B6BFD8,extended,66E47880
+
+[Events\Adventure Specific\Sabotage\Enable (Enable first!)]
+patch=1,EE,E0011825,extended,00EC1E68
+patch=1,EE,20EC1E6C,extended,66E37880
+
+[Events\Adventure Specific\Sabotage\Dialogue fix (Saves to profile!)]
+description=If dialogue doesn't play, enable this.
+patch=1,EE,E0012825,extended,00BAE1D4
+patch=1,EE,20BAE1D8,extended,24040001
+
+[Events\Mizo\Spawn 6th Mizo]
+description=Use only if 5th player is Mizo (ex. having 5 CPUs)
+patch=1,EE,E0028FA3,extended,00EDBE34
+patch=1,EE,00EDBE38,extended,9C640020
+patch=1,EE,10EDBE5C,extended,A48302A4
+
+[Events\Mizo\Multiplayer]
+description=All clients must have this code enabled
+//Memory Check
+patch=1,EE,E021F809,extended,00EDBE3C
+//Function
+patch=1,EE,20EDBDD4,extended,8EF418B7
+patch=1,EE,20EDBDD8,extended,8E940098
+patch=1,EE,20EDBDDC,extended,67A50010
+patch=1,EE,20EDBDE0,extended,12F60002
+patch=1,EE,20EDBDE4,extended,02E01825
+patch=1,EE,20EDBDE8,extended,9EC3001C
+patch=1,EE,20EDBDEC,extended,ACA30008
+patch=1,EE,20EDBDF0,extended,ACA00044
+patch=1,EE,20EDBDF4,extended,66E3F640
+patch=1,EE,20EDBDF8,extended,ACA30040
+patch=1,EE,20EDBDFC,extended,8EF9076F
+patch=1,EE,20EDBE00,extended,001418B8
+patch=1,EE,20EDBE04,extended,8EE48FA3
+patch=1,EE,20EDBE08,extended,0064182D
+patch=1,EE,20EDBE0C,extended,9C64000C
+patch=1,EE,20EDBE10,extended,0320F809
+patch=1,EE,20EDBE14,extended,001F1000
+patch=1,EE,20EDBE18,extended,8EE38F9F
+patch=1,EE,20EDBE1C,extended,2463FFFF
+patch=1,EE,20EDBE20,extended,1683FFEE
+patch=1,EE,20EDBE24,extended,0060A025
+patch=1,EE,20EDBE28,extended,24140000
+patch=1,EE,20EDBE2C,extended,10000004
+patch=1,EE,20EDBE30,extended,24010000
+patch=1,EE,20EDBE40,extended,2403006B
+patch=1,EE,20EDBE44,extended,8EE46DC3
+patch=1,EE,20EDBE48,extended,0081202D
+patch=1,EE,20EDBE4C,extended,A48300C4
+patch=1,EE,20EDBE50,extended,66940001
+patch=1,EE,20EDBE54,extended,8EE38F9F
+patch=1,EE,20EDBE58,extended,0283182A
+patch=1,EE,20EDBE5C,extended,1460FFF8
+patch=1,EE,20EDBE60,extended,24210060
+
+[Events\Mizo\Spawn All]
+description=Spawns all 6 players
+//Memory Check
+patch=1,EE,E0190008,extended,00EDBE60
+//Rewrite the whole function
+patch=1,EE,20EDBDD4,extended,24140000
+patch=1,EE,20EDBE00,extended,001418B8
+patch=1,EE,20EDBE04,extended,8EE48FA3
+patch=1,EE,20EDBE08,extended,0064182D
+patch=1,EE,20EDBE0C,extended,9C64000C
+patch=1,EE,20EDBE10,extended,0320F809
+patch=1,EE,20EDBE14,extended,001F1000
+patch=1,EE,20EDBE18,extended,66940001
+patch=1,EE,20EDBE1C,extended,8EE38F9F
+patch=1,EE,20EDBE20,extended,0283182A
+patch=1,EE,20EDBE24,extended,1460FFEC
+patch=1,EE,20EDBE28,extended,00401825
+patch=1,EE,20EDBE2C,extended,24140000
+patch=1,EE,20EDBE30,extended,24030060
+patch=1,EE,20EDBE34,extended,00741818
+patch=1,EE,20EDBE38,extended,64630070
+patch=1,EE,20EDBE3C,extended,8EE46DC3
+patch=1,EE,20EDBE40,extended,0064882D
+patch=1,EE,20EDBE44,extended,2403006B
+patch=1,EE,20EDBE48,extended,A6230054
+patch=1,EE,20EDBE4C,extended,66940001
+patch=1,EE,20EDBE50,extended,8EE36DC3
+patch=1,EE,20EDBE54,extended,80630041
+patch=1,EE,20EDBE58,extended,0283182A
+patch=1,EE,20EDBE5C,extended,1460FFF4
+
+[Events\Driver Never Taken\Allow selecting more Jaks]
+patch=1,EE,602DD878,extended,1000008E
+patch=1,EE,00020000,extended,0000005C
+
+[Events\Driver Never Taken\Allow selecting any (Version 1)]
+//Selection checks
+patch=1,EE,E00B0035,extended,00A867FC
+patch=1,EE,20A867F8,extended,8EE3C0E7
+patch=1,EE,20A86800,extended,9C63FFFC
+patch=1,EE,20A86804,extended,9C6300D4
+patch=1,EE,20A86808,extended,9C630020
+patch=1,EE,20A8680C,extended,AC600964
+patch=1,EE,20A86810,extended,AC600A9C
+patch=1,EE,20A86814,extended,AC6009B0
+patch=1,EE,20A86818,extended,AC600AE8
+patch=1,EE,20A8681C,extended,AC600188
+patch=1,EE,20A86820,extended,1000002C
+patch=1,EE,20A86824,extended,02E01825
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCF910
+patch=1,EE,20BCF914,extended,10000003
+
+[Events\Driver Never Taken\Allow selecting any (Version 2)]
+//Change load location
+patch=1,EE,E001F7B4,extended,00B4585C
+patch=1,EE,00B4585C,extended,00BCF7AC
+//Allow selecting the same driver
+patch=1,EE,E0060010,extended,00BCF7E4
+patch=1,EE,20BCF7A8,extended,002F9824
+patch=1,EE,20BCF7AC,extended,82C20144
+patch=1,EE,20BCF7B0,extended,8EE318B7
+patch=1,EE,20BCF7B4,extended,8C630098
+patch=1,EE,20BCF7B8,extended,00031878
+patch=1,EE,20BCF7BC,extended,0062182D
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCF910
+patch=1,EE,20BCF914,extended,10000003
+
+[Events\Grand Prix\Enable (Enable first!)]
+description=Press R3+SELECT to enable
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,602DB5F4,extended,8EE418B7
+patch=1,EE,00010002,extended,0000005C
+patch=1,EE,00000290,extended,00000000
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,602DB5F4,extended,8C840098
+patch=1,EE,00020002,extended,0000005C
+patch=1,EE,00000294,extended,00000000
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,602DB5F4,extended,02E4100A
+patch=1,EE,00020002,extended,0000005C
+patch=1,EE,00000298,extended,00000000
+
+[Events\Grand Prix\Reset Status]
+description=Press R3+SELECT to reset the status
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,007B9C8C,extended,00000000
+patch=1,EE,407B9CF4,extended,00170001
+patch=1,EE,00000000,extended,00000000
+
+[Events\Grand Prix\Red Eco Cup]
+description=Hold R3+SELECT and press D-PAD UP
+patch=1,EE,E001FFEA,extended,0028351C
+patch=1,EE,207B9C88,extended,009936B0
+
+[Events\Grand Prix\Green Eco Cup]
+description=Hold R3+SELECT and press D-PAD RIGHT
+patch=1,EE,E001FFDA,extended,0028351C
+patch=1,EE,207B9C88,extended,009935E0
+
+[Events\Grand Prix\Blue Eco Cup]
+description=Hold R3+SELECT and press D-PAD DOWN
+patch=1,EE,E001FFBA,extended,0028351C
+patch=1,EE,207B9C88,extended,00993500
+
+[Events\Grand Prix\Yellow Eco Cup]
+description=Hold R3+SELECT and press D-PAD LEFT
+patch=1,EE,E001FF7A,extended,0028351C
+patch=1,EE,207B9C88,extended,00993430
+
+[Events\Grand Prix (Alternative)\Show Grand Prix results at race end]
+description=Hold R3+START and press D-PAD RIGHT to enable
+patch=1,EE,E002FFD3,extended,0028351C
+patch=1,EE,602DB55C,extended,00000000
+patch=1,EE,00020001,extended,000002B8
+
+[Events\Grand Prix (Alternative)\Store Event Number]
+description=Hold R3+START and press D-PAD RIGHT to enable
+patch=1,EE,E005FFD3,extended,0028351C
+patch=1,EE,00BD24E8,extended,9C6305D8
+patch=1,EE,20BD24F4,extended,64630001
+patch=1,EE,20BD24F8,extended,8EE41D9F
+patch=1,EE,20BD24FC,extended,AC8305D8
+patch=1,EE,20BD2500,extended,10000028
+
+[Events\Grand Prix (Alternative)\Reset]
+description=Hold R3+START and press D-PAD LEFT to reset
+patch=1,EE,E003FF73,extended,0028351C
+patch=1,EE,007B9C8C,extended,00000000
+patch=1,EE,407B9CF4,extended,00170001
+patch=1,EE,00000000,extended,00000000
+
+[Events\Grand Prix (Alternative)\Disable]
+description=Hold R3+START and press D-PAD LEFT to disable
+patch=1,EE,E007FF73,extended,0028351C
+patch=1,EE,602DB55C,extended,12E30008
+patch=1,EE,00020001,extended,000002B8
+patch=1,EE,00BD24E8,extended,9C6305D4
+patch=1,EE,20BD24F4,extended,8EE31D9F
+patch=1,EE,20BD24F8,extended,9C6305D8
+patch=1,EE,20BD24FC,extended,2C630002
+patch=1,EE,20BD2500,extended,10600028
+
+// GET ALL
+
+[Get All (Load Profile)\Get All Drivers]
+patch=1,EE,E0012025,extended,00BAE670
+patch=1,EE,20BAE674,extended,2403FFFF
+
+[Get All (Load Profile)\Get All Tasks]
+patch=1,EE,E0061825,extended,00BAEA28
+patch=1,EE,00BAE9E8,extended,1000000B
+patch=1,EE,20BAEA0C,extended,34840001
+patch=1,EE,20BAEA14,extended,ACA40000
+patch=1,EE,20BAEA18,extended,8E840008
+patch=1,EE,20BAEA1C,extended,0064202A
+patch=1,EE,20BAEA20,extended,1480FFF3
+patch=1,EE,20BAEA24,extended,00000000
+//
+patch=1,EE,E00230B8,extended,00BAEEC8
+patch=1,EE,20BAEECC,extended,3C050001
+patch=1,EE,20BAEED0,extended,24A50003
+//
+patch=1,EE,E001282D,extended,00BAED40
+patch=1,EE,20BAED44,extended,24050001
+//
+patch=1,EE,E002282D,extended,00BAE9A8
+patch=1,EE,20BAE99C,extended,24040003
+patch=1,EE,20BAE9B0,extended,A4A40008
+
+[Get All (Load Profile)\Get All Vehicle Parts]
+patch=1,EE,E0071825,extended,00BAE910
+patch=1,EE,00BAE8D4,extended,1000000A
+patch=1,EE,20BAE8F4,extended,34A50006
+patch=1,EE,20BAE8FC,extended,A0C5000A
+patch=1,EE,20BAE900,extended,8E850008
+patch=1,EE,20BAE904,extended,0085282A
+patch=1,EE,20BAE908,extended,14A0FFF4
+patch=1,EE,20BAE90C,extended,00000000
+
+[Get All (Load Profile)\Get All Vehicles]
+patch=1,EE,E003001C,extended,00BAE770
+patch=1,EE,20BAE774,extended,34630001
+patch=1,EE,20BAE778,extended,AE430030
+patch=1,EE,20BAE780,extended,24030000
+
+[Get All (Load Profile)\Get All Venues]
+patch=1,EE,E0071825,extended,00BAEA28
+patch=1,EE,00BAE9E8,extended,1000000B
+patch=1,EE,20BAEA0C,extended,34840001
+patch=1,EE,20BAEA14,extended,ACA40000
+patch=1,EE,20BAEA18,extended,8E840008
+patch=1,EE,20BAEA1C,extended,0064202A
+patch=1,EE,20BAEA20,extended,1480FFF3
+patch=1,EE,20BAEA24,extended,00000000
+
+[Get All (Load Profile)\Mad Cash]
+patch=1,EE,E0042025,extended,00BAEA3C
+patch=1,EE,20BAEA40,extended,3C0349B7
+patch=1,EE,20BAEA44,extended,24631B00
+patch=1,EE,20BAEA48,extended,AEA3001C
+patch=1,EE,20BAEA50,extended,44030000
+
+[Get All (Load Profile)\Trick Out Vehicles]
+patch=1,EE,E004280A,extended,00BAE890
+patch=1,EE,20BAE7E0,extended,0000382D
+patch=1,EE,20BAE81C,extended,0000382D
+patch=1,EE,20BAE858,extended,0000382D
+patch=1,EE,20BAE88C,extended,0000302D
+
 // MISC
 
-[Misc\Mirror the entire world]
-description=In Secrets Shop, change "Mirrored Advanture Mode".
-patch=1,EE,E002043C,extended,00BAE640
-patch=1,EE,20BAE640,extended,3863FF00
-patch=1,EE,20BAE648,extended,FEA3043C
+[Misc\Disable Backwards Bot]
+patch=1,EE,E0011701,extended,002DF6F0
+patch=1,EE,002DF6F0,extended,002E1705
 
-// - BAD WEATHER
+[Misc\Enable Tractor Beam\At last place]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E74E0,extended,00000007
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,602E74E0,extended,00070036
+patch=1,EE,00020001,extended,00000048
 
-[Misc\Bad Weather\Enable (Mirrored must be off!)]
-description=In Secrets Shop, change "Mirrored Advanture Mode".
-//Hero Mode unlocked
-patch=1,EE,E0018001,extended,007B9AF0
-patch=1,EE,207B9AF0,extended,00FF0001
-//Hero Mode locked
-patch=1,EE,E0018000,extended,007B9AF0
-patch=1,EE,207B9AF0,extended,00FF0000
+[Misc\Enable Tractor Beam\At second place]
+description=Replaces Turbo Lock with Tractor Beam
+patch=1,EE,602E74E4,extended,00000007
+patch=1,EE,00000001,extended,0000004E
 
-[Misc\Bad Weather\Disable (Mirrored must be off!)]
-description=In Secrets Shop, change "Mirrored Advanture Mode".
-//Hero Mode unlocked
-patch=1,EE,E0018001,extended,007B9AF0
-patch=1,EE,207B9AF0,extended,00008001
-//Hero Mode locked
-patch=1,EE,E0018000,extended,007B9AF0
-patch=1,EE,207B9AF0,extended,00008000
+[Misc\Enable Tractor Beam\At middle place]
+description=Replaces Turbo Lock with Tractor Beam
+patch=1,EE,602E74F0,extended,00000007
+patch=1,EE,00000001,extended,0000004E
+
+[Misc\Bad Weather (Saves to profile!)\Activate]
+patch=1,EE,602E34A0,extended,000000FF
+patch=1,EE,00000001,extended,0000043E
+
+[Misc\Bad Weather (Saves to profile!)\Deactivate]
+patch=1,EE,602E34A0,extended,00000000
+patch=1,EE,00000001,extended,0000043E
+
+[Misc\Mirrored Game (Saves to profile!)\Activate]
+patch=1,EE,602E34A0,extended,000000FF
+patch=1,EE,00000001,extended,0000043D
+
+[Misc\Mirrored Game (Saves to profile!)\Deactivate]
+patch=1,EE,602E34A0,extended,00000000
+patch=1,EE,00000001,extended,0000043D
 
 // ONLINE-LAN
-// - DNAS BYPASS
-[Online-Lan\DNAS Bypass\Enable]
-author=Erdrick The Hero
-description=Connect to online games more reliably.
+
+[Online-LAN\DNAS Bypass]
 patch=1,EE,D1080274,extended,00000006
 patch=1,EE,01080268,extended,00000000
 patch=1,EE,D1080274,extended,00000006
 patch=1,EE,01080274,extended,00000005
 
-[Online-Lan\DNAS Bypass\Enable Alternative Version]
-author=Erdrick The Hero
-description=Likely unneeded, try this instead if the above doesn't work.
-patch=1,EE,D1080274,extended,24020006
-patch=1,EE,01080268,extended,00000000
-patch=1,EE,D1080274,extended,24020006
-patch=1,EE,01080274,extended,00000005
+[Online-LAN\Events\Enable only Freeze Rally, Death Race, Rush Hour]
+patch=1,EE,602DEF04,extended,6463FFFD
+patch=1,EE,00000001,extended,0000006C
+patch=1,EE,602DEF04,extended,6463FFFD
+patch=1,EE,00000001,extended,00000084
 
-// - EVENTS
-[Online-Lan\Events\Enable All Events]
-patch=1,EE,E001182F,extended,0131D914
-patch=1,EE,2131D914,extended,0000182D
+[Online-LAN\Events\Enable Time Trial for LAN]
+patch=1,EE,602DEF04,extended,6463FFFC
+patch=1,EE,00000001,extended,00000104
 
-[Online-Lan\Events\Enable Freeze Rally, Death Race, Rush Hour]
-patch=1,EE,E002FFFF,extended,0131D8B8
-patch=1,EE,0131D8A0,extended,6463FFFD
-patch=1,EE,0131D8B8,extended,6464FFFD
+[Online-LAN\Events\Enable Time Trial for more players]
+patch=1,EE,602DEF04,extended,6464FFFC
+patch=1,EE,00000001,extended,000001CC
+patch=1,EE,602DEF04,extended,6464FFFC
+patch=1,EE,00000001,extended,00000200
 
-[Online-Lan\Events\Enable Time Trial for LAN]
-patch=1,EE,E001FFFD,extended,0131D938
-patch=1,EE,0131D938,extended,6463FFFC
+[Online-LAN\Events\Enable all events for LAN and Online]
+patch=1,EE,602DEF04,extended,0000182D
+patch=1,EE,00020001,extended,000000E0
 
-[Online-Lan\Events\Enable Time Trial for more players]
-patch=1,EE,E002FFFD,extended,0131DA34
-patch=1,EE,0131DA00,extended,6464FFFC
-patch=1,EE,0131DA34,extended,6464FFFC
-
-// - OTHER
-[Online-Lan\5 CPUs, 6 Players for events]
-description=Saves onto the event and map when trying to start the event.
-patch=1,EE,E0045567,extended,013144DC
-patch=1,EE,213144CC,extended,28630006
-patch=1,EE,113144D8,extended,24030506
-patch=1,EE,213144DC,extended,10000095
-patch=1,EE,213144E0,extended,A443000C
+[Online-LAN\Other\5 CPUs, 6 Players for events]
+description=Saves onto the event and map when trying to start the event
+patch=1,EE,E0031825,extended,00BCCC7C
+patch=1,EE,20BCCC68,extended,24030506
+patch=1,EE,20BCCC6C,extended,A483000C
+patch=1,EE,20BCCC74,extended,90840005
 
 // SPLIT-SCREEN
-// - BYPASSES
-[Split-Screen\Bypasses\Bypass Event Checks]
-//Bypass event check for SS
-patch=1,EE,E001FFFE,extended,0130C4D4
-patch=1,EE,0130C4D4,extended,6464FFFD
-//Bypass event check for SS (LAN/Online)
-patch=1,EE,E001FFFE,extended,0130C9A0
-patch=1,EE,0130C9A0,extended,6464FFFD
-//Rush Hour check (LAN/Online)
-patch=1,EE,E001FFF3,extended,01314180
-patch=1,EE,01314180,extended,6464FFF0
-//Time Attack check (LAN/Online)
-patch=1,EE,E001FFFD,extended,01314148
-patch=1,EE,01314148,extended,6463FFFA
 
-[Split-Screen\Bypasses\Bypass Maps Checks]
-description=Use this if NOT the host (Online-LAN).
-//Bypass SS checking for SS maps
-patch=1,EE,E001FFFE,extended,0130C580
-patch=1,EE,0130C580,extended,6463FFFD
-//Bypass SS checking for SS maps (LAN/Online)
-patch=1,EE,E001FFFE,extended,0130CA4C
-patch=1,EE,0130CA4C,extended,6464FFFD
+[Split-Screen\Fix crashing on Misc Events]
+patch=1,EE,E0060010,extended,00B28B44
+patch=1,EE,20B28B24,extended,10850005
+patch=1,EE,20B28B28,extended,9C620014
+patch=1,EE,00B28B2C,extended,9C62001C
+patch=1,EE,20B28B30,extended,14570002
+patch=1,EE,00B28B38,extended,9C620014
 
-[Split-Screen\Bypasses\Start the SS game with bypasses (LAN/Online)]
-patch=1,EE,E001001C,extended,01314258
-patch=1,EE,01314258,extended,9C630018
-
-// - MAP FIXES
-[Split-Screen\Map Fixes\Tours]
-description=Due to missing map for SS, SP one is loaded.
-//Check in case to avoid crashes
-patch=1,EE,E004726B,extended,00991F18
-//Western Tour (kratour-start-1)
-patch=1,EE,20991F00,extended,00991F14
-//Eastern Tour (havtour-junglec-1)
-patch=1,EE,20991E90,extended,00991EA4
-//Northern Tour (spatour-templea-1)
-patch=1,EE,20991BB0,extended,00991BC4
-//Southern Tour (icetour-start)
-patch=1,EE,20991390,extended,009913A4
-
-[Split-Screen\Map Fixes\Freeze Rally]
-//Check in case to avoid crashes
-patch=1,EE,E0147073,extended,00992FA8
-//Kras City (krasx-start)
-patch=1,EE,20991B60,extended,009929A4
-//Loading Docks (docksx-1)
-patch=1,EE,20990DA0,extended,009930A4
-//Deathdrome (drome-dromex-1)
-patch=1,EE,20990CB0,extended,00992DF4
-//Waterfront Loop (dockkrax-start)
-patch=1,EE,20992600,extended,00991E34
-//Seaport Strip (dromdocx-start)
-patch=1,EE,20990A80,extended,00992F14
-//Forbidden Jungle (junglex-start)
-patch=1,EE,20992C00,extended,00992554
-//Haven City (havenx-start)
-patch=1,EE,20990580,extended,00992024
-//Sewer Raceway (sewerx-start)
-patch=1,EE,20991590,extended,009927E4
-//City Outskirts (havjungx-start)
-patch=1,EE,20990620,extended,00992304
-//Waterworks Circuit (havsewx-start)
-patch=1,EE,20991830,extended,00991694
-//Spargus City (spargusx-start)
-patch=1,EE,20992F90,extended,00993134
-//Canyon Run (canyonx-start)
-patch=1,EE,20991FC0,extended,00992394
-//Precursor Temple (templex-start)
-patch=1,EE,20990C60,extended,00992AF4
-//Beachfront Drive (cansparx-start)
-patch=1,EE,209912A0,extended,00992754
-//Badland Sanctuary (spartemx-start)
-patch=1,EE,2098F8B0,extended,00992224
-//Frozen Speedway (snowx-start)
-patch=1,EE,20990B70,extended,00992B84
-//Mountaintop Highway (peakx-start)
-patch=1,EE,20991A20,extended,00992CD4
-//Icebound Citadel (icex-start)
-patch=1,EE,20991DD0,extended,00992D64
-//Glacier Alley (icebergx-start)
-patch=1,EE,2098F770,extended,00992144
-//Timberline Track (icepassx-start)
-patch=1,EE,2098F7C0,extended,00992A14
-
-[Split-Screen\Map Fixes\Time Attack]
-//Check in case to avoid crashes
-patch=1,EE,E018726B,extended,00990548
-//Kras City
-patch=1,EE,20990530,extended,009929A4
-//Loading Docks
-patch=1,EE,209904E0,extended,009930A4
-//Deathdrome
-patch=1,EE,20990490,extended,00992DF4
-//Waterfront Loop
-patch=1,EE,20990440,extended,00991E34
-//Seaport Strip
-patch=1,EE,209903F0,extended,00992F14
-//Forbidden Jungle
-patch=1,EE,20990350,extended,00992554
-//Haven City
-patch=1,EE,20990300,extended,00992024
-//Sewer Raceway
-patch=1,EE,209902B0,extended,009927E4
-//City Outskirts
-patch=1,EE,20990260,extended,00992304
-//Waterworks Circuit
-patch=1,EE,20990210,extended,00991694
-//Spargus City
-patch=1,EE,20990170,extended,00993134
-//Canyon Run
-patch=1,EE,20990120,extended,00992394
-//Precursor Temple
-patch=1,EE,209900D0,extended,00992AF4
-//Beachfront Drive
-patch=1,EE,20990080,extended,00992754
-//Badland Sanctuary
-patch=1,EE,20990030,extended,00992224
-//Frozen Speedway
-patch=1,EE,2098FF90,extended,00992B84
-//Mountaintop Highway
-patch=1,EE,2098FF40,extended,00992CD4
-//Icebound Citadel
-patch=1,EE,2098FEF0,extended,00992D64
-//Glacier Alley
-patch=1,EE,2098FEA0,extended,00992144
-//Timberline Track
-patch=1,EE,2098FE50,extended,00992A14
-
-[Split-Screen\Map Fixes\Tutorials and Mizo]
-//Fixes for Split-Screen
-patch=1,EE,E0031701,extended,0098F510
-//kras-training
-patch=1,EE,209931B0,extended,009931C4
-//cliffs-training
-patch=1,EE,2098FCC0,extended,00992E84
-//kratour-final-boss-start
-patch=1,EE,2098F510,extended,0098F524
-//snow-training2
-patch=1,EE,2098FC70,extended,00992BA4
-
-// - TOURS
-[Split-Screen\Tours\Tours Fix\Enable]
-description=L3+SELECT when on Tour; L3+START when not.
+[Split-Screen\Tours\Enable Fix]
+description=2nd controller: L3+SELECT to activate, L3+START to deactivate
 //2nd controller: L3+SELECT to activate
 patch=1,EE,E005FFFC,extended,0028359C
 //Region, on-enter(want-display), as in SP
@@ -466,8 +669,148 @@ patch=1,EE,20A5D5CC,extended,66E40004
 //Reset the counter on start/restart
 patch=1,EE,20EB6848,extended,00000000
 
-[Split-Screen\Tours\Tours Fix\Next Level Insta Load]
-description=Don't change the display command from display.
+[Split-Screen\Tours\Force display always]
+description=Displays next level without passing trough region
 patch=1,EE,E0020004,extended,009C94F0
 patch=1,EE,209C9478,extended,00000000
 patch=1,EE,209C94F0,extended,00000000
+
+[Split-Screen\Continue Point Fixes\Tours]
+patch=1,EE,E004726B,extended,00991F18
+//Western Tour (kratour-start-1)
+patch=1,EE,20991F00,extended,00991F14
+//Eastern Tour (havtour-junglec-1)
+patch=1,EE,20991E90,extended,00991EA4
+//Northern Tour (spatour-templea-1)
+patch=1,EE,20991BB0,extended,00991BC4
+//Southern Tour (icetour-start)
+patch=1,EE,20991390,extended,009913A4
+
+[Split-Screen\Continue Point Fixes\Misc Events]
+patch=1,EE,E0051701,extended,0098F510
+//kras-training
+patch=1,EE,209931B0,extended,009931C4
+//jungle-training
+patch=1,EE,2098FC20,extended,00992C14
+//cliffs-training
+patch=1,EE,2098FCC0,extended,00992E84
+//snow-training2
+patch=1,EE,2098FC70,extended,00992BA4
+//kratour-final-boss-start
+patch=1,EE,2098F510,extended,0098F524
+
+[Split-Screen\Continue Point Fixes\Freeze Rally]
+patch=1,EE,E0147073,extended,009930A8
+//Kras City (krasx-start)
+patch=1,EE,20991C60,extended,00992AA4
+//Loading Docks (docksx-1)
+patch=1,EE,20990EA0,extended,009931A4
+//Deathdrome (drome-dromex-1)
+patch=1,EE,20990DB0,extended,00992EF4
+//Waterfront Loop (dockkrax-start)
+patch=1,EE,20992700,extended,00991F34
+//Seaport Strip (dromdocx-start)
+patch=1,EE,20990B80,extended,00993014
+//Forbidden Jungle (junglex-start)
+patch=1,EE,20992D00,extended,00992654
+//Haven City (havenx-start)
+patch=1,EE,20990680,extended,00992124
+//Sewer Raceway (sewerx-start)
+patch=1,EE,20991690,extended,009928E4
+//City Outskirts (havjungx-start)
+patch=1,EE,20990720,extended,00992404
+//Waterworks Circuit (havsewx-start)
+patch=1,EE,20991930,extended,00991794
+//Spargus City (spargusx-start)
+patch=1,EE,20993090,extended,00993234
+//Canyon Run (canyonx-start)
+patch=1,EE,209920C0,extended,00992494
+//Precursor Temple (templex-start)
+patch=1,EE,20990D60,extended,00992BF4
+//Beachfront Drive (cansparx-start)
+patch=1,EE,209913A0,extended,00992854
+//Badland Sanctuary (spartemx-start)
+patch=1,EE,2098F9B0,extended,00992324
+//Frozen Speedway (snowx-start)
+patch=1,EE,20990C70,extended,00992C84
+//Mountaintop Highway (peakx-start)
+patch=1,EE,20991B20,extended,00992DD4
+//Icebound Citadel (icex-start)
+patch=1,EE,20991ED0,extended,00992E64
+//Glacier Alley (icebergx-start)
+patch=1,EE,2098F870,extended,00992244
+//Timberline Track (icepassx-start)
+patch=1,EE,2098F8C0,extended,00992B14
+
+[Split-Screen\Continue Point Fixes\Time Trial]
+patch=1,EE,E018726B,extended,00990648
+//Kras City
+patch=1,EE,20990630,extended,00992AA4
+//Loading Docks
+patch=1,EE,209905E0,extended,009931A4
+//Deathdrome
+patch=1,EE,20990590,extended,00992EF4
+//Waterfront Loop
+patch=1,EE,20990540,extended,00991F34
+//Seaport Strip
+patch=1,EE,209904F0,extended,00993014
+//Forbidden Jungle
+patch=1,EE,20990450,extended,00992654
+//Haven City
+patch=1,EE,20990400,extended,00992124
+//Sewer Raceway
+patch=1,EE,209903B0,extended,009928E4
+//City Outskirts
+patch=1,EE,20990360,extended,00992404
+//Waterworks Circuit
+patch=1,EE,20990310,extended,00991794
+//Spargus City
+patch=1,EE,20990270,extended,00993234
+//Canyon Run
+patch=1,EE,20990220,extended,00992494
+//Precursor Temple
+patch=1,EE,209901D0,extended,00992BF4
+//Beachfront Drive
+patch=1,EE,20990180,extended,00992854
+//Badland Sanctuary
+patch=1,EE,20990130,extended,00992324
+//Frozen Speedway
+patch=1,EE,20990090,extended,00992C84
+//Mountaintop Highway
+patch=1,EE,20990040,extended,00992DD4
+//Icebound Citadel
+patch=1,EE,2098FFF0,extended,00992E64
+//Glacier Alley
+patch=1,EE,2098FFA0,extended,00992244
+//Timberline Track
+patch=1,EE,2098FF50,extended,00992B14
+
+[Split-Screen\Bypasses\Button Bypass]
+description=2nd controller = L3+R3 when on driver select
+patch=1,EE,E002FFF9,extended,0028371C
+patch=1,EE,602DD8E8,extended,002E1805
+patch=1,EE,00000001,extended,00000148
+
+[Split-Screen\Bypasses\Bypass event check for SS]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6464FFFD
+patch=1,EE,00000003,extended,000000A0
+patch=1,EE,00000020,extended,000001C0
+
+[Split-Screen\Bypasses\Bypass event check for SS (LAN/Online)]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6464FFFD
+patch=1,EE,00000003,extended,000000A0
+patch=1,EE,00000020,extended,0000068C
+
+[Split-Screen\Bypasses\Rush Hour check (LAN/Online)]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6464FFF0
+patch=1,EE,00000003,extended,000000D0
+patch=1,EE,00000020,extended,00000D6C
+
+[Split-Screen\Bypasses\Time Attack check (LAN/Online)]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6463FFFA
+patch=1,EE,00000003,extended,000000D0
+patch=1,EE,00000020,extended,00000D34

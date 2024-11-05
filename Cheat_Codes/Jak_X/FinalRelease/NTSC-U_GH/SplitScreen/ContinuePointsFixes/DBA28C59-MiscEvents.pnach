@@ -1,7 +1,7 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=MISC EVENTS
 
-//Fixes for Split-Screen
+//Memory Check
 patch=1,EE,E0051801,extended,0098F610
 //kras-training
 patch=1,EE,209932B0,extended,009932C4

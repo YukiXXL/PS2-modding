@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Get All Tasks (Adventure Mode COmpleted)
+comment=Get All Tasks (Adventure Mode Completed)
 
 patch=1,EE,E0061825,extended,00BAEAE0 //Memory Check
 patch=1,EE,00BAEAA0,extended,1000000B //beq zero, zero, $00baead0
