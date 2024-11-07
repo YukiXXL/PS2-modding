@@ -97,19 +97,28 @@ description=Allows CPUs to get Turbo Locks
 patch=1,EE,602DC544,extended,00000020
 patch=1,EE,00000001,extended,00000164
 
-[CPUs\Events\5 CPUs on Death Race and Rush Hour]
+[CPUs\Events\CPUs are seperate team than the Player 1]
+description=For 1v6
+patch=1,EE,E0010009,extended,00BD0778
+patch=1,EE,20BD0774,extended,838300CB
+
+[CPUs\Events\CPUs can use any vehicle on any CUP]
+patch=1,EE,602E0D7C,extended,10000019
+patch=1,EE,00020001,extended,00000008
+
+[CPUs\Events\Number of CPUs\5 CPUs on Death Race and Rush Hour]
 patch=1,EE,E0010008,extended,00BCC9CC
 patch=1,EE,00BCC9C8,extended,24130005
 
-[CPUs\Events\5 CPUs on Freeze Rally]
+[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally]
 patch=1,EE,E0011825,extended,00BCC9F4
 patch=1,EE,00BCC9EC,extended,24130005
 
-[CPUs\Events\5 CPUs on Boss Battle (Mizo)]
+[CPUs\Events\Number of CPUs\5 CPUs on Boss Battle (Mizo)]
 patch=1,EE,E0010002,extended,00BCC9E4
 patch=1,EE,00BCC9E0,extended,24130005
 
-[CPUs\Events\Select any number of CPUs on any event]
+[CPUs\Events\Number of CPUs\Select any number of CPUs on any event]
 description="Enable all sub-options all the time" required!
 patch=1,EE,E0031605,extended,002E0E78
 patch=1,EE,602DD508,extended,24030005

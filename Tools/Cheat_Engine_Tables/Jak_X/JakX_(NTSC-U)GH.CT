@@ -447,6 +447,28 @@
             <Offset>002DA7A4</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>94</ID>
+          <Description>"*player-index*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002DF640</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>95</ID>
+          <Description>"get-game-mgr-type"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002E75D4</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>

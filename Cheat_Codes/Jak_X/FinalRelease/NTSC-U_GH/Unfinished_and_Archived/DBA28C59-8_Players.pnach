@@ -5,3 +5,14 @@ patch=1,EE,602DDE94,extended,00000008
 patch=1,EE,00000000,extended,00000004
 patch=1,EE,602DDE94,extended,00000008
 patch=1,EE,00000000,extended,00000014
+
+patch=1,EE,60B64C34,extended,2AA30008
+patch=1,EE,00000001,extended,000005EC
+patch=1,EE,60B64C34,extended,2A830008
+patch=1,EE,00000001,extended,0000097C
+
+patch=1,EE,602DF640,extended,00000008
+patch=1,EE,00000001,extended,00000004
+
+patch=1,EE,E0010405,extended,00BD103C
+patch=1,EE,00BD1038,extended,34630000
