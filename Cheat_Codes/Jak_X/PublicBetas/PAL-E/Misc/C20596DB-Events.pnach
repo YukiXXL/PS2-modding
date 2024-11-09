@@ -1,0 +1,6 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=MISC - EVENTS
+
+//Replace Reversi with Training mode tasks
+patch=1,EE,E0010008,extended,00B863E8
+patch=1,EE,00B863E8,extended,0000000F

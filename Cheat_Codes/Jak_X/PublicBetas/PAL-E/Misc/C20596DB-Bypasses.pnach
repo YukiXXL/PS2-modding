@@ -2,15 +2,7 @@ gametitle=Jak X Beta Trial Code (PAL-E)
 comment=MISC - BYPASSES
 
 //5 CPUs, 6 Players for events
-//Saves onto the event and map after starting it once
-//patch=1,EE,E003182A,extended,012D2AB4
-//patch=1,EE,212D2AAC,extended,24030506
-//patch=1,EE,212D2AB4,extended,A443000C
-//patch=1,EE,212D2AB8,extended,10000018
-
-//5 CPUs, 6 Players for event
-//Saves when trying to start the game
-patch=1,EE,E0035567,extended,012D2AC4
-patch=1,EE,112D2AC0,extended,24030506
-patch=1,EE,212D2AC4,extended,1000003F
-patch=1,EE,212D2AC8,extended,A443000C
+patch=1,EE,E0030007,extended,00BD010C
+patch=1,EE,20BD00FC,extended,24190506
+patch=1,EE,20BD0100,extended,A499000C
+patch=1,EE,20BD0108,extended,90840005
