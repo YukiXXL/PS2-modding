@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=G.T. Blitz special
+
+//Replace model
+patch=1,EE,E0010004,extended,00BF1D7C
+patch=1,EE,20BF1D78,extended,00000000
+
+//Replace name
+patch=1,EE,E0014E49,extended,00B43438
+patch=1,EE,10B433E0,extended,000010AF

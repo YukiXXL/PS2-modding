@@ -8,3 +8,4 @@ PAL-E (Debug) = 002DF671 (#f) ; 002DF675 (#t)
 
 Public Betas:
 PAL-E (Beta Mode) = 002D0401 (#f) ; 002D0405 (#t)
+NTSC-U (Beta Mode) = 002D0301 (#f) ; 002D0305 (#t)

@@ -690,6 +690,18 @@ patch=1,EE,00000001,extended,0000043D
 patch=1,EE,602E35A0,extended,00000000
 patch=1,EE,00000001,extended,0000043D
 
+[Misc\Jak always has Daxter on teh vehicle]
+description=If Daxter as a driver is taken, Jak will still have him
+patch=1,EE,E0011825,extended,00BEE70C
+patch=1,EE,20BEE708,extended,00000000
+
+[Misc\Enable Mizo]
+description=Replaces G.T. Blitz
+patch=1,EE,E0010004,extended,00BF1D7C
+patch=1,EE,20BF1D78,extended,00000000
+patch=1,EE,E0014E49,extended,00B43438
+patch=1,EE,10B433E0,extended,000010AF
+
 // ONLINE-LAN
 
 [Online-LAN\DNAS Bypass]

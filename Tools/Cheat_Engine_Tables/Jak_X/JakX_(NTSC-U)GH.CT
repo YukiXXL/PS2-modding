@@ -147,7 +147,7 @@
           <VariableType>4 Bytes</VariableType>
           <Address>eemem</Address>
           <Offsets>
-            <Offset>002D96C8</Offset>
+            <Offset>002DB6D8</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
@@ -255,7 +255,7 @@
       <CheatEntries>
         <CheatEntry>
           <ID>17</ID>
-          <Description>"Single/Split"</Description>
+          <Description>"*net-start-view-ct* (Single/Split)"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>eemem</Address>
@@ -264,28 +264,8 @@
           </Offsets>
         </CheatEntry>
         <CheatEntry>
-          <ID>13</ID>
-          <Description>"ScreenType"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>eemem</Address>
-          <Offsets>
-            <Offset>0048D600</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>14</ID>
-          <Description>"Players-Screen"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>eemem</Address>
-          <Offsets>
-            <Offset>0048D604</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
           <ID>15</ID>
-          <Description>"Number of Players"</Description>
+          <Description>"*view-count* (Number of Players)"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>eemem</Address>
@@ -311,13 +291,23 @@
               </Offsets>
             </CheatEntry>
             <CheatEntry>
-              <ID>72</ID>
-              <Description>"viewpot-array"</Description>
+              <ID>13</ID>
+              <Description>"ScreenType"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>eemem</Address>
               <Offsets>
                 <Offset>0048D600</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14</ID>
+              <Description>"Players-Screen"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>eemem</Address>
+              <Offsets>
+                <Offset>0048D604</Offset>
               </Offsets>
             </CheatEntry>
             <CheatEntry>
@@ -445,6 +435,17 @@
           <Address>eemem</Address>
           <Offsets>
             <Offset>002DA7A4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>97</ID>
+          <Description>"*net-drivers*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002E7758</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
@@ -912,6 +913,17 @@
           </Offsets>
         </CheatEntry>
       </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>96</ID>
+      <Description>"No description"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>eemem</Address>
+      <Offsets>
+        <Offset>002E75D4</Offset>
+      </Offsets>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>

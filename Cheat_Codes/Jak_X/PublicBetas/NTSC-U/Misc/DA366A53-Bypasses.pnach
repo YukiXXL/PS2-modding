@@ -2,15 +2,7 @@ gametitle=Jak X Beta Trial Code (NTSC-U)
 comment=MISC - BYPASSES
 
 //5 CPUs, 6 Players for events
-//Saves onto the event and map after starting it once
-//patch=1,EE,E003182A,extended,012D29B4
-//patch=1,EE,212D29AC,extended,24030506
-//patch=1,EE,212D29B4,extended,A443000C
-//patch=1,EE,212D29B8,extended,10000018
-
-//5 CPUs, 6 Players for event
-//Saves when trying to start the game
-patch=1,EE,E0035567,extended,012D29C4
-patch=1,EE,112D29C0,extended,24030506
-patch=1,EE,212D29C4,extended,1000003F
-patch=1,EE,212D29C8,extended,A443000C
+patch=1,EE,E0030007,extended,00BD000C
+patch=1,EE,20BCFFFC,extended,24190506
+patch=1,EE,20BD0000,extended,A499000C
+patch=1,EE,20BD0008,extended,90840005

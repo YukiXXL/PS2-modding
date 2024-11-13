@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Even if Daxter is a driver, Jak still has him
+
+//Jak always has Daxter on the vehicle
+patch=1,EE,E0011825,extended,00BEDC1C
+patch=1,EE,20BEDC18,extended,00000000

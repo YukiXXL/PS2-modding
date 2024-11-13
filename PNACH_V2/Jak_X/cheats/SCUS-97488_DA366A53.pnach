@@ -13,9 +13,46 @@ description=Boots the game into the Kiosk mode.
 patch=1,EE,E0012638,extended,0025BDA0
 patch=1,EE,1025BDA0,extended,24C6D370
 
-// - FIXES
-[Boot Mode\Fixes for Missing Events]
-description=ENABLE if using Retail or Kiosk!
+// ADDONS
+
+[Addons\Hidden\Enable Mongoose]
+patch=1,EE,E0030405,extended,002CA9E4
+patch=1,EE,602CC208,extended,80840006
+patch=1,EE,00000002,extended,00000230
+patch=1,EE,0000001C,extended,00000000
+
+[Addons\Profile\Unlock Taryn]
+patch=1,EE,602D20A0,extended,00000002
+patch=1,EE,00000001,extended,00000981
+
+[Addons\Profile\Infinite Health + Turbo (ON)]
+patch=1,EE,602D20A0,extended,000000FF
+patch=1,EE,00000001,extended,0000097F
+
+[Addons\Profile\Infinite Health + Turbo (OFF)]
+patch=1,EE,602D20A0,extended,00000000
+patch=1,EE,00000001,extended,0000097F
+
+[Addons\Profile\Bad Weather (ON)]
+patch=1,EE,602D20A0,extended,000000FF
+patch=1,EE,00000001,extended,00000980
+
+[Addons\Profile\Bad Weather (OFF)]
+patch=1,EE,602D20A0,extended,00000000
+patch=1,EE,00000001,extended,00000980
+
+[Addons\Profile\Mirrored World (ON)]
+patch=1,EE,602D20A0,extended,00000080
+patch=1,EE,00000001,extended,0000097D
+
+[Addons\Profile\Mirrored World (OFF)]
+patch=1,EE,602D20A0,extended,00000000
+patch=1,EE,00000001,extended,0000097D
+
+// RETAIL MODE
+
+[Retail Mode\Fix Crashing]
+description=Fixes crashing by replacing missing IPAs with Logo
 //Check just in case
 patch=1,EE,E0187073,extended,0099CFB8
 // Frozen Speedway - snow
@@ -55,65 +92,77 @@ patch=1,EE,2098588C,extended,00000000
 patch=1,EE,209920F8,extended,6F676F6C
 patch=1,EE,209920FC,extended,00000000
 
-// BETA
+// BETA MODE
 
-[Beta Mode\Online = Mode Select]
-patch=1,EE,E0017B79,extended,012CB3D8
-patch=1,EE,212CB3D8,extended,002CA1F1
-
-[Beta Mode\Online = Exhibition]
-description=Replaces Online button with Exhibition.
+[Beta Mode\Exhibition]
+description=Replaces Online with Exhibition
 patch=1,EE,E0010006,extended,012CB724
 patch=1,EE,512CB734,extended,00000004
 patch=1,EE,012CAF00,extended,00000000
 
-// ADDONS
-
-[Addons\Hidden\Enable Mongoose]
-patch=1,EE,E0010009,extended,012CE7B8
-patch=1,EE,012CE7B8,extended,80840006
-
-[Addons\Hidden\Enable Taryn]
-patch=1,EE,E001FFF9,extended,00BCC080
-patch=1,EE,00BCC080,extended,6463FFF8
-
-// EVENTS
-
-[Events\Unlock all events]
-description=Needed if in Beta Mode!
+[Beta Mode\Enable all events]
 patch=1,EE,E00161A4,extended,002D78F8
 patch=1,EE,102D78F8,extended,00B86204
 
-[Events\Enable all events for SS]
-patch=1,EE,E001FFFE,extended,012CFCFC
-patch=1,EE,012CFCFC,extended,64A6FFFD
-
-[Events\Reversi\Enable Reversi on Dirt Stadium]
-description=Replaces Mar Coliseum.
-patch=1,EE,E0026F63,extended,009A01B8
-patch=1,EE,209A0194,extended,009A3A44
-patch=1,EE,209A0198,extended,009A3A24
-
-[Events\Reversi\Enable Reversi on Clifftop Battlefield]
-description=Replaces Desert Arena.
-patch=1,EE,E0026564,extended,009A06F8
-patch=1,EE,209A06D4,extended,009A38A4
-patch=1,EE,209A06D8,extended,009A3884
-
 // MISC
 
-[Misc\Bypasses\5 CPUs, 6 Players for event]
-description=Saves when trying to start the game.
-patch=1,EE,E0035567,extended,012D29C4
-patch=1,EE,112D29C0,extended,24030506
-patch=1,EE,212D29C4,extended,1000003F
-patch=1,EE,212D29C8,extended,A443000C
+[Misc\Events\5 CPUs, 6 Players for selected event]
+description=Increases the players and CPUs limit of a selected event
+patch=1,EE,E0030007,extended,00BD000C
+patch=1,EE,20BCFFFC,extended,24190506
+patch=1,EE,20BD0000,extended,A499000C
+patch=1,EE,20BD0008,extended,90840005
 
-[Misc\Other\Scene Player Act 3 = PSP Scan]
+[Misc\Events\Replace Reversi with Training]
+patch=1,EE,E0010008,extended,00B862E8
+patch=1,EE,00B862E8,extended,0000000F
+
+[Misc\Menu\Scene Player Act 3 = PSP Scan]
 patch=1,EE,E002D9A4,extended,012D6394
 patch=1,EE,012D62B0,extended,14640038
 patch=1,EE,112D6394,extended,66E8D4D4
 
-[Misc\Other\Falcon = Mongoose for customization]
+[Misc\Customize\Enable Mongoose for customization]
+description=Replaces Falcon!
 patch=1,EE,E001D14D,extended,012E4788
 patch=1,EE,212E4788,extended,002CC4B1
+
+// SPLIT-SCREEN
+
+[Split-Screen\Events\Enable all events for SS]
+patch=1,EE,E0030405,extended,002CA9E4
+patch=1,EE,602CC208,extended,64A6FFFD
+patch=1,EE,00000003,extended,00000090
+patch=1,EE,00000020,extended,00000340
+
+[Split-Screen\Events\Continue Points fixes]
+description=Fixes Training and Timebox for SS
+patch=1,EE,E0050401,extended,009A3C68 //Memory Check
+patch=1,EE,209A23D8,extended,009A3704 //kras-timebox
+patch=1,EE,209A3628,extended,009A3BE4 //jungle-timebox
+patch=1,EE,209A3C68,extended,009A3C84 //kras-training
+patch=1,EE,209A3BC8,extended,009A3C04 //jungle-training
+patch=1,EE,209A0558,extended,009A3884 //cliffs-training
+
+[Split-Screen\Training Fix]
+description=Use on Jungle (L3+SELECT = ON; L3+START = OFF)
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E005FFFC,extended,00272D9C
+//Region, on-enter(want-display), as in SP
+patch=1,EE,00A805B8,extended,6463FFFE
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A80854,extended,8EE3745B
+patch=1,EE,20A80858,extended,28630001
+patch=1,EE,20A8085C,extended,AEE3745B
+//Reset the counter on start/restart
+patch=1,EE,20BB1260,extended,AEE0745B
+//2nd controller: L3+START to deactivate
+patch=1,EE,E005FFF5,extended,00272D9C
+//Region, on-enter(want-display), as in SP
+patch=1,EE,00A805B8,extended,6463FFFF
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A80854,extended,8EE3745F
+patch=1,EE,20A80858,extended,6463FFFF
+patch=1,EE,20A8085C,extended,66E40004
+//Reset the counter on start/restart
+patch=1,EE,20BB1260,extended,00000000
