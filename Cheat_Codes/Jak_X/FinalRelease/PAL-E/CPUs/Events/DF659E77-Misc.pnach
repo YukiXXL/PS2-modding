@@ -2,8 +2,9 @@ gametitle=Jak X Final Release (PAL-E)
 comment=Other CPU event things
 
 //CPUs are seperate team than the player 1
-patch=1,EE,E0010009,extended,00BD11B8
+patch=1,EE,E0020010,extended,00BD11C0
 patch=1,EE,20BD11B4,extended,838300CB
+patch=1,EE,20BD11B8,extended,10600009
 
 //CPUs can use any vehicle on any CUP
 patch=1,EE,602E0E7C,extended,10000019

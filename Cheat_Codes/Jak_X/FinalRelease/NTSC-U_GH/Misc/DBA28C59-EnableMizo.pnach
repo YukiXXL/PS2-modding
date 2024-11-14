@@ -8,3 +8,7 @@ patch=1,EE,20BF1D78,extended,00000000
 //Replace name
 patch=1,EE,E0014E49,extended,00B43438
 patch=1,EE,10B433E0,extended,000010AF
+
+//Replace Voice lines
+patch=1,EE,E0010012,extended,00BB8D78
+patch=1,EE,20BB8D7C,extended,00000000

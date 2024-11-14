@@ -104,8 +104,9 @@ patch=1,EE,00000001,extended,00000164
 
 [CPUs\Events\CPUs are seperate team than the Player 1]
 description=For 1v6
-patch=1,EE,E0010009,extended,00BD11B8
+patch=1,EE,E0020010,extended,00BD11C0
 patch=1,EE,20BD11B4,extended,838300CB
+patch=1,EE,20BD11B8,extended,10600009
 
 [CPUs\Events\CPUs can use any vehicle on any CUP]
 patch=1,EE,602E0E7C,extended,10000019
@@ -617,10 +618,15 @@ patch=1,EE,20BEE658,extended,00000000
 
 [Misc\Enable Mizo]
 description=Replaces G.T. Blitz
+//Replace model
 patch=1,EE,E0010004,extended,00BF1CCC
 patch=1,EE,20BF1CC8,extended,00000000
+//Replace name
 patch=1,EE,E0014E49,extended,00B43338
 patch=1,EE,10B432E0,extended,000010AF
+//Replace Voice lines
+patch=1,EE,E0010012,extended,00BB8CC8
+patch=1,EE,20BB8CCC,extended,00000000
 
 // ONLINE-LAN
 
