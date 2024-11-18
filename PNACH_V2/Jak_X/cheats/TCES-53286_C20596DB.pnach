@@ -137,15 +137,15 @@ patch=1,EE,00000020,extended,00000340
 
 [Split-Screen\Events\Continue Points fixes]
 description=Fixes Training and Timebox for SS
-patch=1,EE,E0050401,extended,009A3D68 //Memory Check
-patch=1,EE,209A24D8,extended,009A3804 //kras-timebox
-patch=1,EE,209A3728,extended,009A3CE4 //jungle-timebox
-patch=1,EE,209A3D68,extended,009A3D84 //kras-training
-patch=1,EE,209A3CC8,extended,009A3D04 //jungle-training
-patch=1,EE,209A0658,extended,009A3984 //cliffs-training
+patch=1,EE,E0050401,extended,009A3D68
+patch=1,EE,209A24D8,extended,009A3804
+patch=1,EE,209A3728,extended,009A3CE4
+patch=1,EE,209A3D68,extended,009A3D84
+patch=1,EE,209A3CC8,extended,009A3D04
+patch=1,EE,209A0658,extended,009A3984
 
-[Split-Screen\Training Fix]
-description=Use on Jungle (L3+SELECT = ON; L3+START = OFF)
+[Split-Screen\Training\Level load fix]
+description=L3+SELECT = ON; L3+START = OFF
 //2nd controller: L3+SELECT to activate
 patch=1,EE,E005FFFC,extended,00272E9C
 //Region, on-enter(want-display), as in SP

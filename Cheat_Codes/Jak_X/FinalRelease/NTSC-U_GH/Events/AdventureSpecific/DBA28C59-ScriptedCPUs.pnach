@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Adventure Specific - Scripted CPUs
+
+patch=1,EE,E0017880,extended,00BCD704
+patch=1,EE,20BCD708,extended,66E47880

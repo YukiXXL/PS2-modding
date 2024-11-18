@@ -20,27 +20,27 @@ patch=1,EE,0026B4F8,extended,00B0FA74
 
 // RETAIL,BETA MODE
 
-[Retail,Beta Mode\Secrets Shop menu\Fix exiting from Secrets menu]
+[Secrets Shop menu\Fix exiting from Secrets menu]
 description=To unlock secrets, use "Get All Tasks".
 patch=1,EE,50B13E90,extended,00000004
 patch=1,EE,00B13E7C,extended,00000000
 
-[Retail,Beta Mode\Adventure menu\All Movies Skipped]
+[Adventure menu\All Movies Skipped]
 description=This code causes some issues and can get stuck in infinite loading loop.
 patch=1,EE,E0012024,extended,009125F0
 patch=1,EE,209125F0,extended,24040001
 
 // GET ALL
 
-[Retail,Beta Mode\Cheats\Get All\Vehicles]
+[Get All\Vehicles]
 patch=1,EE,E0010004,extended,009122B0
 patch=1,EE,209122B0,extended,00000000
 
-[Retail,Beta Mode\Cheats\Get All\Vehicles Parts]
+[Get All\Vehicles Parts]
 patch=1,EE,E0010012,extended,00912530
 patch=1,EE,20912530,extended,00000000
 
-[Retail,Beta Mode\Cheats\Get All\Tasks]
+[Get All\Tasks]
 //All Gold Medals
 patch=1,EE,E005004A,extended,0091265C
 patch=1,EE,20912650,extended,ACA60020
@@ -53,37 +53,79 @@ patch=1,EE,E0020008,extended,009126E8
 patch=1,EE,209126D4,extended,24060003
 patch=1,EE,209126E8,extended,A4860008
 
-[Retail,Beta Mode\Cheats\Get All\Drivers]
+[Get All\Drivers]
 patch=1,EE,E0010080,extended,0091279C
 patch=1,EE,2091279C,extended,2403FFFF
 
-[Retail,Beta Mode\Cheats\Get All\Drivers (Alternative)]
+[Get All\Drivers (Alternative)]
 patch=1,EE,E001DFA7,extended,00B6C588
 patch=1,EE,20B6C588,extended,AEE2DFA7
 
-[Retail,Beta Mode\Cheats\Get All\C.R.E.A.M - Mad Cash]
+[Get All\C.R.E.A.M - Mad Cash]
 patch=1,EE,E0031825,extended,009121F8
 patch=1,EE,209121F8,extended,3C064974
 patch=1,EE,20912204,extended,34C62400
 patch=1,EE,20912218,extended,44860000
 
-[Retail,Beta Mode\Cheats\Get All\Trick Out Vehicles]
+[Get All\Trick Out Vehicles]
 patch=1,EE,E0040034,extended,00912480
 patch=1,EE,0091240C,extended,90650005
 patch=1,EE,00912430,extended,90650015
 patch=1,EE,00912454,extended,90650025
 patch=1,EE,00912480,extended,90630035
 
-// EXPERIMENTAL
+// MISC
 
-[Gamemodes\Disable check for Split-Screen]
-description=Applies at screen selection.
-patch=1,EE,E004FFFE,extended,00B13B80
-patch=1,EE,20B13B7C,extended,9C63FFFC
-patch=1,EE,20B13B80,extended,9C630090
-patch=1,EE,20B13B84,extended,9C630020
-patch=1,EE,20B13B88,extended,A07701B8
+[Misc\Events\Replace Time Trial with Training]
+patch=1,EE,E0020003,extended,00B0FAF8
+patch=1,EE,10B0FAF0,extended,0000067A
+patch=1,EE,00B0FAF8,extended,0000000F
 
-[Split-Screen\continue-points\Freeze Rally (Forbidden Jungle)]
-patch=1,EE,E0013F01,extended,00928E58
-patch=1,EE,20928E58,extended,009286A4
+[Misc\Events\Replace Turbo Dash with Boss Battle]
+patch=1,EE,E002000A,extended,00B0FAC8
+patch=1,EE,10B0FAC0,extended,00000794
+patch=1,EE,00B0FAC8,extended,00000011
+//Fix
+patch=1,EE,E00111BA,extended,00915198
+patch=1,EE,00915198,extended,00000021
+
+[Split-Screen\Events\Continue Points fixes]
+patch=1,EE,E0023F01,extended,00925508
+patch=1,EE,20925448,extended,00928E74
+patch=1,EE,20925508,extended,00929114
+
+[Split-Screen\Training\Training items fix]
+description=Fixes not being able to collect items
+patch=1,EE,E0060010,extended,00AD0794
+patch=1,EE,20AD0774,extended,10850005
+patch=1,EE,20AD0778,extended,9C620014
+patch=1,EE,00AD077C,extended,9C62001C
+patch=1,EE,20AD0780,extended,14570002
+patch=1,EE,00AD0788,extended,9C620014
+
+[Split-Screen\Training\Level load fix]
+description=L3+SELECT = ON; L3+START = OFF
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E006FFFC,extended,00209A9C
+//Region, on-enter(want-display), as in SP
+patch=1,EE,00B65680,extended,9C730044
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A018F4,extended,8EE3745B
+patch=1,EE,20A018F8,extended,28630001
+patch=1,EE,20A018FC,extended,AEE3745B
+//Reset the counter on start/restart
+patch=1,EE,20E37490,extended,AEE0745B
+//Load level on respawn
+patch=1,EE,20B62E6C,extended,00000000
+//2nd controller: L3+START to deactivate
+patch=1,EE,E006FFF5,extended,00209A9C
+//Region, on-enter(want-display), as in SP
+patch=1,EE,00B65680,extended,9C730078
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A018F4,extended,8EE3745F
+patch=1,EE,20A018F8,extended,6463FFFF
+patch=1,EE,20A018FC,extended,66E40004
+//Reset the counter on start/restart
+patch=1,EE,20E37490,extended,00000000
+//Load level on respawn
+patch=1,EE,20B62E6C,extended,54600005

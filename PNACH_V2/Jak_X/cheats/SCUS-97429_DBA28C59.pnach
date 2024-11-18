@@ -259,14 +259,14 @@ patch=1,EE,002DFDC0,extended,00000000
 patch=1,EE,502DFF9C,extended,00000003
 patch=1,EE,002DFDC4,extended,00000000
 
-[Events\Options\Freeze Rally with Turbo Dash options
+[Events\Options\Freeze Rally with Turbo Dash options]
 description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
 patch=1,EE,502DFF98,extended,00000003
 patch=1,EE,002E3F74,extended,00000000
 patch=1,EE,502DFF9C,extended,00000003
 patch=1,EE,002E3F78,extended,00000000
 
-[Events\Options\Other events with Collectathon options
+[Events\Options\Other events with Collectathon options]
 description=Do not change the Time Limit or anything like that!
 patch=1,EE,502E01D0,extended,00000003
 patch=1,EE,002DFA04,extended,00000000
@@ -289,7 +289,7 @@ patch=1,EE,00B60278,extended,00000010
 patch=1,EE,E0010003,extended,00B60268
 patch=1,EE,00B60268,extended,00000011
 
-[Events\Adventure Specific\Grand Prix Special Dialogue\Enable (Enable first!)]
+[Events\Adventure Specific\Grand Prix Special Dialogue\Enable]
 patch=1,EE,E0011825,extended,00EC5124
 patch=1,EE,20EC5128,extended,66E37880
 
@@ -307,7 +307,7 @@ patch=1,EE,20BAE7A4,extended,A4E0000C
 patch=1,EE,E0017880,extended,00B6C0D4
 patch=1,EE,20B6C0D8,extended,66E47880
 
-[Events\Adventure Specific\Sabotage\Enable (Enable first!)]
+[Events\Adventure Specific\Sabotage\Enable]
 patch=1,EE,E0011825,extended,00EC1F18
 patch=1,EE,20EC1F1C,extended,66E37880
 
@@ -315,6 +315,11 @@ patch=1,EE,20EC1F1C,extended,66E37880
 description=If dialogue doesn't play, enable this.
 patch=1,EE,E0012825,extended,00BAE28C
 patch=1,EE,20BAE290,extended,24040001
+
+[Events\Adventure Specific\Scripted CPUs]
+description=Enable task specific CPU drivers to be used
+patch=1,EE,E0017880,extended,00BCD704
+patch=1,EE,20BCD708,extended,66E47880
 
 [Events\Mizo\Spawn 6th Mizo]
 description=Use only if 5th player is Mizo (ex. having 5 CPUs)
@@ -753,8 +758,8 @@ patch=1,EE,00B28C2C,extended,9C62001C
 patch=1,EE,20B28C30,extended,14570002
 patch=1,EE,00B28C38,extended,9C620014
 
-[Split-Screen\Tours\Enable Fix]
-description=2nd controller: L3+SELECT to activate, L3+START to deactivate
+[Split-Screen\Level load fix\Enable]
+description=2nd controller: L3+SELECT=ON, L3+START=OFF
 //2nd controller: L3+SELECT to activate
 patch=1,EE,E005FFFC,extended,0028371C
 //Region, on-enter(want-display), as in SP
@@ -776,7 +781,7 @@ patch=1,EE,20A5D6CC,extended,66E40004
 //Reset the counter on start/restart
 patch=1,EE,20EB68F8,extended,00000000
 
-[Split-Screen\Tours\Force display always]
+[Split-Screen\Level load fix\Force display always]
 description=Displays next level without passing trough region
 patch=1,EE,E0022178,extended,009C95F4
 patch=1,EE,209C9578,extended,00000000
