@@ -418,6 +418,9 @@ patch=1,EE,20A86824,extended,02E01825
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF910
 patch=1,EE,20BCF914,extended,10000003
+//Host (Online)
+patch=1,EE,E0013825,extended,00BCF968
+patch=1,EE,20BCF964,extended,00000000
 
 [Events\Driver Never Taken\Allow selecting any (Version 2)]
 //Change load location
@@ -434,6 +437,9 @@ patch=1,EE,20BCF7BC,extended,0062182D
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF910
 patch=1,EE,20BCF914,extended,10000003
+//Host (Online)
+patch=1,EE,E0013825,extended,00BCF968
+patch=1,EE,20BCF964,extended,00000000
 
 [Events\Grand Prix\Enable (Enable first!)]
 description=Press R3+SELECT to enable

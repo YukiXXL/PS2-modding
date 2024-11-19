@@ -417,6 +417,17 @@
           </Offsets>
         </CheatEntry>
         <CheatEntry>
+          <ID>98</ID>
+          <Description>"*net-players*"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>eemem</Address>
+          <Offsets>
+            <Offset>002DA780</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>89</ID>
           <Description>"*active-net-player-count*"</Description>
           <ShowAsSigned>0</ShowAsSigned>

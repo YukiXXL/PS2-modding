@@ -1,0 +1,5 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=CHEATS - GET ALL WEAPONS
+
+patch=1,EE,E001FFFF,extended,0064394C
+patch=1,EE,1064394C,extended,24060000

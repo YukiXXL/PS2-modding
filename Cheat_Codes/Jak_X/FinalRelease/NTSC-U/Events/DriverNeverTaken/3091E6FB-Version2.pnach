@@ -16,3 +16,6 @@ patch=1,EE,20BCED7C,extended,0062182D
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCEED0
 patch=1,EE,20BCEED4,extended,10000003
+//Host (Online)
+patch=1,EE,E0013825,extended,00BCEF28
+patch=1,EE,20BCEF24,extended,00000000

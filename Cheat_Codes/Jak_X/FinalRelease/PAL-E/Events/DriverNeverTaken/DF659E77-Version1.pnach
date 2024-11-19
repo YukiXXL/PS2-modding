@@ -18,3 +18,6 @@ patch=1,EE,20A86824,extended,02E01825 //or v1, s7, zero
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF910
 patch=1,EE,20BCF914,extended,10000003 //beq zero, zero
+//Host (Online)
+patch=1,EE,E0013825,extended,00BCF968
+patch=1,EE,20BCF964,extended,00000000

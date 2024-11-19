@@ -1,0 +1,50 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=Provided by YukiXXL.
+
+[Misc\Menus\Planets Selection screen]
+description=Replaces Main Menu with Quit and Quit with Planets Selection
+patch=1,EE,E003700E,extended,0059C540
+patch=1,EE,1059C440,extended,2606CBE8
+patch=1,EE,0059C530,extended,3C060059
+patch=1,EE,1059C53C,extended,24C6D4D8
+//Planets Selection
+patch=1,EE,E0010007,extended,0058D4E8
+patch=1,EE,0058D4E8,extended,24050003
+
+[Misc\Menus\Bots Shop]
+description=Replaces Help Log with Bots Shop
+patch=1,EE,E0010012,extended,0059CC74
+patch=1,EE,0059CC74,extended,24050010
+
+[Addons\All Missions available]
+patch=1,EE,E0020014,extended,005363F0
+patch=1,EE,005363E8,extended,24020000
+patch=1,EE,205363EC,extended,AC430014
+
+[Cheats\Unlock All Missions]
+patch=1,EE,E0010008,extended,00536428
+patch=1,EE,00536424,extended,34420007
+
+[Cheats\Unlock Everything and enable all cheats]
+patch=1,EE,E001FFF9,extended,005C6388
+patch=1,EE,205C6378,extended,34630001
+
+[Cheats\Get all weapons]
+patch=1,EE,E001FFFF,extended,0064394C
+patch=1,EE,1064394C,extended,24060000
+
+[Addons\Shop\Enable all weapons]
+patch=1,EE,E0020008,extended,005C4630
+patch=1,EE,205C462C,extended,24020001
+patch=1,EE,205C4634,extended,A0820000
+
+[Addons\Shop\Enable all Omega Mods]
+patch=1,EE,E0020008,extended,005C4648
+patch=1,EE,205C4644,extended,24020001
+patch=1,EE,205C464C,extended,A0820000
+
+[Addons\Shop\Enable all bots upgrades]
+description=Requires Bot Shop
+patch=1,EE,E0020008,extended,005C4660
+patch=1,EE,205C465C,extended,24020001
+patch=1,EE,205C4664,extended,A0820000
