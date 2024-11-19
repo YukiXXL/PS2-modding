@@ -1,4 +1,4 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=Replaces Help Log with Bots Shop
 
 patch=1,EE,E0010012,extended,0059CC74

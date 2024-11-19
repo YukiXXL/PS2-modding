@@ -1,4 +1,4 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=Replaces Main Menu with Quit and Quit with Planets Selection
 
 patch=1,EE,E003700E,extended,0059C540
