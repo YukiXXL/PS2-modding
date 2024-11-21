@@ -1,0 +1,50 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=Provided by YukiXXL.
+
+[Misc\Menus\Planets Selection screen]
+description=Replaces Main Menu with Quit and Quit with Planets Selection
+patch=1,EE,E003605E,extended,00598680
+patch=1,EE,10598580,extended,26068D28
+patch=1,EE,00598670,extended,3C060059
+patch=1,EE,1059867C,extended,24C69638
+//Planets Selection
+patch=1,EE,E0010007,extended,00589648
+patch=1,EE,00589648,extended,24050003
+
+[Misc\Menus\Bots Shop]
+description=Replaces Help Log with Bots Shop
+patch=1,EE,E0010012,extended,00598DB4
+patch=1,EE,00598DB4,extended,24050010
+
+[Addons\All Missions available]
+patch=1,EE,E0020014,extended,00532C30
+patch=1,EE,00532C28,extended,24020000
+patch=1,EE,20532C28,extended,AC430014
+
+[Cheats\Unlock All Missions]
+patch=1,EE,E0010008,extended,00532C68
+patch=1,EE,00532C64,extended,34420007
+
+[Cheats\Unlock Everything and enable all cheats]
+patch=1,EE,E001FFF9,extended,0090AEA0
+patch=1,EE,2090AE90,extended,34630001
+
+[Cheats\Get all weapons]
+patch=1,EE,E001FFFF,extended,0063F254
+patch=1,EE,1063F254,extended,24060000
+
+[Addons\Shop\Enable all weapons]
+patch=1,EE,E0020008,extended,005C06B8
+patch=1,EE,205C06B4,extended,24020001
+patch=1,EE,205C06BC,extended,A0820000
+
+[Addons\Shop\Enable all Omega Mods]
+patch=1,EE,E0020008,extended,005C06D0
+patch=1,EE,205C06CC,extended,24020001
+patch=1,EE,205C06D4,extended,A0820000
+
+[Addons\Shop\Enable all bots upgrades]
+description=Requires Bot Shop
+patch=1,EE,E0020008,extended,005C06E8
+patch=1,EE,205C06E4,extended,24020001
+patch=1,EE,205C06EC,extended,A0820000
