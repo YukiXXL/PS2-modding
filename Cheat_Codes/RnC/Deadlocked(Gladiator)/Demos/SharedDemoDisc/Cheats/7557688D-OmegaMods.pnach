@@ -1,0 +1,5 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=CHEATS - GET ALL OMEGA MODS
+
+patch=1,EE,E0012025,extended,00642F68
+patch=1,EE,20642F68,extended,240400FF

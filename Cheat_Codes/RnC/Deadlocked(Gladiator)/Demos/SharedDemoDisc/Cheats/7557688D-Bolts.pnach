@@ -1,0 +1,5 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=CHEATS - GET MAXIMUM BOLTS
+
+patch=1,EE,E0010020,extended,0062FB8C
+patch=1,EE,2062FB88,extended,00631818

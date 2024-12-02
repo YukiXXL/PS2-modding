@@ -1,0 +1,5 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=CHEATS - GET MAXIMUM BOLTS
+
+patch=1,EE,E0010020,extended,0062B874
+patch=1,EE,2062B870,extended,00631818

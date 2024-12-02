@@ -1,0 +1,5 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=Disable Demo finished when beating all missions
+
+patch=1,EE,E001FFFF,extended,004000FC
+patch=1,EE,204000F4,extended,10000009

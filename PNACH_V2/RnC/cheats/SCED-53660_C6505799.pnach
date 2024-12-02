@@ -1,37 +1,11 @@
-gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=Provided by YukiXXL.
 
-[Misc\Menus\Planets Selection screen]
-description=Replaces Main Menu with Quit and Quit with Planets Selection
-patch=1,EE,E003700E,extended,0059C540
-patch=1,EE,1059C440,extended,2606CBE8
-patch=1,EE,0059C530,extended,3C060059
-patch=1,EE,1059C53C,extended,24C6D4D8
-//Planets Selection
-patch=1,EE,E0010007,extended,0058D4E8
-patch=1,EE,0058D4E8,extended,24050003
+// ADDONS
 
-[Misc\Menus\Bots Shop]
-description=Replaces Help Log with Bots Shop
-patch=1,EE,E0010012,extended,0059CC74
-patch=1,EE,0059CC74,extended,24050010
-
-[Addons\All Missions available]
-patch=1,EE,E0020014,extended,005363F0
-patch=1,EE,005363E8,extended,24020000
-patch=1,EE,205363EC,extended,AC430014
-
-[Cheats\Unlock All Missions]
-patch=1,EE,E0010008,extended,00536428
-patch=1,EE,00536424,extended,34420007
-
-[Cheats\Unlock Everything and enable all cheats]
-patch=1,EE,E001FFF9,extended,005C6388
-patch=1,EE,205C6378,extended,34630001
-
-[Cheats\Get all weapons]
-patch=1,EE,E001FFFF,extended,0064394C
-patch=1,EE,1064394C,extended,24060000
+[Addons\Missions\All Missions available]
+patch=1,EE,E001000F,extended,005363EC
+patch=1,EE,205363EC,extended,00000000
 
 [Addons\Shop\Enable all weapons]
 patch=1,EE,E0020008,extended,005C4630
@@ -48,3 +22,78 @@ description=Requires Bot Shop
 patch=1,EE,E0020008,extended,005C4660
 patch=1,EE,205C465C,extended,24020001
 patch=1,EE,205C4664,extended,A0820000
+
+[Addons\ProScan\Enable Widescreen and Progressive option]
+//save true to "is_buttonEnabled"
+patch=1,EE,E0032021,extended,0059FC00
+patch=1,EE,2059FC04,extended,24020001
+patch=1,EE,2059FC08,extended,03E00008
+patch=1,EE,2059FC0C,extended,A0820000
+
+[Addons\ProScan\Enable]
+//nop the resetting ProScan
+patch=1,EE,E0018CC8,extended,00516B8C
+patch=1,EE,20516B8C,extended,00000000
+//Sync Progressive option with "NTSCProgressive" function
+patch=1,EE,5016A364,extended,00000001
+patch=1,EE,00209838,extended,00000000
+
+[Addons\ProScan\576p instead of 480p]
+patch=1,EE,E0010050,extended,00516BA4
+patch=1,EE,00516BA4,extended,24060053
+
+// CHEATS
+
+[Cheats\Missions\Unlock All Missions]
+patch=1,EE,E0010008,extended,00536428
+patch=1,EE,00536424,extended,34420007
+
+[Cheats\Profile\Unlock Everything and enable all cheats]
+patch=1,EE,E001FFF9,extended,005C6388
+patch=1,EE,205C6378,extended,34630001
+
+[Cheats\Profile\Get all weapons]
+patch=1,EE,E001FFFF,extended,0064394C
+patch=1,EE,1064394C,extended,24060000
+
+[Cheats\Profile\Get All Omega Mods]
+patch=1,EE,E0012025,extended,00642F68
+patch=1,EE,20642F68,extended,240400FF
+
+[Cheats\Profile\Max Bolts]
+patch=1,EE,E0010020,extended,0062FB8C
+patch=1,EE,2062FB88,extended,00631818
+
+// MISC
+
+[Misc\Weapons\Enable All Omega Mods for All Weapons]
+patch=1,EE,E0010003,extended,00643374
+patch=1,EE,20643374,extended,00000000
+
+[Misc\Missions\Missions Always Visible]
+patch=1,EE,E0020004,extended,005365DC
+patch=1,EE,205365D8,extended,24030001
+patch=1,EE,205365E0,extended,AC430010
+
+[Misc\Menus\Planets Selection screen]
+description=Replaces Main Menu with Quit and Quit with Planets Selection
+patch=1,EE,E003700E,extended,0059C540
+patch=1,EE,1059C440,extended,2606CBE8
+patch=1,EE,0059C530,extended,3C060059
+patch=1,EE,1059C53C,extended,24C6D4D8
+//Planets Selection
+patch=1,EE,E0010007,extended,0058D4E8
+patch=1,EE,0058D4E8,extended,24050003
+
+[Misc\Menus\Bots Shop]
+description=Replaces Help Log with Bots Shop
+patch=1,EE,E0010012,extended,0059CC74
+patch=1,EE,0059CC74,extended,24050010
+
+[Misc\Demo\Disable Demo finished when beating all missions]
+patch=1,EE,E001FFFF,extended,00401BAC
+patch=1,EE,20401BA4,extended,10000009
+
+[Misc\Demo\Disable Demo Timer (when AFK)]
+patch=1,EE,E0019468,extended,005AC53C
+patch=1,EE,205AC538,extended,10000007

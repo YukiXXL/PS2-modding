@@ -1,0 +1,42 @@
+gametitle=Ratchet: Deadlocked Multiplayer Beta (NTSC-U)
+comment=Provided by YukiXXL.
+
+[Addons\ProScan\Enable NTSC Progressive]
+patch=1,EE,00200C7C,byte,1
+
+[Addons\Allow running the game without MC]
+patch=1,EE,E001000F,extended,00856F84
+patch=1,EE,20856F84,extended,00000000
+
+[Misc\Menus\Change the starting group menu (Network Config)]
+patch=1,EE,E0010002,extended,00544750
+patch=1,EE,00544750,extended,24030006
+
+[Misc\Menus\Open Multiplayer instead of Network Config]
+patch=1,EE,E0010007,extended,0066DA80
+patch=1,EE,0066DA80,extended,2402000D
+
+[Misc\Menus\Backing out of Edit Profiles drops back to MP menu]
+patch=1,EE,E0010007,extended,00690DB8
+patch=1,EE,00690DB8,extended,2402000D
+
+[Misc\Menus\Enable all Multiplayer options]
+patch=1,EE,E003F809,extended,0068A9E0
+patch=1,EE,0068A9A4,extended,24050004
+patch=1,EE,0068A9BC,extended,24050004
+patch=1,EE,0068A9D4,extended,24050004
+
+[Misc\Menus\Enable all Local Play options]
+patch=1,EE,E003F809,extended,0067C404
+patch=1,EE,0067C394,extended,24050004
+patch=1,EE,0067C3B0,extended,24050004
+patch=1,EE,0067C3C8,extended,24050004
+patch=1,EE,0067C3F8,extended,24050004
+//Juggernout Armor
+patch=1,EE,E003F809,extended,0067D01C
+patch=1,EE,0067D010,extended,24050004
+
+[Misc\Menus\Bypass Server Start]
+patch=1,EE,0067D484,extended,24020001
+
+// 0067d458 - selection

@@ -1,0 +1,9 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=PROSCAN - ENABLE
+
+//nop the resetting ProScan
+patch=1,EE,E0018CC8,extended,00516B8C
+patch=1,EE,20516B8C,extended,00000000
+//Sync Progressive option with "NTSCProgressive" function
+patch=1,EE,5016A364,extended,00000001
+patch=1,EE,00209838,extended,00000000
