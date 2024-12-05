@@ -1,0 +1,9 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=GAME RULES - SINGLE PLAYER - DISABLE BOTS
+
+//DeleteMoby
+patch=1,EE,E001938C,extended,004BEDC8
+patch=1,EE,204BEDC8,extended,24030001
+//Fix Invisible HUD
+patch=1,EE,E001938C,extended,00552A1C
+patch=1,EE,20552A1C,extended,24020001

@@ -1,6 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=ADDONS - ALL MISSIONS AVAILABLE
-
-patch=1,EE,E0020014,extended,00532C30
-patch=1,EE,00532C28,extended,24020000
-patch=1,EE,20532C28,extended,AC430014

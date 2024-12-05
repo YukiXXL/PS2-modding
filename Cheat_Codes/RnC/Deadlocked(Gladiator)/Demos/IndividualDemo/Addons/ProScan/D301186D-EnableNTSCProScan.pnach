@@ -1,5 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=ADDONS - ENABLE NTSC PROGRESSIVE
-
-patch=1,EE,E0017D18,extended,009160E0
-patch=1,EE,209160E0,extended,AC237D18

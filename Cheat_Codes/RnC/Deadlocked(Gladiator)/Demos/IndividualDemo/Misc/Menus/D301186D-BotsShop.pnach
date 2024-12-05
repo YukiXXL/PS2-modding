@@ -1,5 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=Replaces Help Log with Bots Shop
-
-patch=1,EE,E0010012,extended,00598DB4
-patch=1,EE,00598DB4,extended,24050010

@@ -1,0 +1,6 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=VENDOR - OMEGA MODS
+
+patch=1,EE,E0020008,extended,005C06D0
+patch=1,EE,205C06CC,extended,24020001
+patch=1,EE,205C06D4,extended,A0820000

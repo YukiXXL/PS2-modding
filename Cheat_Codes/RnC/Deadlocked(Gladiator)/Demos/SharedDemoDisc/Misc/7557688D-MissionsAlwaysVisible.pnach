@@ -1,6 +1,0 @@
-gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=MISC - MISSIONS ALWAYS VISIBLE
-
-patch=1,EE,E0020004,extended,005365DC
-patch=1,EE,205365D8,extended,24030001
-patch=1,EE,205365E0,extended,AC430010

@@ -1,6 +1,0 @@
-gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=ADDONS - ALL MISSIONS AVAILABLE
-
-patch=1,EE,E0020014,extended,005363F0
-patch=1,EE,005363E8,extended,24020000
-patch=1,EE,205363EC,extended,AC430014

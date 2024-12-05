@@ -1,5 +1,0 @@
-gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=Disable Demo Timer (when AFK)
-
-patch=1,EE,E0019468,extended,005AC53C
-patch=1,EE,205AC538,extended,10000007

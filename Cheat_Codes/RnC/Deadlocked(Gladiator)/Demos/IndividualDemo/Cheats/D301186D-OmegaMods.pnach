@@ -1,5 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=CHEATS - GET ALL OMEGA MODS
-
-patch=1,EE,E0012025,extended,0063E870
-patch=1,EE,2063E870,extended,240400FF

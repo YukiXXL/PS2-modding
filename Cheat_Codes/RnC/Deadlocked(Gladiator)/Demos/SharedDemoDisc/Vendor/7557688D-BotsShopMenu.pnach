@@ -1,0 +1,5 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=VENDOR - BOTS SHOP MENU
+
+patch=1,EE,E0010012,extended,0059CC74
+patch=1,EE,0059CC74,extended,24050010

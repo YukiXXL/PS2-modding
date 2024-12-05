@@ -1,0 +1,10 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=PLANETS - ENABLE ALL
+
+//Enable All Planets
+patch=1,EE,E001FE04,extended,00643D64
+patch=1,EE,20643D64,extended,24020001
+
+//Include Unplayable
+patch=1,EE,E0010007,extended,00643D54
+patch=1,EE,20643D54,extended,00000000

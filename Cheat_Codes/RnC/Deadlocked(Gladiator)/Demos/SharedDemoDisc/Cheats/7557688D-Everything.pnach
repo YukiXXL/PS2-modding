@@ -1,5 +1,0 @@
-gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=CHEATS - UNLOCK EVERYTHING (AND ENABLE ALL)
-
-patch=1,EE,E001FFF9,extended,005C6388
-patch=1,EE,205C6378,extended,34630001

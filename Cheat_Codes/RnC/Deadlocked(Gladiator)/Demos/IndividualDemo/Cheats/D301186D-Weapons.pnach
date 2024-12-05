@@ -1,5 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=CHEATS - GET ALL WEAPONS
-
-patch=1,EE,E001FFFF,extended,0063F254
-patch=1,EE,1063F254,extended,24060000

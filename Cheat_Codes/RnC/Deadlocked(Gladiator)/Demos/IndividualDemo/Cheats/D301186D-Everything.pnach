@@ -1,5 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=CHEATS - UNLOCK EVERYTHING (AND ENABLE ALL)
-
-patch=1,EE,E001FFF9,extended,0090AEA0
-patch=1,EE,2090AE90,extended,34630001

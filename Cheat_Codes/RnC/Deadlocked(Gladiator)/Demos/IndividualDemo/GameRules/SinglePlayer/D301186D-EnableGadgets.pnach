@@ -1,0 +1,24 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=GAME RULES - SINGLE PLAYER - ENABLE GADGETS
+
+//HUD elements
+patch=1,EE,E001938C,extended,00593090
+patch=1,EE,20593090,extended,24020001
+//Gadgets texture
+patch=1,EE,E001938C,extended,00592B38
+patch=1,EE,20592B38,extended,24030001
+//UpdateAvailableGadgets
+patch=1,EE,E001938C,extended,005934B8
+patch=1,EE,205934B8,extended,24020001
+//GetCurrentGadget
+patch=1,EE,E001938C,extended,00581040
+patch=1,EE,20581040,extended,24030001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001938C,extended,00592D38
+patch=1,EE,20592D38,extended,24020001
+//UpdateQuickSelect
+patch=1,EE,E001938C,extended,0063C6C4
+patch=1,EE,2063C6C4,extended,24020001
+//Get Gadgets
+patch=1,EE,E001A71C,extended,0062B780
+patch=1,EE,2062B780,extended,24030001

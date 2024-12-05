@@ -1,36 +1,26 @@
 gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=Provided by YukiXXL.
 
-// ADDONS
+// DEMO
 
-[Addons\Missions\All Missions available]
-patch=1,EE,E001000F,extended,005363EC
-patch=1,EE,205363EC,extended,00000000
+[Demo\Disable Demo finished when beating all missions]
+patch=1,EE,E001FFFF,extended,00401BAC
+patch=1,EE,20401BA4,extended,10000009
 
-[Addons\Shop\Enable all weapons]
-patch=1,EE,E0020008,extended,005C4630
-patch=1,EE,205C462C,extended,24020001
-patch=1,EE,205C4634,extended,A0820000
+[Demo\Disable Demo Timer (when AFK)]
+patch=1,EE,E0019468,extended,005AC53C
+patch=1,EE,205AC538,extended,10000007
 
-[Addons\Shop\Enable all Omega Mods]
-patch=1,EE,E0020008,extended,005C4648
-patch=1,EE,205C4644,extended,24020001
-patch=1,EE,205C464C,extended,A0820000
+// PROSCAN
 
-[Addons\Shop\Enable all bots upgrades]
-description=Requires Bot Shop
-patch=1,EE,E0020008,extended,005C4660
-patch=1,EE,205C465C,extended,24020001
-patch=1,EE,205C4664,extended,A0820000
-
-[Addons\ProScan\Enable Widescreen and Progressive option]
+[ProScan\Enable Widescreen and Progressive option in Settings]
 //save true to "is_buttonEnabled"
 patch=1,EE,E0032021,extended,0059FC00
 patch=1,EE,2059FC04,extended,24020001
 patch=1,EE,2059FC08,extended,03E00008
 patch=1,EE,2059FC0C,extended,A0820000
 
-[Addons\ProScan\Enable]
+[ProScan\Enable Function]
 //nop the resetting ProScan
 patch=1,EE,E0018CC8,extended,00516B8C
 patch=1,EE,20516B8C,extended,00000000
@@ -38,11 +28,82 @@ patch=1,EE,20516B8C,extended,00000000
 patch=1,EE,5016A364,extended,00000001
 patch=1,EE,00209838,extended,00000000
 
-[Addons\ProScan\576p instead of 480p]
+[ProScan\576p instead of 480p]
 patch=1,EE,E0010050,extended,00516BA4
 patch=1,EE,00516BA4,extended,24060053
 
+// VENDOR
+
+[Vendor\Enable all weapons]
+patch=1,EE,E0020008,extended,005C4630
+patch=1,EE,205C462C,extended,24020001
+patch=1,EE,205C4634,extended,A0820000
+
+[Vendor\Enable all Omega Mods]
+patch=1,EE,E0020008,extended,005C4648
+patch=1,EE,205C4644,extended,24020001
+patch=1,EE,205C464C,extended,A0820000
+
+[Vendor\Enable all bots upgrades]
+description=Requires Bot Shop
+patch=1,EE,E0020008,extended,005C4660
+patch=1,EE,205C465C,extended,24020001
+patch=1,EE,205C4664,extended,A0820000
+
+[Vendor\Bots Shop]
+description=Replaces Help Log with Bots Shop
+patch=1,EE,E0010012,extended,0059CC74
+patch=1,EE,0059CC74,extended,24050010
+
+// LEVELS
+
+[Levels\Planets\Planets Selection screen]
+description=Replaces Main Menu with Quit and Quit with Planets Selection
+patch=1,EE,E003700E,extended,0059C540
+patch=1,EE,1059C440,extended,2606CBE8
+patch=1,EE,0059C530,extended,3C060059
+patch=1,EE,1059C53C,extended,24C6D4D8
+//Planets Selection
+patch=1,EE,E0010007,extended,0058D4E8
+patch=1,EE,0058D4E8,extended,24050003
+
+[Levels\Planets\Enable All Planets]
+patch=1,EE,E001FE04,extended,00643D64
+patch=1,EE,20643D64,extended,24020001
+
+[Levels\Planets\Enable All Planets\Include Unplayable]
+patch=1,EE,E0010007,extended,00643D54
+patch=1,EE,20643D54,extended,00000000
+
+[Levels\Missions\Enable All Missions]
+patch=1,EE,E001FDCA,extended,00643E04
+patch=1,EE,20643E04,extended,24020001
+
+[Levels\Missions\Enable All Missions\Include Unplayable Planets]
+description=Doesn't work. Kept for reference.
+patch=1,EE,E0010018,extended,00643D98
+patch=1,EE,20643D98,extended,00000000
+
+[Levels\Missions\All Missions available]
+patch=1,EE,E001000F,extended,005363EC
+patch=1,EE,205363EC,extended,00000000
+
+[Levels\Missions\Missions Stay Visible After Beating]
+patch=1,EE,E0020004,extended,005365DC
+patch=1,EE,205365D8,extended,24030001
+patch=1,EE,205365E0,extended,AC430010
+
+[Levels\Basic Unlock]
+description=Unlocks bunch of things. Kept for reference.
+patch=1,EE,E0020008,extended,00643F10
+patch=1,EE,20643F08,extended,24020001
+patch=1,EE,20643F0C,extended,03E00008
+
 // CHEATS
+
+[Cheats\Bots\Bots have all abilities]
+patch=1,EE,E00101D0,extended,00552614
+patch=1,EE,20552614,extended,24020001
 
 [Cheats\Missions\Unlock All Missions]
 patch=1,EE,E0010008,extended,00536428
@@ -52,7 +113,7 @@ patch=1,EE,00536424,extended,34420007
 patch=1,EE,E001FFF9,extended,005C6388
 patch=1,EE,205C6378,extended,34630001
 
-[Cheats\Profile\Get all weapons]
+[Cheats\Profile\Get all weapons and Gadgets]
 patch=1,EE,E001FFFF,extended,0064394C
 patch=1,EE,1064394C,extended,24060000
 
@@ -70,30 +131,64 @@ patch=1,EE,2062FB88,extended,00631818
 patch=1,EE,E0010003,extended,00643374
 patch=1,EE,20643374,extended,00000000
 
-[Misc\Missions\Missions Always Visible]
-patch=1,EE,E0020004,extended,005365DC
-patch=1,EE,205365D8,extended,24030001
-patch=1,EE,205365E0,extended,AC430010
+// GAME RULES
+// - SINGLE
+[Game Rules\Single Player\Enable Gadgets]
+//HUD elements
+patch=1,EE,E001938C,extended,00596F50
+patch=1,EE,20596F50,extended,24020001
+//Gadgets texture
+patch=1,EE,E001938C,extended,005969F8
+patch=1,EE,205969F8,extended,24030001
+//UpdateAvailableGadgets
+patch=1,EE,E001938C,extended,00597378
+patch=1,EE,20597378,extended,24020001
+//GetCurrentGadget
+patch=1,EE,E001938C,extended,00584E18
+patch=1,EE,20584E18,extended,24030001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001938C,extended,00596BF8
+patch=1,EE,20596BF8,extended,24020001
+//UpdateQuickSelect
+patch=1,EE,E001938C,extended,00640D9C
+patch=1,EE,20640D9C,extended,24020001
+//Get Gadgets
+patch=1,EE,E001A71C,extended,0062FA98
+patch=1,EE,2062FA98,extended,24030001
 
-[Misc\Menus\Planets Selection screen]
-description=Replaces Main Menu with Quit and Quit with Planets Selection
-patch=1,EE,E003700E,extended,0059C540
-patch=1,EE,1059C440,extended,2606CBE8
-patch=1,EE,0059C530,extended,3C060059
-patch=1,EE,1059C53C,extended,24C6D4D8
-//Planets Selection
-patch=1,EE,E0010007,extended,0058D4E8
-patch=1,EE,0058D4E8,extended,24050003
+[Game Rules\Single Player\Disable Bots]
+patch=1,EE,E001938C,extended,004BEDC8
+patch=1,EE,204BEDC8,extended,24030001
+//Fix Invisible HUD
+patch=1,EE,E001938C,extended,00552A1C
+patch=1,EE,20552A1C,extended,24020001
 
-[Misc\Menus\Bots Shop]
-description=Replaces Help Log with Bots Shop
-patch=1,EE,E0010012,extended,0059CC74
-patch=1,EE,0059CC74,extended,24050010
+// - COOP
+[Game Rules\Cooperative\Unlimited Player Distance]
+patch=1,EE,E001938C,extended,0043C31C
+patch=1,EE,2043C31C,extended,24030000
 
-[Misc\Demo\Disable Demo finished when beating all missions]
-patch=1,EE,E001FFFF,extended,00401BAC
-patch=1,EE,20401BA4,extended,10000009
+[Game Rules\Cooperative\Disable teleporting a player]
+patch=1,EE,E001938C,extended,004B2038
+patch=1,EE,204B2038,extended,24030000
 
-[Misc\Demo\Disable Demo Timer (when AFK)]
-patch=1,EE,E0019468,extended,005AC53C
-patch=1,EE,205AC538,extended,10000007
+[Game Rules\Cooperative\Enable Bot Commands]
+//Enable writing Bot commands
+patch=1,EE,E001A71C,extended,0062FA98
+patch=1,EE,2062FA98,extended,24030000
+//HUD elements
+patch=1,EE,E001938C,extended,00596F50
+patch=1,EE,20596F50,extended,24020000
+//Help Messages
+patch=1,EE,E001938C,extended,00596CE8
+patch=1,EE,20596CE8,extended,24020000
+//BotHud_IsSlotEmpty
+patch=1,EE,E001938C,extended,00596BF8
+patch=1,EE,20596BF8,extended,24020000
+//UpdateAvailableGadgets
+patch=1,EE,E001938C,extended,00597378
+patch=1,EE,20597378,extended,24020000
+
+[Game Rules\Cooperative\Enable Bots]
+patch=1,EE,E001938C,extended,004BEDC8
+patch=1,EE,204BEDC8,extended,24030000

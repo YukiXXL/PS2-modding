@@ -1,6 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=MISC - MISSIONS ALWAYS VISIBLE
-
-patch=1,EE,E0020004,extended,00532E1C
-patch=1,EE,20532E18,extended,24030001
-patch=1,EE,20532E20,extended,AC430010
