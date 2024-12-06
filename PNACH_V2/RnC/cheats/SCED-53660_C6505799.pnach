@@ -68,7 +68,7 @@ patch=1,EE,E0010007,extended,0058D4E8
 patch=1,EE,0058D4E8,extended,24050003
 
 [Levels\Planets\Enable All Planets]
-patch=1,EE,E001FE04,extended,00643D64
+patch=1,EE,E0010FC2,extended,00643D64
 patch=1,EE,20643D64,extended,24020001
 
 [Levels\Planets\Enable All Planets\Include Unplayable]
@@ -76,7 +76,7 @@ patch=1,EE,E0010007,extended,00643D54
 patch=1,EE,20643D54,extended,00000000
 
 [Levels\Missions\Enable All Missions]
-patch=1,EE,E001FDCA,extended,00643E04
+patch=1,EE,E0010F88,extended,00643E04
 patch=1,EE,20643E04,extended,24020001
 
 [Levels\Missions\Enable All Missions\Include Unplayable Planets]
@@ -135,60 +135,60 @@ patch=1,EE,20643374,extended,00000000
 // - SINGLE
 [Game Rules\Single Player\Enable Gadgets]
 //HUD elements
-patch=1,EE,E001938C,extended,00596F50
+patch=1,EE,E001AE7C,extended,00596F50
 patch=1,EE,20596F50,extended,24020001
 //Gadgets texture
-patch=1,EE,E001938C,extended,005969F8
+patch=1,EE,E001AE7C,extended,005969F8
 patch=1,EE,205969F8,extended,24030001
 //UpdateAvailableGadgets
-patch=1,EE,E001938C,extended,00597378
+patch=1,EE,E001AE7C,extended,00597378
 patch=1,EE,20597378,extended,24020001
 //GetCurrentGadget
-patch=1,EE,E001938C,extended,00584E18
+patch=1,EE,E001AE7C,extended,00584E18
 patch=1,EE,20584E18,extended,24030001
 //BotHud_IsSlotEmpty
-patch=1,EE,E001938C,extended,00596BF8
+patch=1,EE,E001AE7C,extended,00596BF8
 patch=1,EE,20596BF8,extended,24020001
 //UpdateQuickSelect
-patch=1,EE,E001938C,extended,00640D9C
+patch=1,EE,E001AE7C,extended,00640D9C
 patch=1,EE,20640D9C,extended,24020001
 //Get Gadgets
-patch=1,EE,E001A71C,extended,0062FA98
+patch=1,EE,E001A30C,extended,0062FA98
 patch=1,EE,2062FA98,extended,24030001
 
 [Game Rules\Single Player\Disable Bots]
-patch=1,EE,E001938C,extended,004BEDC8
+patch=1,EE,E001AE7C,extended,004BEDC8
 patch=1,EE,204BEDC8,extended,24030001
 //Fix Invisible HUD
-patch=1,EE,E001938C,extended,00552A1C
+patch=1,EE,E001AE7C,extended,00552A1C
 patch=1,EE,20552A1C,extended,24020001
 
 // - COOP
 [Game Rules\Cooperative\Unlimited Player Distance]
-patch=1,EE,E001938C,extended,0043C31C
+patch=1,EE,E001AE7C,extended,0043C31C
 patch=1,EE,2043C31C,extended,24030000
 
 [Game Rules\Cooperative\Disable teleporting a player]
-patch=1,EE,E001938C,extended,004B2038
+patch=1,EE,E001AE7C,extended,004B2038
 patch=1,EE,204B2038,extended,24030000
 
 [Game Rules\Cooperative\Enable Bot Commands]
 //Enable writing Bot commands
-patch=1,EE,E001A71C,extended,0062FA98
+patch=1,EE,E001A30C,extended,0062FA98
 patch=1,EE,2062FA98,extended,24030000
 //HUD elements
-patch=1,EE,E001938C,extended,00596F50
+patch=1,EE,E001AE7C,extended,00596F50
 patch=1,EE,20596F50,extended,24020000
 //Help Messages
-patch=1,EE,E001938C,extended,00596CE8
+patch=1,EE,E001AE7C,extended,00596CE8
 patch=1,EE,20596CE8,extended,24020000
 //BotHud_IsSlotEmpty
-patch=1,EE,E001938C,extended,00596BF8
+patch=1,EE,E001AE7C,extended,00596BF8
 patch=1,EE,20596BF8,extended,24020000
 //UpdateAvailableGadgets
-patch=1,EE,E001938C,extended,00597378
+patch=1,EE,E001AE7C,extended,00597378
 patch=1,EE,20597378,extended,24020000
 
 [Game Rules\Cooperative\Enable Bots]
-patch=1,EE,E001938C,extended,004BEDC8
+patch=1,EE,E001AE7C,extended,004BEDC8
 patch=1,EE,204BEDC8,extended,24030000

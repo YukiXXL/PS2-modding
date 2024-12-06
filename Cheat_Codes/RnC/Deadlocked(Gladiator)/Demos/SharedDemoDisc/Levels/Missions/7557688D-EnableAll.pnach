@@ -2,7 +2,7 @@ gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=MISSIONS - ENABLE ALL
 
 //Enable All Missions
-patch=1,EE,E001FDCA,extended,00643E04
+patch=1,EE,E0010F88,extended,00643E04
 patch=1,EE,20643E04,extended,24020001
 
 //Include Unplayable Planets

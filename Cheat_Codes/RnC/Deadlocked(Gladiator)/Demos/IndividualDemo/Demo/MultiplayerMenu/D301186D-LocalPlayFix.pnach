@@ -1,0 +1,16 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=Refreshes after changing the map.
+
+//Function Restore
+patch=1,EE,E0030005,extended,0072C308
+patch=1,EE,2072C2D4,extended,0240202D
+patch=1,EE,2072C2D8,extended,8E4301EC
+patch=1,EE,2072C304,extended,10003B54
+patch=1,EE,E002002C,extended,0073B044
+patch=1,EE,2073B040,extended,1000C49E
+patch=1,EE,2073B044,extended,00000000
+//Correct the address
+patch=1,EE,E0030058,extended,0072D3E4
+patch=1,EE,0073AF88,extended,8E440070
+patch=1,EE,0073AFB0,extended,8E440070
+patch=1,EE,0072D3E0,extended,8E040070

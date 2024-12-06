@@ -1,0 +1,8 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=DEMO - MULTIPLAYER MENU - ENABLE ALL LOCAL PLAY OPTIONS
+
+patch=1,EE,E004202D,extended,0073AEDC
+patch=1,EE,0073AC9C,extended,24050004
+patch=1,EE,0073ACB4,extended,24050004
+patch=1,EE,0073AEA8,extended,24050004
+patch=1,EE,0073AED4,extended,24050004

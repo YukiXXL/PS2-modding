@@ -11,6 +11,43 @@ patch=1,EE,204000F4,extended,10000009
 patch=1,EE,E0019868,extended,008F1204
 patch=1,EE,208F1200,extended,10000007
 
+[Demo\Multiplayer Menu\Enable]
+patch=1,EE,E0020084,extended,00714628
+patch=1,EE,2071461C,extended,10000030
+patch=1,EE,20714620,extended,24020016
+
+[Demo\Multiplayer Menu\Enable all options]
+patch=1,EE,E0010058,extended,00740208
+patch=1,EE,0074019C,extended,24050004 //OnlinePlay
+patch=1,EE,00740204,extended,24050004 //EditProfiles
+
+[Demo\Multiplayer Menu\Online Play Bypass]
+patch=1,EE,E001000C,extended,007403B4
+patch=1,EE,007403B4,extended,24030017
+
+[Demo\Multiplayer Menu\Enable All Local Play Options]
+patch=1,EE,E004202D,extended,0073AEDC
+patch=1,EE,0073AC9C,extended,24050004
+patch=1,EE,0073ACB4,extended,24050004
+patch=1,EE,0073AEA8,extended,24050004
+patch=1,EE,0073AED4,extended,24050004
+
+[Demo\Multiplayer Menu\Enable Mode Change for Local Play]
+description=Refreshes after changing the map.
+//Function Restore
+patch=1,EE,E0030005,extended,0072C308
+patch=1,EE,2072C2D4,extended,0240202D
+patch=1,EE,2072C2D8,extended,8E4301EC
+patch=1,EE,2072C304,extended,10003B54
+patch=1,EE,E002002C,extended,0073B044
+patch=1,EE,2073B040,extended,1000C49E
+patch=1,EE,2073B044,extended,00000000
+//Correct the address
+patch=1,EE,E0030058,extended,0072D3E4
+patch=1,EE,0073AF88,extended,8E440070
+patch=1,EE,0073AFB0,extended,8E440070
+patch=1,EE,0072D3E0,extended,8E040070
+
 // PROSCAN
 
 [ProScan\Enable NTSC Progressive]
@@ -18,7 +55,7 @@ patch=1,EE,E0017D18,extended,009160E0
 patch=1,EE,209160E0,extended,AC237D18
 
 [ProScan\Enable Progressive option in Settings]
-//save true to "is_buttonEnabled"
+// save true to "is_buttonEnabled"
 patch=1,EE,E0032021,extended,0059BD40
 patch=1,EE,2059BD44,extended,24020001
 patch=1,EE,2059BD48,extended,03E00008
