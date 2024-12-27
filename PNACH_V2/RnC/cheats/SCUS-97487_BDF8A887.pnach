@@ -37,6 +37,79 @@ patch=1,EE,E003F809,extended,0067D01C
 patch=1,EE,0067D010,extended,24050004
 
 [Misc\Menus\Bypass Server Start]
+patch=1,EE,E001F54A,extended,0067D484
 patch=1,EE,0067D484,extended,24020001
 
+[Misc\Menus\Server Start Offline]
+patch=1,EE,E001F54A,extended,0067D484
+patch=1,EE,0067D484,extended,0C18784C
+
+[Misc\Menus\Demo Lobby]
+//Function
+patch=1,EE,E0330070,extended,0067D5FC
+patch=1,EE,1067D528,extended,27BDFFE0
+patch=1,EE,2067D52C,extended,24040003
+patch=1,EE,2067D530,extended,FFB00000
+patch=1,EE,2067D534,extended,FFB10008
+patch=1,EE,2067D538,extended,FFBF0010
+patch=1,EE,2067D53C,extended,0C057F56
+patch=1,EE,2067D540,extended,24110003
+patch=1,EE,2067D544,extended,3C080017
+patch=1,EE,2067D548,extended,24030001
+patch=1,EE,2067D54C,extended,2502C360
+patch=1,EE,2067D550,extended,2405003C
+patch=1,EE,2067D554,extended,2406FFFF
+patch=1,EE,2067D558,extended,A0430005
+patch=1,EE,2067D55C,extended,A045001D
+patch=1,EE,2067D560,extended,3C100017
+patch=1,EE,2067D564,extended,A0460018
+patch=1,EE,2067D568,extended,2610AD68
+patch=1,EE,2067D56C,extended,A103C360
+patch=1,EE,2067D570,extended,24070001
+patch=1,EE,2067D574,extended,AE07001C
+patch=1,EE,2067D578,extended,0000202D
+patch=1,EE,2067D57C,extended,A043002C
+patch=1,EE,2067D580,extended,A043002E
+patch=1,EE,2067D584,extended,A043000D
+patch=1,EE,2067D588,extended,A0430001
+patch=1,EE,2067D58C,extended,A0430002
+patch=1,EE,2067D590,extended,A0430003
+patch=1,EE,2067D594,extended,A0430004
+patch=1,EE,2067D598,extended,A040002B
+patch=1,EE,2067D59C,extended,A0400022
+patch=1,EE,2067D5A0,extended,A040002D
+patch=1,EE,2067D5A4,extended,A040002F
+patch=1,EE,2067D5A8,extended,AE0701D4
+patch=1,EE,2067D5AC,extended,AE0701D8
+patch=1,EE,2067D5B0,extended,AE00018C
+patch=1,EE,2067D5B4,extended,0C05681C
+patch=1,EE,2067D5B8,extended,A20006C0
+patch=1,EE,2067D5BC,extended,0C056A26
+patch=1,EE,2067D5C4,extended,3C040020
+patch=1,EE,2067D5C8,extended,8C840E98
+patch=1,EE,2067D5CC,extended,2403002E
+patch=1,EE,2067D5D0,extended,A20001DC
+patch=1,EE,2067D5D4,extended,A4830298
+patch=1,EE,2067D5D8,extended,DFB00000
+patch=1,EE,2067D5DC,extended,3C020020
+patch=1,EE,2067D5E0,extended,8C420E98
+patch=1,EE,2067D5E4,extended,DFBF0010
+patch=1,EE,2067D5E8,extended,A051029C
+patch=1,EE,2067D5EC,extended,DFB10008
+patch=1,EE,2067D5F0,extended,03E00008
+patch=1,EE,2067D5F4,extended,27BD0020
+//Menu
+patch=1,EE,E006AAB8,extended,0066DA94
+patch=1,EE,2066DA7C,extended,3C020021
+patch=1,EE,2066DA80,extended,8C42804C
+patch=1,EE,2066DA84,extended,0C19F54A
+patch=1,EE,2066DA88,extended,8C440084
+patch=1,EE,2066DA8C,extended,1000001C
+patch=1,EE,2066DA90,extended,24020012
+
+
 // 0067d458 - selection
+
+// local play functions at the end
+// 0015a070 - function 1
+// 0015a898 - function 2

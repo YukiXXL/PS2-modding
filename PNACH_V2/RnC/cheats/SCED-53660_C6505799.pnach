@@ -93,11 +93,11 @@ patch=1,EE,E0020004,extended,005365DC
 patch=1,EE,205365D8,extended,24030001
 patch=1,EE,205365E0,extended,AC430010
 
-[Levels\Basic Unlock]
+[Levels\CheckBadgeUnlock]
 description=Unlocks bunch of things. Kept for reference.
 patch=1,EE,E0020008,extended,00643F10
-patch=1,EE,20643F08,extended,24020001
-patch=1,EE,20643F0C,extended,03E00008
+patch=1,EE,20643F08,extended,03E00008
+patch=1,EE,20643F0C,extended,24020001
 
 // CHEATS
 

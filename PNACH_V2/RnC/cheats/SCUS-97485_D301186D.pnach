@@ -25,6 +25,9 @@ patch=1,EE,00740204,extended,24050004 //EditProfiles
 patch=1,EE,E001000C,extended,007403B4
 patch=1,EE,007403B4,extended,24030017
 
+[Demo\Multiplayer Menu\Online Play Bypass (Local Play function)]
+patch=1,EE,1072C370,extended,0C1CEC7A
+
 [Demo\Multiplayer Menu\Enable All Local Play Options]
 patch=1,EE,E004202D,extended,0073AEDC
 patch=1,EE,0073AC9C,extended,24050004
@@ -125,11 +128,11 @@ patch=1,EE,E0020004,extended,00532E1C
 patch=1,EE,20532E18,extended,24030001
 patch=1,EE,20532E20,extended,AC430010
 
-[Levels\Basic Unlock]
+[Levels\CheckBadgeUnlock]
 description=Unlocks bunch of things. Kept for reference.
 patch=1,EE,E0020008,extended,0063F818
-patch=1,EE,2063F810,extended,24020001
-patch=1,EE,2063F814,extended,03E00008
+patch=1,EE,2063F810,extended,03E00008
+patch=1,EE,2063F814,extended,24020001
 
 // CHEATS
 
@@ -197,6 +200,7 @@ patch=1,EE,2054F1FC,extended,24020001
 
 // - COOP
 [Game Rules\Cooperative\Unlimited Player Distance]
+description=Disables the line when players are too far away from each other.
 patch=1,EE,E001938C,extended,00439D34
 patch=1,EE,20439D34,extended,24030000
 
@@ -224,3 +228,29 @@ patch=1,EE,205934B8,extended,24020000
 [Game Rules\Cooperative\Enable Bots]
 patch=1,EE,E001938C,extended,004BBAF8
 patch=1,EE,204BBAF8,extended,24030000
+
+// SINGLE or COOP
+
+[Single or Coop\Skin\Marauder (0)]
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000000
+
+[Single or Coop\Skin\Avenger (1)]
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000001
+
+[Single or Coop\Skin\Promotional Armor (2)]
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000002
+
+[Single or Coop\Skin\Crusader (3)]
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000003
+
+[Single or Coop\Skin\Vindicator (4)]
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000004
+
+[Single or Coop\Skin\Liberator (5)]
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000005
