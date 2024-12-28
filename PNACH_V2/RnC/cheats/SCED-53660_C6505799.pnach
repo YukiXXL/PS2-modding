@@ -11,6 +11,47 @@ patch=1,EE,20401BA4,extended,10000009
 patch=1,EE,E0019468,extended,005AC53C
 patch=1,EE,205AC538,extended,10000007
 
+[Demo\Multiplayer Menu\Enable]
+patch=1,EE,E0020084,extended,00717C68
+patch=1,EE,20717C5C,extended,10000030
+patch=1,EE,20717C60,extended,24020016
+
+[Demo\Multiplayer Menu\Enable all options]
+patch=1,EE,E0010058,extended,00743858
+patch=1,EE,007437EC,extended,24050004 //OnlinePlay
+patch=1,EE,00743854,extended,24050004 //EditProfiles
+
+[Demo\Multiplayer Menu\Online Play Bypass]
+patch=1,EE,E001000C,extended,00743A04
+patch=1,EE,00743A04,extended,24030017
+
+[Demo\Multiplayer Menu\Online Play Bypass (Local Play function)]
+patch=1,EE,E001BE9C,extended,0072F9B8
+patch=1,EE,1072F9B8,extended,0C1CFA0C
+
+[Demo\Multiplayer Menu\Enable All Local Play Options]
+patch=1,EE,E004202D,extended,0073E524
+patch=1,EE,0073E2E4,extended,24050004
+patch=1,EE,0073E2FC,extended,24050004
+patch=1,EE,0073E4F0,extended,24050004
+patch=1,EE,0073E51C,extended,24050004
+
+[Demo\Multiplayer Menu\Enable Mode Change for Local Play]
+description=Refreshes after changing the map.
+//Function Restore
+patch=1,EE,E0030005,extended,0072F950
+patch=1,EE,2072F91C,extended,0240202D
+patch=1,EE,2072F920,extended,8E4301EC
+patch=1,EE,2072F94C,extended,10003B54
+patch=1,EE,E002002C,extended,0073E68C
+patch=1,EE,2073E688,extended,1000C49E
+patch=1,EE,2073E68C,extended,00000000
+//Correct the address
+patch=1,EE,E0030058,extended,00730A2C
+patch=1,EE,0073E5D0,extended,8E440070
+patch=1,EE,0073E5F8,extended,8E440070
+patch=1,EE,00730A28,extended,8E040070
+
 // PROSCAN
 
 [ProScan\Enable Widescreen and Progressive option in Settings]
@@ -127,6 +168,27 @@ patch=1,EE,2062FB88,extended,00631818
 
 // MISC
 
+//-CHANGE DIFFICULTY
+[Misc\Change Difficulty\Couch Potato]
+patch=1,EE,E0010002,extended,003E8650
+patch=1,EE,003E8650,extended,00000000
+
+[Misc\Change Difficulty\Contestant]
+patch=1,EE,E0010002,extended,003E8650
+patch=1,EE,003E8650,extended,00000001
+
+[Misc\Change Difficulty\Gladiator (Default)]
+patch=1,EE,E0010002,extended,003E8650
+patch=1,EE,003E8650,extended,00000002
+
+[Misc\Change Difficulty\Hero]
+patch=1,EE,E0010002,extended,003E8650
+patch=1,EE,003E8650,extended,00000003
+
+[Misc\Change Difficulty\Exterminator]
+patch=1,EE,E0010002,extended,003E8650
+patch=1,EE,003E8650,extended,00000004
+
 [Misc\Weapons\Enable All Omega Mods for All Weapons]
 patch=1,EE,E0010003,extended,00643374
 patch=1,EE,20643374,extended,00000000
@@ -165,6 +227,7 @@ patch=1,EE,20552A1C,extended,24020001
 
 // - COOP
 [Game Rules\Cooperative\Unlimited Player Distance]
+description=Disables the line when players are too far away from each other.
 patch=1,EE,E001AE7C,extended,0043C31C
 patch=1,EE,2043C31C,extended,24030000
 
@@ -192,3 +255,29 @@ patch=1,EE,20597378,extended,24020000
 [Game Rules\Cooperative\Enable Bots]
 patch=1,EE,E001AE7C,extended,004BEDC8
 patch=1,EE,204BEDC8,extended,24030000
+
+// SINGLE or COOP
+
+[Single or Coop\Skin\Marauder (0)(Default)]
+patch=1,EE,E0010022,extended,004E5DDC
+patch=1,EE,1020973C,extended,00000000
+
+[Single or Coop\Skin\Avenger (1)]
+patch=1,EE,E0010022,extended,004E5DDC
+patch=1,EE,1020973C,extended,00000001
+
+[Single or Coop\Skin\Promotional Armor (2)]
+patch=1,EE,E0010022,extended,004E5DDC
+patch=1,EE,1020973C,extended,00000002
+
+[Single or Coop\Skin\Crusader (3)]
+patch=1,EE,E0010022,extended,004E5DDC
+patch=1,EE,1020973C,extended,00000003
+
+[Single or Coop\Skin\Vindicator (4)]
+patch=1,EE,E0010022,extended,004E5DDC
+patch=1,EE,1020973C,extended,00000004
+
+[Single or Coop\Skin\Liberator (5)]
+patch=1,EE,E0010022,extended,004E5DDC
+patch=1,EE,1020973C,extended,00000005

@@ -330,6 +330,12 @@ patch=1,EE,2059E9D0,extended,24020001
 //Bot_ResetGlobalComm
 patch=1,EE,E001E698,extended,00569880
 patch=1,EE,20569880,extended,24020001
+//Rescued Bot does not follow
+patch=1,EE,E001E698,extended,004A18BC
+patch=1,EE,204A18BC,extended,24020001
+//Fix not having gadgets
+patch=1,EE,E0018D19,extended,0056A1B4
+patch=1,EE,2056A1B4,extended,24020001
 //-GHOST STATION
 //BotHud_UpdateIcons
 patch=1,EE,E001E698,extended,005AE4E4
@@ -464,6 +470,15 @@ patch=1,EE,105B41A0,extended,2484DA98
 //-DREADZONE INTERIOR
 patch=1,EE,E001E0C8,extended,005C43E8
 patch=1,EE,105C43E8,extended,2484DA98
+
+[Game Rules\Single Player\Solo Mod\Fix Arena Help Stuff]
+description=Fixes tutorials where bots are needed and uses COOP messages.
+//Fix Tutorials
+patch=1,EE,E001E828,extended,003D9214
+patch=1,EE,203D9214,extended,24020001
+//Fix Help Messages
+patch=1,EE,E001E828,extended,003D9494
+patch=1,EE,203D9494,extended,24020001
 
 // COOPERATIVE GAME RULES
 

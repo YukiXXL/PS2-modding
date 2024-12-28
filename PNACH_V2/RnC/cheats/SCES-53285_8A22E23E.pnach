@@ -1,0 +1,41 @@
+gametitle=Ratchet: Gladiator Review Prototype (Aug 23, 2005) (PAL-E)
+comment=Dumped by Thatawesomecat. Credits to GFI
+
+[DreadZone Station\Single Player\Enable Jak Skin]
+patch=1,EE,E001EB08,extended,00660238
+patch=1,EE,20660238,extended,24020001
+
+[DreadZone Station\Planets\Enable Dreadzone Interior Planet]
+patch=1,EE,E001000F,extended,006456FC
+patch=1,EE,006456FC,extended,24020010
+
+[DreadZone Station\Missions\Enable All Missions (Including CUT)]
+patch=1,EE,E002102D,extended,00703858
+patch=1,EE,207037F0,extended,00000000
+patch=1,EE,2070385C,extended,24020001
+
+[DreadZone Station\Missions\All Missions available]
+patch=1,EE,E0010014,extended,005CA0C8
+patch=1,EE,205CA0C4,extended,00000000
+
+[DreadZone Station\CheckBadgeUnlock]
+description=Unlocks bunch of things. Kept for reference.
+patch=1,EE,E0020004,extended,00703960
+patch=1,EE,20703958,extended,24020001
+patch=1,EE,2070395C,extended,03E00008
+
+[DreadZone Station\CheckBasicUnlock]
+description=Unlocks bunch of things. Kept for reference.
+patch=1,EE,E0020018,extended,00703880
+patch=1,EE,20703878,extended,24020001
+patch=1,EE,2070387C,extended,03E00008
+
+[DreadZone Station\Missions\Unlock All Missions]
+patch=1,EE,E0010008,extended,005CA158
+patch=1,EE,205CA154,extended,24020007
+
+[DreadZone Station\Planets\Unlock All Planets]
+patch=1,EE,E0030015,extended,00645224
+patch=1,EE,20645208,extended,0000102D
+patch=1,EE,2064520C,extended,0000282D
+patch=1,EE,20645210,extended,24030001
