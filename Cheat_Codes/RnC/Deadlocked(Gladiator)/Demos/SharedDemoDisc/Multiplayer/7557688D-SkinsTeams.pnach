@@ -1,0 +1,35 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=One register is used for multiple things
+
+//Player 1 Skin; Player 2 Team Color
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,007417B4,extended,24060001
+
+//Player 3 Team
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,007417B8,extended,24030002
+
+//Player 3 Skin
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,007417BC,extended,2404000F
+
+//Player 4 Team
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,007417C0,extended,24050004
+
+//Player 4 Skin
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,007417C4,extended,24020008
+
+
+//Player 1 Team (sw zero)
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,207417E0,extended,AE25022C //Use Player 4 Team
+
+//Player 1 Skin (sw a2)
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,207417E4,extended,AE22021C //Use Player 4 Skin
+
+//Player 2 Skin (sw zero)
+patch=1,EE,E0010400,extended,007417B0
+patch=1,EE,207417E8,extended,AE240220 //Use Player 3 Skin

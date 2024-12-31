@@ -1,4 +1,4 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=Provided by YukiXXL.
 
 // DEMO
@@ -11,32 +11,34 @@ patch=1,EE,20401BA4,extended,10000009
 patch=1,EE,E0019468,extended,005AC53C
 patch=1,EE,205AC538,extended,10000007
 
-[Demo\Multiplayer Menu\Enable]
+// MULTIPLAYER
+
+[Multiplayer Menu\Enable]
 patch=1,EE,E0020084,extended,00717C68
 patch=1,EE,20717C5C,extended,10000030
 patch=1,EE,20717C60,extended,24020016
 
-[Demo\Multiplayer Menu\Enable all options]
+[Multiplayer Menu\Enable all options]
 patch=1,EE,E0010058,extended,00743858
 patch=1,EE,007437EC,extended,24050004 //OnlinePlay
 patch=1,EE,00743854,extended,24050004 //EditProfiles
 
-[Demo\Multiplayer Menu\Online Play Bypass]
+[Multiplayer Menu\Online Play Bypass]
 patch=1,EE,E001000C,extended,00743A04
 patch=1,EE,00743A04,extended,24030017
 
-[Demo\Multiplayer Menu\Online Play Bypass (Local Play function)]
+[Multiplayer Menu\Online Play Bypass (Local Play function)]
 patch=1,EE,E001BE9C,extended,0072F9B8
 patch=1,EE,1072F9B8,extended,0C1CFA0C
 
-[Demo\Multiplayer Menu\Enable All Local Play Options]
+[Multiplayer Menu\Enable All Local Play Options]
 patch=1,EE,E004202D,extended,0073E524
 patch=1,EE,0073E2E4,extended,24050004
 patch=1,EE,0073E2FC,extended,24050004
 patch=1,EE,0073E4F0,extended,24050004
 patch=1,EE,0073E51C,extended,24050004
 
-[Demo\Multiplayer Menu\Enable Mode Change for Local Play]
+[Multiplayer Menu\Enable Mode Change for Local Play]
 description=Refreshes after changing the map.
 //Function Restore
 patch=1,EE,E0030005,extended,0072F950
@@ -224,6 +226,10 @@ patch=1,EE,204BEDC8,extended,24030001
 //Fix Invisible HUD
 patch=1,EE,E001AE7C,extended,00552A1C
 patch=1,EE,20552A1C,extended,24020001
+
+[Game Rules\Single Player\P2 Team (Blue)]
+patch=1,EE,E0012E78,extended,0060E774
+patch=1,EE,2060E770,extended,AE002E9C
 
 // - COOP
 [Game Rules\Cooperative\Unlimited Player Distance]

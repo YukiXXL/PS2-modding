@@ -1,0 +1,39 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=Change the mission passed banner
+
+//-DREADZONE STATION and ARENA
+patch=1,EE,E001E0C8,extended,005F61D8
+patch=1,EE,105F61D8,extended,2484DA98
+//-CATACROM FOUR
+patch=1,EE,E001E0C8,extended,005A6A50
+patch=1,EE,105A6A50,extended,2484DA98
+//-SARATHOS
+patch=1,EE,E001E0C8,extended,005A6778
+patch=1,EE,105A6778,extended,2484DA98
+//-KRONOS
+patch=1,EE,E001E0C8,extended,005CC708
+patch=1,EE,105CC708,extended,2484DA98
+//-SHAAR
+patch=1,EE,E001E0C8,extended,0059EC58
+patch=1,EE,1059EC58,extended,2484DA98
+//-ORXON
+patch=1,EE,E001E0C8,extended,005A91F8
+patch=1,EE,105A91F8,extended,2484DA98
+//-THE VALIX BELT
+patch=1,EE,E001E0C8,extended,00591EF0
+patch=1,EE,10591EF0,extended,2484DA98
+//-PLANET TORVAL
+patch=1,EE,E001E0C8,extended,005B3B70
+patch=1,EE,105B3B70,extended,2484DA98
+//-STYGIA
+patch=1,EE,E001E0C8,extended,005A0B90
+patch=1,EE,105A0B90,extended,2484DA98
+//-MARAXUS
+patch=1,EE,E001E0C8,extended,005BA0B8
+patch=1,EE,105BA0B8,extended,2484DA98
+//-GHOST STATION
+patch=1,EE,E001E0C8,extended,005B41A0
+patch=1,EE,105B41A0,extended,2484DA98
+//-DREADZONE INTERIOR
+patch=1,EE,E001E0C8,extended,005C43E8
+patch=1,EE,105C43E8,extended,2484DA98

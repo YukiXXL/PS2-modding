@@ -1,0 +1,5 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=Enable Jak skin
+
+patch=1,EE,E001E828,extended,0061C180
+patch=1,EE,2061C180,extended,24020001

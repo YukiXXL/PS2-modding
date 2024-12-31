@@ -1,0 +1,6 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=EXTRAS
+
+//Skin (P1, P2)
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000002

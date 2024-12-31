@@ -1,5 +1,10 @@
 gametitle=Ratchet: Deadlocked Demo (NTSC-U)
 comment=DEMO - MULTIPLAYER MENU - ONLINE PLAY BYPASS
 
+//Lobby
 patch=1,EE,E001000C,extended,007403B4
 patch=1,EE,007403B4,extended,24030017
+
+//Local Play Function
+patch=1,EE,E001B10A,extended,0072C370
+patch=1,EE,1072C370,extended,0C1CEC7A

@@ -11,32 +11,34 @@ patch=1,EE,204000F4,extended,10000009
 patch=1,EE,E0019868,extended,008F1204
 patch=1,EE,208F1200,extended,10000007
 
-[Demo\Multiplayer Menu\Enable]
+// MULTIPLAYER
+
+[Multiplayer Menu\Enable]
 patch=1,EE,E0020084,extended,00714628
 patch=1,EE,2071461C,extended,10000030
 patch=1,EE,20714620,extended,24020016
 
-[Demo\Multiplayer Menu\Enable all options]
+[Multiplayer Menu\Enable all options]
 patch=1,EE,E0010058,extended,00740208
 patch=1,EE,0074019C,extended,24050004 //OnlinePlay
 patch=1,EE,00740204,extended,24050004 //EditProfiles
 
-[Demo\Multiplayer Menu\Online Play Bypass]
+[Multiplayer Menu\Online Play Bypass]
 patch=1,EE,E001000C,extended,007403B4
 patch=1,EE,007403B4,extended,24030017
 
-[Demo\Multiplayer Menu\Online Play Bypass (Local Play function)]
+[Multiplayer Menu\Online Play Bypass (Local Play function)]
 patch=1,EE,E001B10A,extended,0072C370
 patch=1,EE,1072C370,extended,0C1CEC7A
 
-[Demo\Multiplayer Menu\Enable All Local Play Options]
+[Multiplayer Menu\Enable All Local Play Options]
 patch=1,EE,E004202D,extended,0073AEDC
 patch=1,EE,0073AC9C,extended,24050004
 patch=1,EE,0073ACB4,extended,24050004
 patch=1,EE,0073AEA8,extended,24050004
 patch=1,EE,0073AED4,extended,24050004
 
-[Demo\Multiplayer Menu\Enable Mode Change for Local Play]
+[Multiplayer Menu\Enable Mode Change for Local Play]
 description=Refreshes after changing the map.
 //Function Restore
 patch=1,EE,E0030005,extended,0072C308
@@ -220,6 +222,10 @@ patch=1,EE,204BBAF8,extended,24030001
 patch=1,EE,E001938C,extended,0054F1FC
 patch=1,EE,2054F1FC,extended,24020001
 
+[Game Rules\Single Player\Team Color Blue (P2)]
+patch=1,EE,E0012E78,extended,0060A4D4
+patch=1,EE,2060A4D0,extended,AE002E9C
+
 // - COOP
 [Game Rules\Cooperative\Unlimited Player Distance]
 description=Disables the line when players are too far away from each other.
@@ -251,28 +257,28 @@ patch=1,EE,205934B8,extended,24020000
 patch=1,EE,E001938C,extended,004BBAF8
 patch=1,EE,204BBAF8,extended,24030000
 
-// SINGLE or COOP
+// EXTRAS
 
-[Single or Coop\Skin\Marauder (0)]
+[Extras\Skin\Marauder (0)]
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000000
 
-[Single or Coop\Skin\Avenger (1)]
+[Extras\Skin\Avenger (1)]
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000001
 
-[Single or Coop\Skin\Promotional Armor (2)]
+[Extras\Skin\Promotional Armor (2)]
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000002
 
-[Single or Coop\Skin\Crusader (3)]
+[Extras\Skin\Crusader (3)]
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000003
 
-[Single or Coop\Skin\Vindicator (4)]
+[Extras\Skin\Vindicator (4)]
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000004
 
-[Single or Coop\Skin\Liberator (5)]
+[Extras\Skin\Liberator (5)]
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000005

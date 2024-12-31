@@ -1,0 +1,10 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=For Player 1
+
+//Skin (0-Blue; 1-Red)
+patch=1,EE,E0012E9C,extended,0060E77C
+patch=1,EE,2060E77C,extended,24050001
+
+//Team
+patch=1,EE,E0010023,extended,0060E72C
+patch=1,EE,2060E72C,extended,24050005

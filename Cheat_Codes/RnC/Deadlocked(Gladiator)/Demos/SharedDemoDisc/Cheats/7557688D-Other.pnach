@@ -1,10 +1,6 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=CHEATS - OTHER
 
 //Bots have all abilities
 patch=1,EE,E00101D0,extended,00552614
 patch=1,EE,20552614,extended,24020001
-
-//Unlock All Missions
-patch=1,EE,E0010008,extended,00536428
-patch=1,EE,00536424,extended,34420007

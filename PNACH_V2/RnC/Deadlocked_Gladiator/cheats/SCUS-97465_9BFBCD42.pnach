@@ -471,7 +471,7 @@ patch=1,EE,105B41A0,extended,2484DA98
 patch=1,EE,E001E0C8,extended,005C43E8
 patch=1,EE,105C43E8,extended,2484DA98
 
-[Game Rules\Single Player\Solo Mod\Fix Arena Help Stuff]
+[Game Rules\Single Player\Solo Mod\Fix Arena Help Stuff (DreadZone Station)]
 description=Fixes tutorials where bots are needed and uses COOP messages.
 //Fix Tutorials
 patch=1,EE,E001E828,extended,003D9214
@@ -479,6 +479,20 @@ patch=1,EE,203D9214,extended,24020001
 //Fix Help Messages
 patch=1,EE,E001E828,extended,003D9494
 patch=1,EE,203D9494,extended,24020001
+
+[Game Rules\Single Player\Solo Mod\Disable Al's cutscene (DreadZone Station)]
+//Disable cutscene
+patch=1,EE,E001E828,extended,0047E34C
+patch=1,EE,2047E34C,extended,24020000
+//Set marker to Clank
+patch=1,EE,E001E828,extended,0047E370
+patch=1,EE,2047E370,extended,24030000
+
+[Game Rules\Single Player\Solo Mod\Be Blue Team (P2)]
+description=Great thing to use for original Jak colors. (GetJuggSafeTeam__C4Hero -> jalr v0)
+//-DREADZONE STATION and ARENA
+patch=1,EE,E0012F14,extended,00684FA8
+patch=1,EE,00684FA4,extended,24020000
 
 // COOPERATIVE GAME RULES
 
@@ -528,3 +542,10 @@ patch=1,EE,204D2158,extended,24030001
 //-MARAXUS
 patch=1,EE,E001E698,extended,003DF810
 patch=1,EE,203DF810,extended,24030001
+
+// MULTIPLAYER
+
+[Multiplayer\More Teams]
+patch=1,EE,E0020260,extended,0074721C
+patch=1,EE,00747214,extended,2402000B
+patch=1,EE,00747218,extended,2402000B

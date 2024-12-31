@@ -1,0 +1,6 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=DEMO - MULTIPLAYER MENU - ENABLE
+
+patch=1,EE,E0020084,extended,00717C68
+patch=1,EE,20717C5C,extended,10000030
+patch=1,EE,20717C60,extended,24020016

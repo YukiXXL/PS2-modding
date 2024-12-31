@@ -1,0 +1,7 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=MISSIONS
+
+//Mission Always Visible
+patch=1,EE,E0020010,extended,005542E0
+patch=1,EE,205542D8,extended,24020001
+patch=1,EE,205542DC,extended,03E00008

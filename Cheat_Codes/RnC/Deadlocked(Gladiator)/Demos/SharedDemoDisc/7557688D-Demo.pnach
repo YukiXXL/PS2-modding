@@ -1,5 +1,5 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=DEMO STUFF
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=DEMO - OTHER
 
 //Disable Demo finished when beating all missions
 patch=1,EE,E001FFFF,extended,00401BAC

@@ -1,0 +1,6 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=PLANETS
+
+//Enable Menu
+patch=1,EE,E001202D,extended,005C5DC4
+patch=1,EE,205C5DBC,extended,24070001
