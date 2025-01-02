@@ -1,0 +1,6 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=More teams
+
+patch=1,EE,E0020260,extended,0074BD04
+patch=1,EE,0074BCFC,extended,2402000B
+patch=1,EE,0074BD00,extended,2402000B

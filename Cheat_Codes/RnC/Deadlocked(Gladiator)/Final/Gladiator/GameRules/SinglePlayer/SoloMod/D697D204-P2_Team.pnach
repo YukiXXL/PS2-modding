@@ -1,0 +1,39 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=GetJuggSafeTeam__C4Hero
+
+//-DREADZONE STATION and ARENA
+patch=1,EE,E0012F14,extended,0068A2F0
+patch=1,EE,0068A2EC,extended,24020000
+//-CATACROM FOUR
+patch=1,EE,E0012F14,extended,00639CA0
+patch=1,EE,00639C9C,extended,24020000
+//-SARATHOS
+patch=1,EE,E0012F14,extended,006399B0
+patch=1,EE,006399AC,extended,24020000
+//-KRONOS
+patch=1,EE,E0012F14,extended,00660380
+patch=1,EE,0066037C,extended,24020000
+//-SHAAR
+patch=1,EE,E0012F14,extended,00631EB0
+patch=1,EE,00631EAC,extended,24020000
+//-ORXON
+patch=1,EE,E0012F14,extended,0063CBC8
+patch=1,EE,0063CBC4,extended,24020000
+//-THE VALIX BELT
+patch=1,EE,E0012F14,extended,00624C78
+patch=1,EE,00624C74,extended,24020000
+//-PLANET TORVAL
+patch=1,EE,E0012F14,extended,006474C0
+patch=1,EE,006474BC,extended,24020000
+//-STYGIA
+patch=1,EE,E0012F14,extended,006342E8
+patch=1,EE,006342E4,extended,24020000
+//-MARAXUS
+patch=1,EE,E0012F14,extended,0064DBB0
+patch=1,EE,0064DBAC,extended,24020000
+//-GHOST STATION
+patch=1,EE,E0012F14,extended,00647800
+patch=1,EE,006477FC,extended,24020000
+//-DREADZONE INTERIOR
+patch=1,EE,E0012F14,extended,00657FD0
+patch=1,EE,00657FCC,extended,24020000

@@ -1,0 +1,9 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=Disable Al's cutscene
+
+//Disable cutscene
+patch=1,EE,E001E8A8,extended,0047F8AC
+patch=1,EE,2047F8AC,extended,24020001
+//Set marker to Clank
+patch=1,EE,E001E8A8,extended,0047F8D0
+patch=1,EE,2047F8D0,extended,24030001

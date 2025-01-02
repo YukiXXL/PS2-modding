@@ -3,7 +3,7 @@ comment=Disable Al's cutscene
 
 //Disable cutscene
 patch=1,EE,E001E828,extended,0047E34C
-patch=1,EE,2047E34C,extended,24020000
+patch=1,EE,2047E34C,extended,24020001
 //Set marker to Clank
 patch=1,EE,E001E828,extended,0047E370
-patch=1,EE,2047E370,extended,24030000
+patch=1,EE,2047E370,extended,24030001

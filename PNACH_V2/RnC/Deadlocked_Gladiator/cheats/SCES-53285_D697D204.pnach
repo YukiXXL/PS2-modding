@@ -1,0 +1,600 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=Provided by YukiXXL.
+
+// MAIN MENU
+
+[Main Menu\Progressive Scan\Enable]
+description=Changing HelpLog option changes the setting
+//Changing HelpLog changes ProgressiveActivation
+patch=1,EE,E002003E,extended,004BB2D4
+patch=1,EE,204BB2C4,extended,93829F7A
+patch=1,EE,204BB2D0,extended,A3829F7A
+//sb zero into Settings
+patch=1,EE,E001202D,extended,004BBB74
+patch=1,EE,204BBB6C,extended,A2A01DB8
+
+[Main Menu\Progressive Scan\576p]
+patch=1,EE,E0010050,extended,00458EBC
+patch=1,EE,00458EBC,extended,24060053
+
+// MULTIPLAYER
+
+[Multiplayer\More Teams]
+patch=1,EE,E0020260,extended,0074BD04
+patch=1,EE,0074BCFC,extended,2402000B
+patch=1,EE,0074BD00,extended,2402000B
+
+// DREADZONE STATION
+
+[DreadZone Station\Single Player\Enable Jak Skin]
+patch=1,EE,E001E8A8,extended,00620EE0
+patch=1,EE,20620EE0,extended,24020001
+
+[DreadZone Station\Planets\Enable Dreadzone Interior Planet]
+patch=1,EE,E001000F,extended,00605464
+patch=1,EE,00605464,extended,24020010
+
+[DreadZone Station\Missions\Enable All Missions (Including CUT)]
+description=Missions stay enabled trough the game.
+patch=1,EE,E002102D,extended,006C6E70
+patch=1,EE,206C6E08,extended,00000000
+patch=1,EE,206C6E74,extended,24020001
+
+[DreadZone Station\Missions\All Missions available]
+description=Missions stay available trough the game.
+patch=1,EE,E001000F,extended,00588FEC
+patch=1,EE,20588FEC,extended,00000000
+
+[DreadZone Station\Missions\Mission Always Visible]
+patch=1,EE,E0020010,extended,005890A0
+patch=1,EE,20589098,extended,24020001
+patch=1,EE,2058909C,extended,03E00008
+
+[DreadZone Station\CheckBadgeUnlock]
+description=Unlocks bunch of things. Kept for reference.
+patch=1,EE,E0020017,extended,006C6F80
+patch=1,EE,206C6F70,extended,03E00008
+patch=1,EE,206C6F74,extended,24020001
+
+// DREADZONE INTERIOR
+
+[DreadZone Interior\Missions\Mission Always Visible]
+patch=1,EE,E0020010,extended,005580E0
+patch=1,EE,205580D8,extended,24020001
+patch=1,EE,205580DC,extended,03E00008
+
+[DreadZone Interior\Main Menu\Enable Planets Menu]
+patch=1,EE,E001202D,extended,005CA5F4
+patch=1,EE,205C5DBC,extended,24070001
+
+// COOPERATIVE MOD IN SINGLE PLAYER
+
+[Game Rules\Single Player\Solo Mod]
+//-DREADZONE STATION and ARENA
+//BotHud_UpdateIcons
+patch=1,EE,E001E8A8,extended,005F51EC
+patch=1,EE,205F51EC,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E8A8,extended,005F490C
+patch=1,EE,205F490C,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E8A8,extended,005F5928
+patch=1,EE,205F5928,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E8A8,extended,005F4DE8
+patch=1,EE,205F4DE8,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E8A8,extended,0068D920
+patch=1,EE,2068D920,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E8A8,extended,005F4F10
+patch=1,EE,205F4F10,extended,24020001
+//Disable Bots
+patch=1,EE,E001E8A8,extended,004A3924
+patch=1,EE,204A3924,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E8A8,extended,005DF628
+patch=1,EE,205DF628,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E8A8,extended,005A9780
+patch=1,EE,205A9780,extended,24020001
+//Remove Bots Vendor
+patch=1,EE,E0018EA9,extended,00516B90
+patch=1,EE,20516B90,extended,24020001
+//-CATACROM FOUR
+//BotHud_UpdateIcons
+patch=1,EE,E001E778,extended,005A5424
+patch=1,EE,205A5424,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E778,extended,005A4B44
+patch=1,EE,205A4B44,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E778,extended,005A5B60
+patch=1,EE,205A5B60,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E778,extended,005A5020
+patch=1,EE,205A5020,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E778,extended,0063D2D0
+patch=1,EE,2063D2D0,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E778,extended,005A5148
+patch=1,EE,205A5148,extended,24020001
+//Disable Bots
+patch=1,EE,E001E778,extended,004A6D64
+patch=1,EE,204A6D64,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E778,extended,0058F8A0
+patch=1,EE,2058F8A0,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E778,extended,00559F58
+patch=1,EE,20559F58,extended,24020001
+//-SARATHOS
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,005A4FCC
+patch=1,EE,205A4FCC,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,005A46EC
+patch=1,EE,205A46EC,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,005A5708
+patch=1,EE,205A5708,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,005A4BC8
+patch=1,EE,205A4BC8,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,0063CFE0
+patch=1,EE,2063CFE0,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,005A4CF0
+patch=1,EE,205A4CF0,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,00490C4C
+patch=1,EE,20490C4C,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,0058F448
+patch=1,EE,2058F448,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,00559BA8
+patch=1,EE,20559BA8,extended,24020001
+//-KRONOS
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,005CB15C
+patch=1,EE,205CB15C,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,005CA87C
+patch=1,EE,205CA87C,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,005CB898
+patch=1,EE,205CB898,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,005CAD58
+patch=1,EE,205CAD58,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,006639B0
+patch=1,EE,206639B0,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,005CAE80
+patch=1,EE,205CAE80,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,004C8C64
+patch=1,EE,204C8C64,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,005B55D8
+patch=1,EE,205B55D8,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,0057FD48
+patch=1,EE,2057FD48,extended,24020001
+//-SHAAR
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,0059D1AC
+patch=1,EE,2059D1AC,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,0059C8CC
+patch=1,EE,2059C8CC,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,0059D8E8
+patch=1,EE,2059D8E8,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,0059CDA8
+patch=1,EE,2059CDA8,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,006354E0
+patch=1,EE,206354E0,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,0059CED0
+patch=1,EE,2059CED0,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,004A850C
+patch=1,EE,204A850C,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,00587628
+patch=1,EE,20587628,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,00551AD8
+patch=1,EE,20551AD8,extended,24020001
+//-ORXON
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,005A7B8C
+patch=1,EE,205A7B8C,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,005A72AC
+patch=1,EE,205A72AC,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,005A82C8
+patch=1,EE,205A82C8,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,005A7788
+patch=1,EE,205A7788,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,006401F8
+patch=1,EE,206401F8,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,005A78B0
+patch=1,EE,205A78B0,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,0047FD94
+patch=1,EE,2047FD94,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,00592008
+patch=1,EE,20592008,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,0055C560
+patch=1,EE,2055C560,extended,24020001
+//-THE VALIX BELT
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,00590184
+patch=1,EE,20590184,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,0058F8A4
+patch=1,EE,2058F8A4,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,005908C0
+patch=1,EE,205908C0,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,0058FD80
+patch=1,EE,2058FD80,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,006282A8
+patch=1,EE,206282A8,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,0058FEA8
+patch=1,EE,2058FEA8,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,004A9204
+patch=1,EE,204A9204,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,0057A600
+patch=1,EE,2057A600,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,00544E20
+patch=1,EE,20544E20,extended,24020001
+//-PLANET TORVAL
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,005B24C4
+patch=1,EE,205B24C4,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,005B1BE4
+patch=1,EE,205B1BE4,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,005B2C00
+patch=1,EE,205B2C00,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,005B20C0
+patch=1,EE,205B20C0,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,0064AAF0
+patch=1,EE,2064AAF0,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,005B21E8
+patch=1,EE,205B21E8,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,004BF2B4
+patch=1,EE,204BF2B4,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,0059C940
+patch=1,EE,2059C940,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,00566FF8
+patch=1,EE,20566FF8,extended,24020001
+//-STYGIA
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,0059F264
+patch=1,EE,2059F264,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,0059E984
+patch=1,EE,2059E984,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,0059F9A0
+patch=1,EE,2059F9A0,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,0059EE60
+patch=1,EE,2059EE60,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,00637918
+patch=1,EE,20637918,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,0059EF88
+patch=1,EE,2059EF88,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,004A761C
+patch=1,EE,204A761C,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,005896E0
+patch=1,EE,205896E0,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,00553E98
+patch=1,EE,20553E98,extended,24020001
+//-MARAXUS
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,005B8B0C
+patch=1,EE,205B8B0C,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,005B822C
+patch=1,EE,205B822C,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,005B9248
+patch=1,EE,205B9248,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,005B8708
+patch=1,EE,205B8708,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,006511E0
+patch=1,EE,206511E0,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,005B8830
+patch=1,EE,205B8830,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,004A343C
+patch=1,EE,204A343C,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,005A2F88
+patch=1,EE,205A2F88,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,0056D638
+patch=1,EE,2056D638,extended,24020001
+//Rescued Bot does not follow
+patch=1,EE,E001E718,extended,004A304C
+patch=1,EE,204A304C,extended,24020001
+//Fix not having gadgets
+patch=1,EE,E0018D19,extended,0056DF6C
+patch=1,EE,2056DF6C,extended,24020001
+//-GHOST STATION
+//BotHud_UpdateIcons
+patch=1,EE,E001E718,extended,005B2B74
+patch=1,EE,205B2B74,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E718,extended,005B2294
+patch=1,EE,205B2294,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E718,extended,005B32B0
+patch=1,EE,205B32B0,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E718,extended,005B2770
+patch=1,EE,205B2770,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E718,extended,0064AE30
+patch=1,EE,2064AE30,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E718,extended,005B2898
+patch=1,EE,205B2898,extended,24020001
+//Disable Bots
+patch=1,EE,E001E718,extended,004A1BBC
+patch=1,EE,204A1BBC,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E718,extended,0059CFF0
+patch=1,EE,2059CFF0,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E718,extended,00567640
+patch=1,EE,20567640,extended,24020001
+//-DREADZONE INTERIOR
+//BotHud_UpdateIcons
+patch=1,EE,E001E758,extended,005C2EFC
+patch=1,EE,205C2EFC,extended,24020001
+//Gadgets texture
+patch=1,EE,E001E758,extended,005C261C
+patch=1,EE,205C261C,extended,24030001
+//BotHud_ActivateCommand
+patch=1,EE,E001E758,extended,005C3638
+patch=1,EE,205C3638,extended,24020001
+//BotHud_IsSlotEmpty
+patch=1,EE,E001E758,extended,005C2AF8
+patch=1,EE,205C2AF8,extended,24030001
+//RequestGadgetEquip
+patch=1,EE,E001E758,extended,0065B600
+patch=1,EE,2065B600,extended,24020001
+//BotHud_UpdateCommands
+patch=1,EE,E001E758,extended,005C2C20
+patch=1,EE,205C2C20,extended,24020001
+//Disable Bots
+patch=1,EE,E001E758,extended,004B4ADC
+patch=1,EE,204B4ADC,extended,24030001
+//GuiHud_SetGamePanels
+patch=1,EE,E001E758,extended,005AD838
+patch=1,EE,205AD838,extended,24020001
+//Bot_ResetGlobalComm
+patch=1,EE,E001E758,extended,00577DC8
+patch=1,EE,20577DC8,extended,24020001
+
+[Game Rules\Single Player\Solo Mod\Yellow Gadget Icons]
+description=Makes Gadget Yellow like in Cooperative. (BotHud_GetIconColor)
+//-DREADZONE STATION and ARENA
+patch=1,EE,E001E8A8,extended,005F530C
+patch=1,EE,205F530C,extended,24030001
+//-CATACROM FOUR
+patch=1,EE,E001E778,extended,005A5544
+patch=1,EE,205A5544,extended,24030001
+//-SARATHOS
+patch=1,EE,E001E718,extended,005A50EC
+patch=1,EE,205A50EC,extended,24030001
+//-KRONOS
+patch=1,EE,E001E718,extended,005CB27C
+patch=1,EE,205CB27C,extended,24030001
+//-SHAAR
+patch=1,EE,E001E718,extended,0059D2CC
+patch=1,EE,2059D2CC,extended,24030001
+//-ORXON
+patch=1,EE,E001E718,extended,005A7CAC
+patch=1,EE,205A7CAC,extended,24030001
+//-THE VALIX BELT
+patch=1,EE,E001E718,extended,005902A4
+patch=1,EE,205902A4,extended,24030001
+//-PLANET TORVAL
+patch=1,EE,E001E718,extended,005B25E4
+patch=1,EE,205B25E4,extended,24030001
+//-STYGIA
+patch=1,EE,E001E718,extended,0059F384
+patch=1,EE,2059F384,extended,24030001
+//-MARAXUS
+patch=1,EE,E001E718,extended,005B8C2C
+patch=1,EE,205B8C2C,extended,24030001
+//-GHOST STATION
+patch=1,EE,E001E718,extended,005B2C94
+patch=1,EE,205B2C94,extended,24030001
+//-DREADZONE INTERIOR
+patch=1,EE,E001E758,extended,005C301C
+patch=1,EE,205C301C,extended,24030001
+
+[Game Rules\Single Player\Solo Mod\Different Mission Passed Banner]
+description=Changes Mission Passed Banner.
+//-DREADZONE STATION and ARENA
+patch=1,EE,E001E148,extended,005FAF08
+patch=1,EE,105FAF08,extended,2484DB18
+//-CATACROM FOUR
+patch=1,EE,E001E148,extended,005AB140
+patch=1,EE,105AB140,extended,2484DB18
+//-SARATHOS
+patch=1,EE,E001E148,extended,005AACE8
+patch=1,EE,105AACE8,extended,2484DB18
+//-KRONOS
+patch=1,EE,E001E148,extended,005D0E78
+patch=1,EE,105D0E78,extended,2484DB18
+//-SHAAR
+patch=1,EE,E001E148,extended,005A2EC8
+patch=1,EE,105A2EC8,extended,2484DB18
+//-ORXON
+patch=1,EE,E001E148,extended,005AD8A8
+patch=1,EE,105AD8A8,extended,2484DB18
+//-THE VALIX BELT
+patch=1,EE,E001E148,extended,00595EA0
+patch=1,EE,10595EA0,extended,2484DB18
+//-PLANET TORVAL
+patch=1,EE,E001E148,extended,005B81E0
+patch=1,EE,105B81E0,extended,2484DB18
+//-STYGIA
+patch=1,EE,E001E148,extended,005A4F80
+patch=1,EE,105A4F80,extended,2484DB18
+//-MARAXUS
+patch=1,EE,E001E148,extended,005BE828
+patch=1,EE,105BE828,extended,2484DB18
+//-GHOST STATION
+patch=1,EE,E001E148,extended,005B8890
+patch=1,EE,105B8890,extended,2484DB18
+//-DREADZONE INTERIOR
+patch=1,EE,E001E148,extended,005C8C18
+patch=1,EE,105C8C18,extended,2484DB18
+
+[Game Rules\Single Player\Solo Mod\Fix Arena Help Stuff (DreadZone Station)]
+description=Fixes tutorials where bots are needed and uses COOP messages.
+//Fix Tutorials
+patch=1,EE,E001E8A8,extended,003D96BC
+patch=1,EE,203D96BC,extended,24020001
+//Fix Help Messages
+patch=1,EE,E001E8A8,extended,003D993C
+patch=1,EE,203D993C,extended,24020001
+
+[Game Rules\Single Player\Solo Mod\Disable Al's cutscene (DreadZone Station)]
+//Disable cutscene
+patch=1,EE,E001E8A8,extended,0047F8AC
+patch=1,EE,2047F8AC,extended,24020001
+//Set marker to Clank
+patch=1,EE,E001E8A8,extended,0047F8D0
+patch=1,EE,2047F8D0,extended,24030001
+
+[Game Rules\Single Player\Solo Mod\Be Blue Team (P2)]
+description=Great thing to use for original Jak colors. (GetJuggSafeTeam__C4Hero -> jalr v0)
+//-DREADZONE STATION and ARENA
+patch=1,EE,E0012F14,extended,0068A2F0
+patch=1,EE,0068A2EC,extended,24020000
+//-CATACROM FOUR
+patch=1,EE,E0012F14,extended,00639CA0
+patch=1,EE,00639C9C,extended,24020000
+//-SARATHOS
+patch=1,EE,E0012F14,extended,006399B0
+patch=1,EE,006399AC,extended,24020000
+//-KRONOS
+patch=1,EE,E0012F14,extended,00660380
+patch=1,EE,0066037C,extended,24020000
+//-SHAAR
+patch=1,EE,E0012F14,extended,00631EB0
+patch=1,EE,00631EAC,extended,24020000
+//-ORXON
+patch=1,EE,E0012F14,extended,0063CBC8
+patch=1,EE,0063CBC4,extended,24020000
+//-THE VALIX BELT
+patch=1,EE,E0012F14,extended,00624C78
+patch=1,EE,00624C74,extended,24020000
+//-PLANET TORVAL
+patch=1,EE,E0012F14,extended,006474C0
+patch=1,EE,006474BC,extended,24020000
+//-STYGIA
+patch=1,EE,E0012F14,extended,006342E8
+patch=1,EE,006342E4,extended,24020000
+//-MARAXUS
+patch=1,EE,E0012F14,extended,0064DBB0
+patch=1,EE,0064DBAC,extended,24020000
+//-GHOST STATION
+patch=1,EE,E0012F14,extended,00647800
+patch=1,EE,006477FC,extended,24020000
+//-DREADZONE INTERIOR
+patch=1,EE,E0012F14,extended,00657FD0
+patch=1,EE,00657FCC,extended,24020000
+
+// COOPERATIVE GAME RULES
+
+[Game Rules\Cooperative\Unlimited Player Distance]
+description=Disables the line when players are too far away from each other.
+//-CATACROM FOUR
+patch=1,EE,E001E778,extended,003FF77C
+patch=1,EE,203FF77C,extended,24030000
+//-SARATHOS
+patch=1,EE,E001E718,extended,00401E74
+patch=1,EE,20401E74,extended,24030000
+//-KRONOS
+patch=1,EE,E001E718,extended,003E4BFC
+patch=1,EE,203E4BFC,extended,24030000
+//-SHAAR
+patch=1,EE,E001E718,extended,00416154
+patch=1,EE,20416154,extended,24030000
+//-ORXON
+patch=1,EE,E001E718,extended,003EF704
+patch=1,EE,203EF704,extended,24030000
+//-THE VALIX BELT
+patch=1,EE,E001E718,extended,003FDD5C
+patch=1,EE,203FDD5C,extended,24030000
+//-PLANET TORVAL
+patch=1,EE,E001E718,extended,00467E24
+patch=1,EE,20467E24,extended,24030000
+//-STYGIA
+patch=1,EE,E001E718,extended,004930BC
+patch=1,EE,204930BC,extended,24030000
+//-MARAXUS
+patch=1,EE,E001E718,extended,0047EA44
+patch=1,EE,2047EA44,extended,24030000
+//-GHOST STATION
+patch=1,EE,E001E718,extended,003E7FD4
+patch=1,EE,203E7FD4,extended,24030000
+//-DREADZONE INTERIOR
+patch=1,EE,E001E718,extended,003F39DC
+patch=1,EE,203F39DC,extended,24030000
+
+[Game Rules\Cooperative\Disable teleporting a player]
+//-SHAAR
+patch=1,EE,E001E718,extended,0049C538
+patch=1,EE,2049C538,extended,24030000
+//-ORXON
+patch=1,EE,E001E718,extended,004D3E00
+patch=1,EE,204D3E00,extended,24030000
+//-MARAXUS
+patch=1,EE,E001E718,extended,003DFC88
+patch=1,EE,203DFC88,extended,24030000

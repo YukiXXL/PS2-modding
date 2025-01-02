@@ -1,0 +1,12 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=Disable Teleporting
+
+//-SHAAR
+patch=1,EE,E001E718,extended,0049C538
+patch=1,EE,2049C538,extended,24030000
+//-ORXON
+patch=1,EE,E001E718,extended,004D3E00
+patch=1,EE,204D3E00,extended,24030000
+//-MARAXUS
+patch=1,EE,E001E718,extended,003DFC88
+patch=1,EE,203DFC88,extended,24030000

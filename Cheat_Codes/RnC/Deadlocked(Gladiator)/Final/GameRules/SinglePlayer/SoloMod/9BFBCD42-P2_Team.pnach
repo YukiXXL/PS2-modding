@@ -1,5 +1,0 @@
-gametitle=Ratchet: Deadlocked (NTSC-U)
-comment=GetJuggSafeTeam__C4Hero
-
-patch=1,EE,E0012F14,extended,00684FA8
-patch=1,EE,00684FA4,extended,24020000

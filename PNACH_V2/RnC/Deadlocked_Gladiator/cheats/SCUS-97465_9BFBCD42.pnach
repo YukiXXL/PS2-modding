@@ -1,6 +1,13 @@
 gametitle=Ratchet: Deadlocked (NTSC-U)
 comment=Provided by YukiXXL.
 
+// MULTIPLAYER
+
+[Multiplayer\More Teams]
+patch=1,EE,E0020260,extended,0074721C
+patch=1,EE,00747214,extended,2402000B
+patch=1,EE,00747218,extended,2402000B
+
 // DREADZONE STATION
 
 [DreadZone Station\Single Player\Enable Jak Skin]
@@ -483,16 +490,49 @@ patch=1,EE,203D9494,extended,24020001
 [Game Rules\Single Player\Solo Mod\Disable Al's cutscene (DreadZone Station)]
 //Disable cutscene
 patch=1,EE,E001E828,extended,0047E34C
-patch=1,EE,2047E34C,extended,24020000
+patch=1,EE,2047E34C,extended,24020001
 //Set marker to Clank
 patch=1,EE,E001E828,extended,0047E370
-patch=1,EE,2047E370,extended,24030000
+patch=1,EE,2047E370,extended,24030001
 
 [Game Rules\Single Player\Solo Mod\Be Blue Team (P2)]
 description=Great thing to use for original Jak colors. (GetJuggSafeTeam__C4Hero -> jalr v0)
 //-DREADZONE STATION and ARENA
 patch=1,EE,E0012F14,extended,00684FA8
 patch=1,EE,00684FA4,extended,24020000
+//-CATACROM FOUR
+patch=1,EE,E0012F14,extended,00634F98
+patch=1,EE,00634F94,extended,24020000
+//-SARATHOS
+patch=1,EE,E0012F14,extended,00634E28
+patch=1,EE,00634E24,extended,24020000
+//-KRONOS
+patch=1,EE,E0012F14,extended,0065B5F8
+patch=1,EE,0065B5F4,extended,24020000
+//-SHAAR
+patch=1,EE,E0012F14,extended,0062D628
+patch=1,EE,0062D624,extended,24020000
+//-ORXON
+patch=1,EE,E0012F14,extended,00637F00
+patch=1,EE,00637EFC,extended,24020000
+//-THE VALIX BELT
+patch=1,EE,E0012F14,extended,006206B0
+patch=1,EE,006206AC,extended,24020000
+//-PLANET TORVAL
+patch=1,EE,E0012F14,extended,00642838
+patch=1,EE,00642834,extended,24020000
+//-STYGIA
+patch=1,EE,E0012F14,extended,0062F8E0
+patch=1,EE,0062F8DC,extended,24020000
+//-MARAXUS
+patch=1,EE,E0012F14,extended,00648E28
+patch=1,EE,00648E24,extended,24020000
+//-GHOST STATION
+patch=1,EE,E0012F14,extended,00642AF8
+patch=1,EE,00642AF4,extended,24020000
+//-DREADZONE INTERIOR
+patch=1,EE,E0012F14,extended,00653188
+patch=1,EE,00653184,extended,24020000
 
 // COOPERATIVE GAME RULES
 
@@ -500,52 +540,45 @@ patch=1,EE,00684FA4,extended,24020000
 description=Disables the line when players are too far away from each other.
 //-CATACROM FOUR
 patch=1,EE,E001E6F8,extended,003FEDF4
-patch=1,EE,203FEDF4,extended,24030001
+patch=1,EE,203FEDF4,extended,24030000
 //-SARATHOS
 patch=1,EE,E001E698,extended,004014D4
-patch=1,EE,204014D4,extended,24030001
+patch=1,EE,204014D4,extended,24030000
 //-KRONOS
 patch=1,EE,E001E698,extended,003E4544
-patch=1,EE,203E4544,extended,24030001
+patch=1,EE,203E4544,extended,24030000
 //-SHAAR
 patch=1,EE,E001E698,extended,0041587C
-patch=1,EE,2041587C,extended,24030001
+patch=1,EE,2041587C,extended,24030000
 //-ORXON
 patch=1,EE,E001E698,extended,003EEF7C
-patch=1,EE,203EEF7C,extended,24030001
+patch=1,EE,203EEF7C,extended,24030000
 //-THE VALIX BELT
 patch=1,EE,E001E698,extended,003FD52C
-patch=1,EE,203FD52C,extended,24030001
+patch=1,EE,203FD52C,extended,24030000
 //-PLANET TORVAL
 patch=1,EE,E001E698,extended,00466B54
-patch=1,EE,20466B54,extended,24030001
+patch=1,EE,20466B54,extended,24030000
 //-STYGIA
 patch=1,EE,E001E698,extended,00491B2C
-patch=1,EE,20491B2C,extended,24030001
+patch=1,EE,20491B2C,extended,24030000
 //-MARAXUS
 patch=1,EE,E001E698,extended,0047D5B4
-patch=1,EE,2047D5B4,extended,24030001
+patch=1,EE,2047D5B4,extended,24030000
 //-GHOST STATION
 patch=1,EE,E001E698,extended,003E79BC
-patch=1,EE,203E79BC,extended,24030001
+patch=1,EE,203E79BC,extended,24030000
 //-DREADZONE INTERIOR
 patch=1,EE,E001E6D8,extended,003F3164
-patch=1,EE,203F3164,extended,24030001
+patch=1,EE,203F3164,extended,24030000
 
 [Game Rules\Cooperative\Disable teleporting a player]
 //-SHAAR
 patch=1,EE,E001E698,extended,0049B018
-patch=1,EE,2049B018,extended,24030001
+patch=1,EE,2049B018,extended,24030000
 //-ORXON
 patch=1,EE,E001E698,extended,004D2158
-patch=1,EE,204D2158,extended,24030001
+patch=1,EE,204D2158,extended,24030000
 //-MARAXUS
 patch=1,EE,E001E698,extended,003DF810
-patch=1,EE,203DF810,extended,24030001
-
-// MULTIPLAYER
-
-[Multiplayer\More Teams]
-patch=1,EE,E0020260,extended,0074721C
-patch=1,EE,00747214,extended,2402000B
-patch=1,EE,00747218,extended,2402000B
+patch=1,EE,203DF810,extended,24030000
