@@ -1,5 +1,5 @@
 gametitle=Ratchet: Deadlocked Multiplayer Beta (NTSC-U)
-comment=Provided by YukiXXL.
+comment=Special thanks to Moose for borrowing his codes as a good starting point.
 
 [Addons\ProScan\Enable NTSC Progressive]
 patch=1,EE,00200C7C,byte,1

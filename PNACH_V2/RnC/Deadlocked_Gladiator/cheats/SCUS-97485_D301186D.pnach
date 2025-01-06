@@ -1,37 +1,44 @@
 gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=Provided by YukiXXL.
+comment=Special thanks to Moose for the help tips.
 
 // DEMO
 
 [Demo\Disable Demo finished when beating all missions]
+author=YukiXXL
 patch=1,EE,E001FFFF,extended,004000FC
 patch=1,EE,204000F4,extended,10000009
 
-[Demo\Disable Demo Timer (when AFK)]
+[Demo\Disable Demo Timer (when AFK) in Main Menu]
+author=YukiXXL
 patch=1,EE,E0019868,extended,008F1204
 patch=1,EE,208F1200,extended,10000007
 
 // MULTIPLAYER
 
 [Multiplayer Menu\Enable]
+author=YukiXXL
 patch=1,EE,E0020084,extended,00714628
 patch=1,EE,2071461C,extended,10000030
 patch=1,EE,20714620,extended,24020016
 
 [Multiplayer Menu\Enable all options]
+author=YukiXXL
 patch=1,EE,E0010058,extended,00740208
 patch=1,EE,0074019C,extended,24050004 //OnlinePlay
 patch=1,EE,00740204,extended,24050004 //EditProfiles
 
 [Multiplayer Menu\Online Play Bypass]
+author=YukiXXL
 patch=1,EE,E001000C,extended,007403B4
 patch=1,EE,007403B4,extended,24030017
 
 [Multiplayer Menu\Online Play Bypass (Local Play function)]
+author=YukiXXL
 patch=1,EE,E001B10A,extended,0072C370
 patch=1,EE,1072C370,extended,0C1CEC7A
 
 [Multiplayer Menu\Enable All Local Play Options]
+author=YukiXXL
 patch=1,EE,E004202D,extended,0073AEDC
 patch=1,EE,0073AC9C,extended,24050004
 patch=1,EE,0073ACB4,extended,24050004
@@ -39,6 +46,7 @@ patch=1,EE,0073AEA8,extended,24050004
 patch=1,EE,0073AED4,extended,24050004
 
 [Multiplayer Menu\Enable Mode Change for Local Play]
+author=YukiXXL
 description=Refreshes after changing the map.
 //Function Restore
 patch=1,EE,E0030005,extended,0072C308
@@ -57,10 +65,12 @@ patch=1,EE,0072D3E0,extended,8E040070
 // PROSCAN
 
 [ProScan\Enable NTSC Progressive]
+author=YukiXXL
 patch=1,EE,E0017D18,extended,009160E0
 patch=1,EE,209160E0,extended,AC237D18
 
 [ProScan\Enable Progressive option in Settings]
+author=YukiXXL
 // save true to "is_buttonEnabled"
 patch=1,EE,E0032021,extended,0059BD40
 patch=1,EE,2059BD44,extended,24020001
@@ -73,22 +83,26 @@ patch=1,EE,00207D18,extended,00000000
 // VENDOR
 
 [Vendor\Enable all weapons]
+author=YukiXXL
 patch=1,EE,E0020008,extended,005C06B8
 patch=1,EE,205C06B4,extended,24020001
 patch=1,EE,205C06BC,extended,A0820000
 
 [Vendor\Enable all Omega Mods]
+author=YukiXXL
 patch=1,EE,E0020008,extended,005C06D0
 patch=1,EE,205C06CC,extended,24020001
 patch=1,EE,205C06D4,extended,A0820000
 
 [Vendor\Enable all bots upgrades]
+author=YukiXXL
 description=Requires Bot Shop
 patch=1,EE,E0020008,extended,005C06E8
 patch=1,EE,205C06E4,extended,24020001
 patch=1,EE,205C06EC,extended,A0820000
 
 [Vendor\Bots Shop]
+author=YukiXXL
 description=Replaces Help Log with Bots Shop
 patch=1,EE,E0010012,extended,00598DB4
 patch=1,EE,00598DB4,extended,24050010
@@ -96,6 +110,7 @@ patch=1,EE,00598DB4,extended,24050010
 // LEVELS
 
 [Levels\Planets\Planets Selection screen]
+author=YukiXXL
 description=Replaces Main Menu with Quit and Quit with Planets Selection
 patch=1,EE,E003605E,extended,00598680
 patch=1,EE,10598580,extended,26068D28
@@ -106,32 +121,39 @@ patch=1,EE,E0010007,extended,00589648
 patch=1,EE,00589648,extended,24050003
 
 [Levels\Planets\Enable All Planets]
+author=YukiXXL
 patch=1,EE,E001FE04,extended,0063F66C
 patch=1,EE,2063F66C,extended,24020001
 
 [Levels\Planets\Enable All Planets\Include Unplayable]
+author=YukiXXL
 patch=1,EE,E0010007,extended,0063F65C
 patch=1,EE,2063F65C,extended,00000000
 
 [Levels\Missions\Enable All Missions]
+author=YukiXXL
 patch=1,EE,E001FDCA,extended,0063F70C
 patch=1,EE,2063F70C,extended,24020001
 
 [Levels\Missions\Enable All Missions\Include Unplayable Planets]
+author=YukiXXL
 description=Doesn't work. Kept for reference.
 patch=1,EE,E0010018,extended,0063F6A0
 patch=1,EE,2063F6A0,extended,00000000
 
 [Levels\Missions\All Missions available]
+author=YukiXXL
 patch=1,EE,E001000F,extended,00532C2C
 patch=1,EE,20532C2C,extended,00000000
 
 [Levels\Missions\Missions Stay Visible After Beating]
+author=YukiXXL
 patch=1,EE,E0020004,extended,00532E1C
 patch=1,EE,20532E18,extended,24030001
 patch=1,EE,20532E20,extended,AC430010
 
 [Levels\CheckBadgeUnlock]
+author=YukiXXL
 description=Unlocks bunch of things. Kept for reference.
 patch=1,EE,E0020008,extended,0063F818
 patch=1,EE,2063F810,extended,03E00008
@@ -140,26 +162,32 @@ patch=1,EE,2063F814,extended,24020001
 // CHEATS
 
 [Cheats\Bots\Bots have all abilities]
+author=YukiXXL
 patch=1,EE,E00101D0,extended,0054EDF4
 patch=1,EE,2054EDF4,extended,24020001
 
 [Cheats\Missions\Unlock All Missions]
+author=YukiXXL
 patch=1,EE,E0010008,extended,00532C68
 patch=1,EE,00532C64,extended,34420007
 
 [Cheats\Profile\Unlock Everything and enable all cheats]
+author=YukiXXL
 patch=1,EE,E001FFF9,extended,0090AEA0
 patch=1,EE,2090AE90,extended,34630001
 
 [Cheats\Profile\Get all weapons and Gadgets]
+author=YukiXXL
 patch=1,EE,E001FFFF,extended,0063F254
 patch=1,EE,1063F254,extended,24060000
 
 [Cheats\Profile\Get All Omega Mods]
+author=YukiXXL
 patch=1,EE,E0012025,extended,0063E870
 patch=1,EE,2063E870,extended,240400FF
 
 [Cheats\Profile\Max Bolts]
+author=YukiXXL
 patch=1,EE,E0010020,extended,0062B874
 patch=1,EE,2062B870,extended,00631818
 
@@ -167,32 +195,39 @@ patch=1,EE,2062B870,extended,00631818
 
 //-CHANGE DIFFICULTY
 [Misc\Change Difficulty\Couch Potato]
+author=YukiXXL
 patch=1,EE,E0010002,extended,003E6B50
 patch=1,EE,003E6B50,extended,00000000
 
 [Misc\Change Difficulty\Contestant]
+author=YukiXXL
 patch=1,EE,E0010002,extended,003E6B50
 patch=1,EE,003E6B50,extended,00000001
 
 [Misc\Change Difficulty\Gladiator (Default)]
+author=YukiXXL
 patch=1,EE,E0010002,extended,003E6B50
 patch=1,EE,003E6B50,extended,00000002
 
 [Misc\Change Difficulty\Hero]
+author=YukiXXL
 patch=1,EE,E0010002,extended,003E6B50
 patch=1,EE,003E6B50,extended,00000003
 
 [Misc\Change Difficulty\Exterminator]
+author=YukiXXL
 patch=1,EE,E0010002,extended,003E6B50
 patch=1,EE,003E6B50,extended,00000004
 
 [Misc\Weapons\Enable All Omega Mods for All Weapons]
+author=YukiXXL
 patch=1,EE,E0010003,extended,0063EC7C
 patch=1,EE,2063EC7C,extended,00000000
 
 // GAME RULES
 // - SINGLE
 [Game Rules\Single Player\Enable Gadgets]
+author=YukiXXL
 //HUD elements
 patch=1,EE,E001938C,extended,00593090
 patch=1,EE,20593090,extended,24020001
@@ -216,6 +251,7 @@ patch=1,EE,E001A71C,extended,0062B780
 patch=1,EE,2062B780,extended,24030001
 
 [Game Rules\Single Player\Disable Bots]
+author=YukiXXL
 patch=1,EE,E001938C,extended,004BBAF8
 patch=1,EE,204BBAF8,extended,24030001
 //Fix Invisible HUD
@@ -223,20 +259,24 @@ patch=1,EE,E001938C,extended,0054F1FC
 patch=1,EE,2054F1FC,extended,24020001
 
 [Game Rules\Single Player\Team Color Blue (P2)]
+author=YukiXXL
 patch=1,EE,E0012E78,extended,0060A4D4
 patch=1,EE,2060A4D0,extended,AE002E9C
 
 // - COOP
 [Game Rules\Cooperative\Unlimited Player Distance]
+author=YukiXXL
 description=Disables the line when players are too far away from each other.
 patch=1,EE,E001938C,extended,00439D34
 patch=1,EE,20439D34,extended,24030000
 
 [Game Rules\Cooperative\Disable teleporting a player]
+author=YukiXXL
 patch=1,EE,E001938C,extended,004AEE50
 patch=1,EE,204AEE50,extended,24030000
 
 [Game Rules\Cooperative\Enable Bot Commands]
+author=YukiXXL
 //Enable writing Bot commands
 patch=1,EE,E001A71C,extended,0062B780
 patch=1,EE,2062B780,extended,24030000
@@ -254,31 +294,38 @@ patch=1,EE,E001938C,extended,005934B8
 patch=1,EE,205934B8,extended,24020000
 
 [Game Rules\Cooperative\Enable Bots]
+author=YukiXXL
 patch=1,EE,E001938C,extended,004BBAF8
 patch=1,EE,204BBAF8,extended,24030000
 
 // EXTRAS
 
 [Extras\Skin\Marauder (0)]
+author=YukiXXL
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000000
 
 [Extras\Skin\Avenger (1)]
+author=YukiXXL
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000001
 
 [Extras\Skin\Promotional Armor (2)]
+author=YukiXXL
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000002
 
 [Extras\Skin\Crusader (3)]
+author=YukiXXL
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000003
 
 [Extras\Skin\Vindicator (4)]
+author=YukiXXL
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000004
 
 [Extras\Skin\Liberator (5)]
+author=YukiXXL
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000005

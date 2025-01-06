@@ -1,0 +1,9 @@
+gametitle=Downhill Domination Demo (NTSC-U)
+comment=PEDS - DISABLE
+
+//Both SP and MP
+patch=1,EE,00127774,extended,28420001
+patch=1,EE,0019161C,extended,28420001
+
+//Only MP
+patch=1,EE,00127774,extended,28420002

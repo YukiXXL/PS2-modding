@@ -1,0 +1,7 @@
+gametitle=Downhill Domination Demo (NTSC-U)
+comment=RIDERS - MAIN
+
+patch=1,EE,201F40C0,extended,A0750042
+patch=1,EE,201F40C4,extended,A075003F
+patch=1,EE,201F40CC,extended,A0750040
+patch=1,EE,201F40D4,extended,A0750041

@@ -1,9 +1,10 @@
 gametitle=Ratchet: Gladiator (PAL-E)
-comment=Provided by YukiXXL.
+comment=Special thanks to Moose for the help tips.
 
 // MAIN MENU
 
 [Main Menu\Progressive Scan\Enable]
+author=YukiXXL
 description=Changing HelpLog option changes the setting
 //Changing HelpLog changes ProgressiveActivation
 patch=1,EE,E002003E,extended,004BB2D4
@@ -14,12 +15,14 @@ patch=1,EE,E001202D,extended,004BBB74
 patch=1,EE,204BBB6C,extended,A2A01DB8
 
 [Main Menu\Progressive Scan\576p]
+author=YukiXXL
 patch=1,EE,E0010050,extended,00458EBC
 patch=1,EE,00458EBC,extended,24060053
 
 // MULTIPLAYER
 
 [Multiplayer\More Teams]
+author=YukiXXL
 patch=1,EE,E0020260,extended,0074BD04
 patch=1,EE,0074BCFC,extended,2402000B
 patch=1,EE,0074BD00,extended,2402000B
@@ -27,30 +30,36 @@ patch=1,EE,0074BD00,extended,2402000B
 // DREADZONE STATION
 
 [DreadZone Station\Single Player\Enable Jak Skin]
+author=YukiXXL
 patch=1,EE,E001E8A8,extended,00620EE0
 patch=1,EE,20620EE0,extended,24020001
 
 [DreadZone Station\Planets\Enable Dreadzone Interior Planet]
+author=YukiXXL
 patch=1,EE,E001000F,extended,00605464
 patch=1,EE,00605464,extended,24020010
 
 [DreadZone Station\Missions\Enable All Missions (Including CUT)]
+author=YukiXXL
 description=Missions stay enabled trough the game.
 patch=1,EE,E002102D,extended,006C6E70
 patch=1,EE,206C6E08,extended,00000000
 patch=1,EE,206C6E74,extended,24020001
 
 [DreadZone Station\Missions\All Missions available]
+author=YukiXXL
 description=Missions stay available trough the game.
 patch=1,EE,E001000F,extended,00588FEC
 patch=1,EE,20588FEC,extended,00000000
 
 [DreadZone Station\Missions\Mission Always Visible]
+author=YukiXXL
 patch=1,EE,E0020010,extended,005890A0
 patch=1,EE,20589098,extended,24020001
 patch=1,EE,2058909C,extended,03E00008
 
 [DreadZone Station\CheckBadgeUnlock]
+author=YukiXXL
 description=Unlocks bunch of things. Kept for reference.
 patch=1,EE,E0020017,extended,006C6F80
 patch=1,EE,206C6F70,extended,03E00008
@@ -59,17 +68,20 @@ patch=1,EE,206C6F74,extended,24020001
 // DREADZONE INTERIOR
 
 [DreadZone Interior\Missions\Mission Always Visible]
+author=YukiXXL
 patch=1,EE,E0020010,extended,005580E0
 patch=1,EE,205580D8,extended,24020001
 patch=1,EE,205580DC,extended,03E00008
 
 [DreadZone Interior\Main Menu\Enable Planets Menu]
+author=YukiXXL
 patch=1,EE,E001202D,extended,005CA5F4
 patch=1,EE,205C5DBC,extended,24070001
 
 // COOPERATIVE MOD IN SINGLE PLAYER
 
 [Game Rules\Single Player\Solo Mod]
+author=YukiXXL
 //-DREADZONE STATION and ARENA
 //BotHud_UpdateIcons
 patch=1,EE,E001E8A8,extended,005F51EC
@@ -417,6 +429,7 @@ patch=1,EE,E001E758,extended,00577DC8
 patch=1,EE,20577DC8,extended,24020001
 
 [Game Rules\Single Player\Solo Mod\Yellow Gadget Icons]
+author=YukiXXL
 description=Makes Gadget Yellow like in Cooperative. (BotHud_GetIconColor)
 //-DREADZONE STATION and ARENA
 patch=1,EE,E001E8A8,extended,005F530C
@@ -456,6 +469,7 @@ patch=1,EE,E001E758,extended,005C301C
 patch=1,EE,205C301C,extended,24030001
 
 [Game Rules\Single Player\Solo Mod\Different Mission Passed Banner]
+author=YukiXXL
 description=Changes Mission Passed Banner.
 //-DREADZONE STATION and ARENA
 patch=1,EE,E001E148,extended,005FAF08
@@ -495,6 +509,7 @@ patch=1,EE,E001E148,extended,005C8C18
 patch=1,EE,105C8C18,extended,2484DB18
 
 [Game Rules\Single Player\Solo Mod\Fix Arena Help Stuff (DreadZone Station)]
+author=YukiXXL
 description=Fixes tutorials where bots are needed and uses COOP messages.
 //Fix Tutorials
 patch=1,EE,E001E8A8,extended,003D96BC
@@ -504,14 +519,22 @@ patch=1,EE,E001E8A8,extended,003D993C
 patch=1,EE,203D993C,extended,24020001
 
 [Game Rules\Single Player\Solo Mod\Disable Al's cutscene (DreadZone Station)]
+author=YukiXXL
 //Disable cutscene
 patch=1,EE,E001E8A8,extended,0047F8AC
 patch=1,EE,2047F8AC,extended,24020001
 //Set marker to Clank
 patch=1,EE,E001E8A8,extended,0047F8D0
 patch=1,EE,2047F8D0,extended,24030001
+//Get the Arena ship
+patch=1,EE,E001E8A8,extended,003D9498
+patch=1,EE,203D9498,extended,24030001
+//Spawn Al
+patch=1,EE,E001E8A8,extended,004BEA54
+patch=1,EE,204BEA54,extended,24020001
 
 [Game Rules\Single Player\Solo Mod\Be Blue Team (P2)]
+author=YukiXXL
 description=Great thing to use for original Jak colors. (GetJuggSafeTeam__C4Hero -> jalr v0)
 //-DREADZONE STATION and ARENA
 patch=1,EE,E0012F14,extended,0068A2F0
@@ -553,6 +576,7 @@ patch=1,EE,00657FCC,extended,24020000
 // COOPERATIVE GAME RULES
 
 [Game Rules\Cooperative\Unlimited Player Distance]
+author=YukiXXL
 description=Disables the line when players are too far away from each other.
 //-CATACROM FOUR
 patch=1,EE,E001E778,extended,003FF77C
@@ -589,6 +613,7 @@ patch=1,EE,E001E718,extended,003F39DC
 patch=1,EE,203F39DC,extended,24030000
 
 [Game Rules\Cooperative\Disable teleporting a player]
+author=YukiXXL
 //-SHAAR
 patch=1,EE,E001E718,extended,0049C538
 patch=1,EE,2049C538,extended,24030000

@@ -1,0 +1,14 @@
+gametitle=Downhill Domination Demo (NTSC-U)
+comment=PEDS - MULTI PLAYER
+
+//Enable for 3-4
+patch=1,EE,00127774,extended,28420005
+patch=1,EE,0019161C,extended,28420005
+
+//As in SP
+patch=1,EE,00127D3C,extended,28420005
+
+//Custom
+//Bigger number = Less
+//1=SP Default? ; 3 = MP Default
+patch=1,EE,00127D34,extended,24060002

@@ -1,8 +1,10 @@
 gametitle=Ratchet: Deadlocked Review Prototype (Sep 13, 2005) (NTSC-U)
-comment=Provided by YukiXXL.
+comment=A huge thanks to Hwd45 and SolidSnake11 for doing the initial research on this prototype! And a huge thanks to the anonymous donor that allowed for this release to happen!
 
 [Dongle Protection Bypass]
+patch=1,EE,E001FFFB,extended,00460978
 patch=1,EE,20460978,extended,10000007
+patch=1,EE,E006802D,extended,004EE970
 patch=1,EE,204EE958,extended,3C02004C
 patch=1,EE,204EE95C,extended,244259B4
 patch=1,EE,204EE960,extended,3C010021

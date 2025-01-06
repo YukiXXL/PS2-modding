@@ -1,9 +1,10 @@
 gametitle=Ratchet: Deadlocked (NTSC-U)
-comment=Provided by YukiXXL.
+comment=Special thanks to Moose for the help tips.
 
 // MULTIPLAYER
 
 [Multiplayer\More Teams]
+author=YukiXXL
 patch=1,EE,E0020260,extended,0074721C
 patch=1,EE,00747214,extended,2402000B
 patch=1,EE,00747218,extended,2402000B
@@ -11,30 +12,36 @@ patch=1,EE,00747218,extended,2402000B
 // DREADZONE STATION
 
 [DreadZone Station\Single Player\Enable Jak Skin]
+author=YukiXXL
 patch=1,EE,E001E828,extended,0061C180
 patch=1,EE,2061C180,extended,24020001
 
 [DreadZone Station\Planets\Enable Dreadzone Interior Planet]
+author=YukiXXL
 patch=1,EE,E001000F,extended,006007FC
 patch=1,EE,006007FC,extended,24020010
 
 [DreadZone Station\Missions\Enable All Missions (Including CUT)]
+author=YukiXXL
 description=Missions stay enabled trough the game.
 patch=1,EE,E002102D,extended,006C1728
 patch=1,EE,206C16C0,extended,00000000
 patch=1,EE,206C172C,extended,24020001
 
 [DreadZone Station\Missions\All Missions available]
+author=YukiXXL
 description=Missions stay available trough the game.
 patch=1,EE,E001000F,extended,00584D2C
 patch=1,EE,20584D2C,extended,00000000
 
 [DreadZone Station\Missions\Mission Always Visible]
+author=YukiXXL
 patch=1,EE,E0020010,extended,00584DE0
 patch=1,EE,20584DD8,extended,24020001
 patch=1,EE,20584DDC,extended,03E00008
 
 [DreadZone Station\CheckBadgeUnlock]
+author=YukiXXL
 description=Unlocks bunch of things. Kept for reference.
 patch=1,EE,E0020017,extended,006C1838
 patch=1,EE,206C1828,extended,03E00008
@@ -43,17 +50,20 @@ patch=1,EE,206C182C,extended,24020001
 // DREADZONE INTERIOR
 
 [DreadZone Interior\Missions\Mission Always Visible]
+author=YukiXXL
 patch=1,EE,E0020010,extended,005542E0
 patch=1,EE,205542D8,extended,24020001
 patch=1,EE,205542DC,extended,03E00008
 
 [DreadZone Interior\Main Menu\Enable Planets Menu]
+author=YukiXXL
 patch=1,EE,E001202D,extended,005C5DC4
 patch=1,EE,205C5DBC,extended,24070001
 
 // COOPERATIVE MOD IN SINGLE PLAYER
 
 [Game Rules\Single Player\Solo Mod]
+author=YukiXXL
 //-DREADZONE STATION and ARENA
 //BotHud_UpdateIcons
 patch=1,EE,E001E828,extended,005F051C
@@ -401,6 +411,7 @@ patch=1,EE,E001E6D8,extended,00573F50
 patch=1,EE,20573F50,extended,24020001
 
 [Game Rules\Single Player\Solo Mod\Yellow Gadget Icons]
+author=YukiXXL
 description=Makes Gadget Yellow like in Cooperative. (BotHud_GetIconColor)
 //-DREADZONE STATION and ARENA
 patch=1,EE,E001E828,extended,005F063C
@@ -440,6 +451,7 @@ patch=1,EE,E001E6D8,extended,005BE84C
 patch=1,EE,205BE84C,extended,24030001
 
 [Game Rules\Single Player\Solo Mod\Different Mission Passed Banner]
+author=YukiXXL
 description=Changes Mission Passed Banner.
 //-DREADZONE STATION and ARENA
 patch=1,EE,E001E0C8,extended,005F61D8
@@ -479,6 +491,7 @@ patch=1,EE,E001E0C8,extended,005C43E8
 patch=1,EE,105C43E8,extended,2484DA98
 
 [Game Rules\Single Player\Solo Mod\Fix Arena Help Stuff (DreadZone Station)]
+author=YukiXXL
 description=Fixes tutorials where bots are needed and uses COOP messages.
 //Fix Tutorials
 patch=1,EE,E001E828,extended,003D9214
@@ -488,14 +501,22 @@ patch=1,EE,E001E828,extended,003D9494
 patch=1,EE,203D9494,extended,24020001
 
 [Game Rules\Single Player\Solo Mod\Disable Al's cutscene (DreadZone Station)]
+author=YukiXXL
 //Disable cutscene
 patch=1,EE,E001E828,extended,0047E34C
 patch=1,EE,2047E34C,extended,24020001
 //Set marker to Clank
 patch=1,EE,E001E828,extended,0047E370
 patch=1,EE,2047E370,extended,24030001
+//Get the Arena ship
+patch=1,EE,E001E828,extended,003D8FF0
+patch=1,EE,203D8FF0,extended,24030001
+//Spawn Al
+patch=1,EE,E001E828,extended,004BCDBC
+patch=1,EE,204BCDBC,extended,24020001
 
 [Game Rules\Single Player\Solo Mod\Be Blue Team (P2)]
+author=YukiXXL
 description=Great thing to use for original Jak colors. (GetJuggSafeTeam__C4Hero -> jalr v0)
 //-DREADZONE STATION and ARENA
 patch=1,EE,E0012F14,extended,00684FA8
@@ -537,6 +558,7 @@ patch=1,EE,00653184,extended,24020000
 // COOPERATIVE GAME RULES
 
 [Game Rules\Cooperative\Unlimited Player Distance]
+author=YukiXXL
 description=Disables the line when players are too far away from each other.
 //-CATACROM FOUR
 patch=1,EE,E001E6F8,extended,003FEDF4
@@ -573,6 +595,7 @@ patch=1,EE,E001E6D8,extended,003F3164
 patch=1,EE,203F3164,extended,24030000
 
 [Game Rules\Cooperative\Disable teleporting a player]
+author=YukiXXL
 //-SHAAR
 patch=1,EE,E001E698,extended,0049B018
 patch=1,EE,2049B018,extended,24030000
