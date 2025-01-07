@@ -1,5 +1,0 @@
-gametitle=Downhill Domination Demo (NTSC-U)
-comment=MENUS - SINGLE PLAYER
-
-//More Career Options
-patch=1,EE,001EB4FC,extended,2402000C

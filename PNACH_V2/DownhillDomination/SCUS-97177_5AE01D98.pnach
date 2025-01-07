@@ -1,0 +1,190 @@
+gametitle=Downhill Domination Final Release (NTSC-U)
+
+[Disable Security Checks]
+author=YukiXXL
+description=Disables hashcheck and allows game to be hard modded.
+patch=1,EE,2020E77C,extended,24020001
+
+[Options Menu\Enable "Unlock Riders/Bikes (Test)" Menu]
+author=YukiXXL
+patch=1,EE,001F01DC,extended,24080009
+
+// LEVELS
+
+[Levels\Enable All Levels for 3-4 Players]
+author=YukiXXL
+patch=1,EE,00193F40,extended,28420005
+patch=1,EE,00193F7C,extended,28420005
+
+[Levels\Hidden\Unlock All]
+author=YukiXXL
+description=It unlocks all levels needed. MODIFIES PROFILE!
+patch=1,EE,204346B4,extended,1BFFFFFF
+
+[Levels\Hidden\Enable All]
+author=YukiXXL
+description=It enables all levels without touching the profile.
+patch=1,EE,20193FA0,extended,24020001
+
+[Levels\Hidden\Replace used with Hidden]
+author=YukiXXL
+description=Replaces last 4 with Hidden levels.
+//Update List IDs
+patch=1,EE,00296FB4,extended,00000015
+patch=1,EE,00296FB8,extended,00000017
+patch=1,EE,00296FBC,extended,0000001B
+patch=1,EE,00296FC0,extended,0000001C
+//in-game New Level Update List
+patch=1,EE,0015CB0C,extended,2414001A
+patch=1,EE,0015CB14,extended,2415001A
+//in-game New Level Selected
+patch=1,EE,0015CD34,extended,2403001A
+patch=1,EE,0015CD48,extended,2403001A
+//Custom Tournament Update List
+patch=1,EE,001E3700,extended,2414001A
+patch=1,EE,001E370C,extended,2413001A
+//Custom Tournament Add Level
+patch=1,EE,001E38AC,extended,2403001A
+patch=1,EE,001E38C0,extended,2403001A
+//Fix Strings
+patch=1,EE,102758C4,extended,002961D0
+patch=1,EE,102758C8,extended,002960F0
+patch=1,EE,102758CC,extended,00296178
+patch=1,EE,102758D0,extended,00296188
+
+[Levels\Replace Moshbowl with Super Jump]
+author=YukiXXL
+patch=1,EE,0026EEAC,extended,0029CB78
+
+// SP AND MP
+
+[Single and Multi-Player\Enable All Single Event Options]
+author=YukiXXL
+//1P
+patch=1,EE,201EF144,extended,A3A00001
+patch=1,EE,001EF158,extended,24080003
+//2P
+patch=1,EE,201EF180,extended,A3A00003
+patch=1,EE,001EF194,extended,24080003
+//3P, 4P
+patch=1,EE,201EF1C0,extended,A3A00003
+patch=1,EE,201EF1C8,extended,A3A00001
+patch=1,EE,001EF1D8,extended,24080004
+
+[Single and Multi-Player\Pedestriants\Disable]
+author=YukiXXL
+description=Disable pedestriants
+patch=1,EE,00127784,extended,28420001
+patch=1,EE,00192F94,extended,28420001
+
+// MULTI-PLAYER
+
+[Multi-Player\Replace Arcade with Super Career]
+author=YukiXXL
+patch=1,EE,10275918,extended,00296240 //String
+patch=1,EE,001EE054,extended,24040003 //Function
+
+[Multi-Player\Skip selecting players and drop into Events menu]
+author=YukiXXL
+description=If want to play MP modes with 1 player.
+patch=1,EE,001ED848,extended,24020018
+
+[Multi-Player\15th rider\Unlock]
+author=YukiXXL
+description=Unlocks and Enables 15th rider. USE ONLY DEFAULT OUTFIT!
+patch=1,EE,704346B0,extended,00104000 //Unlock the rider
+patch=1,EE,0018BD60,extended,2A62000F //Loop 15 times
+
+[Multi-Player\Enable 2P Events for 3-4 players]
+author=YukiXXL
+description=Also unlocks for 1P if skipped a Players select menu.
+patch=1,EE,001EDE30,extended,24080005
+patch=1,EE,001EDFE4,extended,28630001 //Bypass Check
+
+// - PEDS
+[Multi-Player\Pedestriants\Disable]
+author=YukiXXL
+description=Disable pedestriants
+patch=1,EE,00127784,extended,28420002
+
+[Multi-Player\Pedestriants\Enable for 3-4 players]
+author=YukiXXL
+description=Enable pedestriants for 3-4 players.
+patch=1,EE,00127784,extended,28420005
+patch=1,EE,00192F94,extended,28420005
+
+[Multi-Player\Pedestriants\Number\Like in Single Player]
+author=YukiXXL
+description=Get as much as in Single Player
+patch=1,EE,00127D44,extended,24060001
+
+[Multi-Player\Pedestriants\Number\A Bit More]
+author=YukiXXL
+description=Get a bit more than default MP value.
+patch=1,EE,00127D44,extended,24060002
+
+[Multi-Player\Pedestriants\Number\A Bit Less]
+author=YukiXXL
+description=Get a bit less than default MP value.
+patch=1,EE,00127D44,extended,24060004
+
+[Multi-Player\Pedestriants\Number\Much Less]
+author=YukiXXL
+description=Get much less than default MP value.
+patch=1,EE,00127D44,extended,24060005
+
+// AI
+
+[AI\Enable on "No AI" Game Modes]
+author=YukiXXL
+description=Training, Super Jump, etc.
+patch=1,EE,201B8A20,extended,8E300288
+
+[AI\Enable AI on levels without AI\Enable 9]
+author=YukiXXL
+patch=1,EE,001822D0,extended,24020002
+
+[AI\Enable AI on levels without AI\Enable 7]
+author=YukiXXL
+patch=1,EE,001822D0,extended,24020001
+
+[AI\Enable AI on levels without AI\Enable 5]
+author=YukiXXL
+patch=1,EE,001822D0,extended,24020000
+
+[AI\Enable AI on levels without AI\Enable 1]
+author=YukiXXL
+patch=1,EE,201B8AD4,extended,0242280B
+
+[AI\Use maximum number of AI based on Players]
+author=YukiXXL
+description=Applies to 1,2,3,4.
+patch=1,EE,201B8A2C,extended,00000000 //Use Single Player
+//1P
+patch=1,EE,E0050002,extended,004B2828
+patch=1,EE,001B8A44,extended,24050009
+patch=1,EE,001B8A4C,extended,24030008
+patch=1,EE,001B8A68,extended,24050007
+patch=1,EE,201B8A78,extended,0260282D
+patch=1,EE,001B8AB0,extended,24050005
+//2P
+patch=1,EE,E0050002,extended,004B2828
+patch=1,EE,001B8A44,extended,24050008
+patch=1,EE,001B8A4C,extended,24030007
+patch=1,EE,001B8A68,extended,24050006
+patch=1,EE,201B8A78,extended,6665FFFF
+patch=1,EE,001B8AB0,extended,24050004
+//3P
+patch=1,EE,E0050003,extended,004B2828
+patch=1,EE,001B8A44,extended,24050007
+patch=1,EE,001B8A4C,extended,24030006
+patch=1,EE,001B8A68,extended,24050005
+patch=1,EE,201B8A78,extended,6665FFFE
+patch=1,EE,001B8AB0,extended,24050003
+//4P
+patch=1,EE,E0050004,extended,004B2828
+patch=1,EE,001B8A44,extended,24050006
+patch=1,EE,001B8A4C,extended,24030005
+patch=1,EE,001B8A68,extended,24050004
+patch=1,EE,201B8A78,extended,6665FFFD
+patch=1,EE,001B8AB0,extended,24050002

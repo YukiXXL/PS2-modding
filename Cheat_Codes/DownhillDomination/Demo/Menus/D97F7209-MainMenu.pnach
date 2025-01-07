@@ -1,4 +1,0 @@
-gametitle=Downhill Domination Demo (NTSC-U)
-comment=MENUS - MAIN MENU
-
-patch=1,EE,2029AFC8,extended,00000000

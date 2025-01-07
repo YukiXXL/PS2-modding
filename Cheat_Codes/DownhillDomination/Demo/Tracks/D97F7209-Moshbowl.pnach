@@ -1,4 +1,0 @@
-gametitle=Downhill Domination Demo (NTSC-U)
-comment=Replace Moshbowl with Super Jump
-
-patch=1,EE,0026C82C,extended,0029A280

@@ -1,6 +1,13 @@
 gametitle=Downhill Domination Demo (NTSC-U)
 
-[Tracks\Replace the Unused with Used]
+// LEVELS
+
+[Levels\Enable All Levels for 3-4 Players]
+author=YukiXXL
+patch=1,EE,001925C8,extended,28420005
+patch=1,EE,00192604,extended,28420005
+
+[Levels\Replace the Unused with Used]
 author=YukiXXL
 description=Dual Slalom, Training, Podium, Super Jump, Alpine (Alternatives)
 //Change IDs
@@ -25,7 +32,7 @@ patch=1,EE,0015BB90,extended,24030001
 //Custom Tournament
 patch=1,EE,001E0EF0,extended,24140001
 patch=1,EE,001E0EFC,extended,24130001
-//Fix naming (Single Event Select)
+//Fix strings (Single Event Select)
 patch=1,EE,2027314C,extended,002899D0
 patch=1,EE,20273150,extended,00289A50
 patch=1,EE,20273154,extended,00289A60
@@ -35,70 +42,14 @@ patch=1,EE,20273160,extended,0029A2A0
 patch=1,EE,20273164,extended,0029A2B0
 patch=1,EE,20273168,extended,0029A2D8
 patch=1,EE,2027316C,extended,0029A320
-//Fix Naming (NewLevel, CustomTournament)
+//Fix strings (NewLevel, CustomTournament)
 patch=1,EE,1015B994,extended,2453C7D0
 patch=1,EE,101E0EF4,extended,2455C7D0
 
-[Tracks\Replace Moshbowl with Super Jump]
+[Levels\Replace Moshbowl with Super Jump]
 author=YukiXXL
 description=Moshbowl is missing so it causes crashes.
 patch=1,EE,0026C82C,extended,0029A280
-
-// AI
-
-[AI\Enable on "No AI" Game Modes]
-author=YukiXXL
-description=Training, Super Jump, etc.
-patch=1,EE,201B6DA0,extended,8E300288
-
-[AI\Enable AI on tracks without AI\Enable 9]
-author=YukiXXL
-patch=1,EE,00180DD0,extended,24020002
-
-[AI\Enable AI on tracks without AI\Enable 7]
-author=YukiXXL
-patch=1,EE,00180DD0,extended,24020001
-
-[AI\Enable AI on tracks without AI\Enable 5]
-author=YukiXXL
-patch=1,EE,00180DD0,extended,24020000
-
-[AI\Enable AI on tracks without AI\Enable 1]
-author=YukiXXL
-patch=1,EE,201B6E54,extended,0282280B
-
-[AI\Use maximum number of AI based on Players]
-author=YukiXXL
-description=Applies to 1,2,3,4.
-patch=1,EE,201B6DAC,extended,00000000 //Use Single Player
-//1P
-patch=1,EE,E0050002,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050009
-patch=1,EE,001B6DCC,extended,24030008
-patch=1,EE,001B6DE8,extended,24050007
-patch=1,EE,201B6DF8,extended,0260282D
-patch=1,EE,001B6E30,extended,24050005
-//2P
-patch=1,EE,E0050002,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050008
-patch=1,EE,001B6DCC,extended,24030007
-patch=1,EE,001B6DE8,extended,24050006
-patch=1,EE,201B6DF8,extended,6665FFFF
-patch=1,EE,001B6E30,extended,24050004
-//3P
-patch=1,EE,E0050003,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050007
-patch=1,EE,001B6DCC,extended,24030006
-patch=1,EE,001B6DE8,extended,24050005
-patch=1,EE,201B6DF8,extended,6665FFFE
-patch=1,EE,001B6E30,extended,24050003
-//4P
-patch=1,EE,E0050004,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050006
-patch=1,EE,001B6DCC,extended,24030005
-patch=1,EE,001B6DE8,extended,24050004
-patch=1,EE,201B6DF8,extended,6665FFFD
-patch=1,EE,001B6E30,extended,24050002
 
 // MENUS
 
@@ -111,24 +62,30 @@ author=YukiXXL
 patch=1,EE,001EDD84,extended,24080009
 
 // SP AND MP
-[Single/Multi-Player\Pedestriants\Disable]
+
+[Single and Multi-Player\Pedestriants\Disable]
 author=YukiXXL
 description=Disable pedestriants
 patch=1,EE,00127774,extended,28420001
 patch=1,EE,0019161C,extended,28420001
 
-[Single/Multi-Player\Enable Arcade, Moshbowl, Super Jump]
+[Single and Multi-Player\Enable Arcade, Moshbowl, Super Jump]
 author=YukiXXL
 patch=1,EE,2029AFD0,extended,00000000
 patch=1,EE,0029AFD4,extended,00000000
 
-[Single/Multi-Player\MP Event Options (+ Single Event Options for SP)]
+[Single and Multi-Player\MP Event Options (+ Single Event Options for SP)]
 author=YukiXXL
 description=SP: Goto Career > Specialized and go back.
 patch=1,EE,001EDA34,extended,24060018
 patch=1,EE,001EB9D8,extended,24080005
 
-[Single/Multi-Player\Enable All Single Event Options]
+[Single and Multi-Player\MP Event Options\Bypass check]
+author=YukiXXL
+description=Bypasses checks for Super Jump, Arcade, Dual Slalom.
+patch=1,EE,001EBB8C,extended,28630001
+
+[Single and Multi-Player\Enable All Single Event Options]
 author=YukiXXL
 //1P
 patch=1,EE,201ECCEC,extended,A3A00001
@@ -141,12 +98,14 @@ patch=1,EE,201ECD68,extended,A3A00003
 patch=1,EE,201ECD70,extended,A3A00001
 patch=1,EE,001ECD80,extended,24080004
 
-// - SINGLE PLAYER
+// SINGLE PLAYER
+
 [Single Player\Enable More Career Options]
 author=YukiXXL
 patch=1,EE,001EB4FC,extended,2402000C
 
-// - MULTI-PLAYER
+// MULTI-PLAYER
+
 [Multi-Player\Enable 15 Riders]
 author=YukiXXL
 description=Enables Main + Bonus + Hidden Riders.
@@ -164,6 +123,7 @@ patch=1,EE,201ECBFC,extended,2682FCA0
 patch=1,EE,201ECC00,extended,1000FFD9
 patch=1,EE,201ECC04,extended,24030004
 
+// - PEDS
 [Multi-Player\Pedestriants\Disable]
 author=YukiXXL
 description=Disable pedestriants
@@ -202,15 +162,61 @@ patch=1,EE,001ECB74,extended,24060018
 //Fix Moshbowl
 patch=1,EE,201ED524,extended,2470FCB0
 
-[Multi-Player\Bypass check]
-author=YukiXXL
-description=Bypasses checks for Super Jump, Arcade, Dual Slalom.
-patch=1,EE,001EBB8C,extended,28630001
+// AI
 
-[Multi-Player\Enable All Tracks]
+[AI\Enable on "No AI" Game Modes]
 author=YukiXXL
-patch=1,EE,001925C8,extended,28420005
-patch=1,EE,00192604,extended,28420005
+description=Training, Super Jump, etc.
+patch=1,EE,201B6DA0,extended,8E300288
+
+[AI\Enable AI on levels without AI\Enable 9]
+author=YukiXXL
+patch=1,EE,00180DD0,extended,24020002
+
+[AI\Enable AI on levels without AI\Enable 7]
+author=YukiXXL
+patch=1,EE,00180DD0,extended,24020001
+
+[AI\Enable AI on levels without AI\Enable 5]
+author=YukiXXL
+patch=1,EE,00180DD0,extended,24020000
+
+[AI\Enable AI on levels without AI\Enable 1]
+author=YukiXXL
+patch=1,EE,201B6E54,extended,0242280B
+
+[AI\Use maximum number of AI based on Players]
+author=YukiXXL
+description=Applies to 1,2,3,4.
+patch=1,EE,201B6DAC,extended,00000000 //Use Single Player
+//1P
+patch=1,EE,E0050002,extended,004AFF28
+patch=1,EE,001B6DC4,extended,24050009
+patch=1,EE,001B6DCC,extended,24030008
+patch=1,EE,001B6DE8,extended,24050007
+patch=1,EE,201B6DF8,extended,0260282D
+patch=1,EE,001B6E30,extended,24050005
+//2P
+patch=1,EE,E0050002,extended,004AFF28
+patch=1,EE,001B6DC4,extended,24050008
+patch=1,EE,001B6DCC,extended,24030007
+patch=1,EE,001B6DE8,extended,24050006
+patch=1,EE,201B6DF8,extended,6665FFFF
+patch=1,EE,001B6E30,extended,24050004
+//3P
+patch=1,EE,E0050003,extended,004AFF28
+patch=1,EE,001B6DC4,extended,24050007
+patch=1,EE,001B6DCC,extended,24030006
+patch=1,EE,001B6DE8,extended,24050005
+patch=1,EE,201B6DF8,extended,6665FFFE
+patch=1,EE,001B6E30,extended,24050003
+//4P
+patch=1,EE,E0050004,extended,004AFF28
+patch=1,EE,001B6DC4,extended,24050006
+patch=1,EE,001B6DCC,extended,24030005
+patch=1,EE,001B6DE8,extended,24050004
+patch=1,EE,201B6DF8,extended,6665FFFD
+patch=1,EE,001B6E30,extended,24050002
 
 // RIDERS
 

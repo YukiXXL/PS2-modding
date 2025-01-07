@@ -1,4 +1,0 @@
-gametitle=Downhill Domination Demo (NTSC-U)
-comment=AI - ENABLE ON "NO AI" GAME MODES
-
-patch=1,EE,201B6DA0,extended,8E300288

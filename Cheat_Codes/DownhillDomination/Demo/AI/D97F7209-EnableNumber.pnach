@@ -1,8 +1,0 @@
-gametitle=Downhill Domination Demo (NTSC-U)
-comment=AI - NUMBER OF AI
-
-//One
-patch=1,EE,201B6E54,extended,0282280B
-
-//3=0; 2=9; 1=7; 0=5
-patch=1,EE,00180DD0,extended,24020002
