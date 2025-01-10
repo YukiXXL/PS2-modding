@@ -51,6 +51,98 @@ author=YukiXXL
 description=Moshbowl is missing so it causes crashes.
 patch=1,EE,0026C82C,extended,0029A280
 
+// - LOADING SCREENS
+[Levels\Loading Screen based on Level (Single Event)]
+author=YukiXXL
+description=Alpine, Dual Slalom, Training, Super Jump
+//Change Load Location
+patch=1,EE,00180E68,extended,2442A388
+//ALPINE
+patch=1,EE,E0020000,extended,004AFF40
+patch=1,EE,2029A388,extended,504C414C
+patch=1,EE,2029A38C,extended,00004553
+//ALPINEMX
+patch=1,EE,E0020006,extended,004AFF40
+patch=1,EE,2029A388,extended,504C414C
+patch=1,EE,2029A38C,extended,00004553
+//ALPINET
+patch=1,EE,E0020018,extended,004AFF40
+patch=1,EE,2029A388,extended,504C414C
+patch=1,EE,2029A38C,extended,00004553
+//Dual Slalom
+patch=1,EE,E0030015,extended,004AFF40
+patch=1,EE,2029A388,extended,44414F4C
+patch=1,EE,2029A38C,extended,31524142
+patch=1,EE,0029A390,extended,00000000
+//TRAINER
+patch=1,EE,E003001C,extended,004AFF40
+patch=1,EE,2029A388,extended,4152544C
+patch=1,EE,2029A38C,extended,45534E49
+patch=1,EE,0029A390,extended,00000000
+//Super Jump
+patch=1,EE,E002001B,extended,004AFF40
+patch=1,EE,2029A388,extended,4D554A4C
+patch=1,EE,2029A38C,extended,00455350
+
+[Levels\Loading Screen based on Game Mode\Other]
+author=YukiXXL
+description=Career (exculding MX), Training, Super Jump.
+//Freeride Race
+patch=1,EE,E0020002,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,504C414C
+patch=1,EE,2029A3D4,extended,00005246
+//Freestyle
+patch=1,EE,E0020005,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,504C414C
+patch=1,EE,2029A3D4,extended,00005346
+//Super Career
+patch=1,EE,E0020003,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,504C414C
+patch=1,EE,2029A3D4,extended,00004353
+//Technical Downhill
+patch=1,EE,E0020001,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,504C414C
+patch=1,EE,2029A3D4,extended,00004454
+//Super Jump
+patch=1,EE,E0030011,extended,004AFDAC
+patch=1,EE,00180E34,extended,24040011 //Check if gm
+patch=1,EE,2029A3C8,extended,4D554A4C
+patch=1,EE,2029A3CC,extended,00000050
+//Training
+patch=1,EE,E003000B,extended,004AFDAC
+patch=1,EE,00180E34,extended,2404000B //Check if gm
+patch=1,EE,2029A3C8,extended,4152544C
+patch=1,EE,2029A3CC,extended,00004E49
+//Reset to Default
+patch=1,EE,E0030002,extended,004AFDAC
+patch=1,EE,00180E34,extended,24040014 //Check if gm
+patch=1,EE,2029A3C8,extended,444F504C
+patch=1,EE,2029A3CC,extended,004D5549
+
+[Levels\Loading Screen based on Game Mode\Arcade and MX\Standard]
+author=YukiXXL
+description=Arcade and MX Standard loading screen.
+//Arcade
+patch=1,EE,E0020004,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,504C414C
+patch=1,EE,2029A3D4,extended,00005241
+//Mountain Cross
+patch=1,EE,E0020000,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,504C414C
+patch=1,EE,2029A3D4,extended,0000584D
+
+[Levels\Loading Screen based on Game Mode\Arcade and MX\Prototype]
+author=YukiXXL
+description=Arcade and MX Protoype loading screen.
+//Arcade
+patch=1,EE,E0020004,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,44414F4C
+patch=1,EE,2029A3D4,extended,00435241
+//Mountain Cross
+patch=1,EE,E0020000,extended,004AFDAC
+patch=1,EE,2029A3D0,extended,44414F4C
+patch=1,EE,2029A3D4,extended,0000584D
+
 // MENUS
 
 [Menus\Main Menu\Enable Options Menu]
@@ -63,7 +155,7 @@ patch=1,EE,001EDD84,extended,24080009
 
 // SP AND MP
 
-[Single and Multi-Player\Pedestriants\Disable]
+[Single and Multi-Player\Disable Pedestriants]
 author=YukiXXL
 description=Disable pedestriants
 patch=1,EE,00127774,extended,28420001
@@ -185,38 +277,34 @@ patch=1,EE,00180DD0,extended,24020000
 author=YukiXXL
 patch=1,EE,201B6E54,extended,0242280B
 
-[AI\Use maximum number of AI based on Players]
+[AI\Always have maximum AI on any level]
 author=YukiXXL
-description=Applies to 1,2,3,4.
-patch=1,EE,201B6DAC,extended,00000000 //Use Single Player
-//1P
-patch=1,EE,E0050002,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050009
-patch=1,EE,001B6DCC,extended,24030008
-patch=1,EE,001B6DE8,extended,24050007
-patch=1,EE,201B6DF8,extended,0260282D
-patch=1,EE,001B6E30,extended,24050005
+patch=1,EE,20180D94,extended,10000007
+
+[AI\Multi-Player\Enable AI for 3-4 players]
+author=YukiXXL
+patch=1,EE,201B6E04,extended,24100002
+
+[AI\Multi-Player\Use maximum number of AI based on Players]
+author=YukiXXL
 //2P
-patch=1,EE,E0050002,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050008
-patch=1,EE,001B6DCC,extended,24030007
-patch=1,EE,001B6DE8,extended,24050006
-patch=1,EE,201B6DF8,extended,6665FFFF
-patch=1,EE,001B6E30,extended,24050004
+patch=1,EE,E0040002,extended,004AFF28
+patch=1,EE,001B6E18,extended,24050008
+patch=1,EE,001B6E30,extended,24050006
+patch=1,EE,001B6E48,extended,24050004
+patch=1,EE,001B6E4C,extended,24050004
 //3P
-patch=1,EE,E0050003,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050007
-patch=1,EE,001B6DCC,extended,24030006
-patch=1,EE,001B6DE8,extended,24050005
-patch=1,EE,201B6DF8,extended,6665FFFE
-patch=1,EE,001B6E30,extended,24050003
+patch=1,EE,E0040003,extended,004AFF28
+patch=1,EE,001B6E18,extended,24050007
+patch=1,EE,001B6E30,extended,24050005
+patch=1,EE,001B6E48,extended,24050003
+patch=1,EE,001B6E4C,extended,24050003
 //4P
-patch=1,EE,E0050004,extended,004AFF28
-patch=1,EE,001B6DC4,extended,24050006
-patch=1,EE,001B6DCC,extended,24030005
-patch=1,EE,001B6DE8,extended,24050004
-patch=1,EE,201B6DF8,extended,6665FFFD
-patch=1,EE,001B6E30,extended,24050002
+patch=1,EE,E0040004,extended,004AFF28
+patch=1,EE,001B6E18,extended,24050006
+patch=1,EE,001B6E30,extended,24050004
+patch=1,EE,001B6E48,extended,24050002
+patch=1,EE,001B6E4C,extended,24050002
 
 // RIDERS
 
@@ -230,3 +318,22 @@ patch=1,EE,201F40D4,extended,A0750041
 [Riders\Unlock Bonus Riders\Unlock as you select them]
 author=YukiXXL
 patch=1,EE,2019268C,extended,24020001
+
+
+[Careers Fix]
+author=YukiXXL
+description=Adjusts careers to use only available levels.
+//MX
+patch=1,EE,0026CA74,extended,00000021
+//TD
+patch=1,EE,0026CA94,extended,00000021
+//FR
+patch=1,EE,0026CAB4,extended,00000021
+//AR
+patch=1,EE,0026CAE8,extended,00000018
+patch=1,EE,0026CAEC,extended,00000015
+patch=1,EE,0026CAF0,extended,00000021
+//FS
+patch=1,EE,0026CB18,extended,0000001B
+patch=1,EE,0026CB1C,extended,0000001C
+patch=1,EE,0026CB20,extended,00000000
