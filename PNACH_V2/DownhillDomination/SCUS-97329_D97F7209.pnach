@@ -1,13 +1,30 @@
 gametitle=Downhill Domination Demo (NTSC-U)
 
-// LEVELS
+// UNLOCK
 
-[Levels\Enable All Levels for 3-4 Players]
+[Unlock\Riders\Retail Riders]
 author=YukiXXL
-patch=1,EE,001925C8,extended,28420005
-patch=1,EE,00192604,extended,28420005
+description=Enables riders that are available in Retail version.
+patch=1,EE,201F40C0,extended,A0750042
+patch=1,EE,201F40C4,extended,A075003F
+patch=1,EE,201F40CC,extended,A0750040
+patch=1,EE,201F40D4,extended,A0750041
 
-[Levels\Replace the Unused with Used]
+[Unlock\Riders\Bonus Riders]
+author=YukiXXL
+patch=1,EE,2019268C,extended,24020001
+
+// MENUS
+
+[Menus\Main Menu\Enable Options Menu]
+author=YukiXXL
+patch=1,EE,2029AFC8,extended,00000000
+
+[Menus\Main Menu\Options\Enable "Unlock Riders/Bikes (Test)" Menu]
+author=YukiXXL
+patch=1,EE,001EDD84,extended,24080009
+
+[Menus\Levels\Replace the Unused\With available]
 author=YukiXXL
 description=Dual Slalom, Training, Podium, Super Jump, Alpine (Alternatives)
 //Change IDs
@@ -20,9 +37,6 @@ patch=1,EE,002946A0,extended,0000001F
 patch=1,EE,002946A4,extended,00000022
 patch=1,EE,002946A8,extended,00000028
 patch=1,EE,002946AC,extended,0000003A
-//Hex unlock
-patch=1,EE,10192340,extended,3C03FD20
-patch=1,EE,10192348,extended,34630145
 //in-game NewLevel
 patch=1,EE,0015B954,extended,24140001
 patch=1,EE,0015B95C,extended,24150001
@@ -46,13 +60,106 @@ patch=1,EE,2027316C,extended,0029A320
 patch=1,EE,1015B994,extended,2453C7D0
 patch=1,EE,101E0EF4,extended,2455C7D0
 
+[Menus\Levels\Replace the Unused\Unlock available (at boot)]
+author=YukiXXL
+description=Can be combined with "Unlock Everything" code.
+patch=1,EE,10192340,extended,3C03FD20
+patch=1,EE,10192348,extended,34630145
+
+[Menus\Levels\Replace the Unused\Unlock available]
+author=YukiXXL
+description=Cannot be combined. Only shows the available levels.
+patch=1,EE,20431DB4,extended,FD200145
+
+[Menus\Single,Multi-Player\Enable Arcade, Moshbowl, Super Jump]
+author=YukiXXL
+patch=1,EE,2029AFD0,extended,00000000
+patch=1,EE,0029AFD4,extended,00000000
+
+[Menus\Single,Multi-Player\MP Event Options\Enable + Enable more Single Event options for SP]
+author=YukiXXL
+description=SP: Goto Career > Specialized and go back.
+patch=1,EE,001EDA34,extended,24060018
+patch=1,EE,001EB9D8,extended,24080005
+
+[Menus\Single,Multi-Player\MP Event Options\Bypass check]
+author=YukiXXL
+description=Bypasses checks for Super Jump, Arcade, Dual Slalom.
+patch=1,EE,001EBB8C,extended,28630001
+
+[Menus\Single,Multi-Player\Enable All Single Event Options]
+author=YukiXXL
+//1P
+patch=1,EE,201ECCEC,extended,A3A00001
+patch=1,EE,001ECD00,extended,24080004
+//2P
+patch=1,EE,201ECD28,extended,A3A00003
+patch=1,EE,001ECD3C,extended,24080003
+//3P, 4P
+patch=1,EE,201ECD68,extended,A3A00003
+patch=1,EE,201ECD70,extended,A3A00001
+patch=1,EE,001ECD80,extended,24080004
+
+[Menus\Single-Player\Enable More Career Options]
+author=YukiXXL
+patch=1,EE,001EB4FC,extended,2402000C
+
+[Menus\Multi-Player\Enable Two and Three Players]
+author=YukiXXL
+patch=1,EE,2029AFE8,extended,00000000
+//Fix Selecting
+patch=1,EE,201ECBEC,extended,2682FCA0
+patch=1,EE,101ECBF0,extended,1000FFDD
+patch=1,EE,201ECBF4,extended,24030003
+patch=1,EE,201ECBFC,extended,2682FCA0
+patch=1,EE,201ECC00,extended,1000FFD9
+patch=1,EE,201ECC04,extended,24030004
+
+[Menus\Multi-Player\Enable Retail Multiplayer Menu]
+author=YukiXXL
+description=After selecting the number of players, go back.
+patch=1,EE,001ECB74,extended,24060018
+//Fix Moshbowl
+patch=1,EE,201ED524,extended,2470FCB0
+
+[Menus\Multi-Player\Enable 15 Riders]
+author=YukiXXL
+description=Enables Main + Bonus + Hidden Riders.
+patch=1,EE,0018A488,extended,2E66000F
+patch=1,EE,0018A49C,extended,2A62000F
+
+[Menus\Multi-Player\Enable All Levels for 3-4 Players]
+author=YukiXXL
+patch=1,EE,001925C8,extended,28420005
+patch=1,EE,00192604,extended,28420005
+
+// LEVELS
+
+[Levels\Careers Fix]
+author=YukiXXL
+description=Adjusts careers to use only available levels.
+//MX
+patch=1,EE,0026CA74,extended,00000021
+//TD
+patch=1,EE,0026CA94,extended,00000021
+//FR
+patch=1,EE,0026CAB4,extended,00000021
+//AR
+patch=1,EE,0026CAE8,extended,00000018
+patch=1,EE,0026CAEC,extended,00000015
+patch=1,EE,0026CAF0,extended,00000021
+//FS
+patch=1,EE,0026CB18,extended,0000001B
+patch=1,EE,0026CB1C,extended,0000001C
+patch=1,EE,0026CB20,extended,00000000
+
 [Levels\Replace Moshbowl with Super Jump]
 author=YukiXXL
 description=Moshbowl is missing so it causes crashes.
 patch=1,EE,0026C82C,extended,0029A280
 
 // - LOADING SCREENS
-[Levels\Loading Screen based on Level (Single Event)]
+[Levels\Loading Screen\based on Level (Single Event)]
 author=YukiXXL
 description=Alpine, Dual Slalom, Training, Super Jump
 //Change Load Location
@@ -84,7 +191,7 @@ patch=1,EE,E002001B,extended,004AFF40
 patch=1,EE,2029A388,extended,4D554A4C
 patch=1,EE,2029A38C,extended,00455350
 
-[Levels\Loading Screen based on Game Mode\Other]
+[Levels\Loading Screen\based on Game Mode\Enable]
 author=YukiXXL
 description=Career (exculding MX), Training, Super Jump.
 //Freeride Race
@@ -119,7 +226,7 @@ patch=1,EE,00180E34,extended,24040014 //Check if gm
 patch=1,EE,2029A3C8,extended,444F504C
 patch=1,EE,2029A3CC,extended,004D5549
 
-[Levels\Loading Screen based on Game Mode\Arcade and MX\Standard]
+[Levels\Loading Screen\based on Game Mode\Arcade and MX\Standard]
 author=YukiXXL
 description=Arcade and MX Standard loading screen.
 //Arcade
@@ -131,161 +238,91 @@ patch=1,EE,E0020000,extended,004AFDAC
 patch=1,EE,2029A3D0,extended,504C414C
 patch=1,EE,2029A3D4,extended,0000584D
 
-[Levels\Loading Screen based on Game Mode\Arcade and MX\Prototype]
+[Levels\Loading Screen\based on Game Mode\Arcade and MX\Prototype]
 author=YukiXXL
 description=Arcade and MX Protoype loading screen.
+patch=1,EE,2014D47C,extended,0040982D
 //Arcade
-patch=1,EE,E0020004,extended,004AFDAC
+patch=1,EE,E0030004,extended,004AFDAC
 patch=1,EE,2029A3D0,extended,44414F4C
 patch=1,EE,2029A3D4,extended,00435241
+patch=1,EE,2014D47C,extended,64530001
 //Mountain Cross
-patch=1,EE,E0020000,extended,004AFDAC
+patch=1,EE,E0030000,extended,004AFDAC
 patch=1,EE,2029A3D0,extended,44414F4C
 patch=1,EE,2029A3D4,extended,0000584D
+patch=1,EE,2014D47C,extended,64530001
 
-// MENUS
-
-[Menus\Main Menu\Enable Options Menu]
-author=YukiXXL
-patch=1,EE,2029AFC8,extended,00000000
-
-[Menus\Options Menu\Enable "Unlock Riders/Bikes (Test)" Menu]
-author=YukiXXL
-patch=1,EE,001EDD84,extended,24080009
-
-// SP AND MP
-
-[Single and Multi-Player\Disable Pedestriants]
+// - PEDESTRIANTS
+[Gameplay\Pedestriants\Disable\For both SP and MP]
 author=YukiXXL
 description=Disable pedestriants
 patch=1,EE,00127774,extended,28420001
 patch=1,EE,0019161C,extended,28420001
 
-[Single and Multi-Player\Enable Arcade, Moshbowl, Super Jump]
-author=YukiXXL
-patch=1,EE,2029AFD0,extended,00000000
-patch=1,EE,0029AFD4,extended,00000000
-
-[Single and Multi-Player\MP Event Options (+ Single Event Options for SP)]
-author=YukiXXL
-description=SP: Goto Career > Specialized and go back.
-patch=1,EE,001EDA34,extended,24060018
-patch=1,EE,001EB9D8,extended,24080005
-
-[Single and Multi-Player\MP Event Options\Bypass check]
-author=YukiXXL
-description=Bypasses checks for Super Jump, Arcade, Dual Slalom.
-patch=1,EE,001EBB8C,extended,28630001
-
-[Single and Multi-Player\Enable All Single Event Options]
-author=YukiXXL
-//1P
-patch=1,EE,201ECCEC,extended,A3A00001
-patch=1,EE,001ECD00,extended,24080004
-//2P
-patch=1,EE,201ECD28,extended,A3A00003
-patch=1,EE,001ECD3C,extended,24080003
-//3P, 4P
-patch=1,EE,201ECD68,extended,A3A00003
-patch=1,EE,201ECD70,extended,A3A00001
-patch=1,EE,001ECD80,extended,24080004
-
-// SINGLE PLAYER
-
-[Single Player\Enable More Career Options]
-author=YukiXXL
-patch=1,EE,001EB4FC,extended,2402000C
-
-// MULTI-PLAYER
-
-[Multi-Player\Enable 15 Riders]
-author=YukiXXL
-description=Enables Main + Bonus + Hidden Riders.
-patch=1,EE,0018A488,extended,2E66000F
-patch=1,EE,0018A49C,extended,2A62000F
-
-[Multi-Player\Enable Two and Three Players]
-author=YukiXXL
-patch=1,EE,2029AFE8,extended,00000000
-//Fix Selecting
-patch=1,EE,201ECBEC,extended,2682FCA0
-patch=1,EE,101ECBF0,extended,1000FFDD
-patch=1,EE,201ECBF4,extended,24030003
-patch=1,EE,201ECBFC,extended,2682FCA0
-patch=1,EE,201ECC00,extended,1000FFD9
-patch=1,EE,201ECC04,extended,24030004
-
-// - PEDS
-[Multi-Player\Pedestriants\Disable]
+[Gameplay\Pedestriants\Disable\Only for MP]
 author=YukiXXL
 description=Disable pedestriants
 patch=1,EE,00127774,extended,28420002
 
-[Multi-Player\Pedestriants\Enable for 3-4 players]
+[Gameplay\Pedestriants\Multi-Player\Enable for 3-4 players]
 author=YukiXXL
 description=Enable pedestriants for 3-4 players.
 patch=1,EE,00127774,extended,28420005
 patch=1,EE,0019161C,extended,28420005
 
-[Multi-Player\Pedestriants\Number\Like in Single Player]
+[Gameplay\Pedestriants\Multi-Player\Number\Like in Single Player]
 author=YukiXXL
 description=Get as much as in Single Player
 patch=1,EE,00127D34,extended,24060001
 
-[Multi-Player\Pedestriants\Number\A Bit More]
+[Gameplay\Pedestriants\Multi-Player\Number\A Bit More]
 author=YukiXXL
 description=Get a bit more than default MP value.
 patch=1,EE,00127D34,extended,24060002
 
-[Multi-Player\Pedestriants\Number\A Bit Less]
+[Gameplay\Pedestriants\Multi-Player\Number\A Bit Less]
 author=YukiXXL
 description=Get a bit less than default MP value.
 patch=1,EE,00127D34,extended,24060004
 
-[Multi-Player\Pedestriants\Number\Much Less]
+[Gameplay\Pedestriants\Multi-Player\Number\Much Less]
 author=YukiXXL
 description=Get much less than default MP value.
 patch=1,EE,00127D34,extended,24060005
 
-[Multi-Player\Enable Retail Multiplayer Menu]
+// - AI
+
+[Gameplay\AI\Enable\Maximum on any level]
 author=YukiXXL
-description=After selecting the number of players, go back.
-patch=1,EE,001ECB74,extended,24060018
-//Fix Moshbowl
-patch=1,EE,201ED524,extended,2470FCB0
+patch=1,EE,20180D94,extended,10000007
 
-// AI
-
-[AI\Enable on "No AI" Game Modes]
+[Gameplay\AI\Enable\on "No AI" Game Modes]
 author=YukiXXL
 description=Training, Super Jump, etc.
 patch=1,EE,201B6DA0,extended,8E300288
 
-[AI\Enable AI on levels without AI\Enable 9]
+[Gameplay\AI\Enable\on levels without AI\Enable 9]
 author=YukiXXL
 patch=1,EE,00180DD0,extended,24020002
 
-[AI\Enable AI on levels without AI\Enable 7]
+[Gameplay\AI\Enable\on levels without AI\Enable 7]
 author=YukiXXL
 patch=1,EE,00180DD0,extended,24020001
 
-[AI\Enable AI on levels without AI\Enable 5]
+[Gameplay\AI\Enable\on levels without AI\Enable 5]
 author=YukiXXL
 patch=1,EE,00180DD0,extended,24020000
 
-[AI\Enable AI on levels without AI\Enable 1]
+[Gameplay\AI\Enable\on levels without AI\Enable 1]
 author=YukiXXL
 patch=1,EE,201B6E54,extended,0242280B
 
-[AI\Always have maximum AI on any level]
-author=YukiXXL
-patch=1,EE,20180D94,extended,10000007
-
-[AI\Multi-Player\Enable AI for 3-4 players]
+[Gameplay\AI\Multi-Player\Enable for 3-4 players]
 author=YukiXXL
 patch=1,EE,201B6E04,extended,24100002
 
-[AI\Multi-Player\Use maximum number of AI based on Players]
+[Gameplay\AI\Multi-Player\Use maximum number based on number of Players]
 author=YukiXXL
 //2P
 patch=1,EE,E0040002,extended,004AFF28
@@ -305,35 +342,3 @@ patch=1,EE,001B6E18,extended,24050006
 patch=1,EE,001B6E30,extended,24050004
 patch=1,EE,001B6E48,extended,24050002
 patch=1,EE,001B6E4C,extended,24050002
-
-// RIDERS
-
-[Riders\Enable all main riders]
-author=YukiXXL
-patch=1,EE,201F40C0,extended,A0750042
-patch=1,EE,201F40C4,extended,A075003F
-patch=1,EE,201F40CC,extended,A0750040
-patch=1,EE,201F40D4,extended,A0750041
-
-[Riders\Unlock Bonus Riders\Unlock as you select them]
-author=YukiXXL
-patch=1,EE,2019268C,extended,24020001
-
-
-[Careers Fix]
-author=YukiXXL
-description=Adjusts careers to use only available levels.
-//MX
-patch=1,EE,0026CA74,extended,00000021
-//TD
-patch=1,EE,0026CA94,extended,00000021
-//FR
-patch=1,EE,0026CAB4,extended,00000021
-//AR
-patch=1,EE,0026CAE8,extended,00000018
-patch=1,EE,0026CAEC,extended,00000015
-patch=1,EE,0026CAF0,extended,00000021
-//FS
-patch=1,EE,0026CB18,extended,0000001B
-patch=1,EE,0026CB1C,extended,0000001C
-patch=1,EE,0026CB20,extended,00000000

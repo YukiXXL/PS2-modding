@@ -5,33 +5,20 @@ author=YukiXXL
 description=Disables hashcheck and allows game to be hard modded.
 patch=1,EE,2020E77C,extended,24020001
 
-[Options Menu\Enable "Unlock Riders/Bikes (Test)" Menu]
+// MENUS
+
+[Menus\Main Menu\Options\Enable "Unlock Riders/Bikes (Test)" Menu]
 author=YukiXXL
 patch=1,EE,001F01DC,extended,24080009
 
-// LEVELS
+// - LEVELS
 
-[Levels\Enable All Levels for 3-4 Players]
-author=YukiXXL
-patch=1,EE,00193F40,extended,28420005
-patch=1,EE,00193F7C,extended,28420005
-patch=1,EE,2016C050,extended,00000000 //Crashing fix for 3P
-
-[Levels\Hidden\Unlock All]
+[Menus\Levels\Hidden\Unlock All]
 author=YukiXXL
 description=It unlocks all levels needed. WARNING! MODIFIES PROFILE!
 patch=1,EE,204346B4,extended,1BFFFFFF
 
-[Levels\Hidden\Enable All]
-author=YukiXXL
-description=It enables all levels without touching the profile.
-patch=1,EE,20193FA0,extended,24020001
-
-[Levels\Replace Moshbowl with Super Jump]
-author=YukiXXL
-patch=1,EE,0026EEAC,extended,0029CB78
-
-[Levels\Hidden\Replace used with Hidden]
+[Menus\Levels\Hidden\Replace used with Hidden]
 author=YukiXXL
 description=Replaces last 4 with Hidden levels.
 //Update List IDs
@@ -62,51 +49,9 @@ patch=1,EE,2029CC78,extended,504D554A //LONG JUMP
 patch=1,EE,2029CC80,extended,49415254 //TRAINING
 patch=1,EE,0029CC84,extended,0000004E
 
-[Levels\Hidden\Replace used with Hidden\Use Standard Loading Screens]
-author=YukiXXL
-description=In case you don't like the prototype ones, switch back to normal ones.
-patch=1,EE,00182368,extended,2402001B
-patch=1,EE,20182378,extended,54620004
-patch=1,EE,0018237C,extended,24020017
-patch=1,EE,2018238C,extended,54620004
-patch=1,EE,00182390,extended,2402001C
-patch=1,EE,201823A0,extended,54620004
+// - SINGLE AND MULTI-PLAYER
 
-[Levels\Loading Screens\Prototype\Controls Screen (Demo?)]
-author=YukiXXL
-patch=1,EE,001B68AC,extended,3c020029
-patch=1,EE,101B68C0,extended,2445C528
-
-[Levels\Loading Screens\Prototype\Career\Default when not Arcade or MX]
-author=YukiXXL
-description=When Arcade or MX are not used, it reverts back to default.
-patch=1,EE,E0040002,extended,004B26AC //Check g_GameMode
-patch=1,EE,00182400,extended,3C05002A
-patch=1,EE,1018240C,extended,24A5CCF0
-patch=1,EE,2028C52C,extended,31524142 //change to LOADBAR1
-patch=1,EE,2014DF84,extended,0040982D //Track Score fix
-
-[Levels\Loading Screens\Prototype\Career\Arcade]
-author=YukiXXL
-description=Change Arcade to prototype one. (LOADARC)
-patch=1,EE,E0040004,extended,004B26AC //Check g_GameMode
-patch=1,EE,00182400,extended,3C050029
-patch=1,EE,1018240C,extended,24A5C528
-patch=1,EE,2028C52C,extended,00435241 //LOADBAR1 change to LOADARC
-patch=1,EE,2014DF84,extended,64530001 //Track Score fix
-
-[Levels\Loading Screens\Prototype\Career\Mountain Cross]
-author=YukiXXL
-description=Change Arcade to prototype one. (LOADARC)
-patch=1,EE,E0040000,extended,004B26AC //Check g_GameMode
-patch=1,EE,00182400,extended,3C050029
-patch=1,EE,1018240C,extended,24A5C528
-patch=1,EE,2028C52C,extended,0000584D //LOADBAR1 change to LOADMX
-patch=1,EE,2014DF84,extended,64530001 //Track Score fix
-
-// SP AND MP
-
-[Single and Multi-Player\Enable All Single Event Options]
+[Menus\Single,Multi Player\Enable All Single Event Options]
 author=YukiXXL
 //1P
 patch=1,EE,201EF144,extended,A3A00001
@@ -119,22 +64,14 @@ patch=1,EE,201EF1C0,extended,A3A00003
 patch=1,EE,201EF1C8,extended,A3A00001
 patch=1,EE,001EF1D8,extended,24080003
 
-[Single and Multi-Player\Pedestriants\Disable]
+// - MULTI-PLAYER
+
+[Menus\Multi-Player\Skip selecting players and drop into Events menu]
 author=YukiXXL
-description=Disable pedestriants
-patch=1,EE,00127784,extended,28420001
-patch=1,EE,00192F94,extended,28420001
+description=If want to play MP modes with 1 player.
+patch=1,EE,001ED848,extended,24020018
 
-// MULTI-PLAYER
-
-[Multi-Player\15th rider\Unlock]
-author=YukiXXL
-description=Unlocks and Enables 15th rider. USE ONLY DEFAULT OUTFIT!
-patch=1,EE,704346B0,extended,00104000 //Unlock the rider
-patch=1,EE,0018BD60,extended,2A62000F //Loop 15 times
-
-// - MENUS
-[Multi-Player\Menus\Enable "Continue Saved Game" with 3-4 players]
+[Menus\Multi-Player\Enable "Continue Saved Game" with 3-4 players]
 author=YukiXXL
 description=SAVES COLLIDE!
 patch=1,EE,001F3D24,extended,28820005
@@ -145,84 +82,152 @@ patch=1,EE,201BAC18,extended,00000000 //Enable Saving at the Race End
 patch=1,EE,201B6B88,extended,28430002
 patch=1,EE,201B6B8C,extended,1460001A
 
-[Multi-Player\Menus\Replace Arcade with Super Career]
-author=YukiXXL
-description=No saving supported due to crashing!
-patch=1,EE,10275918,extended,00296240 //String
-patch=1,EE,001EE054,extended,24040003 //Function
-
-[Multi-Player\Menus\Skip selecting players and drop into Events menu]
-author=YukiXXL
-description=If want to play MP modes with 1 player.
-patch=1,EE,001ED848,extended,24020018
-
-[Multi-Player\Menus\Enable 2P Events for 3-4 players]
+[Menus\Multi-Player\Enable 2P Events for 3-4 players]
 author=YukiXXL
 description=Also unlocks for 1P if skipped a Players select menu.
 patch=1,EE,001EDE30,extended,24080005
 patch=1,EE,001EDFE4,extended,28630001 //Bypass Check
 
-// - PEDS
-[Multi-Player\Pedestriants\Disable]
+[Menus\Multi-Player\Replace Arcade with Super Career]
+author=YukiXXL
+description=No saving supported due to crashing!
+patch=1,EE,10275918,extended,00296240 //String
+patch=1,EE,001EE054,extended,24040003 //Function
+
+[Menus\Multi-Player\Enable 15th rider]
+author=YukiXXL
+description=Unlocks and Enables 15th rider. USE ONLY DEFAULT OUTFIT!
+patch=1,EE,704346B0,extended,00104000 //Unlock the rider
+patch=1,EE,0018BD60,extended,2A62000F //Loop 15 times
+
+[Menus\Multi-Player\Enable All Levels for 3-4 Players]
+author=YukiXXL
+patch=1,EE,00193F40,extended,28420005
+patch=1,EE,00193F7C,extended,28420005
+patch=1,EE,2016C050,extended,00000000 //Crashing fix for 3P
+
+// LEVELS
+
+[Levels\Replace Moshbowl with Super Jump]
+author=YukiXXL
+patch=1,EE,0026EEAC,extended,0029CB78
+
+// - LOADING SCREENS
+
+[Levels\Loading Screens\Hidden\Use Standard Loading Screens]
+author=YukiXXL
+description=In case you don't like the prototype ones, switch back to normal ones.
+patch=1,EE,00182368,extended,2402001B
+patch=1,EE,20182378,extended,54620004
+patch=1,EE,0018237C,extended,24020017
+patch=1,EE,2018238C,extended,54620004
+patch=1,EE,00182390,extended,2402001C
+patch=1,EE,201823A0,extended,54620004
+
+[Levels\Loading Screens\Main Menu\Prototype Controls Screen (Demo?)]
+author=YukiXXL
+patch=1,EE,001B68AC,extended,3C020029
+patch=1,EE,101B68C0,extended,2445C528
+
+[Levels\Loading Screens\Careers\Prototype\Arcade and MX]
+author=YukiXXL
+description=Change Arcade to prototype one. (LOADARC)
+//Default
+patch=1,EE,00182400,extended,3C05002A
+patch=1,EE,1018240C,extended,24A5CCF0
+patch=1,EE,2028C52C,extended,31524142 //change to LOADBAR1
+patch=1,EE,2014DF84,extended,0040982D //Track Score fix
+//Arcade
+patch=1,EE,E0040004,extended,004B26AC //Check g_GameMode
+patch=1,EE,00182400,extended,3C050029
+patch=1,EE,1018240C,extended,24A5C528
+patch=1,EE,2028C52C,extended,00435241 //LOADBAR1 change to LOADARC
+patch=1,EE,2014DF84,extended,64530001 //Track Score fix
+//Mountain Cross
+patch=1,EE,E0040000,extended,004B26AC //Check g_GameMode
+patch=1,EE,00182400,extended,3C050029
+patch=1,EE,1018240C,extended,24A5C528
+patch=1,EE,2028C52C,extended,0000584D //LOADBAR1 change to LOADMX
+patch=1,EE,2014DF84,extended,64530001 //Track Score fix
+
+// GAMEPLAY
+
+[Gameplay\Multi-Player\Enable Posters]
+author=YukiXXL
+patch=1,EE,2015E3D8,extended,00000000
+
+// - PEDESTRIANTS
+
+[Gameplay\Pedestriants\Disable\For both SP and MP]
+author=YukiXXL
+description=Disable pedestriants
+patch=1,EE,00127784,extended,28420001
+patch=1,EE,00192F94,extended,28420001
+
+[Gameplay\Pedestriants\Disable\Only for MP]
 author=YukiXXL
 description=Disable pedestriants
 patch=1,EE,00127784,extended,28420002
 
-[Multi-Player\Pedestriants\Enable for 3-4 players]
+[Gameplay\Pedestriants\Multi-Player\Enable for 3-4 players]
 author=YukiXXL
 description=Enable pedestriants for 3-4 players.
 patch=1,EE,00127784,extended,28420005
 patch=1,EE,00192F94,extended,28420005
 
-[Multi-Player\Pedestriants\Number\Like in Single Player]
+[Gameplay\Pedestriants\Multi-Player\Number\Like in Single Player]
 author=YukiXXL
 description=Get as much as in Single Player
 patch=1,EE,00127D44,extended,24060001
 
-[Multi-Player\Pedestriants\Number\A Bit More]
+[Gameplay\Pedestriants\Multi-Player\Number\A Bit More]
 author=YukiXXL
 description=Get a bit more than default MP value.
 patch=1,EE,00127D44,extended,24060002
 
-[Multi-Player\Pedestriants\Number\A Bit Less]
+[Gameplay\Pedestriants\Multi-Player\Number\A Bit Less]
 author=YukiXXL
 description=Get a bit less than default MP value.
 patch=1,EE,00127D44,extended,24060004
 
-[Multi-Player\Pedestriants\Number\Much Less]
+[Gameplay\Pedestriants\Multi-Player\Number\Much Less]
 author=YukiXXL
 description=Get much less than default MP value.
 patch=1,EE,00127D44,extended,24060005
 
-// AI
+// - AI
 
-[AI\Enable on "No AI" Game Modes]
+[Gameplay\AI\Enable\Maximum on any level]
+author=YukiXXL
+patch=1,EE,20182294,extended,10000007
+
+[Gameplay\AI\Enable\on "No AI" Game Modes]
 author=YukiXXL
 description=Training, Super Jump, etc.
 patch=1,EE,201B8A20,extended,8E300288
 
-[AI\Enable AI on levels without AI\Enable 9]
+[Gameplay\AI\Enable\on levels without AI\Enable 9]
 author=YukiXXL
 patch=1,EE,001822D0,extended,24020002
 
-[AI\Enable AI on levels without AI\Enable 7]
+[Gameplay\AI\Enable\on levels without AI\Enable 7]
 author=YukiXXL
 patch=1,EE,001822D0,extended,24020001
 
-[AI\Enable AI on levels without AI\Enable 5]
+[Gameplay\AI\Enable\on levels without AI\Enable 5]
 author=YukiXXL
 patch=1,EE,001822D0,extended,24020000
 
-[AI\Enable AI on levels without AI\Enable 1]
+[Gameplay\AI\Enable\on levels without AI\Enable 1]
 author=YukiXXL
 patch=1,EE,201B8AD4,extended,0242280B
 
-[AI\Multi-Player\Enable AI for 3-4 players]
+[Gameplay\AI\Multi-Player\Enable for 3-4 players]
 author=YukiXXL
 patch=1,EE,201B8A84,extended,24100002
 patch=1,EE,201471DC,extended,00000000 //Crash fix
 
-[AI\Multi-Player\Use maximum number of AI based on Players]
+[Gameplay\AI\Multi-Player\Use maximum number based on number of Players]
 author=YukiXXL
 description=4P lowered to 4 due to Peru FR crashing.
 patch=1,EE,0028C49C,extended,001822B4
@@ -244,5 +249,17 @@ patch=1,EE,001B8A98,extended,24050004
 patch=1,EE,001B8AB0,extended,24050004
 patch=1,EE,001B8AC8,extended,24050002
 patch=1,EE,001B8ACC,extended,24050002
-//Peru Crash fix
-patch=1,EE,0028C49C,extended,001822C4
+patch=1,EE,0028C49C,extended,001822C4 //Peru Crash fix
+
+// - PICKUP EDITOR
+
+[Gameplay\Pickup Editor\Enable 60 pickups on Hidden Levels]
+author=YukiXXL
+description=60 is just enough.
+patch=1,EE,001975C8,extended,1040000E
+patch=1,EE,0028DA54,extended,00197604
+patch=1,EE,0028DA5C,extended,00197604
+
+[Gameplay\Pickup Editor\Enable on Moshbowl and Training]
+author=YukiXXL
+patch=1,EE,2016BF08,extended,10000008
