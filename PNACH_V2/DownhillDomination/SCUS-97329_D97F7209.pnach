@@ -16,6 +16,8 @@ patch=1,EE,2019268C,extended,24020001
 
 // MENUS
 
+// - MAIN MENU
+
 [Menus\Main Menu\Enable Options Menu]
 author=YukiXXL
 patch=1,EE,2029AFC8,extended,00000000
@@ -23,6 +25,8 @@ patch=1,EE,2029AFC8,extended,00000000
 [Menus\Main Menu\Options\Enable "Unlock Riders/Bikes (Test)" Menu]
 author=YukiXXL
 patch=1,EE,001EDD84,extended,24080009
+
+// - LEVELS
 
 [Menus\Levels\Replace the Unused\With available]
 author=YukiXXL
@@ -71,6 +75,8 @@ author=YukiXXL
 description=Cannot be combined. Only shows the available levels.
 patch=1,EE,20431DB4,extended,FD200145
 
+// - SINGLE AND MULTI PLAYER
+
 [Menus\Single,Multi-Player\Enable Arcade, Moshbowl, Super Jump]
 author=YukiXXL
 patch=1,EE,2029AFD0,extended,00000000
@@ -100,9 +106,13 @@ patch=1,EE,201ECD68,extended,A3A00003
 patch=1,EE,201ECD70,extended,A3A00001
 patch=1,EE,001ECD80,extended,24080004
 
+// - SINGLE PLAYER
+
 [Menus\Single-Player\Enable More Career Options]
 author=YukiXXL
 patch=1,EE,001EB4FC,extended,2402000C
+
+// - MULTI PLAYER
 
 [Menus\Multi-Player\Enable Two and Three Players]
 author=YukiXXL
@@ -158,8 +168,9 @@ author=YukiXXL
 description=Moshbowl is missing so it causes crashes.
 patch=1,EE,0026C82C,extended,0029A280
 
-// - LOADING SCREENS
-[Levels\Loading Screen\based on Level (Single Event)]
+// LOADING SCREENS
+
+[Loading Screens\based on Level (Single Event)]
 author=YukiXXL
 description=Alpine, Dual Slalom, Training, Super Jump
 //Change Load Location
@@ -191,7 +202,7 @@ patch=1,EE,E002001B,extended,004AFF40
 patch=1,EE,2029A388,extended,4D554A4C
 patch=1,EE,2029A38C,extended,00455350
 
-[Levels\Loading Screen\based on Game Mode\Enable]
+[Loading Screens\based on Game Mode\Enable]
 author=YukiXXL
 description=Career (exculding MX), Training, Super Jump.
 //Freeride Race
@@ -226,7 +237,7 @@ patch=1,EE,00180E34,extended,24040014 //Check if gm
 patch=1,EE,2029A3C8,extended,444F504C
 patch=1,EE,2029A3CC,extended,004D5549
 
-[Levels\Loading Screen\based on Game Mode\Arcade and MX\Standard]
+[Loading Screen\based on Game Mode\Arcade and MX\Standard]
 author=YukiXXL
 description=Arcade and MX Standard loading screen.
 //Arcade
@@ -238,7 +249,7 @@ patch=1,EE,E0020000,extended,004AFDAC
 patch=1,EE,2029A3D0,extended,504C414C
 patch=1,EE,2029A3D4,extended,0000584D
 
-[Levels\Loading Screen\based on Game Mode\Arcade and MX\Prototype]
+[Loading Screen\based on Game Mode\Arcade and MX\Prototype]
 author=YukiXXL
 description=Arcade and MX Protoype loading screen.
 patch=1,EE,2014D47C,extended,0040982D
@@ -254,6 +265,7 @@ patch=1,EE,2029A3D4,extended,0000584D
 patch=1,EE,2014D47C,extended,64530001
 
 // - PEDESTRIANTS
+
 [Gameplay\Pedestriants\Disable\For both SP and MP]
 author=YukiXXL
 description=Disable pedestriants

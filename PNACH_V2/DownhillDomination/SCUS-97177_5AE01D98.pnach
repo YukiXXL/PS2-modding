@@ -112,9 +112,14 @@ patch=1,EE,2016C050,extended,00000000 //Crashing fix for 3P
 author=YukiXXL
 patch=1,EE,0026EEAC,extended,0029CB78
 
-// - LOADING SCREENS
+// LOADING SCREENS
 
-[Levels\Loading Screens\Hidden\Use Standard Loading Screens]
+[Loading Screens\Main Menu\Prototype Controls Screen (Demo?)]
+author=YukiXXL
+patch=1,EE,001B68AC,extended,3C020029
+patch=1,EE,101B68C0,extended,2445C528
+
+[Loading Screens\Levels\Use Default for Super Jump, Moshbowl, Training]
 author=YukiXXL
 description=In case you don't like the prototype ones, switch back to normal ones.
 patch=1,EE,00182368,extended,2402001B
@@ -124,12 +129,7 @@ patch=1,EE,2018238C,extended,54620004
 patch=1,EE,00182390,extended,2402001C
 patch=1,EE,201823A0,extended,54620004
 
-[Levels\Loading Screens\Main Menu\Prototype Controls Screen (Demo?)]
-author=YukiXXL
-patch=1,EE,001B68AC,extended,3C020029
-patch=1,EE,101B68C0,extended,2445C528
-
-[Levels\Loading Screens\Careers\Prototype\Arcade and MX]
+[Loading Screens\Careers\Prototype\Arcade and MX]
 author=YukiXXL
 description=Change Arcade to prototype one. (LOADARC)
 //Default

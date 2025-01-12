@@ -498,6 +498,11 @@ patch=1,EE,20BD24F8,extended,8EE41D9F
 patch=1,EE,20BD24FC,extended,AC8305D8
 patch=1,EE,20BD2500,extended,10000028
 
+[Events\Grand Prix (Alternative)\Disable Final Cutscene]
+description=Hold R3+START and press D-PAD RIGHT to disable Mizo cutscene after finishing 3rd event
+patch=1,EE,E001FFD3,extended,0028351C
+patch=1,EE,10BD2650,extended,64640001
+
 [Events\Grand Prix (Alternative)\Reset]
 description=Hold R3+START and press D-PAD LEFT to reset
 patch=1,EE,E003FF73,extended,0028351C
@@ -507,7 +512,7 @@ patch=1,EE,00000000,extended,00000000
 
 [Events\Grand Prix (Alternative)\Disable]
 description=Hold R3+START and press D-PAD LEFT to disable
-patch=1,EE,E007FF73,extended,0028351C
+patch=1,EE,E008FF73,extended,0028351C
 patch=1,EE,602DB55C,extended,12E30008
 patch=1,EE,00020001,extended,000002B8
 patch=1,EE,00BD24E8,extended,9C6305D4
@@ -515,6 +520,7 @@ patch=1,EE,20BD24F4,extended,8EE31D9F
 patch=1,EE,20BD24F8,extended,9C6305D8
 patch=1,EE,20BD24FC,extended,2C630002
 patch=1,EE,20BD2500,extended,10600028
+patch=1,EE,10BD2650,extended,6464FFFD
 
 // GET ALL
 
