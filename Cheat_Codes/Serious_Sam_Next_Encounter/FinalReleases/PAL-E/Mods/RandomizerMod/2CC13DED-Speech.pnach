@@ -2,22 +2,22 @@ gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 comment=Replaces DNAS Status Result code. Don't go online!
 
 //jal to Joker function
-patch=1,EE,201DFCAC,extended,0C099614
+patch=1,EE,201DFCAC,extended,0C09961C
 //Joker function
-patch=1,EE,20265850,extended,3C020034 //lui v0, $0034
-patch=1,EE,20265854,extended,90444320 //lbu a0, (frames_2,1)
-patch=1,EE,20265858,extended,90454321 //lbu a1, (frames_2,2)
-patch=1,EE,2026585C,extended,00852021 //addu a0, a0, a1
-patch=1,EE,20265860,extended,A044DB84 //sb a0, (fake byte)
-patch=1,EE,20265864,extended,9044DB84 //lbu a0, (fake byte)
-patch=1,EE,20265868,extended,2C85000B //check if not music (a0 > 10)
-patch=1,EE,2026586C,extended,14A0FFFA //branch if it is not (to "addu a0, a0, a0")
-patch=1,EE,20265870,extended,2885008D //check if valid stream (a0 < 8D)
-patch=1,EE,20265874,extended,10A0FFF8 //branch if it is not (to "addu a0, a0, a0")
-patch=1,EE,20265878,extended,00000000 //nop
-patch=1,EE,2026587C,extended,2442DB6C //have v0 be at streams address
-patch=1,EE,20265880,extended,24420018 //increase v0 by one stream
-patch=1,EE,20265884,extended,14A4FFFE //branch if a1 is not equal to a0
-patch=1,EE,20265888,extended,24A50001 //a1 = a1 + 1
-patch=1,EE,2026588C,extended,03E00008 //jr ra
-patch=1,EE,20265890,extended,0000282D //a1 = 0
+patch=1,EE,20265870,extended,3C020034 //lui v0, $0034
+patch=1,EE,20265874,extended,90444320 //lbu a0, (frames_2,1)
+patch=1,EE,20265878,extended,90454321 //lbu a1, (frames_2,2)
+patch=1,EE,2026587C,extended,00852021 //addu a0, a0, a1
+patch=1,EE,20265880,extended,A044DB84 //sb a0, (fake byte)
+patch=1,EE,20265884,extended,9044DB84 //lbu a0, (fake byte)
+patch=1,EE,20265888,extended,2C85000B //check if not music (a0 > 10)
+patch=1,EE,2026588C,extended,14A0FFFA //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,20265890,extended,2885008D //check if valid stream (a0 < 8D)
+patch=1,EE,20265894,extended,10A0FFF8 //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,20265898,extended,00000000 //nop
+patch=1,EE,2026589C,extended,2442DB6C //have v0 be at streams address
+patch=1,EE,202658A0,extended,24420018 //increase v0 by one stream
+patch=1,EE,202658A4,extended,14A4FFFE //branch if a1 is not equal to a0
+patch=1,EE,202658A8,extended,24A50001 //a1 = a1 + 1
+patch=1,EE,202658AC,extended,03E00008 //jr ra
+patch=1,EE,202658B0,extended,0000282D //a1 = 0

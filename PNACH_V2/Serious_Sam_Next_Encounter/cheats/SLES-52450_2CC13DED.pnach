@@ -491,7 +491,7 @@ author=YukiXXL
 description=A failsafe code. Enable it to be safe.
 patch=1,EE,202650A4,extended,00000000
 
-[Mods\Randomizer\Items]
+[Mods\Randomizer\Items\Version 1]
 author=YukiXXL
 description=Randomizes items.
 //jal to Joker function
@@ -513,51 +513,97 @@ patch=1,EE,202657F8,extended,00000000
 patch=1,EE,202657FC,extended,03E00008 //jr ra
 patch=1,EE,20265800,extended,00000000
 
+[Mods\Randomizer\Items\Replace Cut Items]
+author=YukiXXL
+description=Replace Cut Power Ups.
+//SERIOUS SMARTBOMB
+patch=1,EE,20275AF4,extended,24050003
+patch=1,EE,00275B00,extended,24060042
+//SERIOUS BUBBLEGUM
+patch=1,EE,20275B0C,extended,24050007
+patch=1,EE,00275B18,extended,24060048
+//SERIOUS RING
+patch=1,EE,20275B24,extended,24050009
+patch=1,EE,00275B30,extended,2406004A
+//SERIOUS GLASSES
+patch=1,EE,20275B3C,extended,24050011
+patch=1,EE,00275B48,extended,2406003D
+
+[Mods\Randomizer\Items\Version 2]
+author=YukiXXL
+description=Randomizes items and randomize cut items.
+//jal to Joker function
+patch=1,EE,2027587C,extended,0C0995F2
+//Joker Function
+patch=1,EE,202657C8,extended,8C470004 //copy replaced command
+patch=1,EE,202657CC,extended,24020037 //check for SeriousBomb
+patch=1,EE,202657D0,extended,10510002 //branch if item is SeriousBomb
+patch=1,EE,202657D4,extended,2E22002E //check if item is a key or treasure
+patch=1,EE,202657D8,extended,10400010 //branch if it is to jr ra
+patch=1,EE,202657DC,extended,3C040034 //lui a0, $0034
+patch=1,EE,202657E0,extended,80834320 //lb frames_2
+patch=1,EE,202657E4,extended,02238821 //item = item + frames
+patch=1,EE,202657E8,extended,A091DB84 //sw item to joker byte
+patch=1,EE,202657EC,extended,9091DB84 //lbu joker byte
+patch=1,EE,202657F0,extended,2E22002E //check if the item is valid
+patch=1,EE,202657F4,extended,1040FFFB //loop if it is not
+patch=1,EE,202657F8,extended,2402000D
+patch=1,EE,202657FC,extended,1051FFF9 //Check if Smartbomb
+patch=1,EE,20265800,extended,2402000E
+patch=1,EE,20265804,extended,1051FFF7 //Check if Bubblegum
+patch=1,EE,20265808,extended,2402000F
+patch=1,EE,2026580C,extended,1051FFF5 //Check if Ring
+patch=1,EE,20265810,extended,24020010
+patch=1,EE,20265814,extended,1051FFF3 //Check if Glasses
+patch=1,EE,20265818,extended,00000000
+patch=1,EE,2026581C,extended,03E00008 //jr ra
+patch=1,EE,20265820,extended,00000000
+
 [Mods\Randomizer\Music Stream]
 author=YukiXXL
 description=Randomizes music stream.
 //jal to Joker function
-patch=1,EE,201DD89C,extended,0C099604
+patch=1,EE,201DD89C,extended,0C09960C
 //Joker function
-patch=1,EE,20265810,extended,90444320 //lbu a0, (frames_2,1)
-patch=1,EE,20265814,extended,90454321 //lbu a1 (frames_2,2)
-patch=1,EE,20265818,extended,00852021 //addu a0, a0, a1
-patch=1,EE,2026581C,extended,A044DB84 //sb a0, (fake byte)
-patch=1,EE,20265820,extended,9044DB84 //lbu a0, (fake byte)
-patch=1,EE,20265824,extended,28850007 //check if a0 is valid (lower than 7)
-patch=1,EE,20265828,extended,10A0FFFA //branch if it is not to "lbu a1"
-patch=1,EE,2026582C,extended,2443DB88 //v1 = Music Number 0
-patch=1,EE,20265830,extended,10000002 //branch to the "while a1 not equal a0"
-patch=1,EE,20265834,extended,0000282D //a1 = 0
-patch=1,EE,20265838,extended,24630018 //increase v1 by one stream
-patch=1,EE,2026583C,extended,14A4FFFE //while a1 not equal a0
-patch=1,EE,20265840,extended,24A50001 //a1 = a1 + 1
-patch=1,EE,20265844,extended,03E00008 //jr ra
-patch=1,EE,20265848,extended,00000000 //nop
+patch=1,EE,20265830,extended,90444320 //lbu a0, (frames_2,1)
+patch=1,EE,20265834,extended,90454321 //lbu a1 (frames_2,2)
+patch=1,EE,20265838,extended,00852021 //addu a0, a0, a1
+patch=1,EE,2026583C,extended,A044DB84 //sb a0, (fake byte)
+patch=1,EE,20265840,extended,9044DB84 //lbu a0, (fake byte)
+patch=1,EE,20265844,extended,28850007 //check if a0 is valid (lower than 7)
+patch=1,EE,20265848,extended,10A0FFFA //branch if it is not to "lbu a1"
+patch=1,EE,2026584C,extended,2443DB88 //v1 = Music Number 0
+patch=1,EE,20265850,extended,10000002 //branch to the "while a1 not equal a0"
+patch=1,EE,20265854,extended,0000282D //a1 = 0
+patch=1,EE,20265858,extended,24630018 //increase v1 by one stream
+patch=1,EE,2026585C,extended,14A4FFFE //while a1 not equal a0
+patch=1,EE,20265860,extended,24A50001 //a1 = a1 + 1
+patch=1,EE,20265864,extended,03E00008 //jr ra
+patch=1,EE,20265868,extended,00000000 //nop
 
 [Mods\Randomizer\Speech Stream]
 author=YukiXXL
 description=Randomizes speech stream.
 //jal to Joker function
-patch=1,EE,201DFCAC,extended,0C099614
+patch=1,EE,201DFCAC,extended,0C09961C
 //Joker function
-patch=1,EE,20265850,extended,3C020034 //lui v0, $0034
-patch=1,EE,20265854,extended,90444320 //lbu a0, (frames_2,1)
-patch=1,EE,20265858,extended,90454321 //lbu a1, (frames_2,2)
-patch=1,EE,2026585C,extended,00852021 //addu a0, a0, a1
-patch=1,EE,20265860,extended,A044DB84 //sb a0, (fake byte)
-patch=1,EE,20265864,extended,9044DB84 //lbu a0, (fake byte)
-patch=1,EE,20265868,extended,2C85000B //check if not music (a0 > 10)
-patch=1,EE,2026586C,extended,14A0FFFA //branch if it is not (to "addu a0, a0, a0")
-patch=1,EE,20265870,extended,2885008D //check if valid stream (a0 < 8D)
-patch=1,EE,20265874,extended,10A0FFF8 //branch if it is not (to "addu a0, a0, a0")
-patch=1,EE,20265878,extended,00000000 //nop
-patch=1,EE,2026587C,extended,2442DB6C //have v0 be at streams address
-patch=1,EE,20265880,extended,24420018 //increase v0 by one stream
-patch=1,EE,20265884,extended,14A4FFFE //branch if a1 is not equal to a0
-patch=1,EE,20265888,extended,24A50001 //a1 = a1 + 1
-patch=1,EE,2026588C,extended,03E00008 //jr ra
-patch=1,EE,20265890,extended,0000282D //a1 = 0
+patch=1,EE,20265870,extended,3C020034 //lui v0, $0034
+patch=1,EE,20265874,extended,90444320 //lbu a0, (frames_2,1)
+patch=1,EE,20265878,extended,90454321 //lbu a1, (frames_2,2)
+patch=1,EE,2026587C,extended,00852021 //addu a0, a0, a1
+patch=1,EE,20265880,extended,A044DB84 //sb a0, (fake byte)
+patch=1,EE,20265884,extended,9044DB84 //lbu a0, (fake byte)
+patch=1,EE,20265888,extended,2C85000B //check if not music (a0 > 10)
+patch=1,EE,2026588C,extended,14A0FFFA //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,20265890,extended,2885008D //check if valid stream (a0 < 8D)
+patch=1,EE,20265894,extended,10A0FFF8 //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,20265898,extended,00000000 //nop
+patch=1,EE,2026589C,extended,2442DB6C //have v0 be at streams address
+patch=1,EE,202658A0,extended,24420018 //increase v0 by one stream
+patch=1,EE,202658A4,extended,14A4FFFE //branch if a1 is not equal to a0
+patch=1,EE,202658A8,extended,24A50001 //a1 = a1 + 1
+patch=1,EE,202658AC,extended,03E00008 //jr ra
+patch=1,EE,202658B0,extended,0000282D //a1 = 0
 
 // RENDERING
 

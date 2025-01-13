@@ -1,0 +1,18 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Replace Cut Power Ups
+
+//SERIOUS SMARTBOMB
+patch=1,EE,20275AF4,extended,24050003
+patch=1,EE,00275B00,extended,24060042
+
+//SERIOUS BUBBLEGUM
+patch=1,EE,20275B0C,extended,24050007
+patch=1,EE,00275B18,extended,24060048
+
+//SERIOUS RING
+patch=1,EE,20275B24,extended,24050009
+patch=1,EE,00275B30,extended,2406004A
+
+//SERIOUS GLASSES
+patch=1,EE,20275B3C,extended,24050011
+patch=1,EE,00275B48,extended,2406003D
