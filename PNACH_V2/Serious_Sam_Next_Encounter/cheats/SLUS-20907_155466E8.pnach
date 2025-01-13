@@ -126,7 +126,7 @@ author=YukiXXL
 description=Run Testing Menu after loading data.
 patch=1,EE,00276F5C,extended,24040006
 
-[Misc\Menus\Run "Init Menu"\instead of Credits Scene]
+[Misc\Menus\Run "Init Menu"\instead of the Credits Scene]
 author=YukiXXL
 description=Replace Credits with Testing Menu.
 patch=1,EE,0025CBCC,extended,24050006
@@ -738,3 +738,67 @@ patch=1,EE,101266F0,extended,3C013FE0
 author=YukiXXL
 description=Change the generic LOD in Multiplayer to -1.
 patch=1,EE,101266F0,extended,3C01BF80
+
+// ENGINE TESTBED
+
+[Engine Testbed\Giant Hornet]
+author=YukiXXL
+description=Giant Hornet models at Rlevel3_1.
+//rlevel3_1
+patch=1,EE,203BE904,extended,5F336C65
+//GiantHornet
+patch=1,EE,203BE918,extended,6E616947
+patch=1,EE,203BE91C,extended,726F4874
+patch=1,EE,203BE920,extended,0074656E
+
+[Engine Testbed\Mini Sam]
+author=YukiXXL
+description=Giant Hornet models at Rlevel3_1.
+//rlevel4_4b
+patch=1,EE,203BE904,extended,5F346C65
+patch=1,EE,103BE908,extended,00006234
+//minisam
+patch=1,EE,203BE918,extended,696E696D
+patch=1,EE,203BE91C,extended,006D6173
+//Y-axis fix
+patch=1,EE,1027FB5C,extended,3C01B000
+
+[Engine Testbed\Minotaur Gladiator]
+author=YukiXXL
+description=Giant Hornet models at Rlevel3_1.
+//rlevel4_4b
+patch=1,EE,203BE904,extended,5F346C65
+patch=1,EE,103BE908,extended,00006234
+//MinotaurGladiator
+patch=1,EE,203BE918,extended,6F6E694D
+patch=1,EE,203BE91C,extended,72756174
+patch=1,EE,203BE920,extended,64616C47
+patch=1,EE,203BE924,extended,6F746169
+patch=1,EE,103BE928,extended,00000072
+//Y-axis fix
+patch=1,EE,1027FB5C,extended,3C01B000
+//Radius
+patch=1,EE,1027FB68,extended,3C01C340
+//Distance from each other
+patch=1,EE,1027FC90,extended,3C013EAA
+//Amount
+patch=1,EE,0027FC9C,extended,2A420013
+
+[Engine Testbed\Sirian Dark Lord]
+author=YukiXXL
+description=Giant Hornet models at Rlevel3_1.
+//Alevel12_4
+patch=1,EE,003BE900,extended,76656C41
+patch=1,EE,203BE904,extended,32316C65
+patch=1,EE,103BE908,extended,0000345F
+//SirianDarkLord
+patch=1,EE,203BE918,extended,69726953
+patch=1,EE,203BE91C,extended,61446E61
+patch=1,EE,203BE920,extended,6F4C6B72
+patch=1,EE,103BE924,extended,00006472
+//Radius
+patch=1,EE,1027FB68,extended,3C01C4A0
+//Distance from each other
+patch=1,EE,1027FC90,extended,3C013E44
+//Amount
+patch=1,EE,0027FC9C,extended,2A420021

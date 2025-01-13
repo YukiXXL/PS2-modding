@@ -1,0 +1,10 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=ENGINE TESTBED - GIANT HORNET
+
+//rlevel3_1
+patch=1,EE,203BF574,extended,5F336C65
+
+//GiantHornet
+patch=1,EE,203BF588,extended,6E616947
+patch=1,EE,203BF58C,extended,726F4874
+patch=1,EE,203BF590,extended,0074656E

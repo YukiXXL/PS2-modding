@@ -1,0 +1,10 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=ENGINE TESTBED - GIANT HORNET
+
+//rlevel3_1
+patch=1,EE,203BE904,extended,5F336C65
+
+//GiantHornet
+patch=1,EE,203BE918,extended,6E616947
+patch=1,EE,203BE91C,extended,726F4874
+patch=1,EE,203BE920,extended,0074656E
