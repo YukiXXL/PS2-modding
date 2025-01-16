@@ -1,12 +1,15 @@
 "Champions of Norrath Demo /ID SLUS_290.88"
 //ELF CRC=7656425F
+//ENTRYPOINT = 00100008
 main            : 901000D4 0C040092
 
 "Champions of Norrath Demo /ID CORE.ELF"
 //ELF CRC=A4B06192
+//ENTRYPOINT = 00141900
 sceSifSendCmd   : 902CA828 0C0B29B2
 main            : 902C4660 0C0B95A4
 
 "Champions of Norrath Demo /ID SCE_DD.ELF"
 //ELF CRC=3E57D2F5
+//ENTRYPOINT = 00100A08
 sceSifSendCmd   : 90153CA0 0C054ED0

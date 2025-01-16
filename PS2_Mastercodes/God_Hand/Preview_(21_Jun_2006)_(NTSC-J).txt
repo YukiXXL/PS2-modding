@@ -1,5 +1,6 @@
 "God Hand Preview (21 Jun 2006) /ID SLPM_665.50"
 //ELF CRC=18E5A0CA
+//ENTRYPOINT = 00100008
 sceSifSendCmd   : 9037ADB0 0C0DEB14
 scePadRead      : 90360190 0C0DB60E
 main            : 902CF064 0C0B963E

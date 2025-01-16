@@ -1,5 +1,19 @@
-"Jak X: Combat Racing /ID SCED_536.60"
+"Jak X and Ratchet Gladiator Demo /ID SCED_536.60"
+//ELF CRC=7557688D
+//ENTRYPOINT = 00100008
+sceSifSendCmd   : 9010F790 0C043D8C
+main            : 9012AF80 0C049572
+
+"Jak X: Combat Racing Demo /ID GK_BS.ELF"
 //ELF CRC=64309A5D
+//ENTRYPOINT = 001F3D3C
 sceSifSendCmd   : 90113550 0C044CFC
 scePad2Read     : 901B08A8 0C042889
 main            : 901FFDB4 0C0428F6
+
+"Ratchet: Gladiator Demo /ID RATCHETD.ELF"
+//ELF CRC=C6505799
+//ENTRYPOINT = 001562E8
+sceSifSendCmd   : 90129780 0C04A588
+scePadRead      : 9013CEB0 0C046874
+main            : 90156790 0C04BAC8

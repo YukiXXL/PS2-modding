@@ -1,0 +1,6 @@
+"Ratchet: Deadlocked /ID SCUS_974.87"
+//ELF CRC=BDF8A887
+//ENTRYPOINT = 001575F0
+sceSifSendCmd   : 90129980 0C04A608
+scePadRead      : 9013CF30 0C0468F4
+main            : 90157BBC 0C04BB08

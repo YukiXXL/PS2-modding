@@ -1,5 +1,6 @@
 "Syphon Filter: The Omega Strain /ID SCUS_972.64"
 //ELF CRC=D5605611
+//ENTRYPOINT = 00100008
 sceSifSendCmd   : 9010F970 0C043E04
 scePad2Read     : 9026B478 0C0497CE
 main            : 9013D0AC 0C040104

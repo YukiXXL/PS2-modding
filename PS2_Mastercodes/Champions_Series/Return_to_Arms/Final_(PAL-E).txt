@@ -1,5 +1,6 @@
 "Champions: Return to Arms /ID SLES_530.39"
 //ELF CRC=5C64E73A
+//ENTRYPOINT = 0014FA78
 sceSifSendCmd   : 90357418 0C0D5CAE
 scePadRead      : 90352BB0 0C0EDE03
 main            : 90325164 0C0EBB04

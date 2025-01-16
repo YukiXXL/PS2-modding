@@ -1,4 +1,5 @@
 "Champions of Norrath /ID SLES_523.25"
 //ELF CRC=75D86958
+//ENTRYPOINT = 00100008
 sceSifSendCmd   : 902EA6F8 0C0BA966
 main            : 902E2B68 0C0C33FA
