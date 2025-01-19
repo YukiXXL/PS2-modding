@@ -1,4 +1,4 @@
-"Jak X: Combat Racing Public Beta /ID SCUS_974.88"
+"Jak X: Combat Racing Public Beta (NTSC-U) /ID SCUS_974.88"
 //ELF CRC=DA366A53
 //ENTRYPOINT = 001001B4
 sceSifSendCmd   : 901151D0 0C04541C

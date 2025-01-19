@@ -1,4 +1,4 @@
-"Champions of Norrath /ID SLUS_205.65"
+"Champions of Norrath (NTSC-U) /ID SLUS_205.65"
 //ELF CRC=90E66BC5
 //ENTRYPOINT = 00100008
 sceSifSendCmd   : 902D76B8 0C0B5D56

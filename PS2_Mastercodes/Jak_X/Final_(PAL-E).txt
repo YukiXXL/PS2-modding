@@ -1,4 +1,4 @@
-"Jak X: Combat Racing /ID SCES_532.86"
+"Jak X: Combat Racing (PAL-E) /ID SCES_532.86"
 //ELF CRC=DF659E77
 //ENTRYPOINT = 001001B4
 sceSifSendCmd   : 90117510 0C045CEC

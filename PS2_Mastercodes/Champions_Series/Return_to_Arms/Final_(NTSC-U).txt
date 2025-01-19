@@ -1,4 +1,4 @@
-"Champions: Return to Arms /ID SLUS_209.73"
+"Champions: Return to Arms (NTSC-U) /ID SLUS_209.73"
 //ELF CRC=4028A55F
 //ENTRYPOINT = 0014FA88
 sceSifSendCmd   : 90355B18 0C0D566E

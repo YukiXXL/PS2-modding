@@ -1,4 +1,4 @@
-"Downhill Domination Demo /ID SCUS_973.29"
+"Downhill Domination Demo (NTSC-U) /ID SCUS_973.29"
 //ELF CRC=D97F7209
 //ENTRYPOINT = 0010A008
 sceSifSendCmd   : 90259EE0 0C096760

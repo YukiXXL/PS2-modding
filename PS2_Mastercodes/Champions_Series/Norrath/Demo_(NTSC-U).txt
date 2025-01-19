@@ -1,4 +1,4 @@
-"Champions of Norrath Demo /ID SLUS_290.88"
+"Champions of Norrath Demo (NTSC-U) /ID SLUS_290.88"
 //ELF CRC=7656425F
 //ENTRYPOINT = 00100008
 main            : 901000D4 0C040092

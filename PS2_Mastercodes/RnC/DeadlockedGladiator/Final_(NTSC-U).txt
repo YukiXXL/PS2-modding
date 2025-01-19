@@ -1,4 +1,4 @@
-"Ratchet: Deadlocked /ID SCUS_974.65"
+"Ratchet: Deadlocked (NTSC-U) /ID SCUS_974.65"
 //ELF CRC=9BFBCD42
 //ENTRYPOINT = 00800008
 sceSifSendCmd   : 90129B40 0C04A678

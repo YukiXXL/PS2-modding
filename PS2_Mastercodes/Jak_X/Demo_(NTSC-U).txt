@@ -1,4 +1,4 @@
-"Jak X: Combat Racing Demo /ID SCUS_974.86"
+"Jak X: Combat Racing Demo (NTSC-U) /ID SCUS_974.86"
 //ELF CRC=C417D919
 //ENTRYPOINT = 001F953C
 sceSifSendCmd   : 90113550 0C044CFC
