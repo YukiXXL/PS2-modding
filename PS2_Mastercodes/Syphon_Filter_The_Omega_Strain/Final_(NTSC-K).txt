@@ -1,4 +1,4 @@
-"Syphon Filter: The Omega Virus /ID SCKA_200.32"
+"Syphon Filter: The Omega Virus (NTSC-K) /ID SCKA_200.32"
 //ELF CRC=3676E74C
 //ENTRYPOINT = 00100008
 sceSifSendCmd   : 9010F970 0C043E04

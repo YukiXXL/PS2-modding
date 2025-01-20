@@ -1,4 +1,4 @@
-"Ratchet: Deadlocked Review (12 Sep 2005) /ID SCES_532.85"
+"Ratchet: Deadlocked Review (12 Sep 2005) (PAL-E) /ID SCES_532.85"
 //ELF CRC=8A22E23E
 //ENTRYPOINT = 00159238
 sceSifSendCmd   : 90129A00 0C04A628

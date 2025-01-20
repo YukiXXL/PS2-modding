@@ -1,4 +1,4 @@
-"Syphon Filter: The Omega Strain Individual Demo /ID SCUS_973.77"
+"Syphon Filter: The Omega Strain Individual Demo (NTSC-U) /ID SCUS_973.77"
 //ELF CRC=D91F8506
 //ENTRYPOINT = 00100008
 sceSifSendCmd   : 901EBE70 0C07AF44

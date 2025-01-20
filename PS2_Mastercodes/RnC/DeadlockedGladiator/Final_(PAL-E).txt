@@ -1,4 +1,4 @@
-"Ratchet: Gladiator /ID SCES_532.85"
+"Ratchet: Gladiator (PAL-E) /ID SCES_532.85"
 //ELF CRC=D697D204
 //ENTRYPOINT = 00800008
 sceSifSendCmd   : 90129B40 0C04A678

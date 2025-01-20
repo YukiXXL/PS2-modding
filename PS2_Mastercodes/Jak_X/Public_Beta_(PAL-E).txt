@@ -1,4 +1,4 @@
-"Jak X: Combat Racing Public Beta /ID TCES_532.86"
+"Jak X: Combat Racing Public Beta (PAL-E) /ID TCES_532.86"
 //ELF CRC=C20596DB
 //ENTRYPOINT = 001001B4
 sceSifSendCmd   : 901151D0 0C04541C

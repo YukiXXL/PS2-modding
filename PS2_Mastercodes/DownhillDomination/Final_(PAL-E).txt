@@ -1,4 +1,4 @@
-"Downhill Domination /ID SLES_522.02"
+"Downhill Domination (PAL-E) /ID SLES_522.02"
 //ELF CRC=73671EFD
 //ENTRYPOINT = 0010A008
 sceSifSendCmd   : 90262720 0C098970

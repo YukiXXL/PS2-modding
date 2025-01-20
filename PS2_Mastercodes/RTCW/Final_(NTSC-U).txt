@@ -1,4 +1,4 @@
-"Return to Castle Wolfenstein /ID SLUS_202.97"
+"Return to Castle Wolfenstein (NTSC-U) /ID SLUS_202.97"
 //ELF CRC=5F4DB1DD
 //ENTRYPOINT = 00100008
 sceSifSendCmd   : 901ECA60 0C07B240

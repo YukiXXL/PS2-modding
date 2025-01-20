@@ -1,4 +1,4 @@
-"Ratchet: Deadlocked /ID SCUS_974.87"
+"Ratchet: Deadlocked Multiplayer Beta (NTSC-U) /ID SCUS_974.87"
 //ELF CRC=BDF8A887
 //ENTRYPOINT = 001575F0
 sceSifSendCmd   : 90129980 0C04A608

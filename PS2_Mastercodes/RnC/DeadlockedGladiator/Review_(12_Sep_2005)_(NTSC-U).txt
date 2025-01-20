@@ -1,4 +1,4 @@
-"Ratchet: Deadlocked Review (12 Sep 2005) /ID SCUS_974.65"
+"Ratchet: Deadlocked Review (12 Sep 2005) (NTSC-U) /ID SCUS_974.65"
 //ELF CRC=F436BAFF
 //ENTRYPOINT = 00157668
 sceSifSendCmd   : 90129A80 0C04A648

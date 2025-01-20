@@ -1,4 +1,4 @@
-"Ratchet: Deadlocked Demo /ID SCUS_974.85"
+"Ratchet: Deadlocked Demo (NTSC-U) /ID SCUS_974.85"
 //ELF CRC=D301186D
 //ENTRYPOINT = 00156180
 sceSifSendCmd   : 90129780 0C04A588

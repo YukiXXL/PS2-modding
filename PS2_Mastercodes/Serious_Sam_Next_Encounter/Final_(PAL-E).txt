@@ -1,4 +1,4 @@
-"Serious Sam: Next Encounter /ID SLES_524.50"
+"Serious Sam: Next Encounter (PAL-E) /ID SLES_524.50"
 //ELF CRC=2CC13DED
 //ENTRYPOINT = 00100008
 sceSifSendCmd   : 9031FC78 0C0C7EC6

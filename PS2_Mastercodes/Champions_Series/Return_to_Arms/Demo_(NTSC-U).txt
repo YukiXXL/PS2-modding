@@ -1,15 +1,15 @@
-"Champions: Return to Arms Demo /ID SLUS_290.88"
+"Champions: Return to Arms Demo (NTSC-U) /ID SLUS_290.88"
 //ELF CRC=7B564230
 //ENTRYPOINT = 00100008
 main            : 901000D4 0C040092
 
-"Champions: Return to Arms Demo /ID CORE.ELF"
+"Champions: Return to Arms Demo (NTSC-U) /ID CORE.ELF"
 //ELF CRC=C723B6C6
 //ENTRYPOINT = 0014DCA0
 sceSifSendCmd   : 9034BB98 0C0D2E8E
 main            : 90330428 0C0E21B6
 
-"Champions: Return to Arms Demo /ID SCE_DD.ELF"
+"Champions: Return to Arms Demo (NTSC-U) /ID SCE_DD.ELF"
 //ELF CRC=52BD4A42
 //ENTRYPOINT = 0010038C
 sceSifSendCmd   : 90101428 0C0404B2
