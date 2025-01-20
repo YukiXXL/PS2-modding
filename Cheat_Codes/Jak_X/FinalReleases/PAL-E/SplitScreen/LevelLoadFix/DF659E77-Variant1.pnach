@@ -1,0 +1,12 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=L3+SELECT WHEN ON TOUR; L3+START WHEN NOT.
+
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E001FFFC,extended,0028359C
+//Region, on-enter (want-load), as in SP
+patch=1,EE,00A5D5C8,extended,6463FFFE
+
+//2nd controller: L3+START to deactivate
+patch=1,EE,E001FFF5,extended,0028359C
+//Region, on-enter (want-load), as in SP
+patch=1,EE,00A5D5C8,extended,6463FFFF

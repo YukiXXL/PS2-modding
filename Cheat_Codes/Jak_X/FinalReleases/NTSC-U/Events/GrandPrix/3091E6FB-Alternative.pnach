@@ -2,7 +2,7 @@ gametitle=Jak X Final Release (NTSC-U)
 comment=Enable Grand Prix (Alternative)
 
 //Enable (R3+START+D-PAD RIGHT)
-patch=1,EE,E008FFD3,extended,0028341C
+patch=1,EE,E007FFD3,extended,0028341C
 //spawn-hud-results
 patch=1,EE,602DB45C,extended,00000000
 patch=1,EE,00020001,extended,000002B8
@@ -12,11 +12,9 @@ patch=1,EE,20BD1AB4,extended,64630001
 patch=1,EE,20BD1AB8,extended,8EE41D9F
 patch=1,EE,20BD1ABC,extended,AC8305D8
 patch=1,EE,20BD1AC0,extended,10000028
-//Cutscene fix
-patch=1,EE,10BD1C10,extended,64640001
 
 //Disable (R3+START+D-PAD LEFT) + Reset
-patch=1,EE,E00BFF73,extended,0028341C
+patch=1,EE,E00AFF73,extended,0028341C
 //spawn-hud-results
 patch=1,EE,602DB45C,extended,12E30008
 patch=1,EE,00020001,extended,000002B8
@@ -30,5 +28,3 @@ patch=1,EE,20BD1AC0,extended,10600028
 patch=1,EE,007B9B8C,extended,00000000
 patch=1,EE,407B9BF4,extended,00170001
 patch=1,EE,00000000,extended,00000000
-//Cutscene fix
-patch=1,EE,10BD1C10,extended,6464FFFD
