@@ -22,7 +22,7 @@ patch=0,EE,201F9A50,extended,00000000
 
 // Extra console logs. Very useful.
 // The E-type patch is recommended because writing the patch too early can cause weird problems in other builds, so it is safe to have it in this one as well (though not essential).
-//patch=1,EE,001CCD70,extended,00000001
+patch=0,EE,20111BC4,extended,00000000
 
 // nop the weird function call in InitMachine that returns something but we don't use it because I rewrote the init heap function calls.
 patch=0,EE,201FCEBC,extended,00000000

@@ -30,6 +30,17 @@ description=This code causes some issues and can get stuck in infinite loading l
 patch=1,EE,E0012024,extended,009125F0
 patch=1,EE,209125F0,extended,24040001
 
+[Adventure menu\Green Eco Cup]
+description=Fixes Green Eco Cup which is the only playable one.
+patch=1,EE,E0020100,extended,00929908
+patch=1,EE,20929900,extended,0020001E
+patch=1,EE,00929904,extended,00000034
+//Fix Black Screens
+patch=1,EE,E0012025,extended,00B6DD30
+patch=1,EE,20B6DD2C,extended,10000041
+patch=1,EE,E0011025,extended,00B72A1C
+patch=1,EE,20B72A18,extended,10000007
+
 // GET ALL
 
 [Get All\Vehicles]

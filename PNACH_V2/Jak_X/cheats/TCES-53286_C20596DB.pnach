@@ -51,7 +51,7 @@ patch=1,EE,00000001,extended,0000097D
 
 // RETAIL MODE
 
-[Retail Mode\Fix Crashing]
+[Retail Mode\Fix Missing IPAs]
 description=Fixes crashing by replacing missing IPAs with Logo
 //Check just in case
 patch=1,EE,E0187073,extended,0099D0B8
@@ -92,6 +92,67 @@ patch=1,EE,2098598C,extended,00000000
 patch=1,EE,209921F8,extended,6F676F6C
 patch=1,EE,209921FC,extended,00000000
 
+[Retail Mode\Adventure\Gold Medals only on unavailable tasks]
+description=Gold medal on tasks that are not on the disc.
+patch=1,EE,E02A6163,extended,0098EF38
+//Red Eco Cup
+patch=1,EE,0099CDFC,extended,00000003
+patch=1,EE,0099C38C,extended,00000003
+patch=1,EE,009995EC,extended,00000003
+patch=1,EE,0099CA7C,extended,00000003
+patch=1,EE,0099925C,extended,00000003
+patch=1,EE,00998EAC,extended,00000003
+patch=1,EE,0099A78C,extended,00000003
+patch=1,EE,00998B2C,extended,00000003
+//Green Eco Cup
+patch=1,EE,009979DC,extended,00000003
+patch=1,EE,0099646C,extended,00000003
+patch=1,EE,00994F5C,extended,00000003
+patch=1,EE,00997D5C,extended,00000003
+patch=1,EE,009987AC,extended,00000003
+patch=1,EE,00996B9C,extended,00000003
+patch=1,EE,0099681C,extended,00000003
+patch=1,EE,00994C0C,extended,00000003
+//Blue Eco Cup
+patch=1,EE,00991F5C,extended,00000003
+patch=1,EE,0099378C,extended,00000003
+patch=1,EE,0099043C,extended,00000003
+patch=1,EE,00993E5C,extended,00000003
+patch=1,EE,00991BDC,extended,00000003
+patch=1,EE,009933FC,extended,00000003
+patch=1,EE,0099308C,extended,00000003
+patch=1,EE,0099262C,extended,00000003
+patch=1,EE,0099078C,extended,00000003
+//Yellow Eco Cup
+patch=1,EE,0098CD9C,extended,00000003
+patch=1,EE,0098E8DC,extended,00000003
+patch=1,EE,0098D0EC,extended,00000003
+patch=1,EE,0098BCAC,extended,00000003
+patch=1,EE,0098EF9C,extended,00000003
+patch=1,EE,0098DE9C,extended,00000003
+patch=1,EE,0098EC2C,extended,00000003
+patch=1,EE,0098DB2C,extended,00000003
+patch=1,EE,0098CA4C,extended,00000003
+//Other (Needed to unlock the cups)
+patch=1,EE,00993B0C,extended,00000003
+patch=1,EE,009980CC,extended,00000003
+patch=1,EE,0099843C,extended,00000003
+patch=1,EE,0099A41C,extended,00000003
+patch=1,EE,0099AE9C,extended,00000003
+patch=1,EE,0099B5AC,extended,00000003
+patch=1,EE,0099B91C,extended,00000003
+patch=1,EE,0099C02C,extended,00000003
+
+[Retail Mode\Adventure\Get All Gold Medals]
+patch=1,EE,E0042825,extended,0097799C
+patch=1,EE,20977978,extended,24010003
+patch=1,EE,20977990,extended,ACA10020
+patch=1,EE,20977994,extended,ACA10064
+patch=1,EE,20977998,extended,A0A10048
+//Load Game
+patch=1,EE,E0013078,extended,009A9AEC
+patch=1,EE,209A9AE8,extended,24050003
+
 // BETA MODE
 
 [Beta Mode\Exhibition]
@@ -116,6 +177,11 @@ patch=1,EE,20BD0108,extended,90840005
 [Misc\Events\Replace Reversi with Training]
 patch=1,EE,E0010008,extended,00B863E8
 patch=1,EE,00B863E8,extended,0000000F
+
+[Misc\Menu\Enable Tune Performance]
+description=Replaces Respray Paintjob!
+patch=1,EE,E0010180,extended,012DE224
+patch=1,EE,012DE224,extended,9C630174
 
 [Misc\Menu\Scene Player Act 3 = PSP Scan]
 patch=1,EE,E002D9A4,extended,012D6494
