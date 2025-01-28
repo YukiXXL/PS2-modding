@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Allow the usage of the same character (Host)
+
+patch=1,EE,E0013825,extended,00BCFA18
+patch=1,EE,20BCFA14,extended,00000000

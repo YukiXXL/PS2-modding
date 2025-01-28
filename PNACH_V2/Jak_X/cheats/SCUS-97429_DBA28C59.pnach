@@ -401,7 +401,13 @@ patch=1,EE,20EDBF0C,extended,1460FFF4
 patch=1,EE,602DD978,extended,1000008E
 patch=1,EE,00020000,extended,0000005C
 
+[Events\Driver Never Taken\Allow selecting any (Host)]
+description=Enable this to allow clients to select any driver.
+patch=1,EE,E0013825,extended,00BCFA18
+patch=1,EE,20BCFA14,extended,00000000
+
 [Events\Driver Never Taken\Allow selecting any (Version 1)]
+description=Works even when the host isn't allowing but produces invisible drivers.
 //Selection checks
 patch=1,EE,E00B0035,extended,00A868FC
 patch=1,EE,20A868F8,extended,8EE3C0E7
@@ -418,28 +424,24 @@ patch=1,EE,20A86924,extended,02E01825
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF9C0
 patch=1,EE,20BCF9C4,extended,10000003
-//Host (Online)
-patch=1,EE,E0013825,extended,00BCFA18
-patch=1,EE,20BCFA14,extended,00000000
 
 [Events\Driver Never Taken\Allow selecting any (Version 2)]
+description=Recommended as it fixes invisible drivers but requires the host to allow.
 //Change load location
 patch=1,EE,E001F864,extended,00B4595C
 patch=1,EE,00B4595C,extended,00BCF85C
 //Allow selecting the same driver
-patch=1,EE,E0060010,extended,00BCF894
+patch=1,EE,E0070010,extended,00BCF894
 patch=1,EE,20BCF858,extended,002F9824
 patch=1,EE,20BCF85C,extended,82C20144
 patch=1,EE,20BCF860,extended,8EE318B7
 patch=1,EE,20BCF864,extended,8C630098
 patch=1,EE,20BCF868,extended,00031878
 patch=1,EE,20BCF86C,extended,0062182D
+patch=1,EE,00BCF894,extended,28660001
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF9C0
 patch=1,EE,20BCF9C4,extended,10000003
-//Host (Online)
-patch=1,EE,E0013825,extended,00BCFA18
-patch=1,EE,20BCFA14,extended,00000000
 
 [Events\Grand Prix\Enable (Enable first!)]
 description=Press R3+SELECT to enable
