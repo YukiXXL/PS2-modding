@@ -1,0 +1,7 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=MISC - FORCE MINION SPAWN
+
+patch=1,EE,20275ECC,extended,24030000
+patch=1,EE,20275B2C,extended,24120000
+
+//Safest way would be to replace the ID at 003bd650

@@ -157,6 +157,11 @@ author=YukiXXL
 description=Temple of Mars. Fixes crashes.
 patch=1,EE,203B31B0,extended,001E71E0
 
+[Misc\Minions\Fix Giant Hornet AI]
+author=YukiXXL
+description=Replaces Dumb AI with Harpy AI.
+patch=1,EE,101F16A8,extended,24421608
+
 [Misc\Minions\Spawn all on the start]
 author=YukiXXL
 description=Spawns all enemies on the start.

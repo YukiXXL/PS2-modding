@@ -4,6 +4,9 @@ comment=MISC - MINIONS
 //Fix Giant Hornet model (Temple of Mars)
 patch=1,EE,203B31B0,extended,001E71E0
 
+//Fix Giant Hornet AI (Replace cDumbAI with cTongueHarpyAI)
+patch=1,EE,101F16A8,extended,24421608
+
 //Spawn all on the start
 patch=1,EE,20275B84,extended,00000000
 
