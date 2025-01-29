@@ -488,7 +488,6 @@ patch=1,EE,207B9D88,extended,00993530
 [Events\Grand Prix\Custom\Enable]
 description=Allows playing custom Cups
 patch=1,EE,E0081D9F,extended,00BD25B8
-//Function 1
 patch=1,EE,20BD2594,extended,8EF91D9F
 patch=1,EE,20BD2598,extended,9F3905D4
 patch=1,EE,20BD259C,extended,12F90082
@@ -509,13 +508,13 @@ patch=1,EE,2133CB98,extended,02E01825
 patch=1,EE,E001200B,extended,01339B1C //Memory Check
 patch=1,EE,21339B1C,extended,02E02025
 
-[Events\Grand Prix (Alternative)\Show Grand Prix results at race end]
+[Events\Grand Prix (Visual Only)\Show Grand Prix results at race end]
 description=Hold R3+START and press D-PAD RIGHT to enable
 patch=1,EE,E002FFD3,extended,0028361C
 patch=1,EE,602DB65C,extended,00000000
 patch=1,EE,00020001,extended,000002B8
 
-[Events\Grand Prix (Alternative)\Store Event Number]
+[Events\Grand Prix (Visual Only)\Store Event Number]
 description=Hold R3+START and press D-PAD RIGHT to enable
 patch=1,EE,E005FFD3,extended,0028361C
 patch=1,EE,00BD2598,extended,9C6305D8
@@ -524,14 +523,14 @@ patch=1,EE,20BD25A8,extended,8EE41D9F
 patch=1,EE,20BD25AC,extended,AC8305D8
 patch=1,EE,20BD25B0,extended,10000028
 
-[Events\Grand Prix (Alternative)\Reset]
+[Events\Grand Prix (Visual Only)\Reset]
 description=Hold R3+START and press D-PAD LEFT to reset
 patch=1,EE,E003FF73,extended,0028361C
 patch=1,EE,007B9D8C,extended,00000000
 patch=1,EE,407B9DF4,extended,00170001
 patch=1,EE,00000000,extended,00000000
 
-[Events\Grand Prix (Alternative)\Disable]
+[Events\Grand Prix (Visual Only)\Disable]
 description=Hold R3+START and press D-PAD LEFT to disable
 patch=1,EE,E008FF73,extended,0028361C
 patch=1,EE,602DB65C,extended,12E30008
@@ -733,7 +732,7 @@ patch=1,EE,00000001,extended,0000043D
 patch=1,EE,602E35A0,extended,00000000
 patch=1,EE,00000001,extended,0000043D
 
-[Misc\Jak always has Daxter on teh vehicle]
+[Misc\Jak always has Daxter on the vehicle]
 description=If Daxter as a driver is taken, Jak will still have him
 patch=1,EE,E0011825,extended,00BEE70C
 patch=1,EE,20BEE708,extended,00000000
@@ -844,112 +843,63 @@ patch=1,EE,209C95F0,extended,00000000
 
 [Split-Screen\Continue Point Fixes\Tours]
 patch=1,EE,E004726B,extended,00992018
-//Western Tour (kratour-start-1)
 patch=1,EE,20992000,extended,00992014
-//Eastern Tour (havtour-junglec-1)
 patch=1,EE,20991F90,extended,00991FA4
-//Northern Tour (spatour-templea-1)
 patch=1,EE,20991CB0,extended,00991CC4
-//Southern Tour (icetour-start)
 patch=1,EE,20991490,extended,009914A4
 
 [Split-Screen\Continue Point Fixes\Misc Events]
 patch=1,EE,E0051801,extended,0098F610
-//kras-training
 patch=1,EE,209932B0,extended,009932C4
-//jungle-training
 patch=1,EE,2098FD20,extended,00992D14
-//cliffs-training
 patch=1,EE,2098FDC0,extended,00992F84
-//snow-training2
 patch=1,EE,2098FD70,extended,00992CA4
-//kratour-final-boss-start
 patch=1,EE,2098F610,extended,0098F624
 
 [Split-Screen\Continue Point Fixes\Freeze Rally]
 patch=1,EE,E0147073,extended,009930A8
-//Kras City (krasx-start)
 patch=1,EE,20991C60,extended,00992AA4
-//Loading Docks (docksx-1)
 patch=1,EE,20990EA0,extended,009931A4
-//Deathdrome (drome-dromex-1)
 patch=1,EE,20990DB0,extended,00992EF4
-//Waterfront Loop (dockkrax-start)
 patch=1,EE,20992700,extended,00991F34
-//Seaport Strip (dromdocx-start)
 patch=1,EE,20990B80,extended,00993014
-//Forbidden Jungle (junglex-start)
 patch=1,EE,20992D00,extended,00992654
-//Haven City (havenx-start)
 patch=1,EE,20990680,extended,00992124
-//Sewer Raceway (sewerx-start)
 patch=1,EE,20991690,extended,009928E4
-//City Outskirts (havjungx-start)
 patch=1,EE,20990720,extended,00992404
-//Waterworks Circuit (havsewx-start)
 patch=1,EE,20991930,extended,00991794
-//Spargus City (spargusx-start)
 patch=1,EE,20993090,extended,00993234
-//Canyon Run (canyonx-start)
 patch=1,EE,209920C0,extended,00992494
-//Precursor Temple (templex-start)
 patch=1,EE,20990D60,extended,00992BF4
-//Beachfront Drive (cansparx-start)
 patch=1,EE,209913A0,extended,00992854
-//Badland Sanctuary (spartemx-start)
 patch=1,EE,2098F9B0,extended,00992324
-//Frozen Speedway (snowx-start)
 patch=1,EE,20990C70,extended,00992C84
-//Mountaintop Highway (peakx-start)
 patch=1,EE,20991B20,extended,00992DD4
-//Icebound Citadel (icex-start)
 patch=1,EE,20991ED0,extended,00992E64
-//Glacier Alley (icebergx-start)
 patch=1,EE,2098F870,extended,00992244
-//Timberline Track (icepassx-start)
 patch=1,EE,2098F8C0,extended,00992B14
 
 [Split-Screen\Continue Point Fixes\Time Trial]
-patch=1,EE,E018726B,extended,00990648
-//Kras City
+patch=1,EE,E014726B,extended,00990648
 patch=1,EE,20990630,extended,00992AA4
-//Loading Docks
 patch=1,EE,209905E0,extended,009931A4
-//Deathdrome
 patch=1,EE,20990590,extended,00992EF4
-//Waterfront Loop
 patch=1,EE,20990540,extended,00991F34
-//Seaport Strip
 patch=1,EE,209904F0,extended,00993014
-//Forbidden Jungle
 patch=1,EE,20990450,extended,00992654
-//Haven City
 patch=1,EE,20990400,extended,00992124
-//Sewer Raceway
 patch=1,EE,209903B0,extended,009928E4
-//City Outskirts
 patch=1,EE,20990360,extended,00992404
-//Waterworks Circuit
 patch=1,EE,20990310,extended,00991794
-//Spargus City
 patch=1,EE,20990270,extended,00993234
-//Canyon Run
 patch=1,EE,20990220,extended,00992494
-//Precursor Temple
 patch=1,EE,209901D0,extended,00992BF4
-//Beachfront Drive
 patch=1,EE,20990180,extended,00992854
-//Badland Sanctuary
 patch=1,EE,20990130,extended,00992324
-//Frozen Speedway
 patch=1,EE,20990090,extended,00992C84
-//Mountaintop Highway
 patch=1,EE,20990040,extended,00992DD4
-//Icebound Citadel
 patch=1,EE,2098FFF0,extended,00992E64
-//Glacier Alley
 patch=1,EE,2098FFA0,extended,00992244
-//Timberline Track
 patch=1,EE,2098FF50,extended,00992B14
 
 [Split-Screen\Bypasses\Button Bypass]

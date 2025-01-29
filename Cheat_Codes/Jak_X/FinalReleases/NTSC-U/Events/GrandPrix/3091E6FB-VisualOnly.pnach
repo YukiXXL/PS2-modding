@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (NTSC-U)
-comment=Enable Grand Prix (Alternative)
+comment=Enable Grand Prix (Visual Only)
 
 //Enable (R3+START+D-PAD RIGHT)
 patch=1,EE,E007FFD3,extended,0028341C

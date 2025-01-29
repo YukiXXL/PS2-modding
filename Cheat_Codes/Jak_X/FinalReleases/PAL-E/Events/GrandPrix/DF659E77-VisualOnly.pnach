@@ -1,5 +1,5 @@
 gametitle=Jak X Final Release (PAL-E)
-comment=Enable Grand Prix (Alternative)
+comment=Enable Grand Prix (Visual Only)
 
 //Enable (R3+START+D-PAD RIGHT)
 patch=1,EE,E008FFD3,extended,0028351C

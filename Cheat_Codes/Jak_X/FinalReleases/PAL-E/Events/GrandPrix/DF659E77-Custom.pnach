@@ -3,7 +3,6 @@ comment=Enable Grand Prix (Custom). Used with "ButtonCombination".
 
 //Memory Check
 patch=1,EE,E0081D9F,extended,00bd2508
-//Function 1
 patch=1,EE,20BD24E4,extended,8EF91D9F
 patch=1,EE,20BD24E8,extended,9F3905D4
 patch=1,EE,20BD24EC,extended,12F90082
