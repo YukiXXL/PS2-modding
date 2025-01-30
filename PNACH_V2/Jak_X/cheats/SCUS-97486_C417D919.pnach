@@ -9,11 +9,11 @@ patch=1,EE,2020E6B8,extended,79616C70
 description=Boots the game into the Kiosk mode.
 patch=1,EE,101FDFD0,extended,24C6A950
 
-// BETA MODE
-
 [Boot Mode\Beta]
 description=Boots the game into the Beta mode.
 patch=1,EE,101FDFD0,extended,24C6A980
+
+// BETA MODE
 
 [Beta Mode\Enable Exhibition button]
 description=Replaces Online with Exhibition for Local play.
@@ -106,7 +106,6 @@ patch=1,EE,E0010012,extended,00916474
 patch=1,EE,20916474,extended,00000000
 
 [Profile\Get All\Tasks]
-//All Gold Medals
 patch=1,EE,E005004A,extended,009165A0
 patch=1,EE,20916594,extended,ACA60020
 patch=1,EE,20916598,extended,ACA60058

@@ -264,6 +264,8 @@ patch=1,EE,2029A3D0,extended,44414F4C
 patch=1,EE,2029A3D4,extended,0000584D
 patch=1,EE,2014D47C,extended,64530001
 
+// GAMEPLAY
+
 // - PEDESTRIANTS
 
 [Gameplay\Pedestriants\Disable\For both SP and MP]
