@@ -5,6 +5,10 @@ comment=Provided by YukiXXL. Special thanks to Luminar Light.
 description=Boots the game into the Retail mode.
 patch=1,EE,2020E6B8,extended,79616C70
 
+[Boot Mode\Preview (Retail)]
+description=Boots the game into the Preview mode.
+patch=1,EE,101FDFD0,extended,24C6A9B0
+
 [Boot Mode\Kiosk]
 description=Boots the game into the Kiosk mode.
 patch=1,EE,101FDFD0,extended,24C6A950

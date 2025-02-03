@@ -60,7 +60,133 @@ author=YukiXXL
 patch=1,EE,E001202D,extended,005C5DC4
 patch=1,EE,205C5DBC,extended,24070001
 
-// COOPERATIVE MOD IN SINGLE PLAYER
+// GAME RULES
+
+[Game Rules\Enable Gadgets + Hidden in Quick Select]
+author=YukiXXL
+description=Enables COOP gadgets in Quick Select.
+//-DREADZONE STATION and ARENA
+//Function
+patch=1,EE,E001102D,extended,006BDDE8
+patch=1,EE,006BDDE0,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003AE054
+patch=1,EE,003AE058,extended,0000000B
+patch=1,EE,003AE064,extended,0000000C
+patch=1,EE,003AE068,extended,0000000D
+patch=1,EE,003AE06C,extended,00000010
+//-CATACROM FOUR
+//Function
+patch=1,EE,E001102D,extended,0066DD68
+patch=1,EE,0066DD60,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A7BA4
+patch=1,EE,003A7BA8,extended,0000000B
+patch=1,EE,003A7BB4,extended,0000000C
+patch=1,EE,003A7BB8,extended,0000000D
+patch=1,EE,003A7BBC,extended,00000010
+//-SARATHOS
+//Function
+patch=1,EE,E001102D,extended,0066DDB0
+patch=1,EE,0066DDA8,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A7114
+patch=1,EE,003A7118,extended,0000000B
+patch=1,EE,003A7124,extended,0000000C
+patch=1,EE,003A7128,extended,0000000D
+patch=1,EE,003A712C,extended,00000010
+//-KRONOS
+//Function
+patch=1,EE,E001102D,extended,00694580
+patch=1,EE,00694578,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A8EE4
+patch=1,EE,003A8EE8,extended,0000000B
+patch=1,EE,003A8EF4,extended,0000000C
+patch=1,EE,003A8EF8,extended,0000000D
+patch=1,EE,003A8EFC,extended,00000010
+//-SHAAR
+//Function
+patch=1,EE,E001102D,extended,006663F8
+patch=1,EE,006663F0,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A6AB4
+patch=1,EE,003A6AB8,extended,0000000B
+patch=1,EE,003A6AC4,extended,0000000C
+patch=1,EE,003A6AC8,extended,0000000D
+patch=1,EE,003A6ACC,extended,00000010
+//-ORXON
+//Function
+patch=1,EE,E001102D,extended,006712B0
+patch=1,EE,006712A8,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A6CD4
+patch=1,EE,003A6CD8,extended,0000000B
+patch=1,EE,003A6CE4,extended,0000000C
+patch=1,EE,003A6CE8,extended,0000000D
+patch=1,EE,003A6CEC,extended,00000010
+//-THE VALIX BELT
+//Function
+patch=1,EE,E001102D,extended,006593E0
+patch=1,EE,006593D8,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A72F4
+patch=1,EE,003A72F8,extended,0000000B
+patch=1,EE,003A7304,extended,0000000C
+patch=1,EE,003A7308,extended,0000000D
+patch=1,EE,003A730C,extended,00000010
+//-PLANET TORVAL
+//Function
+patch=1,EE,E001102D,extended,0067B608
+patch=1,EE,0067B600,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A8164
+patch=1,EE,003A8168,extended,0000000B
+patch=1,EE,003A8174,extended,0000000C
+patch=1,EE,003A8178,extended,0000000D
+patch=1,EE,003A817C,extended,00000010
+//-STYGIA
+//Function
+patch=1,EE,E001102D,extended,00668868
+patch=1,EE,00668860,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A6504
+patch=1,EE,003A6508,extended,0000000B
+patch=1,EE,003A6514,extended,0000000C
+patch=1,EE,003A6518,extended,0000000D
+patch=1,EE,003A651C,extended,00000010
+//-MARAXUS
+//Function
+patch=1,EE,E001102D,extended,00682130
+patch=1,EE,00682128,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A7D04
+patch=1,EE,003A7D08,extended,0000000B
+patch=1,EE,003A7D14,extended,0000000C
+patch=1,EE,003A7D18,extended,0000000D
+patch=1,EE,003A7D1C,extended,00000010
+//-GHOST STATION
+//Function
+patch=1,EE,E001102D,extended,0067BA80
+patch=1,EE,0067BA78,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003A8734
+patch=1,EE,003A8738,extended,0000000B
+patch=1,EE,003A8744,extended,0000000C
+patch=1,EE,003A8748,extended,0000000D
+patch=1,EE,003A874C,extended,00000010
+//-DREADZONE INTERIOR
+//Function
+patch=1,EE,E001102D,extended,0068BF58
+patch=1,EE,0068BF50,extended,24020000
+//UpdateList
+patch=1,EE,E004000E,extended,003AC634
+patch=1,EE,003AC638,extended,0000000B
+patch=1,EE,003AC644,extended,0000000C
+patch=1,EE,003AC648,extended,0000000D
+patch=1,EE,003AC64C,extended,00000010
+
+// - SINGLE PLAYER
 
 [Game Rules\Single Player\Solo Mod]
 author=YukiXXL
@@ -555,7 +681,7 @@ patch=1,EE,00642AF4,extended,24020000
 patch=1,EE,E0012F14,extended,00653188
 patch=1,EE,00653184,extended,24020000
 
-// COOPERATIVE GAME RULES
+// - COOPERATIVE
 
 [Game Rules\Cooperative\Unlimited Player Distance]
 author=YukiXXL

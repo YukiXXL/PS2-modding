@@ -6,6 +6,11 @@ description=Boots the game into the Retail mode.
 patch=1,EE,20209338,extended,79616C70
 patch=1,EE,2020933C,extended,00000000
 
+[Boot Mode\Preview (Retail)]
+description=Boots the game into the Preview mode.
+patch=1,EE,001F88CC,extended,3C060020
+patch=1,EE,101F88E0,extended,24C65540
+
 [Boot Mode\Beta]
 description=Boots the game into the Beta mode.
 patch=1,EE,001F88CC,extended,3C060020

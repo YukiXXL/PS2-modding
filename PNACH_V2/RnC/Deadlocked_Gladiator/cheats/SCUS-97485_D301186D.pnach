@@ -224,7 +224,27 @@ author=YukiXXL
 patch=1,EE,E0010003,extended,0063EC7C
 patch=1,EE,2063EC7C,extended,00000000
 
+[Misc\Weapons\Enable Gadgets and Hidden in Quick Select]
+author=YukiXXL
+patch=1,EE,E005000E,extended,003D3778
+patch=1,EE,003D377C,extended,00000015
+patch=1,EE,003D3780,extended,0000000B
+patch=1,EE,003D3784,extended,0000000C
+patch=1,EE,003D3788,extended,0000000D
+patch=1,EE,003D378C,extended,00000011
+
 // GAME RULES
+
+[Game Rules\Enable Gadgets + Hidden in Quick Select]
+author=YukiXXL
+description=Requires enabling all weapons and gadgets.
+patch=1,EE,E005000E,extended,003D3778
+patch=1,EE,003D377C,extended,00000015
+patch=1,EE,003D3780,extended,0000000B
+patch=1,EE,003D3784,extended,0000000C
+patch=1,EE,003D3788,extended,0000000D
+patch=1,EE,003D378C,extended,00000011
+
 // - SINGLE
 [Game Rules\Single Player\Enable Gadgets]
 author=YukiXXL

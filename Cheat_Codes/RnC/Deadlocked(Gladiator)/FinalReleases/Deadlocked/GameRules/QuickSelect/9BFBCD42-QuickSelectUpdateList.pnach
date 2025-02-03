@@ -1,0 +1,75 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=Update Quick Select to contain other gadgets
+
+//-DREADZONE STATION and ARENA
+patch=1,EE,E004000E,extended,003AE054
+patch=1,EE,003AE058,extended,0000000B
+patch=1,EE,003AE064,extended,0000000C
+patch=1,EE,003AE068,extended,0000000D
+patch=1,EE,003AE06C,extended,00000010
+//-CATACROM FOUR
+patch=1,EE,E004000E,extended,003A7BA4
+patch=1,EE,003A7BA8,extended,0000000B
+patch=1,EE,003A7BB4,extended,0000000C
+patch=1,EE,003A7BB8,extended,0000000D
+patch=1,EE,003A7BBC,extended,00000010
+//-SARATHOS
+patch=1,EE,E004000E,extended,003A7114
+patch=1,EE,003A7118,extended,0000000B
+patch=1,EE,003A7124,extended,0000000C
+patch=1,EE,003A7128,extended,0000000D
+patch=1,EE,003A712C,extended,00000010
+//-KRONOS
+patch=1,EE,E004000E,extended,003A8EE4
+patch=1,EE,003A8EE8,extended,0000000B
+patch=1,EE,003A8EF4,extended,0000000C
+patch=1,EE,003A8EF8,extended,0000000D
+patch=1,EE,003A8EFC,extended,00000010
+//-SHAAR
+patch=1,EE,E004000E,extended,003A6AB4
+patch=1,EE,003A6AB8,extended,0000000B
+patch=1,EE,003A6AC4,extended,0000000C
+patch=1,EE,003A6AC8,extended,0000000D
+patch=1,EE,003A6ACC,extended,00000010
+//-ORXON
+patch=1,EE,E004000E,extended,003A6CD4
+patch=1,EE,003A6CD8,extended,0000000B
+patch=1,EE,003A6CE4,extended,0000000C
+patch=1,EE,003A6CE8,extended,0000000D
+patch=1,EE,003A6CEC,extended,00000010
+//-THE VALIX BELT
+patch=1,EE,E004000E,extended,003A72F4
+patch=1,EE,003A72F8,extended,0000000B
+patch=1,EE,003A7304,extended,0000000C
+patch=1,EE,003A7308,extended,0000000D
+patch=1,EE,003A730C,extended,00000010
+//-PLANET TORVAL
+patch=1,EE,E004000E,extended,003A8164
+patch=1,EE,003A8168,extended,0000000B
+patch=1,EE,003A8174,extended,0000000C
+patch=1,EE,003A8178,extended,0000000D
+patch=1,EE,003A817C,extended,00000010
+//-STYGIA
+patch=1,EE,E004000E,extended,003A6504
+patch=1,EE,003A6508,extended,0000000B
+patch=1,EE,003A6514,extended,0000000C
+patch=1,EE,003A6518,extended,0000000D
+patch=1,EE,003A651C,extended,00000010
+//-MARAXUS
+patch=1,EE,E004000E,extended,003A7D04
+patch=1,EE,003A7D08,extended,0000000B
+patch=1,EE,003A7D14,extended,0000000C
+patch=1,EE,003A7D18,extended,0000000D
+patch=1,EE,003A7D1C,extended,00000010
+//-GHOST STATION
+patch=1,EE,E004000E,extended,003A8734
+patch=1,EE,003A8738,extended,0000000B
+patch=1,EE,003A8744,extended,0000000C
+patch=1,EE,003A8748,extended,0000000D
+patch=1,EE,003A874C,extended,00000010
+//-DREADZONE INTERIOR
+patch=1,EE,E004000E,extended,003AC634
+patch=1,EE,003AC638,extended,0000000B
+patch=1,EE,003AC644,extended,0000000C
+patch=1,EE,003AC648,extended,0000000D
+patch=1,EE,003AC64C,extended,00000010

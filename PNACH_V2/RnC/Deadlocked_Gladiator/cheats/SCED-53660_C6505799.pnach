@@ -231,7 +231,19 @@ patch=1,EE,E0010003,extended,00643374
 patch=1,EE,20643374,extended,00000000
 
 // GAME RULES
+
+[Game Rules\Enable Gadgets + Hidden in Quick Select]
+author=YukiXXL
+description=Requires enabling all weapons and gadgets.
+patch=1,EE,E005000E,extended,003D5218
+patch=1,EE,003D521C,extended,00000015
+patch=1,EE,003D5220,extended,0000000B
+patch=1,EE,003D5224,extended,0000000C
+patch=1,EE,003D5228,extended,0000000D
+patch=1,EE,003D522C,extended,00000011
+
 // - SINGLE
+
 [Game Rules\Single Player\Enable Gadgets]
 author=YukiXXL
 //HUD elements
@@ -270,6 +282,7 @@ patch=1,EE,E0012E78,extended,0060E774
 patch=1,EE,2060E770,extended,AE002E9C
 
 // - COOP
+
 [Game Rules\Cooperative\Unlimited Player Distance]
 author=YukiXXL
 description=Disables the line when players are too far away from each other.
