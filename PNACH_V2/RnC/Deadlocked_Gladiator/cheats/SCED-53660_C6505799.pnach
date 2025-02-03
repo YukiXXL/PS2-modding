@@ -199,7 +199,13 @@ patch=1,EE,2062FB88,extended,00631818
 
 // MISC
 
+[Misc\Weapons\Enable All Omega Mods for All Weapons]
+author=YukiXXL
+patch=1,EE,E0010003,extended,00643374
+patch=1,EE,20643374,extended,00000000
+
 //-CHANGE DIFFICULTY
+
 [Misc\Change Difficulty\Couch Potato]
 author=YukiXXL
 patch=1,EE,E0010002,extended,003E8650
@@ -224,11 +230,6 @@ patch=1,EE,003E8650,extended,00000003
 author=YukiXXL
 patch=1,EE,E0010002,extended,003E8650
 patch=1,EE,003E8650,extended,00000004
-
-[Misc\Weapons\Enable All Omega Mods for All Weapons]
-author=YukiXXL
-patch=1,EE,E0010003,extended,00643374
-patch=1,EE,20643374,extended,00000000
 
 // GAME RULES
 

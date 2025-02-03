@@ -193,7 +193,13 @@ patch=1,EE,2062B870,extended,00631818
 
 // MISC
 
+[Misc\Weapons\Enable All Omega Mods for All Weapons]
+author=YukiXXL
+patch=1,EE,E0010003,extended,0063EC7C
+patch=1,EE,2063EC7C,extended,00000000
+
 //-CHANGE DIFFICULTY
+
 [Misc\Change Difficulty\Couch Potato]
 author=YukiXXL
 patch=1,EE,E0010002,extended,003E6B50
@@ -219,20 +225,6 @@ author=YukiXXL
 patch=1,EE,E0010002,extended,003E6B50
 patch=1,EE,003E6B50,extended,00000004
 
-[Misc\Weapons\Enable All Omega Mods for All Weapons]
-author=YukiXXL
-patch=1,EE,E0010003,extended,0063EC7C
-patch=1,EE,2063EC7C,extended,00000000
-
-[Misc\Weapons\Enable Gadgets and Hidden in Quick Select]
-author=YukiXXL
-patch=1,EE,E005000E,extended,003D3778
-patch=1,EE,003D377C,extended,00000015
-patch=1,EE,003D3780,extended,0000000B
-patch=1,EE,003D3784,extended,0000000C
-patch=1,EE,003D3788,extended,0000000D
-patch=1,EE,003D378C,extended,00000011
-
 // GAME RULES
 
 [Game Rules\Enable Gadgets + Hidden in Quick Select]
@@ -246,6 +238,7 @@ patch=1,EE,003D3788,extended,0000000D
 patch=1,EE,003D378C,extended,00000011
 
 // - SINGLE
+
 [Game Rules\Single Player\Enable Gadgets]
 author=YukiXXL
 //HUD elements
@@ -284,6 +277,7 @@ patch=1,EE,E0012E78,extended,0060A4D4
 patch=1,EE,2060A4D0,extended,AE002E9C
 
 // - COOP
+
 [Game Rules\Cooperative\Unlimited Player Distance]
 author=YukiXXL
 description=Disables the line when players are too far away from each other.
