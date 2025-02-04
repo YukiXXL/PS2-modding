@@ -798,27 +798,21 @@ patch=1,EE,00B28C38,extended,9C620014
 description=2nd controller: L3+SELECT=ON, L3+START=OFF
 //2nd controller: L3+SELECT to activate
 patch=1,EE,E002FFFC,extended,0028371C
-//Region, on-enter(want-display), as in SP
-patch=1,EE,00BBA3AC,extended,9C730044
-//Reset the counter on start/restart
-patch=1,EE,20EB68F8,extended,AEE0745B
+patch=1,EE,00BBA3AC,extended,9C730044 //Region, on-enter(want-display), as in SP
+patch=1,EE,20EB68F8,extended,AEE0745B //Reset the counter on start/restart
 //2nd controller: L3+START to deactivate
 patch=1,EE,E002FFF5,extended,0028371C
-//Region, on-enter(want-display), as in SP
-patch=1,EE,00BBA3AC,extended,9C730048
-//Reset the counter on start/restart
-patch=1,EE,20EB68F8,extended,00000000
+patch=1,EE,00BBA3AC,extended,9C730048 //Region, on-enter(want-display), as in SP
+patch=1,EE,20EB68F8,extended,00000000 //Reset the counter on start/restart
 
 [Split-Screen\Level load fix\Variant 1]
 description=Loads when only one player passes (like in SP)
 //2nd controller: L3+SELECT to activate
 patch=1,EE,E001FFFC,extended,0028371C
-//Region, on-enter (want-load), as in SP
-patch=1,EE,00A5D6C8,extended,6463FFFE
+patch=1,EE,00A5D6C8,extended,6463FFFE //Region, on-enter (want-load), as in SP
 //2nd controller: L3+START to deactivate
 patch=1,EE,E001FFF5,extended,0028371C
-//Region, on-enter (want-load), as in SP
-patch=1,EE,00A5D6C8,extended,6463FFFF
+patch=1,EE,00A5D6C8,extended,6463FFFF //Region, on-enter (want-load), as in SP
 
 [Split-Screen\Level load fix\Variant 2]
 description=Loads when two players passes
