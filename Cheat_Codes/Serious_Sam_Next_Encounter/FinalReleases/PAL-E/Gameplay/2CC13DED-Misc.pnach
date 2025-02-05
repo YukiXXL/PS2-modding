@@ -1,0 +1,20 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=GAMEPLAY - MISC
+
+//Enable female sounds for female models ( Cheerleader, Vampire and Nesbot )
+patch=1,EE,00694854,byte,1
+patch=1,EE,00694934,byte,1
+patch=1,EE,0069496C,byte,1
+
+//Get Medals on Easy Difficulty
+patch=1,EE,20270F98,extended,04410005
+patch=1,EE,20271AB0,extended,04410014
+
+//Switch between dual weapons
+patch=1,EE,00224B74,extended,30420002
+
+//Load Hidden Music stream in game
+patch=1,EE,201DD8B0,extended,8C44DC60
+
+//Apply Fall Damage
+patch=1,EE,20204100,extended,24030001

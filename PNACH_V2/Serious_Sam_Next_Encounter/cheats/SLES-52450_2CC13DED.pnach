@@ -1,83 +1,6 @@
 gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 
-// ADDONS
-
-// - GAMEPLAY
-
-[Addons\Gameplay\480p]
-author=YukiXXL
-patch=1,EE,202F97DC,extended,3C050000
-patch=1,EE,202F97E4,extended,3C060050
-patch=1,EE,202F97EC,extended,3C070001
-
-[Addons\Gameplay\60 FPS]
-author=YukiXXL
-patch=1,EE,00126C74,extended,24020000
-
-// -- ALTERNATIVE SCREEN MODE
-
-[Addons\Gameplay\Alternative Screen Mode\Enable]
-author=YukiXXL
-description=Saved after starting Split-Screen game second time!
-patch=1,EE,2027C57C,extended,AC510018
-patch=1,EE,2027C580,extended,16200004
-
-[Addons\Gameplay\Alternative Screen Mode\Restore]
-author=YukiXXL
-description=Saved after starting Split-Screen game second time!
-patch=1,EE,2027C57C,extended,AC400018
-
-// - MENUS
-
-[Addons\Menus\Enable starting Multiplayer game with only one player]
-author=YukiXXL
-patch=1,EE,00260478,extended,24030000
-//Fix Homing Bullets in COOP
-patch=1,EE,001B3744,extended,8C43C384 //Load Number of players
-patch=1,EE,201B374C,extended,2463FFFF //-1
-
-// - OTHER
-
-[Addons\Other\Switch between dual weapons]
-author=YukiXXL
-description=Enables switching between one or two Deagles/Uzis.
-patch=1,EE,00224B74,extended,30420002
-
-[Addons\Other\Get Medals on Easy Difficulty]
-author=YukiXXL
-patch=1,EE,20270F98,extended,04410005
-patch=1,EE,20271AB0,extended,04410014
-
-[Addons\Other\Enable female sounds for female models]
-author=YukiXXL
-description=Cheerleader, Vampire and Nesbot
-patch=1,EE,20694854,byte,1
-patch=1,EE,20694934,byte,1
-patch=1,EE,2069496C,byte,1
-
 // CHEATS
-
-// - OTHER
-
-[Cheats\Other\Allow Fly Cheat]
-author=YukiXXL
-description=D-PAD LEFT/RIGHT = Enable/Disable. L2 = GO DOWN; R2 = GO UP.
-patch=1,EE,201646CC,extended,24020001
-
-[Cheats\Other\Allow Level Cheat]
-author=YukiXXL
-description=On profile select, Hold L1 = ALL LEVELS; R1 = START LAST SAVED LEVEL.
-patch=1,EE,201646FC,extended,24020001
-
-[Cheats\Other\Allow All Cheat]
-author=YukiXXL
-description=All cheats available, including Fly Cheat.
-patch=1,EE,2016472C,extended,24020001
-
-[Cheats\Other\Enable cheats in all other gamemodes]
-author=YukiXXL
-patch=1,EE,00270730,extended,2442FFFB
-patch=1,EE,0020CF5C,extended,2463FFFB
 
 // - PROFILE
 
@@ -93,105 +16,83 @@ description=Saved onto profile!
 patch=1,EE,202207FC,extended,2403001F
 patch=1,EE,20220800,extended,AC430018
 
-// MISC
-
-// - CUTSCENES
-
-[Misc\Cutscenes\Remove letterbox]
-author=YukiXXL
-patch=1,EE,2068D9DC,extended,00000000
-
-[Misc\Cutscenes\Disable Cutscenes]
-author=YukiXXL
-patch=1,EE,001D4428,extended,24020000
-
-[Misc\Cutscenes\No time foward after skipping Cutscene]
-author=YukiXXL
-patch=1,EE,103B1358,extended,001D42DC
-
 // - GAMEPLAY
 
-[Misc\Gameplay\Load Hidden Music stream in game]
+[Cheats\Gameplay\Allow Fly Cheat]
 author=YukiXXL
-patch=1,EE,201DD8B0,extended,8C44DC60
+description=D-PAD LEFT/RIGHT = Enable/Disable. L2 = GO DOWN; R2 = GO UP.
+patch=1,EE,201646CC,extended,24020001
 
-[Misc\Gameplay\Apply Fall Damage]
+[Cheats\Gameplay\Allow Level Cheat]
 author=YukiXXL
-patch=1,EE,20204100,extended,24030001
+description=On profile select, Hold L1 = ALL LEVELS; R1 = START LAST SAVED LEVEL.
+patch=1,EE,201646FC,extended,24020001
 
-// - MENUS
-
-[Misc\Menus\Run "Init Menu"\at the start]
+[Cheats\Gameplay\Allow All Cheat]
 author=YukiXXL
-description=Run Testing Menu after loading data.
-patch=1,EE,00277408,extended,24040006
+description=All cheats available, including Fly Cheat.
+patch=1,EE,2016472C,extended,24020001
 
-[Misc\Menus\Run "Init Menu"\instead of Credits Scene]
+[Cheats\Gameplay\Enable cheats in all other gamemodes]
 author=YukiXXL
-description=Replace Credits with Testing Menu.
-patch=1,EE,0025CC34,extended,24050006
+patch=1,EE,00270730,extended,2442FFFB
+patch=1,EE,0020CF5C,extended,2463FFFB
 
-[Misc\Menus\Maximum number of options = 11]
+// ADDONS
+
+[Addons\480p]
 author=YukiXXL
-description=For 'Seriously Silly' weapons type.
-patch=1,EE,2025114C,extended,2403000B
+patch=1,EE,202F97DC,extended,3C050000
+patch=1,EE,202F97E4,extended,3C060050
+patch=1,EE,202F97EC,extended,3C070001
 
-[Misc\Menus\Make a cool loading screen]
+[Addons\60 FPS]
+author=YukiXXL
+patch=1,EE,00126C74,extended,24020000
+
+// MENUS
+
+[Menus\Make a cool loading screen]
 author=YukiXXL
 patch=1,EE,203A79A4,extended,00676E69
 patch=1,EE,003A79A8,extended,00000000
 
-[Misc\Menus\Replace SamLogo video with Gotham games]
+[Menus\Replace SamLogo video with Gotham games]
 author=YukiXXL
 patch=1,EE,203BE840,extended,68746F47
 patch=1,EE,203BE844,extended,00006D61
 
-[Misc\Menus\Replace Main Menu music with Hidden music]
+[Menus\Replace Main Menu music with Hidden music]
 author=YukiXXL
 patch=1,EE,00279788,extended,24040009
 
-// - MINIONS
-
-[Misc\Minions\Fix Giant Hornet model]
+[Menus\Enable starting Multiplayer game with only one player]
 author=YukiXXL
-description=Temple of Mars. Fixes crashes.
-patch=1,EE,203B3C80,extended,001E7030
+patch=1,EE,00260478,extended,24030000
+//Fix Homing Bullets in COOP
+patch=1,EE,001B3744,extended,8C43C384 //Load Number of players
+patch=1,EE,201B374C,extended,2463FFFF //-1
 
-[Misc\Minions\Fix Giant Hornet AI]
+[Menus\Maximum number of options = 11]
 author=YukiXXL
-description=Replaces Dumb AI with Harpy AI.
-patch=1,EE,101F14F8,extended,24422148
+description=For 'Seriously Silly' weapons type.
+patch=1,EE,2025114C,extended,2403000B
 
-[Misc\Minions\Spawn all on the start]
+// - INIT MENU
+
+[Menus\Run "Init Menu"\at the start]
 author=YukiXXL
-description=Spawns all minions on the start.
-patch=1,EE,20275FAC,extended,00000000
+description=Run Testing Menu after loading data.
+patch=1,EE,00277408,extended,24040006
 
-[Misc\Minions\Stop auto-killing minions]
+[Menus\Run "Init Menu"\instead of Credits Scene]
 author=YukiXXL
-patch=1,EE,201F7F58,extended,03E00008
-patch=1,EE,201F7F5C,extended,00000000
-//Fix for Bosses
-patch=1,EE,20384D04,extended,00196FD8
+description=Replace Credits with Testing Menu.
+patch=1,EE,0025CC34,extended,24050006
 
-[Misc\Minions\Giant Hornet replaces Witch Harpy]
-author=YukiXXL
-description=Fix for model needed!
-patch=1,EE,003BE308,extended,00000004
+// - MULTIPLAYER
 
-[Misc\Minions\No Friendly Fire between minions]
-author=YukiXXL
-patch=1,EE,201F02F8,extended,10000048
-
-[Misc\Minions\Killing a Boss doesn't Trigger ending]
-author=YukiXXL
-patch=1,EE,20384D04,extended,003349D0
-
-// MULTIPLAYER
-
-// - ONLINE LEVELS IN OFFLINE CODES
-
-[Multiplayer\Online Levels in Offline\Enable and Save]
+[Menus\Multiplayer\Enable Online levels and Save]
 author=YukiXXL
 description=Enables Online-Only levels and saves them onto profile.
 patch=1,EE,2025F9F4,extended,24050003
@@ -199,7 +100,7 @@ patch=1,EE,2025F9F8,extended,AC450018
 //Fixes showing grey box when the above code is enabled
 patch=1,EE,10260E60,extended,2631F978
 
-[Multiplayer\Online Levels in Offline\Fix level thumbnails]
+[Menus\Multiplayer\Fix Online levels thumbnails]
 author=YukiXXL
 description=Fixes showing the Online levels thumbnails.
 //Change level rules for Offline mode
@@ -208,64 +109,168 @@ patch=1,EE,00264800,extended,24040000
 patch=1,EE,4025F460,extended,00030006
 patch=1,EE,26084E58,extended,00000000
 
-// - OTHER
+// GAMEPLAY
 
-[Multiplayer\Other\Multiplayer model in Single Player]
+[Gameplay\Enable female sounds for female models]
+author=YukiXXL
+description=Cheerleader, Vampire and Nesbot
+patch=1,EE,20694854,byte,1
+patch=1,EE,20694934,byte,1
+patch=1,EE,2069496C,byte,1
+
+[Gameplay\Get Medals on Easy Difficulty]
+author=YukiXXL
+patch=1,EE,20270F98,extended,04410005
+patch=1,EE,20271AB0,extended,04410014
+
+[Gameplay\Switch between dual weapons]
+author=YukiXXL
+description=Enables switching between one or two Deagles/Uzis.
+patch=1,EE,00224B74,extended,30420002
+
+[Gameplay\Load Hidden Music stream in game]
+author=YukiXXL
+patch=1,EE,201DD8B0,extended,8C44DC60
+
+[Gameplay\Apply Fall Damage]
+author=YukiXXL
+patch=1,EE,20204100,extended,24030001
+
+// - SINGLE PLAYER
+
+[Gameplay\Single Player\Multiplayer model in Single Player]
 author=YukiXXL
 patch=1,EE,2020BDEC,extended,10000005
 patch=1,EE,202113D4,extended,10000003
 
-[Multiplayer\Other\Don't restart from a Checkpoint in SP]
+[Gameplay\Single Player\Don't restart from a Checkpoint]
 author=YukiXXL
 description=Like in COOP.
 patch=1,EE,00202690,extended,28420001
 
-[Multiplayer\Other\Prevent teleporting players in COOP]
-author=YukiXXL
-description=When triggering checkpoints and whatnot.
-patch=1,EE,001E2938,extended,28420009
+// - MULTIPLAYER
 
-[Multiplayer\Other\Enable Netricsa and in-game messages in Split-Screen]
+[Gameplay\Multiplayer\Enable Netricsa and in-game messages in Split-Screen]
 author=YukiXXL
 description=Enables usage of Netricsa and shows the text of collected items.
 patch=1,EE,0022153C,extended,2C820020
 
-// - FAKE BYTE
-
-[Multiplayer\Other\Fake Byte Usage\Enable]
+[Gameplay\Multiplayer\Prevent teleporting players in COOP]
 author=YukiXXL
-description=Disabled = Single Player like; Enabled = Multiplayer like
-patch=1,EE,0036C350,byte,1
+description=When triggering checkpoints and whatnot.
+patch=1,EE,001E2938,extended,28420009
 
-[Multiplayer\Other\Fake Byte Usage\Pickup effects]
+// - SINGLE AND COOP
+
+// -- PICKUP EFFECTS
+[Gameplay\Single and Coop\Pickup effects\Enable]
+patch=1,EE,20241914,extended,24040000
+
+[Gameplay\Single and Coop\Pickup effects\Disable]
+patch=1,EE,20241914,extended,24040001
+
+// -- RICOCHET BULLETS
+[Gameplay\Single and Coop\Ricochet bullets spawn\Enable]
+patch=1,EE,20275B64,extended,24030000
+
+[Gameplay\Single and Coop\Ricochet bullets spawn\Disable]
+patch=1,EE,20275B64,extended,24030001
+
+// -- GET MEDALS
+[Gameplay\Single and Coop\Get Medals\Enable]
+patch=1,EE,20270F84,extended,24030000
+patch=1,EE,20271A90,extended,24030000
+
+[Gameplay\Single and Coop\Get Medals\Disable]
+patch=1,EE,20270F84,extended,24030001
+patch=1,EE,20271A90,extended,24030001
+
+// -- KILLING SPREE MUSIC
+[Gameplay\Single and Coop\Killing Spree Music\Enable]
+patch=1,EE,20212250,extended,24030000
+
+[Gameplay\Single and Coop\Killing Spree Music\Disable]
+patch=1,EE,20212250,extended,24030001
+
+// - ALTERNATIVE SCREEN MODE
+
+[Gameplay\Alternative Screen Mode\Enable]
 author=YukiXXL
-patch=1,EE,00241914,extended,8C64C350
+description=Saved after starting Split-Screen game second time!
+patch=1,EE,2027C57C,extended,AC510018
+patch=1,EE,2027C580,extended,16200004
 
-[Multiplayer\Other\Fake Byte Usage\Ricochet bullets]
+[Gameplay\Alternative Screen Mode\Restore]
 author=YukiXXL
-patch=1,EE,00275B64,extended,8C43C350
+description=Saved after starting Split-Screen game second time!
+patch=1,EE,2027C57C,extended,AC400018
 
-[Multiplayer\Other\Fake Byte Usage\Get Medals]
+// - CUTSCENES
+
+[Gameplay\Cutscenes\Remove letterbox]
 author=YukiXXL
-patch=1,EE,00270F84,extended,8C43C350
-patch=1,EE,00271A90,extended,8C43C350
+patch=1,EE,2068D9DC,extended,00000000
 
-[Multiplayer\Other\Fake Byte Usage\Killing Spree Music]
+[Gameplay\Cutscenes\Disable Cutscenes]
 author=YukiXXL
-patch=1,EE,00212250,extended,8C43C350
+patch=1,EE,001D4428,extended,24020000
 
-// OFFLINE PRESERVATION
+[Gameplay\Cutscenes\No time foward after skipping Cutscene]
+author=YukiXXL
+patch=1,EE,103B1358,extended,001D42DC
 
-[Offline Preservation\Enable Online in Offline]
+// - MINIONS
+
+[Gameplay\Minions\Stop auto-killing minions]
+author=YukiXXL
+patch=1,EE,201F7F58,extended,03E00008
+patch=1,EE,201F7F5C,extended,00000000
+//Fix for Bosses
+patch=1,EE,20384D04,extended,00196FD8
+
+[Gameplay\Minions\No Friendly Fire between minions]
+author=YukiXXL
+patch=1,EE,201F02F8,extended,10000048
+
+[Gameplay\Minions\Killing a Boss doesn't Trigger ending]
+author=YukiXXL
+patch=1,EE,20384D04,extended,003349D0
+
+[Gameplay\Minions\Spawn all on the start]
+author=YukiXXL
+description=Spawns all minions on the start.
+patch=1,EE,20275FAC,extended,00000000
+
+// -- GIANT HORNET
+
+[Gameplay\Minions\Giant Hornet\Fix Giant Hornet model]
+author=YukiXXL
+description=Temple of Mars. Fixes crashes.
+patch=1,EE,203B3C80,extended,001E7030
+
+[Gameplay\Minions\Giant Hornet\Fix Giant Hornet AI]
+author=YukiXXL
+description=Replaces Dumb AI with Harpy AI.
+patch=1,EE,101F14F8,extended,24422148
+
+[Gameplay\Minions\Giant Hornet\Giant Hornet replaces Witch Harpy]
+author=YukiXXL
+description=Fix for model needed!
+patch=1,EE,003BE308,extended,00000004
+
+// MODS
+
+// - OFFLINE PRESERVATION
+
+[Mods\Offline Preservation\Enable Online in Offline]
 author=YukiXXL
 description=Enables Online menu in offline.
 patch=1,EE,1025CB00,extended,0C0A57FE
 
-[Offline Preservation\Split-Screen]
+[Mods\Offline Preservation\Split-Screen]
 author=YukiXXL
 description=Play Split-Screen using Online lobby.
-//Host Game = Select Profiles
-patch=1,EE,00264D98,extended,24050099
+patch=1,EE,00264D98,extended,24050099 //Host Game = Select Profiles
 //For Online
 patch=1,EE,D036DFE8,extended,00000001
 patch=1,EE,2027CFF0,extended,24050001
@@ -273,74 +278,13 @@ patch=1,EE,2027CFF0,extended,24050001
 patch=1,EE,D036DFE8,extended,00000000
 patch=1,EE,2027CFF0,extended,00000000
 
-[Offline Preservation\Match End]
+[Mods\Offline Preservation\Match End]
 author=YukiXXL
 description=Fixes names at match end and drops back to Online menu.
-//Return to "Host Game" after exiting
-patch=1,EE,10267A78,extended,240500D0
-//End Screen names fix
-patch=1,EE,20220BFC,extended,0000102D
+patch=1,EE,10267A78,extended,240500D0 //Return to "Host Game" after exiting
+patch=1,EE,20220BFC,extended,0000102D //End Screen names fix
 
-[Offline Preservation\Online Emulated (Unstable)]
-author=YukiXXL
-description=Emulates what Online would look like (but broken).
-//Join Staging Room
-patch=1,EE,2029ABF0,extended,00000000
-//DNAS authorized
-patch=1,EE,202660C8,extended,AE2268B8
-//ConnectCallback
-patch=1,EE,20299FE8,extended,24050001
-//Host Game
-patch=1,EE,20295E0C,extended,00000000
-
-// -- ONLINE EMULATED
-
-[Offline Preservation\Online Emulated\Staging Area]
-author=YukiXXL
-description=Emulates what Online would look like - Staging Area.
-//Bypass connecting errors
-patch=1,EE,0029A110,extended,24020000
-patch=1,EE,00295E70,extended,24020000
-//Set LobbyState = 9. Starts the game.
-patch=1,EE,00266D74,extended,10000003
-patch=1,EE,20266D84,extended,3C040037
-patch=1,EE,20266D88,extended,24020009
-patch=1,EE,20266D8C,extended,AC82E0B0
-
-[Offline Preservation\Online Emulated\Rules]
-author=YukiXXL
-description=Emulates what Online would look like - Rules.
-//Rules
-patch=1,EE,00279C58,extended,0C0A57FE //Level
-patch=1,EE,0027CEC8,extended,0C0A57FE //WeaponSet
-//Time Position
-patch=1,EE,0027D998,extended,0C0A57FE
-//Texture and Model Quality
-patch=1,EE,00273F04,extended,0C0A57FE
-
-[Offline Preservation\Online Emulated\Features]
-author=YukiXXL
-description=Emulates what Online would look like - Features.
-//Populate Player List. Gets rid of TLB Misses on game start.
-patch=1,EE,2029B338,extended,ACC6FFFC
-//Scores Table
-patch=1,EE,0020BBC4,extended,0C0A57FE //Loads Network Profile
-patch=1,EE,002148E4,extended,0C0A57FE //Fix crashes on Pause menu
-patch=1,EE,002158B0,extended,0C0A57FE //Fix crashes on loading
-//
-patch=1,EE,0021C2E4,extended,0C0A57FE //Fix crashes when trying to open Scores
-patch=1,EE,0021D01C,extended,0C0A57FE //Fix displaying the list
-patch=1,EE,00218A78,extended,0C0A57FE //Displays correct player list
-//Chat
-patch=1,EE,002170A0,extended,0C0A57FE //Enables Chat
-//Pause menu
-patch=1,EE,0025A038,extended,0C0A57FE //Don't pause the game
-patch=1,EE,0026F8F4,extended,0C0A57FE //Pause Menu options
-//
-patch=1,EE,0026F990,extended,0C0A57FE //Fix crashes
-patch=1,EE,0026FAFC,extended,0C0A57FE //Allow changing "NetSetup.UseChat"
-
-[Offline Preservation\Unused PVP Levels]
+[Mods\Offline Preservation\Unused PVP Levels]
 author=YukiXXL
 description=Replaces Online exclusive levels.
 //egypt > canyon
@@ -387,7 +331,55 @@ patch=1,EE,203BD804,extended,006E7265
 patch=1,EE,0036C1A8,extended,00000133
 patch=1,EE,0036C1AC,extended,00000134
 
-// MODS
+// -- ONLINE EMULATED
+
+[Mods\Offline Preservation\Online Emulated\Enable Unstable]
+author=YukiXXL
+description=Emulates what Online would look like (but broken).
+patch=1,EE,2029ABF0,extended,00000000 //Join Staging Room
+patch=1,EE,202660C8,extended,AE2268B8 //DNAS authorized
+patch=1,EE,20299FE8,extended,24050001 //ConnectCallback
+patch=1,EE,20295E0C,extended,00000000 //Host Game
+
+[Mods\Offline Preservation\Online Emulated\Staging Area]
+author=YukiXXL
+description=Emulates what Online would look like - Staging Area.
+//Bypass connecting errors
+patch=1,EE,0029A110,extended,24020000
+patch=1,EE,00295E70,extended,24020000
+//Set LobbyState = 9. Starts the game.
+patch=1,EE,00266D74,extended,10000003
+patch=1,EE,20266D84,extended,3C040037
+patch=1,EE,20266D88,extended,24020009
+patch=1,EE,20266D8C,extended,AC82E0B0
+
+[Mods\Offline Preservation\Online Emulated\Rules]
+author=YukiXXL
+description=Emulates what Online would look like - Rules.
+patch=1,EE,00279C58,extended,0C0A57FE //Level
+patch=1,EE,0027CEC8,extended,0C0A57FE //WeaponSet
+patch=1,EE,0027D998,extended,0C0A57FE //Time Position
+patch=1,EE,00273F04,extended,0C0A57FE //Texture and Model Quality
+
+[Mods\Offline Preservation\Online Emulated\Features]
+author=YukiXXL
+description=Emulates what Online would look like - Features.
+patch=1,EE,2029B338,extended,ACC6FFFC //Populate Player List. Gets rid of TLB Misses on game start.
+//Scores Table
+patch=1,EE,0020BBC4,extended,0C0A57FE //Loads Network Profile
+patch=1,EE,002148E4,extended,0C0A57FE //Fix crashes on Pause menu
+patch=1,EE,002158B0,extended,0C0A57FE //Fix crashes on loading
+//
+patch=1,EE,0021C2E4,extended,0C0A57FE //Fix crashes when trying to open Scores
+patch=1,EE,0021D01C,extended,0C0A57FE //Fix displaying the list
+patch=1,EE,00218A78,extended,0C0A57FE //Displays correct player list
+patch=1,EE,002170A0,extended,0C0A57FE //Enables Chat
+//Pause menu
+patch=1,EE,0025A038,extended,0C0A57FE //Don't pause the game
+patch=1,EE,0026F8F4,extended,0C0A57FE //Pause Menu options
+//
+patch=1,EE,0026F990,extended,0C0A57FE //Fix crashes
+patch=1,EE,0026FAFC,extended,0C0A57FE //Allow changing "NetSetup.UseChat"
 
 // - DOUBLE THE FUN
 

@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=ADDONS - MENUS
-
-//Enable starting Multiplayer game with only one player
-patch=1,EE,00260478,extended,24030000
-//Fix Homing Bullets in COOP
-patch=1,EE,001B3744,extended,8C43C384 //Load Number of players
-patch=1,EE,201B374C,extended,2463FFFF //-1

@@ -1,0 +1,9 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=GAMEPLAY - SINGLE PLAYER
+
+//Multiplayer model in Single Player
+patch=1,EE,2020BF9C,extended,10000005
+patch=1,EE,20211584,extended,10000003
+
+//Don't restart from a Checkpoint in SP (like in COOP)
+patch=1,EE,00202840,extended,28420001

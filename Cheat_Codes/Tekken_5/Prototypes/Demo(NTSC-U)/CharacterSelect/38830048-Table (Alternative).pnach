@@ -1,0 +1,13 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=CHARACTER SELECT - CHARACTER TABLE
+
+00 = 20 characters (Default)
+01 = 21 characters
+02 = 23 characters
+03 = 26 characters
+04 = 29 characters
+05 = 31 characters
+06 = 32 characters (Missing Visual)
+
+patch=1,EE,2015E200,extended,00000000 //Disable Unlockment Check
+patch=1,EE,0015E204,extended,24020005 //v0 = Table ID

@@ -1,0 +1,11 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=GAMEPLAY - CUTSCENES
+
+//Remove letterbox on cutscenes
+patch=1,EE,2068D19C,extended,00000000
+
+//Disable Cutscenes
+patch=1,EE,001D45D8,extended,24020000
+
+//No time foward after skipping Cutscene
+patch=1,EE,103B0888,extended,001D448C

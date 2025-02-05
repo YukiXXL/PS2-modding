@@ -52,7 +52,7 @@ description=Missions stay available trough the game.
 patch=1,EE,E001000F,extended,00588FEC
 patch=1,EE,20588FEC,extended,00000000
 
-[DreadZone Station\Missions\Mission Always Visible]
+[DreadZone Station\Missions\Missions Always Visible]
 author=YukiXXL
 patch=1,EE,E0020010,extended,005890A0
 patch=1,EE,20589098,extended,24020001

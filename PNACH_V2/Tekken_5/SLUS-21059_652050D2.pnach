@@ -44,12 +44,9 @@ patch=1,EE,203E4570,extended,FFFFFFFF
 
 [Jinpachi\Enable]
 author=YukiXXL
-//Memory Check
-patch=1,EE,E0020020,extended,00471ACC
-//Random Select = 31
-patch=1,EE,0024C19C,extended,2403001F
-//Jinpachi replaces Random select
-patch=1,EE,00471ACC,extended,1D18001E
+patch=1,EE,E0020020,extended,00471ACC //Memory Check
+patch=1,EE,0024C19C,extended,2403001F //Random Select = 31
+patch=1,EE,00471ACC,extended,1D18001E //Jinpachi replaces Random select
 //Fix for Time Attack
 patch=1,EE,E0010000,extended,0046688C
 patch=1,EE,0046688C,extended,0000004D
@@ -65,26 +62,18 @@ patch=1,EE,003BCA28,extended,0000001F
 
 [Jinpachi\Enable Customization]
 author=YukiXXL
-//Memory Check
-patch=1,EE,E003001E,extended,002CE10C
-//Unlock Jinpachi for Customization
-patch=1,EE,002CE104,extended,2A05001F
-//Enable Random Character Select in Customization
-patch=1,EE,002CE10C,extended,2407001F
-//Jinpachi fix in Customization
-patch=1,EE,002CB534,extended,2403001F
+patch=1,EE,E003001E,extended,002CE10C //Memory Check
+patch=1,EE,002CE104,extended,2A05001F //Unlock Jinpachi for Customization
+patch=1,EE,002CE10C,extended,2407001F //Enable Random Character Select in Customization
+patch=1,EE,002CB534,extended,2403001F //Jinpachi fix in Customization
 
 [Jinpachi\Fix Random Select]
 author=YukiXXL
 description=Located below Heihachi.
-//Memory Check
-patch=1,EE,E003181E,extended,00471AC8
-//Random Select is below Heihachi
-patch=1,EE,10471AC8,extended,0F0E1F1E
-//Jinpachi Available in Random Select
-patch=1,EE,0024BF9C,extended,2843001F
-//Temporary unlock all characters (Needed for Jinpachi!)
-patch=1,EE,20218B68,extended,00000000
+patch=1,EE,E003181E,extended,00471AC8 //Memory Check
+patch=1,EE,10471AC8,extended,0F0E1F1E //Random Select is below Heihachi
+patch=1,EE,0024BF9C,extended,2843001F //Jinpachi Available in Random Select
+patch=1,EE,20218B68,extended,00000000 //Temporary unlock all characters (Needed for Jinpachi!)
 
 // MOKUJIN
 

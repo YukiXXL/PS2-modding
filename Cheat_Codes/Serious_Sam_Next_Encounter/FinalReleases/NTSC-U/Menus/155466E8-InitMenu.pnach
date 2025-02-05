@@ -1,0 +1,8 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=MENUS - INIT MENU
+
+//Run "Init Menu" at the start
+patch=1,EE,00276F5C,extended,24040006
+
+//Credits replaced with "Init Menu"
+patch=1,EE,0025CBCC,extended,24050006

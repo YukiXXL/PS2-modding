@@ -1,1 +1,0 @@
-00122A7C = Title Screen start button (PRESS START) address

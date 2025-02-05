@@ -1,0 +1,17 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=GAMEPLAY - MINNIONS - MINIONS
+
+//Spawn all on the start
+patch=1,EE,20275FAC,extended,00000000
+
+//Stop auto-killing minions
+patch=1,EE,201F7F58,extended,03E00008
+patch=1,EE,201F7F5C,extended,00000000
+//Fix for Bosses
+patch=1,EE,20384D04,extended,00196FD8
+
+//No Friendly Fire between minions
+patch=1,EE,201F02F8,extended,10000048
+
+//Killing a Boss doesn't Trigger ending
+patch=1,EE,20384D04,extended,003349D0

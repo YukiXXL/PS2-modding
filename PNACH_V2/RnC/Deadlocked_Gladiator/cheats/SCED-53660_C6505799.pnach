@@ -204,7 +204,7 @@ author=YukiXXL
 patch=1,EE,E0010003,extended,00643374
 patch=1,EE,20643374,extended,00000000
 
-//-CHANGE DIFFICULTY
+// - CHANGE DIFFICULTY
 
 [Misc\Change Difficulty\Couch Potato]
 author=YukiXXL
@@ -243,9 +243,9 @@ patch=1,EE,003D5224,extended,0000000C
 patch=1,EE,003D5228,extended,0000000D
 patch=1,EE,003D522C,extended,00000011
 
-// - SINGLE
+// - SINGLE PLAYER
 
-[Game Rules\Single Player\Enable Gadgets]
+[Game Rules\Single Player\Replace Bot Commands with Gadgets (COOP)]
 author=YukiXXL
 //HUD elements
 patch=1,EE,E001AE7C,extended,00596F50
@@ -277,12 +277,12 @@ patch=1,EE,204BEDC8,extended,24030001
 patch=1,EE,E001AE7C,extended,00552A1C
 patch=1,EE,20552A1C,extended,24020001
 
-[Game Rules\Single Player\P2 Team (Blue)]
+[Game Rules\Single Player\Team Color Blue (P2)]
 author=YukiXXL
 patch=1,EE,E0012E78,extended,0060E774
 patch=1,EE,2060E770,extended,AE002E9C
 
-// - COOP
+// - COOPERATIVE
 
 [Game Rules\Cooperative\Unlimited Player Distance]
 author=YukiXXL
@@ -318,34 +318,34 @@ author=YukiXXL
 patch=1,EE,E001AE7C,extended,004BEDC8
 patch=1,EE,204BEDC8,extended,24030000
 
-// SINGLE or COOP
+// EXTRAS
 
-[Single or Coop\Skin\Marauder (0)(Default)]
+[Extras\Skin\Marauder (0)(Default)]
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
 patch=1,EE,1020973C,extended,00000000
 
-[Single or Coop\Skin\Avenger (1)]
+[Extras\Skin\Avenger (1)]
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
 patch=1,EE,1020973C,extended,00000001
 
-[Single or Coop\Skin\Promotional Armor (2)]
+[Extras\Skin\Promotional Armor (2)]
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
 patch=1,EE,1020973C,extended,00000002
 
-[Single or Coop\Skin\Crusader (3)]
+[Extras\Skin\Crusader (3)]
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
 patch=1,EE,1020973C,extended,00000003
 
-[Single or Coop\Skin\Vindicator (4)]
+[Extras\Skin\Vindicator (4)]
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
 patch=1,EE,1020973C,extended,00000004
 
-[Single or Coop\Skin\Liberator (5)]
+[Extras\Skin\Liberator (5)]
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
 patch=1,EE,1020973C,extended,00000005

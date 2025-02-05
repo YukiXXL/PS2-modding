@@ -198,7 +198,7 @@ author=YukiXXL
 patch=1,EE,E0010003,extended,0063EC7C
 patch=1,EE,2063EC7C,extended,00000000
 
-//-CHANGE DIFFICULTY
+// - CHANGE DIFFICULTY
 
 [Misc\Change Difficulty\Couch Potato]
 author=YukiXXL
@@ -237,9 +237,9 @@ patch=1,EE,003D3784,extended,0000000C
 patch=1,EE,003D3788,extended,0000000D
 patch=1,EE,003D378C,extended,00000011
 
-// - SINGLE
+// - SINGLE PLAYER
 
-[Game Rules\Single Player\Enable Gadgets]
+[Game Rules\Single Player\Replace Bot Commands with Gadgets (COOP)]
 author=YukiXXL
 //HUD elements
 patch=1,EE,E001938C,extended,00593090
@@ -276,7 +276,7 @@ author=YukiXXL
 patch=1,EE,E0012E78,extended,0060A4D4
 patch=1,EE,2060A4D0,extended,AE002E9C
 
-// - COOP
+// - COOPERATIVE
 
 [Game Rules\Cooperative\Unlimited Player Distance]
 author=YukiXXL

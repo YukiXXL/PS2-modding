@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=MISC: RENDERING - RENDERING DISTANCES
-
-//World at 5002 (Default 50000)
-patch=1,EE,10144268,extended,3C01459C
-
-//Entities at 2501 (Default 50000)
-patch=1,EE,1014428C,extended,3C01451C

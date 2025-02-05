@@ -132,7 +132,7 @@ patch=1,EE,20128770,word,24130001
 [GameModes\Team Battle\Enable]
 author=YukiXXL
 description="Fix Missing Stages" NEEDED!
-patch=1,EE,00122B48,byte,4
+patch=1,EE,20122B48,extended,24040004
 
 [GameModes\Team Battle\Disable Quick Select]
 author=YukiXXL
@@ -142,30 +142,30 @@ patch=1,EE,20122010,extended,A240000C
 //FORCE A GAMEMODE
 [GameModes\Force a Gamemode\Demo]
 author=YukiXXL
-patch=1,EE,00122B48,byte,1
+patch=1,EE,20122B48,extended,24040001
 
 [GameModes\Force a Gamemode\Story]
 author=YukiXXL
 description=To get pass the loading screen, spam some buttons.
-patch=1,EE,00122B48,byte,2
+patch=1,EE,20122B48,extended,24040002
 
 [GameModes\Force a Gamemode\Versus]
 author=YukiXXL
-patch=1,EE,00122B48,byte,3
+patch=1,EE,20122B48,extended,24040003
 
 [GameModes\Force a Gamemode\Survival]
 author=YukiXXL
 description="Fix Missing Stages" NEEDED!
-patch=1,EE,00122B48,byte,6
+patch=1,EE,20122B48,extended,24040006
 
-// GAMEMODE NUMBER 9
-[GameModes\Number 9\Enable\Version 1]
+[GameModes\Force a Gamemode\Number 9]
 author=YukiXXL
 patch=1,EE,20122B48,extended,24040009
 
-[GameModes\Number 9\Enable\Version 2]
+// GAMEMODE NUMBER 9
+[GameModes\Number 9\Enable\Alternative]
 author=YukiXXL
-description=Character Select can be used with this one.
+description=Character Selecter below can be used with this one.
 patch=1,EE,10123670,extended,0C04A25A
 
 // LEFT CHAR
@@ -457,7 +457,7 @@ patch=1,EE,20122304,extended,8FA30000
 author=YukiXXL
 patch=1,EE,001222FC,extended,24040006
 
-[Character Select\Fix character selection]
+[Character Select\Fix Cursor Select]
 author=YukiXXL
 description=Enables selecting characters.
 patch=1,EE,2015DE18,extended,0C04279C
@@ -526,12 +526,9 @@ patch=1,EE,0012ADAC,extended,24040000
 
 [Character Select\Stages\Enable Selecting Stages]
 author=YukiXXL
-//Enable selecting stages
-patch=1,EE,203A9BC0,extended,0015DCC0
-//Allow selecting a stage in CharSelect for Arcade
-patch=1,EE,2012A92C,extended,00000000
-//Allow selecting a stage in CharSelect for GM. 9
-patch=1,EE,20128990,extended,00000000
+patch=1,EE,203A9BC0,extended,0015DCC0 //Enable selecting stages
+patch=1,EE,2012A92C,extended,00000000 //Allow selecting a stage in CharSelect for Arcade
+patch=1,EE,20128990,extended,00000000 //Allow selecting a stage in CharSelect for GM. 9
 
 [Character Select\Stages\Unlock all stages]
 author=YukiXXL
@@ -561,11 +558,11 @@ patch=1,EE,0015E214,extended,24040000
 author=YukiXXL
 patch=1,EE,0015E1CC,extended,24040000
 
-[Character Select\Table\31 characters\Jinpachi layout]
+[Character Select\Table\31 characters\Jinpachi layout (Visual Only)]
 author=YukiXXL
 patch=1,EE,2019A9E8,extended,26E5DDA0
 
-[Character Select\Table\31 characters\Unfinished]
+[Character Select\Table\31 characters\Unfinished (32 characters)]
 author=YukiXXL
 description=Broken/Missing character table visual.
 patch=1,EE,0015E204,extended,24020006

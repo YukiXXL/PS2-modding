@@ -49,7 +49,7 @@ patch=1,EE,206C182C,extended,24020001
 
 // DREADZONE INTERIOR
 
-[DreadZone Interior\Missions\Mission Always Visible]
+[DreadZone Interior\Missions\Missions Always Visible]
 author=YukiXXL
 patch=1,EE,E0020010,extended,005542E0
 patch=1,EE,205542D8,extended,24020001

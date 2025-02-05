@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=MISC - GAMEPLAY
-
-//Load Hidden Music stream in game
-patch=1,EE,201DDA60,extended,8C44D160
-
-//Apply Fall Damage
-patch=1,EE,202042B0,extended,24030001
