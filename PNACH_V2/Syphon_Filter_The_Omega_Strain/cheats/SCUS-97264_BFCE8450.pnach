@@ -1,8 +1,10 @@
 gametitle=Syphon Filter: The Omega Strain November Demo (NTSC-U)
 
 // CHEATS
-// - 100 %
-[Cheats\COMPLETE]
+
+// - PROFILE
+
+[Cheats\Profile\COMPLETE]
 author=YukiXXL
 description=Unlocks everything possible.
 //Play once for all objectives
@@ -26,13 +28,17 @@ patch=1,EE,203045D8,extended,AE220010
 patch=1,EE,203045B8,extended,24020000
 patch=1,EE,203045C0,extended,AE220014
 
-[Cheats\Open Weapons]
-author=YukiXXL
-patch=1,EE,2030149C,extended,00000000
+// - MENUS
 
-[Cheats\Open Levels]
+[Cheats\Menus\Open Levels]
 author=YukiXXL
 patch=1,EE,20301920,extended,24020001
+
+// - GAMEPLAY
+
+[Cheats\Gameplay\Open Weapons]
+author=YukiXXL
+patch=1,EE,2030149C,extended,00000000
 
 // ADDONS
 
@@ -47,39 +53,66 @@ patch=1,EE,00170528,extended,2402003C
 patch=1,EE,00170568,extended,2402003C
 patch=1,EE,001707E0,extended,2402003C
 
-// MISC
+// GAMEPLAY
+
+// - BONUS MISSIONS
+
+[Gameplay\Bonus Missions\kUseLevelCharacter]
+author=YukiXXL
+description=Allow own agent on Italy.
+patch=1,EE,20452610,extended,00000000
+
 // - NPCs
-[Misc\NPCs\Enable All Spawns\Enable]
+
+[Gameplay\NPCs\Enable All Spawns\Enable]
 author=YukiXXL
 patch=1,EE,201AA46C,extended,00000000
-[Misc\NPCs\Enable All Spawns\Memory fix]
+
+[Gameplay\NPCs\Enable All Spawns\Memory fix]
 author=YukiXXL
 description=Fixes crashing and black screen when dying.
 patch=1,EE,001AA57C,extended,1440000E
 
 // - PLAYER - APPEARANCE
-[Misc\Player\Appearance\Random outfits during missions]
+
+[Gameplay\Player\Appearance\Random outfits during missions]
 author=YukiXXL
 patch=1,EE,203E535C,extended,10400020
 
-[Misc\Player\Appearance\Disable mission disguises]
+[Gameplay\Player\Appearance\Disable mission disguises]
 author=YukiXXL
 patch=1,EE,003E5368,extended,24420000
 
-// - PLAYER - BONUS MISSIONS
-[Misc\Player\Bonus Missions\kUseLevelCharacter]
-author=YukiXXL
-description=Allow own agent on Italy.
-patch=1,EE,20452610,extended,00000000
-
 // - PLAYER - RADIO COMMS
-[Misc\Player\Radio Comms\Disable radio logs]
+
+[Gameplay\Player\Radio Comms\Disable radio logs]
 author=YukiXXL
 patch=1,EE,201BBF58,extended,00000000
 
-// OFFLINE PRESERVATION
+// ONLINE
 
-[Offline Preservation Mod\Enable]
+[Online\DNAS Bypass]
+author=YukiXXL
+patch=1,EE,20343940,extended,03e00008
+patch=1,EE,20343944,extended,00000000
+
+[Online\Enable all missions online]
+author=YukiXXL
+//All missions online
+patch=1,EE,20275840,extended,24020000
+patch=1,EE,20275864,extended,24020000
+patch=1,EE,204525CC,extended,00000003 //Lobby IDs fix
+patch=1,EE,00274B48,extended,28410018 //Bypass Level ID check
+
+[Online\Start with only one player]
+author=YukiXXL
+patch=1,EE,00283dc8,word,28410001
+
+// MODS
+
+// - OFFLINE PRESERVATION
+
+[Mods\Offline Preservation Mod\Enable]
 author=YukiXXL
 description=Online-like experience offline.
 // MENUS
@@ -94,7 +127,6 @@ patch=1,EE,20281F00,extended,AC220468
 //Online, Offline enabler
 patch=1,EE,00172C74,extended,A0232204
 patch=1,EE,00172CDC,extended,A0202204
-// - FIXES
 //Pick Region crash fix
 patch=1,EE,2028F448,extended,00000000
 // - MENUS
@@ -102,34 +134,27 @@ patch=1,EE,2028F448,extended,00000000
 patch=1,EE,0027D7FC,extended,24A52430
 patch=1,EE,0027D804,extended,24C62448
 patch=1,EE,202800BC,extended,00000000
-//Min num agents = 1
-patch=1,EE,0028255C,extended,24050001
+patch=1,EE,0028255C,extended,24050001 //Min num agents = 1
 // - MISSION SETUP
 //Enable Mission Setup & Join Mission offline
 patch=1,EE,002749C0,extended,10400005
 patch=1,EE,00274B74,extended,10400008
-//Join any mission
-patch=1,EE,20274B60,extended,00000000
-//Join Training Center
-patch=1,EE,00274B48,extended,28410018
+patch=1,EE,20274B60,extended,00000000 //Join any mission
+patch=1,EE,00274B48,extended,28410018 //Join Training Center
 // GAMEPLAY
 //Enable online objectives + dialogues
 patch=1,EE,00130068,extended,90222204
 //Team Par
 patch=1,EE,00419EF0,extended,90252204
 patch=1,EE,00419FC4,extended,90222204
-//Write Time
-patch=1,EE,00304218,extended,90222204
+patch=1,EE,00304218,extended,90222204 //Write Time
 //Buddy climb
 patch=1,EE,0016B0B4,extended,90222204
-//Animation change
-patch=1,EE,00188CFC,extended,2403002E
+patch=1,EE,00188CFC,extended,2403002E //Animation change
 // CODENAME STUFF
 // - GAMEPLAY
-//Quickchat enabled
-patch=1,EE,0022BBEC,extended,90222204
-//Show correct codename
-patch=1,EE,00290428,extended,90222204
+patch=1,EE,0022BBEC,extended,90222204 //Quickchat enabled
+patch=1,EE,00290428,extended,90222204 //Show correct codename
 //Minimap
 patch=1,EE,00251EF8,extended,90222204
 patch=1,EE,0027A2EC,extended,90232204
@@ -166,34 +191,13 @@ patch=1,EE,2017E7E4,extended,244221D4
 patch=1,EE,2017E800,extended,3C020051
 patch=1,EE,2017E804,extended,244221D4
 
-[Offline Preservation Mod\Check Team objectives]
+[Mods\Offline Preservation Mod\Check Team objectives]
 author=YukiXXL
 description=Write Par Time if Team objectives are also completed.
 patch=1,EE,00304130,extended,90252204
 
-[Offline Preservation Mod\Skin based on codename]
+[Mods\Offline Preservation Mod\Skin based on codename]
 author=YukiXXL
 description=Bonus missions "online"
 patch=1,EE,001ABDB0,extended,90242204
 patch=1,EE,001ABDF0,extended,90222204
-
-// ONLINE
-
-[Online\DNAS Bypass]
-author=YukiXXL
-patch=1,EE,20343940,extended,03e00008
-patch=1,EE,20343944,extended,00000000
-
-[Online\Enable all missions online]
-author=YukiXXL
-//All missions online
-patch=1,EE,20275840,extended,24020000
-patch=1,EE,20275864,extended,24020000
-//Lobby IDs fix
-patch=1,EE,204525CC,extended,00000003
-//Bypass Level ID check
-patch=1,EE,00274B48,extended,28410018
-
-[Online\Start with only one player]
-author=YukiXXL
-patch=1,EE,00283dc8,word,28410001

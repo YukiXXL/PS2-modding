@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Virus (NTSC-K)
-comment=ADDONS - MENUS
-
-//Enable TEST button
-patch=1,EE,202A5370,extended,A22F005D
-
-//Awards 2 ratings/ranks on the back (Awards 3)
-patch=1,EE,0049F2EC,extended,0000FF02

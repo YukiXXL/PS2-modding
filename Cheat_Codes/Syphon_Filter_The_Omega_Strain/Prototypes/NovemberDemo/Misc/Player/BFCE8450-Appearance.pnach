@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo
-comment=MISC: PLAYER - APPEARANCE
-
-//Random outfits during missions
-patch=1,EE,203E535C,extended,10400020
-
-//Disable mission disguises
-patch=1,EE,003E5368,extended,24420000

@@ -114,9 +114,9 @@ patch=1,EE,26084E58,extended,00000000
 [Gameplay\Enable female sounds for female models]
 author=YukiXXL
 description=Cheerleader, Vampire and Nesbot
-patch=1,EE,20694854,byte,1
-patch=1,EE,20694934,byte,1
-patch=1,EE,2069496C,byte,1
+patch=1,EE,00694854,extended,00000001
+patch=1,EE,00694934,extended,00000001
+patch=1,EE,0069496C,extended,00000001
 
 [Gameplay\Get Medals on Easy Difficulty]
 author=YukiXXL
@@ -750,19 +750,18 @@ patch=1,EE,203BF590,extended,0074656E
 
 [Engine Testbed\Mini Sam]
 author=YukiXXL
-description=Giant Hornet models at Rlevel3_1.
+description=Mini Sam models at Rlevel4_4b.
 //rlevel4_4b
 patch=1,EE,203BF574,extended,5F346C65
 patch=1,EE,103BF578,extended,00006234
 //minisam
 patch=1,EE,203BF588,extended,696E696D
 patch=1,EE,203BF58C,extended,006D6173
-//Y-axis fix
-patch=1,EE,1028037C,extended,3C01B000
+patch=1,EE,1028037C,extended,3C01B000 //Y-axis fix
 
 [Engine Testbed\Minotaur Gladiator]
 author=YukiXXL
-description=Giant Hornet models at Rlevel3_1.
+description=Minotaur Gladiator models at Rlevel4_4b.
 //rlevel4_4b
 patch=1,EE,203BF574,extended,5F346C65
 patch=1,EE,103BF578,extended,00006234
@@ -772,18 +771,14 @@ patch=1,EE,203BF58C,extended,72756174
 patch=1,EE,203BF590,extended,64616C47
 patch=1,EE,203BF594,extended,6F746169
 patch=1,EE,103BF598,extended,00000072
-//Y-axis fix
-patch=1,EE,1028037C,extended,3C01B000
-//Radius
-patch=1,EE,10280388,extended,3C01C340
-//Distance from each other
-patch=1,EE,102804B0,extended,3C013EAA
-//Amount
-patch=1,EE,002804BC,extended,2A420013
+patch=1,EE,1028037C,extended,3C01B000 //Y-axis fix
+patch=1,EE,10280388,extended,3C01C340 //Radius
+patch=1,EE,102804B0,extended,3C013EAA //Distance from each other
+patch=1,EE,002804BC,extended,2A420013 //Amount
 
 [Engine Testbed\Sirian Dark Lord]
 author=YukiXXL
-description=Giant Hornet models at Rlevel3_1.
+description=Sirian Dark Lord models at Alevel12_4.
 //Alevel12_4
 patch=1,EE,003BF570,extended,76656C41
 patch=1,EE,203BF574,extended,32316C65
@@ -793,9 +788,6 @@ patch=1,EE,203BF588,extended,69726953
 patch=1,EE,203BF58C,extended,61446E61
 patch=1,EE,203BF590,extended,6F4C6B72
 patch=1,EE,103BF594,extended,00006472
-//Radius
-patch=1,EE,10280388,extended,3C01C4A0
-//Distance from each other
-patch=1,EE,102804B0,extended,3C013E44
-//Amount
-patch=1,EE,002804BC,extended,2A420021
+patch=1,EE,10280388,extended,3C01C4A0 //Radius
+patch=1,EE,102804B0,extended,3C013E44 //Distance from each other
+patch=1,EE,002804BC,extended,2A420021 //Amount

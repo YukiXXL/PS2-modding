@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo #1 (Ripped)
+comment=GAMEPLAY - MENUS
+
+//Multi-Status Display (End Screen)
+patch=1,EE,002EB10C,extended,902201BC
+patch=1,EE,002EB134,extended,28420001

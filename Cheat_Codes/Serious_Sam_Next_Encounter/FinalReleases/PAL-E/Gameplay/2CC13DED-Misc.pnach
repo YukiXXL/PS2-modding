@@ -2,9 +2,9 @@ gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 comment=GAMEPLAY - MISC
 
 //Enable female sounds for female models ( Cheerleader, Vampire and Nesbot )
-patch=1,EE,00694854,byte,1
-patch=1,EE,00694934,byte,1
-patch=1,EE,0069496C,byte,1
+patch=1,EE,00694854,extended,00000001
+patch=1,EE,00694934,extended,00000001
+patch=1,EE,0069496C,extended,00000001
 
 //Get Medals on Easy Difficulty
 patch=1,EE,20270F98,extended,04410005

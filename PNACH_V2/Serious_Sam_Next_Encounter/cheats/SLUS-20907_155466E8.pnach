@@ -114,9 +114,9 @@ patch=1,EE,26084E58,extended,00000000
 [Gameplay\Enable female sounds for female models]
 author=YukiXXL
 description=Cheerleader, Vampire and Nesbot
-patch=1,EE,20694014,byte,1
-patch=1,EE,206940F4,byte,1
-patch=1,EE,2069412C,byte,1
+patch=1,EE,00694014,extended,00000001
+patch=1,EE,006940F4,extended,00000001
+patch=1,EE,0069412C,extended,00000001
 
 [Gameplay\Get Medals on Easy Difficulty]
 author=YukiXXL
@@ -192,7 +192,7 @@ patch=1,EE,20212400,extended,24030000
 [Gameplay\Single and Coop\Killing Spree Music\Disable]
 patch=1,EE,20212400,extended,24030001
 
-// -- ALTERNATIVE SCREEN MODE
+// - ALTERNATIVE SCREEN MODE
 
 [Gameplay\Alternative Screen Mode\Enable]
 author=YukiXXL
@@ -373,7 +373,6 @@ patch=1,EE,00215A60,extended,0C0A553E //Fix crashes on loading
 patch=1,EE,0021C494,extended,0C0A553E //Fix crashes when trying to open Scores
 patch=1,EE,0021D1CC,extended,0C0A553E //Fix displaying the list
 patch=1,EE,00218C28,extended,0C0A553E //Displays correct player list
-//Chat
 patch=1,EE,00217250,extended,0C0A553E //Enables Chat
 //Pause menu
 patch=1,EE,00259FE8,extended,0C0A553E //Don't pause the game
@@ -751,19 +750,18 @@ patch=1,EE,203BE920,extended,0074656E
 
 [Engine Testbed\Mini Sam]
 author=YukiXXL
-description=Giant Hornet models at Rlevel3_1.
+description=Mini Sam models at Rlevel4_4b.
 //rlevel4_4b
 patch=1,EE,203BE904,extended,5F346C65
 patch=1,EE,103BE908,extended,00006234
 //minisam
 patch=1,EE,203BE918,extended,696E696D
 patch=1,EE,203BE91C,extended,006D6173
-//Y-axis fix
-patch=1,EE,1027FB5C,extended,3C01B000
+patch=1,EE,1027FB5C,extended,3C01B000 //Y-axis fix
 
 [Engine Testbed\Minotaur Gladiator]
 author=YukiXXL
-description=Giant Hornet models at Rlevel3_1.
+description=Minotaur Gladiator models at Rlevel4_4b.
 //rlevel4_4b
 patch=1,EE,203BE904,extended,5F346C65
 patch=1,EE,103BE908,extended,00006234
@@ -773,18 +771,14 @@ patch=1,EE,203BE91C,extended,72756174
 patch=1,EE,203BE920,extended,64616C47
 patch=1,EE,203BE924,extended,6F746169
 patch=1,EE,103BE928,extended,00000072
-//Y-axis fix
-patch=1,EE,1027FB5C,extended,3C01B000
-//Radius
-patch=1,EE,1027FB68,extended,3C01C340
-//Distance from each other
-patch=1,EE,1027FC90,extended,3C013EAA
-//Amount
-patch=1,EE,0027FC9C,extended,2A420013
+patch=1,EE,1027FB5C,extended,3C01B000 //Y-axis fix
+patch=1,EE,1027FB68,extended,3C01C340 //Radius
+patch=1,EE,1027FC90,extended,3C013EAA //Distance from each other
+patch=1,EE,0027FC9C,extended,2A420013 //Amount
 
 [Engine Testbed\Sirian Dark Lord]
 author=YukiXXL
-description=Giant Hornet models at Rlevel3_1.
+description=Sirian Dark Lord models at Alevel12_4.
 //Alevel12_4
 patch=1,EE,003BE900,extended,76656C41
 patch=1,EE,203BE904,extended,32316C65
@@ -794,9 +788,6 @@ patch=1,EE,203BE918,extended,69726953
 patch=1,EE,203BE91C,extended,61446E61
 patch=1,EE,203BE920,extended,6F4C6B72
 patch=1,EE,103BE924,extended,00006472
-//Radius
-patch=1,EE,1027FB68,extended,3C01C4A0
-//Distance from each other
-patch=1,EE,1027FC90,extended,3C013E44
-//Amount
-patch=1,EE,0027FC9C,extended,2A420021
+patch=1,EE,1027FB68,extended,3C01C4A0 //Radius
+patch=1,EE,1027FC90,extended,3C013E44 //Distance from each other
+patch=1,EE,0027FC9C,extended,2A420021 //Amount

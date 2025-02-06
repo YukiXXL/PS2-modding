@@ -1,7 +1,9 @@
 gametitle=Syphon Filter: The Omega Strain Individual Demo (NTSC-U)
 
 // CHEATS
-// - 100 %
+
+// - PROFILE
+
 [Cheats\COMPLETE]
 author=YukiXXL
 description=Unlock Everything possible.
@@ -26,37 +28,34 @@ patch=1,EE,203C44F0,extended,AE220010
 patch=1,EE,203C44D0,extended,24020000
 patch=1,EE,203C44D8,extended,AE220014
 
-// ADDONS
-// - MENUS
-[Addons\Menus\BOOT_FRONTEND]
+// MENUS
+
+[Menus\BOOT_FRONTEND]
 author=YukiXXL
 description=Enable booting into Main Menu.
 patch=1,EE,202456B4,extended,00000000
 
-[Addons\Menus\Enable LAN button]
+[Menus\Enable LAN button]
 author=YukiXXL
 patch=1,EE,20340058,extended,8C2478E8
 patch=1,EE,204E5D18,byte,0
 
-[Addons\Menus\Enable Mission Setup]
+[Menus\Enable Mission Setup]
 author=YukiXXL
 patch=1,EE,00338E4C,extended,9082002D
 
-// - PLAYER
-[Addons\Player\Enable Quickchat + Buddy Climb Solo]
+// GAMEPLAY - PLAYER
+
+[Gameplay\Player\Enable Quickchat + Buddy Climb Solo]
 author=YukiXXL
-//FakeByte
-patch=1,EE,004B09D4,byte,1
-//Quickchat
-patch=1,EE,002F0F6C,extended,902209D4
-//Buddy climb
-patch=1,EE,00240784,extended,902209D4
-//Animation change
-patch=1,EE,00258174,extended,2403002E
+patch=1,EE,004B09D4,byte,1 //FakeByte
+patch=1,EE,002F0F6C,extended,902209D4 //Quickchat
+patch=1,EE,00240784,extended,902209D4 //Buddy climb
+patch=1,EE,00258174,extended,2403002E //Animation change
 
 // ONLINE
 
-[Addons\Online\Enable online lobby]
+[Online\Enable online lobby]
 author=YukiXXL
 patch=1,EE,2033FA6C,extended,24A53980
 patch=1,EE,2033FA74,extended,24C63998

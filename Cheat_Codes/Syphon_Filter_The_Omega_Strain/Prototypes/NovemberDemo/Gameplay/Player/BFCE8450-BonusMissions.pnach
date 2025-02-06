@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=GAMEPLAY - PLAYER - BONUS MISSIONS
+
+//kUseLevelCharacter
+patch=1,EE,20452610,extended,00000000

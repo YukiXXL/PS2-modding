@@ -2,7 +2,9 @@ gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
 
 // CHEATS
 
-[Cheats\COMPLETE]
+// - PROFILE
+
+[Cheats\Profile\COMPLETE]
 author=YukiXXL
 description=Unlock Everything possible.
 //Play once for all objectives
@@ -26,13 +28,17 @@ patch=1,EE,20336878,extended,AE020010
 patch=1,EE,20336858,extended,24020000
 patch=1,EE,20336860,extended,AE020014
 
+// - MENUS
+
+[Cheats\Menus\Open levels]
+author=YukiXXL
+patch=1,EE,20333910,extended,24020001
+
+// - GAMEPLAY
+
 [Cheats\Open weapons]
 author=YukiXXL
 patch=1,EE,2033343C,extended,24020001
-
-[Cheats\Open levels]
-author=YukiXXL
-patch=1,EE,20333910,extended,24020001
 
 [Cheats\Double armor]
 author=YukiXXL
@@ -41,13 +47,6 @@ patch=1,EE,2048A0C8,extended,000001F4
 [Cheats\Stop timer]
 author=YukiXXL
 patch=1,EE,2023A944,extended,24003634
-
-// ONLINE
-
-[Online\All levels available in online mode]
-author=YukiXXL
-patch=1,EE,20296728,extended,24020000
-patch=1,EE,2029674C,extended,24020000
 
 // ADDONS
 
@@ -60,51 +59,61 @@ patch=1,EE,20505B28,byte,0
 author=YukiXXL
 patch=1,EE,004928AC,extended,0000FF02
 
-// MISC
+// GAMEPLAY
+
 // - WEATHER - TORONTO 3
-[Misc\Change weather on missions that support it\Toronto 3\Myanmar Fog]
+[Gameplay\Change weather on missions that support it\Toronto 3\Myanmar Fog]
 author=YukiXXL
 patch=1,EE,10232778,extended,0C08CAC4
 
-[Misc\Change weather on missions that support it\Toronto 3\Tokyo Rain]
+[Gameplay\Change weather on missions that support it\Toronto 3\Tokyo Rain]
 author=YukiXXL
 patch=1,EE,10232778,extended,0C08CA5C
 
-[Misc\Change weather on missions that support it\Toronto 3\Lorelei Rain]
+[Gameplay\Change weather on missions that support it\Toronto 3\Lorelei Rain]
 author=YukiXXL
 patch=1,EE,10232778,extended,0C08CA24
 
-[Misc\Change weather on missions that support it\Toronto 3\Snowing]
+[Gameplay\Change weather on missions that support it\Toronto 3\Snowing]
 author=YukiXXL
 patch=1,EE,10232778,extended,0C08C9EC
 
-[Misc\Change weather on missions that support it\Toronto 3\Atmospheric effect]
+[Gameplay\Change weather on missions that support it\Toronto 3\Atmospheric effect]
 author=YukiXXL
 patch=1,EE,10232778,extended,0C08CB1C
 // - WEATHER - BELARUS 2
-[Misc\Change weather on missions that support it\Belarus 2\Myanmar Fog]
+[Gameplay\Change weather on missions that support it\Belarus 2\Myanmar Fog]
 author=YukiXXL
 patch=1,EE,10232718,extended,0C08CAC4
 
-[Misc\Change weather on missions that support it\Belarus 2\Tokyo Rain]
+[Gameplay\Change weather on missions that support it\Belarus 2\Tokyo Rain]
 author=YukiXXL
 patch=1,EE,10232718,extended,0C08CA5C
 
-[Misc\Change weather on missions that support it\Belarus 2\Lorelei Rain]
+[Gameplay\Change weather on missions that support it\Belarus 2\Lorelei Rain]
 author=YukiXXL
 patch=1,EE,10232718,extended,0C08CA24
 
-[Misc\Change weather on missions that support it\Belarus 2\Toronto 3 Fog]
+[Gameplay\Change weather on missions that support it\Belarus 2\Toronto 3 Fog]
 author=YukiXXL
 patch=1,EE,10232718,extended,0C08CA94
 
-[Misc\Change weather on missions that support it\Belarus 2\Atmospheric effect]
+[Gameplay\Change weather on missions that support it\Belarus 2\Atmospheric effect]
 author=YukiXXL
 patch=1,EE,10232718,extended,0C08CB1C
 
-// OFFLINE PRESERVATION
+// ONLINE
 
-[Offline Preservation Mod\Enable]
+[Online\All levels available in online mode]
+author=YukiXXL
+patch=1,EE,20296728,extended,24020000
+patch=1,EE,2029674C,extended,24020000
+
+// MODS
+
+// - OFFLINE PRESERVATION
+
+[Mods\Offline Preservation Mod\Enable]
 author=YukiXXL
 description=Online-like experience in offline.
 // MENUS
@@ -115,43 +124,35 @@ patch=1,EE,202A7298,extended,2484FFFF
 patch=1,EE,202A729C,extended,AC244518
 //SuccessLobbyConnect
 patch=1,EE,002A72B0,extended,12400046
-//Somekind of error fix
-patch=1,EE,2012EEA8,extended,00000000
+patch=1,EE,2012EEA8,extended,00000000 //Somekind of error fix
 //Online, Offline enabler
 patch=1,EE,00134DC4,extended,A0204884
 patch=1,EE,001783D8,extended,A0234884
 // - FIXES
-//Host Game fix
-patch=1,EE,2033E110,extended,00000000
-//Pick Region crash fix
-patch=1,EE,202B6060,extended,00000000
+patch=1,EE,2033E110,extended,00000000 //Host Game fix
+patch=1,EE,202B6060,extended,00000000 //Pick Region crash fix
 // - MENUS
 //Enable Online lobby in offline
 patch=1,EE,0029F914,extended,24A5ACD0
 patch=1,EE,0029F91C,extended,24C6ACE8
 patch=1,EE,202A3FAC,extended,00000000
-//Min num agents = 1
-patch=1,EE,002A788C,extended,24050001
+patch=1,EE,002A788C,extended,24050001 //Min num agents = 1
 // - MISSION SETUP
 //Enable Mission Setup & Join Mission offline
 patch=1,EE,2033CEF8,extended,00000000
 patch=1,EE,2033CF00,extended,24020001
-//Join any mission
-patch=1,EE,20295394,extended,00000000
+patch=1,EE,20295394,extended,00000000 //Join any mission
 // GAMEPLAY
 //Enable online objectives + dialogues
 patch=1,EE,0012F818,extended,90224884
 //Team Par
 patch=1,EE,00460F88,extended,90254884
 patch=1,EE,0046105C,extended,90224884
-//Check if completed Par Time
-patch=1,EE,00464574,extended,90254884
-//Write Time
-patch=1,EE,00336440,extended,90224884
+patch=1,EE,00464574,extended,90254884 //Check if completed Par Time
+patch=1,EE,00336440,extended,90224884 //Write Time
 //Buddy Climb
 patch=1,EE,0016FFC4,extended,90224884
-//Animation Change
-patch=1,EE,0018D774,extended,24030031
+patch=1,EE,0018D774,extended,24030031 //Animation Change
 // CODENAME STUFF
 // - FIXES
 //Belarus 2 C4 stacks bug fix
@@ -161,14 +162,10 @@ patch=1,EE,20178C18,extended,00000000
 patch=1,EE,0013489C,extended,90224884
 patch=1,EE,0013492C,extended,10400008
 // - GAMEPLAY
-//Show correct codename
-patch=1,EE,002B78B8,extended,90224884
-//Radio comms
-patch=1,EE,0018C854,extended,90224884
-//Out of time (Team)
-patch=1,EE,0023A950,extended,90304884
-//Show codename on the right
-patch=1,EE,0045EE9C,extended,90224884
+patch=1,EE,002B78B8,extended,90224884 //Show correct codename
+patch=1,EE,0018C854,extended,90224884 //Radio comms
+patch=1,EE,0023A950,extended,90304884 //Out of time (Team)
+patch=1,EE,0045EE9C,extended,90224884 //Show codename on the right
 //Minimap
 patch=1,EE,0026D9F4,extended,90234884
 patch=1,EE,002A19D4,extended,90234884
@@ -192,12 +189,9 @@ patch=1,EE,004643F8,extended,90224884
 //START button
 patch=1,EE,002A84D4,extended,90224884
 //END MISSION
-//Marks and Eff award
-patch=1,EE,004653A0,extended,90224884
-//<Codename> managed to not get killed
-patch=1,EE,00465580,extended,90224884
-//Medals and stuff
-patch=1,EE,00462494,extended,90224884
+patch=1,EE,004653A0,extended,90224884 //Marks and Eff award
+patch=1,EE,00465580,extended,90224884 //<Codename> managed to not get killed
+patch=1,EE,00462494,extended,90224884 //Medals and stuff
 // - COUNTDOWN
 //SetStatus
 patch=1,EE,20184CA0,extended,3C030057
@@ -214,7 +208,7 @@ patch=1,EE,002A99AC,extended,90224884
 patch=1,EE,002C6760,extended,90234884
 patch=1,EE,002C719C,extended,90224884
 
-[Offline Preservation Mod\Check Team objectives]
+[Mods\Offline Preservation Mod\Check Team objectives]
 author=YukiXXL
 description=Write Par Time if Team objectives are also completed.
 patch=1,EE,00336358,extended,90254884

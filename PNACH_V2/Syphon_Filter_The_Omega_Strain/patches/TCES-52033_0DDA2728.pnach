@@ -1,6 +1,7 @@
 gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
 
 // WIDESCREEN
+
 [Patches\Widescreen 16:9]
 author=YukiXXL
 gsaspectratio=16:9
@@ -13,6 +14,7 @@ patch=1,EE,203907E0,extended,46031840
 patch=1,EE,20390854,extended,E603007C
 
 // OTHER
+
 [Patches\NV and Flashlight Fix]
 author=YukiXXL
 description=Cop2 problems.

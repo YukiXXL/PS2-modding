@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=CHEATS - MENUS
+
+//Open Levels
+patch=1,EE,20338F6C,extended,24020001

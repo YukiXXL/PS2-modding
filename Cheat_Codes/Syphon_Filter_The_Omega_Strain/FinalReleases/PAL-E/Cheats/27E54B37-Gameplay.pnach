@@ -1,0 +1,14 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=CHEATS - GAMEPLAY
+
+//Plant infinite C4s on B2
+patch=1,EE,203FB290,extended,00000000
+
+//Write Par Time with minimum objectives completed
+patch=1,EE,2033BB14,extended,64140001
+
+//Open Weapons
+patch=1,EE,20338AFC,extended,24020001
+
+//Invisible
+patch=1,EE,2016B53C,extended,0805AE3E

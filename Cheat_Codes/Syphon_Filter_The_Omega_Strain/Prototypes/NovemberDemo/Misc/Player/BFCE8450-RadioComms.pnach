@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo
-comment=MISC: PLAYER - RADIO COMMS
-
-//Disable radio logs
-patch=1,EE,201BBF58,extended,00000000

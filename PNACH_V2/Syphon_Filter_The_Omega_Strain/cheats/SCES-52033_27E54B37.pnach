@@ -1,8 +1,10 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
 
 // CHEATS
-// - 100
-[Cheats\COMPLETE]
+
+// - PROFILE
+
+[Cheats\Profile\COMPLETE]
 author=YukiXXL
 description=Unlock Everything possible.
 //Play once for all objectives
@@ -26,8 +28,19 @@ patch=1,EE,2033BF78,extended,AE020010
 patch=1,EE,2033BF58,extended,24020000
 patch=1,EE,2033BF60,extended,AE020014
 
-// - GAMEHACKING
-[Cheats\Levitation Code]
+// - MENUS
+
+[Cheats\Menus\Unlock All Levels]
+author=gamehacking.org
+patch=1,EE,20338FC0,extended,2002FFFF
+
+[Cheats\Menus\Open Levels]
+author=gamehacking.org
+patch=1,EE,20338F6C,extended,24020001
+
+// - GAMEPLAY
+
+[Cheats\Gameplay\Levitation Code]
 author=gamehacking.org
 description=Press L3 To Activate, Press R3 To Stop. Whilst In Levitation Mode; Press L3+Triangle To Go Up; L3+X To Go Down.
 patch=1,EE,100FFE00,extended,00000000
@@ -51,7 +64,7 @@ patch=1,EE,200FFE0C,extended,46020000
 patch=1,EE,200FFE10,extended,E4400008
 patch=1,EE,200FFE14,extended,08067E7F
 
-[Cheats\Quick Hero Only (X3)]
+[Cheats\Gameplay\Quick Hero Only (X3)]
 author=gamehacking.org
 patch=1,EE,200FFF00,extended,3C030050
 patch=1,EE,200FFF04,extended,8C63F658
@@ -63,7 +76,7 @@ patch=1,EE,200FFF1C,extended,44810000
 patch=1,EE,200FFF20,extended,080F3D19
 patch=1,EE,203CF460,extended,0803FFC0
 
-[Cheats\Unlimited Health]
+[Cheats\Gameplay\Unlimited Health]
 author=gamehacking.org
 patch=1,EE,200C2000,extended,24052710
 patch=1,EE,200C2004,extended,44850000
@@ -72,37 +85,37 @@ patch=1,EE,200C200C,extended,0808E824
 patch=1,EE,200C2010,extended,E6200040
 patch=1,EE,20242E00,extended,0C030800
 
-[Cheats\Unlimited Armor]
+[Cheats\Gameplay\Unlimited Armor]
 author=gamehacking.org
 patch=1,EE,20187E18,extended,00000000
 
-[Cheats\Unlimited Ammo (No Reload)]
+[Cheats\Gameplay\Unlimited Ammo (No Reload)]
 author=gamehacking.org
 patch=1,EE,2014404C,extended,00000000
 
-[Cheats\Unlimited Grenades]
+[Cheats\Gameplay\Unlimited Grenades]
 author=gamehacking.org
 patch=1,EE,20145508,extended,24003634
 
-[Cheats\Invisible (No Awareness)]
+[Cheats\Gameplay\Invisible (No Awareness)]
 author=gamehacking.org
 patch=1,EE,2016B53C,extended,0805AE3E
 
-[Cheats\Non Aggressive AI]
+[Cheats\Gameplay\Non Aggressive AI]
 author=gamehacking.org
 patch=1,EE,2016C8C0,extended,03E00008
 
-[Cheats\Freeze Timer]
+[Cheats\Gameplay\Freeze Timer]
 author=gamehacking.org
 patch=1,EE,2023B720,extended,AE0006DC
 patch=1,EE,2023B724,extended,44800000
 
-[Cheats\Stop Timer]
+[Cheats\Gameplay\Stop Timer]
 author=gamehacking.org
 patch=1,EE,2023AE8C,extended,3C104270
 patch=1,EE,2023AE94,extended,44900000
 
-[Cheats\1 Hit Kill]
+[Cheats\Gameplay\1 Hit Kill]
 author=gamehacking.org
 patch=1,EE,200FFEC0,extended,3C010050
 patch=1,EE,200FFEC4,extended,8C21F658
@@ -111,7 +124,7 @@ patch=1,EE,200FFED0,extended,08061F42
 patch=1,EE,200FFED8,extended,08061EFE
 patch=1,EE,20187BF0,extended,0803FFB0
 
-[Cheats\God Mode]
+[Cheats\Gameplay\God Mode]
 author=gamehacking.org
 patch=1,EE,200FFFC0,extended,3C010050
 patch=1,EE,200FFFC4,extended,8C21F658
@@ -120,40 +133,85 @@ patch=1,EE,200FFFD0,extended,E6800040
 patch=1,EE,200FFFD8,extended,080FB962
 patch=1,EE,203EE580,extended,0803FFF0
 
-[Cheats\Open Weapons]
+[Cheats\Gameplay\Open Weapons]
 author=gamehacking.org
 patch=1,EE,20338AFC,extended,24020001
 
-[Cheats\Open Levels]
-author=gamehacking.org
-patch=1,EE,20338F6C,extended,24020001
-
-[Cheats\Unlock All Weapons]
+[Cheats\Gameplay\Unlock All Weapons]
 author=gamehacking.org
 patch=1,EE,20338AF0,extended,2003FFFF
 
-[Cheats\Unlock All Levels]
-author=gamehacking.org
-patch=1,EE,20338FC0,extended,2002FFFF
-
-// - OTHER
-[Cheats\Plant infinite C4s on B2]
+[Cheats\Gameplay\Plant infinite C4s on B2]
 author=YukiXXL
 patch=1,EE,203FB290,extended,00000000
 
-[Cheats\Write Par Time with minimum objectives completed]
+[Cheats\Gameplay\Write Par Time with minimum objectives completed]
 author=YukiXXL
 patch=1,EE,2033BB14,extended,64140001
 
 // ADDONS
+
+[Addons\Progressive Scan]
+author=YukiXXL
+patch=1,EE,00175E08,extended,24030004
+
+[Addons\60 FPS]
+author=YukiXXL
+patch=1,EE,00175E1C,extended,2402003C
+
+// MENUS
+
+[Menus\Enable TEST button]
+author=YukiXXL
+patch=1,EE,202A3DD0,extended,A22F005D
+
+[Menus\Awards 2 ratings/ranks on the back (Awards 3)]
+author=YukiXXL
+patch=1,EE,004997EC,extended,0000FF02
+
+// GAMEPLAY
+
+[Gameplay\Everyone invisible]
+author=YukiXXL
+patch=1,EE,003B514C,extended,24060000
+
+[Gameplay\Count kill as Collateral]
+author=YukiXXL
+patch=1,EE,20187468,extended,1040001F
+
+[Gameplay\Toss Body instead of laying it down]
+author=YukiXXL
+patch=1,EE,00240104,extended,2402002D
+
+// - BONUS MISSIONS
+
+[Gameplay\Bonus Missions\Own agent on Bonus missions]
+author=YukiXXL
+patch=1,EE,404B2590,extended,00040001
+patch=1,EE,00000000,extended,00000000
+
+[Gameplay\Bonus Missions\Enable equiping weapons on Bonus missions]
+author=YukiXXL
+patch=1,EE,404B25B0,extended,00040001
+patch=1,EE,00000000,extended,00000000
+
+[Gameplay\Bonus Missions\Enable picking up weapons on Bonus Missions]
+author=YukiXXL
+patch=1,EE,0014DC18,extended,24040000
+
+[Gameplay\Bonus Missions\Disable forcing weapons on Kyrgzstan and Chechnya]
+author=YukiXXL
+patch=1,EE,20403494,extended,00000000
+
 // - EQUIPMENT MODIFY
-[Addons\Equipment Modify\Enable equiping P.I.D and Goggles]
+
+[Gameplay\Equipment Modify\Enable equiping P.I.D and Goggles]
 author=YukiXXL
 description=Changing weapons from P.I.D crashes the game!
 patch=1,EE,003733A8,extended,28610008
 patch=1,EE,002479B8,extended,28420008
 
-[Addons\Equipment Modify\Equip button shows goggles to equip\Enable]
+[Gameplay\Equipment Modify\Equip button shows goggles to equip\Enable]
 author=YukiXXL
 description=Need "Open Weapons" code in order to see any goggles.
 patch=1,EE,202C85E4,extended,24030006
@@ -161,46 +219,226 @@ patch=1,EE,202C85F0,extended,AEA30084
 patch=1,EE,202C85F4,extended,AEA20088
 patch=1,EE,102C8618,extended,0C0B26D8
 
-[Addons\Equipment Modify\Equip button shows goggles to equip\Show P.I.D instead]
+[Gameplay\Equipment Modify\Equip button shows goggles to equip\Show P.I.D instead]
 author=YukiXXL
 patch=1,EE,002C85E8,extended,24020007
 
-// - GAMEPLAY
-[Addons\Gameplay\Progressive Scan]
-author=YukiXXL
-patch=1,EE,00175E08,extended,24030004
-
-[Addons\Gameplay\60 FPS]
-author=YukiXXL
-patch=1,EE,00175E1C,extended,2402003C
-
-// - MENUS
-[Addons\Menus\Enable TEST button]
-author=YukiXXL
-patch=1,EE,202A3DD0,extended,A22F005D
-
-[Addons\Menus\Awards 2 ratings/ranks on the back (Awards 3)]
-author=YukiXXL
-patch=1,EE,004997EC,extended,0000FF02
-
 // - PLAYER
-[Addons\Player\Auto-aim at legs (Jampack demo like)]
+
+[Gameplay\Player\Auto-aim at legs (Jampack demo like)]
 author=YukiXXL
 description=Headshot ability needed!
 patch=1,EE,0023E614,extended,24510005
 
-[Addons\Player\Enable picking up weapons on Bonus Missions]
-author=YukiXXL
-patch=1,EE,0014DC18,extended,24040000
-
-[Addons\Player\Enable picking up Minigun]
+[Gameplay\Player\Enable picking up Minigun]
 author=YukiXXL
 patch=1,EE,201457B4,extended,24030001
 
-[Addons\Player\Enable dropping Goggles]
+[Gameplay\Player\Enable dropping Goggles]
 author=YukiXXL
 patch=1,EE,002486C8,extended,24020008
 patch=1,EE,002427E4,extended,24020008
+
+// -- APPEARANCE
+
+[Gameplay\Player\Appearance\Random outfits during missions]
+author=YukiXXL
+patch=1,EE,20429B4C,extended,10400020
+
+[Gameplay\Player\Appearance\Disable mission disguises]
+author=YukiXXL
+patch=1,EE,00429B58,extended,24420000
+
+// -- SPAWN ON DIFFERENT LOCATION
+
+[Gameplay\Player\Spawn on different location\Enable]
+author=YukiXXL
+description=Spawn on different location instead of enemy/friend.
+patch=1,EE,201C26F8,extended,00000000
+patch=1,EE,201C2628,extended,00000000 //Bonus missions
+
+[Gameplay\Player\Spawn on different location\Fix for crashes]
+author=YukiXXL
+description=In some cases works without or works with "Enable All Spawns".
+patch=1,EE,201B7650,extended,24040001
+
+// -- RADIO COMMS
+
+[Gameplay\Player\Radio Comms\Disable radio logs]
+author=YukiXXL
+patch=1,EE,201C7830,extended,00000000
+
+// -- RADIO COMMS - CHANGE COMMS VOICE
+
+[Gameplay\Player\Radio Comms\Change comms voice\Teresa]
+author=YukiXXL
+patch=1,EE,20336B90,extended,24020015
+
+[Gameplay\Player\Radio Comms\Change comms voice\Imani]
+author=YukiXXL
+patch=1,EE,20336B90,extended,24020016
+
+[Gameplay\Player\Radio Comms\Change comms voice\Stone]
+author=YukiXXL
+patch=1,EE,20336B90,extended,24020017
+
+[Gameplay\Player\Radio Comms\Change comms voice\Zohar]
+author=YukiXXL
+patch=1,EE,20336B90,extended,24020018
+
+[Gameplay\Player\Radio Comms\Change comms voice\Meggie]
+author=YukiXXL
+patch=1,EE,20336B90,extended,24020019
+
+[Gameplay\Player\Radio Comms\Change comms voice\Mujari]
+author=YukiXXL
+patch=1,EE,20336B90,extended,2402001A
+
+[Gameplay\Player\Radio Comms\Change comms voice\Lian]
+author=YukiXXL
+patch=1,EE,20336B90,extended,2402001B
+
+[Gameplay\Player\Radio Comms\Change comms voice\Gabe]
+author=YukiXXL
+patch=1,EE,20336B90,extended,2402001C
+
+[Gameplay\Player\Radio Comms\Change comms voice\Quickchat Lady]
+author=YukiXXL
+patch=1,EE,20336B90,extended,2402001E
+
+// - NPCS
+
+[Gameplay\NPCs\Give weapons to workers]
+author=YukiXXL
+patch=1,EE,001B6D28,extended,2A020003
+
+// -- ENABLE ALL SPAWNS
+
+[Gameplay\NPCs\Enable All Spawns\Enable]
+author=YukiXXL
+patch=1,EE,201B483C,extended,00000000
+
+[Gameplay\NPCs\Enable All Spawns\Memory fix]
+author=YukiXXL
+description=Fixes crashing and black screen when dying.
+patch=1,EE,001B494C,extended,1440000E
+
+// -- ENEMIES AIM FASTER
+
+[Gameplay\NPCs\Enemies aim faster:\Hard]
+author=YukiXXL
+patch=1,EE,20230090,extended,14400005
+
+[Gameplay\NPCs\Enemies aim faster:\Very Hard]
+author=YukiXXL
+patch=1,EE,2023025C,extended,00000000
+
+[Gameplay\NPCs\Enemies aim faster:\Ultra Hard]
+author=YukiXXL
+patch=1,EE,202300E0,extended,00000000
+
+// - WEATHER
+
+// - WEATHER - MYANMAR
+[Gameplay\Weather\Change weather on missions that support it\Myanmar\Toronto 3 Fog]
+author=YukiXXL
+patch=1,EE,10232CD8,extended,0C08CBE4
+
+[Gameplay\Weather\Change weather on missions that support it\Myanmar\Tokyo Rain]
+author=YukiXXL
+patch=1,EE,10232CD8,extended,0C08CBAC
+
+[Gameplay\Weather\Change weather on missions that support it\Myanmar\Lorelei Rain]
+author=YukiXXL
+patch=1,EE,10232CD8,extended,0C08CB74
+
+[Gameplay\Weather\Change weather on missions that support it\Myanmar\Snowing]
+author=YukiXXL
+patch=1,EE,10232CD8,extended,0C08CB3C
+
+[Gameplay\Weather\Change weather on missions that support it\Myanmar\Atmospheric effect]
+author=YukiXXL
+patch=1,EE,10232CD8,extended,0C08CC6C
+// - WEATHER - TORONTO 3
+[Gameplay\Weather\Change weather on missions that support it\Toronto 3\Myanmar Fog]
+author=YukiXXL
+patch=1,EE,10232CB8,extended,0C08CAA4
+
+[Gameplay\Weather\Change weather on missions that support it\Toronto 3\Tokyo Rain]
+author=YukiXXL
+patch=1,EE,10232CB8,extended,0C08CBAC
+
+[Gameplay\Weather\Change weather on missions that support it\Toronto 3\Lorelei Rain]
+author=YukiXXL
+patch=1,EE,10232CB8,extended,0C08CB74
+
+[Gameplay\Weather\Change weather on missions that support it\Toronto 3\Snowing]
+author=YukiXXL
+patch=1,EE,10232CB8,extended,0C08CB3C
+
+[Gameplay\Weather\Change weather on missions that support it\Toronto 3\Atmospheric effect]
+author=YukiXXL
+patch=1,EE,10232CB8,extended,0C08CC6C
+// - WEATHER - TOKYO
+[Gameplay\Weather\Change weather on missions that support it\Tokyo\Myanmar Fog]
+author=YukiXXL
+patch=1,EE,10232C98,extended,0C08CAA4
+
+[Gameplay\Weather\Change weather on missions that support it\Tokyo\Toronto 3 Fog]
+author=YukiXXL
+patch=1,EE,10232C98,extended,0C08CBE4
+
+[Gameplay\Weather\Change weather on missions that support it\Tokyo\Lorelei Rain]
+author=YukiXXL
+patch=1,EE,10232C98,extended,0C08CB74
+
+[Gameplay\Weather\Change weather on missions that support it\Tokyo\Snowing]
+author=YukiXXL
+patch=1,EE,10232C98,extended,0C08CB3C
+
+[Gameplay\Weather\Change weather on missions that support it\Tokyo\Atmospheric effect]
+author=YukiXXL
+patch=1,EE,10232C98,extended,0C08CC6C
+// - WEATHER - LORELEI
+[Gameplay\Weather\Change weather on missions that support it\Lorelei\Myanmar Fog]
+author=YukiXXL
+patch=1,EE,10232C78,extended,0C08CAA4
+
+[Gameplay\Weather\Change weather on missions that support it\Lorelei\Toronto 3 Fog]
+author=YukiXXL
+patch=1,EE,10232C78,extended,0C08CBE4
+
+[Gameplay\Weather\Change weather on missions that support it\Lorelei\Tokyo Rain]
+author=YukiXXL
+patch=1,EE,10232C78,extended,0C08CBAC
+
+[Gameplay\Weather\Change weather on missions that support it\Lorelei\Snowing]
+author=YukiXXL
+patch=1,EE,10232C78,extended,0C08CB3C
+
+[Gameplay\Weather\Change weather on missions that support it\Lorelei\Atmospheric effect]
+author=YukiXXL
+patch=1,EE,10232C78,extended,0C08CC6C
+// - WEATHER - BELARUS 2
+[Gameplay\Weather\Change weather on missions that support it\Belarus 2\Myanmar Fog]
+author=YukiXXL
+patch=1,EE,10232C58,extended,0C08CAA4
+
+[Gameplay\Weather\Change weather on missions that support it\Belarus 2\Toronto 3 Fog]
+author=YukiXXL
+patch=1,EE,10232C58,extended,0C08CBE4
+
+[Gameplay\Weather\Change weather on missions that support it\Belarus 2\Tokyo Rain]
+author=YukiXXL
+patch=1,EE,10232C58,extended,0C08CBAC
+
+[Gameplay\Weather\Change weather on missions that support it\Belarus 2\Lorelei Rain]
+author=YukiXXL
+patch=1,EE,10232C58,extended,0C08CB74
+
+[Gameplay\Weather\Change weather on missions that support it\Belarus 2\Atmospheric effect]
+author=YukiXXL
+patch=1,EE,10232C58,extended,0C08CC6C
 
 // ONLINE
 
@@ -215,8 +453,7 @@ description=Play Solo Missions Online.
 //All missions online
 patch=1,EE,404B2650,extended,00040001
 patch=1,EE,01010101,extended,00000000
-//Training Mission enabled
-patch=1,EE,20298648,extended,24020000
+patch=1,EE,20298648,extended,24020000 //Training Mission enabled
 //Lobby IDs fix
 patch=1,EE,204B254C,extended,00000001
 patch=1,EE,204B2558,extended,00000002
@@ -245,237 +482,13 @@ patch=1,EE,00492534,extended,00000011
 author=YukiXXL
 patch=1,EE,002AE050,extended,28410001
 
-// MISC
-// - GAMEPLAY
-[Misc\Spawn on different location\Enable]
-author=YukiXXL
-description=Spawn on different location instead of enemy/friend.
-//Spawn on different location instead of enemy/friend
-patch=1,EE,201C26F8,extended,00000000
-//Bonus missions
-patch=1,EE,201C2628,extended,00000000
-[Misc\Spawn on different location\Fix for crashes]
-author=YukiXXL
-description=In some cases works without or works with "Enable All Spawns".
-patch=1,EE,201B7650,extended,24040001
-
-[Misc\Everyone invisible]
-author=YukiXXL
-patch=1,EE,003B514C,extended,24060000
-
-// - NPCs
-[Misc\NPCs\Give weapons to workers]
-author=YukiXXL
-patch=1,EE,001B6D28,extended,2A020003
-
-[Misc\NPCs\Enable All Spawns\Enable]
-author=YukiXXL
-patch=1,EE,201B483C,extended,00000000
-[Misc\NPCs\Enable All Spawns\Memory fix]
-author=YukiXXL
-description=Fixes crashing and black screen when dying.
-patch=1,EE,001B494C,extended,1440000E
-
-// - NPCs - ENEMIES AIM FASTER
-[Misc\NPCs\Enemies aim faster:\Hard]
-author=YukiXXL
-patch=1,EE,20230090,extended,14400005
-
-[Misc\NPCs\Enemies aim faster:\Very Hard]
-author=YukiXXL
-patch=1,EE,2023025C,extended,00000000
-
-[Misc\NPCs\Enemies aim faster:\Ultra Hard]
-author=YukiXXL
-patch=1,EE,202300E0,extended,00000000
-
-// - WEATHER
-// - WEATHER - MYANMAR
-[Misc\Weather\Change weather on missions that support it\Myanmar\Toronto 3 Fog]
-author=YukiXXL
-patch=1,EE,10232CD8,extended,0C08CBE4
-
-[Misc\Weather\Change weather on missions that support it\Myanmar\Tokyo Rain]
-author=YukiXXL
-patch=1,EE,10232CD8,extended,0C08CBAC
-
-[Misc\Weather\Change weather on missions that support it\Myanmar\Lorelei Rain]
-author=YukiXXL
-patch=1,EE,10232CD8,extended,0C08CB74
-
-[Misc\Weather\Change weather on missions that support it\Myanmar\Snowing]
-author=YukiXXL
-patch=1,EE,10232CD8,extended,0C08CB3C
-
-[Misc\Weather\Change weather on missions that support it\Myanmar\Atmospheric effect]
-author=YukiXXL
-patch=1,EE,10232CD8,extended,0C08CC6C
-// - WEATHER - TORONTO 3
-[Misc\Weather\Change weather on missions that support it\Toronto 3\Myanmar Fog]
-author=YukiXXL
-patch=1,EE,10232CB8,extended,0C08CAA4
-
-[Misc\Weather\Change weather on missions that support it\Toronto 3\Tokyo Rain]
-author=YukiXXL
-patch=1,EE,10232CB8,extended,0C08CBAC
-
-[Misc\Weather\Change weather on missions that support it\Toronto 3\Lorelei Rain]
-author=YukiXXL
-patch=1,EE,10232CB8,extended,0C08CB74
-
-[Misc\Weather\Change weather on missions that support it\Toronto 3\Snowing]
-author=YukiXXL
-patch=1,EE,10232CB8,extended,0C08CB3C
-
-[Misc\Weather\Change weather on missions that support it\Toronto 3\Atmospheric effect]
-author=YukiXXL
-patch=1,EE,10232CB8,extended,0C08CC6C
-// - WEATHER - TOKYO
-[Misc\Weather\Change weather on missions that support it\Tokyo\Myanmar Fog]
-author=YukiXXL
-patch=1,EE,10232C98,extended,0C08CAA4
-
-[Misc\Weather\Change weather on missions that support it\Tokyo\Toronto 3 Fog]
-author=YukiXXL
-patch=1,EE,10232C98,extended,0C08CBE4
-
-[Misc\Weather\Change weather on missions that support it\Tokyo\Lorelei Rain]
-author=YukiXXL
-patch=1,EE,10232C98,extended,0C08CB74
-
-[Misc\Weather\Change weather on missions that support it\Tokyo\Snowing]
-author=YukiXXL
-patch=1,EE,10232C98,extended,0C08CB3C
-
-[Misc\Weather\Change weather on missions that support it\Tokyo\Atmospheric effect]
-author=YukiXXL
-patch=1,EE,10232C98,extended,0C08CC6C
-// - WEATHER - LORELEI
-[Misc\Weather\Change weather on missions that support it\Lorelei\Myanmar Fog]
-author=YukiXXL
-patch=1,EE,10232C78,extended,0C08CAA4
-
-[Misc\Weather\Change weather on missions that support it\Lorelei\Toronto 3 Fog]
-author=YukiXXL
-patch=1,EE,10232C78,extended,0C08CBE4
-
-[Misc\Weather\Change weather on missions that support it\Lorelei\Tokyo Rain]
-author=YukiXXL
-patch=1,EE,10232C78,extended,0C08CBAC
-
-[Misc\Weather\Change weather on missions that support it\Lorelei\Snowing]
-author=YukiXXL
-patch=1,EE,10232C78,extended,0C08CB3C
-
-[Misc\Weather\Change weather on missions that support it\Lorelei\Atmospheric effect]
-author=YukiXXL
-patch=1,EE,10232C78,extended,0C08CC6C
-// - WEATHER - BELARUS 2
-[Misc\Weather\Change weather on missions that support it\Belarus 2\Myanmar Fog]
-author=YukiXXL
-patch=1,EE,10232C58,extended,0C08CAA4
-
-[Misc\Weather\Change weather on missions that support it\Belarus 2\Toronto 3 Fog]
-author=YukiXXL
-patch=1,EE,10232C58,extended,0C08CBE4
-
-[Misc\Weather\Change weather on missions that support it\Belarus 2\Tokyo Rain]
-author=YukiXXL
-patch=1,EE,10232C58,extended,0C08CBAC
-
-[Misc\Weather\Change weather on missions that support it\Belarus 2\Lorelei Rain]
-author=YukiXXL
-patch=1,EE,10232C58,extended,0C08CB74
-
-[Misc\Weather\Change weather on missions that support it\Belarus 2\Atmospheric effect]
-author=YukiXXL
-patch=1,EE,10232C58,extended,0C08CC6C
-
-// MISC - PLAYER
-// - APPEARANCE
-[Misc\Player\Appearance\Random outfits during missions]
-patch=1,EE,20429B4C,extended,10400020
-
-[Misc\Player\Appearance\Disable mission disguises]
-author=YukiXXL
-patch=1,EE,00429B58,extended,24420000
-
-// - BONUS MISSIONS
-[Misc\Player\Bonus Missions\Own agent on Bonus missions]
-author=YukiXXL
-patch=1,EE,404B2590,extended,00040001
-patch=1,EE,00000000,extended,00000000
-
-[Misc\Player\Bonus Missions\Enable equiping weapons on Bonus missions]
-author=YukiXXL
-patch=1,EE,404B25B0,extended,00040001
-patch=1,EE,00000000,extended,00000000
-
-[Misc\Player\Bonus Missions\Disable forcing weapons on Kyrgzstan and Chechnya]
-author=YukiXXL
-patch=1,EE,20403494,extended,00000000
-
-// - OTHER
-[Misc\Player\Other\Count kill as Collateral]
-author=YukiXXL
-patch=1,EE,20187468,extended,1040001F
-
-[Misc\Player\Other\Toss Body instead of laying it down]
-author=YukiXXL
-patch=1,EE,00240104,extended,2402002D
-
-// - RADIO COMMS
-[Misc\Player\Radio Comms\Disable radio logs]
-author=YukiXXL
-patch=1,EE,201C7830,extended,00000000
-
-// - RADIO COMMS - CHANGE COMMS VOICE
-[Misc\Player\Radio Comms\Change comms voice\Teresa]
-author=YukiXXL
-patch=1,EE,20336B90,extended,24020015
-
-[Misc\Player\Radio Comms\Change comms voice\Imani]
-author=YukiXXL
-patch=1,EE,20336B90,extended,24020016
-
-[Misc\Player\Radio Comms\Change comms voice\Stone]
-author=YukiXXL
-patch=1,EE,20336B90,extended,24020017
-
-[Misc\Player\Radio Comms\Change comms voice\Zohar]
-author=YukiXXL
-patch=1,EE,20336B90,extended,24020018
-
-[Misc\Player\Radio Comms\Change comms voice\Meggie]
-author=YukiXXL
-patch=1,EE,20336B90,extended,24020019
-
-[Misc\Player\Radio Comms\Change comms voice\Mujari]
-author=YukiXXL
-patch=1,EE,20336B90,extended,2402001A
-
-[Misc\Player\Radio Comms\Change comms voice\Lian]
-author=YukiXXL
-patch=1,EE,20336B90,extended,2402001B
-
-[Misc\Player\Radio Comms\Change comms voice\Gabe]
-author=YukiXXL
-patch=1,EE,20336B90,extended,2402001C
-
-[Misc\Player\Radio Comms\Change comms voice\Quickchat Lady]
-author=YukiXXL
-patch=1,EE,20336B90,extended,2402001E
-
 // MODS
 
 [Mods\Dual Wield\Enable]
 author=YukiXXL
 description="Open Weapons" cheat NEEDED! Start the mission twice!
-// ADDONS
-//Back = Goggles
-patch=1,EE,002C8454,extended,24020006
-//Auxiliary = Flashlight
-patch=1,EE,002C84F8,extended,24020007
+patch=1,EE,002C8454,extended,24020006 //Back = Goggles
+patch=1,EE,002C84F8,extended,24020007 //Auxiliary = Flashlight
 //Show goggles and P.I.D in Equip
 patch=1,EE,002C9E5C,extended,24040004
 patch=1,EE,002C9E60,extended,24050004
@@ -490,7 +503,6 @@ patch=1,EE,20146980,extended,24020001
 patch=1,EE,20490AF0,extended,00000000
 //Dual Wield Ability enabled
 patch=1,EE,202C81D4,extended,00000000
-// NEW CODES
 //Back, Auxiliary weapons save as sidearm
 patch=1,EE,200FFE24,extended,28610006
 patch=1,EE,200FFE28,extended,10200003
@@ -501,36 +513,30 @@ patch=1,EE,200FFE3C,extended,8E020088
 patch=1,EE,202C9BF4,extended,0C03FF89
 patch=1,EE,202C9BF8,extended,90430030
 
-// OFFLINE CODENAMES
-[Mods\Offline Codenames\Enable]
+// - OFFLINE CODENAMES
+
+[Mods\Offline Codenames\Enable First!]
 author=YukiXXL
 // MENUS
 //Enable Mission Setup & Join Mission offline
 patch=1,EE,203425F8,extended,00000000
 patch=1,EE,20342600,extended,24020001
-//Join any mission
-patch=1,EE,2029712C,extended,00000000
-//Join Training Center
-patch=1,EE,00297120,extended,28410018
+patch=1,EE,2029712C,extended,00000000 //Join any mission
+patch=1,EE,00297120,extended,28410018 //Join Training Center
 // GAMEPLAY
 //Enable online objectives + dialogues
 patch=1,EE,0012FA88,extended,9022D424
 //Team Par
 patch=1,EE,00467C28,extended,9025D424
 patch=1,EE,00467CFC,extended,9022D424
-//Check if completed Par
-patch=1,EE,0046b214,extended,9025D424
-//Write Time
-patch=1,EE,0033BB40,extended,9022D424
+patch=1,EE,0046b214,extended,9025D424 //Check if completed Par
+patch=1,EE,0033BB40,extended,9022D424 //Write Time
 //Buddy Climb
 patch=1,EE,00170364,extended,9022D424
-//Animation Change
-patch=1,EE,0018DC9C,extended,24030031
+patch=1,EE,0018DC9C,extended,24030031 //Animation Change
 // CODENAME STUFF
-//Quickchat enabled
-patch=1,EE,00475568,extended,9022D424
-//Show codename on the right
-patch=1,EE,00465B3C,extended,9022D424
+patch=1,EE,00475568,extended,9022D424 //Quickchat enabled
+patch=1,EE,00465B3C,extended,9022D424 //Show codename on the right
 
 [Mods\Offline Codenames\Variant\Codename Only]
 author=YukiXXL
@@ -546,12 +552,9 @@ patch=1,EE,202AB47C,extended,AC24B778
 patch=1,EE,202AB480,extended,3C010058
 patch=1,EE,202AB488,extended,9022D424
 // - MENUS
-//Join Mission button
-patch=1,EE,20298928,extended,00000000
-//Join Mission is Create Mission
-patch=1,EE,0029713C,extended,24050006
-//Min num agents = 0
-patch=1,EE,002ABB0C,extended,24050000
+patch=1,EE,20298928,extended,00000000 //Join Mission button
+patch=1,EE,0029713C,extended,24050006 //Join Mission is Create Mission
+patch=1,EE,002ABB0C,extended,24050000 //Min num agents = 0
 // CODENAME STUFF
 // - GAMEPLAY
 //Show correct codename
@@ -593,8 +596,7 @@ patch=1,EE,202AB478,extended,2484FFFF
 patch=1,EE,202AB47C,extended,AC24B778
 //SuccessLobbyConnect
 patch=1,EE,002AB490,extended,1260006F
-//Somekind of error fix
-patch=1,EE,2012F118,extended,00000000
+patch=1,EE,2012F118,extended,00000000 //Somekind of error fix
 //Online, Offline enabler
 patch=1,EE,00135044,extended,A020D424
 patch=1,EE,00178780,extended,A023D424
@@ -614,8 +616,7 @@ patch=1,EE,202BA780,extended,00000000
 patch=1,EE,002A350C,extended,24A52230
 patch=1,EE,002A3514,extended,24C62248
 patch=1,EE,202A7F4C,extended,00000000
-//Min num agents = 1
-patch=1,EE,002ABB0C,extended,24050001
+patch=1,EE,002ABB0C,extended,24050001 //Min num agents = 1
 // CODENAME STUFF
 // - FIXES
 //Belarus 2 C4 stacks bug fix
@@ -625,12 +626,9 @@ patch=1,EE,20178FC4,extended,00000000
 patch=1,EE,00134B1C,extended,9022D424
 patch=1,EE,00134BAC,extended,10400008
 // - GAMEPLAY
-//Show correct codename
-patch=1,EE,002BC018,extended,9022D424
-//Radio comms
-patch=1,EE,0018CCC4,extended,9022D424
-//Out of time (Team)
-patch=1,EE,0023AEA0,extended,9030D424
+patch=1,EE,002BC018,extended,9022D424 //Show correct codename
+patch=1,EE,0018CCC4,extended,9022D424 //Radio comms
+patch=1,EE,0023AEA0,extended,9030D424 //Out of time (Team)
 //Minimap
 patch=1,EE,0026DF54,extended,9023D424
 patch=1,EE,002A5674,extended,9023D424
@@ -654,12 +652,9 @@ patch=1,EE,0046B098,extended,9022D424
 //START button
 patch=1,EE,002AC754,extended,9022D424
 //END MISSION
-//Marks and Eff award
-patch=1,EE,0046C040,extended,9022D424
-//<Codename> managed to not get killed
-patch=1,EE,0046C220,extended,9022D424
-//Medals and stuff
-patch=1,EE,00469134,extended,9022D424
+patch=1,EE,0046C040,extended,9022D424 //Marks and Eff award
+patch=1,EE,0046C220,extended,9022D424 //<Codename> managed to not get killed
+patch=1,EE,00469134,extended,9022D424 //Medals and stuff
 // COUNTDOWN
 //SetStatus
 patch=1,EE,201850F0,extended,3C030058

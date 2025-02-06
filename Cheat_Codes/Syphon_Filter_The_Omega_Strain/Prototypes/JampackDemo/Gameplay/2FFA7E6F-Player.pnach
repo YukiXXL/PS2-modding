@@ -1,0 +1,13 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo #1 (Ripped)
+comment=GAMEPLAY - PLAYER
+
+//Fake Byte
+patch=1,EE,004301BC,byte,1
+
+//Quickchat
+patch=1,EE,002CAB1C,extended,902201BC
+
+//Buddy climb
+patch=1,EE,00229BC4,extended,902201BC
+//Animation change
+patch=1,EE,00240EA4,extended,2403002D

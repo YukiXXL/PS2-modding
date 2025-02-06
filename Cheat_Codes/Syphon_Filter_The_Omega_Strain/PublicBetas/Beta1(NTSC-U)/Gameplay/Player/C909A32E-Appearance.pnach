@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 1 (NTSC-U)
+comment=GAMEPLAY - PLAYER - APPEARANCE
+
+//Random outfits during missions
+patch=1,EE,203F35BC,extended,10400020
+
+//Disable mission disguises
+patch=1,EE,003F35C8,extended,24420000

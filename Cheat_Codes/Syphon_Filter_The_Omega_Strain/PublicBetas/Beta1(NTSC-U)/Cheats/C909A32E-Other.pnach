@@ -1,11 +1,5 @@
 gametitle=Syphon Filter: The Omega Strain Public Beta 1 (NTSC-U)
-comment=CHEATS - OTHER
+comment=CHEATS - MENUS
 
-//Open Weapons
-patch=1,EE,20311FCC,extended,24020001
-
-//Open Levels
-patch=1,EE,20312490,extended,2002FFFF
-
-//Don't receive damage
-patch=1,EE,20182938,extended,00000000
+//gCHEATS_ENABLED
+patch=1,EE,004AC548,byte,1

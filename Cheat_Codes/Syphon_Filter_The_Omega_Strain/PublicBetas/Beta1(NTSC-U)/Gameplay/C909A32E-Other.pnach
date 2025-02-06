@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 1 (NTSC-U)
+comment=GAMEPLAY - OTHER
+
+//Count kill as Collateral
+patch=1,EE,20181EE8,extended,1040001F

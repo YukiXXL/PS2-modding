@@ -1,6 +1,7 @@
-gametitle=Syphon Filter: The Omega Virus (NTSC-J)
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
 
 // WIDESCREEN
+
 [Patches\Widescreen 16:9]
 author=nemesis2000
 gsaspectratio=16:9
@@ -17,6 +18,7 @@ patch=1,EE,2041CBBC,extended,24101400
 patch=1,EE,2041CBC4,extended,24127600
 
 // OTHER
+
 [Patches\NV and Flashlight Fix]
 author=YukiXXL
 description=Cop2 problems.
