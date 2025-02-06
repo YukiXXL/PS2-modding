@@ -126,7 +126,7 @@ patch=1,EE,10123670,extended,0C04A1D2
 
 [GameModes\Demo like\Only change the second character]
 author=YukiXXL
-patch=1,EE,20128770,word,24130001
+patch=1,EE,20128770,extended,24130001
 
 //TEAM BATTLE
 [GameModes\Team Battle\Enable]

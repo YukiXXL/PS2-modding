@@ -5,4 +5,4 @@ comment=GAMEMODES - DEMO LIKE
 patch=1,EE,10123670,extended,0C04A1D2
 
 //Only change the second character
-patch=1,EE,20128770,word,24130001
+patch=1,EE,20128770,extended,24130001
