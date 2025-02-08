@@ -657,7 +657,7 @@ description=If Daxter as a driver is taken, Jak will still have him
 patch=1,EE,E0011825,extended,00BEDC1C
 patch=1,EE,20BEDC18,extended,00000000
 
-[Misc\Enable Mizo]
+[Misc\Enable Mizo Skin + Voice Lines]
 description=Replaces G.T. Blitz
 //Replace model
 patch=1,EE,E0010004,extended,00BF128C
