@@ -1,23 +1,23 @@
 gametitle=Tekken 5 Demo (NTSC-U)
 
+[Bypass Demo protection]
+author=YukiXXL
+description=MUST HAVE!
+patch=1,EE,20123FD0,extended,0461001D
+
 // ADDONS
 
 [Addons\Enable P2 to join]
 author=YukiXXL
 patch=1,EE,201178A4,extended,8F82C838
 
-[Addons\Bypass Demo protection]
-author=YukiXXL
-description=MUST HAVE!
-patch=1,EE,20123FD0,extended,0461001D
+// GAMEPLAY
 
-// MISC
-
-[Misc\Red color health bars]
+[Gameplay\Red color health bars]
 author=YukiXXL
 patch=1,EE,001D190C,extended,2405000C
 
-[Misc\Mokujin Movesets fix]
+[Gameplay\Mokujin Movesets fix]
 author=YukiXXL
 description=Fixes from crashing but still gets TLB Misses.
 patch=1,EE,0039EB9C,extended,00000007
@@ -32,27 +32,27 @@ patch=1,EE,0039EBE0,extended,0000000E
 
 // - STAGE
 
-[Stages\Force stage\Dragon's Nest]
+[Gameplay\Stages\Force stage\Dragon's Nest]
 author=YukiXXL
 patch=1,EE,002B8B48,extended,00000000
 
-[Stages\Force stage\Burning Temple]
+[Gameplay\Stages\Force stage\Burning Temple]
 author=YukiXXL
 patch=1,EE,002B8B48,extended,00000001
 
-[Stages\Force stage\Waterfall]
+[Gameplay\Stages\Force stage\Waterfall]
 author=YukiXXL
 patch=1,EE,002B8B48,extended,00000002
 
-[Stages\Force stage\City at Sunset]
+[Gameplay\Stages\Force stage\City at Sunset]
 author=YukiXXL
 patch=1,EE,002B8B48,extended,00000004
 
-[Stages\Force stage\The Final Frontier]
+[Gameplay\Stages\Force stage\The Final Frontier]
 author=YukiXXL
 patch=1,EE,002B8B48,extended,00000012
 
-[Stages\Fix missing stages]
+[Gameplay\Stages\Fix missing stages]
 author=YukiXXL
 description=Fixes missing stages by replacing them before they load.
 //03 - Urban Jungle
@@ -91,19 +91,19 @@ patch=1,EE,002B8B48,extended,00000002
 
 // - ROUNDS
 
-[Misc\Number of Rounds\2]
+[Gameplay\Rounds\Number of Rounds\2]
 author=YukiXXL
 patch=1,EE,002B8B60,byte,2
 
-[Misc\Number of Rounds\3]
+[Gameplay\Rounds\Number of Rounds\3]
 author=YukiXXL
 patch=1,EE,002B8B60,byte,3
 
-[Misc\Number of Rounds\4]
+[Gameplay\Rounds\Number of Rounds\4]
 author=YukiXXL
 patch=1,EE,002B8B60,byte,4
 
-[Misc\Number of Rounds\5]
+[Gameplay\Rounds\Number of Rounds\5]
 author=YukiXXL
 patch=1,EE,002B8B60,byte,5
 
@@ -460,58 +460,57 @@ patch=1,EE,001222FC,extended,24040006
 [Character Select\Fix Cursor Select]
 author=YukiXXL
 description=Enables selecting characters.
-patch=1,EE,2015DE18,extended,0C04279C
-patch=1,EE,2015E024,extended,0C04279C
+patch=1,EE,2015DE18,extended,0C020040
+patch=1,EE,2015E024,extended,0C020040
 //
-patch=1,EE,20109E70,extended,27BDFFE0
-patch=1,EE,20109E74,extended,30C2F000
-patch=1,EE,20109E78,extended,FFB00000
-patch=1,EE,20109E7C,extended,0000802D
-patch=1,EE,20109E80,extended,FFB10008
-patch=1,EE,20109E84,extended,00A0882D
-patch=1,EE,20109E88,extended,10400024
-patch=1,EE,20109E8C,extended,FFBF0010
-patch=1,EE,20109E90,extended,8C82009C
-patch=1,EE,20109E94,extended,10400010
-patch=1,EE,20109E98,extended,30C22000
-patch=1,EE,20109E9C,extended,10400004
-patch=1,EE,20109EA0,extended,30C28000
-patch=1,EE,20109EA4,extended,10000016
-patch=1,EE,20109EA8,extended,24100001
-patch=1,EE,20109EAC,extended,00000000
-patch=1,EE,20109EB0,extended,14400013
-patch=1,EE,20109EB4,extended,30C21000
-patch=1,EE,20109EB8,extended,54400011
-patch=1,EE,20109EBC,extended,24100003
-patch=1,EE,20109EC0,extended,30C24000
-patch=1,EE,20109EC4,extended,1040000E
-patch=1,EE,20109EC8,extended,00000000
-patch=1,EE,20109ECC,extended,1000000C
-patch=1,EE,20109ED0,extended,24100002
-patch=1,EE,20109ED4,extended,00000000
-patch=1,EE,20109ED8,extended,10400003
-patch=1,EE,20109EDC,extended,30C28000
-patch=1,EE,20109EE0,extended,10000007
-patch=1,EE,20109EE4,extended,24100003
-patch=1,EE,20109EE8,extended,54400005
-patch=1,EE,20109EEC,extended,24100002
-patch=1,EE,20109EF0,extended,30C21000
-patch=1,EE,20109EF4,extended,14400002
-patch=1,EE,20109EF8,extended,30C24000
-patch=1,EE,20109EFC,extended,0002802B
-patch=1,EE,20109F00,extended,0C057354
-patch=1,EE,20109F04,extended,8E240000
-patch=1,EE,20109F08,extended,24040005
-patch=1,EE,20109F0C,extended,00501021
-patch=1,EE,20109F10,extended,90430002
-patch=1,EE,20109F14,extended,0C056E4C
-patch=1,EE,20109F18,extended,AE230000
-patch=1,EE,20109F1C,extended,DFB00000
-patch=1,EE,20109F20,extended,DFB10008
-patch=1,EE,20109F24,extended,DFBF0010
-patch=1,EE,20109F28,extended,03E00008
-patch=1,EE,20109F2C,extended,27BD0020
-
+patch=1,EE,20080100,extended,27BDFFE0
+patch=1,EE,20080104,extended,30C2F000
+patch=1,EE,20080108,extended,FFB00000
+patch=1,EE,2008010C,extended,0000802D
+patch=1,EE,20080110,extended,FFB10008
+patch=1,EE,20080114,extended,00A0882D
+patch=1,EE,20080118,extended,10400024
+patch=1,EE,2008011C,extended,FFBF0010
+patch=1,EE,20080120,extended,8C82009C
+patch=1,EE,20080124,extended,10400010
+patch=1,EE,20080128,extended,30C22000
+patch=1,EE,2008012C,extended,10400004
+patch=1,EE,20080130,extended,30C28000
+patch=1,EE,20080134,extended,10000016
+patch=1,EE,20080138,extended,24100001
+patch=1,EE,2008013C,extended,00000000
+patch=1,EE,20080140,extended,14400013
+patch=1,EE,20080144,extended,30C21000
+patch=1,EE,20080148,extended,54400011
+patch=1,EE,2008014C,extended,24100003
+patch=1,EE,20080150,extended,30C24000
+patch=1,EE,20080154,extended,1040000E
+patch=1,EE,20080158,extended,00000000
+patch=1,EE,2008015C,extended,1000000C
+patch=1,EE,20080160,extended,24100002
+patch=1,EE,20080164,extended,00000000
+patch=1,EE,20080168,extended,10400003
+patch=1,EE,2008016C,extended,30C28000
+patch=1,EE,20080170,extended,10000007
+patch=1,EE,20080174,extended,24100003
+patch=1,EE,20080178,extended,54400005
+patch=1,EE,2008017C,extended,24100002
+patch=1,EE,20080180,extended,30C21000
+patch=1,EE,20080184,extended,14400002
+patch=1,EE,20080188,extended,30C24000
+patch=1,EE,2008018C,extended,0002802B
+patch=1,EE,20080190,extended,0C057354
+patch=1,EE,20080194,extended,8E240000
+patch=1,EE,20080198,extended,24040005
+patch=1,EE,2008019C,extended,00501021
+patch=1,EE,200801A0,extended,90430002
+patch=1,EE,200801A4,extended,0C056E4C
+patch=1,EE,200801A8,extended,AE230000
+patch=1,EE,200801AC,extended,DFB00000
+patch=1,EE,200801B0,extended,DFB10008
+patch=1,EE,200801B4,extended,DFBF0010
+patch=1,EE,200801B8,extended,03E00008
+patch=1,EE,200801BC,extended,27BD0020
 
 [Character Select\Enable Char Select after match for Arcade and GM 9]
 author=YukiXXL

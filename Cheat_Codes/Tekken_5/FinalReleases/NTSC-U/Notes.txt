@@ -1,1 +1,0 @@
-0021426C = Title Screen start button (PRESS START) address
