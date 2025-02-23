@@ -158,6 +158,13 @@ patch=1,EE,20977998,extended,A0A10048
 patch=1,EE,E0013078,extended,009A9AEC
 patch=1,EE,209A9AE8,extended,24050003
 
+[Adventure\Fix Crashes]
+comment=Fixes TLB Misses when launching missions with available maps.
+patch=1,EE,602D7B58,extended,10000005
+patch=1,EE,00020001,extended,00000224
+patch=1,EE,E0010028,extended,001D6D1C
+patch=1,EE,201D6D10,extended,10000009
+
 // BETA MODE
 
 [Beta Mode\Exhibition]

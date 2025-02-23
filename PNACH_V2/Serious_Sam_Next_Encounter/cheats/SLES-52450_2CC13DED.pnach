@@ -136,6 +136,10 @@ patch=1,EE,201DD8B0,extended,8C44DC60
 author=YukiXXL
 patch=1,EE,20204100,extended,24030001
 
+[Gameplay\Disable FMVPlayer]
+author=YukiXXL
+patch=1,EE,00276228,extended,2C62014A
+
 // - SINGLE PLAYER
 
 [Gameplay\Single Player\Multiplayer model in Single Player]

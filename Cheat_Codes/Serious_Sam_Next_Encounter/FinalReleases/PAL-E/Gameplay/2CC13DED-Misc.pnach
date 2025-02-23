@@ -18,3 +18,6 @@ patch=1,EE,201DD8B0,extended,8C44DC60
 
 //Apply Fall Damage
 patch=1,EE,20204100,extended,24030001
+
+//Disable FMVPlayer
+patch=1,EE,00276228,extended,2C62014A
