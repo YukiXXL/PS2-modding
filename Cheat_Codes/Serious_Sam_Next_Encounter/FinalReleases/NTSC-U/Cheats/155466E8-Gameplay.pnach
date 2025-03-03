@@ -21,3 +21,6 @@ patch=1,EE,201648DC,extended,24020001
 //Enable cheats in all other gamemodes
 patch=1,EE,00270308,extended,2442FFFB
 patch=1,EE,0020D10C,extended,2463FFFB
+
+//Disable AI
+patch=1,EE,1020CBD0,extended,3442C000

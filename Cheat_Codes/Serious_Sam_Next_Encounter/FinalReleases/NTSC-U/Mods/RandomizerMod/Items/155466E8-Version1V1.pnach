@@ -1,0 +1,22 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=RANDOMIZER MOD - ITEMS 1 V1
+
+//jal to Joker function
+patch=1,EE,20275454,extended,0C028060
+//Joker Function
+patch=1,EE,200A0180,extended,8C470004 //copy replaced command
+patch=1,EE,200A0184,extended,24020037 //check for SeriousBomb
+patch=1,EE,200A0188,extended,10510002 //branch if item is SeriousBomb
+patch=1,EE,200A018C,extended,2E22002E //check if item is a key or treasure
+patch=1,EE,200A0190,extended,10400009 //branch if it is to jr ra
+patch=1,EE,200A0194,extended,3C040034 //lui a0, $0034
+patch=1,EE,200A0198,extended,80833820 //lb frames_2
+patch=1,EE,200A019C,extended,02238821 //item = item + frames
+patch=1,EE,200A01A0,extended,3C04000A //lui v0, $000a
+patch=1,EE,200A01A4,extended,A0910138 //sb item to joker byte
+patch=1,EE,200A01A8,extended,90910138 //lbu joker byte
+patch=1,EE,200A01AC,extended,2E22002E //check if the item is valid
+patch=1,EE,200A01B0,extended,1040FFFA //loop if it is not
+patch=1,EE,200A01B4,extended,00000000 
+patch=1,EE,200A01B8,extended,03E00008 //jr ra
+patch=1,EE,200A01BC,extended,00000000 

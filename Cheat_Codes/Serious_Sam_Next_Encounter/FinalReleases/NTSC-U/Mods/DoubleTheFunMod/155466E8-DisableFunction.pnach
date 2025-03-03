@@ -1,4 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=Disable DNAS Shutdown function
-
-patch=1,EE,2026501C,extended,00000000

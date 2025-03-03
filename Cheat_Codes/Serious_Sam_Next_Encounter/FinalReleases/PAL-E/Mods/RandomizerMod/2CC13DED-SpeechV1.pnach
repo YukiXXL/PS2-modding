@@ -1,0 +1,25 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=RANDOMIZER MOD - SPEECH V1
+
+//jal to Joker function
+patch=1,EE,201DFCAC,extended,0C028098
+//Joker function
+patch=1,EE,200A0260,extended,3C020034 //lui v0, $0034
+patch=1,EE,200A0264,extended,90444320 //lbu a0, (frames_2,1)
+patch=1,EE,200A0268,extended,90454321 //lbu a1, (frames_2,2)
+patch=1,EE,200A026C,extended,00852021 //addu a0, a0, a1
+patch=1,EE,200A0270,extended,3C02000A //lui v0, $000a
+patch=1,EE,200A0274,extended,A0440138 //sb a0, (joker byte)
+patch=1,EE,200A0278,extended,90440138 //lbu a0, (joker byte)
+patch=1,EE,200A027C,extended,2C81000B //check if not music (a0 > 10)
+patch=1,EE,200A0280,extended,1420FFFA //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,200A0284,extended,2881008D //check if valid stream (a0 < 8D)
+patch=1,EE,200A0288,extended,1020FFF8 //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,200A028C,extended,3C020034 //lui v0, $0034
+patch=1,EE,200A0290,extended,0000282D //a1 = 0
+patch=1,EE,200A0294,extended,2442DB6C //have v0 be at streams address
+patch=1,EE,200A0298,extended,24420018 //increase v0 by one stream
+patch=1,EE,200A029C,extended,14A4FFFE //branch if a1 is not equal to a0
+patch=1,EE,200A02A0,extended,24A50001 //a1 = a1 + 1
+patch=1,EE,200A02A4,extended,03E00008 //jr ra
+patch=1,EE,200A02A8,extended,0000282D //a1 = 0
