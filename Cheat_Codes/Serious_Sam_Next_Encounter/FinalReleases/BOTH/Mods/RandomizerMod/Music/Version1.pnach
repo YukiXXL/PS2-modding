@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release
+comment=RANDOMIZER MOD - MUSIC V1
+
+//Joker function
+//lbu a0, (frames_2,1)
+//lbu a1 (frames_2,2)
+patch=1,EE,200A01EC,extended,00852021 //addu a0, a0, a1
+patch=1,EE,200A01F0,extended,3C02000A //lui v0, $000a
+patch=1,EE,200A01F4,extended,A0440138 //sb a0, (joker byte)
+patch=1,EE,200A01F8,extended,90440138 //lbu a0, (joker byte)
+patch=1,EE,200A01FC,extended,28850007 //check if a0 is valid (lower than 7)
+patch=1,EE,200A0200,extended,10A0FFF9 //branch if it is not to "lbu a1 (frames_2,2)"

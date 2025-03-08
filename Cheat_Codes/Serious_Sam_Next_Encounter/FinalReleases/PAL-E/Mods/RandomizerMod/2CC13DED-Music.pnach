@@ -1,0 +1,15 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=RANDOMIZER MOD - MUSIC
+
+//jal to Joker function
+patch=1,EE,201DD89C,extended,0C028078
+
+//Start
+patch=1,EE,200A01E0,extended,2443DB88 //v1 = Music Number 0
+
+//Version 1
+patch=1,EE,200A01E4,extended,90444320 //lbu a0, (frames_2,1)
+patch=1,EE,200A01E8,extended,90454321 //lbu a1 (frames_2,2)
+
+//Version 2
+patch=1,EE,200A01E4,extended,90454320 //lbu a1, (frames_2,1)

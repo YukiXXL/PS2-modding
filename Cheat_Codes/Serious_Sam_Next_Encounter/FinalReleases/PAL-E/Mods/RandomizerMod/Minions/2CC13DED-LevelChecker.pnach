@@ -2,21 +2,11 @@ gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
 comment=RANDOMIZER MOD - LEVEL CHECKER
 
 //JAL to Joker Function
-patch=1,EE,201441F4,extended,0C0280CC
+patch=1,EE,2025F1A4,extended,0C0280C8
+patch=1,EE,2027D6C0,extended,0C0280C8
+
 //Joker Function
-patch=1,EE,200A0330,extended,0000202D //a0 = 0
-patch=1,EE,200A0334,extended,3C020036 //lui v0, $0036
-patch=1,EE,200A0338,extended,3442BED0 //ori v0, v0, to LevelSet_0 "Rlevel0_1" pointer value
-patch=1,EE,200A033C,extended,8FA500EC //lw a1, pointer for dynamic addr of the current level
-patch=1,EE,200A0340,extended,8CA50006 //lw a1, $0006(a1)
-patch=1,EE,200A0344,extended,8C430000 //lw v1, from LevelSet pointer level value
-patch=1,EE,200A0348,extended,8C630006 //lw v1, $0006(v1)
-patch=1,EE,200A034C,extended,10A30004 //compare a1, v1 and branch if equal
-patch=1,EE,200A0350,extended,24840001 //a0 = a0 + 1
-patch=1,EE,200A0354,extended,28830030 //check if it is lower than Gallery level
-patch=1,EE,200A0358,extended,1460FFFA //branch if it is to "lw v1, from LevelSet pointer level value"
-patch=1,EE,200A035C,extended,2442000C //increase v0 by one level
-patch=1,EE,200A0360,extended,0003200A //if it is Gallery level or above, a0 becomes zero
-patch=1,EE,200A0364,extended,3C02000A //lui v0, $000a
-patch=1,EE,200A0368,extended,03E00008 //jr ra
-patch=1,EE,200A036C,extended,AC440134 //sw a0 to "JokerLevelChecker"
+patch=1,EE,200A032C,extended,3C020036 //lui v0, $0036
+patch=1,EE,200A0330,extended,3442BED0 //ori v0, v0, to LevelSet_0 "Rlevel0_1" pointer value
+
+patch=1,EE,200A035C,extended,0C041B76 //jal to "Fun_StringCopy"

@@ -1,12 +1,6 @@
 gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
 comment=DOUBLE THE FUN MOD - AMMO
 
-//Double Ammo Function
-patch=1,EE,200A0100,extended,24050002 //a1 = multiplier
-patch=1,EE,200A0104,extended,00651818 //mult v1, v1, a1
-patch=1,EE,200A0108,extended,03E00008 //jr ra
-patch=1,EE,200A010C,extended,A6030000 //sh v1(ammo)
-
 //PickupCount
 patch=1,EE,201FBED8,extended,0C028040 //jal to joker function
 patch=1,EE,201FBEDC,extended,8C430018 //lw v1(ammo)

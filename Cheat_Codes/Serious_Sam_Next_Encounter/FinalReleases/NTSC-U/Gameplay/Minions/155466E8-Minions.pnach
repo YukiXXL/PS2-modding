@@ -3,6 +3,12 @@ comment=GAMEPLAY - MINNIONS - MINIONS
 
 //Spawn all on the start
 patch=1,EE,20275B84,extended,00000000
+//Fix Crashing
+patch=1,EE,201F1BB0,extended,00000000
+patch=1,EE,201F1BC4,extended,00000000
+//Fix Crashing (Alternative)
+//patch=1,EE,201F1B80,extended,03E00008
+//patch=1,EE,201F1B84,extended,00000000
 
 //Stop auto-killing minions
 patch=1,EE,201F8108,extended,03E00008

@@ -1,0 +1,9 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=RANDOMIZER MOD - ITEMS MAIN
+
+//jal to Joker function
+patch=1,EE,2027587C,extended,0C028058
+
+//Branch
+patch=1,EE,200A0174,extended,3C040034 //lui a0, $0034
+patch=1,EE,200A0178,extended,80834320 //lb frames_2

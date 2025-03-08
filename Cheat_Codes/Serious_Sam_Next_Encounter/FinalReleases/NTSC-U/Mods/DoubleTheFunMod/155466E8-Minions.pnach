@@ -6,11 +6,6 @@ patch=1,EE,201D7B5C,extended,0C028044 //jal to Joker Code
 patch=1,EE,201D7B64,extended,AC64000C //Save TotalCount
 patch=1,EE,201D7B68,extended,8CC37504 //Fix for lw Count_Enemies
 patch=1,EE,201D7B84,extended,ACC37504 //Fix for lw Count_Enemies
-//Joker Code
-patch=1,EE,200A0110,extended,8C64000C //Load TotalCount
-patch=1,EE,200A0114,extended,24050002 //Multiplier(a1) = 2
-patch=1,EE,200A0118,extended,03E00008 //jr ra
-patch=1,EE,200A011C,extended,00852018 //Multiply TotalCount with Multiplier(a1)
 
 //Fix the Infinite Loop
 //patch=1,EE,201F126C,extended,00000000 //bgez > nop

@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=RANDOMIZER MOD - SPEECH
+
+//jal to Joker function
+patch=1,EE,201DFE5C,extended,0C028090
+
+//Version 1
+patch=1,EE,200A0244,extended,90443820 //lbu a0, (frames_2,1)
+patch=1,EE,200A0248,extended,90453821 //lbu a1, (frames_2,2)
+
+//Version 2
+patch=1,EE,200A0244,extended,90453820 //lbu a1, (frames_2,1)
