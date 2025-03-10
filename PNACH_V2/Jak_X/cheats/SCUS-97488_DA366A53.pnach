@@ -67,31 +67,35 @@ patch=1,EE,602CC208,extended,80840006
 patch=1,EE,00000002,extended,00000230
 patch=1,EE,0000001C,extended,00000000
 
-[Addons\Profile\Unlock Taryn]
+// PROFILE
+
+[Profile\Unlock Taryn]
 patch=1,EE,602D20A0,extended,00000002
 patch=1,EE,00000001,extended,00000981
 
-[Addons\Profile\Infinite Health + Turbo (ON)]
+// - CHEATS
+
+[Profile\Cheats\Infinite Health + Turbo (ON)]
 patch=1,EE,602D20A0,extended,000000FF
 patch=1,EE,00000001,extended,0000097F
 
-[Addons\Profile\Infinite Health + Turbo (OFF)]
+[Profile\Cheats\Infinite Health + Turbo (OFF)]
 patch=1,EE,602D20A0,extended,00000000
 patch=1,EE,00000001,extended,0000097F
 
-[Addons\Profile\Bad Weather (ON)]
+[Profile\Cheats\Bad Weather (ON)]
 patch=1,EE,602D20A0,extended,000000FF
 patch=1,EE,00000001,extended,00000980
 
-[Addons\Profile\Bad Weather (OFF)]
+[Profile\Cheats\Bad Weather (OFF)]
 patch=1,EE,602D20A0,extended,00000000
 patch=1,EE,00000001,extended,00000980
 
-[Addons\Profile\Mirrored World (ON)]
+[Profile\Cheats\Mirrored World (ON)]
 patch=1,EE,602D20A0,extended,00000080
 patch=1,EE,00000001,extended,0000097D
 
-[Addons\Profile\Mirrored World (OFF)]
+[Profile\Cheats\Mirrored World (OFF)]
 patch=1,EE,602D20A0,extended,00000000
 patch=1,EE,00000001,extended,0000097D
 
@@ -176,6 +180,18 @@ patch=1,EE,012CAF00,extended,00000000
 [Beta Mode\Enable all events]
 patch=1,EE,E00161A4,extended,002D78F8
 patch=1,EE,102D78F8,extended,00B86204
+
+// GAMEPLAY
+
+[CPUs\Allow Novas]
+description=Allows CPUs to get Novas
+patch=1,EE,602CB244,extended,2B840020
+patch=1,EE,00000001,extended,00000044
+
+[CPUs\Allow Turbo Lock]
+description=Allows CPUs to get Turbo Locks
+patch=1,EE,602CB244,extended,2B830020
+patch=1,EE,00000001,extended,000001A8
 
 // MISC
 

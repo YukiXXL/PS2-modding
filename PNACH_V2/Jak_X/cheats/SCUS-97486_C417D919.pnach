@@ -32,7 +32,7 @@ patch=1,EE,102707F8,extended,00B24544
 
 // ADDONS
 
-[Addons\Allow all drivers]
+[Addons\Enable all drivers]
 patch=1,EE,60266DB8,extended,00801025
 patch=1,EE,00020001,extended,00000024
 patch=1,EE,60266DB8,extended,00801025
@@ -48,51 +48,57 @@ patch=1,EE,00020001,extended,000000EC
 patch=1,EE,60266DB8,extended,00801025
 patch=1,EE,00020001,extended,00000114
 
-[Addons\Secrets\Scrap Book 1]
+// PROFILE
+
+// - SECRETS
+
+[Profile\Secrets\Scrap Book 1]
 patch=1,EE,6026AFA0,extended,00000001
 patch=1,EE,00000001,extended,0000040D
 
-[Addons\Secrets\Big Head Mode]
+[Profile\Secrets\Big Head Mode]
 patch=1,EE,6026AFA0,extended,00000080
 patch=1,EE,00000001,extended,0000040E
 
-[Addons\Secrets\Taryn]
+[Profile\Secrets\Taryn]
 patch=1,EE,6026AFA0,extended,00000002
 patch=1,EE,00000001,extended,00000411
 
-[Addons\Profile\Infinite Health (ON)]
+// - CHEATS
+
+[Profile\Cheats\Infinite Health (ON)]
 patch=1,EE,6026AFA0,extended,000000FF
 patch=1,EE,00000001,extended,00000406
 
-[Addons\Profile\Infinite Health (OFF)]
+[Profile\Cheats\Infinite Health (OFF)]
 patch=1,EE,6026AFA0,extended,00000000
 patch=1,EE,00000001,extended,00000406
 
-[Addons\Profile\Infinite Turbo (ON)]
+[Profile\Cheats\Infinite Turbo (ON)]
 patch=1,EE,6026AFA0,extended,000000FF
 patch=1,EE,00000001,extended,00000407
 
-[Addons\Profile\Infinite Turbo (OFF)]
+[Profile\Cheats\Infinite Turbo (OFF)]
 patch=1,EE,6026AFA0,extended,00000000
 patch=1,EE,00000001,extended,00000407
 
-[Addons\Profile\Bad Weather (ON)]
+[Profile\Cheats\Bad Weather (ON)]
 patch=1,EE,6026AFA0,extended,000000FF
 patch=1,EE,00000001,extended,00000408
 
-[Addons\Profile\Bad Weather (OFF)]
+[Profile\Cheats\Bad Weather (OFF)]
 patch=1,EE,6026AFA0,extended,00000000
 patch=1,EE,00000001,extended,00000408
 
-[Addons\Profile\Mirrored World (ON)]
+[Profile\Cheats\Mirrored World (ON)]
 patch=1,EE,6026AFA0,extended,00000080
 patch=1,EE,00000001,extended,00000405
 
-[Addons\Profile\Mirrored World (OFF)]
+[Profile\Cheats\Mirrored World (OFF)]
 patch=1,EE,6026AFA0,extended,00000000
 patch=1,EE,00000001,extended,00000405
 
-// PROFILE
+// - ADVENTURE
 
 [Profile\Adventure menu\All Movies Skipped]
 description=This code causes some issues and can get stuck in infinite loading loop.
@@ -101,15 +107,15 @@ patch=1,EE,20916534,extended,24040001
 
 // GET ALL
 
-[Profile\Get All\Vehicles]
+[Get All\Vehicles]
 patch=1,EE,E0010004,extended,00916148
 patch=1,EE,20916148,extended,00000000
 
-[Profile\Get All\Vehicles Parts]
+[Get All\Vehicles Parts]
 patch=1,EE,E0010012,extended,00916474
 patch=1,EE,20916474,extended,00000000
 
-[Profile\Get All\Tasks]
+[Get All\Tasks]
 patch=1,EE,E005004A,extended,009165A0
 patch=1,EE,20916594,extended,ACA60020
 patch=1,EE,20916598,extended,ACA60058
@@ -117,12 +123,24 @@ patch=1,EE,2091659C,extended,A0A60048
 patch=1,EE,209165A0,extended,A0A6004A
 patch=1,EE,209165B8,extended,24060003
 
-[Profile\Get All\C.R.E.A.M - Mad Cash]
+[Get All\C.R.E.A.M - Mad Cash]
 patch=1,EE,E0031825,extended,00916090
 patch=1,EE,20916090,extended,3C064974
 patch=1,EE,2091609C,extended,34C62400
 patch=1,EE,209160B0,extended,44860000
 
-[Profile\Get All\Trick Out Vehicles]
+[Get All\Trick Out Vehicles]
 patch=1,EE,E001002C,extended,009163BC
 patch=1,EE,209163BC,extended,E4A2002C
+
+// CPUs
+
+[CPUs\Allow Novas]
+description=Allows CPUs to get Novas
+patch=1,EE,60265150,extended,2AA30020
+patch=1,EE,00000001,extended,00000098
+
+[CPUs\Allow Turbo Lock]
+description=Allows CPUs to get Turbo Locks
+patch=1,EE,60264144,extended,2B830020
+patch=1,EE,00000001,extended,00000164

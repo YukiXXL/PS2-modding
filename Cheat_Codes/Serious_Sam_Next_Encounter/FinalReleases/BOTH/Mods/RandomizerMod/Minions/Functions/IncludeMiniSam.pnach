@@ -3,4 +3,4 @@ comment=RANDOMIZER MOD - INCLUDE BOSSES
 
 //MiniSam
 patch=1,EE,200A0300,extended,24010002
-patch=1,EE,200A0304,extended,1041FFF0
+patch=1,EE,200A0304,extended,1041FFEE

@@ -1,16 +1,13 @@
 gametitle=Serious Sam: Next Encounter Final Release
 comment=RANDOMIZER MOD - SPEECH MAIN
 
-//Start
-patch=1,EE,200A0240,extended,3C020034 //lui v0, $0034
-
 //End
 patch=1,EE,200A0254,extended,A0440138 //sb a0, (joker byte)
 patch=1,EE,200A0258,extended,90440138 //lbu a0, (joker byte)
 patch=1,EE,200A025C,extended,2C81000B //check if not music (a0 > 10)
 patch=1,EE,200A0260,extended,1420FFFA //branch if it is not (to "addu a0, a0, a0")
 patch=1,EE,200A0264,extended,2881008D //check if valid stream (a0 < 8D)
-patch=1,EE,200A0268,extended,1020FFF8 //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,200A0268,extended,1020FFF7 //branch if it is not (to "lbu a1, (frames_2,2); lui v0, $000a")
 patch=1,EE,200A026C,extended,3C020034 //lui v0, $0034
 patch=1,EE,200A0270,extended,0000282D //a1 = 0
 patch=1,EE,200A0274,extended,2442DB6C //have v0 be at streams address

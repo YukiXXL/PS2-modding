@@ -464,8 +464,6 @@ patch=1,EE,201D7B84,extended,ACC37504 //Fix for lw Count_Enemies
 patch=1,EE,200A0110,extended,8C64000C //Load TotalCount
 patch=1,EE,200A0118,extended,03E00008 //jr ra
 patch=1,EE,200A011C,extended,00852018 //Multiply TotalCount with Multiplier(a1)
-//Fix the Infinite Loop
-patch=1,EE,201F8714,extended,2402FFFF //Safer fix
 
 [Mods\Double The Fun\Minions\Double]
 author=YukiXXL
@@ -495,14 +493,14 @@ patch=1,EE,200A0114,extended,24050005
 author=YukiXXL
 description=Enable this first!
 patch=1,EE,20275454,extended,0C028058
+//Branch
+patch=1,EE,200A0174,extended,3C040034 //lui a0, $0034
+patch=1,EE,200A0178,extended,80833820 //lb frames_2
 //Start
 patch=1,EE,200A0160,extended,8C470004 //copy replaced command
 patch=1,EE,200A0164,extended,24020037 //check for SeriousBomb
 patch=1,EE,200A0168,extended,10510002 //branch if item is SeriousBomb
 patch=1,EE,200A016C,extended,2E22002E //check if item is a key or treasure
-//Branch
-patch=1,EE,200A0174,extended,3C040034 //lui a0, $0034
-patch=1,EE,200A0178,extended,80833820 //lb frames_2
 
 [Mods\Randomizer\Items (Pick One!)\All\By Pattern]
 author=YukiXXL
@@ -510,12 +508,12 @@ description=Randomize all items by keeping the pattern.
 patch=1,EE,200A0170,extended,1040000A //branch if it is to jr ra
 patch=1,EE,200A017C,extended,02238821 //item = item + frames
 patch=1,EE,200A0180,extended,3C04000A //lui v0, $000a
-patch=1,EE,200A0184,extended,A0910138 //sb item to joker byte
-patch=1,EE,200A0188,extended,90910138 //lbu joker byte
-patch=1,EE,200A018C,extended,2E22002E //check if the item is valid
-patch=1,EE,200A0190,extended,1040FFFA //loop if it is not
-patch=1,EE,200A0194,extended,00000000 
-patch=1,EE,200A0198,extended,00000000 
+patch=1,EE,200A0184,extended,00000000 
+patch=1,EE,200A0188,extended,A0910138 //sb item to joker byte
+patch=1,EE,200A018C,extended,90910138 //lbu joker byte
+patch=1,EE,200A0190,extended,2E22002E //check if the item is valid
+patch=1,EE,200A0194,extended,1040FFF7 //loop if it is not
+patch=1,EE,200A0198,extended,00000000
 patch=1,EE,200A019C,extended,03E00008 //jr ra
 patch=1,EE,200A01A0,extended,00000000 
 
@@ -529,8 +527,8 @@ patch=1,EE,200A0184,extended,02238821 //item = item + frames
 patch=1,EE,200A0188,extended,A0910138 //sb item to joker byte
 patch=1,EE,200A018C,extended,90910138 //lbu joker byte
 patch=1,EE,200A0190,extended,2E22002E //check if the item is valid
-patch=1,EE,200A0194,extended,1040FFFA //loop if it is not
-patch=1,EE,200A0198,extended,00000000 
+patch=1,EE,200A0194,extended,1040FFF7 //loop if it is not
+patch=1,EE,200A0198,extended,00000000
 patch=1,EE,200A019C,extended,03E00008 //jr ra
 patch=1,EE,200A01A0,extended,00000000 
 
@@ -540,19 +538,19 @@ description=Randomize all except cut items by keeping the pattern.
 patch=1,EE,200A0170,extended,10400012 //branch if it is to jr ra
 patch=1,EE,200A017C,extended,02238821 //item = item + frames (s1=s1+v1)
 patch=1,EE,200A0180,extended,3C04000A //lui v0, $000a
-patch=1,EE,200A0184,extended,A0910138 //sb item to joker byte
-patch=1,EE,200A0188,extended,90910138 //lbu joker byte
-patch=1,EE,200A018C,extended,2E22002E //check if the item is valid
-patch=1,EE,200A0190,extended,1040FFFA //loop if it is not
-patch=1,EE,200A0194,extended,2402000D 
-patch=1,EE,200A0198,extended,1051FFF8 //Check if Smartbomb
-patch=1,EE,200A019C,extended,2402000E 
-patch=1,EE,200A01A0,extended,1051FFF6 //Check if Bubblegum
-patch=1,EE,200A01A4,extended,2402000F 
-patch=1,EE,200A01A8,extended,1051FFF4 //Check if Ring
-patch=1,EE,200A01AC,extended,24020010 
-patch=1,EE,200A01B0,extended,1051FFF2 //Check if Glasses
-patch=1,EE,200A01B4,extended,00000000 
+patch=1,EE,200A0184,extended,00000000 
+patch=1,EE,200A0188,extended,A0910138 //sb item to joker byte
+patch=1,EE,200A018C,extended,90910138 //lbu joker byte
+patch=1,EE,200A0190,extended,2E22002E //check if the item is valid
+patch=1,EE,200A0194,extended,1040FFF7 //loop if it is not
+patch=1,EE,200A0198,extended,2402000D
+patch=1,EE,200A019C,extended,1051FFF5 //Check if Smartbomb
+patch=1,EE,200A01A0,extended,2402000E
+patch=1,EE,200A01A4,extended,1051FFF3 //Check if Bubblegum
+patch=1,EE,200A01A8,extended,2402000F
+patch=1,EE,200A01AC,extended,1051FFF1 //Check if Ring
+patch=1,EE,200A01B0,extended,24020010
+patch=1,EE,200A01B4,extended,1051FFEF //Check if Glasses
 patch=1,EE,200A01B8,extended,00000000
 patch=1,EE,200A01BC,extended,03E00008 //jr ra
 patch=1,EE,200A01C0,extended,00000000
@@ -567,46 +565,27 @@ patch=1,EE,200A0184,extended,02238821 //item = item + frames (s1=s1+v1)
 patch=1,EE,200A0188,extended,A0910138 //sb item to joker byte
 patch=1,EE,200A018C,extended,90910138 //lbu joker byte
 patch=1,EE,200A0190,extended,2E22002E //check if the item is valid
-patch=1,EE,200A0194,extended,1040FFFA //loop if it is not
+patch=1,EE,200A0194,extended,1040FFF7 //loop if it is not
 patch=1,EE,200A0198,extended,2402000D
-patch=1,EE,200A019C,extended,1051FFF8 //Check if Smartbomb
+patch=1,EE,200A019C,extended,1051FFF5 //Check if Smartbomb
 patch=1,EE,200A01A0,extended,2402000E
-patch=1,EE,200A01A4,extended,1051FFF6 //Check if Bubblegum
+patch=1,EE,200A01A4,extended,1051FFF3 //Check if Bubblegum
 patch=1,EE,200A01A8,extended,2402000F
-patch=1,EE,200A01AC,extended,1051FFF4 //Check if Ring
+patch=1,EE,200A01AC,extended,1051FFF1 //Check if Ring
 patch=1,EE,200A01B0,extended,24020010
-patch=1,EE,200A01B4,extended,1051FFF2 //Check if Glasses
+patch=1,EE,200A01B4,extended,1051FFEF //Check if Glasses
 patch=1,EE,200A01B8,extended,00000000
 patch=1,EE,200A01BC,extended,03E00008 //jr ra
 patch=1,EE,200A01C0,extended,00000000
 
 // -- MINIONS
 
-[Mods\Randomizer\Minions\ENABLE FIRST!]
+[Mods\Randomizer\Minions\ENABLE FIRST!\Level Checker]
 author=YukiXXL
 description=Enable this first!
-patch=1,EE,20275EB8,extended,0C0280A8
-//After "Exclude Bosses" codes
-patch=1,EE,200A02C0,extended,3C040034 //lui a0, $0034
-patch=1,EE,200A02C4,extended,341900FF //t9 = ff
-patch=1,EE,200A02C8,extended,80813820 //lb at, (frames_2,2)
-//Start (Skip China Boss)
-patch=1,EE,200A02A0,extended,24010020
-patch=1,EE,200A02A4,extended,1041001D
-//Branch
-patch=1,EE,200A02EC,extended,00000000
-patch=1,EE,200A02F0,extended,1439FFFC //branch back if not t9
-patch=1,EE,200A02F4,extended,24840001 //a0 + 1
-patch=1,EE,200A02F8,extended,1039FFF3 //branch if rand minion ID is t9
-patch=1,EE,200A02FC,extended,3C040034 //lui a0, $0034
-//End (After "Include MiniSam")
-patch=1,EE,200A0308,extended,3C04003C //lui a0, $003c
-patch=1,EE,200A030C,extended,03E00008 //jr ra
-patch=1,EE,200A0310,extended,AC620000 //sw v0 (v1)
-//Level Checker
 patch=1,EE,2025F13C,extended,0C0280C8
 patch=1,EE,2027CEA0,extended,0C0280C8
-//Joker
+//Start
 patch=1,EE,200A0320,extended,27BDFFF0 //sp - 10
 patch=1,EE,200A0324,extended,FFBF0000 //sd ra, $0000(sp)
 patch=1,EE,200A0328,extended,0000082D //at = 0
@@ -627,7 +606,32 @@ patch=1,EE,200A0360,extended,AC410134 //sw at to "JokerLevelChecker"
 patch=1,EE,200A0364,extended,DFBF0000 //ld ra, $0000(sp)
 patch=1,EE,200A0368,extended,03E00008 //jr ra
 patch=1,EE,200A036C,extended,27BD0010 //sp + 10
-//LevelsData
+
+[Mods\Randomizer\Minions\ENABLE FIRST!\Minions Main Function]
+author=YukiXXL
+description=Enable this first!
+patch=1,EE,20275EB8,extended,0C0280A8
+//After "Exclude Bosses" codes
+patch=1,EE,200A02C0,extended,3C040034 //lui a0, $0034
+patch=1,EE,200A02C4,extended,341900FF //t9 = ff
+patch=1,EE,200A02C8,extended,80813820 //lb at, (frames_2,2)
+//Start (Skip China Boss)
+patch=1,EE,200A02A0,extended,24010020
+patch=1,EE,200A02A4,extended,10410018
+//Branch
+patch=1,EE,200A02EC,extended,00000000
+patch=1,EE,200A02F0,extended,1439FFFC //branch back if not t9
+patch=1,EE,200A02F4,extended,24840001 //a0 + 1
+patch=1,EE,200A02F8,extended,1039FFF1 //branch if rand minion ID is t9
+patch=1,EE,200A02FC,extended,00000000 //was "3C040034 (lui a0, $0034)"
+//End (After "Include MiniSam")
+patch=1,EE,200A0308,extended,3C04003C //lui a0, $003c
+patch=1,EE,200A030C,extended,03E00008 //jr ra
+patch=1,EE,200A0310,extended,AC620000 //sw v0 (v1)
+
+[Mods\Randomizer\Minions\ENABLE FIRST!\Levels Data]
+author=YukiXXL
+description=Enable this first!
 //Rlevel0_1
 patch=1,EE,E0010001,extended,000A0134
 patch=1,EE,200A0120,extended,FFFF2400
@@ -850,12 +854,12 @@ author=YukiXXL
 description=Randomize all by pattern.
 patch=1,EE,200A02CC,extended,00411021 //addu v0, v0, at
 patch=1,EE,200A02D0,extended,3C04000A //lui a0, $000a
-patch=1,EE,200A02D4,extended,A0820138 //sb v0, (joker byte)
-patch=1,EE,200A02D8,extended,90820138 //lbu v0, (joker byte)
-patch=1,EE,200A02DC,extended,24840120 //a0 = randomized minions IDs
-patch=1,EE,200A02E0,extended,90810000 //lbu at (rand minion ID)
-patch=1,EE,200A02E4,extended,10410003 //branch if ID matches to checking if it is t9
-patch=1,EE,200A02E8,extended,00000000
+patch=1,EE,200A02D4,extended,00000000
+patch=1,EE,200A02D8,extended,A0820138 //sb v0, (joker byte)
+patch=1,EE,200A02DC,extended,90820138 //lbu v0, (joker byte)
+patch=1,EE,200A02E0,extended,24840120 //a0 = randomized minions IDs
+patch=1,EE,200A02E4,extended,90810000 //lbu at (rand minion ID)
+patch=1,EE,200A02E8,extended,10410003 //branch if ID matches to checking if it is t9
 
 [Mods\Randomizer\Minions (Pick One!)\Random]
 author=YukiXXL
@@ -873,25 +877,25 @@ patch=1,EE,200A02E8,extended,10410003 //branch if ID matches to checking if it i
 author=YukiXXL
 description=Randomize MiniSam from randomizing.
 patch=1,EE,200A0300,extended,24010002
-patch=1,EE,200A0304,extended,1041FFF0
+patch=1,EE,200A0304,extended,1041FFEE
 
 [Mods\Randomizer\Minions\Exclude\Diablotaur]
 author=YukiXXL
 description=Skip Main Diablotaur from randomizing.
 patch=1,EE,200A02A8,extended,2401001F
-patch=1,EE,200A02AC,extended,1041001B
+patch=1,EE,200A02AC,extended,10410016
 
 [Mods\Randomizer\Minions\Exclude\Sirian Dark Lord]
 author=YukiXXL
 description=Skip Main Sirian Dark Lord from randomizing.
 patch=1,EE,200A02B0,extended,24010021
-patch=1,EE,200A02B4,extended,10410019
+patch=1,EE,200A02B4,extended,10410014
 
 [Mods\Randomizer\Minions\Exclude\MiniSam]
 author=YukiXXL
 description=Skip Main MiniSam from randomizing.
 patch=1,EE,200A02B8,extended,24010002
-patch=1,EE,200A02BC,extended,10410017
+patch=1,EE,200A02BC,extended,10410012
 
 [Mods\Randomizer\Minions\Minions Specific\Diablotaur\Enable]
 author=YukiXXL
@@ -961,7 +965,7 @@ patch=1,EE,200A0258,extended,90440138 //lbu a0, (joker byte)
 patch=1,EE,200A025C,extended,2C81000B //check if not music (a0 > 10)
 patch=1,EE,200A0260,extended,1420FFFA //branch if it is not (to "addu a0, a0, a0")
 patch=1,EE,200A0264,extended,2881008D //check if valid stream (a0 < 8D)
-patch=1,EE,200A0268,extended,1020FFF8 //branch if it is not (to "addu a0, a0, a0")
+patch=1,EE,200A0268,extended,1020FFF7 //branch if it is not (to "lbu a1, (frames_2,2); lui v0, $000a")
 patch=1,EE,200A026C,extended,3C020034 //lui v0, $0034
 patch=1,EE,200A0270,extended,0000282D //a1 = 0
 patch=1,EE,200A0274,extended,2442DB6C //have v0 be at streams address
@@ -970,6 +974,11 @@ patch=1,EE,200A027C,extended,14A4FFFE //branch if a1 is not equal to a0
 patch=1,EE,200A0280,extended,24A50001 //a1 = a1 + 1
 patch=1,EE,200A0284,extended,03E00008 //jr ra
 patch=1,EE,200A0288,extended,0000282D //a1 = 0
+
+[Mods\Softlock Fix\Fix 1]
+author=YukiXXL
+description=Fixes loops when using Multiply Minions.
+patch=1,EE,201F8714,extended,2402FFFF //Safer fix
 
 // RENDERING
 

@@ -3,14 +3,14 @@ comment=RANDOMIZER MOD - MINIONS MAIN
 
 //Start (Skip China Boss)
 patch=1,EE,200A02A0,extended,24010020
-patch=1,EE,200A02A4,extended,1041001D
+patch=1,EE,200A02A4,extended,10410018
 
 //Branch
 patch=1,EE,200A02EC,extended,00000000
 patch=1,EE,200A02F0,extended,1439FFFC //branch back if not t9
 patch=1,EE,200A02F4,extended,24840001 //a0 + 1
-patch=1,EE,200A02F8,extended,1039FFF3 //branch if rand minion ID is t9
-patch=1,EE,200A02FC,extended,3C040034 //lui a0, $0034
+patch=1,EE,200A02F8,extended,1039FFF1 //branch if rand minion ID is t9
+patch=1,EE,200A02FC,extended,00000000 //was "3C040034 (lui a0, $0034)"
 
 //End (After "Include MiniSam")
 patch=1,EE,200A0308,extended,3C04003C //lui a0, $003c

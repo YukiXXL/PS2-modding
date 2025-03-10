@@ -3,12 +3,12 @@ comment=RANDOMIZER MOD - EXCLUDE BOSSES
 
 //Diablotaur
 patch=1,EE,200A02A8,extended,2401001F
-patch=1,EE,200A02AC,extended,1041001B
+patch=1,EE,200A02AC,extended,10410016
 
 //Sirian Dark Lord
 patch=1,EE,200A02B0,extended,24010021
-patch=1,EE,200A02B4,extended,10410019
+patch=1,EE,200A02B4,extended,10410014
 
 //MiniSam
 patch=1,EE,200A02B8,extended,24010002
-patch=1,EE,200A02BC,extended,10410017
+patch=1,EE,200A02BC,extended,10410012

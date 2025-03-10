@@ -90,20 +90,34 @@ patch=1,EE,00912430,extended,90650015
 patch=1,EE,00912454,extended,90650025
 patch=1,EE,00912480,extended,90630035
 
-// MISC
+// EVENTS
 
-[Misc\Events\Replace Time Trial with Training]
+[Events\Replace Time Trial with Training]
 patch=1,EE,E0020003,extended,00B0FAF8
 patch=1,EE,10B0FAF0,extended,0000067A
 patch=1,EE,00B0FAF8,extended,0000000F
 
-[Misc\Events\Replace Turbo Dash with Boss Battle]
+[Events\Replace Turbo Dash with Boss Battle]
 patch=1,EE,E002000A,extended,00B0FAC8
 patch=1,EE,10B0FAC0,extended,00000794
 patch=1,EE,00B0FAC8,extended,00000011
 //Fix
 patch=1,EE,E00111BA,extended,00915198
 patch=1,EE,00915198,extended,00000021
+
+// CPUs
+
+[CPUs\Allow Novas]
+description=Allows CPUs to get Novas
+patch=1,EE,6025FE50,extended,2AA30020
+patch=1,EE,00000001,extended,000000C8
+
+[CPUs\Allow Turbo Lock]
+description=Allows CPUs to get Turbo Locks
+patch=1,EE,6025EE44,extended,2B830020
+patch=1,EE,00000001,extended,00000164
+
+// SPLIT-SCREEN
 
 [Split-Screen\Events\Continue Points fixes]
 patch=1,EE,E0023F01,extended,00925508
