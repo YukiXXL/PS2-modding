@@ -1,23 +1,24 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Enable Tractor Beam as a random weapon
 
-//*weapon-select-table-red-race-last*
-patch=1,EE,602E75E0,extended,00000007
-patch=1,EE,00000001,extended,00000020
-patch=1,EE,602E75E0,extended,00070036
-patch=1,EE,00020001,extended,00000048
 //*weapon-select-table-red-race-second*
 patch=1,EE,602E75E4,extended,00000007
 patch=1,EE,00000001,extended,0000004E
 //*weapon-select-table-red-race-middle*
 patch=1,EE,602E75F0,extended,00000007
 patch=1,EE,00000001,extended,0000004E
+//*weapon-select-table-red-race-last*
+patch=1,EE,602E75E0,extended,00000007
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,602E75E0,extended,00070036
+patch=1,EE,00020001,extended,00000048
+
 //*weapon-select-table-red-deathmatch-leading*
 patch=1,EE,602E75F8,extended,00070002
 patch=1,EE,00020001,extended,00000024
-//*weapon-select-table-red-deathmatch-tailing*
-patch=1,EE,602E760C,extended,00070002
-patch=1,EE,00020001,extended,00000024
 //*weapon-select-table-red-deathmatch-middle*
 patch=1,EE,602E7610,extended,00070002
+patch=1,EE,00020001,extended,00000024
+//*weapon-select-table-red-deathmatch-tailing*
+patch=1,EE,602E760C,extended,00070002
 patch=1,EE,00020001,extended,00000024

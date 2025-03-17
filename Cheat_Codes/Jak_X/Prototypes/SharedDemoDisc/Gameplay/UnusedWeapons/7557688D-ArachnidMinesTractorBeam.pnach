@@ -13,28 +13,28 @@ patch=1,EE,00020001,extended,0000004C
 
 // ARACHNID MINES
 
+//*weapon-select-table-red-race-first*
+patch=1,EE,60269D04,extended,00000007
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,60269D04,extended,00100004
+patch=1,EE,00020001,extended,00000048
+
 //*weapon-select-table-red-deathmatch-leading*
 patch=1,EE,60269CF8,extended,00000006
 patch=1,EE,00000001,extended,00000000
 patch=1,EE,60269CF8,extended,00100002
 patch=1,EE,00020001,extended,00000024
 
-//*weapon-select-table-red-race-first*
-patch=1,EE,60269CF8,extended,00000007
-patch=1,EE,00000001,extended,00000020
-patch=1,EE,60269CF8,extended,00100004
-patch=1,EE,00020001,extended,00000048
-
-//*weapon-select-table-red-deathmatch-tailing*
-patch=1,EE,60269CF8,extended,00000006
+//*weapon-select-table-red-deathmatch-middle*
+patch=1,EE,60269D10,extended,00000006
 patch=1,EE,00000001,extended,00000000
-patch=1,EE,60269CF8,extended,00100002
+patch=1,EE,60269D10,extended,00100002
 patch=1,EE,00020001,extended,00000024
 
-//*weapon-select-table-red-deathmatch-middle*
-patch=1,EE,60269CF8,extended,00000006
+//*weapon-select-table-red-deathmatch-tailing*
+patch=1,EE,60269D0C,extended,00000006
 patch=1,EE,00000001,extended,00000000
-patch=1,EE,60269CF8,extended,00100002
+patch=1,EE,60269D0C,extended,00100002
 patch=1,EE,00020001,extended,00000024
 
 // TRACTOR BEAM

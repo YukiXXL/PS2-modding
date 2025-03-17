@@ -58,6 +58,128 @@ description=Allows CPUs to get Turbo Locks
 patch=1,EE,6025EE44,extended,2B830020
 patch=1,EE,00000001,extended,00000164
 
+[CPUs\Events\Number of CPUs\5 CPUs on Death Race and Rush Hour]
+patch=1,EE,E0010008,extended,00B6DAA8
+patch=1,EE,00B6DAA4,extended,24130005
+
+[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally and Time Trial]
+patch=1,EE,E0011825,extended,00B6DAD0
+patch=1,EE,00B6DAC8,extended,24130005
+
+[CPUs\Events\Number of CPUs\5 CPUs on Boss Battle (Mizo)]
+patch=1,EE,E0010002,extended,00B6DAC0
+patch=1,EE,00B6DABC,extended,24130005
+
+// CUSTOMIZATION
+
+[Customization\Enable customizing secret vehicles\Tune Performance]
+patch=1,EE,E0030001,extended,0026047C
+patch=1,EE,6025FE08,extended,00000000
+patch=1,EE,00020003,extended,00000154
+patch=1,EE,00000020,extended,000003E8
+//Visuals
+patch=1,EE,60262F28,extended,00000000
+patch=1,EE,00010000,extended,00000010
+
+[Customization\Enable customizing secret vehicles\Modify Body Parts]
+patch=1,EE,E0030001,extended,0026047C
+patch=1,EE,6025FE08,extended,00000000
+patch=1,EE,00020003,extended,00000154
+patch=1,EE,00000020,extended,000004C0
+//Visuals
+patch=1,EE,60262C98,extended,00000000
+patch=1,EE,00010000,extended,00000010
+
+[Customization\Enable customizing secret vehicles\Respray Paint Job]
+patch=1,EE,E0030001,extended,0026047C
+patch=1,EE,6025FE08,extended,00000000
+patch=1,EE,00020003,extended,00000154
+patch=1,EE,00000020,extended,000005C8
+//Visuals
+patch=1,EE,60261F14,extended,00000000
+patch=1,EE,00010000,extended,00000010
+
+// EVENTS
+
+[Events\Replace Time Trial with Training]
+patch=1,EE,E0020003,extended,00B0FAF8
+patch=1,EE,10B0FAF0,extended,0000067A
+patch=1,EE,00B0FAF8,extended,0000000F
+
+[Events\Replace Turbo Dash with Boss Battle]
+patch=1,EE,E002000A,extended,00B0FAC8
+patch=1,EE,10B0FAC0,extended,00000794
+patch=1,EE,00B0FAC8,extended,00000011
+//Fix
+patch=1,EE,E00111BA,extended,00915198
+patch=1,EE,00915198,extended,00000021
+
+[Events\More Laps/Time Limit]
+description=0-255 Laps/Time
+//For writing minimum
+patch=1,EE,E0033F01,extended,102624E8
+patch=1,EE,602624E8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0033F01,extended,102624E8
+patch=1,EE,602624E8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
+//Check if equal to zero
+patch=1,EE,E0010000,extended,0025CDD8 //Memory Check
+patch=1,EE,202624E8,extended,00263F01 //revert to default
+
+[Events\Team Mode on any event]
+description=Advance Options > L1+R1. If not applying, change event/location and retry.
+patch=1,EE,E0041825,extended,00B71688 //Memory Check
+patch=1,EE,20B71674,extended,90990088 //lbu t9, $0088(a0)
+patch=1,EE,20B71678,extended,3B390020 //xori t9, t9, $0020
+patch=1,EE,20B7167C,extended,A0990088 //sb t9, $0088(a0)
+patch=1,EE,20B71680,extended,90840005 //lbu a0, $0005(a0)
+
+[Events\5 CPUs, 6 Players for events]
+description=Saves onto the event and map when trying to start the event
+patch=1,EE,E003FFF8,extended,00B70FC8
+patch=1,EE,20B70FB8,extended,24040506
+patch=1,EE,20B70FBC,extended,A464000C
+patch=1,EE,20B70FC4,extended,90630005
+
+[Events\Options\Enable Advance Options for Freeze Rally]
+patch=1,EE,E0030001,extended,0026047C
+patch=1,EE,6025FE08,extended,24040012
+patch=1,EE,00000003,extended,000000C4
+patch=1,EE,00000020,extended,00000808
+
+[Events\Options\Circuit Race with Collectathon options]
+description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
+patch=1,EE,502628D0,extended,00000003
+patch=1,EE,002624C0,extended,00000000
+patch=1,EE,5026269C,extended,00000003
+patch=1,EE,002624C4,extended,00000000
+
+[Events\Options\Other events with Collectathon options]
+description=Do not change the Time Limit or anything like that!
+patch=1,EE,502628D0,extended,00000003
+patch=1,EE,00262104,extended,00000000
+
+[Events\Forced Circuit task\on Training]
+description=Running Training gamemode as Circuit Race.
+patch=1,EE,60269CD4,extended,8EE2BECB
+patch=1,EE,00010001,extended,00000174
+patch=1,EE,60269CD4,extended,8EE2BECB
+patch=1,EE,00010001,extended,0000018C
+
+[Events\Forced Circuit task\on Mizo]
+description=Running Mizo gamemode as Circuit Race.
+patch=1,EE,60269CD4,extended,8EE2BECB
+patch=1,EE,00010001,extended,000001A4
+
+[Events\Forced Circuit task\on artist]
+description=Running Artist gamemode as Circuit Race.
+patch=1,EE,60269CD4,extended,8EE2BECB
+patch=1,EE,00010001,extended,000001B0
+
 // GET ALL
 
 [Get All\Vehicles]
@@ -102,20 +224,103 @@ patch=1,EE,00912430,extended,90650015
 patch=1,EE,00912454,extended,90650025
 patch=1,EE,00912480,extended,90630035
 
-// EVENTS
+// GAMEPLAY
 
-[Events\Replace Time Trial with Training]
-patch=1,EE,E0020003,extended,00B0FAF8
-patch=1,EE,10B0FAF0,extended,0000067A
-patch=1,EE,00B0FAF8,extended,0000000F
+[Gameplay\Disable Backwards Bot]
+patch=1,EE,E0013F01,extended,00261EF0
+patch=1,EE,00261EF0,extended,00263F05
 
-[Events\Replace Turbo Dash with Boss Battle]
-patch=1,EE,E002000A,extended,00B0FAC8
-patch=1,EE,10B0FAC0,extended,00000794
-patch=1,EE,00B0FAC8,extended,00000011
-//Fix
-patch=1,EE,E00111BA,extended,00915198
-patch=1,EE,00915198,extended,00000021
+[Gameplay\Unused weapons\Enable Both in Last Place]
+patch=1,EE,60269CE0,extended,00000008
+patch=1,EE,00000001,extended,00000020
+//Arachnid Mines
+patch=1,EE,60269CE0,extended,00100004
+patch=1,EE,00020001,extended,00000048
+//Tractor Beam
+patch=1,EE,60269CE0,extended,00080036
+patch=1,EE,00020001,extended,0000004C
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Race (First)]
+patch=1,EE,60269D04,extended,00000007
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,60269D04,extended,00100004
+patch=1,EE,00020001,extended,00000048
+
+[Gameplay\Unused weapons\Tractor Beam\Enable in Race (Second)]
+description=Replaces Turbo Inhibitor
+patch=1,EE,60269CE4,extended,00080028
+patch=1,EE,00020001,extended,0000004C
+
+[Gameplay\Unused weapons\Tractor Beam\Enable in Race (Middle)]
+description=Replaces Turbo Inhibitor
+patch=1,EE,60269CF0,extended,00080001
+patch=1,EE,00020001,extended,0000004C
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Arenas (Leading)]
+patch=1,EE,60269CF8,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,60269CF8,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Arenas (Middle)]
+patch=1,EE,60269D10,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,60269D10,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Arenas (Tailing)]
+patch=1,EE,60269D0C,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,60269D0C,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (First)]
+patch=1,EE,60269CF4,extended,00000004
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,60269CF4,extended,00050003
+patch=1,EE,00020001,extended,0000003C
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (Second)]
+patch=1,EE,60269CE8,extended,00000006
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,60269CE8,extended,00050007
+patch=1,EE,00020001,extended,00000044
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (Middle)]
+patch=1,EE,60269CFC,extended,00000006
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,60269CFC,extended,00050001
+patch=1,EE,00020001,extended,00000044
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (Penultimate)]
+patch=1,EE,60269D14,extended,00000006
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,60269D14,extended,00050007
+patch=1,EE,00020001,extended,00000044
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (Last)]
+patch=1,EE,60269D00,extended,00000006
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,60269D00,extended,00050007
+patch=1,EE,00020001,extended,00000044
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Arenas (Leading)]
+patch=1,EE,60269CEC,extended,00000004
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,60269CEC,extended,00050003
+patch=1,EE,00020001,extended,0000001C
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Arenas (Middle)]
+patch=1,EE,60269D08,extended,00000004
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,60269D08,extended,00050003
+patch=1,EE,00020001,extended,0000001C
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Arenas (Tailing)]
+patch=1,EE,60269CDC,extended,00000004
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,60269CDC,extended,00050003
+patch=1,EE,00020001,extended,0000001C
 
 // SPLIT-SCREEN
 
