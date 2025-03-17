@@ -271,6 +271,23 @@ description=Do not change the Time Limit or anything like that!
 patch=1,EE,502DFFD0,extended,00000003
 patch=1,EE,002DF804,extended,00000000
 
+[Events\Forced Circuit task\on Training]
+description=Running Training gamemode as Circuit Race.
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,00000174
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,0000018C
+
+[Events\Forced Circuit task\on Mizo]
+description=Running Mizo gamemode as Circuit Race.
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,000001A4
+
+[Events\Forced Circuit task\on artist]
+description=Running Artist gamemode as Circuit Race.
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,000001B0
+
 [Events\Force Gamemode\Save Mizo gamemode to selected task]
 description=Change vehicle/color to apply.
 patch=1,EE,E0020012,extended,00F20E50
@@ -613,51 +630,66 @@ patch=1,EE,20BADDDC,extended,0000382D
 patch=1,EE,20BADE18,extended,0000382D
 patch=1,EE,20BADE4C,extended,0000302D
 
-// MISC
+// GAMEPLAY
 
-[Misc\Disable Backwards Bot]
+[Gameplay\Disable Backwards Bot]
 patch=1,EE,E0011601,extended,002DF5F0
 patch=1,EE,002DF5F0,extended,002E1605
 
-[Misc\Enable Tractor Beam\At last place]
+[Gameplay\Enable Tractor Beam\At last place]
 description=Adds Tractor Beam as a possible random weapon
 patch=1,EE,602E73E0,extended,00000007
 patch=1,EE,00000001,extended,00000020
 patch=1,EE,602E73E0,extended,00070036
 patch=1,EE,00020001,extended,00000048
 
-[Misc\Enable Tractor Beam\At second place]
+[Gameplay\Enable Tractor Beam\At second place]
 description=Replaces Turbo Lock with Tractor Beam
 patch=1,EE,602E73E4,extended,00000007
 patch=1,EE,00000001,extended,0000004E
 
-[Misc\Enable Tractor Beam\At middle place]
+[Gameplay\Enable Tractor Beam\At middle place]
 description=Replaces Turbo Lock with Tractor Beam
 patch=1,EE,602E73F0,extended,00000007
 patch=1,EE,00000001,extended,0000004E
 
-[Misc\Bad Weather (Saves to profile!)\Activate]
+[Gameplay\Enable Tractor Beam\Arena\when leading]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E73F8,extended,00070002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Enable Tractor Beam\Arena\when tailing]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E740C,extended,00070002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Enable Tractor Beam\Arena\when middle]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E7410,extended,00070002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Bad Weather (Saves to profile!)\Activate]
 patch=1,EE,602E33A0,extended,000000FF
 patch=1,EE,00000001,extended,0000043E
 
-[Misc\Bad Weather (Saves to profile!)\Deactivate]
+[Gameplay\Bad Weather (Saves to profile!)\Deactivate]
 patch=1,EE,602E33A0,extended,00000000
 patch=1,EE,00000001,extended,0000043E
 
-[Misc\Mirrored Game (Saves to profile!)\Activate]
+[Gameplay\Mirrored Game (Saves to profile!)\Activate]
 patch=1,EE,602E33A0,extended,000000FF
 patch=1,EE,00000001,extended,0000043D
 
-[Misc\Mirrored Game (Saves to profile!)\Deactivate]
+[Gameplay\Mirrored Game (Saves to profile!)\Deactivate]
 patch=1,EE,602E33A0,extended,00000000
 patch=1,EE,00000001,extended,0000043D
 
-[Misc\Jak always has Daxter on the vehicle]
+[Gameplay\Jak always has Daxter on the vehicle]
 description=If Daxter as a driver is taken, Jak will still have him
 patch=1,EE,E0011825,extended,00BEDC1C
 patch=1,EE,20BEDC18,extended,00000000
 
-[Misc\Enable Mizo Skin + Voice Lines]
+[Gameplay\Enable Mizo Skin + Voice Lines]
 description=Replaces G.T. Blitz
 //Replace model
 patch=1,EE,E0010004,extended,00BF128C
@@ -706,7 +738,7 @@ patch=1,EE,20BCC234,extended,90840005
 
 // SPLIT-SCREEN
 
-[Split-Screen\Fix crashing on Misc Events]
+[Split-Screen\Fix crashing on other Events]
 patch=1,EE,E0060010,extended,00B289C4
 patch=1,EE,20B289A4,extended,10850005
 patch=1,EE,20B289A8,extended,9C620014
@@ -762,7 +794,7 @@ patch=1,EE,20991D90,extended,00991DA4
 patch=1,EE,20991AB0,extended,00991AC4
 patch=1,EE,20991290,extended,009912A4
 
-[Split-Screen\Continue Point Fixes\Misc Events]
+[Split-Screen\Continue Point Fixes\Other Events]
 patch=1,EE,E0051801,extended,0098F410
 patch=1,EE,209930B0,extended,009930C4
 patch=1,EE,2098FB20,extended,00992B14

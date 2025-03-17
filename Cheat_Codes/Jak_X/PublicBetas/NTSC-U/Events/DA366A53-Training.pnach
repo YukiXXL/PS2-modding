@@ -1,0 +1,6 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=EVENTS - TRAINING
+
+//Replace Reversi with Training mode tasks
+patch=1,EE,E0010008,extended,00B862E8
+patch=1,EE,00B862E8,extended,0000000F

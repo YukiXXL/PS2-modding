@@ -1,0 +1,17 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=0-255 Laps/Time
+
+//For writing minimum
+patch=1,EE,E0033F01,extended,102624E8
+patch=1,EE,602624E8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0033F01,extended,102624E8
+patch=1,EE,602624E8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
+
+//Check if equal to zero
+patch=1,EE,E0010000,extended,0025CDD8 //Memory Check
+patch=1,EE,202624E8,extended,00263F01 //revert to default

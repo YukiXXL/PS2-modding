@@ -1,0 +1,64 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=Arachnid Mines and Tractor Beam
+
+//*weapon-select-table-red-race-last*
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,00000050
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,00000080
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,000000B0
+//Arachnid Mines
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,00000048
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,00000078
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,000000A8
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,000000D8
+//Tractor Beam
+patch=1,EE,6026EFE0,extended,00080008
+patch=1,EE,00020001,extended,0000004C
+patch=1,EE,6026EFE0,extended,00080007
+patch=1,EE,00020001,extended,0000007C
+patch=1,EE,6026EFE0,extended,00080006
+patch=1,EE,00020001,extended,000000AC
+patch=1,EE,6026EFE0,extended,00080005
+patch=1,EE,00020001,extended,000000DC
+
+// ARACHNID MINES
+
+//*weapon-select-table-red-deathmatch-leading*
+patch=1,EE,6026EFF8,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026EFF8,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+//*weapon-select-table-red-race-first*
+patch=1,EE,6026F004,extended,00000008
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026F004,extended,00100003
+patch=1,EE,00020001,extended,0000004C
+
+//*weapon-select-table-red-deathmatch-tailing*
+patch=1,EE,6026F00C,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026F00C,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+//*weapon-select-table-red-deathmatch-middle*
+patch=1,EE,6026F010,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026F010,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+// TRACTOR BEAM
+
+//*weapon-select-table-red-race-second*
+patch=1,EE,6026EFE4,extended,00000008
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026EFE4,extended,00080001
+patch=1,EE,00020001,extended,0000004C

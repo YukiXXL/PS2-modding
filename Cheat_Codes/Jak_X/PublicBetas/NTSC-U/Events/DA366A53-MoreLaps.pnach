@@ -1,0 +1,17 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=0-255 Laps/Time
+
+//For writing minimum
+patch=1,EE,E0030301,extended,102CE8E8
+patch=1,EE,602CE8E8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0030301,extended,102CE8E8
+patch=1,EE,602CE8E8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
+
+//Check if equal to zero
+patch=1,EE,E0010000,extended,002C91D8 //Memory Check
+patch=1,EE,202CE8E8,extended,002D0301 //revert to default

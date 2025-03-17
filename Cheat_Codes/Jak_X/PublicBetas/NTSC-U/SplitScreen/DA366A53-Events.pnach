@@ -2,7 +2,7 @@ gametitle=Jak X Beta Trial Code (NTSC-U)
 comment=EVENTS
 
 //Enable all events for SS
-patch=1,EE,E0030405,extended,002CA9E4
+patch=1,EE,E0030305,extended,002CA9E4
 patch=1,EE,602CC208,extended,64A6FFFD
 patch=1,EE,00000003,extended,00000090
 patch=1,EE,00000020,extended,00000340

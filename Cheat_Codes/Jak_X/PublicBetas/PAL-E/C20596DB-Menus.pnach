@@ -1,0 +1,11 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=MENUS
+
+//Enable Tune Performance
+patch=1,EE,E0010180,extended,012DE224
+patch=1,EE,012DE224,extended,9C630174
+
+//Scene Player Act 3 = PSP Scan
+patch=1,EE,E002D9A4,extended,012D6494
+patch=1,EE,012D63B0,extended,14640038
+patch=1,EE,112D6494,extended,66E8D4D4

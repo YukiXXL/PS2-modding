@@ -1,0 +1,18 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=PROFILE - CHEATS
+
+//Mirrored World (00 = Off; 40 = only Adventure; 80 = All)
+patch=1,EE,6026AFA0,extended,00000080
+patch=1,EE,00000001,extended,00000405
+
+//Infinite Health (00 = off; FF = on)
+patch=1,EE,6026AFA0,extended,000000FF
+patch=1,EE,00000001,extended,00000406
+
+//Infinite Turbo (00 = off; FF = on)
+patch=1,EE,6026AFA0,extended,000000FF
+patch=1,EE,00000001,extended,00000407
+
+//Bad Weather (00 = off; FF = on)
+patch=1,EE,6026AFA0,extended,000000FF
+patch=1,EE,00000001,extended,00000408

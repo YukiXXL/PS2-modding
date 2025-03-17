@@ -1,0 +1,16 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Other gamemodes act as Circuit Race
+
+//Training
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,00000174
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,0000018C
+
+//Mizo
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,000001A4
+
+//artist
+patch=1,EE,602E73D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,000001B0

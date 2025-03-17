@@ -1,8 +1,0 @@
-gametitle=Jak X Beta Trial Code (NTSC-U)
-comment=MISC - BYPASSES
-
-//5 CPUs, 6 Players for events
-patch=1,EE,E0030007,extended,00BD000C
-patch=1,EE,20BCFFFC,extended,24190506
-patch=1,EE,20BD0000,extended,A499000C
-patch=1,EE,20BD0008,extended,90840005

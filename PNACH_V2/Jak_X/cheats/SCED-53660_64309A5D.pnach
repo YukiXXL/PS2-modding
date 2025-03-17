@@ -30,12 +30,12 @@ description=To unlock secrets, use "Get All Tasks".
 patch=1,EE,50B13E90,extended,00000004
 patch=1,EE,00B13E7C,extended,00000000
 
-[Adventure menu\All Movies Skipped]
+[Adventure\All Movies Skipped]
 description=This code causes some issues and can get stuck in infinite loading loop.
 patch=1,EE,E0012024,extended,009125F0
 patch=1,EE,209125F0,extended,24040001
 
-[Adventure menu\Green Eco Cup]
+[Adventure\Green Eco Cup]
 description=Fixes Green Eco Cup which is the only playable one.
 patch=1,EE,E0020100,extended,00929908
 patch=1,EE,20929900,extended,0020001E
@@ -45,6 +45,18 @@ patch=1,EE,E0012025,extended,00B6DD30
 patch=1,EE,20B6DD2C,extended,10000041
 patch=1,EE,E0011025,extended,00B72A1C
 patch=1,EE,20B72A18,extended,10000007
+
+// CPUs
+
+[CPUs\Allow Novas]
+description=Allows CPUs to get Novas
+patch=1,EE,6025FE50,extended,2AA30020
+patch=1,EE,00000001,extended,000000C8
+
+[CPUs\Allow Turbo Lock]
+description=Allows CPUs to get Turbo Locks
+patch=1,EE,6025EE44,extended,2B830020
+patch=1,EE,00000001,extended,00000164
 
 // GET ALL
 
@@ -104,18 +116,6 @@ patch=1,EE,00B0FAC8,extended,00000011
 //Fix
 patch=1,EE,E00111BA,extended,00915198
 patch=1,EE,00915198,extended,00000021
-
-// CPUs
-
-[CPUs\Allow Novas]
-description=Allows CPUs to get Novas
-patch=1,EE,6025FE50,extended,2AA30020
-patch=1,EE,00000001,extended,000000C8
-
-[CPUs\Allow Turbo Lock]
-description=Allows CPUs to get Turbo Locks
-patch=1,EE,6025EE44,extended,2B830020
-patch=1,EE,00000001,extended,00000164
 
 // SPLIT-SCREEN
 

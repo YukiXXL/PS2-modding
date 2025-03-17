@@ -1,0 +1,5 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=GAMEPLAY - DISABLE BOT
+
+patch=1,EE,E0019201,extended,002671F0
+patch=1,EE,002671F0,extended,00269205

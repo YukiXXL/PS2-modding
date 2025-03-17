@@ -1,6 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=MISC - WEAPONS
-
-//Force a weapon that picks-up each time
-patch=1,EE,602E69F8,extended,24050007
-patch=1,EE,00020001,extended,00000040

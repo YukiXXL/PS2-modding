@@ -1,0 +1,18 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=PROFILE
+
+//Mirrored World (00 = Off; 40 = only Adventure; 80 = All)
+patch=1,EE,602D20A0,extended,00000080
+patch=1,EE,00000001,extended,0000097D
+
+//Infinite Health + Turbo (00 = off; FF = on)
+patch=1,EE,602D20A0,extended,000000FF
+patch=1,EE,00000001,extended,0000097F
+
+//Bad Weather (00 = off; FF = on)
+patch=1,EE,602D20A0,extended,000000FF
+patch=1,EE,00000001,extended,00000980
+
+//Unlock Taryn
+patch=1,EE,602D20A0,extended,00000002
+patch=1,EE,00000001,extended,00000981
