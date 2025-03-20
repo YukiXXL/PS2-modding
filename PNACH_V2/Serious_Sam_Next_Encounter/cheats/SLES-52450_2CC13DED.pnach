@@ -502,7 +502,7 @@ patch=1,EE,200A0164,extended,24020037 //check for SeriousBomb
 patch=1,EE,200A0168,extended,10510002 //branch if item is SeriousBomb
 patch=1,EE,200A016C,extended,2E22002E //check if item is a key or treasure
 
-[Mods\Randomizer\Items (Pick One!)\All\By Pattern]
+[Mods\Randomizer\Items\MUST BE ENABLED (Pick One!)\All\By Pattern]
 author=YukiXXL
 description=Randomize all items by keeping the pattern.
 patch=1,EE,200A0170,extended,1040000A //branch if it is to jr ra
@@ -517,7 +517,7 @@ patch=1,EE,200A0198,extended,00000000
 patch=1,EE,200A019C,extended,03E00008 //jr ra
 patch=1,EE,200A01A0,extended,00000000 
 
-[Mods\Randomizer\Items (Pick One!)\All\Random]
+[Mods\Randomizer\Items\MUST BE ENABLED (Pick One!)\All\Random]
 author=YukiXXL
 description=Randomize all items completely random.
 patch=1,EE,200A0170,extended,1040000A //branch if it is to jr ra
@@ -532,7 +532,7 @@ patch=1,EE,200A0198,extended,00000000
 patch=1,EE,200A019C,extended,03E00008 //jr ra
 patch=1,EE,200A01A0,extended,00000000 
 
-[Mods\Randomizer\Items (Pick One!)\All except Cut Items\By Pattern]
+[Mods\Randomizer\Items\MUST BE ENABLED (Pick One!)\All except Cut Items\By Pattern]
 author=YukiXXL
 description=Randomize all except cut items by keeping the pattern.
 patch=1,EE,200A0170,extended,10400012 //branch if it is to jr ra
@@ -555,7 +555,7 @@ patch=1,EE,200A01B8,extended,00000000
 patch=1,EE,200A01BC,extended,03E00008 //jr ra
 patch=1,EE,200A01C0,extended,00000000
 
-[Mods\Randomizer\Items (Pick One!)\All except Cut Items\Random]
+[Mods\Randomizer\Items\MUST BE ENABLED (Pick One!)\All except Cut Items\Random]
 author=YukiXXL
 description=Randomize all except cut items completely random.
 patch=1,EE,200A0170,extended,10400012 //branch if it is to jr ra
@@ -849,7 +849,7 @@ patch=1,EE,200A0120,extended,0A090805
 patch=1,EE,200A0124,extended,1B1A100B
 patch=1,EE,200A0128,extended,FFFF251D
 
-[Mods\Randomizer\Minions (Pick One!)\By Pattern]
+[Mods\Randomizer\Minions\MUST BE ENABLED (Pick One!)\By Pattern]
 author=YukiXXL
 description=Randomize all by pattern.
 patch=1,EE,200A02CC,extended,00411021 //addu v0, v0, at
@@ -861,7 +861,7 @@ patch=1,EE,200A02E0,extended,24840120 //a0 = randomized minions IDs
 patch=1,EE,200A02E4,extended,90810000 //lbu at (rand minion ID)
 patch=1,EE,200A02E8,extended,10410003 //branch if ID matches to checking if it is t9
 
-[Mods\Randomizer\Minions (Pick One!)\Random]
+[Mods\Randomizer\Minions\MUST BE ENABLED (Pick One!)\Random]
 author=YukiXXL
 description=Randomize all completely random.
 patch=1,EE,200A02CC,extended,3C04000A //lui a0, $000a
@@ -975,7 +975,7 @@ patch=1,EE,200A0280,extended,24A50001 //a1 = a1 + 1
 patch=1,EE,200A0284,extended,03E00008 //jr ra
 patch=1,EE,200A0288,extended,0000282D //a1 = 0
 
-[Mods\Softlock Fix\Fix 1]
+[Mods\Softlock Fix\Multiply Minions]
 author=YukiXXL
 description=Fixes loops when using Multiply Minions.
 patch=1,EE,201F8564,extended,2402FFFF //Safer fix
