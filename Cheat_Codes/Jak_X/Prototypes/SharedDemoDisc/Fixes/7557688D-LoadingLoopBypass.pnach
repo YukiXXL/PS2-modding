@@ -1,0 +1,12 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=Load anyway. Useful as quiting event is faster then rebooting the whole game.
+
+//Relying on same address
+patch=1,EE,E001A025,extended,00964790
+patch=1,EE,20964790,extended,02E0A025
+
+//Using pointer
+patch=1,EE,E0030001,extended,0026047C
+patch=1,EE,60265FE4,extended,02E0A025
+patch=1,EE,00020003,extended,FFFFFFFC
+patch=1,EE,00000068,extended,0000001C

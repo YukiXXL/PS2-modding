@@ -1,6 +1,57 @@
 gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
 comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
+[Fixes\Driver Memory Fix]
+description=Fixes loading loop when outside the Demo mode.
+//G.T. Blitz
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,000001F4
+//Rayn
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,000004D4
+//UR-86
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,000005D4
+//Sig
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,00000654
+//Torn
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,000006E4
+//Cutter
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,000007E4
+//Edje
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,00000864
+//Shiv
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,000008E4
+//Keira
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,00000974
+//Kleiver
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,000009F4
+//Razer
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,00000A74
+//Ashelin
+patch=1,EE,60269E58,extended,00260D4D
+patch=1,EE,00020001,extended,00000AF4
+
+[Fixes\Bypass Loading Loop\Memory Check]
+description=For quiting the event instead of softlocking.
+patch=1,EE,E001A025,extended,00964790
+patch=1,EE,20964790,extended,02E0A025
+
+[Fixes\Bypass Loading Loop\Pointer write (Alternative)]
+description=Use this one if the other doesn't work.
+patch=1,EE,E0030001,extended,0026047C
+patch=1,EE,60265FE4,extended,02E0A025
+patch=1,EE,00020003,extended,FFFFFFFC
+patch=1,EE,00000068,extended,0000001C
+
 [Boot Mode\Retail]
 description=Boots the game into the Retail mode.
 patch=1,EE,20209338,extended,79616C70
