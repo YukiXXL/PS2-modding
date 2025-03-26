@@ -51,12 +51,12 @@ patch=1,EE,20272738,extended,79616C70
 
 [Boot Mode\Preview (Retail)]
 description=Boots the game into the Preview mode.
-patch=1,EE,E0010027,extended,0025BE28
+patch=1,EE,E0012738,extended,0025BE20
 patch=1,EE,1025BE20,extended,24C6D450
 
 [Boot Mode\Kiosk]
 description=Boots the game into the Kiosk mode.
-patch=1,EE,E0012638,extended,0025BE20
+patch=1,EE,E0012738,extended,0025BE20
 patch=1,EE,1025BE20,extended,24C6D3F0
 
 // ADDONS

@@ -6,14 +6,14 @@ patch=1,EE,E0016562,extended,00272738
 patch=1,EE,20272738,extended,79616C70
 
 // Preview Mode ( preview )
-patch=1,EE,E0010027,extended,0025BE28
+patch=1,EE,E0012738,extended,0025BE20
 patch=1,EE,1025BE20,extended,24C6D450
 
 // Kiosk Mode ( kiosk )
-patch=1,EE,E0010027,extended,0025BE28
+patch=1,EE,E0012738,extended,0025BE20
 patch=1,EE,1025BE20,extended,24C6D3F0
 
 
 // play-boot
-patch=1,EE,E0010027,extended,0025BE28
+patch=1,EE,E0012738,extended,0025BE20
 patch=1,EE,1025BE20,extended,24C6EF60
