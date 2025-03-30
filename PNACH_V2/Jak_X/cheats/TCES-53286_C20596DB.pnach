@@ -181,6 +181,12 @@ patch=1,EE,012CB000,extended,00000000
 patch=1,EE,E00162A4,extended,002D79F8
 patch=1,EE,102D79F8,extended,00B86304
 
+// KIOSK MODE
+
+[Kiosk Mode\Fix going back in menus]
+patch=1,EE,602CDD70,extended,00000000
+patch=1,EE,00020001,extended,00000080
+
 // CPUs
 
 [CPUs\Allow Novas]

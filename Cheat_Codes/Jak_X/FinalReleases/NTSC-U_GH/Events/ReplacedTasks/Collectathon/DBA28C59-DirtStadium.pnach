@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EVENTS - REPLACED TASK - DIRT STADIUM
+
+//task
+patch=1,EE,E0010B2E,extended,00989EE8
+patch=1,EE,10989EE8,extended,0000062E
+
+//powerups
+patch=1,EE,E001062E,extended,00989EE8
+patch=1,EE,00989EFC,extended,00000020
+
+//kcrsclct
+patch=1,EE,E001EF69,extended,00989FF0
+patch=1,EE,20989FF0,extended,002DEF61

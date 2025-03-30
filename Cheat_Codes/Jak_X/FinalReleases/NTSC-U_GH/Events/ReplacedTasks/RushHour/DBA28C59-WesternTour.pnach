@@ -1,0 +1,25 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EVENTS - REPLACED TASK - WESTERN TOUR
+
+//task
+patch=1,EE,E001002F,extended,00989D38
+patch=1,EE,10989D38,extended,00000D2F
+
+//powerups
+patch=1,EE,E0010D2F,extended,00989D38
+patch=1,EE,00989D4C,extended,00000010
+
+//drone
+patch=1,EE,E0010525,extended,00989EB0
+patch=1,EE,20989EB0,extended,002DE9C5
+
+//enable timer
+//default
+patch=1,EE,E0010100,extended,00989DAC
+patch=1,EE,00989DAC,extended,00000101
+//current
+patch=1,EE,E0010100,extended,00989DB4
+patch=1,EE,00989DB4,extended,00000101
+//Grand Prix
+patch=1,EE,E0010100,extended,00989DBC
+patch=1,EE,00989DBC,extended,00000101

@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EVENTS - REPLACED TASK - DESERT ARENA
+
+//task
+patch=1,EE,E0010B34,extended,00989568
+patch=1,EE,10989568,extended,00000634
+
+//powerups
+patch=1,EE,E0010634,extended,00989568
+patch=1,EE,0098957C,extended,00000020
+
+//desclct
+patch=1,EE,E001E785,extended,00989690
+patch=1,EE,20989690,extended,002E422D
