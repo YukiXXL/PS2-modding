@@ -10,5 +10,8 @@ patch=1,EE,E0010250,extended,00986C68
 patch=1,EE,00986C7C,extended,00000004
 
 //icettbox
+patch=1,EE,E0010525,extended,00986DC0
+patch=1,EE,20986DC0,extended,002E63E9
 patch=1,EE,E0010525,extended,00986DE0
 patch=1,EE,20986DE0,extended,002E63E9
+

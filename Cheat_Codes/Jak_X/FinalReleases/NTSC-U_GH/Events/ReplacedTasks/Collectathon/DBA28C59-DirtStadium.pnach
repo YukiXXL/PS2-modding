@@ -10,5 +10,8 @@ patch=1,EE,E001062E,extended,00989EE8
 patch=1,EE,00989EFC,extended,00000020
 
 //kcrsclct
+patch=1,EE,E001EF69,extended,00989FD0
+patch=1,EE,20989FD0,extended,002DEF61
 patch=1,EE,E001EF69,extended,00989FF0
 patch=1,EE,20989FF0,extended,002DEF61
+

@@ -10,6 +10,8 @@ patch=1,EE,E0010A38,extended,00988F88
 patch=1,EE,00988F9C,extended,00000009
 
 //spatfoot
+patch=1,EE,E0010525,extended,009890E0
+patch=1,EE,209890E0,extended,002E0139
 patch=1,EE,E0010525,extended,00989100
 patch=1,EE,20989100,extended,002E0139
 

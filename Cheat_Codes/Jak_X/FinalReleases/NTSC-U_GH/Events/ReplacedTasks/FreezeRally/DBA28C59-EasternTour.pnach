@@ -10,5 +10,8 @@ patch=1,EE,E0010230,extended,00989B88
 patch=1,EE,00989B9C,extended,00000004
 
 //havttbox
+patch=1,EE,E0010525,extended,00989CE0
+patch=1,EE,20989CE0,extended,002DFF6D
 patch=1,EE,E0010525,extended,00989D00
 patch=1,EE,20989D00,extended,002DFF6D
+

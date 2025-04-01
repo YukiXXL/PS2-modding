@@ -10,6 +10,8 @@ patch=1,EE,E001012F,extended,00989D38
 patch=1,EE,00989D4C,extended,00000002
 
 //drone
+patch=1,EE,E0010525,extended,00989E90
+patch=1,EE,20989E90,extended,002DE9C5
 patch=1,EE,E0010525,extended,00989EB0
 patch=1,EE,20989EB0,extended,002DE9C5
 
