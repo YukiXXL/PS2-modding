@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Fixes Tag task on Clifftop Battlefields
+
+patch=1,EE,E0020C9E,extended,00980698
+patch=1,EE,20980768,extended,002E1701
+patch=1,EE,20980788,extended,002E1701

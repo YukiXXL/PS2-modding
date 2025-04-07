@@ -3,15 +3,14 @@ comment=EVENTS - REPLACED TASK - MAR COLISEUM
 
 //task
 patch=1,EE,E0010B48,extended,00987828
-patch=1,EE,10987828,extended,00000648
+patch=1,EE,10987828,extended,00000848
 
 //powerups
-patch=1,EE,E0010648,extended,00987828
-patch=1,EE,0098783C,extended,00000020
+patch=1,EE,E0010848,extended,00987828
+patch=1,EE,0098783C,extended,00000080
 
-//coliclct
+//colirev
 patch=1,EE,E001E7A1,extended,00987910
-patch=1,EE,20987910,extended,002DE71D
+patch=1,EE,20987910,extended,002DE721
 patch=1,EE,E001E7A1,extended,00987930
-patch=1,EE,20987930,extended,002DE71D
-
+patch=1,EE,20987930,extended,002DE721

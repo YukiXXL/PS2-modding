@@ -1,0 +1,22 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EVENTS - REPLACED TASK - MAR COLISEUM
+
+//task
+patch=1,EE,E0010B48,extended,00987828
+patch=1,EE,10987828,extended,00000648
+
+//powerups
+patch=1,EE,E0010648,extended,00987828
+patch=1,EE,0098783C,extended,00000020
+
+//settings
+patch=1,EE,E0010648,extended,0098789C
+patch=1,EE,2098789C,extended,000A0203
+patch=1,EE,E0010648,extended,009878AC
+patch=1,EE,209878AC,extended,000A0203
+
+//coliclct
+patch=1,EE,E001E7A1,extended,00987910
+patch=1,EE,20987910,extended,002DE71D
+patch=1,EE,E001E7A1,extended,00987930
+patch=1,EE,20987930,extended,002DE71D

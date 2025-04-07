@@ -1,0 +1,21 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Sport Hunt on Desert Arena
+
+//gamemode ID change
+patch=1,EE,E0010C97,extended,00980F58
+patch=1,EE,10980F58,extended,00000597
+
+//powerups
+patch=1,EE,E0010597,extended,00980F58
+patch=1,EE,00980F6C,extended,00000010
+
+//pointer addr
+patch=1,EE,E0010597,extended,00980F58
+patch=1,EE,20980F70,extended,000A0002
+
+//task name
+patch=1,EE,E0040597,extended,00980F58
+patch=1,EE,00981014,extended,00000012
+patch=1,EE,00981020,extended,6E75682D
+patch=1,EE,00981024,extended,61742D74
+patch=1,EE,00981028,extended,00006B73

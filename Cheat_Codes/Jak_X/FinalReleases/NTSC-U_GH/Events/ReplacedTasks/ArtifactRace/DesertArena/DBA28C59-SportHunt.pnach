@@ -9,15 +9,9 @@ patch=1,EE,10989568,extended,00000534
 patch=1,EE,E0010534,extended,00989568
 patch=1,EE,0098957C,extended,00000010
 
-//deshunt
-patch=1,EE,E001E785,extended,00989670
-patch=1,EE,20989670,extended,002DE699
-patch=1,EE,E001E785,extended,00989690
-patch=1,EE,20989690,extended,002DE699
-
 //deshunt2
 patch=1,EE,E001E785,extended,00989670
 patch=1,EE,20989670,extended,002DE715
+//deshunt
 patch=1,EE,E001E785,extended,00989690
-patch=1,EE,20989690,extended,002DE715
-
+patch=1,EE,20989690,extended,002DE699

@@ -45,3 +45,8 @@ patch=1,EE,2098598C,extended,00000000
 // Ice Pit - snobowl
 patch=1,EE,209921F8,extended,6F676F6C
 patch=1,EE,209921FC,extended,00000000
+
+
+//Dirt Stadium Collectathon IPA (kcross-collect-task)
+patch=1,EE,5098036C,extended,00000004
+patch=1,EE,0098001C,extended,00000000
