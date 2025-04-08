@@ -116,7 +116,7 @@ patch=1,EE,00020001,extended,00000008
 patch=1,EE,E0010008,extended,00BCD40C
 patch=1,EE,00BCD408,extended,24130005
 
-[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally]
+[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally (and other)]
 patch=1,EE,E0011825,extended,00BCD434
 patch=1,EE,00BCD42C,extended,24130005
 

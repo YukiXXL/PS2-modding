@@ -116,7 +116,7 @@ patch=1,EE,00020001,extended,00000008
 patch=1,EE,E0010008,extended,00BCD4BC
 patch=1,EE,00BCD4B8,extended,24130005
 
-[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally]
+[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally (and other)]
 patch=1,EE,E0011825,extended,00BCD4E4
 patch=1,EE,00BCD4DC,extended,24130005
 
@@ -198,7 +198,40 @@ patch=1,EE,0048917C,extended,00000003
 
 // EVENTS
 
-[Events\Extra Events]
+[Events\Extra Events\Add Desert Arena Sport Hunt]
+description=Replaces Tag on Clifftop Battlefields.
+patch=1,EE,E0010C9E,extended,00980798
+patch=1,EE,10980798,extended,00000597
+//name change
+patch=1,EE,E0020597,extended,00980798
+patch=1,EE,50989564,extended,00000004
+patch=1,EE,00980794,extended,00000000
+//IPA change
+patch=1,EE,E0020597,extended,00980798
+patch=1,EE,5098959C,extended,00000004
+patch=1,EE,009807CC,extended,00000000
+//powerups
+patch=1,EE,E0010597,extended,00980798
+patch=1,EE,009807AC,extended,00000010
+//task name
+patch=1,EE,E0060597,extended,00980798
+patch=1,EE,009808A4,extended,00000012
+patch=1,EE,209808A8,extended,61736564
+patch=1,EE,209808AC,extended,616E6572
+patch=1,EE,209808B0,extended,6E75682D
+patch=1,EE,209808B4,extended,61742D74
+patch=1,EE,209808B8,extended,00006B73
+//task levels
+patch=1,EE,E0060597,extended,00980798
+patch=1,EE,20980858,extended,002DA241
+patch=1,EE,20980868,extended,002DE715
+patch=1,EE,20980870,extended,002E28D1
+patch=1,EE,20980878,extended,002DBFCD
+patch=1,EE,20980888,extended,002DE699
+patch=1,EE,20980890,extended,002E28D1
+
+[Events\Extra Events\Variant 1]
+description=Enables Tag, Training and Mizo tasks.
 patch=1,EE,E00EB419,extended,00B603F4
 //Change load location
 patch=1,EE,002E8DF8,extended,00B60204
@@ -218,6 +251,155 @@ patch=1,EE,00B603C0,extended,00000660
 patch=1,EE,10B603D0,extended,0000067A
 patch=1,EE,10B603E0,extended,00000794
 patch=1,EE,00B603F0,extended,0000055A
+
+[Events\Extra Events\Variant 2]
+description=Same as "Variant 1" but replaces Tag with Collectathon and Reversi.
+patch=1,EE,E00EB419,extended,00B603F4
+//Change load location
+patch=1,EE,002E8DF8,extended,00B60200
+//Add events
+patch=1,EE,20B601FC,extended,002FB2E4
+patch=1,EE,20B60200,extended,00000010
+patch=1,EE,20B60204,extended,00000010
+patch=1,EE,20B60208,extended,00B5B4B4
+patch=1,EE,40B6020C,extended,00050001
+patch=1,EE,00B60330,extended,00000010
+//Add event modes
+patch=1,EE,00B60338,extended,00000006
+patch=1,EE,00B60348,extended,00000008
+patch=1,EE,40B60358,extended,00030004
+patch=1,EE,0000000F,extended,00000001
+//Fix ID strings for Event names
+patch=1,EE,00B60330,extended,0000055D
+patch=1,EE,00B60340,extended,000005F0
+patch=1,EE,10B60350,extended,0000067A
+patch=1,EE,10B60360,extended,00000794
+patch=1,EE,00B60370,extended,0000055A
+//JOKER_CODES
+//DeserArena_joker
+patch=1,EE,200A0000,extended,000A0032
+patch=1,EE,200A0004,extended,000A000A
+patch=1,EE,200A0008,extended,000A0012
+patch=1,EE,200A000C,extended,002E17FA
+patch=1,EE,200A0010,extended,002DA241
+patch=1,EE,200A0014,extended,000A001A
+patch=1,EE,200A0018,extended,00000010
+patch=1,EE,200A001C,extended,000A0022
+patch=1,EE,200A0020,extended,002E422D
+patch=1,EE,200A0024,extended,000A002A
+patch=1,EE,200A0028,extended,002E28D1
+patch=1,EE,200A002C,extended,002E17FA
+patch=1,EE,200A0030,extended,002DBFCD
+patch=1,EE,200A0034,extended,000A003A
+patch=1,EE,200A0038,extended,00000000
+patch=1,EE,200A003C,extended,000A0042
+patch=1,EE,200A0040,extended,002E422D
+patch=1,EE,200A0044,extended,0098969A
+//Coliseum_joker
+patch=1,EE,200A0050,extended,000A0082
+patch=1,EE,200A0054,extended,000A005A
+patch=1,EE,200A0058,extended,000A0062
+patch=1,EE,200A005C,extended,002E17FA
+patch=1,EE,200A0060,extended,002DA289
+patch=1,EE,200A0064,extended,000A006A
+patch=1,EE,200A0068,extended,00000010
+patch=1,EE,200A006C,extended,000A0072
+patch=1,EE,200A0070,extended,002DE71D
+patch=1,EE,200A0074,extended,000A007A
+patch=1,EE,200A0078,extended,002E28D1
+patch=1,EE,200A007C,extended,002E17FA
+patch=1,EE,200A0080,extended,002DB5AD
+patch=1,EE,200A0084,extended,000A008A
+patch=1,EE,200A0088,extended,00000000
+patch=1,EE,200A008C,extended,000A0092
+patch=1,EE,200A0090,extended,002DE71D
+patch=1,EE,200A0094,extended,0098793A
+//TASKS
+//DesertArena_Collectathon
+patch=1,EE,E0010C97,extended,00980F58
+patch=1,EE,10980F58,extended,00000697
+//powerups
+patch=1,EE,E0010697,extended,00980F58
+patch=1,EE,00980F6C,extended,00000020
+//pointer addr
+patch=1,EE,E0010697,extended,00980F58
+patch=1,EE,20980F70,extended,000A0002
+//task name
+patch=1,EE,E0050697,extended,00980F58
+patch=1,EE,00981014,extended,00000015
+patch=1,EE,20981020,extended,6C6F632D
+patch=1,EE,20981024,extended,7463656C
+patch=1,EE,20981028,extended,7361742D
+patch=1,EE,2098102C,extended,0000006B
+//DesertArena_Reversi
+patch=1,EE,E0010C9D,extended,009808D8
+patch=1,EE,109808D8,extended,00000897
+//name change
+patch=1,EE,E0020897,extended,009808D8
+patch=1,EE,50989564,extended,00000004
+patch=1,EE,009808D4,extended,00000000
+//IPA change
+patch=1,EE,E0020897,extended,009808D8
+patch=1,EE,5098959C,extended,00000004
+patch=1,EE,0098090C,extended,00000000
+//powerups
+patch=1,EE,E0010897,extended,009808D8
+patch=1,EE,009808EC,extended,00000080
+//pointer addr
+patch=1,EE,E0010897,extended,009808D8
+patch=1,EE,209808F0,extended,000A0002
+//task name
+patch=1,EE,E0070897,extended,009808D8
+patch=1,EE,00980994,extended,00000015
+patch=1,EE,20980998,extended,61736564
+patch=1,EE,2098099C,extended,616E6572
+patch=1,EE,209809A0,extended,7665722D
+patch=1,EE,209809A4,extended,69737265
+patch=1,EE,209809A8,extended,7361742D
+patch=1,EE,209809AC,extended,0000006B
+
+//MarColiseum_Collectathon
+patch=1,EE,E0010C9C,extended,009809C8
+patch=1,EE,109809C8,extended,0000069C
+//powerups
+patch=1,EE,E001069C,extended,009809C8
+patch=1,EE,009809DC,extended,00000020
+//pointer addr
+patch=1,EE,E001069C,extended,009809C8
+patch=1,EE,209809E0,extended,000A0052
+//task name
+patch=1,EE,E005069C,extended,009809C8
+patch=1,EE,00980A94,extended,00000015
+patch=1,EE,20980AA0,extended,6C6F632D
+patch=1,EE,20980AA4,extended,7463656C
+patch=1,EE,20980AA8,extended,7361742D
+patch=1,EE,20980AAC,extended,0000006B
+//MarColiseum_Reversi
+patch=1,EE,E0010CA1,extended,009803A8
+patch=1,EE,109803A8,extended,0000089C
+//name change
+patch=1,EE,E002089C,extended,009803A8
+patch=1,EE,50987824,extended,00000004
+patch=1,EE,009803A4,extended,00000000
+//IPA change
+patch=1,EE,E002089C,extended,009803A8
+patch=1,EE,5098785C,extended,00000004
+patch=1,EE,009803DC,extended,00000000
+//powerups
+patch=1,EE,E001089C,extended,009803A8
+patch=1,EE,009803BC,extended,00000080
+//pointer addr
+patch=1,EE,E001089C,extended,009803A8
+patch=1,EE,209803C0,extended,000A0052
+//task name
+patch=1,EE,E007089C,extended,009803A8
+patch=1,EE,00980464,extended,00000015
+patch=1,EE,00980468,extended,696C6F63
+patch=1,EE,0098046C,extended,6D756573
+patch=1,EE,00980470,extended,7665722D
+patch=1,EE,00980474,extended,69737265
+patch=1,EE,00980478,extended,7361742D
+patch=1,EE,0098047C,extended,0000006B
 
 [Events\Enable all sub-options all the time]
 patch=1,EE,E001002B,extended,00E27CB4

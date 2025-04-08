@@ -5,7 +5,7 @@ comment=Number of CPUs
 patch=1,EE,E0010008,extended,00BCD40C
 patch=1,EE,00BCD408,extended,24130005
 
-//5 CPUs on Freeze Rally
+//5 CPUs on Freeze Rally (and other)
 patch=1,EE,E0011825,extended,00BCD434
 patch=1,EE,00BCD42C,extended,24130005
 

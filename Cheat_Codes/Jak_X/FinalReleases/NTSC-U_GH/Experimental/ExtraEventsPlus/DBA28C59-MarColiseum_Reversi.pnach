@@ -1,0 +1,34 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Collectathon on Mar Coliseum
+
+//gamemode ID change
+patch=1,EE,E0010CA1,extended,009803A8
+patch=1,EE,109803A8,extended,0000089C
+
+//name change
+patch=1,EE,E002089C,extended,009803A8
+patch=1,EE,50987824,extended,00000004
+patch=1,EE,009803A4,extended,00000000
+
+//IPA change
+patch=1,EE,E002089C,extended,009803A8
+patch=1,EE,5098785C,extended,00000004
+patch=1,EE,009803DC,extended,00000000
+
+//powerups
+patch=1,EE,E001089C,extended,009803A8
+patch=1,EE,009803BC,extended,00000080
+
+//pointer addr
+patch=1,EE,E001089C,extended,009803A8
+patch=1,EE,209803C0,extended,000A0052
+
+//task name
+patch=1,EE,E007089C,extended,009803A8
+patch=1,EE,00980464,extended,00000015
+patch=1,EE,00980468,extended,696C6F63
+patch=1,EE,0098046C,extended,6D756573
+patch=1,EE,00980470,extended,7665722D
+patch=1,EE,00980474,extended,69737265
+patch=1,EE,00980478,extended,7361742D
+patch=1,EE,0098047C,extended,0000006B
