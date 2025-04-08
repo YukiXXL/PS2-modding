@@ -1,10 +1,16 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
-[Universal Fix]
+[Fixes\Universal Fix]
 description=In case the game crashes when changing drivers or in lobby
 patch=1,EE,602DC930,extended,10000003
 patch=1,EE,00020001,extended,000000D0
+
+[Fixes\Tag on Clifftop Battlefields]
+description=Fixes crashing/black screen.
+patch=1,EE,E0020C9E,extended,00980798
+patch=1,EE,20980868,extended,002E1801
+patch=1,EE,20980888,extended,002E1801
 
 // CHEATS
 
