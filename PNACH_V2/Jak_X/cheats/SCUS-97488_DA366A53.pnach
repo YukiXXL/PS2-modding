@@ -1,8 +1,8 @@
 gametitle=Jak X Beta Trial Code (NTSC-U)
 comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
-[Fixes\Fix Missing IPAs]
-description=Fixes crashing by replacing missing IPAs with Logo
+[Fixes\Fix Missing IPUs]
+description=Fixes crashing by replacing missing IPUs with Logo
 //Check just in case
 patch=1,EE,E0187073,extended,0099CFB8
 // Frozen Speedway - snow
@@ -42,7 +42,7 @@ patch=1,EE,2098588C,extended,00000000
 patch=1,EE,209920F8,extended,6F676F6C
 patch=1,EE,209920FC,extended,00000000
 
-[Fixes\Fix Collectathon on Dirt Stadium IPA]
+[Fixes\Fix Collectathon on Dirt Stadium IPU]
 patch=1,EE,5098026C,extended,00000004
 patch=1,EE,0097FF1C,extended,00000000
 
@@ -231,6 +231,19 @@ patch=1,EE,012D62B0,extended,14640038
 patch=1,EE,112D6394,extended,66E8D4D4
 
 // EVENTS
+
+[Events\Dirt Stadium Reversi]
+description=Replaces Mar Coliseum.
+patch=1,EE,E0050894,extended,0097F178
+//name
+patch=1,EE,2097F174,extended,002D79D5
+//ID
+patch=1,EE,0097F178,extended,00000890
+//task_levels
+patch=1,EE,5097FF00,extended,00000004
+patch=1,EE,0097F190,extended,00000000
+//IPU
+patch=1,EE,2097F1AC,extended,0099C8B4
 
 [Events\Replace Reversi with Training]
 patch=1,EE,E0010008,extended,00B862E8

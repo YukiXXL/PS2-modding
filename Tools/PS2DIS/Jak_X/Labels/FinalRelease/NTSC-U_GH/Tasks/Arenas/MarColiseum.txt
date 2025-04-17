@@ -1,0 +1,74 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=MAR COLISEUM - tasks and default values
+
+// TAG (king-of-hill)
+
+//name
+009809C4
+
+//GM, ID
+009809C8 = 00000C9C
+
+//powerups
+009809D8 = 00004121
+009809DC = 00000001
+
+//IPU
+009809FC
+
+// ARTIFACT
+
+//name
+00987824
+
+//GM, ID
+00987828 = 00000B48
+
+//powerups
+00987838 = 00004421
+0098783C = 00000001
+
+//IPU
+0098785C
+
+//settings
+0098789C = 020A0403
+
+//task level
+00987910 = SS
+00987930 = SP
+
+// DEATHMATCH
+
+//name
+0098BC34
+
+//GM, ID
+0098BC38 = 0000041A
+
+//powerups
+0098BC48 = 000040A1
+0098BC4C = 00000001
+
+//IPU
+0098BC6C
+
+//settings
+0098BCAC = 000A0403
+
+//task level
+0098BD40 = SS
+0098BD60 = SP
+
+
+// LEVELS
+
+Collectathon (coliclct) = 002DE71D
+Reversi (colirev) = 002DE721
+(FILE NOT EXISTING. NEVER LOADING!)Sport Hunt (colhunt) = 002E6A11
+
+
+name = 002DB5AD
+IPU = 0098BCF4
+level_SS = 002DA289
+level_SP = 002DB5AD

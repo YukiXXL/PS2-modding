@@ -1,0 +1,136 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+// TRACKS
+
+// - EASTERN TOUR
+
+[Events\Replacing Tasks\Eastern Tour\ENABLE FIRST!]
+description=Enables drones and other task related stuff.
+patch=1,EE,E007A5D1,extended,00982368
+//powerups
+patch=1,EE,20982258,extended,00002121
+//medals
+patch=1,EE,20982280,extended,43520000
+patch=1,EE,20982288,extended,43160000
+patch=1,EE,20982290,extended,42C80000
+//settings
+patch=1,EE,409822BC,extended,00030002
+patch=1,EE,00000401,extended,00000000
+//drone
+patch=1,EE,20982368,extended,002DE9C5
+
+[Events\Replacing Tasks\Eastern Tour\Death Race]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,00982368
+//GM,ID
+patch=1,EE,10982248,extended,00000189
+//powerups
+patch=1,EE,0098225C,extended,00000002
+
+[Events\Replacing Tasks\Eastern Tour\Rush Hour]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,00982368
+//GM,ID
+patch=1,EE,10982248,extended,00000D89
+//powerups
+patch=1,EE,0098225C,extended,00000010
+
+// - NORTHERN TOUR
+
+[Events\Replacing Tasks\Northern Tour\ENABLE FIRST!]
+description=Enables drones and other task related stuff.
+patch=1,EE,E007A5D5,extended,00981B28
+//powerups
+patch=1,EE,20981A18,extended,00008121
+//medals
+patch=1,EE,20981A40,extended,43520000
+patch=1,EE,20981A48,extended,43160000
+patch=1,EE,20981A50,extended,42C80000
+//settings
+patch=1,EE,40981A7C,extended,00030002
+patch=1,EE,00000401,extended,00000000
+//drone
+patch=1,EE,20981B28,extended,002DE9C5
+
+[Events\Replacing Tasks\Northern Tour\Death Race]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,00981B28
+//GM,ID
+patch=1,EE,10981A08,extended,0000018F
+//powerups
+patch=1,EE,00981A1C,extended,00000002
+
+[Events\Replacing Tasks\Northern Tour\Rush Hour]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,00981B28
+//GM,ID
+patch=1,EE,10981A08,extended,00000D8F
+//powerups
+patch=1,EE,00981A1C,extended,00000010
+
+// - SOUTHERN TOUR
+
+[Events\Replacing Tasks\Southern Tour\ENABLE FIRST!]
+description=Enables drones and other task related stuff.
+patch=1,EE,E007A589,extended,009812E8
+//powerups
+patch=1,EE,209811D8,extended,00001121
+//medals
+patch=1,EE,20981200,extended,43520000
+patch=1,EE,20981208,extended,43160000
+patch=1,EE,20981210,extended,42C80000
+//settings
+patch=1,EE,4098123C,extended,00030002
+patch=1,EE,00000401,extended,00000000
+//drone
+patch=1,EE,209812E8,extended,002DE9C5
+
+[Events\Replacing Tasks\Southern Tour\Death Race]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,009812E8
+//GM,ID
+patch=1,EE,109811C8,extended,00000195
+//powerups
+patch=1,EE,009811DC,extended,00000002
+
+[Events\Replacing Tasks\Southern Tour\Rush Hour]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,009812E8
+//GM,ID
+patch=1,EE,109811C8,extended,00000D95
+//powerups
+patch=1,EE,009811DC,extended,00000010
+
+// - WESTERN TOUR
+
+[Events\Replacing Tasks\Western Tour\ENABLE FIRST!]
+description=Enables drones and other task related stuff.
+patch=1,EE,E007A599,extended,00982BA8
+//powerups
+patch=1,EE,20982A98,extended,00004121
+//medals
+patch=1,EE,20982AC0,extended,43520000
+patch=1,EE,20982AC8,extended,43160000
+patch=1,EE,20982AD0,extended,42C80000
+//settings
+patch=1,EE,40982AFC,extended,00030002
+patch=1,EE,00000401,extended,00000000
+//drone
+patch=1,EE,20982BA8,extended,002DE9C5
+
+[Events\Replacing Tasks\Western Tour\Death Race]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,00982BA8
+//GM,ID
+patch=1,EE,10982A88,extended,00000183
+//powerups
+patch=1,EE,00982A9C,extended,00000002
+
+[Events\Replacing Tasks\Western Tour\Rush Hour]
+description=Replaces Time Trial.
+patch=1,EE,E002E9C5,extended,00982BA8
+//GM,ID
+patch=1,EE,10982A88,extended,00000D83
+//powerups
+patch=1,EE,00982A9C,extended,00000010

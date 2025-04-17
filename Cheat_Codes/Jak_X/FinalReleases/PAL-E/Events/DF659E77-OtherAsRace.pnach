@@ -4,6 +4,7 @@ comment=Other gamemodes act as Circuit Race
 //Training
 patch=1,EE,602E74D4,extended,8EE2BECB
 patch=1,EE,00010001,extended,00000174
+//Training2
 patch=1,EE,602E74D4,extended,8EE2BECB
 patch=1,EE,00010001,extended,0000018C
 

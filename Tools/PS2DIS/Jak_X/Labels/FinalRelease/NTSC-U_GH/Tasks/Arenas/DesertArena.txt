@@ -1,0 +1,77 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=DESERT ARENA - tasks and default values
+
+// TAG (king-of-hill)
+
+//name
+00980F54
+
+//GM, ID
+00980F58 = 00000C97
+
+//powerups
+00980F68 = 00008121
+00980F6C = 00000001
+
+//IPU
+00980F8C
+
+// ARTIFACT
+
+//name
+00989564
+
+//GM, ID
+00989568 = 00000B34
+
+//powerups
+00989578 = 00008221
+0098957C = 00000001
+
+//IPU
+0098959C
+
+//settings
+009895DC = 020A0403
+
+//task level
+00989670 = SS
+00989690 = SP
+
+// DEATHMATCH
+
+//name
+0098AD44
+
+//GM, ID
+0098AD48 = 00000424
+
+//powerups
+0098AD58 = 00008121
+0098AD5C = 00000001
+
+//IPU
+0098AD7C
+
+//settings
+0098ADBC = 000A0403
+
+//task level
+0098AE50 = SS
+0098AE70 = SP
+
+
+// LEVELS
+
+Collectathon (desclct) = 002E422D
+Reversi (desrev) = 002E6A75
+
+Sport Hunt:
+deshunt = 002DE699
+deshunt2 = 002DE715
+
+
+name = 002DBFCD
+IPU = 0098AE04
+level_SS = 002DA241
+level_SP = 002DBFCD

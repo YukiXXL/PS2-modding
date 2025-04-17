@@ -4,3 +4,8 @@ Misc
 Secrets
 207B9BF1 - Mirrored
 207B9BF2 - Bad Weather
+
+
+00F20F50 (NTSC-GH) = CPU
+Values (float) = 437F0000 (255), 411051EB (Having custom stats all FF)
+00BCCBDC = Randomizer. a1 = task ID.

@@ -1,0 +1,39 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EASTERN TOUR - tasks and default values
+
+// TIME TRIAL
+
+//GM, ID
+009811C8 = 00000395
+
+//powerups
+009811D8 = 00081121
+009811DC = 00000001
+
+//settings
+0098123C = 00000140
+
+//task level
+009812E8 = SP
+
+// RACE
+
+//GM, ID
+00986C68 = 00000050
+
+//powerups
+00986C78 = 00001421
+00986C7C = 00000001
+
+//settings
+00986CDC = 00000100
+
+//task level
+00986DC0 = SS
+00986DE0 = SP
+
+// LEVELS
+
+Time Trial (ictrtt) = 002DA589
+Freeze Rally (icettbox) = 002E63E9
+Turbo Dash (icetfoot) = 002E63E5

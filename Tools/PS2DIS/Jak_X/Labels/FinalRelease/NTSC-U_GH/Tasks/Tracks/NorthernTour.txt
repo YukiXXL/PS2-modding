@@ -1,0 +1,39 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=NORTHERN TOUR - tasks and default values
+
+// TIME TRIAL
+
+//GM, ID
+00981A08 = 0000038F
+
+//powerups
+00981A18 = 00088121
+00981A1C = 00000001
+
+//settings
+00981A7C = 00000140
+
+//task level
+00981B28 = SP
+
+// RACE
+
+//GM, ID
+00988F88 = 00000038
+
+//powerups
+00988F98 = 00008221
+00988F9C = 00000001
+
+//settings
+00988FFC = 00000100
+
+//task level
+009890E0 = SS
+00989100 = SP
+
+// LEVELS
+
+Time Trial (sptrtt) = 002DA5D5
+Freeze Rally (spattbox) = 002E0135
+Turbo Dash (spatfoot) = 002E0139
