@@ -122,13 +122,6 @@ patch=1,EE,200A0124,extended,140C0B0A
 patch=1,EE,200A0128,extended,25181715
 patch=1,EE,200A012C,extended,FFFFFF3B
 
-//Clevel8_3
-patch=1,EE,E0040015,extended,000A0134
-patch=1,EE,200A0120,extended,0A060500
-patch=1,EE,200A0124,extended,15140C0B
-patch=1,EE,200A0128,extended,26251716
-patch=1,EE,200A012C,extended,FFFFFF3C
-
 //Alevel9_1
 patch=1,EE,E0040017,extended,000A0134
 patch=1,EE,200A0120,extended,0A080500
