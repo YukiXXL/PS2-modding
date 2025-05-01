@@ -1,0 +1,48 @@
+gametitle=Sonic Riders Comic-Con Demo Disc (NTSC-U)
+comment=by YukiXXL.
+
+[Enable All Characters]
+author=YukiXXL
+patch=1,EE,202FCBF4,extended,00000000 //Avatar icons
+patch=1,EE,002FBE20,extended,2CC10011 //Avatar
+patch=1,EE,002FCD44,extended,28410011 //Status
+//Next
+patch=1,EE,002FB200,extended,28610011
+patch=1,EE,002FB21C,extended,28610011
+patch=1,EE,002FE744,extended,28410011 //Select
+
+[Enable All Gears]
+author=YukiXXL
+description=BROKEN! Used to see all the gears available.
+patch=1,EE,002FB334,extended,28A10019 //Set maximum beyond 8
+patch=1,EE,202FB4A4,extended,00000000 //Allow usage of any for any
+
+[Menu\Force Main Menu]
+author=YukiXXL
+description=Forces Main Menu on startup.
+patch=1,EE,202CECE8,extended,24140003
+
+[Menu\Drop to Main Menu]
+author=YukiXXL
+description=Drops to Main Menu after Title Screen.
+patch=1,EE,002CF768,extended,2403000E
+patch=1,EE,202CF790,extended,00000000 //Fix GUI
+
+[Menu\Drop to Main Menu\Extra]
+author=YukiXXL
+description=SQUARE for Extras; TRIANGLE for Options.
+patch=1,EE,202CE7E0,extended,30610101
+patch=1,EE,202CE7E4,extended,5020000B
+patch=1,EE,202CE7E8,extended,A2401949
+patch=1,EE,202CE814,extended,30610808
+patch=1,EE,202CE818,extended,54200003
+patch=1,EE,202CE81C,extended,24020002
+patch=1,EE,202CE820,extended,24020001
+patch=1,EE,202CE824,extended,30610404
+patch=1,EE,202CE828,extended,5420FFF0
+patch=1,EE,202CE82C,extended,A2421949
+patch=1,EE,202CE830,extended,10000060
+
+[Menu\Main Menu\Unlock Mission Mode]
+author=YukiXXL
+patch=1,EE,7093AB47,extended,00000007
