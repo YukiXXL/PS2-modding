@@ -1,10 +1,28 @@
-gametitle=Sonic Riders Comic-Con Demo Disc (NTSC-U)
+gametitle=Sonic Riders (PAL-E)
 comment=by YukiXXL.
+
+[Gameplay\Don't lower FPS in Multiplayer]
+author=YukiXXL
+patch=1,EE,201B2E30,extended,AF809824
+patch=1,EE,201B2E38,extended,AF809828
+
+[Player Entry\Allow the same character]
+author=YukiXXL
+description=Have both cursors on the same character.
+patch=1,EE,20301DFC,extended,10000004 //in-game
+patch=1,EE,2030085C,extended,10000016
+
+[CPUs\Everyone Super Sonic]
+author=YukiXXL
+description="Enable Super Sonic" CODE NEEDS TO BE ENABLED!
+patch=1,EE,20301D8C,extended,2403000B
 
 [Characters\Enable Super Sonic]
 author=YukiXXL
+description=It also unlocks it (saved to profile)!
 patch=1,EE,202FCCB0,extended,00000000
 patch=1,EE,7095D0EB,extended,00000001 //Unlock
+patch=1,EE,20301DC4,extended,00000000 //CPU
 
 [Characters\All Characters\Have All Types]
 author=YukiXXL
