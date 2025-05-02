@@ -1,0 +1,17 @@
+"Official US PlayStation Magazine Demo Disc 102 /ID SCUS_974.54"
+//ELF CRC=7B564230
+//ENTRYPOINT = 00100008
+main            : 901000D4 0C040092
+
+"Official US PlayStation Magazine Demo Disc 102 /ID SCE_DD.ELF"
+//ELF CRC=149E5FC9
+//ENTRYPOINT = 00118D3C
+sceSifSendCmd   : 90174EC0 0C05D358
+scePadRead      : 90180EF0 0C06986F
+
+"Sonic Riders Demo /ID SONICRPS.ELF"
+//ELF CRC=7CCE5506
+//ENTRYPOINT = 00100008
+sceSifSendCmd   : 901058D0 0C0415DC
+scePadRead      : 9010F150 0C046D64
+main            : 9012BBA4 0C0D41C2
