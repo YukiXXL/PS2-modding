@@ -299,6 +299,15 @@ patch=1,EE,E0020012,extended,00F21890
 patch=1,EE,20F21884,extended,24040011
 patch=1,EE,20F2188C,extended,A0640005
 
+[Events\Adventure Specific\Play as Jak]
+patch=1,EE,E0017880,extended,00B6BFD4
+patch=1,EE,20B6BFD8,extended,66E47880
+
+[Events\Adventure Specific\Scripted CPUs]
+description=Enable task specific CPU drivers to be used
+patch=1,EE,E0017880,extended,00BCD654
+patch=1,EE,20BCD658,extended,66E47880
+
 [Events\Adventure Specific\Grand Prix Special Dialogue\Enable]
 patch=1,EE,E0011825,extended,00EC5074
 patch=1,EE,20EC5078,extended,66E37880
@@ -313,10 +322,6 @@ description=If dialogue doesn't play, enable this.
 patch=1,EE,E001382D,extended,00BAE6E8
 patch=1,EE,20BAE6EC,extended,A4E0000C
 
-[Events\Adventure Specific\Play as Jak]
-patch=1,EE,E0017880,extended,00B6BFD4
-patch=1,EE,20B6BFD8,extended,66E47880
-
 [Events\Adventure Specific\Sabotage\Enable]
 patch=1,EE,E0011825,extended,00EC1E68
 patch=1,EE,20EC1E6C,extended,66E37880
@@ -325,11 +330,6 @@ patch=1,EE,20EC1E6C,extended,66E37880
 description=If dialogue doesn't play, enable this.
 patch=1,EE,E0012825,extended,00BAE1D4
 patch=1,EE,20BAE1D8,extended,24040001
-
-[Events\Adventure Specific\Scripted CPUs]
-description=Enable task specific CPU drivers to be used
-patch=1,EE,E0017880,extended,00BCD654
-patch=1,EE,20BCD658,extended,66E47880
 
 [Events\Mizo\Spawn 6th Mizo]
 description=Use only if 5th player is Mizo (ex. having 5 CPUs)
@@ -416,7 +416,7 @@ description=Enable this to allow clients to select any driver.
 patch=1,EE,E0013825,extended,00BCF968
 patch=1,EE,20BCF964,extended,00000000
 
-[Events\Driver Never Taken\Allow selecting any (Version 1)]
+[Events\Driver Never Taken\Allow selecting any (if the host doesn't allow)]
 description=Works even when the host isn't allowing but produces invisible drivers.
 //Selection checks
 patch=1,EE,E00B0035,extended,00A867FC
@@ -435,7 +435,7 @@ patch=1,EE,20A86824,extended,02E01825
 patch=1,EE,E00103BC,extended,00BCF910
 patch=1,EE,20BCF914,extended,10000003
 
-[Events\Driver Never Taken\Allow selecting any (Version 2)]
+[Events\Driver Never Taken\Allow selecting any (if host allows)]
 description=Recommended as it fixes invisible drivers but requires the host to allow.
 //Change load location
 patch=1,EE,E001F7B4,extended,00B4585C
@@ -629,6 +629,39 @@ patch=1,EE,20BAE88C,extended,0000302D
 patch=1,EE,E0011701,extended,002DF6F0
 patch=1,EE,002DF6F0,extended,002E1705
 
+[Gameplay\Jak always has Daxter on the vehicle]
+description=If Daxter as a driver is taken, Jak will still have him
+patch=1,EE,E0011825,extended,00BEE65C
+patch=1,EE,20BEE658,extended,00000000
+
+[Gameplay\Enable Mizo Skin + Voice Lines]
+description=Replaces G.T. Blitz
+//Replace model
+patch=1,EE,E0010004,extended,00BF1CCC
+patch=1,EE,20BF1CC8,extended,00000000
+//Replace name
+patch=1,EE,E0014E49,extended,00B43338
+patch=1,EE,10B432E0,extended,000010AF
+//Replace Voice lines
+patch=1,EE,E0010012,extended,00BB8CC8
+patch=1,EE,20BB8CCC,extended,00000000
+
+[Gameplay\Bad Weather (Saves to profile!)\Activate]
+patch=1,EE,602E34A0,extended,000000FF
+patch=1,EE,00000001,extended,0000043E
+
+[Gameplay\Bad Weather (Saves to profile!)\Deactivate]
+patch=1,EE,602E34A0,extended,00000000
+patch=1,EE,00000001,extended,0000043E
+
+[Gameplay\Mirrored Game (Saves to profile!)\Activate]
+patch=1,EE,602E34A0,extended,000000FF
+patch=1,EE,00000001,extended,0000043D
+
+[Gameplay\Mirrored Game (Saves to profile!)\Deactivate]
+patch=1,EE,602E34A0,extended,00000000
+patch=1,EE,00000001,extended,0000043D
+
 [Gameplay\Enable Tractor Beam\At last place]
 description=Adds Tractor Beam as a possible random weapon
 patch=1,EE,602E74E0,extended,00000007
@@ -660,39 +693,6 @@ patch=1,EE,00020001,extended,00000024
 description=Adds Tractor Beam as a possible random weapon
 patch=1,EE,602E7510,extended,00070002
 patch=1,EE,00020001,extended,00000024
-
-[Gameplay\Bad Weather (Saves to profile!)\Activate]
-patch=1,EE,602E34A0,extended,000000FF
-patch=1,EE,00000001,extended,0000043E
-
-[Gameplay\Bad Weather (Saves to profile!)\Deactivate]
-patch=1,EE,602E34A0,extended,00000000
-patch=1,EE,00000001,extended,0000043E
-
-[Gameplay\Mirrored Game (Saves to profile!)\Activate]
-patch=1,EE,602E34A0,extended,000000FF
-patch=1,EE,00000001,extended,0000043D
-
-[Gameplay\Mirrored Game (Saves to profile!)\Deactivate]
-patch=1,EE,602E34A0,extended,00000000
-patch=1,EE,00000001,extended,0000043D
-
-[Gameplay\Jak always has Daxter on the vehicle]
-description=If Daxter as a driver is taken, Jak will still have him
-patch=1,EE,E0011825,extended,00BEE65C
-patch=1,EE,20BEE658,extended,00000000
-
-[Gameplay\Enable Mizo Skin + Voice Lines]
-description=Replaces G.T. Blitz
-//Replace model
-patch=1,EE,E0010004,extended,00BF1CCC
-patch=1,EE,20BF1CC8,extended,00000000
-//Replace name
-patch=1,EE,E0014E49,extended,00B43338
-patch=1,EE,10B432E0,extended,000010AF
-//Replace Voice lines
-patch=1,EE,E0010012,extended,00BB8CC8
-patch=1,EE,20BB8CCC,extended,00000000
 
 // ONLINE-LAN
 
