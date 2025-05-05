@@ -1,6 +1,9 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 comment=GAMEPLAY - NPCs
 
+//Friendly NPCs Killable
+patch=1,EE,201490EC,extended,0000102D
+
 //Give weapons to workers
 patch=1,EE,001B6718,extended,2A020003
 

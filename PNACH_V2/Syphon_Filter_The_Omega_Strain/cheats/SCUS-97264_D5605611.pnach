@@ -317,6 +317,10 @@ patch=1,EE,20330BF0,extended,2402001E
 
 // - NPCs
 
+[Gameplay\NPCs\Friendly Killable]
+description=Removes invulnerability from specific friendly NPCs.
+patch=1,EE,201490EC,extended,0000102D
+
 [Gameplay\NPCs\Give weapons to workers]
 author=YukiXXL
 patch=1,EE,001B6718,extended,2A020003
@@ -694,3 +698,24 @@ author=YukiXXL
 description=Bonus missions "online".
 patch=1,EE,001B6378,extended,902421C4
 patch=1,EE,001B63B8,extended,902221C4
+
+// - PVP
+
+[Mods\PVP\Friendly Fire ON]
+patch=1,EE,20188A8C,extended,0000102D
+patch=1,EE,20265598,extended,0000102D
+patch=1,EE,201415D8,extended,0000102D
+patch=1,EE,2014191C,extended,0000102D
+
+[Mods\PVP\Targetable]
+patch=1,EE,202743A4,extended,24020000 //Turn Blue to Green
+patch=1,EE,2022CBD4,extended,24020000 //No wallhack
+//as a host
+patch=1,EE,2016A774,extended,01435025
+patch=1,EE,2016A784,extended,01435025
+patch=1,EE,2016A794,extended,01435025
+patch=1,EE,2016A7A4,extended,01435025
+
+[Mods\PVP\Everyone Yellow]
+description=Just in case if the upper doesn't work.
+patch=1,EE,203CC938,extended,24020001
