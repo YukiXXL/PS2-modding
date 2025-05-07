@@ -82,6 +82,19 @@ patch=1,EE,602DD608,extended,00000000
 patch=1,EE,00020003,extended,000000D4
 patch=1,EE,00000020,extended,00000E98
 
+[Addons\Enable Beta Music]
+description=Replaces one duplicate.
+patch=1,EE,602DC4C8,extended,66E72A50
+patch=1,EE,00010000,extended,00000564
+//empty0 > menu1
+patch=1,EE,602F4150,extended,00000005
+patch=1,EE,00000000,extended,00000000
+//string
+patch=1,EE,602F4150,extended,756E656D
+patch=1,EE,00020000,extended,00000004
+patch=1,EE,602F4150,extended,00000031
+patch=1,EE,00010000,extended,00000008
+
 [Addons\From Debug Menu\Target Status]
 description=Show some info like MPH
 patch=1,EE,E00302BC,extended,00F16AD0
@@ -253,6 +266,8 @@ patch=1,EE,00000002,extended,00000000
 patch=1,EE,00000004,extended,00000000
 //Check if equal to zero
 patch=1,EE,E0010000,extended,002DA5D8
+patch=1,EE,202DFCE8,extended,002E1701
+patch=1,EE,E0010000,extended,002DFCE8
 patch=1,EE,202DFCE8,extended,002E1701
 
 [Events\Team Mode on any event]

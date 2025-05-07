@@ -264,6 +264,8 @@ patch=1,EE,00000004,extended,00000000
 //Check if equal to zero
 patch=1,EE,E0010000,extended,002C91D8 //Memory Check
 patch=1,EE,202CE8E8,extended,002D0301 //revert to default
+patch=1,EE,E0010000,extended,002CE8E8
+patch=1,EE,202CE8E8,extended,002D0301
 
 [Events\Team Mode on any event]
 description=Advance Options > L1+R1. If not applying, change event/location and retry.

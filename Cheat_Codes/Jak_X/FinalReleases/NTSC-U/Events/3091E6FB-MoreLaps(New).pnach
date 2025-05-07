@@ -15,3 +15,5 @@ patch=1,EE,00000004,extended,00000000
 //Check if equal to zero
 patch=1,EE,E0010000,extended,002DA4D8 //Memory Check
 patch=1,EE,202DFBE8,extended,002E1601 //revert to default
+patch=1,EE,E0010000,extended,002DFBE8
+patch=1,EE,202DFBE8,extended,002E1601
