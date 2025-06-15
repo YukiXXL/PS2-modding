@@ -1,5 +1,5 @@
 gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=MISSIONS - UNLOCK ALL
+comment=CHALLENGES - UNLOCK ALL
 
 patch=1,EE,E0010008,extended,00532C68
 patch=1,EE,00532C64,extended,34420007

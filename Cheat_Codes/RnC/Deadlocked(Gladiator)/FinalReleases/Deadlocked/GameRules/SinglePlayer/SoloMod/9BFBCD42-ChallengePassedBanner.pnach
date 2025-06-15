@@ -1,5 +1,5 @@
 gametitle=Ratchet: Deadlocked (NTSC-U)
-comment=Change the mission passed banner
+comment=Change the challenge passed banner
 
 //-DREADZONE STATION and ARENA
 patch=1,EE,E001E0C8,extended,005F61D8

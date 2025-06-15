@@ -22,24 +22,24 @@ patch=1,EE,20645210,extended,24030001
 
 // MISSIONS
 
-[DreadZone Station\Missions\Enable All Missions (Including CUT)]
+[DreadZone Station\Challenges\Enable All Challenges (Including CUT)]
 author=YukiXXL
 patch=1,EE,E002102D,extended,00703858
 patch=1,EE,207037F0,extended,00000000
 patch=1,EE,2070385C,extended,24020001
 
-[DreadZone Station\Missions\All Missions available]
+[DreadZone Station\Challenges\All Challenges available]
 author=YukiXXL
 patch=1,EE,E0010014,extended,005CA0C8
 patch=1,EE,205CA0C4,extended,00000000
 
-[DreadZone Station\Missions\All Missions Visible]
+[DreadZone Station\Challenges\All Challenges Visible]
 author=YukiXXL
 description=MF_IsMissionIndexVisibleToMenu
 patch=1,EE,E0010035,extended,00643784
 patch=1,EE,20643780,extended,00000000
 
-[DreadZone Station\Missions\Unlock All Missions]
+[DreadZone Station\Challenges\Unlock All Challenges]
 author=YukiXXL
 patch=1,EE,E0010008,extended,005CA158
 patch=1,EE,205CA154,extended,24020007

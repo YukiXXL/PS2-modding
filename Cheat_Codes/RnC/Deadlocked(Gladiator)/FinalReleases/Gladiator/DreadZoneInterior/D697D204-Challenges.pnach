@@ -1,0 +1,7 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=CHALLENGES
+
+//Challenges Always Visible
+patch=1,EE,E0020010,extended,005580E0
+patch=1,EE,20558168,extended,24020001
+patch=1,EE,20558264,extended,24020001

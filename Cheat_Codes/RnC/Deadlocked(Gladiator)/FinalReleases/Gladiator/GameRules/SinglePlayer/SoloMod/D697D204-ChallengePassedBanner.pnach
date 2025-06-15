@@ -1,5 +1,5 @@
 gametitle=Ratchet: Gladiator (PAL-E)
-comment=Change the mission passed banner
+comment=Change the challenge passed banner
 
 //-DREADZONE STATION and ARENA
 patch=1,EE,E001E148,extended,005FAF08

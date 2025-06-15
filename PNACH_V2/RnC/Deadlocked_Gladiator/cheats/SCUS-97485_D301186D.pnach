@@ -3,7 +3,7 @@ comment=Special thanks to Moose for the help tips.
 
 // DEMO
 
-[Demo\Disable Demo finished when beating all missions]
+[Demo\Disable Demo finished when beating all challenges]
 author=YukiXXL
 patch=1,EE,E001FFFF,extended,004000FC
 patch=1,EE,204000F4,extended,10000009
@@ -130,23 +130,23 @@ author=YukiXXL
 patch=1,EE,E0010007,extended,0063F65C
 patch=1,EE,2063F65C,extended,00000000
 
-[Levels\Missions\Enable All Missions]
+[Levels\Challenges\Enable All Challenges]
 author=YukiXXL
 patch=1,EE,E001FDCA,extended,0063F70C
 patch=1,EE,2063F70C,extended,24020001
 
-[Levels\Missions\Enable All Missions\Include Unplayable Planets]
+[Levels\Challenges\Enable All Challenges\Include Unplayable Planets]
 author=YukiXXL
 description=Doesn't work. Kept for reference.
 patch=1,EE,E0010018,extended,0063F6A0
 patch=1,EE,2063F6A0,extended,00000000
 
-[Levels\Missions\All Missions available]
+[Levels\Challenges\All Challenges available]
 author=YukiXXL
 patch=1,EE,E001000F,extended,00532C2C
 patch=1,EE,20532C2C,extended,00000000
 
-[Levels\Missions\Missions Stay Visible After Beating]
+[Levels\Challenges\Challenges Stay Visible After Beating]
 author=YukiXXL
 patch=1,EE,E0020004,extended,00532E1C
 patch=1,EE,20532E18,extended,24030001
@@ -166,7 +166,7 @@ author=YukiXXL
 patch=1,EE,E00101D0,extended,0054EDF4
 patch=1,EE,2054EDF4,extended,24020001
 
-[Cheats\Missions\Unlock All Missions]
+[Cheats\Challenges\Unlock All Challenges]
 author=YukiXXL
 patch=1,EE,E0010008,extended,00532C68
 patch=1,EE,00532C64,extended,34420007
@@ -241,27 +241,14 @@ patch=1,EE,003D378C,extended,00000011
 
 [Game Rules\Single Player\Replace Bot Commands with Gadgets (COOP)]
 author=YukiXXL
-//HUD elements
-patch=1,EE,E001938C,extended,00593090
-patch=1,EE,20593090,extended,24020001
-//Gadgets texture
-patch=1,EE,E001938C,extended,00592B38
-patch=1,EE,20592B38,extended,24030001
-//UpdateAvailableGadgets
-patch=1,EE,E001938C,extended,005934B8
-patch=1,EE,205934B8,extended,24020001
-//GetCurrentGadget
-patch=1,EE,E001938C,extended,00581040
-patch=1,EE,20581040,extended,24030001
-//BotHud_IsSlotEmpty
-patch=1,EE,E001938C,extended,00592D38
-patch=1,EE,20592D38,extended,24020001
-//UpdateQuickSelect
-patch=1,EE,E001938C,extended,0063C6C4
-patch=1,EE,2063C6C4,extended,24020001
-//Get Gadgets
-patch=1,EE,E001A71C,extended,0062B780
-patch=1,EE,2062B780,extended,24030001
+patch=1,EE,E007938C,extended,0063C6C4
+patch=1,EE,20593090,extended,24020001 //HUD elements
+patch=1,EE,20592B38,extended,24030001 //Gadgets texture
+patch=1,EE,205934B8,extended,24020001 //UpdateAvailableGadgets
+patch=1,EE,20581040,extended,24030001 //GetCurrentGadget
+patch=1,EE,20592D38,extended,24020001 //BotHud_IsSlotEmpty
+patch=1,EE,2063C6C4,extended,24020001 //UpdateQuickSelect
+patch=1,EE,2062B780,extended,24030001 //Get Gadgets
 
 [Game Rules\Single Player\Disable Bots]
 author=YukiXXL
@@ -291,21 +278,12 @@ patch=1,EE,204AEE50,extended,24030000
 
 [Game Rules\Cooperative\Enable Bot Commands]
 author=YukiXXL
-//Enable writing Bot commands
-patch=1,EE,E001A71C,extended,0062B780
-patch=1,EE,2062B780,extended,24030000
-//HUD elements
-patch=1,EE,E001938C,extended,00593090
-patch=1,EE,20593090,extended,24020000
-//Help Messages
-patch=1,EE,E001938C,extended,00592E28
-patch=1,EE,20592E28,extended,24020000
-//BotHud_IsSlotEmpty
-patch=1,EE,E001938C,extended,00592D38
-patch=1,EE,20592D38,extended,24020000
-//UpdateAvailableGadgets
-patch=1,EE,E001938C,extended,005934B8
-patch=1,EE,205934B8,extended,24020000
+patch=1,EE,E005A71C,extended,0062B780
+patch=1,EE,2062B780,extended,24030000 //Enable writing Bot commands
+patch=1,EE,20593090,extended,24020000 //HUD elements
+patch=1,EE,20592E28,extended,24020000 //Help Messages
+patch=1,EE,20592D38,extended,24020000 //BotHud_IsSlotEmpty
+patch=1,EE,205934B8,extended,24020000 //UpdateAvailableGadgets
 
 [Game Rules\Cooperative\Enable Bots]
 author=YukiXXL

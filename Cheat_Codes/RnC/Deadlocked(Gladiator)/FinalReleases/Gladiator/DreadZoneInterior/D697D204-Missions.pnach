@@ -1,7 +1,0 @@
-gametitle=Ratchet: Gladiator (PAL-E)
-comment=MISSIONS
-
-//Mission Always Visible
-patch=1,EE,E0020010,extended,005580E0
-patch=1,EE,205580D8,extended,24020001
-patch=1,EE,205580DC,extended,03E00008
