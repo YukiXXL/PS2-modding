@@ -1,254 +1,118 @@
 gametitle=Ratchet: Deadlocked (NTSC-U)
 comment=Launch COOP GM in SP
 
-//-MAIN MENU
-patch=1,EE,E001202D,extended,004A2008
-patch=1,EE,204A2004,extended,24040001
+//NOTE: Shaar is a bit broken. Change from Sarathos.
+
 //-DREADZONE STATION and ARENA
+//--GB_IsCoopLevel__Fv
 patch=1,EE,E002000B,extended,005281A0
 patch=1,EE,00528184,extended,24030001
 patch=1,EE,2052819C,extended,AF808E99
+//--GAMEPLAY
+patch=1,EE,E00F882D,extended,005DBC28
+patch=1,EE,203C97A4,extended,24030000 //Fix black screen
+patch=1,EE,20453A4C,extended,24030000 //Fix unable to move (Tutorial)
+patch=1,EE,20492D84,extended,24030000 //Remove COOP distance line
+patch=1,EE,2051268C,extended,24030000 //Fix Arena Applying screenMode
+patch=1,EE,205232B4,extended,24020000 //Fix black screen (Challenges)
+patch=1,EE,20528F24,extended,24030000 //Loading TLB Fix
+patch=1,EE,2057CAB8,extended,24030000 //Remove 2nd player
+patch=1,EE,2059AC08,extended,24060000 //TLB Fix on Jump Pads
+patch=1,EE,205DADCC,extended,24020000 //Enable Pausing (GuiHud_WantsToEnterMenu__Fi)
+patch=1,EE,205DBC38,extended,24030000 //Unpause TLB Fix (GuiMenu_CloseMenu__Fii)
+patch=1,EE,205E5A24,extended,24030000 //Display Help Messages down
+patch=1,EE,205F7D30,extended,24030000 //Show only P1 control settings
+patch=1,EE,206850A0,extended,10000006 //L3 power up TLB Fix
+patch=1,EE,20685100,extended,10000006 //R3 power up TLB Fix
+patch=1,EE,2068F484,extended,24020000 //Nanotech Level up TLB Fix
 
-//-GAMEPLAY
-//Don't check for P2 controller
-patch=1,EE,E0018EA9,extended,0057CAB8
-patch=1,EE,2057CAB8,extended,24030000
-//Fix unable to move
-patch=1,EE,E0018EA9,extended,00453A4C
-patch=1,EE,20453A4C,extended,24030000
-//Fix black screen
-patch=1,EE,E001E828,extended,003C97A4
-patch=1,EE,203C97A4,extended,24030000
-//Fix Arena Black Screen
-patch=1,EE,E001E828,extended,005232B4
-patch=1,EE,205232B4,extended,24020000
-//Fix Arena Applying screenMode
-patch=1,EE,E001E828,extended,0051268C
-patch=1,EE,2051268C,extended,24030000
-//Display Help Messages down
-patch=1,EE,E001E828,extended,005E5A24
-patch=1,EE,205E5A24,extended,24030000
-//Enable Pausing (Update__FR8GuiState)
-patch=1,EE,E001E828,extended,005DADCC
-patch=1,EE,205DADCC,extended,24020000
-//Show only P1 control settings
-patch=1,EE,E001E828,extended,005F7D30
-patch=1,EE,205F7D30,extended,24030000
-//Fix Loading TLB Miss
-patch=1,EE,E0018EA9,extended,00528F24
-patch=1,EE,20528F24,extended,24030000
-//Fix Unpause TLB Miss (GuiMenu_CloseMenu__Fii)
-patch=1,EE,E0018EA9,extended,005DBC38
-patch=1,EE,205DBC38,extended,24030000
+//-CATACROM FOUR
+//--GB_IsCoopLevel__Fv
+patch=1,EE,E002000B,extended,004DF660
+patch=1,EE,004DF644,extended,24030001
+patch=1,EE,204DF65C,extended,AF808D69
+//--GAMEPLAY
+patch=1,EE,E00E882D,extended,0058C4E0
+patch=1,EE,203C9CB4,extended,24030000 //Fix black screen
+patch=1,EE,203FEDF4,extended,24030000 //Remove COOP distance line
+patch=1,EE,204C486C,extended,24030000 //Fix crashing on Hoverbike challenges
+patch=1,EE,204DA75C,extended,24020000 //Fix black screen (Challenges)
+patch=1,EE,204E03E4,extended,24030000 //Loading TLB Fix
+patch=1,EE,2052F1E0,extended,24030000 //Remove 2nd player
+patch=1,EE,2054CD98,extended,24060000 //TLB Fix on Jump Pads
+patch=1,EE,2058B684,extended,24020000 //Enable Pausing (GuiHud_WantsToEnterMenu__Fi)
+patch=1,EE,2058C4F0,extended,24030000 //Unpause TLB Fix (GuiMenu_CloseMenu__Fii)
+patch=1,EE,205962DC,extended,24030000 //Display Help Messages down
+patch=1,EE,205A8520,extended,24030000 //Show only P1 control settings
+patch=1,EE,20635090,extended,10000006 //L3 power up TLB Fix
+patch=1,EE,206350F0,extended,10000006 //R3 power up TLB Fix
+patch=1,EE,2063F404,extended,24020000 //Nanotech Level up TLB Fix
 
-//-TESTING CODES
-//Trap Exception if checking for P2 controller
-//patch=1,EE,E001E828,extended,005283A8
-//patch=1,EE,205283A8,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005F96A0
-//patch=1,EE,205F96A0,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005DAAB0
-//patch=1,EE,205DAAB0,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005A5408
-//patch=1,EE,205A5408,extended,24020000
-//
-//patch=1,EE,E001E828,extended,00668D04
-//patch=1,EE,20668D04,extended,24030000
-//
-//patch=1,EE,E001E828,extended,00690A8C
-//patch=1,EE,20690A8C,extended,24020000
-//
-//patch=1,EE,E001E828,extended,006A84D0
-//patch=1,EE,206A84D0,extended,24030000
-//
-//patch=1,EE,E0018EA9,extended,006A86C8
-//patch=1,EE,206A86C8,extended,24030000
-//
-//patch=1,EE,E001E828,extended,006885A0
-//patch=1,EE,206885A0,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005E9554
-//patch=1,EE,205E9554,extended,24120000
-//
-//patch=1,EE,E0018EA9,extended,005EA6B4
-//patch=1,EE,205EA6B4,extended,24030000
-//
-//patch=1,EE,E001E828,extended,0064ED38
-//patch=1,EE,2064ED38,extended,24030000
-//
-//patch=1,EE,E001E828,extended,005284E8
-//patch=1,EE,205284E8,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003D0A34
-//patch=1,EE,203D0A34,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003D133C
-//patch=1,EE,203D133C,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003D1EF4
-//patch=1,EE,203D1EF4,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003D652C
-//patch=1,EE,203D652C,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003FE68C
-//patch=1,EE,203FE68C,extended,24030000
-//
-//patch=1,EE,E001E828,extended,00456668
-//patch=1,EE,20456668,extended,24030000
-//
-//patch=1,EE,E001E828,extended,005BE3AC
-//patch=1,EE,205BE3AC,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005BE404
-//patch=1,EE,205BE404,extended,24020000
-//
-//patch=1,EE,E001E828,extended,00630474
-//patch=1,EE,20630474,extended,24020000
-//
-//patch=1,EE,E0018EA9,extended,0056DA48
-//patch=1,EE,2056DA48,extended,24020000
-//
-//patch=1,EE,E0018EA9,extended,00685060
-//patch=1,EE,20685060,extended,24030000
-//
-//patch=1,EE,E001E828,extended,00685480
-//patch=1,EE,20685480,extended,24020000
-//
-//patch=1,EE,E0018EA9,extended,006A6ACC
-//patch=1,EE,206A6ACC,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005866E8
-//patch=1,EE,205866E8,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005EED80
-//patch=1,EE,205EED80,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005A9854
-//patch=1,EE,205A9854,extended,240A0000
-//
-//patch=1,EE,E001E828,extended,003CB70C
-//patch=1,EE,203CB70C,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005D8804
-//patch=1,EE,205D8804,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005EA334
-//patch=1,EE,205EA334,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005EA784
-//patch=1,EE,205EA784,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005EA030
-//patch=1,EE,205EA030,extended,24030000
-//
-//patch=1,EE,E0018EA9,extended,005E3A34
-//patch=1,EE,205E3A34,extended,24030000
-//
-//patch=1,EE,E001E828,extended,005DB53C
-//patch=1,EE,205DB53C,extended,24030000
-//
-//patch=1,EE,E001E828,extended,005D8D1C
-//patch=1,EE,205D8D1C,extended,24020000
-//
-//patch=1,EE,E001E828,extended,0056F634
-//patch=1,EE,2056F634,extended,24030000
-//
-//patch=1,EE,E001E828,extended,005DB5DC
-//patch=1,EE,205DB5DC,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003D8D30
-//patch=1,EE,203D8D30,extended,24020000
-//
-//patch=1,EE,E001E828,extended,003D8E04
-//patch=1,EE,203D8E04,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003D8FF0
-//patch=1,EE,203D8FF0,extended,24030000
-//
-//patch=1,EE,E001E828,extended,004BC208
-//patch=1,EE,204BC208,extended,24020000
-//
-//patch=1,EE,E0018EA9,extended,0056DBB0
-//patch=1,EE,2056DBB0,extended,24020000
-//
-//patch=1,EE,E001E828,extended,004BCDBC
-//patch=1,EE,204BCDBC,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005A3568
-//patch=1,EE,205A3568,extended,24020000
-//
-//patch=1,EE,E001E828,extended,00630DD8
-//patch=1,EE,20630DD8,extended,24020000
-//
-//patch=1,EE,E001E828,extended,005D8A68
-//patch=1,EE,205D8A68,extended,24030000
-//
-//patch=1,EE,E0018EA9,extended,003CBD84
-//patch=1,EE,203CBD84,extended,24030000
-//
-//patch=1,EE,E001E828,extended,0056D8E0
-//patch=1,EE,2056D8E0,extended,24020000
-//
-//patch=1,EE,E001E828,extended,003FE6D4
-//patch=1,EE,203FE6D4,extended,24020000
-//
-//patch=1,EE,E001E828,extended,0048AE38
-//patch=1,EE,2048AE38,extended,24030000
-//
-//patch=1,EE,E001E828,extended,0048AE94
-//patch=1,EE,2048AE94,extended,24020000
-//
-//patch=1,EE,E0018EA9,extended,00568CE4
-//patch=1,EE,20568CE4,extended,24020000
-//
-//patch=1,EE,E001E828,extended,004FB2C0
-//patch=1,EE,204FB2C0,extended,24030000
-//
-//patch=1,EE,E001E828,extended,004FB31C
-//patch=1,EE,204FB31C,extended,24020000
-//
-//patch=1,EE,E001E828,extended,003D9214
-//patch=1,EE,203D9214,extended,24020000
-//
-//patch=1,EE,E001E828,extended,003D9304
-//patch=1,EE,203D9304,extended,24100000
-//
-//patch=1,EE,E001E828,extended,005A46C8
-//patch=1,EE,205A46C8,extended,24030000
-//
-//patch=1,EE,E001E828,extended,004A1FE8
-//patch=1,EE,204A1FE8,extended,24030000
-//
-//patch=1,EE,E0018EA9,extended,005865E4
-//patch=1,EE,205865E4,extended,24020000
-//
-//patch=1,EE,E0018EA9,extended,005A5D3C
-//patch=1,EE,205A5D3C,extended,24020000
-//
-//patch=1,EE,E001E828,extended,00498564
-//patch=1,EE,20498564,extended,24030000
-//
-//patch=1,EE,E001E828,extended,003CB690
-//patch=1,EE,203CB690,extended,24020000
-//
-//patch=1,EE,E001E828,extended,003D88FC
-//patch=1,EE,203D88FC,extended,24020000
-//
-//patch=1,EE,E0018EA9,extended,00514970
-//patch=1,EE,20514970,extended,24020000
-//
-//patch=1,EE,E001E828,extended,0047E34C
-//patch=1,EE,2047E34C,extended,24020000
-//
-//patch=1,EE,E001E828,extended,0047E370
-//patch=1,EE,2047E370,extended,24030000
-//
-//patch=1,EE,E0018EA9,extended,00514C88
-//patch=1,EE,20514C88,extended,24020000
-//
-//patch=1,EE,E001E828,extended,003CB758
-//patch=1,EE,203CB758,extended,24020000
+//-SARATHOS
+//--GB_IsCoopLevel__Fv
+patch=1,EE,E002000B,extended,004E1520
+patch=1,EE,004E1504,extended,24030001
+patch=1,EE,204E151C,extended,AF808D09
+//--GAMEPLAY
+patch=1,EE,E00E882D,extended,0058C208
+patch=1,EE,203C8F34,extended,24030000 //Fix black screen
+patch=1,EE,204014D4,extended,24030000 //Remove COOP distance line
+patch=1,EE,204C612C,extended,24030000 //Fix crashing on Hoverbike challenges
+patch=1,EE,204DB49C,extended,24020000 //Fix black screen (Challenges)
+patch=1,EE,204E22A4,extended,24030000 //Loading TLB Fix
+patch=1,EE,2052F598,extended,24030000 //Remove 2nd player
+patch=1,EE,2054D158,extended,24060000 //TLB Fix on Jump Pads
+patch=1,EE,2058B3AC,extended,24020000 //Enable Pausing (GuiHud_WantsToEnterMenu__Fi)
+patch=1,EE,2058C218,extended,24030000 //Unpause TLB Fix (GuiMenu_CloseMenu__Fii)
+patch=1,EE,20596004,extended,24030000 //Display Help Messages down
+patch=1,EE,205A8248,extended,24030000 //Show only P1 control settings
+patch=1,EE,20634F20,extended,10000006 //L3 power up TLB Fix
+patch=1,EE,20634F80,extended,10000006 //R3 power up TLB Fix
+patch=1,EE,2063F294,extended,24020000 //Nanotech Level up TLB Fix
+
+//-KRONOS
+//--GB_IsCoopLevel__Fv
+patch=1,EE,E002000B,extended,005053E0
+patch=1,EE,005053C4,extended,24030001
+patch=1,EE,205053DC,extended,AF808D09
+//--GAMEPLAY
+patch=1,EE,E00F882D,extended,005B2198
+patch=1,EE,203CAC84,extended,24030000 //Fix black screen
+patch=1,EE,203E4544,extended,24030000 //Remove COOP distance line
+patch=1,EE,204D2560,extended,24030000 //Shellshock mines TLB Fix
+patch=1,EE,204D2A34,extended,24030000 //Shellshock mines TLB Fix
+patch=1,EE,204FF38C,extended,24020000 //Fix black screen (Challenges)
+patch=1,EE,20506164,extended,24030000 //Loading TLB Fix
+patch=1,EE,20553A90,extended,24030000 //Remove 2nd player
+patch=1,EE,20571958,extended,24060000 //TLB Fix on Jump Pads
+patch=1,EE,205B133C,extended,24020000 //Enable Pausing (GuiHud_WantsToEnterMenu__Fi)
+patch=1,EE,205B21A8,extended,24030000 //Unpause TLB Fix (GuiMenu_CloseMenu__Fii)
+patch=1,EE,205BBF94,extended,24030000 //Display Help Messages down
+patch=1,EE,205CE268,extended,24030000 //Show only P1 control settings
+patch=1,EE,2065B6F0,extended,10000006 //L3 power up TLB Fix
+patch=1,EE,2065B750,extended,10000006 //R3 power up TLB Fix
+patch=1,EE,20665A64,extended,24020000 //Nanotech Level up TLB Fix
+
+//-SHAAR
+//--GB_IsCoopLevel__Fv
+patch=1,EE,E002000B,extended,004D91E0
+patch=1,EE,004D91C4,extended,24030001
+patch=1,EE,204D91DC,extended,AF808D09
+//--GAMEPLAY
+patch=1,EE,E00F882D,extended,005846E8
+patch=1,EE,203C8994,extended,24030000 //Fix black screen
+patch=1,EE,2041587C,extended,24030000 //Remove COOP distance line
+patch=1,EE,2049B018,extended,24030000 //Disable teleporting 2nd player
+patch=1,EE,204D42E4,extended,24020000 //Fix black screen (Challenges)
+patch=1,EE,204D9F64,extended,24030000 //Loading TLB Fix
+patch=1,EE,20527228,extended,24030000 //Remove 2nd player
+patch=1,EE,20544F90,extended,24060000 //TLB Fix on Jump Pads
+patch=1,EE,2058388C,extended,24020000 //Enable Pausing (GuiHud_WantsToEnterMenu__Fi)
+patch=1,EE,205846F8,extended,24030000 //Unpause TLB Fix (GuiMenu_CloseMenu__Fii)
+patch=1,EE,2058E4E4,extended,24030000 //Display Help Messages down
+patch=1,EE,205A0728,extended,24030000 //Show only P1 control settings
+patch=1,EE,2062D720,extended,10000006 //L3 power up TLB Fix
+patch=1,EE,2062D780,extended,10000006 //R3 power up TLB Fix
+patch=1,EE,20637A94,extended,24020000 //Nanotech Level up TLB Fix
+patch=1,EE,204C7064,extended,24040000 //Fixes "Shoot to Kill"
+//patch=1,EE,205A553C,extended,24020001 //Forces to load SP level when selecting a challenge

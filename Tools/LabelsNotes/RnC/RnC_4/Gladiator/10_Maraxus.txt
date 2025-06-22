@@ -1,0 +1,9 @@
+MARAXUS
+
+003AE310 - cs_table
+
+003A7CD0 - HudAmmo_QSItems
+00687270 - IsGadgetCoopOnly__9GadgetBoxi
+00631DA0 - GetJuggSafeTeam__C4Hero
+004A33E0 - Disable Bots
+0056D4E0 - Bot_ResetGlobalComm__Fv

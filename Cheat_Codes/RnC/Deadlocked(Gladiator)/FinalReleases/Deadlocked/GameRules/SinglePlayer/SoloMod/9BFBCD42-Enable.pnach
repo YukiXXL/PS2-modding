@@ -13,7 +13,7 @@ patch=1,EE,E001E828,extended,005F0C58
 patch=1,EE,205F0C58,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E828,extended,005F0118
-patch=1,EE,205F0118,extended,24030001
+patch=1,EE,205F0118,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E828,extended,006885A0
 patch=1,EE,206885A0,extended,24020001
@@ -44,7 +44,7 @@ patch=1,EE,E001E6F8,extended,005A14D0
 patch=1,EE,205A14D0,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E6F8,extended,005A0990
-patch=1,EE,205A0990,extended,24030001
+patch=1,EE,205A0990,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E6F8,extended,00638590
 patch=1,EE,20638590,extended,24020001
@@ -72,7 +72,7 @@ patch=1,EE,E001E698,extended,005A11F8
 patch=1,EE,205A11F8,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,005A06B8
-patch=1,EE,205A06B8,extended,24030001
+patch=1,EE,205A06B8,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,00638420
 patch=1,EE,20638420,extended,24020001
@@ -100,7 +100,7 @@ patch=1,EE,E001E698,extended,005C7188
 patch=1,EE,205C7188,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,005C6648
-patch=1,EE,205C6648,extended,24030001
+patch=1,EE,205C6648,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,0065EBF0
 patch=1,EE,2065EBF0,extended,24020001
@@ -128,7 +128,7 @@ patch=1,EE,E001E698,extended,005996D8
 patch=1,EE,205996D8,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,00598B98
-patch=1,EE,20598B98,extended,24030001
+patch=1,EE,20598B98,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,00630C20
 patch=1,EE,20630C20,extended,24020001
@@ -156,7 +156,7 @@ patch=1,EE,E001E698,extended,005A3C78
 patch=1,EE,205A3C78,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,005A3138
-patch=1,EE,205A3138,extended,24030001
+patch=1,EE,205A3138,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,0063B4F8
 patch=1,EE,2063B4F8,extended,24020001
@@ -184,7 +184,7 @@ patch=1,EE,E001E698,extended,0058C970
 patch=1,EE,2058C970,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,0058BE30
-patch=1,EE,2058BE30,extended,24030001
+patch=1,EE,2058BE30,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,00623CA8
 patch=1,EE,20623CA8,extended,24020001
@@ -212,7 +212,7 @@ patch=1,EE,E001E698,extended,005AE5F0
 patch=1,EE,205AE5F0,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,005ADAB0
-patch=1,EE,205ADAB0,extended,24030001
+patch=1,EE,205ADAB0,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,00645E30
 patch=1,EE,20645E30,extended,24020001
@@ -240,7 +240,7 @@ patch=1,EE,E001E698,extended,0059B610
 patch=1,EE,2059B610,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,0059AAD0
-patch=1,EE,2059AAD0,extended,24030001
+patch=1,EE,2059AAD0,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,00632ED8
 patch=1,EE,20632ED8,extended,24020001
@@ -268,7 +268,7 @@ patch=1,EE,E001E698,extended,005B4B38
 patch=1,EE,205B4B38,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,005B3FF8
-patch=1,EE,205B3FF8,extended,24030001
+patch=1,EE,205B3FF8,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,0064C420
 patch=1,EE,2064C420,extended,24020001
@@ -302,7 +302,7 @@ patch=1,EE,E001E698,extended,005AEC20
 patch=1,EE,205AEC20,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E698,extended,005AE0E0
-patch=1,EE,205AE0E0,extended,24030001
+patch=1,EE,205AE0E0,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E698,extended,006460F0
 patch=1,EE,206460F0,extended,24020001
@@ -330,7 +330,7 @@ patch=1,EE,E001E6D8,extended,005BEE68
 patch=1,EE,205BEE68,extended,24020001
 //BotHud_IsSlotEmpty
 patch=1,EE,E001E6D8,extended,005BE328
-patch=1,EE,205BE328,extended,24030001
+patch=1,EE,205BE328,extended,24020001
 //RequestGadgetEquip
 patch=1,EE,E001E6D8,extended,00656780
 patch=1,EE,20656780,extended,24020001

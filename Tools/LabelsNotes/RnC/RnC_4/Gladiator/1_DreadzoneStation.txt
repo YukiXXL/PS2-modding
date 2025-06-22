@@ -1,0 +1,9 @@
+DREADZONE STATION
+
+003B5490 - cs_table
+
+003AE0A0 - HudAmmo_QSItems
+006C34E8 - IsGadgetCoopOnly__9GadgetBoxi
+0066E4E0 - GetJuggSafeTeam__C4Hero
+004A38C8 - Disable Bots
+005A9628 - Bot_ResetGlobalComm__Fv

@@ -258,11 +258,9 @@ patch=1,EE,2062FA98,extended,24030001 //Get Gadgets
 
 [Game Rules\Single Player\Disable Bots]
 author=YukiXXL
-patch=1,EE,E001AE7C,extended,004BEDC8
-patch=1,EE,204BEDC8,extended,24030001
-//Fix Invisible HUD
-patch=1,EE,E001AE7C,extended,00552A1C
-patch=1,EE,20552A1C,extended,24020001
+patch=1,EE,E002AE7C,extended,00552A1C
+patch=1,EE,204BEDC8,extended,24030001 //Delete Moby
+patch=1,EE,20552A1C,extended,24020001 //Fix Invisible HUD
 
 [Game Rules\Single Player\Team Color Blue (P2)]
 author=YukiXXL

@@ -1,0 +1,9 @@
+THE VALIX BELT
+
+003AD3D0 - cs_table
+
+003A7260 - HudAmmo_QSItems
+0065DD60 - IsGadgetCoopOnly__9GadgetBoxi
+00608E68 - GetJuggSafeTeam__C4Hero
+004A91A8 - Disable Bots
+00544CC8 - Bot_ResetGlobalComm__Fv

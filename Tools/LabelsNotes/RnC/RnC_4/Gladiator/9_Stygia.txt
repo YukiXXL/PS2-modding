@@ -1,0 +1,9 @@
+STYGIA
+
+003AC710 - cs_table
+
+003A64D0 - HudAmmo_QSItems
+0066D628 - IsGadgetCoopOnly__9GadgetBoxi
+006184D8 - GetJuggSafeTeam__C4Hero
+004A75C0 - Disable Bots
+00553D40 - Bot_ResetGlobalComm__Fv

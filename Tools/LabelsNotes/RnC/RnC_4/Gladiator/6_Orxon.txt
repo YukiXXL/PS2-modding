@@ -1,0 +1,9 @@
+ORXON
+
+003AD1D0 - cs_table
+
+003A6CA0 - HudAmmo_QSItems
+00676330 - IsGadgetCoopOnly__9GadgetBoxi
+00620DB8 - GetJuggSafeTeam__C4Hero
+0047FD38 - Disable Bots
+0055C408 - Bot_ResetGlobalComm__Fv

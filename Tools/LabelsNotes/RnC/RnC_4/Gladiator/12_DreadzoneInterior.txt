@@ -1,0 +1,9 @@
+DREADZONE INTERIOR
+
+003B2D70 - cs_table
+
+003AC680 - HudAmmo_QSItems
+00691158 - IsGadgetCoopOnly__9GadgetBoxi
+0063C1C0 - GetJuggSafeTeam__C4Hero
+004B4A80 - Disable Bots
+00577C70 - Bot_ResetGlobalComm__Fv

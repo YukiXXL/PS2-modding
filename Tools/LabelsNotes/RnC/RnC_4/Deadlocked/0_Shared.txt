@@ -1,0 +1,10 @@
+- SHARED -
+
+001579A0 - ParseBin__Fv
+001579F0 - GetBootOptionsFromSettings__FPc
+
+0021DA24 - mapOffset
+0021DA34 - GSbase
+0021DE10 - Level
+0021DF60 - gIntelligentFrameRate
+0021DFE8 - g_NW_GameSettings
