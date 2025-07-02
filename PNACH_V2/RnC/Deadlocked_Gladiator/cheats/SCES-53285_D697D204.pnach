@@ -34,311 +34,465 @@ author=YukiXXL
 patch=1,EE,E001202D,extended,005CA5F4
 patch=1,EE,205C5DBC,extended,24070001
 
-// MODS
-
-[Mods\MOD ENABLER]
+[Story Mode\PLANET CHECKER (MUST BE ON!)]
 author=YukiXXL
-description=ENABLE FIRST!
+description=Checks planet and writes offsets accordingly.
 //-RESET
 patch=1,EE,E0020000,extended,0021E070 //g_NW_GameSettings
-patch=1,EE,400A0050,extended,00060001
+patch=1,EE,400A0050,extended,000C0001
 patch=1,EE,00000000,extended,00000000
 //-DREADZONE STATION and ARENA
-patch=1,EE,E0060029,extended,005A9628
-patch=1,EE,200A0050,extended,003B5490 //cs_table
-patch=1,EE,200A0054,extended,003AE0A0 //HudAmmo_QSItems
-patch=1,EE,200A0058,extended,006C34E8 //IsGadgetCoopOnly
-patch=1,EE,200A005C,extended,0066E4E0 //GetJuggSafeTeam
-patch=1,EE,200A0060,extended,004A38C8 //Disable Bots
-patch=1,EE,200A0064,extended,005A9628 //Bot_ResetGlobalComm
+patch=1,EE,E00CFFF0,extended,0066E4E0 // Check "GetJuggSafeTeam__C4Hero"
+patch=1,EE,200A0050,extended,006079C0 // Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+patch=1,EE,200A0054,extended,00588938 // MF_UpdateProgress__Fv
+patch=1,EE,200A0058,extended,006C6E00 // CheckUnlockMission__8LevelBoxi
+patch=1,EE,200A005C,extended,00620698 // Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+patch=1,EE,200A0060,extended,006C34E8 // IsGadgetCoopOnly__9GadgetBoxi
+patch=1,EE,200A0064,extended,003AE0A0 // HudAmmo_QSItems
+patch=1,EE,200A0068,extended,004A38C8 // Disable Bots
+patch=1,EE,200A006C,extended,005A9628 // Bot_ResetGlobalComm__Fv
+patch=1,EE,200A0070,extended,005DF258 // GetHudEnterState__Fi | GetHudExitState__Fi (above "GetHudState__Fi")
+patch=1,EE,200A0074,extended,005F47C8 // Pointer from "BotHud_UpdateIcons"
+patch=1,EE,200A0078,extended,0066E4E0 // GetJuggSafeTeam__C4Hero
+patch=1,EE,200A007C,extended,00494538 // Coop Unlimited Distance
 //-CATACROM FOUR
-patch=1,EE,E0060029,extended,00559E00
-patch=1,EE,200A0050,extended,003AE060
-patch=1,EE,200A0054,extended,003A7BF0
-patch=1,EE,200A0058,extended,00672E28
-patch=1,EE,200A005C,extended,0061DE90
-patch=1,EE,200A0060,extended,004A6D08
-patch=1,EE,200A0064,extended,00559E00
+patch=1,EE,E00CFFF0,extended,0061DE90
+patch=1,EE,200A0050,extended,005B7B70
+patch=1,EE,200A0054,extended,0053AA38
+patch=1,EE,200A0058,extended,00676740
+patch=1,EE,200A005C,extended,005D0848
+patch=1,EE,200A0060,extended,00672E28
+patch=1,EE,200A0064,extended,003A7BF0
+patch=1,EE,200A0068,extended,004A6D08
+patch=1,EE,200A006C,extended,00559E00
+patch=1,EE,200A0070,extended,0058F4D0
+patch=1,EE,200A0074,extended,005A4A00
+patch=1,EE,200A0078,extended,0061DE90
+patch=1,EE,200A007C,extended,003FF738
 //-SARATHOS
-patch=1,EE,E0060029,extended,00559A50
-patch=1,EE,200A0050,extended,003AD4D0
-patch=1,EE,200A0054,extended,003A7160
-patch=1,EE,200A0058,extended,00672CF0
-patch=1,EE,200A005C,extended,0061DBA0
-patch=1,EE,200A0060,extended,00490BF0
-patch=1,EE,200A0064,extended,00559A50
+patch=1,EE,E00CFFF0,extended,0061DBA0
+patch=1,EE,200A0050,extended,005B7718
+patch=1,EE,200A0054,extended,0053AC78
+patch=1,EE,200A0058,extended,00676608
+patch=1,EE,200A005C,extended,005D03F0
+patch=1,EE,200A0060,extended,00672CF0
+patch=1,EE,200A0064,extended,003A7160
+patch=1,EE,200A0068,extended,00490BF0
+patch=1,EE,200A006C,extended,00559A50
+patch=1,EE,200A0070,extended,0058F078
+patch=1,EE,200A0074,extended,005A45A8
+patch=1,EE,200A0078,extended,0061DBA0
+patch=1,EE,200A007C,extended,00401E30
 //-KRONOS
-patch=1,EE,E0060029,extended,0057FBF0
-patch=1,EE,200A0050,extended,003AF610
-patch=1,EE,200A0054,extended,003A8F30
-patch=1,EE,200A0058,extended,006996C0
-patch=1,EE,200A005C,extended,00644570
-patch=1,EE,200A0060,extended,004C8C08
-patch=1,EE,200A0064,extended,0057FBF0
+patch=1,EE,E00CFFF0,extended,00644570
+patch=1,EE,200A0050,extended,005DD938
+patch=1,EE,200A0054,extended,0055F378
+patch=1,EE,200A0058,extended,0069CFD8
+patch=1,EE,200A005C,extended,005F6610
+patch=1,EE,200A0060,extended,006996C0
+patch=1,EE,200A0064,extended,003A8F30
+patch=1,EE,200A0068,extended,004C8C08
+patch=1,EE,200A006C,extended,0057FBF0
+patch=1,EE,200A0070,extended,005B5208
+patch=1,EE,200A0074,extended,005CA738
+patch=1,EE,200A0078,extended,00644570
+patch=1,EE,200A007C,extended,003E4BB8
 //-SHAAR
-patch=1,EE,E0060029,extended,00551980
-patch=1,EE,200A0050,extended,003ACE90
-patch=1,EE,200A0054,extended,003A6A80
-patch=1,EE,200A0058,extended,0066B038
-patch=1,EE,200A005C,extended,006160A0
-patch=1,EE,200A0060,extended,004A84B0
-patch=1,EE,200A0064,extended,00551980
+patch=1,EE,E00CFFF0,extended,006160A0
+patch=1,EE,200A0050,extended,005AF8F8
+patch=1,EE,200A0054,extended,005325F8
+patch=1,EE,200A0058,extended,0066E950
+patch=1,EE,200A005C,extended,005C85D0
+patch=1,EE,200A0060,extended,0066B038
+patch=1,EE,200A0064,extended,003A6A80
+patch=1,EE,200A0068,extended,004A84B0
+patch=1,EE,200A006C,extended,00551980
+patch=1,EE,200A0070,extended,00587258
+patch=1,EE,200A0074,extended,0059C788
+patch=1,EE,200A0078,extended,006160A0
+patch=1,EE,200A007C,extended,00416110
 //-ORXON
-patch=1,EE,E0060029,extended,0055C408
-patch=1,EE,200A0050,extended,003AD1D0
-patch=1,EE,200A0054,extended,003A6CA0
-patch=1,EE,200A0058,extended,00676330
-patch=1,EE,200A005C,extended,00620DB8
-patch=1,EE,200A0060,extended,0047FD38
-patch=1,EE,200A0064,extended,0055C408
+patch=1,EE,E00CFFF0,extended,00620DB8
+patch=1,EE,200A0050,extended,005BA2D8
+patch=1,EE,200A0054,extended,0053BC78
+patch=1,EE,200A0058,extended,00679C48
+patch=1,EE,200A005C,extended,005D2FB0
+patch=1,EE,200A0060,extended,00676330
+patch=1,EE,200A0064,extended,003A6CA0
+patch=1,EE,200A0068,extended,0047FD38
+patch=1,EE,200A006C,extended,0055C408
+patch=1,EE,200A0070,extended,00591C38
+patch=1,EE,200A0074,extended,005A7168
+patch=1,EE,200A0078,extended,00620DB8
+patch=1,EE,200A007C,extended,003EF6C0
 //-THE VALIX BELT
-patch=1,EE,E0060029,extended,00544CC8
-patch=1,EE,200A0050,extended,003AD3D0
-patch=1,EE,200A0054,extended,003A7260
-patch=1,EE,200A0058,extended,0065DD60
-patch=1,EE,200A005C,extended,00608E68
-patch=1,EE,200A0060,extended,004A91A8
-patch=1,EE,200A0064,extended,00544CC8
+patch=1,EE,E00CFFF0,extended,00608E68
+patch=1,EE,200A0050,extended,005A28D0
+patch=1,EE,200A0054,extended,00523DF8
+patch=1,EE,200A0058,extended,00661678
+patch=1,EE,200A005C,extended,005BB5A8
+patch=1,EE,200A0060,extended,0065DD60
+patch=1,EE,200A0064,extended,003A7260
+patch=1,EE,200A0068,extended,004A91A8
+patch=1,EE,200A006C,extended,00544CC8
+patch=1,EE,200A0070,extended,0057A230
+patch=1,EE,200A0074,extended,00590138
+patch=1,EE,200A0078,extended,00608E68
+patch=1,EE,200A007C,extended,003FDD18
 //-PLANET TORVAL
-patch=1,EE,E0060029,extended,00566EA0
-patch=1,EE,200A0050,extended,003AE650
-patch=1,EE,200A0054,extended,003A8130
-patch=1,EE,200A0058,extended,00680648
-patch=1,EE,200A005C,extended,0062B6B0
-patch=1,EE,200A0060,extended,004BF258
-patch=1,EE,200A0064,extended,00566EA0
+patch=1,EE,E00CFFF0,extended,0062B6B0
+patch=1,EE,200A0050,extended,005C4C10
+patch=1,EE,200A0054,extended,005469F8
+patch=1,EE,200A0058,extended,00683F60
+patch=1,EE,200A005C,extended,005DD8E8
+patch=1,EE,200A0060,extended,00680648
+patch=1,EE,200A0064,extended,003A8130
+patch=1,EE,200A0068,extended,004BF258
+patch=1,EE,200A006C,extended,00566EA0
+patch=1,EE,200A0070,extended,0059C570
+patch=1,EE,200A0074,extended,005B1AA0
+patch=1,EE,200A0078,extended,0062B6B0
+patch=1,EE,200A007C,extended,00467DE0
 //-STYGIA
-patch=1,EE,E0060029,extended,00553D40
-patch=1,EE,200A0050,extended,003AC710
-patch=1,EE,200A0054,extended,003A64D0
-patch=1,EE,200A0058,extended,0066D628
-patch=1,EE,200A005C,extended,006184D8
-patch=1,EE,200A0060,extended,004A75C0
-patch=1,EE,200A0064,extended,00553D40
+patch=1,EE,E00CFFF0,extended,006184D8
+patch=1,EE,200A0050,extended,005B19B0
+patch=1,EE,200A0054,extended,00533738
+patch=1,EE,200A0058,extended,00670F40
+patch=1,EE,200A005C,extended,005CA688
+patch=1,EE,200A0060,extended,0066D628
+patch=1,EE,200A0064,extended,003A64D0
+patch=1,EE,200A0068,extended,004A75C0
+patch=1,EE,200A006C,extended,00553D40
+patch=1,EE,200A0070,extended,00589310
+patch=1,EE,200A0074,extended,0059E840
+patch=1,EE,200A0078,extended,006184D8
+patch=1,EE,200A007C,extended,00493078
 //-MARAXUS
-patch=1,EE,E0060029,extended,0056D4E0
-patch=1,EE,200A0050,extended,003AE310
-patch=1,EE,200A0054,extended,003A7CD0
-patch=1,EE,200A0058,extended,00687270
-patch=1,EE,200A005C,extended,00631DA0
-patch=1,EE,200A0060,extended,004A33E0
-patch=1,EE,200A0064,extended,0056D4E0
+patch=1,EE,E00CFFF0,extended,00631DA0
+patch=1,EE,200A0050,extended,005CB258
+patch=1,EE,200A0054,extended,0054D138
+patch=1,EE,200A0058,extended,0068AB88
+patch=1,EE,200A005C,extended,005E3F30
+patch=1,EE,200A0060,extended,00687270
+patch=1,EE,200A0064,extended,003A7CD0
+patch=1,EE,200A0068,extended,004A33E0
+patch=1,EE,200A006C,extended,0056D4E0
+patch=1,EE,200A0070,extended,005A2BB8
+patch=1,EE,200A0074,extended,005B80E8
+patch=1,EE,200A0078,extended,00631DA0
+patch=1,EE,200A007C,extended,0047EA00
 //-GHOST STATION
-patch=1,EE,E0060029,extended,005674E8
-patch=1,EE,200A0050,extended,003AEA90
-patch=1,EE,200A0054,extended,003A8700
-patch=1,EE,200A0058,extended,00680B40
-patch=1,EE,200A005C,extended,0062B9F0
-patch=1,EE,200A0060,extended,004A1B60
-patch=1,EE,200A0064,extended,005674E8
+patch=1,EE,E00CFFF0,extended,0062B9F0
+patch=1,EE,200A0050,extended,005C52C0
+patch=1,EE,200A0054,extended,00545DF8
+patch=1,EE,200A0058,extended,00684458
+patch=1,EE,200A005C,extended,005DDF98
+patch=1,EE,200A0060,extended,00680B40
+patch=1,EE,200A0064,extended,003A8700
+patch=1,EE,200A0068,extended,004A1B60
+patch=1,EE,200A006C,extended,005674E8
+patch=1,EE,200A0070,extended,0059CC20
+patch=1,EE,200A0074,extended,005B2150
+patch=1,EE,200A0078,extended,0062B9F0
+patch=1,EE,200A007C,extended,003E7F90
 //-DREADZONE INTERIOR
-patch=1,EE,E0060029,extended,00577C70
-patch=1,EE,200A0050,extended,003B2D70
-patch=1,EE,200A0054,extended,003AC680
-patch=1,EE,200A0058,extended,00691158
-patch=1,EE,200A005C,extended,0063C1C0
-patch=1,EE,200A0060,extended,004B4A80
-patch=1,EE,200A0064,extended,00577C70
+patch=1,EE,E00CFFF0,extended,0063C1C0
+patch=1,EE,200A0050,extended,005D56D0
+patch=1,EE,200A0054,extended,00557978
+patch=1,EE,200A0058,extended,00694A70
+patch=1,EE,200A005C,extended,005EE3A8
+patch=1,EE,200A0060,extended,00691158
+patch=1,EE,200A0064,extended,003AC680
+patch=1,EE,200A0068,extended,004B4A80
+patch=1,EE,200A006C,extended,00577C70
+patch=1,EE,200A0070,extended,005AD468
+patch=1,EE,200A0074,extended,005C24D8
+patch=1,EE,200A0078,extended,0063C1C0
+patch=1,EE,200A007C,extended,003F3998
 
-[Mods\Single Player\Menus\Enable Jak Skin]
+// - CHALLENGES
+
+[Story Mode\Challenges\Fix IDs of CUT challenges\Sarathos]
 author=YukiXXL
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003430
-patch=1,EE,00000848,extended,00000000
+description="Search and Destroy"
+patch=1,EE,E004FFF0,extended,0061DBA0
+//pointer mem when dead
+patch=1,EE,60240394,extended,00000006
+patch=1,EE,00020001,extended,00001020
+//pointer mem when restarting challenge
+patch=1,EE,60240398,extended,00000006
+patch=1,EE,00020001,extended,00001020
 
-[Mods\Menus\Planets\Enable Dreadzone Interior Planet]
+[Story Mode\Challenges\Fix IDs of CUT challenges\Kronos]
 author=YukiXXL
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,000032A0
-patch=1,EE,FFFFDAA4,extended,00000000
+description=#
+patch=1,EE,E004FFF0,extended,00644570
+//pointer mem when dead
+patch=1,EE,602407D4,extended,00000003
+patch=1,EE,00020001,extended,00005480
+//pointer mem when restarting challenge
+patch=1,EE,602407D8,extended,00000003
+patch=1,EE,00020001,extended,00005480
 
-[Mods\Menus\Challenges\Enable All Challenges (Including CUT)]
+[Story Mode\Challenges\Fix IDs of CUT challenges\Orxon]
+author=YukiXXL
+description="Chains of Villainy" broken due to fixing "Raritanium Race".
+patch=1,EE,E006FFF0,extended,00620DB8
+//pointer mem when dead
+patch=1,EE,60240254,extended,00000002
+patch=1,EE,00020001,extended,00002390
+//pointer mem when restarting challenge
+patch=1,EE,60240258,extended,00000002
+patch=1,EE,00020001,extended,00002390
+//TLB Fix (Turrets)
+patch=1,EE,204909F8,extended,24020001
+patch=1,EE,204B4AB8,extended,24020001
+
+[Story Mode\Challenges\Fix IDs of CUT challenges\The Valix Belt]
+author=YukiXXL
+description="Fire in the Sky"
+patch=1,EE,E004FFF0,extended,00608E68
+//pointer mem when dead
+patch=1,EE,602401D4,extended,00000001
+patch=1,EE,00020001,extended,00005140
+//pointer mem when restarting challenge
+patch=1,EE,602401D8,extended,00000001
+patch=1,EE,00020001,extended,00005140
+
+[Story Mode\Challenges\Fix IDs of CUT challenges\Stygia]
+author=YukiXXL
+description=All 3 challenges DO NOT WORK!
+patch=1,EE,E00CFFF0,extended,006184D8
+//pointer mem when dead
+patch=1,EE,602402D4,extended,00000005
+patch=1,EE,00020001,extended,00005620
+patch=1,EE,602402D4,extended,00000006
+patch=1,EE,00020001,extended,00005640
+patch=1,EE,602402D4,extended,00000007
+patch=1,EE,00020001,extended,00005660
+//pointer mem when restarting challenge
+patch=1,EE,602402D8,extended,00000005
+patch=1,EE,00020001,extended,00005620
+patch=1,EE,602402D8,extended,00000006
+patch=1,EE,00020001,extended,00005640
+patch=1,EE,602402D8,extended,00000007
+patch=1,EE,00020001,extended,00005660
+
+[Story Mode\Challenges\Fix IDs of CUT challenges\Maraxus]
+author=YukiXXL
+description="Project Desert Swarm"
+patch=1,EE,E004FFF0,extended,00631DA0
+//pointer mem when dead
+patch=1,EE,60240554,extended,00000004
+patch=1,EE,00020001,extended,00001B90
+//pointer mem when restarting challenge
+patch=1,EE,60240558,extended,00000004
+patch=1,EE,00020001,extended,00001B90
+
+// - MENUS
+
+[Story Mode\Menus\Planets\Enable Dreadzone Interior Planet]
+author=YukiXXL
+patch=1,EE,600A0050,extended,24020010
+patch=1,EE,00000001,extended,FFFFDAA4
+
+[Story Mode\Menus\Challenges\Temporary\Enable All Challenges (Including CUT)]
 author=YukiXXL
 description=Challenges stay enabled trough the game.
-patch=1,EE,600A0050,extended,00000000
-patch=1,EE,00020002,extended,00003350
-patch=1,EE,000B8690,extended,00000000
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003350
-patch=1,EE,000B86FC,extended,00000000
+patch=1,EE,600A0058,extended,00000000
+patch=1,EE,00020001,extended,00000008
+patch=1,EE,600A0058,extended,24020001
+patch=1,EE,00020001,extended,00000074
 
-[Mods\Menus\Challenges\All Challenges available]
+[Story Mode\Menus\Challenges\Temporary\Challenges Always Visible]
 author=YukiXXL
-description=Challenges stay available trough the game.
-patch=1,EE,600A0050,extended,00000000
-patch=1,EE,00020002,extended,00003350
-patch=1,EE,FFF7A874,extended,00000000
+patch=1,EE,600A0054,extended,24020001
+patch=1,EE,00020001,extended,000007F0
+patch=1,EE,600A0054,extended,24020001
+patch=1,EE,00020001,extended,000008EC
 
-[Mods\Menus\Challenges\Challenges Always Visible]
+[Story Mode\Menus\Challenges\Permanently (Saved)\All Challenges unlocked (Including CUT)]
 author=YukiXXL
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003350
-patch=1,EE,FFF7A9B0,extended,00000000
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003350
-patch=1,EE,FFF7AAAC,extended,00000000
+description=Challenges stay unlocked trough the game.
+patch=1,EE,600A0054,extended,00000000
+patch=1,EE,00020001,extended,000006B4
 
-[Mods\Menus\Challenges\CheckBadgeUnlock]
+[Story Mode\Menus\Challenges\CheckBadgeUnlock]
 author=YukiXXL
 description=Unlocks bunch of things. Kept for reference.
-patch=1,EE,600A0050,extended,03E00008
-patch=1,EE,00020002,extended,00003350
-patch=1,EE,000B87F8,extended,00000000
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003350
-patch=1,EE,000B87FC,extended,00000000
+patch=1,EE,600A0058,extended,03E00008
+patch=1,EE,00020001,extended,00000170
+patch=1,EE,600A0058,extended,24020001
+patch=1,EE,00020001,extended,00000174
 
-// - SINGLE PLAYER
+// - GAMEPLAY
 
-[Mods\Single Player\Gameplay\Enable Gadgets + Hidden in Quick Select]
+[Story Mode\Gameplay\Enable Gadgets in Quick Select]
 author=YukiXXL
 description=Enables COOP gadgets in Quick Select.
 //Function
-patch=1,EE,600A0058,extended,24020000
+patch=1,EE,600A0060,extended,24020000
 patch=1,EE,00000001,extended,00000020
 //UpdateList
-patch=1,EE,600A0054,extended,0000000B
+patch=1,EE,600A0064,extended,0000000B
 patch=1,EE,00000001,extended,00000028
-patch=1,EE,600A0054,extended,0000000C
+patch=1,EE,600A0064,extended,0000000C
 patch=1,EE,00000001,extended,00000034
-patch=1,EE,600A0054,extended,0000000D
+patch=1,EE,600A0064,extended,0000000D
 patch=1,EE,00000001,extended,00000038
-patch=1,EE,600A0054,extended,00000010
+patch=1,EE,600A0064,extended,00000010
 patch=1,EE,00000001,extended,0000003C
 
-// -- SOLO MOD
+// - SINGLE PLAYER
 
-[Mods\Single Player\Solo Mod]
+[Story Mode\Single Player\Menus\Skins\Enable Jak Skin]
 author=YukiXXL
-// SHARED
-//BotHud_UpdateIcons
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003208
-patch=1,EE,00000A24,extended,00000000
-//Gadgets texture
-patch=1,EE,600A0050,extended,24030001
-patch=1,EE,00020002,extended,00003208
-patch=1,EE,00000144,extended,00000000
-//BotHud_ActivateCommand
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003208
-patch=1,EE,00001160,extended,00000000
-//BotHud_IsSlotEmpty
-patch=1,EE,600A0050,extended,24030001
-patch=1,EE,00020002,extended,00003208
-patch=1,EE,00000620,extended,00000000
-//RequestGadgetEquip
 patch=1,EE,600A005C,extended,24020001
-patch=1,EE,00020001,extended,0001F440
-//BotHud_UpdateCommands
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,00003208
-patch=1,EE,00000748,extended,00000000
-//Disable Bots
-patch=1,EE,600A0060,extended,24030001
+patch=1,EE,00020001,extended,00000848
+
+[Story Mode\Single Player\Gameplay\Bots\Disable Bots]
+author=YukiXXL
+patch=1,EE,600A0068,extended,24030001
 patch=1,EE,00020001,extended,0000005C
-//GuiHud_SetGamePanels
-patch=1,EE,600A0050,extended,24020001
-patch=1,EE,00020002,extended,000034B0
-patch=1,EE,000023B8,extended,00000000
-//Bot_ResetGlobalComm
-patch=1,EE,600A0064,extended,24020001
-patch=1,EE,00020001,extended,00000158
-// MAP_SPECIFIC
 //Rescued Bot, no follow (Maraxus)
-patch=1,EE,600A0060,extended,24020001
-patch=1,EE,00020001,extended,FFFFFC6C
-//Fix not having gadgets (Maraxus)
-patch=1,EE,600A0064,extended,24020001
-patch=1,EE,00020001,extended,00000A8C
+patch=1,EE,E001E718,extended,004A304C
+patch=1,EE,204A304C,extended,24020001
 //Remove Bots Vendor (Dreadzone Station)
 patch=1,EE,E0018EA9,extended,00516B90
 patch=1,EE,20516B90,extended,24020001
 
-[Mods\Single Player\Solo Mod\Special Powerups]
+[Story Mode\Single Player\Gameplay\Bots\Skip Arena "bot down" tutorial (DreadZone Station)]
 author=YukiXXL
-description=Pressing L3 or R3 gives power ups when the bar is charged.
-patch=1,EE,600A005C,extended,00000000
-patch=1,EE,00020001,extended,0001BED0
-//Fix
-patch=1,EE,600A005C,extended,10000006
-patch=1,EE,00020001,extended,0001BF08
-patch=1,EE,600A005C,extended,10000006
-patch=1,EE,00020001,extended,0001BF68
+description=Skips the "resurrect" tutorial.
+patch=1,EE,E001E8A8,extended,003D96BC
+patch=1,EE,203D96BC,extended,24020001
 
-[Mods\Single Player\Solo Mod\Yellow Gadget Icons]
-author=YukiXXL
-description=Makes Gadget Yellow like in Cooperative. (BotHud_GetIconColor)
-patch=1,EE,600A0050,extended,24030001
-patch=1,EE,00020002,extended,00003208
-patch=1,EE,00000B44,extended,00000000
-
-[Mods\Single Player\Solo Mod\Different Challenge Passed Banner]
-author=YukiXXL
-description=Changes Challenge Passed Banner.
-patch=1,EE,600A0050,extended,2484DB18
-patch=1,EE,00010002,extended,00003258
-patch=1,EE,FFFFFC10,extended,00000000
-
-[Mods\Single Player\Solo Mod\Fixes\Fix Arena Help Stuff (DreadZone Station)]
-author=YukiXXL
-description=Fixes tutorials where bots are needed and uses COOP messages.
-patch=1,EE,E002E8A8,extended,003D993C
-patch=1,EE,203D96BC,extended,24020001 //Fix Tutorials
-patch=1,EE,203D993C,extended,24020001 //Fix Help Messages
-
-[Mods\Single Player\Solo Mod\Fixes\Disable Al's cutscene (DreadZone Station)]
+[Story Mode\Single Player\Gameplay\Bots\Disable Al's cutscene (DreadZone Station)]
 author=YukiXXL
 patch=1,EE,E004E8A8,extended,004BEA54
+patch=1,EE,203D9498,extended,24030001 //Get the Arena ship
 patch=1,EE,2047F8AC,extended,24020001 //Disable cutscene
 patch=1,EE,2047F8D0,extended,24030001 //Set marker to Clank
-patch=1,EE,203D9498,extended,24030001 //Get the Arena ship
 patch=1,EE,204BEA54,extended,24020001 //Spawn Al
 
-[Mods\Single Player\Solo Mod\Optional\Be Blue Team (P2)]
+[Story Mode\Single Player\Gameplay\Enable Gadgets]
 author=YukiXXL
-description=Great thing to use for original Jak colors. (GetJuggSafeTeam__C4Hero -> jalr v0)
-patch=1,EE,600A005C,extended,24020000
+description=Replace gadgets for bot commands.
+//BotHud_UpdateIcons
+patch=1,EE,600A0074,extended,24020001
+patch=1,EE,00020001,extended,00000A24
+//Gadgets texture
+patch=1,EE,600A0074,extended,24030001
+patch=1,EE,00020001,extended,00000144
+//BotHud_ActivateCommand
+patch=1,EE,600A0074,extended,24020001
+patch=1,EE,00020001,extended,00001160
+//BotHud_IsSlotEmpty
+patch=1,EE,600A0074,extended,24020001
+patch=1,EE,00020001,extended,00000620
+//RequestGadgetEquip
+patch=1,EE,600A0078,extended,24020001
+patch=1,EE,00020001,extended,0001F440
+//BotHud_UpdateCommands
+patch=1,EE,600A0074,extended,24020001
+patch=1,EE,00020001,extended,00000748
+//GuiHud_SetGamePanels
+patch=1,EE,600A0070,extended,24020001
+patch=1,EE,00020001,extended,000003D0
+//Bot_ResetGlobalComm
+patch=1,EE,600A006C,extended,24020001
+patch=1,EE,00020001,extended,00000158
+//Fix not having gadgets (Maraxus)
+patch=1,EE,600A006C,extended,24020001
+patch=1,EE,00020001,extended,00000A8C
+
+[Story Mode\Single Player\Gameplay\Enable planting bombs]
+author=YukiXXL
+description=Must have if bots are disabled.
+patch=1,EE,600A006C,extended,24030001
+patch=1,EE,00020001,extended,FFFFF418
+//(below "MB_GetCommandName__F12CommandTypes")
+
+[Story Mode\Single Player\Gameplay\Special Powerups]
+author=YukiXXL
+description=Pressing L3 or R3 gives power ups when the bar is charged.
+patch=1,EE,600A0078,extended,00000000
+patch=1,EE,00020001,extended,0001BED0
+//Fix
+patch=1,EE,600A0078,extended,10000006
+patch=1,EE,00020001,extended,0001BF08
+patch=1,EE,600A0078,extended,10000006
+patch=1,EE,00020001,extended,0001BF68
+
+[Story Mode\Single Player\Gameplay\Yellow Gadget Icons]
+author=YukiXXL
+description=Makes Gadget Yellow like in Cooperative.
+patch=1,EE,600A0074,extended,24030001
+patch=1,EE,00020001,extended,00000B44
+//(BotHud_GetIconColor)
+
+[Story Mode\Single Player\Gameplay\Different Challenge Passed Banner]
+author=YukiXXL
+description=Changes Challenge Passed Banner.
+patch=1,EE,600A0074,extended,2484DB18
+patch=1,EE,00010001,extended,00006740
+
+[Story Mode\Single Player\Solo Mod\Optional\Be Blue Team (P2)]
+author=YukiXXL
+description=Great thing to use for original Jak colors.
+patch=1,EE,600A0078,extended,24020000
 patch=1,EE,00000001,extended,0001BE0C
+//(GetJuggSafeTeam__C4Hero -> jalr v0)
 
 // - COOPERATIVE
 
-[Mods\Cooperative\Unlimited Player Distance]
+[Story Mode\Cooperative\Gameplay\Bots\Enable Bots]
+author=YukiXXL
+patch=1,EE,600A0068,extended,24030000
+patch=1,EE,00020001,extended,0000005C
+//Rescued Bot, no follow (Maraxus)
+patch=1,EE,E001E718,extended,004A304C
+patch=1,EE,204A304C,extended,24020000
+//Remove Bots Vendor (Dreadzone Station)
+patch=1,EE,E0018EA9,extended,00516B90
+patch=1,EE,20516B90,extended,24020000
+
+[Story Mode\Cooperative\Gameplay\Bots\Play Arena "bot down" tutorial (DreadZone Station)]
+author=YukiXXL
+description=Plays the "resurrect" tutorial.
+patch=1,EE,E003E8A8,extended,003D983C
+patch=1,EE,203D96BC,extended,24020000 //Enable the tutorial
+patch=1,EE,203D97AC,extended,24100000 //Play the cutscene
+patch=1,EE,203D983C,extended,24020000 //Show the platforms
+
+[Story Mode\Cooperative\Gameplay\Bots\Enable Al's cutscene (DreadZone Station)]
+author=YukiXXL
+patch=1,EE,E004E8A8,extended,004BEA54
+patch=1,EE,203D9498,extended,24030000 //Get the Arena ship
+patch=1,EE,2047F8AC,extended,24020000 //Disable cutscene
+patch=1,EE,2047F8D0,extended,24030000 //Set marker to Clank
+patch=1,EE,204BEA54,extended,24020000 //Spawn Al
+
+[Story Mode\Cooperative\Enable Bot Commands]
+author=YukiXXL
+//BotHud_UpdateIcons
+patch=1,EE,600A0074,extended,24020000
+patch=1,EE,00020001,extended,00000A24
+//BotHud_ActivateCommand
+patch=1,EE,600A0074,extended,24020000
+patch=1,EE,00020001,extended,00001160
+//BotHud_IsSlotEmpty
+patch=1,EE,600A0074,extended,24020000
+patch=1,EE,00020001,extended,00000620
+//BotHud_UpdateCommands
+patch=1,EE,600A0074,extended,24020000
+patch=1,EE,00020001,extended,00000748
+
+[Story Mode\Cooperative\Unlimited Player Distance]
 author=YukiXXL
 description=Disables the line when players are too far away from each other.
-//-CATACROM FOUR
-patch=1,EE,E001E778,extended,003FF77C
-patch=1,EE,203FF77C,extended,24030000
-//-SARATHOS
-patch=1,EE,E001E718,extended,00401E74
-patch=1,EE,20401E74,extended,24030000
-//-KRONOS
-patch=1,EE,E001E718,extended,003E4BFC
-patch=1,EE,203E4BFC,extended,24030000
-//-SHAAR
-patch=1,EE,E001E718,extended,00416154
-patch=1,EE,20416154,extended,24030000
-//-ORXON
-patch=1,EE,E001E718,extended,003EF704
-patch=1,EE,203EF704,extended,24030000
-//-THE VALIX BELT
-patch=1,EE,E001E718,extended,003FDD5C
-patch=1,EE,203FDD5C,extended,24030000
-//-PLANET TORVAL
-patch=1,EE,E001E718,extended,00467E24
-patch=1,EE,20467E24,extended,24030000
-//-STYGIA
-patch=1,EE,E001E718,extended,004930BC
-patch=1,EE,204930BC,extended,24030000
-//-MARAXUS
-patch=1,EE,E001E718,extended,0047EA44
-patch=1,EE,2047EA44,extended,24030000
-//-GHOST STATION
-patch=1,EE,E001E718,extended,003E7FD4
-patch=1,EE,203E7FD4,extended,24030000
-//-DREADZONE INTERIOR
-patch=1,EE,E001E718,extended,003F39DC
-patch=1,EE,203F39DC,extended,24030000
+patch=1,EE,600A007C,extended,24030000
+patch=1,EE,00020001,extended,00000044
 
 [Mods\Cooperative\Disable teleporting a player]
 author=YukiXXL

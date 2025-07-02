@@ -18,3 +18,5 @@ SARATHOS
 006191C8 - GetJuggSafeTeam__C4Hero
 
 00401490 - Coop Unlimited Distance
+
+00240200 - MemSlots

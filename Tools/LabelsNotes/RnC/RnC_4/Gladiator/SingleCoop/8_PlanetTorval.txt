@@ -1,0 +1,20 @@
+PLANET TORVAL
+
+003AE650 - cs_table
+
+005C4C10 - Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+005469F8 - MF_UpdateProgress__Fv
+00683F60 - CheckUnlockMission__8LevelBoxi
+
+005DD8E8 - Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+
+00680648 - IsGadgetCoopOnly__9GadgetBoxi
+003A8130 - HudAmmo_QSItems
+
+004BF258 - Disable Bots
+00566EA0 - Bot_ResetGlobalComm__Fv
+0059C570 - GetHudEnterState__Fi | GetHudExitState__Fi (above "GetHudState__Fi")
+005B1AA0 - Pointer from "BotHud_UpdateIcons"
+0062B6B0 - GetJuggSafeTeam__C4Hero
+
+00467DE0 - Coop Unlimited Distance

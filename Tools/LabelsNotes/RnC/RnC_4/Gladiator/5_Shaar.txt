@@ -1,9 +1,0 @@
-SHAAR
-
-003ACE90 - cs_table
-
-003A6A80 - HudAmmo_QSItems
-0066B038 - IsGadgetCoopOnly__9GadgetBoxi
-006160A0 - GetJuggSafeTeam__C4Hero
-004A84B0 - Disable Bots
-00551980 - Bot_ResetGlobalComm__Fv

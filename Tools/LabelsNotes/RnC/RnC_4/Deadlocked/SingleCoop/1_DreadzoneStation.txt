@@ -18,3 +18,10 @@ DREADZONE STATION
 00669348 - GetJuggSafeTeam__C4Hero
 
 00492D40 - Coop Unlimited Distance
+
+0067A4F8 - Death__4Herob
+0069EA40 - Transitions__4Hero
+
+//Arena
+
+00607B18 - MenuArena_UpdateArenaList__Fv

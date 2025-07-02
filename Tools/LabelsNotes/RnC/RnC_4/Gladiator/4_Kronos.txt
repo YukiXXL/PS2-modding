@@ -1,9 +1,0 @@
-KRONOS
-
-003AF610 - cs_table
-
-003A8F30 - HudAmmo_QSItems
-006996C0 - IsGadgetCoopOnly__9GadgetBoxi
-00644570 - GetJuggSafeTeam__C4Hero
-004C8C08 - Disable Bots
-0057FBF0 - Bot_ResetGlobalComm__Fv

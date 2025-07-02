@@ -1,9 +1,0 @@
-SARATHOS
-
-003AD4D0 - cs_table
-
-003A7160 - HudAmmo_QSItems
-00672CF0 - IsGadgetCoopOnly__9GadgetBoxi
-0061DBA0 - GetJuggSafeTeam__C4Hero
-00490BF0 - Disable Bots
-00559A50 - Bot_ResetGlobalComm__Fv

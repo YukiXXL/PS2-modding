@@ -1,9 +1,0 @@
-CATACROM FOUR
-
-003AE060 - cs_table
-
-003A7BF0 - HudAmmo_QSItems
-00672E28 - IsGadgetCoopOnly__9GadgetBoxi
-0061DE90 - GetJuggSafeTeam__C4Hero
-004A6D08 - Disable Bots
-00559E00 - Bot_ResetGlobalComm__Fv

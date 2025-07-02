@@ -20,10 +20,10 @@ SHAAR
 00415838 - Coop Unlimited Distance
 
 - SHOOT TO KILL
-003ABAE0 - ShootToKill
+003ABAE0 (p -> 004C6CA0) - ShootToKill
 
-004C6D04 - 3-CheckPlayers
-004C6D44 - 5-Run_and_CheckFinish
++0x64 - 3-CheckPlayers
++0xA4 - 5-Run_and_CheckFinish
 
-004C7010 - FUN_PlayersCheck
++0x370 - FUN_PlayersCheck
 lw v0, $02b8(v1) = 1st; lw v0, $02bc(v1) = 2nd
