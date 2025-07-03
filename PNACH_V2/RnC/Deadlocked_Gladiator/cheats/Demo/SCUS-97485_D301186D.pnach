@@ -239,7 +239,7 @@ patch=1,EE,003D378C,extended,00000011
 
 // - SINGLE PLAYER
 
-[Game Rules\Single Player\Replace Bot Commands with Gadgets (COOP)]
+[Game Rules\Single Player\Replace Bot Commands (SP) with Gadgets (COOP)]
 author=YukiXXL
 patch=1,EE,E007938C,extended,0063C6C4
 patch=1,EE,20593090,extended,24020001 //HUD elements
@@ -274,7 +274,7 @@ author=YukiXXL
 patch=1,EE,E001938C,extended,004AEE50
 patch=1,EE,204AEE50,extended,24030000
 
-[Game Rules\Cooperative\Enable Bot Commands]
+[Game Rules\Cooperative\Replace Gadgets (COOP) with Bot Commands (SP)]
 author=YukiXXL
 patch=1,EE,E005A71C,extended,0062B780
 patch=1,EE,2062B780,extended,24030000 //Enable writing Bot commands

@@ -359,9 +359,9 @@ patch=1,EE,2047E34C,extended,24020001 //Disable cutscene
 patch=1,EE,2047E370,extended,24030001 //Set marker to Clank
 patch=1,EE,204BCDBC,extended,24020001 //Spawn Al
 
-[Story Mode\Single Player\Gameplay\Enable Gadgets]
+[Story Mode\Single Player\Gameplay\COOP Gadgets instead of BOT commands]
 author=YukiXXL
-description=Replace gadgets for bot commands.
+description=Replace BOT commands for COOP gadgets.
 //BotHud_UpdateIcons
 patch=1,EE,600A0074,extended,24020001
 patch=1,EE,00020001,extended,00000A24
@@ -457,8 +457,9 @@ patch=1,EE,2047E34C,extended,24020000 //Disable cutscene
 patch=1,EE,2047E370,extended,24030000 //Set marker to Clank
 patch=1,EE,204BCDBC,extended,24020000 //Spawn Al
 
-[Story Mode\Cooperative\Enable Bot Commands]
+[Story Mode\Cooperative\BOT commands instead of COOP gadgets]
 author=YukiXXL
+description=Replace COOP gadgets for BOT commands.
 //BotHud_UpdateIcons
 patch=1,EE,600A0074,extended,24020000
 patch=1,EE,00020001,extended,00000A24
