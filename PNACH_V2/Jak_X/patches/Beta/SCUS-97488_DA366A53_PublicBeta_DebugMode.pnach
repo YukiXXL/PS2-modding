@@ -1,6 +1,6 @@
 [TOOL]
 gametitle=Jak X Public Beta (PAL-E)
-author=Luminar
+author=Original made by Luminar Light. Ported by YukiXXL.
 description=Makes the game boot in Debug Mode.
 comment=Enables Developer/Debug Mode - Credit to Luminar for making the patches.
 comment=Special thanks to water111 and Vaser for their relevant research done for earlier Jak games. It helped make this possible.
