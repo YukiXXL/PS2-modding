@@ -1,6 +1,85 @@
 gametitle=Ratchet: Gladiator Review Prototype (Aug 23, 2005) (PAL-E)
 comment=Dumped by Thatawesomecat. Credits to GFI
 
+//CUT CHALLENGES
+
+[Challenges\Fix IDs of CUT challenges\Sarathos]
+author=YukiXXL
+description="Search and Destroy"
+patch=1,EE,E004FFF0,extended,0066A1D0
+//pointer mem when dead
+patch=1,EE,60266DD0,extended,00000006
+patch=1,EE,00020001,extended,00001020
+//pointer mem when restarting challenge
+patch=1,EE,60266DD4,extended,00000006
+patch=1,EE,00020001,extended,00001020
+
+[Challenges\Fix IDs of CUT challenges\Kronos]
+author=YukiXXL
+description=#
+patch=1,EE,E004FFF0,extended,0068E5B0
+//pointer mem when dead
+patch=1,EE,60267210,extended,00000003
+patch=1,EE,00020001,extended,000060E0
+//pointer mem when restarting challenge
+patch=1,EE,60267214,extended,00000003
+patch=1,EE,00020001,extended,000060E0
+
+[Challenges\Fix IDs of CUT challenges\Orxon]
+author=YukiXXL
+patch=1,EE,E005FFF0,extended,0066E3C8
+//pointer mem when dead
+patch=1,EE,60266DD0,extended,00000002
+patch=1,EE,00020001,extended,00002390
+//pointer mem when restarting challenge
+patch=1,EE,60266DD4,extended,00000002
+patch=1,EE,00020001,extended,00002390
+//Crash Fix
+patch=1,EE,004DE378,extended,24020000
+
+[Challenges\Fix IDs of CUT challenges\The Valix Belt]
+author=YukiXXL
+description="Fire in the Sky"
+patch=1,EE,E004FFF0,extended,00654F68
+//pointer mem when dead
+patch=1,EE,60266C90,extended,00000001
+patch=1,EE,00020001,extended,00004D20
+//pointer mem when restarting challenge
+patch=1,EE,60266C94,extended,00000001
+patch=1,EE,00020001,extended,00004D20
+
+[Challenges\Fix IDs of CUT challenges\Stygia]
+author=YukiXXL
+description=All 3 challenges DO NOT WORK!
+patch=1,EE,E00CFFF0,extended,00665B00
+//pointer mem when dead
+patch=1,EE,60266DD0,extended,00000005
+patch=1,EE,00020001,extended,000056B0
+patch=1,EE,60266DD0,extended,00000006
+patch=1,EE,00020001,extended,000056D0
+patch=1,EE,60266DD0,extended,00000007
+patch=1,EE,00020001,extended,000056F0
+//pointer mem when restarting challenge
+patch=1,EE,60266DD4,extended,00000005
+patch=1,EE,00020001,extended,000056B0
+patch=1,EE,60266DD4,extended,00000006
+patch=1,EE,00020001,extended,000056D0
+patch=1,EE,60266DD4,extended,00000007
+patch=1,EE,00020001,extended,000056F0
+
+[Challenges\Fix IDs of CUT challenges\Maraxus]
+author=YukiXXL
+description="Project Desert Swarm"
+patch=1,EE,E004FFF0,extended,0067F4D8
+//pointer mem when dead
+patch=1,EE,60267090,extended,00000004
+patch=1,EE,00020001,extended,00001B90
+//pointer mem when restarting challenge
+patch=1,EE,60267094,extended,00000004
+patch=1,EE,00020001,extended,00001B90
+
+// DREADZONE STATION
+
 [DreadZone Station\Enable Selecting Skins]
 author=YukiXXL
 patch=1,EE,E0010015,extended,00660978
@@ -20,26 +99,27 @@ patch=1,EE,20645208,extended,0000102D
 patch=1,EE,2064520C,extended,0000282D
 patch=1,EE,20645210,extended,24030001
 
-// MISSIONS
+// CHALLENGES
 
-[DreadZone Station\Challenges\Enable All Challenges (Including CUT)]
+[DreadZone Station\Challenges\Temporary\Enable All Challenges (Including CUT)]
 author=YukiXXL
+description=Challenges stay enabled trough the game.
 patch=1,EE,E002102D,extended,00703858
 patch=1,EE,207037F0,extended,00000000
 patch=1,EE,2070385C,extended,24020001
 
-[DreadZone Station\Challenges\All Challenges available]
-author=YukiXXL
-patch=1,EE,E0010014,extended,005CA0C8
-patch=1,EE,205CA0C4,extended,00000000
-
-[DreadZone Station\Challenges\All Challenges Visible]
+[DreadZone Station\Challenges\Temporary\Challenges Always Visible]
 author=YukiXXL
 description=MF_IsMissionIndexVisibleToMenu
 patch=1,EE,E0010035,extended,00643784
 patch=1,EE,20643780,extended,00000000
 
-[DreadZone Station\Challenges\Unlock All Challenges]
+[DreadZone Station\Challenges\Permanently (Saved)\All Challenges available]
+author=YukiXXL
+patch=1,EE,E0010014,extended,005CA0C8
+patch=1,EE,205CA0C4,extended,00000000
+
+[DreadZone Station\Challenges\Permanently (Saved)\Unlock All Challenges]
 author=YukiXXL
 patch=1,EE,E0010008,extended,005CA158
 patch=1,EE,205CA154,extended,24020007

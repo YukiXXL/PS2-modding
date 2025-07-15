@@ -1,5 +1,7 @@
 STYGIA
 
+0026AB70 - MobyTexLocs
+
 003AC710 - cs_table
 
 005B19B0 - Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"

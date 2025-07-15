@@ -1,3 +1,4 @@
+Final Release:
 MemSlots + 0x94 = Load on death
 MemSlots + 0x98 = Load when restarting
 
@@ -10,3 +11,7 @@ MemSlots + 0x98 = Load when restarting
 Debugging notes:
 - each time player dies, the level decompiles (_fast_decomp_data)
 - the memory saves to (MemSlots+0x98) which gets read and writes to other memory later
+
+Prototype:
+MemSlots + 0x90 = Load on death
+MemSlots + 0x94 = Load when restarting

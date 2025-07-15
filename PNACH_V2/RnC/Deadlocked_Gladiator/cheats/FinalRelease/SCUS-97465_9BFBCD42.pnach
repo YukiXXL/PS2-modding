@@ -26,7 +26,7 @@ patch=1,EE,E0020000,extended,0021DFE8 //g_NW_GameSettings
 patch=1,EE,400A0050,extended,000C0001
 patch=1,EE,00000000,extended,00000000
 //-DREADZONE STATION and ARENA
-patch=1,EE,E00CFFF0,extended,00669348 // Check "GetJuggSafeTeam__C4Hero"
+patch=1,EE,E00CFF70,extended,00492D40 // Check "GetJuggSafeTeam__C4Hero"
 patch=1,EE,200A0050,extended,00602D58 // Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
 patch=1,EE,200A0054,extended,00584678 // MF_UpdateProgress__Fv
 patch=1,EE,200A0058,extended,006C16B8 // CheckUnlockMission__8LevelBoxi
@@ -40,7 +40,7 @@ patch=1,EE,200A0074,extended,005EFAF8 // Pointer from "BotHud_UpdateIcons"
 patch=1,EE,200A0078,extended,00669348 // GetJuggSafeTeam__C4Hero
 patch=1,EE,200A007C,extended,00492D40 // Coop Unlimited Distance
 //-CATACROM FOUR
-patch=1,EE,E00CFFF0,extended,00619338
+patch=1,EE,E00CFF70,extended,003FEDB0
 patch=1,EE,200A0050,extended,005B3548
 patch=1,EE,200A0054,extended,00536D78
 patch=1,EE,200A0058,extended,00671638
@@ -54,7 +54,7 @@ patch=1,EE,200A0074,extended,005A0370
 patch=1,EE,200A0078,extended,00619338
 patch=1,EE,200A007C,extended,003FEDB0
 //-SARATHOS
-patch=1,EE,E00CFFF0,extended,006191C8
+patch=1,EE,E00CFF70,extended,00401490
 patch=1,EE,200A0050,extended,005B3270
 patch=1,EE,200A0054,extended,00537138
 patch=1,EE,200A0058,extended,00671680
@@ -68,7 +68,7 @@ patch=1,EE,200A0074,extended,005A0098
 patch=1,EE,200A0078,extended,006191C8
 patch=1,EE,200A007C,extended,00401490
 //-KRONOS
-patch=1,EE,E00CFFF0,extended,0063F998
+patch=1,EE,E00CFF70,extended,003E4500
 patch=1,EE,200A0050,extended,005D9290
 patch=1,EE,200A0054,extended,0055B638
 patch=1,EE,200A0058,extended,00697E50
@@ -82,7 +82,7 @@ patch=1,EE,200A0074,extended,005C6028
 patch=1,EE,200A0078,extended,0063F998
 patch=1,EE,200A007C,extended,003E4500
 //-SHAAR
-patch=1,EE,E00CFFF0,extended,006119C8
+patch=1,EE,E00CFF70,extended,00415838
 patch=1,EE,200A0050,extended,005AB750
 patch=1,EE,200A0054,extended,0052EDB8
 patch=1,EE,200A0058,extended,00669CC8
@@ -96,7 +96,7 @@ patch=1,EE,200A0074,extended,00598578
 patch=1,EE,200A0078,extended,006119C8
 patch=1,EE,200A007C,extended,00415838
 //-ORXON
-patch=1,EE,E00CFFF0,extended,0061C2A0
+patch=1,EE,E00CFF70,extended,003EEF38
 patch=1,EE,200A0050,extended,005B5CF0
 patch=1,EE,200A0054,extended,00537FF8
 patch=1,EE,200A0058,extended,00674B80
@@ -110,7 +110,7 @@ patch=1,EE,200A0074,extended,005A2B18
 patch=1,EE,200A0078,extended,0061C2A0
 patch=1,EE,200A007C,extended,003EEF38
 //-THE VALIX BELT
-patch=1,EE,E00CFFF0,extended,00604A50
+patch=1,EE,E00CFF70,extended,003FD4E8
 patch=1,EE,200A0050,extended,0059E9E8
 patch=1,EE,200A0054,extended,00520878
 patch=1,EE,200A0058,extended,0065CCB0
@@ -124,7 +124,7 @@ patch=1,EE,200A0074,extended,0058B810
 patch=1,EE,200A0078,extended,00604A50
 patch=1,EE,200A007C,extended,003FD4E8
 //-PLANET TORVAL
-patch=1,EE,E00CFFF0,extended,00626BD8
+patch=1,EE,E00CFF70,extended,00466B10
 patch=1,EE,200A0050,extended,005C0668
 patch=1,EE,200A0054,extended,00542DB8
 patch=1,EE,200A0058,extended,0067EED8
@@ -138,7 +138,7 @@ patch=1,EE,200A0074,extended,005AD490
 patch=1,EE,200A0078,extended,00626BD8
 patch=1,EE,200A007C,extended,00466B10
 //-STYGIA
-patch=1,EE,E00CFFF0,extended,00613C80
+patch=1,EE,E00CFF70,extended,00491AE8
 patch=1,EE,200A0050,extended,005AD688
 patch=1,EE,200A0054,extended,0052FD78
 patch=1,EE,200A0058,extended,0066C138
@@ -152,7 +152,7 @@ patch=1,EE,200A0074,extended,0059A4B0
 patch=1,EE,200A0078,extended,00613C80
 patch=1,EE,200A007C,extended,00491AE8
 //-MARAXUS
-patch=1,EE,E00CFFF0,extended,0062D1C8
+patch=1,EE,E00CFF70,extended,0047D570
 patch=1,EE,200A0050,extended,005C6BB0
 patch=1,EE,200A0054,extended,005493F8
 patch=1,EE,200A0058,extended,00685A00
@@ -166,7 +166,7 @@ patch=1,EE,200A0074,extended,005B39D8
 patch=1,EE,200A0078,extended,0062D1C8
 patch=1,EE,200A007C,extended,0047D570
 //-GHOST STATION
-patch=1,EE,E00CFFF0,extended,00626E98
+patch=1,EE,E00CFF70,extended,003E7978
 patch=1,EE,200A0050,extended,005C0C98
 patch=1,EE,200A0054,extended,00542138
 patch=1,EE,200A0058,extended,0067F350
@@ -180,7 +180,7 @@ patch=1,EE,200A0074,extended,005ADAC0
 patch=1,EE,200A0078,extended,00626E98
 patch=1,EE,200A007C,extended,003E7978
 //-DREADZONE INTERIOR
-patch=1,EE,E00CFFF0,extended,00637528
+patch=1,EE,E00CFF70,extended,003F3120
 patch=1,EE,200A0050,extended,005D0F68
 patch=1,EE,200A0054,extended,00553B78
 patch=1,EE,200A0058,extended,0068F828
@@ -220,15 +220,25 @@ patch=1,EE,00020001,extended,00005480
 
 [Story Mode\Challenges\Fix IDs of CUT challenges\Orxon]
 author=YukiXXL
-description="Chains of Villainy" broken due to fixing "Raritanium Race".
-patch=1,EE,E006FFF0,extended,0061C2A0
+patch=1,EE,E004FFF0,extended,0061C2A0
 //pointer mem when dead
 patch=1,EE,602401D4,extended,00000002
 patch=1,EE,00020001,extended,00002390
 //pointer mem when restarting challenge
 patch=1,EE,602401D8,extended,00000002
 patch=1,EE,00020001,extended,00002390
-//TLB Fix (Turrets)
+
+[Story Mode\Challenges\Fix IDs of CUT challenges\Orxon\Fix TLB Errors]
+author=YukiXXL
+patch=1,EE,E003FFF0,extended,0061C2A0
+patch=1,EE,0048EC40,extended,24020000
+patch=1,EE,0048EC4C,extended,24020000
+patch=1,EE,0048EC58,extended,24020000
+
+[Story Mode\Challenges\Fix IDs of CUT challenges\Orxon\Fix TLB Errors (Alternative)]
+author=YukiXXL
+description=Allows entering Turret but breaks "Chains of Villainy".
+patch=1,EE,E002FFF0,extended,0061C2A0
 patch=1,EE,2048F200,extended,24020001
 patch=1,EE,204B2F70,extended,24020001
 
@@ -245,8 +255,7 @@ patch=1,EE,00020001,extended,00005140
 
 [Story Mode\Challenges\Fix IDs of CUT challenges\Stygia]
 author=YukiXXL
-description=All 3 challenges DO NOT WORK!
-patch=1,EE,E00CFFF0,extended,00613C80
+patch=1,EE,E00DFFF0,extended,00613C80
 //pointer mem when dead
 patch=1,EE,60240254,extended,00000005
 patch=1,EE,00020001,extended,00005620
@@ -261,6 +270,8 @@ patch=1,EE,60240258,extended,00000006
 patch=1,EE,00020001,extended,00005640
 patch=1,EE,60240258,extended,00000007
 patch=1,EE,00020001,extended,00005660
+//Crash Fix (jalr v1 -> (MobyTex+0x15C))
+patch=1,EE,2026AC4C,extended,00000000
 
 [Story Mode\Challenges\Fix IDs of CUT challenges\Maraxus]
 author=YukiXXL

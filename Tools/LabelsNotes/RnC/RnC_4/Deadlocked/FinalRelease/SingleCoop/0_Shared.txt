@@ -9,8 +9,8 @@
 0021DA24 - mapOffset
 0021DA34 - GSbase
 0021DE10 - Level
+0021DFE8 - g_NW_GameSettings
 0021DF60 - gIntelligentFrameRate
 0021DF64 - TN_difficultyLevel
-0021DFE8 - g_NW_GameSettings
 
 0021EA58 - mf_activeMissionIndex
