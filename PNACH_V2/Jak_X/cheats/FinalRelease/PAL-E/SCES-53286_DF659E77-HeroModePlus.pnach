@@ -1,0 +1,28 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+[Hero Mode Plus\CPUs\Enable Novas]
+description=Allows CPUs to get Novas
+patch=1,EE,602DD650,extended,00000020
+patch=1,EE,00000001,extended,000000CC
+
+[Hero Mode Plus\CPUs\Enable Turbo Locks]
+description=Allows CPUs to get Turbo Locks
+patch=1,EE,602DC644,extended,00000020
+patch=1,EE,00000001,extended,00000164
+
+[Hero Mode Plus\CPUs\Always Have Dark Eco]
+patch=1,EE,E00302C0,extended,00F2FF58
+patch=1,EE,20F2FF58,extended,3C033F80
+patch=1,EE,20F2FF5C,extended,44830000
+patch=1,EE,20F2FF60,extended,E44002C0
+
+[Hero Mode Plus\CPUs\Events\CPUs are seperate team than the Player 1]
+description=For 1v6
+patch=1,EE,E0020010,extended,00BD11C0
+patch=1,EE,20BD11B4,extended,838300CB
+patch=1,EE,20BD11B8,extended,10600009
+
+[Hero Mode Plus\CPUs\Events\CPUs can use any vehicle on any CUP]
+patch=1,EE,602E0E7C,extended,10000019
+patch=1,EE,00020001,extended,00000008

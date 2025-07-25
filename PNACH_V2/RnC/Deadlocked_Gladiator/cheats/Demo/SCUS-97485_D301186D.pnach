@@ -104,8 +104,13 @@ patch=1,EE,205C06EC,extended,A0820000
 [Vendor\Bots Shop]
 author=YukiXXL
 description=Replaces Help Log with Bots Shop
-patch=1,EE,E0010012,extended,00598DB4
+patch=1,EE,E0040012,extended,00598DB4
 patch=1,EE,00598DB4,extended,24050010
+//Enable Extra Color
+patch=1,EE,005BFCE0,extended,2A020009
+//Fix applying items
+patch=1,EE,205A49F4,extended,24060003
+patch=1,EE,0054EF5C,extended,2C420008
 
 // LEVELS
 
@@ -181,6 +186,16 @@ author=YukiXXL
 patch=1,EE,E001FFFF,extended,0063F254
 patch=1,EE,1063F254,extended,24060000
 
+[Cheats\Profile\Weapons\Level\All Weapons Max Level (4)]
+author=YukiXXL
+patch=1,EE,E0010550,extended,0063CA58
+patch=1,EE,2063CA58,extended,24020003
+
+[Cheats\Profile\Weapons\Level\All Weapons Level 10 (Unused)]
+author=YukiXXL
+patch=1,EE,E0010550,extended,0063CA58
+patch=1,EE,2063CA58,extended,24020009
+
 [Cheats\Profile\Get All Omega Mods]
 author=YukiXXL
 patch=1,EE,E0012025,extended,0063E870
@@ -241,7 +256,7 @@ patch=1,EE,003D378C,extended,00000011
 
 [Game Rules\Single Player\Replace Bot Commands (SP) with Gadgets (COOP)]
 author=YukiXXL
-patch=1,EE,E007938C,extended,0063C6C4
+patch=1,EE,E007938C,extended,00581040
 patch=1,EE,20593090,extended,24020001 //HUD elements
 patch=1,EE,20592B38,extended,24030001 //Gadgets texture
 patch=1,EE,205934B8,extended,24020001 //UpdateAvailableGadgets
@@ -252,7 +267,7 @@ patch=1,EE,2062B780,extended,24030001 //Get Gadgets
 
 [Game Rules\Single Player\Disable Bots]
 author=YukiXXL
-patch=1,EE,E002938C,extended,0054F1FC
+patch=1,EE,E002938C,extended,004BBAF8
 patch=1,EE,204BBAF8,extended,24030001 //Delete Moby
 patch=1,EE,2054F1FC,extended,24020001 //Fix Invisible HUD
 
@@ -276,7 +291,7 @@ patch=1,EE,204AEE50,extended,24030000
 
 [Game Rules\Cooperative\Replace Gadgets (COOP) with Bot Commands (SP)]
 author=YukiXXL
-patch=1,EE,E005A71C,extended,0062B780
+patch=1,EE,E005938C,extended,00592D38
 patch=1,EE,2062B780,extended,24030000 //Enable writing Bot commands
 patch=1,EE,20593090,extended,24020000 //HUD elements
 patch=1,EE,20592E28,extended,24020000 //Help Messages
@@ -289,6 +304,8 @@ patch=1,EE,E001938C,extended,004BBAF8
 patch=1,EE,204BBAF8,extended,24030000
 
 // EXTRAS
+
+// - SKIN
 
 [Extras\Skin\Marauder (0)]
 author=YukiXXL
@@ -319,3 +336,26 @@ patch=1,EE,10207C1C,extended,00000004
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E289C
 patch=1,EE,10207C1C,extended,00000005
+
+// - CHEATS
+
+[Extras\Cheats\Enable Cheats Menu]
+author=YukiXXL
+description=Replaces Moves with Cheats
+patch=1,EE,E0010013,extended,00598E14
+patch=1,EE,00598E14,extended,24050014
+//Cheat 1
+patch=1,EE,503E3934,extended,00000001
+patch=1,EE,00207C61,extended,00000000
+//Cheat 2
+patch=1,EE,503E394C,extended,00000001
+patch=1,EE,00207C62,extended,00000000
+//Cheat 3
+patch=1,EE,503E3964,extended,00000001
+patch=1,EE,00207C69,extended,00000000
+//Cheat 4
+patch=1,EE,503E397C,extended,00000001
+patch=1,EE,00207C6B,extended,00000000
+//Cheat 5
+patch=1,EE,503E3994,extended,00000001
+patch=1,EE,00207C6F,extended,00000000

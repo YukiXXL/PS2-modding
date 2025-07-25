@@ -1,11 +1,13 @@
-Misc
-00F65F44 - Load Weapon
+-MENU-
+00BCCBDC = Randomizer. a1 = task ID.
 
-Secrets
+-Secrets
 207B9BF1 - Mirrored
 207B9BF2 - Bad Weather
 
+-GAMEPLAY-
+00F65F44 - Load Weapon
 
-00F20F50 (NTSC-GH) = CPU
+-CPU
+00F20F50 = CPU
 Values (float) = 437F0000 (255), 411051EB (Having custom stats all FF)
-00BCCBDC = Randomizer. a1 = task ID.

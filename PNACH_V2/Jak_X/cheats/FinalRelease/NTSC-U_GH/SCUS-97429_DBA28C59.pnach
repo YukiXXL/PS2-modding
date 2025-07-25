@@ -116,26 +116,6 @@ patch=1,EE,10A8BB88,extended,8EE30137
 
 // CPUs
 
-[CPUs\Enable Novas]
-description=Allows CPUs to get Novas
-patch=1,EE,602DD750,extended,00000020
-patch=1,EE,00000001,extended,000000CC
-
-[CPUs\Enable Turbo Locks]
-description=Allows CPUs to get Turbo Locks
-patch=1,EE,602DC744,extended,00000020
-patch=1,EE,00000001,extended,00000164
-
-[CPUs\Events\CPUs are seperate team than the Player 1]
-description=For 1v6
-patch=1,EE,E0020010,extended,00BD1270
-patch=1,EE,20BD1264,extended,838300CB
-patch=1,EE,20BD1268,extended,10600009
-
-[CPUs\Events\CPUs can use any vehicle on any CUP]
-patch=1,EE,602E0F7C,extended,10000019
-patch=1,EE,00020001,extended,00000008
-
 [CPUs\Events\Number of CPUs\5 CPUs on Death Race and Rush Hour]
 patch=1,EE,E0010008,extended,00BCD4BC
 patch=1,EE,00BCD4B8,extended,24130005
@@ -730,6 +710,16 @@ patch=1,EE,20BAE910,extended,0000382D
 patch=1,EE,20BAE944,extended,0000302D
 
 // GAMEPLAY
+
+[Gameplay\No Saucer Drones Limit]
+description=Default limit is 5.
+patch=1,EE,602DD750,extended,286300FF
+patch=1,EE,00000001,extended,000003B4
+
+[Gameplay\No Peacemakers Limit]
+description=Default limit is 2.
+patch=1,EE,602DD750,extended,286300FF
+patch=1,EE,00000001,extended,0000032C
 
 [Gameplay\Disable Backwards Bot]
 patch=1,EE,E0011801,extended,002DF7F0

@@ -1,0 +1,40 @@
+-TRAINING-	
+*weapon-select-table-yellow-training* = 002DA808
+*weapon-select-table-red-training* = 002DA80C
+
+-DEFAULT-
+*weapon-select-table-yellow-default* = 002DE404
+*weapon-select-table-red-default* = 002DE408
+
+-EVEN-
+*weapon-select-table-yellow-even* = 002DE41C
+*weapon-select-table-red-even* = 002DE418
+
+-BOSS BATTLE (MIZO)-
+*weapon-select-table-yellow-boss-battle* = 002DF090
+*weapon-select-table-red-boss-battle* = 002DF094
+
+-DEATHMATCH-
+*weapon-select-table-yellow-deathmatch-leading* = 002E75EC
+*weapon-select-table-yellow-deathmatch-middle* = 002E7608
+*weapon-select-table-yellow-deathmatch-tailing* = 002E75DC
+*weapon-select-table-red-deathmatch-leading* = 002E75F8
+*weapon-select-table-red-deathmatch-middle* = 002E7610
+*weapon-select-table-red-deathmatch-tailing* = 002E760C
+
+-RACE-
+*weapon-select-table-yellow-race-first* = 002E75F4
+*weapon-select-table-yellow-race-second* = 002E75E8
+*weapon-select-table-yellow-race-middle* = 002E75FC
+*weapon-select-table-yellow-race-penultimate* = 002E7614
+*weapon-select-table-yellow-race-last* = 002E7600
+
+*weapon-select-table-red-race-first* = 002E7604
+*weapon-select-table-red-race-second* = 002E75E4
+*weapon-select-table-red-race-middle* = 002E75F0
+*weapon-select-table-red-race-penultimate* = 002E75D8
+*weapon-select-table-red-race-last* = 002E75E0
+
+-DEATH RACE-
+*weapon-select-table-yellow-deathrace* = 002E85D8
+*weapon-select-table-red-deathrace* = 002E85DC
