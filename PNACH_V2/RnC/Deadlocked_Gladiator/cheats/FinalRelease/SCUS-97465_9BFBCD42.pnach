@@ -322,6 +322,27 @@ patch=1,EE,00020001,extended,00000174
 
 // - GAMEPLAY
 
+[Story Mode\Gameplay\Exit from a Vehicle at any time]
+author=YukiXXL
+//CATACROM FOUR
+patch=1,EE,E001F809,extended,00660FC4
+patch=1,EE,20660FC4,extended,24020001
+//KRONOS
+patch=1,EE,E002F809,extended,006876AC
+patch=1,EE,20687678,extended,00000000
+patch=1,EE,206876AC,extended,24020001
+//THE VALIX BELT
+patch=1,EE,E002F809,extended,0064C50C
+patch=1,EE,2064C4D8,extended,00000000
+patch=1,EE,2064C50C,extended,24020001
+//PLANET TORVAL
+patch=1,EE,E001F809,extended,0066E864
+patch=1,EE,2066E864,extended,24020001
+//GHOST STATION
+patch=1,EE,E002F809,extended,0066EBAC
+patch=1,EE,2066EB78,extended,00000000
+patch=1,EE,2066EBAC,extended,24020001
+
 [Story Mode\Gameplay\Enable Gadgets in Quick Select]
 author=YukiXXL
 description=Enables COOP gadgets in Quick Select.

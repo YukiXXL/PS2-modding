@@ -62,6 +62,94 @@ patch=1,EE,0073E5D0,extended,8E440070
 patch=1,EE,0073E5F8,extended,8E440070
 patch=1,EE,00730A28,extended,8E040070
 
+[Multiplayer Menu\Go back from the lobby instead of quiting]
+author=YukiXXL
+patch=1,EE,E004202D,extended,00741FB0
+patch=1,EE,20741FA0,extended,3C030021
+patch=1,EE,20741FA4,extended,8C630B9C
+patch=1,EE,20741FA8,extended,24020013
+patch=1,EE,20741FAC,extended,AC6200EC
+
+// - PLAYER 1
+
+// -- CHARACTER
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Character\Change Enabled]
+author=YukiXXL
+description=Re-create the lobby to see the changes.
+patch=1,EE,207417E4,extended,AE24021C
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Character\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+UP/DOWN.
+//Increment
+patch=1,EE,E001F3EF,extended,001D4602
+patch=1,EE,30000001,extended,007417BC
+//Decrement
+patch=1,EE,E001F3BF,extended,001D4602
+patch=1,EE,30100001,extended,007417BC
+//Reset if too high
+patch=1,EE,E0010014,extended,007417BC
+patch=1,EE,007417BC,extended,24040000
+//Reset if too low
+patch=1,EE,E00100FF,extended,007417BC
+patch=1,EE,007417BC,extended,24040013
+
+[Multiplayer Menu\Player 1\Dynamic\Character\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+UP/DOWN.
+//Increment
+patch=1,EE,E001F3EF,extended,001D4602
+patch=1,EE,30000001,extended,011CE01C
+//Decrement
+patch=1,EE,E001F3BF,extended,001D4602
+patch=1,EE,30100001,extended,011CE01C
+//Reset if too high
+patch=1,EE,E0010014,extended,011CE01C
+patch=1,EE,011CE01C,extended,00000000
+//Reset if too low
+patch=1,EE,E00100FF,extended,011CE01C
+patch=1,EE,011CE01C,extended,00000013
+
+// -- TEAM
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Team\Change Enabled]
+author=YukiXXL
+description=Re-create the lobby to see the changes.
+patch=1,EE,207417E8,extended,AE230220
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Team\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+LEFT/RIGHT.
+//Increment
+patch=1,EE,E001F3DF,extended,001D4602
+patch=1,EE,30000001,extended,007417B8
+//Decrement
+patch=1,EE,E001F37F,extended,001D4602
+patch=1,EE,30100001,extended,007417B8
+//Reset if too high
+patch=1,EE,E001000B,extended,007417B8
+patch=1,EE,007417B8,extended,24030000
+//Reset if too low
+patch=1,EE,E00100FF,extended,007417B8
+patch=1,EE,007417B8,extended,2403000A
+
+[Multiplayer Menu\Player 1\Dynamic\Team\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+LEFT/RIGHT.
+//Increment
+patch=1,EE,E001F3DF,extended,001D4602
+patch=1,EE,30000001,extended,011CE02C
+//Decrement
+patch=1,EE,E001F37F,extended,001D4602
+patch=1,EE,30100001,extended,011CE02C
+//Reset if too high
+patch=1,EE,E001000B,extended,011CE02C
+patch=1,EE,011CE02C,extended,00000000
+//Reset if too low
+patch=1,EE,E00100FF,extended,011CE02C
+patch=1,EE,011CE02C,extended,0000000A
+
 // PROSCAN
 
 [ProScan\Enable Widescreen and Progressive option in Settings]
@@ -112,6 +200,11 @@ author=YukiXXL
 description=Replaces Help Log with Bots Shop
 patch=1,EE,E0010012,extended,0059CC74
 patch=1,EE,0059CC74,extended,24050010
+//Enable Extra Color
+patch=1,EE,005C3C58,extended,2A020009
+//Fix applying items
+patch=1,EE,205A88CC,extended,24060003
+patch=1,EE,0055277C,extended,2C420008
 
 // LEVELS
 
@@ -186,6 +279,16 @@ patch=1,EE,205C6378,extended,34630001
 author=YukiXXL
 patch=1,EE,E001FFFF,extended,0064394C
 patch=1,EE,1064394C,extended,24060000
+
+[Cheats\Profile\Weapons\Level\All Weapons Max Level (4)]
+author=YukiXXL
+patch=1,EE,E0010550,extended,00641150
+patch=1,EE,20641150,extended,24020003
+
+[Cheats\Profile\Weapons\Level\All Weapons Level 10 (Unused)]
+author=YukiXXL
+patch=1,EE,E0010550,extended,00641150
+patch=1,EE,20641150,extended,24020009
 
 [Cheats\Profile\Get All Omega Mods]
 author=YukiXXL
@@ -296,6 +399,8 @@ patch=1,EE,204BEDC8,extended,24030000
 
 // EXTRAS
 
+// - SKIN
+
 [Extras\Skin\Marauder (0)(Default)]
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
@@ -325,3 +430,26 @@ patch=1,EE,1020973C,extended,00000004
 author=YukiXXL
 patch=1,EE,E0010022,extended,004E5DDC
 patch=1,EE,1020973C,extended,00000005
+
+// - CHEATS
+
+[Extras\Cheats\Enable Cheats Menu]
+author=YukiXXL
+description=Replaces Moves with Cheats
+patch=1,EE,E0010013,extended,0059CCD4
+patch=1,EE,0059CCD4,extended,24050014
+//Cheat 1
+patch=1,EE,503E53B4,extended,00000001
+patch=1,EE,00209781,extended,00000000
+//Cheat 2
+patch=1,EE,503E53CC,extended,00000001
+patch=1,EE,00209782,extended,00000000
+//Cheat 3
+patch=1,EE,503E53E4,extended,00000001
+patch=1,EE,00209789,extended,00000000
+//Cheat 4
+patch=1,EE,503E53FC,extended,00000001
+patch=1,EE,0020978B,extended,00000000
+//Cheat 5
+patch=1,EE,503E5414,extended,00000001
+patch=1,EE,0020978F,extended,00000000

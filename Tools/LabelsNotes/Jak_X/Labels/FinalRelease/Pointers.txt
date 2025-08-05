@@ -8,3 +8,4 @@ Menu
 
 (BASE+5247) = control-hook-player
 
+(BASE-7081) = *net-players*
