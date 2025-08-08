@@ -136,8 +136,9 @@ patch=1,EE,20310240,extended,2402001B
 
 // - NPCs
 
-[Gameplay\NPCs\Give weapons to workers]
+[Gameplay\NPCs\Give a third weapon]
 author=YukiXXL
+description=Workers get weapons and any other NPC without one.
 patch=1,EE,001ADC48,extended,2A020003
 
 // -- ENABLE ALL SPAWNS

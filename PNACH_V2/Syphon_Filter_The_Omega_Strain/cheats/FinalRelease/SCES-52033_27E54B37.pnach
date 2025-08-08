@@ -308,9 +308,18 @@ patch=1,EE,20336B90,extended,2402001E
 
 // - NPCS
 
-[Gameplay\NPCs\Give weapons to workers]
+[Gameplay\NPCs\Friendly Killable]
+description=Removes invulnerability from specific friendly NPCs.
+patch=1,EE,2014C52C,extended,0000102D
+
+[Gameplay\NPCs\Give a third weapon]
 author=YukiXXL
+description=Workers get weapons and any other NPC without one.
 patch=1,EE,001B6D28,extended,2A020003
+
+[Gameplay\NPCs\Disable auto-killing]
+author=YukiXXL
+patch=1,EE,2014D404,extended,00000000
 
 // -- ENABLE ALL SPAWNS
 

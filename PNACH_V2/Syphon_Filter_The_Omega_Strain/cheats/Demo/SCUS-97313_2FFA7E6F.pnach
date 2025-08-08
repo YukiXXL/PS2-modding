@@ -55,6 +55,11 @@ author=YukiXXL
 description=Enable booting into Main Menu.
 patch=1,EE,2022EB34,extended,00000000
 
+[Menus\Enable Online mode]
+author=YukiXXL
+patch=1,EE,10315BE0,extended,24A5C6D0
+patch=1,EE,10315BE8,extended,24C6C6E8
+
 [Menus\Enable LAN button]
 author=YukiXXL
 patch=1,EE,2031604C,extended,00000000
@@ -99,7 +104,150 @@ patch=1,EE,103B069C,extended,00000908
 
 [Menus\Fixes\Create Mission and Join Mission fix]
 author=YukiXXL
-patch=1,EE,20230E14,extended,1000002E
+patch=1,EE,00456DC0,extended,00000001
+
+// - GAMEPLAY
+
+[Menus\Gameplay\Equipment\Enable Equipment Setup]
+author=YukiXXL
+//Joker Code 1
+patch=1,EE,200A0100,extended,24020010
+patch=1,EE,200A0104,extended,80231540
+patch=1,EE,200A0108,extended,24040001
+patch=1,EE,200A010C,extended,AC245D0C
+patch=1,EE,200A0110,extended,A0231541
+patch=1,EE,200A0114,extended,03E00008
+patch=1,EE,200A0118,extended,A0221540
+//Joker Code 2
+patch=1,EE,200A0130,extended,27BDFFF0
+patch=1,EE,200A0134,extended,FFBF0000
+patch=1,EE,200A0138,extended,0C08BCFC
+patch=1,EE,200A0140,extended,3C010045
+patch=1,EE,200A0144,extended,3C040042
+patch=1,EE,200A0148,extended,AC205D0C
+patch=1,EE,200A014C,extended,24020001
+patch=1,EE,200A0150,extended,2484AB00
+patch=1,EE,200A0154,extended,A02215BD
+patch=1,EE,200A0158,extended,0C040548
+patch=1,EE,200A015C,extended,FC205D10
+patch=1,EE,200A0160,extended,0C06AB58
+patch=1,EE,200A0168,extended,3C05003D
+patch=1,EE,200A016C,extended,3C06003D
+patch=1,EE,200A0170,extended,0040202D
+patch=1,EE,200A0174,extended,24A5D030
+patch=1,EE,200A0178,extended,0C06B9EC
+patch=1,EE,200A017C,extended,24C6D048
+patch=1,EE,200A0180,extended,0C06AB5C
+patch=1,EE,200A0184,extended,0040882D
+patch=1,EE,200A0188,extended,0040202D
+patch=1,EE,200A018C,extended,0220282D
+patch=1,EE,200A0190,extended,0C06ACE0
+patch=1,EE,200A0194,extended,0000302D
+patch=1,EE,200A0198,extended,3C010045
+patch=1,EE,200A019C,extended,DFBF0000
+patch=1,EE,200A01A0,extended,03E00008
+patch=1,EE,200A01A4,extended,27BD0010
+//Rewritten code
+patch=1,EE,20231164,extended,1462001B
+patch=1,EE,202311CC,extended,0C028040
+patch=1,EE,202311D0,extended,3C010045
+patch=1,EE,202311D4,extended,0C06EDF4
+patch=1,EE,202311D8,extended,0200202D
+patch=1,EE,202311DC,extended,3C010045
+patch=1,EE,202311E0,extended,90231540
+patch=1,EE,202311E4,extended,24020010
+patch=1,EE,202311E8,extended,14620095
+patch=1,EE,202311EC,extended,8C2215A0
+patch=1,EE,202311F0,extended,8C510030
+patch=1,EE,202311F4,extended,12200092
+patch=1,EE,202311F8,extended,8C225D0C
+patch=1,EE,202311FC,extended,1040000B
+patch=1,EE,20231200,extended,822227FB
+patch=1,EE,20231204,extended,10400009
+patch=1,EE,20231208,extended,26240060
+patch=1,EE,2023120C,extended,0C048270
+patch=1,EE,20231210,extended,00000000
+patch=1,EE,20231214,extended,822227FB
+patch=1,EE,20231218,extended,14400089
+patch=1,EE,2023121C,extended,0200202D
+patch=1,EE,20231220,extended,0C02804C
+patch=1,EE,20231224,extended,00000000
+patch=1,EE,20231228,extended,10000085
+//eqsetup fix
+patch=1,EE,2032FB8C,extended,24020001
+patch=1,EE,2032FC38,extended,24020001
+
+[Menus\Gameplay\Equipment\Enable Equipment Setup 2]
+author=YukiXXL
+//Joker Code 1
+patch=1,EE,200A0100,extended,24020010
+patch=1,EE,200A0104,extended,24040001
+patch=1,EE,200A0108,extended,80231540
+patch=1,EE,200A010C,extended,A0245D0C
+patch=1,EE,200A0110,extended,A0231541
+patch=1,EE,200A0114,extended,03E00008
+patch=1,EE,200A0118,extended,A0221540
+//Joker Code 2
+patch=1,EE,200A0130,extended,27BDFFF0
+patch=1,EE,200A0134,extended,FFBF0000
+patch=1,EE,200A0138,extended,3C010045
+patch=1,EE,200A013C,extended,3C040042
+patch=1,EE,200A0140,extended,A0205D0C
+patch=1,EE,200A0144,extended,24020001
+patch=1,EE,200A0148,extended,2484AB00
+patch=1,EE,200A014C,extended,A02215BD
+patch=1,EE,200A0150,extended,0C040548
+patch=1,EE,200A0154,extended,FC205D10
+patch=1,EE,200A0158,extended,0C06AB58
+patch=1,EE,200A015C,extended,00000000
+patch=1,EE,200A0160,extended,3C05003D
+patch=1,EE,200A0164,extended,3C06003D
+patch=1,EE,200A0168,extended,0040202D
+patch=1,EE,200A016C,extended,24A5D030
+patch=1,EE,200A0170,extended,0C06B9EC
+patch=1,EE,200A0174,extended,24C6D048
+patch=1,EE,200A0178,extended,0C06AB5C
+patch=1,EE,200A017C,extended,0040882D
+patch=1,EE,200A0180,extended,0040202D
+patch=1,EE,200A0184,extended,0220282D
+patch=1,EE,200A0188,extended,0C06ACE0
+patch=1,EE,200A018C,extended,0000302D
+patch=1,EE,200A0190,extended,DFBF0000
+patch=1,EE,200A0194,extended,03E00008
+patch=1,EE,200A0198,extended,27BD0010
+//Rewritten code
+patch=1,EE,20231164,extended,1462001B
+patch=1,EE,202311CC,extended,0C028040
+patch=1,EE,202311D0,extended,3C010045
+patch=1,EE,202311D4,extended,90231540
+patch=1,EE,202311D8,extended,24020010
+patch=1,EE,202311DC,extended,14620098
+patch=1,EE,202311E0,extended,8C2215A0
+patch=1,EE,202311E4,extended,8C510030
+patch=1,EE,202311E8,extended,12200095
+patch=1,EE,202311EC,extended,90225D0C
+patch=1,EE,202311F0,extended,1040000D
+patch=1,EE,202311F4,extended,822227FB
+patch=1,EE,202311F8,extended,1040000B
+patch=1,EE,202311FC,extended,26240060
+patch=1,EE,20231200,extended,0C048270
+patch=1,EE,20231204,extended,00000000
+patch=1,EE,20231208,extended,822227FB
+patch=1,EE,2023120C,extended,1440008C
+patch=1,EE,20231210,extended,0200202D
+patch=1,EE,20231214,extended,0C08BCFC
+patch=1,EE,20231218,extended,00000000
+patch=1,EE,2023121C,extended,0C02804C
+patch=1,EE,20231220,extended,00000000
+patch=1,EE,20231224,extended,10000086
+//eqsetup fix
+patch=1,EE,2032FB8C,extended,24020001
+patch=1,EE,2032FC38,extended,24020001
+
+[Menus\Gameplay\Equipment\Open Weapons]
+author=YukiXXL
+description=All Weapons.
+patch=1,EE,20391EBC,extended,24020001
 
 // GAMEPLAY
 
@@ -107,24 +255,90 @@ patch=1,EE,20230E14,extended,1000002E
 patch=1,EE,2025F0E4,extended,00000000
 patch=1,EE,0025F230,extended,14800011 //Memory fix
 
-[Gameplay\Multi-Status Display]
+// MODS
+
+// - FAKE MP
+
+[Mods\Fake Multiplayer\Always Enabled]
+author=YukiXXL
+description=Fake "m_bIsMultiplayer" is always enabled.
+patch=1,EE,004301BC,extended,00000001
+
+[Mods\Fake Multiplayer\Menus\Enable Creating Games]
+author=YukiXXL
+description=Allows creating "online" games with writing the fake "m_bIsMultiplayer".
+// - CREATE MISSION
+//Min number of agents = 1
+patch=1,EE,00317E88,extended,28610001
+patch=1,EE,00317EA4,extended,24030001
+//ConnectToGame
+patch=1,EE,00230E20,extended,A02201BC
+//SetupAsHost
+patch=1,EE,201BBBE4,extended,0000102D
+patch=1,EE,00352D94,extended,24020000
+patch=1,EE,00352CFC,extended,24020000
+// - Write Codename
+patch=1,EE,001BBBF0,extended,902201BC //HostSetup
+//joker
+patch=1,EE,200A0250,extended,3C010043
+patch=1,EE,200A0254,extended,2463FFFF
+patch=1,EE,200A0258,extended,03E00008
+patch=1,EE,200A025C,extended,AC2301A8
+//jals
+patch=1,EE,20317EAC,extended,0C028094
+patch=1,EE,203181FC,extended,0C028094
+//NetGetMyClientIndex
+patch=1,EE,203540F8,extended,03E00008
+patch=1,EE,203540FC,extended,AC850000
+// - GAMEPLAY
+//Minimap
+patch=1,EE,002F24F8,extended,902201BC
+patch=1,EE,002F25E4,extended,902301BC
+//Codename spelling and dependecies
+patch=1,EE,001FADB4,extended,902301BC
+patch=1,EE,00239424,extended,902201BC
+// - MAIN
+//Online controller (Responsible for codenames)
+patch=1,EE,0026125C,extended,902401BC
+// - MENUS
+// -- EQUIPMENT SETUP
+//After pressing square or triangle
+patch=1,EE,0032FB8C,extended,902201BC
+patch=1,EE,0032FC38,extended,902201BC
+patch=1,EE,2031A1F4,extended,00000000 //Display Fix
+
+[Mods\Fake Multiplayer\Menus\Enable Ready Button]
+author=YukiXXL
+description=Enables Countdown for Equipment Setup.
+patch=1,EE,00319178,extended,902201BC //Ready Button
+patch=1,EE,0031A48C,extended,902201BC
+//SetStatus
+patch=1,EE,20238DD0,extended,3C030043
+patch=1,EE,20238DD4,extended,24630174
+//GetStatus
+patch=1,EE,20238DF0,extended,3C020043
+patch=1,EE,20238DF4,extended,24420174
+//HasHeadset
+patch=1,EE,20238E10,extended,3C020043
+patch=1,EE,20238E14,extended,24420174
+
+[Mods\Fake Multiplayer\Gameplay\Enable online objectives + dialogues]
+author=YukiXXL
+patch=1,EE,001F6DF8,extended,902201BC
+
+[Mods\Fake Multiplayer\Gameplay\Enable Buddy Climb]
+author=YukiXXL
+description=Allows Team Interaction without another agent.
+patch=1,EE,00229BC4,extended,902201BC //Buddy climb
+patch=1,EE,00240EA4,extended,2403002D //Animation change
+
+[Mods\Fake Multiplayer\Gameplay\Enable Quickchat]
+author=YukiXXL
+patch=1,EE,002CAB1C,extended,902201BC //Quickchat enabled
+patch=1,EE,003226E0,extended,902201BC //Show correct codename
+
+[Mods\Fake Multiplayer\Gameplay\Multi-Status Display]
 author=YukiXXL
 description=Displays different status screen at the end of the mission.
 patch=1,EE,002EB10C,extended,902201BC
 patch=1,EE,002EB134,extended,28420001
-
-// - PLAYER
-
-[Gameplay\Player\Enable Quickchat + Buddy Climb Solo]
-author=YukiXXL
-patch=1,EE,004301BC,byte,1 //Fake Byte
-patch=1,EE,002CAB1C,extended,902201BC //Quickchat
-patch=1,EE,00229BC4,extended,902201BC //Buddy climb
-patch=1,EE,00240EA4,extended,2403002D //Animation change
-
-// ONLINE
-
-[Online\Enable Online mode]
-author=YukiXXL
-patch=1,EE,10315BE0,extended,24A5C6D0
-patch=1,EE,10315BE8,extended,24C6C6E8
