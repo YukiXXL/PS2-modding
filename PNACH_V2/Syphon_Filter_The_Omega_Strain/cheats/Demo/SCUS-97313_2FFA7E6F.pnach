@@ -104,154 +104,114 @@ patch=1,EE,103B069C,extended,00000908
 
 [Menus\Fixes\Create Mission and Join Mission fix]
 author=YukiXXL
-patch=1,EE,00456DC0,extended,00000001
+patch=1,EE,20230E14,extended,1000002E
 
 // - GAMEPLAY
 
-[Menus\Gameplay\Equipment\Enable Equipment Setup]
+[Menus\Gameplay\Disable Loading Screen]
 author=YukiXXL
-//Joker Code 1
-patch=1,EE,200A0100,extended,24020010
-patch=1,EE,200A0104,extended,80231540
-patch=1,EE,200A0108,extended,24040001
-patch=1,EE,200A010C,extended,AC245D0C
-patch=1,EE,200A0110,extended,A0231541
-patch=1,EE,200A0114,extended,03E00008
-patch=1,EE,200A0118,extended,A0221540
-//Joker Code 2
-patch=1,EE,200A0130,extended,27BDFFF0
-patch=1,EE,200A0134,extended,FFBF0000
-patch=1,EE,200A0138,extended,0C08BCFC
-patch=1,EE,200A0140,extended,3C010045
-patch=1,EE,200A0144,extended,3C040042
-patch=1,EE,200A0148,extended,AC205D0C
-patch=1,EE,200A014C,extended,24020001
-patch=1,EE,200A0150,extended,2484AB00
-patch=1,EE,200A0154,extended,A02215BD
-patch=1,EE,200A0158,extended,0C040548
-patch=1,EE,200A015C,extended,FC205D10
-patch=1,EE,200A0160,extended,0C06AB58
-patch=1,EE,200A0168,extended,3C05003D
-patch=1,EE,200A016C,extended,3C06003D
-patch=1,EE,200A0170,extended,0040202D
-patch=1,EE,200A0174,extended,24A5D030
-patch=1,EE,200A0178,extended,0C06B9EC
-patch=1,EE,200A017C,extended,24C6D048
-patch=1,EE,200A0180,extended,0C06AB5C
-patch=1,EE,200A0184,extended,0040882D
-patch=1,EE,200A0188,extended,0040202D
-patch=1,EE,200A018C,extended,0220282D
-patch=1,EE,200A0190,extended,0C06ACE0
-patch=1,EE,200A0194,extended,0000302D
-patch=1,EE,200A0198,extended,3C010045
-patch=1,EE,200A019C,extended,DFBF0000
-patch=1,EE,200A01A0,extended,03E00008
-patch=1,EE,200A01A4,extended,27BD0010
-//Rewritten code
-patch=1,EE,20231164,extended,1462001B
-patch=1,EE,202311CC,extended,0C028040
-patch=1,EE,202311D0,extended,3C010045
-patch=1,EE,202311D4,extended,0C06EDF4
-patch=1,EE,202311D8,extended,0200202D
-patch=1,EE,202311DC,extended,3C010045
-patch=1,EE,202311E0,extended,90231540
-patch=1,EE,202311E4,extended,24020010
-patch=1,EE,202311E8,extended,14620095
-patch=1,EE,202311EC,extended,8C2215A0
-patch=1,EE,202311F0,extended,8C510030
-patch=1,EE,202311F4,extended,12200092
-patch=1,EE,202311F8,extended,8C225D0C
-patch=1,EE,202311FC,extended,1040000B
-patch=1,EE,20231200,extended,822227FB
-patch=1,EE,20231204,extended,10400009
-patch=1,EE,20231208,extended,26240060
-patch=1,EE,2023120C,extended,0C048270
-patch=1,EE,20231210,extended,00000000
-patch=1,EE,20231214,extended,822227FB
-patch=1,EE,20231218,extended,14400089
-patch=1,EE,2023121C,extended,0200202D
-patch=1,EE,20231220,extended,0C02804C
-patch=1,EE,20231224,extended,00000000
-patch=1,EE,20231228,extended,10000085
+description=It shows loading Debug text instead.
+patch=1,EE,201FA3F0,extended,00000000
+
+[Menus\Gameplay\Equipment\Enable Equipment Menu\Enabled]
+author=YukiXXL
+description=ENABLE THIS FIRST!
+//Rewritten Code
+patch=1,EE,00231164,extended,1462001F
+patch=1,EE,202311D8,extended,A0225D0C
+patch=1,EE,202311DC,extended,A0231541
+patch=1,EE,202311E0,extended,A0221540
+patch=1,EE,202311E8,extended,90231540
+patch=1,EE,202311EC,extended,24020010
+patch=1,EE,202311F0,extended,14620093
+patch=1,EE,202311F4,extended,8C2215A0
+patch=1,EE,202311F8,extended,8C510030
+patch=1,EE,202311FC,extended,12200090
+patch=1,EE,20231200,extended,90225D0C
+patch=1,EE,20231204,extended,10400008
+patch=1,EE,20231208,extended,822227FB
+patch=1,EE,2023120C,extended,10400006
+patch=1,EE,20231210,extended,0200202D
+patch=1,EE,20231214,extended,0C08BCFC
+patch=1,EE,20231218,extended,00000000
+patch=1,EE,2023121C,extended,0C028040
+patch=1,EE,20231220,extended,00000000
+patch=1,EE,20231224,extended,10000086
+//Joker Code
+patch=1,EE,200A0100,extended,27BDFFF0
+patch=1,EE,200A0104,extended,FFBF0000
+patch=1,EE,200A0108,extended,3C010045
+patch=1,EE,200A010C,extended,3C040042
+patch=1,EE,200A0110,extended,A0205D0C
+patch=1,EE,200A0114,extended,24020001
+patch=1,EE,200A0118,extended,2484AB00
+patch=1,EE,200A011C,extended,A02215BD
+patch=1,EE,200A0120,extended,0C040548
+patch=1,EE,200A0124,extended,FC205D10
+patch=1,EE,200A0128,extended,0C06AB58
+patch=1,EE,200A012C,extended,3C05003D
+patch=1,EE,200A0130,extended,3C06003D
+patch=1,EE,200A0134,extended,0040202D
+//a1 arg (GuiEquipment...)
+patch=1,EE,200A013C,extended,0C06B9EC
+//a2 arg (eq...)
+patch=1,EE,200A0144,extended,0C06AB5C
+patch=1,EE,200A0148,extended,0040882D
+patch=1,EE,200A014C,extended,0040202D
+patch=1,EE,200A0150,extended,0220282D
+patch=1,EE,200A0154,extended,0C06ACE0
+patch=1,EE,200A0158,extended,0000302D
+patch=1,EE,200A015C,extended,3C010045
+patch=1,EE,200A0160,extended,DFBF0000
+patch=1,EE,200A0164,extended,03E00008
+patch=1,EE,200A0168,extended,27BD0010
+
+[Menus\Gameplay\Equipment\Enable Equipment Menu\Setup]
+author=YukiXXL
+description=Start with EqSetup, like in online.
+patch=1,EE,200A0138,extended,24A5D030 //"GuiEquipmentSetup"
+patch=1,EE,200A0140,extended,24C6D048 //"eqsetup"
 //eqsetup fix
 patch=1,EE,2032FB8C,extended,24020001
 patch=1,EE,2032FC38,extended,24020001
 
-[Menus\Gameplay\Equipment\Enable Equipment Setup 2]
+[Menus\Gameplay\Equipment\Enable Equipment Menu\Modify]
 author=YukiXXL
-//Joker Code 1
-patch=1,EE,200A0100,extended,24020010
-patch=1,EE,200A0104,extended,24040001
-patch=1,EE,200A0108,extended,80231540
-patch=1,EE,200A010C,extended,A0245D0C
-patch=1,EE,200A0110,extended,A0231541
-patch=1,EE,200A0114,extended,03E00008
-patch=1,EE,200A0118,extended,A0221540
-//Joker Code 2
-patch=1,EE,200A0130,extended,27BDFFF0
-patch=1,EE,200A0134,extended,FFBF0000
-patch=1,EE,200A0138,extended,3C010045
-patch=1,EE,200A013C,extended,3C040042
-patch=1,EE,200A0140,extended,A0205D0C
-patch=1,EE,200A0144,extended,24020001
-patch=1,EE,200A0148,extended,2484AB00
-patch=1,EE,200A014C,extended,A02215BD
-patch=1,EE,200A0150,extended,0C040548
-patch=1,EE,200A0154,extended,FC205D10
-patch=1,EE,200A0158,extended,0C06AB58
-patch=1,EE,200A015C,extended,00000000
-patch=1,EE,200A0160,extended,3C05003D
-patch=1,EE,200A0164,extended,3C06003D
-patch=1,EE,200A0168,extended,0040202D
-patch=1,EE,200A016C,extended,24A5D030
-patch=1,EE,200A0170,extended,0C06B9EC
-patch=1,EE,200A0174,extended,24C6D048
-patch=1,EE,200A0178,extended,0C06AB5C
-patch=1,EE,200A017C,extended,0040882D
-patch=1,EE,200A0180,extended,0040202D
-patch=1,EE,200A0184,extended,0220282D
-patch=1,EE,200A0188,extended,0C06ACE0
-patch=1,EE,200A018C,extended,0000302D
-patch=1,EE,200A0190,extended,DFBF0000
-patch=1,EE,200A0194,extended,03E00008
-patch=1,EE,200A0198,extended,27BD0010
-//Rewritten code
-patch=1,EE,20231164,extended,1462001B
-patch=1,EE,202311CC,extended,0C028040
-patch=1,EE,202311D0,extended,3C010045
-patch=1,EE,202311D4,extended,90231540
-patch=1,EE,202311D8,extended,24020010
-patch=1,EE,202311DC,extended,14620098
-patch=1,EE,202311E0,extended,8C2215A0
-patch=1,EE,202311E4,extended,8C510030
-patch=1,EE,202311E8,extended,12200095
-patch=1,EE,202311EC,extended,90225D0C
-patch=1,EE,202311F0,extended,1040000D
-patch=1,EE,202311F4,extended,822227FB
-patch=1,EE,202311F8,extended,1040000B
-patch=1,EE,202311FC,extended,26240060
-patch=1,EE,20231200,extended,0C048270
-patch=1,EE,20231204,extended,00000000
-patch=1,EE,20231208,extended,822227FB
-patch=1,EE,2023120C,extended,1440008C
-patch=1,EE,20231210,extended,0200202D
-patch=1,EE,20231214,extended,0C08BCFC
-patch=1,EE,20231218,extended,00000000
-patch=1,EE,2023121C,extended,0C02804C
-patch=1,EE,20231220,extended,00000000
-patch=1,EE,20231224,extended,10000086
-//eqsetup fix
-patch=1,EE,2032FB8C,extended,24020001
-patch=1,EE,2032FC38,extended,24020001
+description=Start with EqModify, like in offline.
+patch=1,EE,200A0138,extended,24A5BB90 //"GuiEquipmentModify"
+patch=1,EE,200A0140,extended,24C6BBA8 //"eqmodify"
 
 [Menus\Gameplay\Equipment\Open Weapons]
 author=YukiXXL
 description=All Weapons.
 patch=1,EE,20391EBC,extended,24020001
 
+[Menus\Gameplay\Equipment\Enable Dual Wield]
+author=YukiXXL
+description=Gotta have 3 sidearms. Mess around Equip submenu.
+//Rewritten code
+patch=1,EE,20330400,extended,0C028068
+patch=1,EE,20330404,extended,AC402470
+//Joker Code
+patch=1,EE,200A01A0,extended,8EA3010C
+patch=1,EE,200A01A4,extended,24020003
+patch=1,EE,200A01A8,extended,14620006
+patch=1,EE,200A01B0,extended,8EA30054
+patch=1,EE,200A01B4,extended,8C622470
+patch=1,EE,200A01B8,extended,10000004
+patch=1,EE,200A01BC,extended,AC622474
+patch=1,EE,200A01C4,extended,8EA20054
+patch=1,EE,200A01C8,extended,AC402474
+patch=1,EE,200A01CC,extended,8EA30054
+patch=1,EE,200A01D0,extended,8C62247C
+patch=1,EE,200A01D4,extended,AC622480
+patch=1,EE,200A01D8,extended,03E00008
+patch=1,EE,200A01DC,extended,8EA20054
+
 // GAMEPLAY
 
 [Gameplay\Enable All Spawns]
+author=YukiXXL
 patch=1,EE,2025F0E4,extended,00000000
 patch=1,EE,0025F230,extended,14800011 //Memory fix
 
@@ -273,6 +233,7 @@ patch=1,EE,00317E88,extended,28610001
 patch=1,EE,00317EA4,extended,24030001
 //ConnectToGame
 patch=1,EE,00230E20,extended,A02201BC
+patch=1,EE,00456DC0,extended,00000001 //bDone$40398
 //SetupAsHost
 patch=1,EE,201BBBE4,extended,0000102D
 patch=1,EE,00352D94,extended,24020000
@@ -280,13 +241,13 @@ patch=1,EE,00352CFC,extended,24020000
 // - Write Codename
 patch=1,EE,001BBBF0,extended,902201BC //HostSetup
 //joker
-patch=1,EE,200A0250,extended,3C010043
-patch=1,EE,200A0254,extended,2463FFFF
-patch=1,EE,200A0258,extended,03E00008
-patch=1,EE,200A025C,extended,AC2301A8
+patch=1,EE,200A0180,extended,3C010043
+patch=1,EE,200A0184,extended,2463FFFF
+patch=1,EE,200A0188,extended,03E00008
+patch=1,EE,200A018C,extended,AC2301A8
 //jals
-patch=1,EE,20317EAC,extended,0C028094
-patch=1,EE,203181FC,extended,0C028094
+patch=1,EE,20317EAC,extended,0C028060
+patch=1,EE,203181FC,extended,0C028060
 //NetGetMyClientIndex
 patch=1,EE,203540F8,extended,03E00008
 patch=1,EE,203540FC,extended,AC850000
