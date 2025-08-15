@@ -1,0 +1,244 @@
+gametitle=Syphon Filter: The Omega Strain November Demo (NTSC-U)
+
+// CHEATS
+
+// - PROFILE
+
+[Cheats\Profile\COMPLETE]
+author=YukiXXL
+description=Unlocks everything possible.
+//Play once for all objectives
+patch=1,EE,20302708,extended,2401FFFF
+patch=1,EE,2030270C,extended,AC410084
+patch=1,EE,20302718,extended,24020001
+//All Ratings
+patch=1,EE,2030182C,extended,24010520
+patch=1,EE,20301830,extended,AC610008
+patch=1,EE,20301838,extended,24020001
+//All Solo Pars
+patch=1,EE,20304558,extended,2403024E
+patch=1,EE,20304560,extended,AE230000
+//All Team Pars
+patch=1,EE,20304590,extended,240301D6
+patch=1,EE,20304598,extended,AE230004
+//All Missions, No Collateral
+patch=1,EE,203045D0,extended,24020000
+patch=1,EE,203045D8,extended,AE220010
+//All Missions, No Deaths
+patch=1,EE,203045B8,extended,24020000
+patch=1,EE,203045C0,extended,AE220014
+
+// - MENUS
+
+[Cheats\Menus\Open Levels]
+author=YukiXXL
+patch=1,EE,20301920,extended,24020001
+
+// - GAMEPLAY
+
+[Cheats\Gameplay\Open Weapons]
+author=YukiXXL
+patch=1,EE,2030149C,extended,00000000
+
+// ADDONS
+
+[Addons\Menus\Activate menu buttons]
+author=YukiXXL
+description=Enable all greyed-out buttons.
+patch=1,EE,003F2E98,extended,8F390014
+
+[Addons\Gameplay\60 FPS]
+author=YukiXXL
+patch=1,EE,00170528,extended,2402003C
+patch=1,EE,00170568,extended,2402003C
+patch=1,EE,001707E0,extended,2402003C
+
+[Addons\60 FPS (Constant)]
+author=YukiXXL
+description=Keeps 60 in menus and gameplay.
+patch=1,EE,004D8D74,extended,0000003C
+
+// GAMEPLAY
+
+// - BONUS MISSIONS
+
+[Gameplay\Bonus Missions\kUseLevelCharacter]
+author=YukiXXL
+description=Allow own agent on Italy.
+patch=1,EE,20452610,extended,00000000
+
+// - NPCs
+
+[Gameplay\NPCs\Enable All Spawns\Enable]
+author=YukiXXL
+patch=1,EE,201AA46C,extended,00000000
+
+[Gameplay\NPCs\Enable All Spawns\Memory fix]
+author=YukiXXL
+description=Fixes crashing and black screen when dying.
+patch=1,EE,001AA57C,extended,1440000E
+
+// - PLAYER
+
+[Gameplay\Player\Dual Wield Ability\Apply in Equipment Modify]
+author=YukiXXL
+description=Gotta have 3 sidearms. Mess around with Equip submenu.
+//Rewritten code
+patch=1,EE,2029C208,extended,0C028040
+patch=1,EE,2029C20C,extended,AC402470
+//Joker code
+patch=1,EE,200A0100,extended,27BDFFF0
+patch=1,EE,200A0104,extended,FFBF0000
+patch=1,EE,200A0108,extended,3C040049
+patch=1,EE,200A010C,extended,2405FFFF
+patch=1,EE,200A0110,extended,0C04C624
+patch=1,EE,200A0114,extended,2484C400
+patch=1,EE,200A0118,extended,0040202D
+patch=1,EE,200A011C,extended,0C0C0620
+patch=1,EE,200A0120,extended,24050001
+patch=1,EE,200A0124,extended,1040000C
+patch=1,EE,200A0128,extended,8EC300D8
+patch=1,EE,200A012C,extended,24020003
+patch=1,EE,200A0130,extended,14620004
+patch=1,EE,200A0134,extended,8EC30058
+patch=1,EE,200A0138,extended,8C622470
+patch=1,EE,200A013C,extended,10000003
+patch=1,EE,200A0140,extended,AC622474
+patch=1,EE,200A0144,extended,8EC20058
+patch=1,EE,200A0148,extended,AC402474
+patch=1,EE,200A014C,extended,8EC30058
+patch=1,EE,200A0150,extended,8C62247C
+patch=1,EE,200A0154,extended,AC622480
+patch=1,EE,200A0158,extended,8EC20058
+patch=1,EE,200A015C,extended,DFBF0000
+patch=1,EE,200A0160,extended,03E00008
+patch=1,EE,200A0164,extended,27BD0010
+
+// -- APPEARANCE
+
+[Gameplay\Player\Appearance\Random outfits during missions]
+author=YukiXXL
+patch=1,EE,203E535C,extended,10400020
+
+[Gameplay\Player\Appearance\Disable mission disguises]
+author=YukiXXL
+patch=1,EE,003E5368,extended,24420000
+
+// -- RADIO COMMS
+
+[Gameplay\Player\Radio Comms\Disable radio logs]
+author=YukiXXL
+patch=1,EE,201BBF58,extended,00000000
+
+// ONLINE
+
+[Online\DNAS Bypass]
+author=YukiXXL
+patch=1,EE,20343940,extended,03e00008
+patch=1,EE,20343944,extended,00000000
+
+[Online\Enable all missions online]
+author=YukiXXL
+//All missions online
+patch=1,EE,20275840,extended,24020000
+patch=1,EE,20275864,extended,24020000
+patch=1,EE,204525CC,extended,00000003 //Lobby IDs fix
+patch=1,EE,00274B48,extended,28410018 //Bypass Level ID check
+
+[Online\Start with only one player]
+author=YukiXXL
+patch=1,EE,00283dc8,word,28410001
+
+// MODS
+
+// - OFFLINE PRESERVATION
+
+[Mods\Offline Preservation Mod\Enable]
+author=YukiXXL
+description=Online-like experience offline.
+// MENUS
+// - BEGIN MISSION
+//Write codename & SuccessLobbyConnect
+patch=1,EE,20281EE8,extended,8E4200F4
+patch=1,EE,20281EF0,extended,8C420040
+patch=1,EE,20281EF4,extended,2442FFFF
+patch=1,EE,20281EF8,extended,3C010044
+patch=1,EE,20281EFC,extended,10000041
+patch=1,EE,20281F00,extended,AC220468
+//Online, Offline enabler
+patch=1,EE,00172C74,extended,A0232204
+patch=1,EE,00172CDC,extended,A0202204
+//Pick Region crash fix
+patch=1,EE,2028F448,extended,00000000
+// - MENUS
+//Enable Online lobby in offline
+patch=1,EE,0027D7FC,extended,24A52430
+patch=1,EE,0027D804,extended,24C62448
+patch=1,EE,202800BC,extended,00000000
+patch=1,EE,0028255C,extended,24050001 //Min num agents = 1
+// - MISSION SETUP
+//Enable Mission Setup & Join Mission offline
+patch=1,EE,002749C0,extended,10400005
+patch=1,EE,00274B74,extended,10400008
+patch=1,EE,20274B60,extended,00000000 //Join any mission
+patch=1,EE,00274B48,extended,28410018 //Join Training Center
+// GAMEPLAY
+//Enable online objectives + dialogues
+patch=1,EE,00130068,extended,90222204
+//Team Par
+patch=1,EE,00419EF0,extended,90252204
+patch=1,EE,00419FC4,extended,90222204
+patch=1,EE,00304218,extended,90222204 //Write Time
+//Buddy climb
+patch=1,EE,0016B0B4,extended,90222204
+patch=1,EE,00188CFC,extended,2403002E //Animation change
+// CODENAME STUFF
+// - GAMEPLAY
+patch=1,EE,0022BBEC,extended,90222204 //Quickchat enabled
+patch=1,EE,00290428,extended,90222204 //Show correct codename
+//Minimap
+patch=1,EE,00251EF8,extended,90222204
+patch=1,EE,0027A2EC,extended,90232204
+patch=1,EE,00251FE4,extended,90232204
+//Codename spelling and dependecies
+patch=1,EE,00136064,extended,90232204
+patch=1,EE,0017F134,extended,90222204
+// - MAIN
+//Online controller (Responsible for codenames)
+patch=1,EE,001AC990,extended,90242204
+// - MENUS
+//EQUIPMENT SETUP
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,001731B0,extended,90222204
+//After pressing square or triangle
+patch=1,EE,0029B8FC,extended,90222204
+patch=1,EE,0029B9C8,extended,90222204
+//Stats
+patch=1,EE,003385CC,extended,90222204
+patch=1,EE,0041B7A0,extended,90222204
+//Position
+patch=1,EE,00331C04,extended,90222204
+patch=1,EE,20330D24,extended,2AA10004
+//START button
+patch=1,EE,00282F2C,extended,90222204
+// COUNTDOWN
+//SetStatus
+patch=1,EE,2017E7C0,extended,3C030051
+patch=1,EE,2017E7C4,extended,246321D4
+//GetStatus
+patch=1,EE,2017E7E0,extended,3C020051
+patch=1,EE,2017E7E4,extended,244221D4
+//HasHeadset
+patch=1,EE,2017E800,extended,3C020051
+patch=1,EE,2017E804,extended,244221D4
+
+[Mods\Offline Preservation Mod\Check Team objectives]
+author=YukiXXL
+description=Write Par Time if Team objectives are also completed.
+patch=1,EE,00304130,extended,90252204
+
+[Mods\Offline Preservation Mod\Skin based on codename]
+author=YukiXXL
+description=Bonus missions "online"
+patch=1,EE,001ABDB0,extended,90242204
+patch=1,EE,001ABDF0,extended,90222204

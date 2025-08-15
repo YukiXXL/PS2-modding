@@ -1,7 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=Offline Preservation - Match End
-
-//Return to "Host Game" after exiting
-patch=1,EE,10267690,extended,240500D0
-//End Screen names fix
-patch=1,EE,20220DAC,extended,0000102D

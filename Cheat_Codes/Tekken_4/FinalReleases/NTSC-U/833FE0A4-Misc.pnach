@@ -1,5 +1,0 @@
-gametitle= Tekken 4 (NTSC-U)
-comment=from TCRF
-
-//Turbo Mode
-patch=1,EE,0035778C,extended,00000001

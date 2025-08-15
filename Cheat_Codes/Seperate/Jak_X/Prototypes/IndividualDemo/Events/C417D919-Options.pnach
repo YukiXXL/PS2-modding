@@ -1,0 +1,12 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=Time Limit = Laps. If it turns to ZERO, GO TO TURBO DASH ADVANCED OPTIONS FIRST AND THEN RETURN!
+
+//Circuit Race with Collectathon options
+patch=1,EE,50267BD0,extended,00000003
+patch=1,EE,002677C0,extended,00000000
+patch=1,EE,5026799C,extended,00000003
+patch=1,EE,002677C4,extended,00000000
+
+//Other events with Collectathon options
+patch=1,EE,50267BD0,extended,00000003
+patch=1,EE,00267404,extended,00000000

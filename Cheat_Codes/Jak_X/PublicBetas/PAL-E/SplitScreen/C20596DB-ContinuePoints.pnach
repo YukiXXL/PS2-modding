@@ -1,9 +1,0 @@
-gametitle=Jak X Beta Trial Code (PAL-E)
-comment=Fix continue-points
-
-patch=1,EE,E0050401,extended,009A3D68 //Memory Check
-patch=1,EE,209A24D8,extended,009A3804 //kras-timebox
-patch=1,EE,209A3728,extended,009A3CE4 //jungle-timebox
-patch=1,EE,209A3D68,extended,009A3D84 //kras-training
-patch=1,EE,209A3CC8,extended,009A3D04 //jungle-training
-patch=1,EE,209A0658,extended,009A3984 //cliffs-training

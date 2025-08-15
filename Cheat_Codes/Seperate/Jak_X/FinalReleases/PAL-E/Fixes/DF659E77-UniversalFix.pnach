@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Fixes TLB Misses
+
+patch=1,EE,602DC830,extended,10000003
+patch=1,EE,00020001,extended,000000D0

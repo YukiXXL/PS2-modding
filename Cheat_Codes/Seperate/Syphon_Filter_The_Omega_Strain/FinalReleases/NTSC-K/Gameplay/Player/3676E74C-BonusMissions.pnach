@@ -1,0 +1,16 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=GAMEPLAY - PLAYER - BONUS MISSIONS
+
+//Own agent on Bonus missions
+patch=1,EE,404B8170,extended,00040001
+patch=1,EE,00000000,extended,00000000
+//Alternative
+//patch=1,EE,202AAFC8,extended,24040000
+//Enable equiping weapons on Bonus missions
+patch=1,EE,404B8190,extended,00040001
+patch=1,EE,00000000,extended,00000000
+//Alternative
+//patch=1,EE,202AAFD0,extended,24030000
+
+//Disable forcing weapons on Kyrgzstan and Chechnya
+patch=1,EE,20407114,extended,00000000

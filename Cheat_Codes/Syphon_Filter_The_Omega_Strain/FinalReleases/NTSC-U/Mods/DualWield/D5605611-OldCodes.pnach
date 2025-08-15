@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
-comment=DUAL WIELD - OLD CODES
-
-//All weapons under sidearm (Equipment Modify)
-patch=1,EE,202BF124,extended,24030003
-//All weapons in sidearm weapon slot
-patch=1,EE,20143E40,extended,24030003
-patch=1,EE,20143D38,extended,24030003

@@ -1,0 +1,5 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=GET ALL - VEHICLES
+
+patch=1,EE,E0010004,extended,00916148
+patch=1,EE,20916148,extended,00000000

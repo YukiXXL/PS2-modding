@@ -1,5 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=GAMEPLAY - DISABLE BOT
-
-patch=1,EE,E0011801,extended,002DF7F0
-patch=1,EE,002DF7F0,extended,002E1805

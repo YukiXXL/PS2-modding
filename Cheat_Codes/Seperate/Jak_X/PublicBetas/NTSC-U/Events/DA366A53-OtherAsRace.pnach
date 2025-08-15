@@ -1,0 +1,12 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=Other gamemodes act as Circuit Race
+
+//Training
+patch=1,EE,602D60D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,00000174
+patch=1,EE,602D60D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,0000018C
+
+//artist
+patch=1,EE,602D60D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,00000198

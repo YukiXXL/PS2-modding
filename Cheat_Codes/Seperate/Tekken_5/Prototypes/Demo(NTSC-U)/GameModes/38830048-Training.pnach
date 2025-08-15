@@ -1,0 +1,9 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=GAMEMODES - TRAINING
+
+//Launch Training Mode
+patch=1,EE,20122B48,extended,24040007
+//Crash fix
+patch=1,EE,0012EE2C,extended,24030001
+//Use GM 9 for changing characters
+//patch=1,EE,201235B4,extended,24040009

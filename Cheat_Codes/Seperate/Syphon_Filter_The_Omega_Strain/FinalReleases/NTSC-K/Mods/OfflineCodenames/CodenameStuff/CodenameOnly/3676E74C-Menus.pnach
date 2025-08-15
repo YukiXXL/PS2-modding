@@ -1,0 +1,19 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=OFFLINE CODENAMES: CODENAME STUFF: CODENAME ONLY - MENUS
+
+//In-Game Stats Menu
+patch=1,EE,2036E180,extended,3C12004A
+patch=1,EE,2036E184,extended,8E5212A8
+
+//END MISSION
+//Load the codename
+patch=1,EE,00471714,extended,3C01004A
+patch=1,EE,20471740,extended,8C3712A8
+patch=1,EE,20471744,extended,10000072
+//<Codename>
+patch=1,EE,20471A48,extended,26E60001
+//<Codename> managed to not get killed
+patch=1,EE,20471ACC,extended,26E70001
+//<Codename> collateral
+patch=1,EE,0047088C,extended,3C01004A
+patch=1,EE,20470894,extended,8C3112A8

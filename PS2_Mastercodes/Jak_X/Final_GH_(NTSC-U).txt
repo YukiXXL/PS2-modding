@@ -1,6 +1,0 @@
-"Jak X: Combat Racing Greatest Hits (NTSC-U) /ID SCUS_974.29"
-//ELF CRC=DBA28C59
-//ENTRYPOINT = 001001B4
-sceSifSendCmd   : 90117698 0C045D4E
-scePad2Read     : 901C7658 0C042C85
-main            : 902761AC 0C042CF2

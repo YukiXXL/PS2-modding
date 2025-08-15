@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
-comment=OFFLINE PRESERVATION: CODENAME STUFF - MAIN
-
-//Online controller (Responsible for codenames)
-patch=1,EE,001B7060,extended,90244884
-
-//Mission end fix (Not needed. Kept for reference)
-//patch=1,EE,0012ED84,extended,90224884

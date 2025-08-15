@@ -1,0 +1,19 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=OFFLINE PRESERVATION: GAMEPLAY - MAIN
+
+//Enable online objectives + dialogues
+patch=1,EE,00130068,extended,90222204
+
+//Team Par
+patch=1,EE,00419EF0,extended,90252204
+patch=1,EE,00419FC4,extended,90222204
+
+//Check Team objectives
+//patch=1,EE,00304130,extended,90252204
+//Write Time
+patch=1,EE,00304218,extended,90222204
+
+//Buddy climb
+patch=1,EE,0016B0B4,extended,90222204
+//Animation change
+patch=1,EE,00188CFC,extended,2403002E

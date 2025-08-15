@@ -1,8 +1,0 @@
-gametitle=Ratchet: Deadlocked (NTSC-U)
-comment=No Bots, Gadgets Only
-
-//-DREADZONE STATION and ARENA
-patch=1,EE,20685068,extended,00000000
-//TLB Fix
-patch=1,EE,206850A0,extended,10000006
-patch=1,EE,20685100,extended,10000006

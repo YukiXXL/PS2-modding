@@ -1,0 +1,8 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=GAMEMODES - DEMO LIKE
+
+//Demo like Gamemode (Random chars/stages)
+patch=1,EE,10123670,extended,0C04A1D2
+
+//Only change the second character
+patch=1,EE,20128770,extended,24130001

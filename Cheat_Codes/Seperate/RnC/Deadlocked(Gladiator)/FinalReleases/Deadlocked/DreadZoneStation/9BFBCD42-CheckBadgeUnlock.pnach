@@ -1,0 +1,6 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=CheckBadgeUnlock
+
+patch=1,EE,E0020017,extended,006C1838
+patch=1,EE,206C1828,extended,03E00008
+patch=1,EE,206C182C,extended,24020001

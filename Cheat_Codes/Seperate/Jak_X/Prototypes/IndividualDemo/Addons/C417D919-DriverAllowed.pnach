@@ -1,0 +1,17 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=Enable all drivers
+
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,00000024
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,0000004C
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,00000074
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,0000009C
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,000000C4
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,000000EC
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,00000114

@@ -1,0 +1,14 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=GET ALL - TASKS
+
+//All Gold Medals
+patch=1,EE,E005004A,extended,0091265C
+patch=1,EE,20912650,extended,ACA60020
+patch=1,EE,20912654,extended,ACA60058
+patch=1,EE,20912658,extended,A0A60048
+patch=1,EE,2091265C,extended,A0A6004A
+patch=1,EE,209126C0,extended,24060003
+//All Grand Prixes
+patch=1,EE,E0020008,extended,009126E8
+patch=1,EE,209126D4,extended,24060003
+patch=1,EE,209126E8,extended,A4860008

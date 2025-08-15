@@ -1,5 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=Fixes IPA on Icebound Citadel training
-
-patch=1,EE,E0010F98,extended,00980D28
-patch=1,EE,20980D5C,extended,0098CC84

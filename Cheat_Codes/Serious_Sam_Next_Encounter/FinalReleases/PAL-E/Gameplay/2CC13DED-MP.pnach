@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=GAMEPLAY - MULTIPLAYER
-
-//Enable Netricsa and in-game messages in Split-Screen
-patch=1,EE,0022153C,extended,2C820020
-
-//Prevent teleporting players in COOP
-patch=1,EE,001E2938,extended,28420009

@@ -1,0 +1,18 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=CHEATS - PROFILE
+
+//Unlock Everything and enable all cheats
+patch=1,EE,E001FFF9,extended,005C6388
+patch=1,EE,205C6378,extended,34630001
+
+//Get all weapons and Gadgets
+patch=1,EE,E001FFFF,extended,0064394C
+patch=1,EE,1064394C,extended,24060000
+
+//Get All Omega Mods
+patch=1,EE,E0012025,extended,00642F68
+patch=1,EE,20642F68,extended,240400FF
+
+//Max Bolts
+patch=1,EE,E0010020,extended,0062FB8C
+patch=1,EE,2062FB88,extended,00631818

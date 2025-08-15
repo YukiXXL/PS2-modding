@@ -1,9 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=MISC EVENTS
-
-patch=1,EE,E0051701,extended,0098F510 //Memory Check
-patch=1,EE,209931B0,extended,009931C4 //kras-training
-patch=1,EE,2098FC20,extended,00992C14 //jungle-training
-patch=1,EE,2098FCC0,extended,00992E84 //cliffs-training
-patch=1,EE,2098FC70,extended,00992BA4 //snow-training2
-patch=1,EE,2098F510,extended,0098F524 //kratour-final-boss-start

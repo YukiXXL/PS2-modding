@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
-comment=OFFLINE PRESERVATION: CODENAME STUFF: COUNTDOWN DISABLED
-
-//START fix
-patch=1,EE,002A8554,extended,24050000

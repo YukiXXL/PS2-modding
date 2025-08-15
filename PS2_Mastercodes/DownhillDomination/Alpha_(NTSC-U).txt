@@ -1,4 +1,0 @@
-"Downhill Domination Alpha (NTSC-U) /ID SCUS_971.77"
-//ELF CRC=80E56BA3
-sceSifSendCmd   : 900A36D8 0C028D5E
-main            : 900A01EC 0C0287CC

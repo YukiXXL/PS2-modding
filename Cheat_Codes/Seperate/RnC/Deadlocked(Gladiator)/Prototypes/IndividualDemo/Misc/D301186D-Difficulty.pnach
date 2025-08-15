@@ -1,0 +1,5 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=Change Difficulty
+
+patch=1,EE,E0010002,extended,003E6B50
+patch=1,EE,003E6B50,extended,00000004

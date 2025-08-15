@@ -1,0 +1,5 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=CHALLENGES - UNLOCK ALL
+
+patch=1,EE,E0010008,extended,00536428
+patch=1,EE,00536424,extended,34420007

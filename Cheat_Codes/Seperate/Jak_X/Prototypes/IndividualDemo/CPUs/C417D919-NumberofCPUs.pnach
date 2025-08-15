@@ -1,0 +1,10 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=Number of CPUs
+
+//5 CPUs on Death Race and Rush Hour
+patch=1,EE,E0012025,extended,00B7E074
+patch=1,EE,00B7E058,extended,24140005
+
+//5 CPUs on Time Box and Time Trial
+patch=1,EE,E0012025,extended,00B7E074
+patch=1,EE,00B7E064,extended,24140005

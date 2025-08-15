@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+
+[Patches\Stream Fix]
+author=YukiXXL
+description=Fixes speech on "Beast Beneath the Palace"
+patch=1,EE,00112E88,extended,24030002
+
+[Patches\Rendering Optimizations]
+author=YukiXXL
+description=Optimizes generic rendering distances for undefined levels
+patch=1,EE,10144268,extended,3C01459C
+patch=1,EE,1014428C,extended,3C01451C

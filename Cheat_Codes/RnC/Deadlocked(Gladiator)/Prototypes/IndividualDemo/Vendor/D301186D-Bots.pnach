@@ -1,6 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=VENDOR - BOTS. Requires Bot Shop!
-
-patch=1,EE,E0020008,extended,005C06E8
-patch=1,EE,205C06E4,extended,24020001
-patch=1,EE,205C06EC,extended,A0820000

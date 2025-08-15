@@ -1,0 +1,5 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=GAMEPLAY - DISABLE BOT
+
+patch=1,EE,E0010301,extended,002CE2F0
+patch=1,EE,002CE2F0,extended,002D0305

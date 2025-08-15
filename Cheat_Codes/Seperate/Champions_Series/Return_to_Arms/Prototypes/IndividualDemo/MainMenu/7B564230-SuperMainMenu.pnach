@@ -1,0 +1,4 @@
+gametitle=Champions Return to Arms Demo (NTSC-U)
+comment=SUPER MAIN MENU
+
+patch=1,EE,1051C580,extended,001E1DF0

@@ -1,0 +1,6 @@
+"Syphon Filter: The Omega Strain Review Code (Mar 6 2004) (NTSC-U) /ID SCUS_972.64"
+//ELF CRC=062BC79E
+//ENTRYPOINT = 00100008
+sceSifSendCmd   : 9010F970 0C043E04
+scePad2Read     : 9026C148 0C0497CE
+main            : 9013D0A0 0C040104

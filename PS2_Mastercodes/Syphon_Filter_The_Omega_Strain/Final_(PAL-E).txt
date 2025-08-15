@@ -1,6 +1,0 @@
-"Syphon Filter: The Omega Strain (PAL-E) /ID SCES_520.33"
-//ELF CRC=27E54B37
-//ENTRYPOINT = 00100008
-sceSifSendCmd   : 9010F970 0C043E04
-scePad2Read     : 9026B8E8 0C0497CE
-main            : 9013D44C 0C040104

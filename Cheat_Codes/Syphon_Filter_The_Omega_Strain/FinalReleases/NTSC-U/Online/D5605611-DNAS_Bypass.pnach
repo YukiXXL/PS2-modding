@@ -1,6 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
-comment=ONLINE - DNAS BYPASS
-
-//DNAS Bypass
-patch=1,EE,2044B7A0,extended,03E00008
-patch=1,EE,2044B7A4,extended,00000000

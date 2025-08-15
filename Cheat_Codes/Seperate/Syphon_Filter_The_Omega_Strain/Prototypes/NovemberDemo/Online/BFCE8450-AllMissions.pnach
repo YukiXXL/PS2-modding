@@ -1,0 +1,12 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=ONLINE - ALL MISSIONS
+
+//All missions online
+patch=1,EE,20275840,extended,24020000
+patch=1,EE,20275864,extended,24020000
+
+//Lobby IDs fix
+patch=1,EE,204525CC,extended,00000003
+
+//Bypass Level ID check
+patch=1,EE,00274B48,extended,28410018

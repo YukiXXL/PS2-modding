@@ -1,0 +1,6 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=KIOSK MODE - MENUS
+
+//Fix going back
+patch=1,EE,602CDC70,extended,00000000
+patch=1,EE,00020001,extended,00000080

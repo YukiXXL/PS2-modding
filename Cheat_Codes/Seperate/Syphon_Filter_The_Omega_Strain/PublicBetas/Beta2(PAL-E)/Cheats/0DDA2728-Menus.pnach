@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
+comment=CHEATS - MENUS
+
+//Open levels
+patch=1,EE,20333910,extended,24020001

@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Number of CPUs
+
+//5 CPUs on Death Race and Rush Hour
+patch=1,EE,E0010008,extended,00BCD4BC
+patch=1,EE,00BCD4B8,extended,24130005
+
+//5 CPUs on Freeze Rally (and other tasks)
+patch=1,EE,E0011825,extended,00BCD4E4
+patch=1,EE,00BCD4DC,extended,24130005
+
+//5 CPUs on Boss Battle
+patch=1,EE,E0010002,extended,00BCD4D4
+patch=1,EE,00BCD4D0,extended,24130005

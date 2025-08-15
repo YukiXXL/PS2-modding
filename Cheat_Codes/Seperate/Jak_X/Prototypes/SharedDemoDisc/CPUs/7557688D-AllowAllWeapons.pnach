@@ -1,0 +1,9 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=Allow CPUs to get all weapons (Novas, Turbo Lock)
+
+//Novas
+patch=1,EE,6025FE50,extended,2AA30020
+patch=1,EE,00000001,extended,000000C8
+//Turbo Lock
+patch=1,EE,6025EE44,extended,2B830020
+patch=1,EE,00000001,extended,00000164

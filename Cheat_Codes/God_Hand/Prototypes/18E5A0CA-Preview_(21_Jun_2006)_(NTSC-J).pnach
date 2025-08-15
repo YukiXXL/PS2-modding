@@ -1,9 +1,0 @@
-gametitle= God Hand Preview (21 Jun 2006) (NTSC-J)
-comment=A debug menu can be accessed in the game by holding L2 and then pressing R3.
-
-//Enable selecting more stages (from menu)
-patch=1,EE,E000182D,extended,015ADC6C
-patch=1,EE,215ADC6C,extended,64030001
-
-//Enable selecting more stages (from Debug menu)
-patch=1,EE,202982CC,extended,64030001

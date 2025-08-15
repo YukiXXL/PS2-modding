@@ -1,5 +1,0 @@
-gametitle=Jak X Final Release (NTSC-U)
-comment=Allow selecting more Jaks
-
-patch=1,EE,602DD778,extended,1000008E
-patch=1,EE,00020000,extended,0000005C

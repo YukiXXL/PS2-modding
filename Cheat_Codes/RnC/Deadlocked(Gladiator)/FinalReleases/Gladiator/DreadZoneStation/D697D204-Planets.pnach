@@ -1,6 +1,0 @@
-gametitle=Ratchet: Gladiator (PAL-E)
-comment=PLANETS
-
-//Enable Dreadzone Interior
-patch=1,EE,E001000F,extended,00605464
-patch=1,EE,00605464,extended,24020010

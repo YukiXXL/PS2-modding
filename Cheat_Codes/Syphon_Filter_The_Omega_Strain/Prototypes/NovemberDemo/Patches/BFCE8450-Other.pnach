@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo (NTSC-U)
-comment=PATCHES - OTHER
-
-//Dongle protection bypass
-patch=1,EE,003D7AF8,byte,0

@@ -1,0 +1,21 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 1 (NTSC-U)
+comment=OFFLINE PRESERVATION: GAMEPLAY - MAIN
+
+//Enable online objectives + dialogues
+patch=1,EE,0012F5C8,extended,9022FCE4
+
+//Team Par
+patch=1,EE,0042C1B0,extended,9025FCE4
+patch=1,EE,0042C284,extended,9022FCE4
+//Check if completed Par
+patch=1,EE,0042F674,extended,9025FCE4
+
+//Check Team objectives
+//patch=1,EE,00314E98,extended,9025FCE4
+//Write Time
+patch=1,EE,00314F80,extended,9022FCE4
+
+//Buddy Climb
+patch=1,EE,0016C2F4,extended,9022FCE4
+//Animation Change
+patch=1,EE,00189D24,extended,2403002F

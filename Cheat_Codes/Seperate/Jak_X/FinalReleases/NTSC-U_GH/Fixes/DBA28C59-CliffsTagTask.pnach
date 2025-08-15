@@ -1,0 +1,6 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Fixes Tag task on Clifftop Battlefields
+
+patch=1,EE,E0020C9E,extended,00980798
+patch=1,EE,20980870,extended,002E28D1
+patch=1,EE,20980890,extended,002E28D1

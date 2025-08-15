@@ -1,9 +1,0 @@
-gametitle=Champions of Norrath Beta Build (NTSC-U)
-comment=by punk7890
-
-// D-Pad Down + R1 = Level up
-// L2 + R2 + Start = Debug menu
-//Enable Debug Mode
-//patch=1,EE,0052EA24,extended,00000001
-//Alternative
-patch=1,EE,2022ADE4,extended,00000000

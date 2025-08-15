@@ -1,9 +1,0 @@
-gametitle=Jak X Demo (NTSC-U)
-comment=Changing back to the task changes the Default Team mode
-
-//a0 = task address
-patch=1,EE,E0041825,extended,00B81AA0 //Memory Check
-patch=1,EE,20B81A8C,extended,90990168
-patch=1,EE,20B81A90,extended,3B390020
-patch=1,EE,20B81A94,extended,A0990168
-patch=1,EE,20B81A98,extended,90840005

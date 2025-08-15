@@ -1,6 +1,0 @@
-gametitle=Jak X Demo (NTSC-U)
-comment=Online > Exhibition
-
-patch=1,EE,E0010006,extended,01291C84
-patch=1,EE,51291C94,extended,00000004
-patch=1,EE,01291510,extended,00000000

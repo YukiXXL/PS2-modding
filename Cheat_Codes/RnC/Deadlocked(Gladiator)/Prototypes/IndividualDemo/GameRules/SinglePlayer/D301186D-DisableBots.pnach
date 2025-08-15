@@ -1,9 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=GAME RULES - SINGLE PLAYER - DISABLE BOTS
-
-//DeleteMoby
-patch=1,EE,E001938C,extended,004BBAF8
-patch=1,EE,204BBAF8,extended,24030001
-//Fix Invisible HUD
-patch=1,EE,E001938C,extended,0054F1FC
-patch=1,EE,2054F1FC,extended,24020001

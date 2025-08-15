@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
-comment=DUAL WIELD - ANIMATION
-
-//Animation change for all weapons
-patch=1,EE,20146980,extended,24020001
-patch=1,EE,20490AF0,extended,00000000
-//Dual Wield Ability enabled
-patch=1,EE,202C81D4,extended,00000000

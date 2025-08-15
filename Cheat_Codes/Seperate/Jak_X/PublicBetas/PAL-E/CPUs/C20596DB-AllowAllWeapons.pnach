@@ -1,0 +1,9 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=Allow CPUs to get all weapons (Novas, Turbo Lock)
+
+//Novas
+patch=1,EE,602CB344,extended,2B840020
+patch=1,EE,00000001,extended,00000044
+//Turbo Lock
+patch=1,EE,602CB344,extended,2B830020
+patch=1,EE,00000001,extended,000001A8

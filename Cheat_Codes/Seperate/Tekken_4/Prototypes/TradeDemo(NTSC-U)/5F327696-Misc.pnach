@@ -1,0 +1,5 @@
+gametitle= Tekken 4 Trade Demo (NTSC-U)
+comment=from TCRF
+
+//Turbo Mode
+patch=1,EE,0036DC8C,extended,00000001

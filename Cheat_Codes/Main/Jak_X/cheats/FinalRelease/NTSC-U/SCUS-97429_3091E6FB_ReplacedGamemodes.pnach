@@ -1,0 +1,38 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+// FREEZE RALLY
+
+[Events\Replace Gamemode\Freeze Rally\as Training]
+patch=1,EE,E0020002,extended,00B60098
+patch=1,EE,00B60098,extended,0000000F
+patch=1,EE,10B60090,extended,0000067A
+
+[Events\Replace Gamemode\Freeze Rally\as Tag]
+patch=1,EE,E0020002,extended,00B60098
+patch=1,EE,00B60098,extended,0000000C
+patch=1,EE,10B60090,extended,00000660
+
+// RUSH HOUR
+
+[Events\Replace Gamemode\Rush Hour\as Training 2]
+patch=1,EE,E002000D,extended,00B60078
+patch=1,EE,00B60078,extended,00000010
+patch=1,EE,10B60070,extended,00000794
+
+[Events\Replace Gamemode\Rush Hour\as Collectathon]
+patch=1,EE,E002000D,extended,00B60078
+patch=1,EE,00B60078,extended,00000006
+patch=1,EE,10B60070,extended,0000055D
+
+// TIME TRIAL
+
+[Events\Replace Gamemode\Time Attack\as Mizo]
+patch=1,EE,E0020003,extended,00B60068
+patch=1,EE,00B60068,extended,00000011
+patch=1,EE,10B60060,extended,0000055A
+
+[Events\Replace Gamemode\Time Attack\as Reversi]
+patch=1,EE,E0020003,extended,00B60068
+patch=1,EE,00B60068,extended,00000008
+patch=1,EE,10B60060,extended,000005F0

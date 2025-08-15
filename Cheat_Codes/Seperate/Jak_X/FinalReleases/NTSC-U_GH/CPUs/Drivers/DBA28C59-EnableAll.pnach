@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=CPUs use all drivers
+
+patch=1,EE,602E0C58,extended,00000000
+patch=1,EE,00020001,extended,00000070

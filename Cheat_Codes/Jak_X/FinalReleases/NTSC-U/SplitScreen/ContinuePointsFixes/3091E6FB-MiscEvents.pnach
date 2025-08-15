@@ -1,9 +1,0 @@
-gametitle=Jak X Final Release (NTSC-U)
-comment=MISC EVENTS
-
-patch=1,EE,E0051801,extended,0098F410 //Memory Check
-patch=1,EE,209930B0,extended,009930C4 //kras-training
-patch=1,EE,2098FB20,extended,00992B14 //jungle-training
-patch=1,EE,2098FBC0,extended,00992D84 //cliffs-training
-patch=1,EE,2098FB70,extended,00992AA4 //snow-training2
-patch=1,EE,2098F410,extended,0098F424 //kratour-final-boss-start

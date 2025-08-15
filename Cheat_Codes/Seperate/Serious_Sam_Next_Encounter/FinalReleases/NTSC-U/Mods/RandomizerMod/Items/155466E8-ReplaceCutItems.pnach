@@ -1,0 +1,18 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=Replace Cut Power Ups
+
+//SERIOUS SMARTBOMB
+patch=1,EE,202756CC,extended,24050003
+patch=1,EE,002756D8,extended,24060042
+
+//SERIOUS BUBBLEGUM
+patch=1,EE,202756E4,extended,24050007
+patch=1,EE,002756F0,extended,24060048
+
+//SERIOUS RING
+patch=1,EE,202756FC,extended,24050009
+patch=1,EE,00275708,extended,2406004A
+
+//SERIOUS GLASSES
+patch=1,EE,20275714,extended,24050011
+patch=1,EE,00275720,extended,2406003D

@@ -1,0 +1,6 @@
+"Ratchet: Gladiator (PAL-E) /ID SCES_532.85"
+//ELF CRC=D697D204
+//ENTRYPOINT = 00800008
+sceSifSendCmd   : 90129B40 0C04A678
+scePadRead      : 9013BA78 0C0468DC
+main            : 90157C80 0C04BBB8

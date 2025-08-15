@@ -1,0 +1,6 @@
+"Sonic Riders /ID SLES_535.60"
+//ELF CRC=F881CD68
+//ENTRYPOINT = 00100008
+sceSifSendCmd   : 90105850 0C0415BC
+scePadRead      : 9010F0D0 0C0DF9E6
+main            : 90154954 0C081298

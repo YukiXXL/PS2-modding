@@ -1,0 +1,5 @@
+"Champions of Norrath Beta (NTSC-U) /ID SLPS_251.39"
+//ELF CRC=3A0AC55E
+//ENTRYPOINT = 0013A390
+sceSifSendCmd   : 902A51C0 0C0A9418
+main            : 90297260 0C0AD2F0

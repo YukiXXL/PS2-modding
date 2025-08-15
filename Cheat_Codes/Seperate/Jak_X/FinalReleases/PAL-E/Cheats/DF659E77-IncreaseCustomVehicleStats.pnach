@@ -1,0 +1,19 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Custom Vehicle Stats + Hex(20)
+
+//Engine
+patch=1,EE,E0022E3C,extended,00BAE7E8 //Memory Check
+patch=1,EE,20BAE7E0,extended,24C60020 //addiu a2, a2, $0020
+patch=1,EE,20BAE7E4,extended,00C02825 //or a1, a2, zero
+//Gearbox
+patch=1,EE,E0022E3C,extended,00BAE824 //Memory Check
+patch=1,EE,20BAE81C,extended,24C60020 //addiu a2, a2, $0020
+patch=1,EE,20BAE820,extended,00C02825 //or a1, a2, zero
+//Armor
+patch=1,EE,E0022E3C,extended,00BAE860 //Memory Check
+patch=1,EE,20BAE858,extended,24C60020 //addiu a2, a2, $0020
+patch=1,EE,20BAE85C,extended,00C02825 //or a1, a2, zero
+//Turbo
+patch=1,EE,E0021E3C,extended,00BAE894 //Memory Check
+patch=1,EE,20BAE88C,extended,24630020 //addiu v1, v1, $0020
+patch=1,EE,20BAE890,extended,00602825 //or a1, v1, zero

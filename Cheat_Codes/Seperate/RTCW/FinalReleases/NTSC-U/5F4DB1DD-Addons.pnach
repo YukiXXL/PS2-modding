@@ -1,0 +1,5 @@
+gametitle=RTCW: Operation Resurrection Final Release (NTSC-U)
+comment=ADDONS
+
+//60 FPS
+patch=1,EE,0017437C,extended,2C420001

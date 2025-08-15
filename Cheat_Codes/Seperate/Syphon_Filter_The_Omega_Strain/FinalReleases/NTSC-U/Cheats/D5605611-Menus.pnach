@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=CHEATS - MENUS
+
+//Open Levels
+patch=1,EE,20333030,extended,24020001

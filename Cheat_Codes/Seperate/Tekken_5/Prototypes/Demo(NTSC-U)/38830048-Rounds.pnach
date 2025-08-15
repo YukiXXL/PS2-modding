@@ -1,0 +1,8 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=ROUNDS
+
+//Number of Rounds for Arcade (Change the last number)
+patch=1,EE,00121F74,extended,24040002
+
+//Force the number of Rounds (For all gamemodes that support it)
+//patch=1,EE,002B8B60,byte,2

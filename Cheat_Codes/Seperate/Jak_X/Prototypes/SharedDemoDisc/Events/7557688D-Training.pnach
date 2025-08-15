@@ -1,0 +1,6 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=Replace Time Trial with Training tasks
+
+patch=1,EE,E0020003,extended,00B0FAF8 //Memory Check
+patch=1,EE,10B0FAF0,extended,0000067A //Change the text
+patch=1,EE,00B0FAF8,extended,0000000F //Change the task

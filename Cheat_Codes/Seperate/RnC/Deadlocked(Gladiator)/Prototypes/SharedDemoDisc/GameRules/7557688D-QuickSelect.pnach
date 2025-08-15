@@ -1,0 +1,10 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=Requires enabling all weapons and gadgets
+
+//Enable Gadgets and Hidden in Quick Select slots
+patch=1,EE,E005000E,extended,003D5218
+patch=1,EE,003D521C,extended,00000015
+patch=1,EE,003D5220,extended,0000000B
+patch=1,EE,003D5224,extended,0000000C
+patch=1,EE,003D5228,extended,0000000D
+patch=1,EE,003D522C,extended,00000011

@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=OFFLINE PRESERVATION: CODENAME STUFF - MAIN
+
+//Online controller (Responsible for codenames)
+patch=1,EE,001AC990,extended,90242204

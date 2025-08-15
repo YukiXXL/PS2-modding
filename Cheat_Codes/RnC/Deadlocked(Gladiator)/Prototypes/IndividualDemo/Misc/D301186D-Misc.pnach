@@ -1,6 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=MISC
-
-//Enable All Omega Mods for All Weapons
-patch=1,EE,E0010003,extended,0063EC7C
-patch=1,EE,2063EC7C,extended,00000000

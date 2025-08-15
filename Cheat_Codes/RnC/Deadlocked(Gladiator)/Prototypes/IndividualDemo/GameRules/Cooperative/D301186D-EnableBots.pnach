@@ -1,5 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=GAME RULES - COOPERATIVE - ENABLE BOTS
-
-patch=1,EE,E001938C,extended,004BBAF8
-patch=1,EE,204BBAF8,extended,24030000

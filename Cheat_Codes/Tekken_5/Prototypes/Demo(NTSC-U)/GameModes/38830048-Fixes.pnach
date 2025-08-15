@@ -1,5 +1,0 @@
-gametitle=Tekken 5 Demo (NTSC-U)
-comment=GAMEMODES - FIXES
-
-//Disable Quick Select for Team Battle (Fixes crashing)
-patch=1,EE,20122010,extended,A240000C

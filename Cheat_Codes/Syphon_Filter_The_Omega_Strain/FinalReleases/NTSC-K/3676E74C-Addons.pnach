@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Virus (NTSC-K)
-comment=ADDONS
-
-//PAL video mode
-patch=1,EE,20175F24,extended,1440000A

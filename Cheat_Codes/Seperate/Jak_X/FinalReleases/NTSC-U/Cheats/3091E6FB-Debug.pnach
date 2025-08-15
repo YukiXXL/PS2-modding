@@ -1,0 +1,7 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=CHEATS - DEBUG
+
+//Jak Vehicle Unkillable + Infinite Turbo (Debug)
+patch=1,EE,E0021825,extended,00F16078
+patch=1,EE,20F16070,extended,66E30004
+patch=1,EE,20F16074,extended,AEE317DB

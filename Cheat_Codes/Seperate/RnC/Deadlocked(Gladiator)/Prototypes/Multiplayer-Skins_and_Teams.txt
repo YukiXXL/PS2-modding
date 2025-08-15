@@ -1,0 +1,35 @@
+Possible Skins:
+00 - Ratchet
+01 - Battle Bot
+02 - DreadBot
+03 - Eviscerator
+04 - Shellshock
+05 - Squidzor
+06 - "The Muscle"
+07 - Mr. Sunshine
+08 - Venus
+09 - Ace
+0A - Reaper
+0B - Kid Nova
+0C - Starshield
+0D - King Claude
+0E - Thriller
+0F - Alpha Clank
+10 - W3RM
+11 - LandShark
+12 - Vernon
+13 - Jak
+
+Possible Teams:
+00 - Blue
+01 - Red
+02 - Green
+03 - Orange
+04 - Yellow
+05 - Purple
+06 - Cyan
+07 - Pink
+From here, teams work 50/50
+08 - Olive
+09 - Brown
+0A - Grey

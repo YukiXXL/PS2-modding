@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Adventure Specific - Scripted CPUs
+
+patch=1,EE,E0017880,extended,00BCD654
+patch=1,EE,20BCD658,extended,66E47880

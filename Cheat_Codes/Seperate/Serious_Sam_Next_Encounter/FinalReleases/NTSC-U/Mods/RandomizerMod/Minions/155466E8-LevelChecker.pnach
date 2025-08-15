@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=RANDOMIZER MOD - LEVEL CHECKER
+
+//JAL to Joker Function
+patch=1,EE,2025F13C,extended,0C0280C8
+patch=1,EE,2027CEA0,extended,0C0280C8
+
+//Joker Function
+patch=1,EE,200A032C,extended,3C020036 //lui v0, $0036
+patch=1,EE,200A0330,extended,3442B390 //ori v0, v0, to LevelSet_0 "Rlevel0_1" pointer value
+
+patch=1,EE,200A035C,extended,0C041B70 //jal to "Fun_StringCopy"

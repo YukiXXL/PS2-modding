@@ -1,0 +1,13 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=EVENTS - MORE LAPS AND TIME
+
+//Safe Check
+patch=1,EE,E006200B,extended,013CCEF0
+//Increase the number of max laps
+patch=1,EE,213CCE6C,extended,240600FF
+patch=1,EE,213CCE70,extended,ACA60004
+patch=1,EE,213CCE74,extended,8CA50004
+//Minimum number of laps is 0
+patch=1,EE,213CCEEC,extended,0000302D
+patch=1,EE,213CCEF0,extended,ACA60000
+patch=1,EE,213CCEF4,extended,8CA50000

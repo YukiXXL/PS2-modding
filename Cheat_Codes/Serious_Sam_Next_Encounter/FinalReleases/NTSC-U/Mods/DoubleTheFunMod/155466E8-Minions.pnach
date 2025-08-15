@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=DOUBLE THE FUN MOD - MINIONS
-
-//Multiply minions
-patch=1,EE,201D7B5C,extended,0C028044 //jal to Joker Code
-patch=1,EE,201D7B64,extended,AC64000C //Save TotalCount
-patch=1,EE,201D7B68,extended,8CC37504 //Fix for lw Count_Enemies
-patch=1,EE,201D7B84,extended,ACC37504 //Fix for lw Count_Enemies

@@ -1,0 +1,6 @@
+"Syphon Filter: The Omega Strain Public Beta 2 (PAL-E) /ID TCES_520.33"
+//ELF CRC=0DDA2728
+//ENTRYPOINT = 00100008
+sceSifSendCmd   : 9010F970 0C043E04
+scePad2Read     : 9026B388 0C0497CE
+main            : 9013D0AC 0C040104

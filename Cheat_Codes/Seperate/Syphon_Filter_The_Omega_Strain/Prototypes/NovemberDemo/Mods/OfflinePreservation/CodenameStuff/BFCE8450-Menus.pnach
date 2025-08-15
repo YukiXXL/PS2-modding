@@ -1,0 +1,19 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=OFFLINE PRESERVATION: CODENAME STUFF - MENUS
+
+//EQUIPMENT SETUP
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,001731B0,extended,90222204
+//After pressing square or triangle
+patch=1,EE,0029B8FC,extended,90222204
+patch=1,EE,0029B9C8,extended,90222204
+
+//Stats
+patch=1,EE,003385CC,extended,90222204
+patch=1,EE,0041B7A0,extended,90222204
+//Position
+patch=1,EE,00331C04,extended,90222204
+patch=1,EE,20330D24,extended,2AA10004
+
+//START button
+patch=1,EE,00282F2C,extended,90222204

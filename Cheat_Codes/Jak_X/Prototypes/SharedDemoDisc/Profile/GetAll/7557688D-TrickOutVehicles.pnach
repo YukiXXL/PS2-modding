@@ -1,8 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=GET ALL - TRICK OUT VEHICLES
-
-patch=1,EE,E0040034,extended,00912480
-patch=1,EE,0091240C,extended,90650005
-patch=1,EE,00912430,extended,90650015
-patch=1,EE,00912454,extended,90650025
-patch=1,EE,00912480,extended,90630035

@@ -1,0 +1,35 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=One register is used for multiple things
+
+//Player 1 Skin; Player 2 Team Color
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,0073E16C,extended,24060001
+
+//Player 3 Team
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,0073E170,extended,24030002
+
+//Player 3 Skin
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,0073E174,extended,2404000F
+
+//Player 4 Team
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,0073E178,extended,24050004
+
+//Player 4 Skin
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,0073E17C,extended,24020008
+
+
+//Player 1 Team (sw zero)
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,2073E198,extended,AE25022C //Use Player 4 Team
+
+//Player 1 Skin (sw a2)
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,2073E19C,extended,AE22021C //Use Player 4 Skin
+
+//Player 2 Skin (sw zero)
+patch=1,EE,E0010400,extended,0073E168
+patch=1,EE,2073E1A0,extended,AE240220 //Use Player 3 Skin

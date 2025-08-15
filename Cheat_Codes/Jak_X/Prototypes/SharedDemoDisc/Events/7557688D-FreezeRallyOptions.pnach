@@ -1,7 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=Enable Freeze Rally options
-
-patch=1,EE,E0030001,extended,0026047C
-patch=1,EE,6025FE08,extended,24040012
-patch=1,EE,00000003,extended,000000C4
-patch=1,EE,00000020,extended,00000808

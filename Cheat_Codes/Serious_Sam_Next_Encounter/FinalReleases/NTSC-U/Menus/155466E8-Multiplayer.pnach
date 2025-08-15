@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=MENUS - MULTIPLAYER
-
-//Enable starting Multiplayer game with only one player
-patch=1,EE,00260410,extended,24030000
-//Fix Homing Bullets in COOP
-patch=1,EE,001B38F4,extended,8C43B83C //Load Number of players
-patch=1,EE,201B38FC,extended,2463FFFF //-1

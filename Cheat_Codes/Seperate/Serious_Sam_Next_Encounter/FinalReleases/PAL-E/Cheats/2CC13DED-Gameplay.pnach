@@ -1,0 +1,26 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=CHEATS - GAMEPLAY
+
+// LEVEL CHEAT INSTRUCTIONS:
+// ON PROFILE SELECT, SELECT PROFILE WHILE HOLDING:
+// L1 = ALL LEVELS AVAILABLE; R1 = START THE LAST SAVED LEVEL
+
+// FLY CHEAT INSTRUCTIONS:
+// D-PAD LEFT/RIGHT = ENABLE/DISABLE
+// L2 = GO DOWN; R2 = GO UP
+
+//Allow Fly Cheat
+patch=1,EE,201646CC,extended,24020001
+
+//Allow Level Cheat
+patch=1,EE,201646FC,extended,24020001
+
+//Allow All Cheat
+patch=1,EE,2016472C,extended,24020001
+
+//Enable cheats in all other gamemodes
+patch=1,EE,00270730,extended,2442FFFB
+patch=1,EE,0020CF5C,extended,2463FFFB
+
+//Disable AI
+patch=1,EE,1020CA20,extended,3442C000

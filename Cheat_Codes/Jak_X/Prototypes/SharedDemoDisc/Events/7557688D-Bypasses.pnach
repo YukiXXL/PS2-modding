@@ -1,8 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=EVENTS - BYPASSES
-
-//5 CPUs, 6 Players for events
-patch=1,EE,E003FFF8,extended,00B70FC8
-patch=1,EE,20B70FB8,extended,24040506 //addiu a0, zero, $0506
-patch=1,EE,20B70FBC,extended,A464000C //sh a0, $000c(v1)
-patch=1,EE,20B70FC4,extended,90630005 //lbu v1, $0005(v1)

@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
-comment=OFFLINE CODENAMES: CODENAME STUFF: OFFLINE PRESERVATION: COUNTDOWN DISABLED
-
-//START fix
-patch=1,EE,002A2264,extended,24050000

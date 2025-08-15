@@ -1,0 +1,17 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=DUAL WIELD - ADDONS
+
+//Back = Goggles
+patch=1,EE,002C8454,extended,24020006
+//Auxiliary = Flashlight
+patch=1,EE,002C84F8,extended,24020007
+
+//Show goggles and P.I.D in Equip
+patch=1,EE,002C9E5C,extended,24040004
+patch=1,EE,002C9E60,extended,24050004
+
+//Give the enemy one more weapon
+patch=1,EE,001B6CA8,extended,10A2000D
+patch=1,EE,201B6CB8,extended,AC25D42C
+patch=1,EE,201B6CE0,extended,8C25D42C
+patch=1,EE,201B6CE4,extended,1000FFF2

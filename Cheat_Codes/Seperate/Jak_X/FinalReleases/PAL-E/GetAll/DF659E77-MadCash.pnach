@@ -1,0 +1,9 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Mad Cash
+
+//1500000 Orbs
+patch=1,EE,E0042025,extended,00BAEA3C //Memory Check
+patch=1,EE,20BAEA40,extended,3C0349B7 //lui v1, $49b7
+patch=1,EE,20BAEA44,extended,24631B00 //addiu v1, v1, $1b00
+patch=1,EE,20BAEA48,extended,AEA3001C //sw v1, $001c(s5)
+patch=1,EE,20BAEA50,extended,44030000 //mfc1 v1, $f0

@@ -1,6 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=Fix infinite loading loop.
-
-//All Movies Skipped
-patch=1,EE,E0012024,extended,009125F0
-patch=1,EE,209125F0,extended,24040001

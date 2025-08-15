@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
-comment=by YukiXXL
-
-//All weapons under sidearm (Equipment Modify)
-patch=1,EE,202C9BF4,extended,24030003
-//All weapons in sidearm weapon slot
-patch=1,EE,20147280,extended,24030003
-patch=1,EE,20147178,extended,24030003

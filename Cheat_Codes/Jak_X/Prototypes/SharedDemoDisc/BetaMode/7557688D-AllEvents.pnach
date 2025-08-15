@@ -1,5 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=Enable all events.
-
-patch=1,EE,E001FA14,extended,0026B4F8
-patch=1,EE,0026B4F8,extended,00B0FA74

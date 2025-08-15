@@ -1,0 +1,24 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=Fix Collectathon in Split-Screen on Dirt Stadium
+
+//Memory Check
+patch=1,EE,E00101E2,extended,0097FF00
+patch=1,EE,0097FF00,extended,00980102
+//Pointer rewrite
+patch=1,EE,E0100102,extended,0097FF00
+patch=1,EE,20980100,extended,009801EA
+patch=1,EE,20980104,extended,0098010A
+patch=1,EE,20980108,extended,00980112
+patch=1,EE,2098010C,extended,002D02FA
+patch=1,EE,20980110,extended,002CB105
+patch=1,EE,20980114,extended,0098011A
+patch=1,EE,20980118,extended,00000010
+patch=1,EE,2098011C,extended,00980122
+patch=1,EE,20980120,extended,002CDA61
+patch=1,EE,20980124,extended,0098012A
+patch=1,EE,20980128,extended,002D13D1
+patch=1,EE,2098012C,extended,002D02FA
+patch=1,EE,20980130,extended,002D79D5
+patch=1,EE,20980134,extended,0098013A
+patch=1,EE,20980138,extended,00000000
+patch=1,EE,2098013C,extended,009801FA

@@ -1,0 +1,5 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=GET ALL - VEHICLES PARTS
+
+patch=1,EE,E0010012,extended,00912530
+patch=1,EE,20912530,extended,00000000

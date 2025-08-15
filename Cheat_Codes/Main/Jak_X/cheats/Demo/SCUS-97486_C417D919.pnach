@@ -1,0 +1,357 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+[Fixes\Tag on Clifftop Battlefields]
+description=Fixes crashing/black screen.
+patch=1,EE,E0020CA7,extended,0091CB48
+patch=1,EE,2091CCF0,extended,00269201
+patch=1,EE,2091CD10,extended,00269201
+
+// BOOT MODE
+
+[Boot Mode\Retail]
+description=Boots the game into the Retail mode.
+patch=1,EE,2020E6B8,extended,79616C70
+
+[Boot Mode\Preview (Retail)]
+description=Boots the game into the Preview mode.
+patch=1,EE,101FDFD0,extended,24C6A9B0
+
+[Boot Mode\Kiosk]
+description=Boots the game into the Kiosk mode.
+patch=1,EE,101FDFD0,extended,24C6A950
+
+[Boot Mode\Beta]
+description=Boots the game into the Beta mode.
+patch=1,EE,101FDFD0,extended,24C6A980
+
+// BETA MODE
+
+[Beta Mode\Enable Exhibition button]
+description=Replaces Online with Exhibition for Local play.
+patch=1,EE,E0010006,extended,01291C84
+patch=1,EE,51291C94,extended,00000004
+patch=1,EE,01291510,extended,00000000
+
+[Beta Mode\Enable All Events]
+description=Enables all events.
+patch=1,EE,E00144E4,extended,002707F8
+patch=1,EE,102707F8,extended,00B24544
+
+// ADDONS
+
+[Addons\Enable all drivers]
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,00000024
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,0000004C
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,00000074
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,0000009C
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,000000C4
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,000000EC
+patch=1,EE,60266DB8,extended,00801025
+patch=1,EE,00020001,extended,00000114
+
+// - ADVENTURE
+
+[Profile\Adventure menu\All Movies Skipped]
+description=This code causes some issues and can get stuck in infinite loading loop.
+patch=1,EE,E0012024,extended,00916534
+patch=1,EE,20916534,extended,24040001
+
+// CPUs
+
+[CPUs\Allow Novas]
+description=Allows CPUs to get Novas
+patch=1,EE,60265150,extended,2AA30020
+patch=1,EE,00000001,extended,00000098
+
+[CPUs\Allow Turbo Lock]
+description=Allows CPUs to get Turbo Locks
+patch=1,EE,60264144,extended,2B830020
+patch=1,EE,00000001,extended,00000164
+
+[CPUs\Events\Number of CPUs\5 CPUs on Death Race and Rush Hour]
+patch=1,EE,E0012025,extended,00B7E074
+patch=1,EE,00B7E058,extended,24140005
+
+[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally and Time Trial]
+patch=1,EE,E0012025,extended,00B7E074
+patch=1,EE,00B7E064,extended,24140005
+
+// EVENTS
+
+[Events\More Laps/Time Limit]
+description=0-255 Laps/Time
+//For writing minimum
+patch=1,EE,E0039201,extended,102677E8
+patch=1,EE,602677E8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0039201,extended,102677E8
+patch=1,EE,602677E8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
+//Check if equal to zero
+patch=1,EE,E0010000,extended,002620D8 //Memory Check
+patch=1,EE,202677E8,extended,00269201 //revert to default
+patch=1,EE,E0010000,extended,002677E8
+patch=1,EE,202677E8,extended,00269201
+
+[Events\Team Mode on any event]
+description=Advance Options > L1+R1. If not applying, change event/location and retry.
+patch=1,EE,E0041825,extended,00B81AA0
+patch=1,EE,20B81A8C,extended,90990168
+patch=1,EE,20B81A90,extended,3B390020
+patch=1,EE,20B81A94,extended,A0990168
+patch=1,EE,20B81A98,extended,90840005
+
+[Events\5 CPUs, 6 Players for events]
+description=Saves onto the event and map when trying to start the event
+patch=1,EE,E0030027,extended,00B7DF14
+patch=1,EE,20B7DF04,extended,24040506
+patch=1,EE,20B7DF08,extended,A484000C
+patch=1,EE,20B7DF10,extended,90630005
+
+[Events\Options\Circuit Race with Collectathon options]
+description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
+patch=1,EE,50267BD0,extended,00000003
+patch=1,EE,002677C0,extended,00000000
+patch=1,EE,5026799C,extended,00000003
+patch=1,EE,002677C4,extended,00000000
+
+[Events\Options\Other events with Collectathon options]
+description=Do not change the Time Limit or anything like that!
+patch=1,EE,50267BD0,extended,00000003
+patch=1,EE,00267404,extended,00000000
+
+// PROFILE
+
+// - SECRETS
+
+[Profile\Secrets\Scrap Book 1]
+patch=1,EE,6026AFA0,extended,00000001
+patch=1,EE,00000001,extended,0000040D
+
+[Profile\Secrets\Big Head Mode]
+patch=1,EE,6026AFA0,extended,00000080
+patch=1,EE,00000001,extended,0000040E
+
+[Profile\Secrets\Taryn]
+patch=1,EE,6026AFA0,extended,00000002
+patch=1,EE,00000001,extended,00000411
+
+// - CHEATS
+
+[Profile\Cheats\Infinite Health (ON)]
+patch=1,EE,6026AFA0,extended,000000FF
+patch=1,EE,00000001,extended,00000406
+
+[Profile\Cheats\Infinite Health (OFF)]
+patch=1,EE,6026AFA0,extended,00000000
+patch=1,EE,00000001,extended,00000406
+
+[Profile\Cheats\Infinite Turbo (ON)]
+patch=1,EE,6026AFA0,extended,000000FF
+patch=1,EE,00000001,extended,00000407
+
+[Profile\Cheats\Infinite Turbo (OFF)]
+patch=1,EE,6026AFA0,extended,00000000
+patch=1,EE,00000001,extended,00000407
+
+[Profile\Cheats\Bad Weather (ON)]
+patch=1,EE,6026AFA0,extended,000000FF
+patch=1,EE,00000001,extended,00000408
+
+[Profile\Cheats\Bad Weather (OFF)]
+patch=1,EE,6026AFA0,extended,00000000
+patch=1,EE,00000001,extended,00000408
+
+[Profile\Cheats\Mirrored World (ON)]
+patch=1,EE,6026AFA0,extended,00000080
+patch=1,EE,00000001,extended,00000405
+
+[Profile\Cheats\Mirrored World (OFF)]
+patch=1,EE,6026AFA0,extended,00000000
+patch=1,EE,00000001,extended,00000405
+
+// GET ALL
+
+[Get All\Vehicles]
+patch=1,EE,E0010004,extended,00916148
+patch=1,EE,20916148,extended,00000000
+
+[Get All\Vehicles Parts]
+patch=1,EE,E0010012,extended,00916474
+patch=1,EE,20916474,extended,00000000
+
+[Get All\Tasks]
+patch=1,EE,E005004A,extended,009165A0
+patch=1,EE,20916594,extended,ACA60020
+patch=1,EE,20916598,extended,ACA60058
+patch=1,EE,2091659C,extended,A0A60048
+patch=1,EE,209165A0,extended,A0A6004A
+patch=1,EE,209165B8,extended,24060003
+
+[Get All\C.R.E.A.M - Mad Cash]
+patch=1,EE,E0031825,extended,00916090
+patch=1,EE,20916090,extended,3C064974
+patch=1,EE,2091609C,extended,34C62400
+patch=1,EE,209160B0,extended,44860000
+
+[Get All\Trick Out Vehicles]
+patch=1,EE,E001002C,extended,009163BC
+patch=1,EE,209163BC,extended,E4A2002C
+
+// GAMEPLAY
+
+[Gameplay\Disable Backwards Bot]
+patch=1,EE,E0019201,extended,002671F0
+patch=1,EE,002671F0,extended,00269205
+
+[Gameplay\Unused weapons\Enable Both in Last Place]
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,00000050
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,00000080
+patch=1,EE,6026EFE0,extended,00000008
+patch=1,EE,00000001,extended,000000B0
+//Arachnid Mines
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,00000048
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,00000078
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,000000A8
+patch=1,EE,6026EFE0,extended,00100001
+patch=1,EE,00020001,extended,000000D8
+//Tractor Beam
+patch=1,EE,6026EFE0,extended,00080008
+patch=1,EE,00020001,extended,0000004C
+patch=1,EE,6026EFE0,extended,00080007
+patch=1,EE,00020001,extended,0000007C
+patch=1,EE,6026EFE0,extended,00080006
+patch=1,EE,00020001,extended,000000AC
+patch=1,EE,6026EFE0,extended,00080005
+patch=1,EE,00020001,extended,000000DC
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Race (First)]
+patch=1,EE,6026F004,extended,00000008
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026F004,extended,00100003
+patch=1,EE,00020001,extended,0000004C
+
+[Gameplay\Unused weapons\Tractor Beam\Enable in Race (Second)]
+patch=1,EE,6026EFE4,extended,00000008
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026EFE4,extended,00080001
+patch=1,EE,00020001,extended,0000004C
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Arenas (Leading)]
+patch=1,EE,6026EFF8,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026EFF8,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Arenas (Middle)]
+patch=1,EE,6026F010,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026F010,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Unused weapons\Arachnid Mines\Enable in Arenas (Tailing)]
+patch=1,EE,6026F00C,extended,00000006
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026F00C,extended,00100002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (First)]
+patch=1,EE,6026EFF4,extended,00000004
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026EFF4,extended,00000004
+patch=1,EE,00000001,extended,00000040
+//
+patch=1,EE,6026EFF4,extended,00050002
+patch=1,EE,00020001,extended,0000003C
+patch=1,EE,6026EFF4,extended,00050002
+patch=1,EE,00020001,extended,0000005C
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (Middle)]
+patch=1,EE,6026EFFC,extended,00000006
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026EFFC,extended,00000006
+patch=1,EE,00000001,extended,00000050
+//
+patch=1,EE,6026EFFC,extended,00050002
+patch=1,EE,00020001,extended,00000044
+patch=1,EE,6026EFFC,extended,00050001
+patch=1,EE,00020001,extended,00000074
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (Penultimate)]
+patch=1,EE,6026F014,extended,00000006
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026F014,extended,00000006
+patch=1,EE,00000001,extended,00000050
+patch=1,EE,6026F014,extended,00000006
+patch=1,EE,00000001,extended,00000080
+patch=1,EE,6026F014,extended,00000006
+patch=1,EE,00000001,extended,000000B0
+//
+patch=1,EE,6026F014,extended,00050003
+patch=1,EE,00020001,extended,00000044
+patch=1,EE,6026F014,extended,00050002
+patch=1,EE,00020001,extended,00000074
+patch=1,EE,6026F014,extended,00050002
+patch=1,EE,00020001,extended,000000A4
+patch=1,EE,6026F014,extended,00050001
+patch=1,EE,00020001,extended,000000D4
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Race (Last)]
+patch=1,EE,6026F000,extended,00000006
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,6026F000,extended,00000006
+patch=1,EE,00000001,extended,00000050
+patch=1,EE,6026F000,extended,00000006
+patch=1,EE,00000001,extended,00000080
+patch=1,EE,6026F000,extended,00000006
+patch=1,EE,00000001,extended,000000B0
+//
+patch=1,EE,6026F000,extended,00050004
+patch=1,EE,00020001,extended,00000044
+patch=1,EE,6026F000,extended,00050003
+patch=1,EE,00020001,extended,00000074
+patch=1,EE,6026F000,extended,00050003
+patch=1,EE,00020001,extended,000000A4
+patch=1,EE,6026F000,extended,00050002
+patch=1,EE,00020001,extended,000000D4
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Arenas (Leading)]
+patch=1,EE,6026EFEC,extended,00000004
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026EFEC,extended,00050003
+patch=1,EE,00020001,extended,0000001C
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Arenas (Middle)]
+patch=1,EE,6026F008,extended,00000004
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026F008,extended,00050003
+patch=1,EE,00020001,extended,0000001C
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Arenas (Tailing)]
+patch=1,EE,6026EFDC,extended,00000004
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026EFDC,extended,00050002
+patch=1,EE,00020001,extended,0000001C
+
+[Gameplay\Unused weapons\Super Turbo\Enable in Death Race]
+patch=1,EE,6026FFD8,extended,00000004
+patch=1,EE,00000001,extended,00000000
+patch=1,EE,6026FFD8,extended,00050005
+patch=1,EE,00020001,extended,0000001C

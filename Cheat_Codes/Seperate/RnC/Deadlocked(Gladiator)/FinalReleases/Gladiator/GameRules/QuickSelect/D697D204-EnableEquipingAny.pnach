@@ -1,0 +1,39 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=Enable equiping any weapon or gadget
+
+//-DREADZONE STATION and ARENA
+patch=1,EE,E001102D,extended,006C3510
+patch=1,EE,006C3508,extended,24020000
+//-CATACROM FOUR
+patch=1,EE,E001102D,extended,00672E50
+patch=1,EE,00672E48,extended,24020000
+//-SARATHOS
+patch=1,EE,E001102D,extended,00672D18
+patch=1,EE,00672D10,extended,24020000
+//-KRONOS
+patch=1,EE,E001102D,extended,006996E8
+patch=1,EE,006996E0,extended,24020000
+//-SHAAR
+patch=1,EE,E001102D,extended,0066B060
+patch=1,EE,0066B058,extended,24020000
+//-ORXON
+patch=1,EE,E001102D,extended,00676358
+patch=1,EE,00676350,extended,24020000
+//-THE VALIX BELT
+patch=1,EE,E001102D,extended,0065DD88
+patch=1,EE,0065DD80,extended,24020000
+//-PLANET TORVAL
+patch=1,EE,E001102D,extended,00680670
+patch=1,EE,00680668,extended,24020000
+//-STYGIA
+patch=1,EE,E001102D,extended,0066D650
+patch=1,EE,0066D648,extended,24020000
+//-MARAXUS
+patch=1,EE,E001102D,extended,00687298
+patch=1,EE,00687290,extended,24020000
+//-GHOST STATION
+patch=1,EE,E001102D,extended,00680B68
+patch=1,EE,00680B60,extended,24020000
+//-DREADZONE INTERIOR
+patch=1,EE,E001102D,extended,00691180
+patch=1,EE,00691178,extended,24020000

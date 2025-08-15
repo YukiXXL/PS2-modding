@@ -1,5 +1,0 @@
-gametitle=Jak X Final Release (NTSC-U)
-comment=Allow the usage of the same character (Host)
-
-patch=1,EE,E0013825,extended,00BCEF28
-patch=1,EE,20BCEF24,extended,00000000

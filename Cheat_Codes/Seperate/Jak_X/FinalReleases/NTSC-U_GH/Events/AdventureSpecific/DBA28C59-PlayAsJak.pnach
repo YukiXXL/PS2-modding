@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Adventure Specific - Play as Jak
+
+//Enable
+patch=1,EE,E0017880,extended,00B6C0D4
+patch=1,EE,20B6C0D8,extended,66E47880
+
+//Text ID
+patch=1,EE,E0017361,extended,00B43FA8
+patch=1,EE,10B43FB0,extended,00000033

@@ -1,5 +1,0 @@
-gametitle=Jak X Demo (NTSC-U)
-comment=Enable all events.
-
-patch=1,EE,E00144E4,extended,002707F8
-patch=1,EE,102707F8,extended,00B24544

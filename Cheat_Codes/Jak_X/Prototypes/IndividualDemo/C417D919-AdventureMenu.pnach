@@ -1,6 +1,0 @@
-gametitle=Jak X Demo (NTSC-U)
-comment=Causes infinite loading loop.
-
-//All Movies Skipped
-patch=1,EE,E0012024,extended,00916534
-patch=1,EE,20916534,extended,24040001

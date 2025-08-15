@@ -1,0 +1,12 @@
+gametitle=Ratchet: Gladiator Review Prototype (Aug 23, 2005) (PAL-E)
+comment=Dumped by Thatawesomecat. Credits to GFI
+
+[Dongle Protection Bypass]
+patch=1,EE,E0070028,extended,00551144
+patch=1,EE,20551128,extended,3C08004C
+patch=1,EE,2055112C,extended,350859B4
+patch=1,EE,20551130,extended,3C090022
+patch=1,EE,20551134,extended,3529A440
+patch=1,EE,20551138,extended,AD280000
+patch=1,EE,2055113C,extended,03E00008
+patch=1,EE,20551140,extended,00000000

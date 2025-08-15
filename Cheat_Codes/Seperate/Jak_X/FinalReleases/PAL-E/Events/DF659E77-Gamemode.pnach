@@ -1,0 +1,18 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=EVENTS - GAMEMODE
+
+//Save game mode to currently used address
+//Change the last hex-byte in second line
+patch=1,EE,E0020012,extended,00F21890
+patch=1,EE,20F21884,extended,24040011
+patch=1,EE,20F2188C,extended,A0640005
+
+//Freeze Rally = Training
+patch=1,EE,E0010002,extended,00B60198
+patch=1,EE,00B60198,extended,0000000F
+//Rush Hour = Training 2
+patch=1,EE,E001000D,extended,00B60178
+patch=1,EE,00B60178,extended,00000010
+//Time Attack = Mizo
+patch=1,EE,E0010003,extended,00B60168
+patch=1,EE,00B60168,extended,00000011

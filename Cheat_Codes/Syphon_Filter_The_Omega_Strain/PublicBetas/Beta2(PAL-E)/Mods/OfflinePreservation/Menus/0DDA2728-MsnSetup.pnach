@@ -1,9 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
-comment=OFFLINE PRESERVATION: MENUS - MISSION SETUP
-
-//Enable Mission Setup & Join Mission offline
-patch=1,EE,2033CEF8,extended,00000000
-patch=1,EE,2033CF00,extended,24020001
-
-//Join any mission
-patch=1,EE,20295394,extended,00000000

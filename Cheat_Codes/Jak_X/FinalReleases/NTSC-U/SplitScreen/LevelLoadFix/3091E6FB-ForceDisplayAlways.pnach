@@ -1,7 +1,0 @@
-gametitle=Jak X Final Release (NTSC-U)
-comment=L3+SELECT WHEN ON TOUR; L3+START WHEN NOT.
-
-//don't change the display command from display
-patch=1,EE,E0020004,extended,009C93F0
-patch=1,EE,209C9378,extended,00000000
-patch=1,EE,209C93F0,extended,00000000

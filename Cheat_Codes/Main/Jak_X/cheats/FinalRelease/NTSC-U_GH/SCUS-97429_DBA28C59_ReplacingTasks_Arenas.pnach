@@ -1,0 +1,145 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+// ARENAS
+
+// - DESERT ARENA
+
+[Events\Replacing Tasks\Desert Arena\Sport Hunt]
+description=Replaces kratour-boss-battle-task
+patch=1,EE,E00B11B1,extended,0097ED28
+//name
+patch=1,EE,2097ED24,extended,002DBFCD
+//GM,ID
+patch=1,EE,1097ED28,extended,00000597
+//powerups
+patch=1,EE,2097ED38,extended,00008121
+patch=1,EE,0097ED3C,extended,00000010
+//IPU
+patch=1,EE,2097ED5C,extended,0098AE04
+//settings
+patch=1,EE,4097ED9C,extended,00030002
+patch=1,EE,000A0403,extended,00000000
+//levels
+patch=1,EE,2097EDE8,extended,002DA241
+patch=1,EE,2097EE08,extended,002DBFCD
+//task_levels
+patch=1,EE,2097EDF8,extended,002DE715
+patch=1,EE,2097EE18,extended,002DE699
+
+[Events\Replacing Tasks\Desert Arena\Collectathon]
+description=Replaces cliffs-king-of-hill-task
+patch=1,EE,E00D0C9E,extended,00980798
+//name
+patch=1,EE,20980794,extended,002DBFCD
+//GM,ID
+patch=1,EE,10980798,extended,00000697
+//powerups
+patch=1,EE,209807A8,extended,08400101
+patch=1,EE,009807AC,extended,00000020
+//IPU
+patch=1,EE,209807CC,extended,0098AE04
+//settings
+patch=1,EE,4098080C,extended,00030002
+patch=1,EE,000A0203,extended,00000000
+//levels
+patch=1,EE,20980858,extended,002DA241
+patch=1,EE,20980878,extended,002DBFCD
+//task_levels
+patch=1,EE,20980868,extended,002E422D
+patch=1,EE,20980888,extended,002E422D
+//fix
+patch=1,EE,20980870,extended,002E28D1
+patch=1,EE,20980890,extended,002E28D1
+
+[Events\Replacing Tasks\Desert Arena\Reversi]
+description=Replaces ice-training-task
+patch=1,EE,E00B0F98,extended,00980E28
+//name
+patch=1,EE,20980E24,extended,002DBFCD
+//GM,ID
+patch=1,EE,10980E28,extended,00000897
+//powerups
+patch=1,EE,20980E38,extended,08400101
+patch=1,EE,00980E3C,extended,00000080
+//IPU
+patch=1,EE,20980E5C,extended,0098AE04
+//settings
+patch=1,EE,40980E9C,extended,00030002
+patch=1,EE,000A0203,extended,00000000
+//levels
+patch=1,EE,20980EE8,extended,002DA241
+patch=1,EE,20980F08,extended,002DBFCD
+//task_levels
+patch=1,EE,20980EF8,extended,002E6A75
+patch=1,EE,20980F18,extended,002E6A75
+
+// - MAR COLISEUM
+
+[Events\Replacing Tasks\Mar Coliseum\Collectathon]
+description=Replaces cliffs-training-task
+patch=1,EE,E00B0F99,extended,00980CF8
+//name
+patch=1,EE,20980CF4,extended,002DB5AD
+//GM,ID
+patch=1,EE,10980CF8,extended,0000069C
+//powerups
+patch=1,EE,20980D08,extended,04400101
+patch=1,EE,00980D0C,extended,00000020
+//IPU
+patch=1,EE,20980D2C,extended,0098BCF4
+//settings
+patch=1,EE,40980D6C,extended,00030002
+patch=1,EE,000A0203,extended,00000000
+//levels
+patch=1,EE,20980DB8,extended,002DA289
+patch=1,EE,20980DD8,extended,002DB5AD
+//task_levels
+patch=1,EE,20980DC8,extended,002DE71D
+patch=1,EE,20980DE8,extended,002DE71D
+
+[Events\Replacing Tasks\Mar Coliseum\Reversi]
+description=Replaces kras-training-task
+patch=1,EE,E00B0F07,extended,0098D938
+//name
+patch=1,EE,2098D934,extended,002DB5AD
+//GM,ID
+patch=1,EE,1098D938,extended,0000089C
+//powerups
+patch=1,EE,2098D948,extended,04400101
+patch=1,EE,0098D94C,extended,00000020
+//IPU
+patch=1,EE,2098D96C,extended,0098BCF4
+//settings
+patch=1,EE,4098D9AC,extended,00030002
+patch=1,EE,000A0203,extended,00000000
+//levels
+patch=1,EE,2098DA10,extended,002DA289
+patch=1,EE,2098DA30,extended,002DB5AD
+//task_levels
+patch=1,EE,2098DA20,extended,002DE71D
+patch=1,EE,2098DA40,extended,002DE71D
+
+// - DIRT STADIUM
+
+[Events\Replacing Tasks\Dirt Stadium\Reversi]
+description=Replaces jungle-training-task
+patch=1,EE,E00A0F9B,extended,00980AC8
+//name
+patch=1,EE,20980AC4,extended,002E8ED5
+//GM,ID
+patch=1,EE,10980AC8,extended,000008A1
+//powerups
+patch=1,EE,20980AD8,extended,04400101
+patch=1,EE,00980ADC,extended,00000080
+//IPU
+patch=1,EE,20980AFC,extended,0098D4F4
+//settings
+patch=1,EE,40980B3C,extended,00030002
+patch=1,EE,000A0203,extended,00000000
+//levels
+patch=1,EE,20980BA8,extended,002E8ED5
+//task_levels
+patch=1,EE,20980BB8,extended,002DEF61
+//ss_fix
+patch=1,EE,2098FB40,extended,00993134

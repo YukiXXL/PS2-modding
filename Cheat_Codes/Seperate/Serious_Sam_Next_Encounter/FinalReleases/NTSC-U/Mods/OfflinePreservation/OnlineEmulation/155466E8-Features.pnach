@@ -1,0 +1,24 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=Offline Preservation - Online Emulation - Features
+
+//Populate Player List. Gets rid of TLB Misses on game start.
+patch=1,EE,2029A838,extended,ACC6FFFC
+
+//Scores Table
+patch=1,EE,0020BD74,extended,0C0A553E //Loads Network Profile
+patch=1,EE,00214A94,extended,0C0A553E //Fix crashes on Pause menu
+patch=1,EE,00215A60,extended,0C0A553E //Fix crashes on loading
+//
+patch=1,EE,0021C494,extended,0C0A553E //Fix crashes when trying to open Scores
+patch=1,EE,0021D1CC,extended,0C0A553E //Fix displaying the list
+patch=1,EE,00218C28,extended,0C0A553E //Displays correct player list
+
+//Chat
+patch=1,EE,00217250,extended,0C0A553E //Enables Chat
+
+//Pause menu
+patch=1,EE,00259FE8,extended,0C0A553E //Don't pause the game
+patch=1,EE,0026F4CC,extended,0C0A553E //Pause Menu options
+//
+patch=1,EE,0026F568,extended,0C0A553E //Fix crashes
+patch=1,EE,0026F6D4,extended,0C0A553E //Allow changing "NetSetup.UseChat"

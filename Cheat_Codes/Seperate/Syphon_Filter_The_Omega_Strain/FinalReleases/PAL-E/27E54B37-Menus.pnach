@@ -1,0 +1,8 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=MENUS
+
+//Enable TEST button
+patch=1,EE,202A3DD0,extended,A22F005D
+
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,004997EC,extended,0000FF02

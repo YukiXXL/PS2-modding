@@ -1,0 +1,15 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment="Enable all sub-options all the time" required.
+
+//5 MAX CPUs on any game modes
+patch=1,EE,E0031605,extended,002E0E78
+patch=1,EE,602DD508,extended,24030005
+patch=1,EE,00020002,extended,000002C0
+patch=1,EE,00000180,extended,00000000
+
+//Load selected CPUs on all gamemodes
+patch=1,EE,E0030012,extended,00BCC854
+patch=1,EE,20BCC858,extended,10000027
+//Save 5 CPUs as a MAX
+patch=1,EE,20BCC938,extended,24050005
+patch=1,EE,20BCC968,extended,A045000D

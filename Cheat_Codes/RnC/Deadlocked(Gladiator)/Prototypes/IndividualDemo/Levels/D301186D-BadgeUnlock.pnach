@@ -1,6 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=Unlocks bunch of things. Kept for reference.
-
-patch=1,EE,E0020008,extended,0063F818
-patch=1,EE,2063F810,extended,24020001
-patch=1,EE,2063F814,extended,03E00008

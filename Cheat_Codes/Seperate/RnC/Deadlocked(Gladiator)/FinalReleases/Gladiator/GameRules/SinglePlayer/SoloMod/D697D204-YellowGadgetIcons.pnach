@@ -1,0 +1,39 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=BotHud_GetIconColor
+
+//-DREADZONE STATION and ARENA
+patch=1,EE,E001E8A8,extended,005F530C
+patch=1,EE,205F530C,extended,24030001
+//-CATACROM FOUR
+patch=1,EE,E001E778,extended,005A5544
+patch=1,EE,205A5544,extended,24030001
+//-SARATHOS
+patch=1,EE,E001E718,extended,005A50EC
+patch=1,EE,205A50EC,extended,24030001
+//-KRONOS
+patch=1,EE,E001E718,extended,005CB27C
+patch=1,EE,205CB27C,extended,24030001
+//-SHAAR
+patch=1,EE,E001E718,extended,0059D2CC
+patch=1,EE,2059D2CC,extended,24030001
+//-ORXON
+patch=1,EE,E001E718,extended,005A7CAC
+patch=1,EE,205A7CAC,extended,24030001
+//-THE VALIX BELT
+patch=1,EE,E001E718,extended,005902A4
+patch=1,EE,205902A4,extended,24030001
+//-PLANET TORVAL
+patch=1,EE,E001E718,extended,005B25E4
+patch=1,EE,205B25E4,extended,24030001
+//-STYGIA
+patch=1,EE,E001E718,extended,0059F384
+patch=1,EE,2059F384,extended,24030001
+//-MARAXUS
+patch=1,EE,E001E718,extended,005B8C2C
+patch=1,EE,205B8C2C,extended,24030001
+//-GHOST STATION
+patch=1,EE,E001E718,extended,005B2C94
+patch=1,EE,205B2C94,extended,24030001
+//-DREADZONE INTERIOR
+patch=1,EE,E001E758,extended,005C301C
+patch=1,EE,205C301C,extended,24030001

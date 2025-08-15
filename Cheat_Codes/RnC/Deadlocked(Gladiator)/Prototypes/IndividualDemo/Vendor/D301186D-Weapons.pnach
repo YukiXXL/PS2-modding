@@ -1,6 +1,0 @@
-gametitle=Ratchet: Deadlocked Demo (NTSC-U)
-comment=VENDOR - WEAPONS
-
-patch=1,EE,E0020008,extended,005C06B8
-patch=1,EE,205C06B4,extended,24020001
-patch=1,EE,205C06BC,extended,A0820000

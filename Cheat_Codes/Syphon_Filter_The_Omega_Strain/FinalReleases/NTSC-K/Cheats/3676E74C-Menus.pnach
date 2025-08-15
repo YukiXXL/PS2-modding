@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Virus (NTSC-K)
-comment=CHEATS - MENUS
-
-//Open Levels
-patch=1,EE,2033B190,extended,24020001

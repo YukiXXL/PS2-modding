@@ -1,0 +1,6 @@
+"Ratchet: Deadlocked Demo (NTSC-U) /ID SCUS_974.85"
+//ELF CRC=D301186D
+//ENTRYPOINT = 00156180
+sceSifSendCmd   : 90129780 0C04A588
+scePadRead      : 9013CEB0 0C046874
+main            : 90156624 0C04BAC8

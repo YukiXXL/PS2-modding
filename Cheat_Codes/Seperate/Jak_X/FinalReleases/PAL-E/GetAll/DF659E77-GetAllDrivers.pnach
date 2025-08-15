@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Get All Drivers
+
+patch=1,EE,E0012025,extended,00BAE670 //Memory Check
+patch=1,EE,20BAE674,extended,2403FFFF

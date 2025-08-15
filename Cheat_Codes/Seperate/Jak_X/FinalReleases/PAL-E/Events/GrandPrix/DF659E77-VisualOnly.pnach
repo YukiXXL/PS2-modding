@@ -1,0 +1,34 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Enable Grand Prix (Visual Only)
+
+//Enable (R3+START+D-PAD RIGHT)
+patch=1,EE,E008FFD3,extended,0028351C
+//spawn-hud-results
+patch=1,EE,602DB55C,extended,00000000
+patch=1,EE,00020001,extended,000002B8
+//Store Event Number on "Back to menu"
+patch=1,EE,00BD24E8,extended,9C6305D8
+patch=1,EE,20BD24F4,extended,64630001
+patch=1,EE,20BD24F8,extended,8EE41D9F
+patch=1,EE,20BD24FC,extended,AC8305D8
+patch=1,EE,20BD2500,extended,10000028
+//Cutscene fix
+patch=1,EE,10BD2650,extended,64640001
+
+//Disable (R3+START+D-PAD LEFT) + Reset
+patch=1,EE,E00BFF73,extended,0028351C
+//spawn-hud-results
+patch=1,EE,602DB55C,extended,12E30008
+patch=1,EE,00020001,extended,000002B8
+//Store Event Number on "Back to menu"
+patch=1,EE,00BD24E8,extended,9C6305D4
+patch=1,EE,20BD24F4,extended,8EE31D9F
+patch=1,EE,20BD24F8,extended,9C6305D8
+patch=1,EE,20BD24FC,extended,2C630002
+patch=1,EE,20BD2500,extended,10600028
+//Reset
+patch=1,EE,007B9C8C,extended,00000000
+patch=1,EE,407B9CF4,extended,00170001
+patch=1,EE,00000000,extended,00000000
+//Cutscene fix
+patch=1,EE,10BD2650,extended,6464FFFD

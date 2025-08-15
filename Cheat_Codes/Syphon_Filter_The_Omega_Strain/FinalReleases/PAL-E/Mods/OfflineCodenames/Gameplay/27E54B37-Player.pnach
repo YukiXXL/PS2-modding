@@ -1,6 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
-comment=OFFLINE CODENAMES: GAMEPLAY - PLAYER
-
-//Skin based on codename (Bonus missions "online")
-patch=1,EE,001B6988,extended,9024D424
-patch=1,EE,001B69C8,extended,9022D424

@@ -1,6 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=Fix the Infinite Loops
-
-//Multiply Minions
-//patch=1,EE,201F10BC,extended,00000000 //bgez > nop
-patch=1,EE,201F8564,extended,2402FFFF //Safer fix

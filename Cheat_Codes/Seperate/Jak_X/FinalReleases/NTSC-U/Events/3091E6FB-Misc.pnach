@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=EVENTS - MISC
+
+//Enable all sub-options all the time
+patch=1,EE,E001002B,extended,00E271C4
+patch=1,EE,00E271C0,extended,66E497D0
+
+//Allow changing teams in any event
+patch=1,EE,E0019AD7,extended,00BD03D8
+patch=1,EE,20BD03D4,extended,00000000

@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=OFFLINE CODENAMES: GAMEPLAY - PLAYER
+
+//Skin based on codename (Bonus missions "online")
+patch=1,EE,001B6B08,extended,9024F8E4
+patch=1,EE,001B6B48,extended,9022F8E4

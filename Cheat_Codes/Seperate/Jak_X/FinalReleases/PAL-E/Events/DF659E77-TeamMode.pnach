@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Changing the driver changes the Default Team setting.
+
+//a0 = task address
+patch=1,EE,E0051825,extended,00BD1638 //Memory Check
+patch=1,EE,20BD1624,extended,90830078 //lbu v1, $0078(a0)
+patch=1,EE,20BD1628,extended,38630020 //xori v1, v1, $0020
+patch=1,EE,20BD162C,extended,A0830078 //sb v1, $0078(a0)
+patch=1,EE,20BD1630,extended,90840005 //lbu a0, $0005(a0)
+patch=1,EE,20BD1634,extended,00000000 //nop

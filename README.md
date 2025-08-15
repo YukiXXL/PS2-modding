@@ -2,7 +2,7 @@ Welcome to my repository where I will store cheat codes and modded save games or
 Any contributers are welcome. :)
 
 # Table of contents <br/>
-### **Cheat Codes** (No longer updated but has some codes that weren't added in PNACH_V2 and codes are in seperate folders)<br/>
+### **Cheat Codes**:<br/>
 ### **PNACH_V2** (Codes for the new pnach system) <br/>
 ### **PS2_Mastercodes** (Codes for enabling the codes on PS2 hardware) <br/>
 ### **Save files** (Custom save files) <br/>

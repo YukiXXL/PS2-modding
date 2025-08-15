@@ -1,6 +1,0 @@
-gametitle=Jak X Final Release (NTSC-U)
-comment=Spawn 6th Mizo
-
-patch=1,EE,E0028FA3,extended,00EDB3F4 //Memory Check
-patch=1,EE,00EDB3F8,extended,9C640020 //Spawn 6th player ID
-patch=1,EE,10EDB41C,extended,A48302A4 //Write race state to 6th player ID

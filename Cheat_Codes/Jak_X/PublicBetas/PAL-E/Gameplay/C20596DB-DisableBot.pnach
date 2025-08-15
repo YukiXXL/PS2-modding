@@ -1,5 +1,0 @@
-gametitle=Jak X Beta Trial Code (PAL-E)
-comment=GAMEPLAY - DISABLE BOT
-
-patch=1,EE,E0010401,extended,002CE3F0
-patch=1,EE,002CE3F0,extended,002D0405

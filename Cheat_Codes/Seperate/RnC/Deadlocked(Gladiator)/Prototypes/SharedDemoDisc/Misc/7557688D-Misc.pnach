@@ -1,0 +1,6 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=MISC
+
+//Enable All Omega Mods for All Weapons
+patch=1,EE,E0010003,extended,00643374
+patch=1,EE,20643374,extended,00000000

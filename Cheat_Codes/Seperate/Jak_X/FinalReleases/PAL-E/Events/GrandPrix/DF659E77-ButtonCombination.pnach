@@ -1,0 +1,35 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Enable Grand Prix 1-4 (Dynamic Memory)
+
+// R3+SELECT (Enable)
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,602DB5F4,extended,8EE418B7
+patch=1,EE,00010002,extended,0000005C
+patch=1,EE,00000290,extended,00000000
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,602DB5F4,extended,8C840098
+patch=1,EE,00020002,extended,0000005C
+patch=1,EE,00000294,extended,00000000
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,602DB5F4,extended,02E4100A
+patch=1,EE,00020002,extended,0000005C
+patch=1,EE,00000298,extended,00000000
+
+// R3+SELECT (Reset)
+patch=1,EE,E003FFFA,extended,0028351C
+patch=1,EE,007B9C8C,extended,00000000
+patch=1,EE,407B9CF4,extended,00170001
+patch=1,EE,00000000,extended,00000000
+
+// R3+SELECT+D-PAD UP (Red Eco Cup)
+patch=1,EE,E001FFEA,extended,0028351C
+patch=1,EE,207B9C88,extended,009936B0
+// R3+SELECT+D-PAD RIGHT (Green Eco Cup)
+patch=1,EE,E001FFDA,extended,0028351C
+patch=1,EE,207B9C88,extended,009935E0
+// R3+SELECT+D-PAD DOWN (Blue Eco Cup)
+patch=1,EE,E001FFBA,extended,0028351C
+patch=1,EE,207B9C88,extended,00993500
+// R3+SELECT+D-PAD LEFT (Yellow Eco Cup)
+patch=1,EE,E001FF7A,extended,0028351C
+patch=1,EE,207B9C88,extended,00993430

@@ -1,9 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Mad Cash
-
-//1500000 Orbs
-patch=1,EE,E0042025,extended,00BAEAF4 //Memory Check
-patch=1,EE,20BAEAF8,extended,3C0349B7 //lui v1, $49b7
-patch=1,EE,20BAEAFC,extended,24631B00 //addiu v1, v1, $1b00
-patch=1,EE,20BAEB00,extended,AEA3001C //sw v1, $001c(s5)
-patch=1,EE,20BAEB08,extended,44030000 //mfc1 v1, $f0

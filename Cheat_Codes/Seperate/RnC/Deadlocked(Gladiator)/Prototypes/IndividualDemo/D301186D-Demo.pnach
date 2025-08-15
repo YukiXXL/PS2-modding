@@ -1,0 +1,10 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=DEMO - OTHER
+
+//Disable Demo finished when beating all challenges
+patch=1,EE,E001FFFF,extended,004000FC
+patch=1,EE,204000F4,extended,10000009
+
+//Disable Demo Timer (when AFK)
+patch=1,EE,E0019868,extended,008F1204
+patch=1,EE,208F1200,extended,10000007

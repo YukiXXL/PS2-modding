@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=MISC: RENDERING - RENDERING DISTANCES
-
-//World at 5002 (Default 50000)
-patch=1,EE,10144448,extended,3C01459C
-
-//Entities at 2501 (Default 50000)
-patch=1,EE,1014446C,extended,3C01451C

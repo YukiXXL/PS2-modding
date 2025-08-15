@@ -1,0 +1,9 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Allow CPUs to get all weapons (Novas, Turbo Lock)
+
+//Novas
+patch=1,EE,602DD650,extended,00000020
+patch=1,EE,00000001,extended,000000CC
+//Turbo Lock
+patch=1,EE,602DC644,extended,00000020
+patch=1,EE,00000001,extended,00000164

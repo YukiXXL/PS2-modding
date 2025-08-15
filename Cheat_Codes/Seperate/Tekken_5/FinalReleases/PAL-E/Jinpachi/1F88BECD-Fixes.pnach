@@ -1,0 +1,16 @@
+gametitle=Tekken 5 Final Release (PAL-E)
+comment=JINPACHI - FIXES
+
+//Fix for Time Attack
+patch=1,EE,E0010012,extended,0047BB54
+patch=1,EE,0047BB54,extended,0000004D
+
+//Memory Check
+patch=1,EE,E005E9C0,extended,003D0E78
+//Jinpachi text appears instead of Panda
+patch=1,EE,003D0E70,extended,0049E9C0
+patch=1,EE,003D0E78,extended,0049E9B0
+patch=1,EE,002B199C,extended,24030020
+//Replace Jinpachi and Panda icons
+patch=1,EE,003D0CC0,extended,00000021
+patch=1,EE,003D0CC8,extended,0000001F

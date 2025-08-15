@@ -1,0 +1,5 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=PROGRESSIVE SCAN - 576p
+
+patch=1,EE,E0010050,extended,00458EBC
+patch=1,EE,00458EBC,extended,24060053

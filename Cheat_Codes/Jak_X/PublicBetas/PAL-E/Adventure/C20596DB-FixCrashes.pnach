@@ -1,7 +1,0 @@
-gametitle=Jak X Beta Trial Code (PAL-E)
-comment=ADVENTURE - Fix Crashes
-
-patch=1,EE,602D7B58,extended,10000005
-patch=1,EE,00020001,extended,00000224
-patch=1,EE,E0010028,extended,001D6D1C
-patch=1,EE,201D6D10,extended,10000009

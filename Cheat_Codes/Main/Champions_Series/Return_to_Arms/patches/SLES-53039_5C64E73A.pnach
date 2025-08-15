@@ -1,0 +1,5 @@
+gametitle=Champions Return to Arms Final Release (PAL-E)
+
+[No interlacing]
+gsinterlacemode=1
+patch=1,EE,0019E2E8,extended,ACA00008

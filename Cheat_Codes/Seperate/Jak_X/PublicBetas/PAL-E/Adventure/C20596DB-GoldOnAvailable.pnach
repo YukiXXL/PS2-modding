@@ -1,0 +1,51 @@
+gametitle=Jak X Beta Trial Code (PAL-E)
+comment=ADVENTURE - Gold Medals only on unavailable tasks
+
+patch=1,EE,E02A6163,extended,0098EF38
+//Red Eco Cup
+patch=1,EE,0099CDFC,extended,00000003
+patch=1,EE,0099C38C,extended,00000003
+patch=1,EE,009995EC,extended,00000003
+patch=1,EE,0099CA7C,extended,00000003
+patch=1,EE,0099925C,extended,00000003
+patch=1,EE,00998EAC,extended,00000003
+patch=1,EE,0099A78C,extended,00000003
+patch=1,EE,00998B2C,extended,00000003
+//Green Eco Cup
+patch=1,EE,009979DC,extended,00000003
+patch=1,EE,0099646C,extended,00000003
+patch=1,EE,00994F5C,extended,00000003
+patch=1,EE,00997D5C,extended,00000003
+patch=1,EE,009987AC,extended,00000003
+patch=1,EE,00996B9C,extended,00000003
+patch=1,EE,0099681C,extended,00000003
+patch=1,EE,00994C0C,extended,00000003
+//Blue Eco Cup
+patch=1,EE,00991F5C,extended,00000003
+patch=1,EE,0099378C,extended,00000003
+patch=1,EE,0099043C,extended,00000003
+patch=1,EE,00993E5C,extended,00000003
+patch=1,EE,00991BDC,extended,00000003
+patch=1,EE,009933FC,extended,00000003
+patch=1,EE,0099308C,extended,00000003
+patch=1,EE,0099262C,extended,00000003
+patch=1,EE,0099078C,extended,00000003
+//Yellow Eco Cup
+patch=1,EE,0098CD9C,extended,00000003
+patch=1,EE,0098E8DC,extended,00000003
+patch=1,EE,0098D0EC,extended,00000003
+patch=1,EE,0098BCAC,extended,00000003
+patch=1,EE,0098EF9C,extended,00000003
+patch=1,EE,0098DE9C,extended,00000003
+patch=1,EE,0098EC2C,extended,00000003
+patch=1,EE,0098DB2C,extended,00000003
+patch=1,EE,0098CA4C,extended,00000003
+//Other (Needed to unlock the cups)
+patch=1,EE,00993B0C,extended,00000003
+patch=1,EE,009980CC,extended,00000003
+patch=1,EE,0099843C,extended,00000003
+patch=1,EE,0099A41C,extended,00000003
+patch=1,EE,0099AE9C,extended,00000003
+patch=1,EE,0099B5AC,extended,00000003
+patch=1,EE,0099B91C,extended,00000003
+patch=1,EE,0099C02C,extended,00000003

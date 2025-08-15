@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Virus (NTSC-K)
-comment=OFFLINE CODENAMES: CODENAME STUFF: OFFLINE PRESERVATION: COUNTDOWN DISABLED
-
-//START fix
-patch=1,EE,002AE4D4,extended,24050000

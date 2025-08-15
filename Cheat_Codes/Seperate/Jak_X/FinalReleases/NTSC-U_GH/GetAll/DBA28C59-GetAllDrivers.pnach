@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Get All Drivers
+
+patch=1,EE,E0012025,extended,00BAE728 //Memory Check
+patch=1,EE,20BAE72C,extended,2403FFFF

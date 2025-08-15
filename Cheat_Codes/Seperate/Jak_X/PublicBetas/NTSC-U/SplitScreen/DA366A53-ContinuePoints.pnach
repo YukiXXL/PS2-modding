@@ -1,0 +1,9 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=Fix continue-points
+
+patch=1,EE,E0050401,extended,009A3C68 //Memory Check
+patch=1,EE,209A23D8,extended,009A3704 //kras-timebox
+patch=1,EE,209A3628,extended,009A3BE4 //jungle-timebox
+patch=1,EE,209A3C68,extended,009A3C84 //kras-training
+patch=1,EE,209A3BC8,extended,009A3C04 //jungle-training
+patch=1,EE,209A0558,extended,009A3884 //cliffs-training

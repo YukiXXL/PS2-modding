@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=PATCHES - OTHER
+
+//Flashlight and Night Vision fix
+patch=1,EE,20398898,extended,48438000
+patch=1,EE,2039889C,extended,4B06521B

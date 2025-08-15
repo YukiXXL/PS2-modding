@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
-comment=RANDOMIZER MOD - SPEECH V2
-
-//Joker function
-//lbu a1, (frames_2,1)
-patch=1,EE,200A0248,extended,3C02000A //lui v0, $000a
-patch=1,EE,200A024C,extended,90440138 //lbu a0, (joker byte)
-patch=1,EE,200A0250,extended,00852021 //addu a0, a0, a1

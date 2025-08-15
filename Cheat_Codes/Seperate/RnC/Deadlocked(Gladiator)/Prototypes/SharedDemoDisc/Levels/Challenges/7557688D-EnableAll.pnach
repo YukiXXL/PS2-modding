@@ -1,0 +1,14 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=CHALLENGES - ENABLE ALL
+
+//Enable All Challenges
+patch=1,EE,E0010F88,extended,00643E04
+patch=1,EE,20643E04,extended,24020001
+
+//Include Unplayable Planets
+patch=1,EE,E0010018,extended,00643D98
+patch=1,EE,20643D98,extended,00000000
+
+//All Challenges available
+patch=1,EE,E001000F,extended,005363EC
+patch=1,EE,205363EC,extended,00000000

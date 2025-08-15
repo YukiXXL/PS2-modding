@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=GAMEPLAY - PLAYER
+
+//Enable dropping Goggles
+patch=1,EE,00248808,extended,24020008
+patch=1,EE,0024292C,extended,24020008

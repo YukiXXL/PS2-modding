@@ -1,9 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=Changing back to the task changes the Default Team mode
-
-//a0 = task address
-patch=1,EE,E0041825,extended,00B71688 //Memory Check
-patch=1,EE,20B71674,extended,90990088 //lbu t9, $0088(a0)
-patch=1,EE,20B71678,extended,3B390020 //xori t9, t9, $0020
-patch=1,EE,20B7167C,extended,A0990088 //sb t9, $0088(a0)
-patch=1,EE,20B71680,extended,90840005 //lbu a0, $0005(a0)

@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=ADDONS
+
+//480p
+patch=1,EE,202F97DC,extended,3C050000
+patch=1,EE,202F97E4,extended,3C060050
+patch=1,EE,202F97EC,extended,3C070001
+
+//50 FPS
+//patch=1,EE,201273A8,extended,00000000
+//Alternative
+patch=1,EE,00126C74,extended,24020000

@@ -1,0 +1,12 @@
+gametitle=Tekken 5 Final Release (PAL-E)
+comment=JINPACHI - CUSTOMIZATION
+
+//Memory Check
+patch=1,EE,E003001E,extended,002DFE54
+
+//Unlock Jinpachi for Customization
+patch=1,EE,002DFE4C,extended,2A05001F
+//Enable Random Character Select in Customization
+patch=1,EE,002DFE54,extended,2407001F
+//Jinpachi fix in Customization
+patch=1,EE,002DCD9C,extended,2403001F

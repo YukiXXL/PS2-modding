@@ -1,8 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=ADDONS - OTHER
-
-//Scan ONLY ONCE and get all secret drivers + Daxtermobile
-patch=1,EE,602E09A0,extended,241C0001 //PSP Exclusives
-patch=1,EE,00020001,extended,00000030
-patch=1,EE,60285274,extended,2402000F //PS2 Drivers
-patch=1,EE,00020001,extended,00000044

@@ -1,7 +1,0 @@
-gametitle=Jak X Beta Trial Code (PAL-E)
-comment=Enable Freeze Rally options
-
-patch=1,EE,E0030405,extended,002CAAE4
-patch=1,EE,602CC308,extended,00000000
-patch=1,EE,00000003,extended,000000C0
-patch=1,EE,0000001C,extended,00000A9C

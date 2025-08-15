@@ -1,0 +1,6 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=Unlocks bunch of things. Kept for reference.
+
+patch=1,EE,E0020008,extended,00643F10
+patch=1,EE,20643F08,extended,24020001
+patch=1,EE,20643F0C,extended,03E00008

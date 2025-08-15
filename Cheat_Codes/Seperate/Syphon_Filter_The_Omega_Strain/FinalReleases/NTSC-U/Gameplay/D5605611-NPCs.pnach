@@ -1,0 +1,25 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=GAMEPLAY - NPCs
+
+//Friendly NPCs Killable
+patch=1,EE,201490EC,extended,0000102D
+
+//Give weapons to workers
+patch=1,EE,001B6718,extended,2A020003
+
+//Pick one :)
+//Enemies aim faster
+//Hard
+patch=1,EE,2022FAD0,extended,14400005
+//Very Hard
+patch=1,EE,2022FC9C,extended,00000000
+//Ultra Hard
+patch=1,EE,2022FB20,extended,00000000
+
+//No Range
+patch=1,EE,0022FCE8,extended,24020000
+
+//Enable all spawns
+patch=1,EE,201B422C,extended,00000000
+//Memory fix
+patch=1,EE,001B433C,extended,1440000E

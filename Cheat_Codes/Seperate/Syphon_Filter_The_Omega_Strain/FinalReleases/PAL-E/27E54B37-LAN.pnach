@@ -1,0 +1,19 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=LAN CODES
+
+//LAN lobby instead of Play Online
+patch=1,EE,202A34FC,extended,A0450032
+patch=1,EE,002A350C,extended,24A52230
+patch=1,EE,002A3514,extended,24C62248
+
+//Create Mission
+patch=1,EE,202AB478,extended,90620032
+patch=1,EE,202AB47C,extended,A0620033
+patch=1,EE,202AB484,extended,A0620035
+//Bypasses
+patch=1,EE,2037AE30,extended,24020000
+patch=1,EE,202AB61C,extended,24020001
+patch=1,EE,202AB640,extended,14830003
+
+//Keep Online button
+patch=1,EE,202A385C,extended,24030000

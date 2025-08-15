@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=DNAS Bypass (by Erdrick The Hero)
+
+// DNAS Bypass - Connect to online games more reliably
+patch=1,EE,D1080274,extended,00000006
+patch=1,EE,01080268,extended,00000000
+patch=1,EE,D1080274,extended,00000006
+patch=1,EE,01080274,extended,00000005
+
+// DNAS Bypass alternate (Likely unneeded, try this instead if the above doesn't work)
+//patch=1,EE,D1080274,extended,24020006
+//patch=1,EE,01080268,extended,00000000
+//patch=1,EE,D1080274,extended,24020006
+//patch=1,EE,01080274,extended,00000005

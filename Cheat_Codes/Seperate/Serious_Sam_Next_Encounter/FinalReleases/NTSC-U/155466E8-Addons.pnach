@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=ADDONS
+
+//480p
+patch=1,EE,202F8CDC,extended,3C050000
+patch=1,EE,202F8CE4,extended,3C060050
+patch=1,EE,202F8CEC,extended,3C070001
+
+//60 FPS
+//patch=1,EE,20127580,extended,00000000
+//Alternative
+patch=1,EE,00126E4C,extended,24020000

@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
-comment=GAMEPLAY - PLAYER - APPEARANCE
-
-//Random outfits during missions
-patch=1,EE,20429B4C,extended,10400020
-
-//Disable mission disguises
-patch=1,EE,00429B58,extended,24420000

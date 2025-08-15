@@ -1,4 +1,0 @@
-gametitle=Champions Return to Arms Alpha (NTSC-U)
-comment=ENABLE DIFFICULTY SELECT IN OFFLINE
-
-patch=1,EE,001E1E08,extended,10400023

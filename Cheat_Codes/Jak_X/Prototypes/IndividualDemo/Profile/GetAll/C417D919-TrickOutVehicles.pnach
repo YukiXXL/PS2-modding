@@ -1,5 +1,0 @@
-gametitle=Jak X Demo (NTSC-U)
-comment=GET ALL - TRICK OUT VEHICLES
-
-patch=1,EE,E001002C,extended,009163BC
-patch=1,EE,209163BC,extended,E4A2002C

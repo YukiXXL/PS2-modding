@@ -1,6 +1,0 @@
-gametitle=Jak X Demo (NTSC-U)
-comment=Fixes Tag task on Clifftop Battlefields
-
-patch=1,EE,E0020CA7,extended,0091CB48
-patch=1,EE,2091CCF0,extended,00269201
-patch=1,EE,2091CD10,extended,00269201

@@ -1,5 +1,0 @@
-gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=Change Difficulty
-
-patch=1,EE,E0010002,extended,003E8650
-patch=1,EE,003E8650,extended,00000004

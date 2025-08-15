@@ -1,0 +1,10 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=OFFLINE CODENAMES: MENUS: CODENAME ONLY - MENUS
+
+//Join Mission button
+patch=1,EE,20297508,extended,00000000
+//Join Mission is Create Mission
+patch=1,EE,00295EA4,extended,24050006
+
+//Min num agents = 0
+patch=1,EE,002A159C,extended,24050000

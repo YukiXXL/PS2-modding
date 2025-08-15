@@ -1,0 +1,972 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Provided by YukiXXL. Special thanks to Luminar Light.
+
+[Fixes\Universal Fix]
+description=In case the game crashes when changing drivers or in lobby
+patch=1,EE,602DC930,extended,10000003
+patch=1,EE,00020001,extended,000000D0
+
+[Fixes\Tag on Clifftop Battlefields]
+description=Fixes crashing/black screen.
+patch=1,EE,E0020C9E,extended,00980798
+patch=1,EE,20980870,extended,002E28D1
+patch=1,EE,20980890,extended,002E28D1
+
+[Fixes\IPU Training on Icebound Citadel]
+description=Fixes IPU on ice-training-task.
+patch=1,EE,E0010F98,extended,00980E28
+patch=1,EE,20980E5C,extended,0098CD84
+
+// CHEATS
+
+[Cheats\Jak Vehicle Unkillable + Infinite Turbo]
+description=From Debug menu
+patch=1,EE,E0021825,extended,00F16B68
+patch=1,EE,20F16B60,extended,66E30004
+patch=1,EE,20F16B64,extended,AEE317DB
+
+[Cheats\Default Gun\Enabled in Circuit Race]
+description=Have the Deathmatch machine guns in Circuit Race
+patch=1,EE,E0021825,extended,00F21954
+patch=1,EE,20F2194C,extended,66E30004
+patch=1,EE,20F21950,extended,AEE3DC63
+
+[Cheats\Default Gun\Enabled in Other Events]
+description=Have the Deathmatch machine guns in Other Events
+patch=1,EE,E0020012,extended,00F21940
+patch=1,EE,20F21944,extended,10000058
+patch=1,EE,20F21948,extended,00801825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Engine]
+description=Load the upgrades + improve them by 32
+patch=1,EE,E0022E3C,extended,00BAE8A0
+patch=1,EE,20BAE898,extended,24C60020
+patch=1,EE,20BAE89C,extended,00C02825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Gearbox]
+patch=1,EE,E0022E3C,extended,00BAE8DC
+patch=1,EE,20BAE8D4,extended,24C60020
+patch=1,EE,20BAE8D8,extended,00C02825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Armor]
+patch=1,EE,E0022E3C,extended,00BAE918
+patch=1,EE,20BAE910,extended,24C60020
+patch=1,EE,20BAE914,extended,00C02825
+
+[Cheats\Vehicle Status\Load Custom + Increase by 32\Turbo]
+patch=1,EE,E0021E3C,extended,00BAE94C
+patch=1,EE,20BAE944,extended,24630020
+patch=1,EE,20BAE948,extended,00602825
+
+[Cheats\Vehicle Status\All Status at 255]
+description=Engine, Gearbox, Armor, Turbo at 255
+patch=1,EE,E001002C,extended,00BAE958
+patch=1,EE,20BAE954,extended,2403FFFF
+
+// ADDONS
+
+[Addons\Skip Intro Movies]
+description=Skip THX, Dolby, etc.
+patch=1,EE,607BA148,extended,66E30004
+patch=1,EE,00020001,extended,0000032C
+
+[Addons\Scan ONLY ONCE and get all secret drivers + Daxtermobile]
+patch=1,EE,602E0AA0,extended,241C0001 //PSP Exclusives
+patch=1,EE,00020001,extended,00000030
+patch=1,EE,602853F4,extended,2402000F //PS2 Drivers
+patch=1,EE,00020001,extended,00000044
+
+[Addons\Enable colors for Daxtermobil]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,00000000
+patch=1,EE,00020003,extended,000000D4
+patch=1,EE,00000020,extended,00000E98
+
+[Addons\Enable Beta Music]
+description=Replaces one duplicate.
+patch=1,EE,602DC5C8,extended,66E72A50
+patch=1,EE,00010000,extended,00000564
+//empty0 > menu1
+patch=1,EE,602F4250,extended,00000005
+patch=1,EE,00000000,extended,00000000
+//string
+patch=1,EE,602F4250,extended,756E656D
+patch=1,EE,00020000,extended,00000004
+patch=1,EE,602F4250,extended,00000031
+patch=1,EE,00010000,extended,00000008
+
+[Addons\From Debug Menu\Target Status]
+description=Show some info like MPH
+patch=1,EE,E00302BC,extended,00F16B80
+patch=1,EE,10A888F0,extended,8EE30137
+patch=1,EE,20F16B88,extended,66E30004
+patch=1,EE,20F16B8C,extended,AEE317C3
+
+[Addons\From Debug Menu\Pausing\Enable pausing using SELECT]
+description=Pause like in Jak 2/3
+patch=1,EE,E0031825,extended,00F18A48
+patch=1,EE,10A7F51C,extended,8EE30137
+patch=1,EE,10A8BB54,extended,8EE30137
+patch=1,EE,10F18A4C,extended,8EE30137
+
+[Addons\From Debug Menu\Pausing\Enable 2nd controller to pause]
+description=Enable the code above first!
+patch=1,EE,E0011825,extended,00A8BB90
+patch=1,EE,10A8BB88,extended,8EE30137
+
+// CPUs
+
+[CPUs\Events\Number of CPUs\5 CPUs on Death Race and Rush Hour]
+patch=1,EE,E0010008,extended,00BCD4BC
+patch=1,EE,00BCD4B8,extended,24130005
+
+[CPUs\Events\Number of CPUs\5 CPUs on Freeze Rally (and other)]
+patch=1,EE,E0011825,extended,00BCD4E4
+patch=1,EE,00BCD4DC,extended,24130005
+
+[CPUs\Events\Number of CPUs\5 CPUs on Boss Battle (Mizo)]
+patch=1,EE,E0010002,extended,00BCD4D4
+patch=1,EE,00BCD4D0,extended,24130005
+
+[CPUs\Events\Number of CPUs\Select any number of CPUs on any event]
+description="Enable all sub-options all the time" required!
+patch=1,EE,E0030000,extended,102DD708
+patch=1,EE,602DD708,extended,24030005
+patch=1,EE,00020002,extended,000002C0
+patch=1,EE,00000180,extended,00000000
+//Load selected CPUs on all gamemodes
+patch=1,EE,E0030012,extended,00BCD344
+patch=1,EE,20BCD348,extended,10000027
+//Save 5 CPUs as a MAX
+patch=1,EE,20BCD428,extended,24050005
+patch=1,EE,20BCD458,extended,A045000D
+
+[CPUs\Drivers\Force CPUs to use players driver]
+description=CPUs will use the driver that the player uses
+patch=1,EE,602DC92C,extended,938303BC
+patch=1,EE,00020001,extended,000000D8
+patch=1,EE,602DC92C,extended,286200FF
+patch=1,EE,00020001,extended,000000DC
+patch=1,EE,602DC92C,extended,0062A00B
+patch=1,EE,00020001,extended,000000E0
+
+[CPUs\Drivers\Secret Drivers\Default + Secret]
+patch=1,EE,602E0C58,extended,00000000
+patch=1,EE,00020001,extended,00000070
+
+[CPUs\Drivers\Secret Drivers\Only Secret]
+patch=1,EE,602E0C58,extended,16E30002
+patch=1,EE,00020001,extended,000000B8
+
+// CUSTOMIZATION
+
+[Customization\Enable customizing secret vehicles\Tune Performance]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,00000000
+patch=1,EE,00020003,extended,00000194
+patch=1,EE,00000020,extended,0000043C
+//Visuals
+patch=1,EE,602E0828,extended,00000000
+patch=1,EE,00010000,extended,00000010
+
+[Customization\Enable customizing secret vehicles\Modify Body Parts]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,00000000
+patch=1,EE,00020003,extended,00000194
+patch=1,EE,00000020,extended,00000514
+//Visuals
+patch=1,EE,602E0598,extended,00000000
+patch=1,EE,00010000,extended,00000010
+
+[Customization\Enable customizing secret vehicles\Respray Paint Job]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,00000000
+patch=1,EE,00020003,extended,00000194
+patch=1,EE,00000020,extended,00000654
+//Visuals
+patch=1,EE,602DF814,extended,00000000
+patch=1,EE,00010000,extended,00000010
+
+[Customization\Customize more parts for secret vehicles\Daxtermobile]
+patch=1,EE,40488DE0,extended,00080001
+patch=1,EE,00000003,extended,00000000
+
+[Customization\Customize more parts for secret vehicles\Sand Shark]
+patch=1,EE,40488E20,extended,00080001
+patch=1,EE,00000003,extended,00000000
+
+[Customization\Customize more parts for secret vehicles\Naughty Dog]
+patch=1,EE,40489160,extended,00050001
+patch=1,EE,00000003,extended,00000000
+patch=1,EE,0048917C,extended,00000003
+
+// EVENTS
+
+[Events\Enable Extra Events]
+description=Tag, Training and Mizo tasks.
+patch=1,EE,E00EB419,extended,00B603F4
+//Change load location
+patch=1,EE,002E8DF8,extended,00B60204
+//Add events
+patch=1,EE,20B60200,extended,002FB2E4
+patch=1,EE,20B60204,extended,0000000F
+patch=1,EE,20B60208,extended,0000000F
+patch=1,EE,20B6020C,extended,00B5B4B4
+patch=1,EE,40B60210,extended,00040001
+patch=1,EE,00B603C0,extended,00000010
+//Add event modes
+patch=1,EE,00B603C8,extended,0000000C
+patch=1,EE,40B603D8,extended,00030004
+patch=1,EE,0000000F,extended,00000001
+//Fix ID strings for Event names
+patch=1,EE,00B603C0,extended,00000660
+patch=1,EE,10B603D0,extended,0000067A
+patch=1,EE,10B603E0,extended,00000794
+patch=1,EE,00B603F0,extended,0000055A
+
+[Events\Enable all sub-options all the time]
+patch=1,EE,E001002B,extended,00E27CB4
+patch=1,EE,00E27CB0,extended,66E497D0
+
+[Events\Allow changing teams in any event]
+patch=1,EE,E0019AD7,extended,00BD0EC8
+patch=1,EE,20BD0EC4,extended,00000000
+
+[Events\More Laps/Time Limit]
+description=0-255 Laps/Time
+//For writing minimum
+patch=1,EE,E0031801,extended,102DFDE8
+patch=1,EE,602DFDE8,extended,00000000
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000000,extended,00000000
+//For writing maximum
+patch=1,EE,E0031801,extended,102DFDE8
+patch=1,EE,602DFDE8,extended,000000FF
+patch=1,EE,00000002,extended,00000000
+patch=1,EE,00000004,extended,00000000
+//Check if equal to zero
+patch=1,EE,E0010000,extended,002DA6D8
+patch=1,EE,202DFDE8,extended,002E1801
+patch=1,EE,E0010000,extended,002DFDE8
+patch=1,EE,202DFDE8,extended,002E1801
+
+[Events\Team Mode on any event]
+description=Advance Options > L1+R1. If not applying, change event/location and retry.
+patch=1,EE,E0051825,extended,00BD16E8
+patch=1,EE,20BD16D4,extended,90830078
+patch=1,EE,20BD16D8,extended,38630020
+patch=1,EE,20BD16DC,extended,A0830078
+patch=1,EE,20BD16E0,extended,90840005
+patch=1,EE,20BD16E4,extended,00000000
+
+[Events\Options\Circuit Race with Collectathon options]
+description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
+patch=1,EE,502E01D0,extended,00000003
+patch=1,EE,002DFDC0,extended,00000000
+patch=1,EE,502DFF9C,extended,00000003
+patch=1,EE,002DFDC4,extended,00000000
+
+[Events\Options\Freeze Rally with Turbo Dash options]
+description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
+patch=1,EE,502DFF98,extended,00000003
+patch=1,EE,002E3F74,extended,00000000
+patch=1,EE,502DFF9C,extended,00000003
+patch=1,EE,002E3F78,extended,00000000
+
+[Events\Options\Other events with Collectathon options]
+description=Do not change the Time Limit or anything like that!
+patch=1,EE,502E01D0,extended,00000003
+patch=1,EE,002DFA04,extended,00000000
+
+[Events\Forced Circuit task\on Training]
+description=Running Training gamemode as Circuit Race.
+patch=1,EE,602E75D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,00000174
+
+[Events\Forced Circuit task\on Training 2]
+description=Running Training 2 gamemode as Circuit Race.
+patch=1,EE,602E75D4,extended,8EE2BECB
+patch=1,EE,00010001,extended,0000018C
+
+[Events\Force Gamemode\Save Mizo gamemode to selected task]
+description=Change vehicle/color to apply.
+patch=1,EE,E0020012,extended,00F21940
+patch=1,EE,20F21934,extended,24040011
+patch=1,EE,20F2193C,extended,A0640005
+
+[Events\Adventure Specific\Play as Jak]
+patch=1,EE,E0017880,extended,00B6C0D4
+patch=1,EE,20B6C0D8,extended,66E47880
+
+[Events\Adventure Specific\Scripted CPUs]
+description=Enable task specific CPU drivers to be used
+patch=1,EE,E0017880,extended,00BCD704
+patch=1,EE,20BCD708,extended,66E47880
+
+[Events\Adventure Specific\Grand Prix Special Dialogue\Enable]
+patch=1,EE,E0011825,extended,00EC5124
+patch=1,EE,20EC5128,extended,66E37880
+
+[Events\Adventure Specific\Grand Prix Special Dialogue\Dialogue fix without saving to profile]
+description=If dialogue doesn't play, enable this.
+patch=1,EE,E001202D,extended,00A55514
+patch=1,EE,20A55518,extended,0000202D
+
+[Events\Adventure Specific\Grand Prix Special Dialogue\Dialogue fix with saving to profile]
+description=If dialogue doesn't play, enable this.
+patch=1,EE,E001382D,extended,00BAE7A0
+patch=1,EE,20BAE7A4,extended,A4E0000C
+
+[Events\Adventure Specific\Sabotage\Enable]
+patch=1,EE,E0011825,extended,00EC1F18
+patch=1,EE,20EC1F1C,extended,66E37880
+
+[Events\Adventure Specific\Sabotage\Dialogue fix (Saves to profile!)]
+description=If dialogue doesn't play, enable this.
+patch=1,EE,E0012825,extended,00BAE28C
+patch=1,EE,20BAE290,extended,24040001
+
+[Events\Mizo\Spawn 6th Mizo]
+description=Use only if 5th player is Mizo (ex. having 5 CPUs)
+patch=1,EE,E0028FA3,extended,00EDBEE4
+patch=1,EE,00EDBEE8,extended,9C640020
+patch=1,EE,10EDBF0C,extended,A48302A4
+
+[Events\Mizo\Multiplayer]
+description=All clients must have this code enabled
+//Memory Check
+patch=1,EE,E021F809,extended,00EDBEEC
+//Function
+patch=1,EE,20EDBE84,extended,8EF418B7
+patch=1,EE,20EDBE88,extended,8E940098
+patch=1,EE,20EDBE8C,extended,67A50010
+patch=1,EE,20EDBE90,extended,12F60002
+patch=1,EE,20EDBE94,extended,02E01825
+patch=1,EE,20EDBE98,extended,9EC3001C
+patch=1,EE,20EDBE9C,extended,ACA30008
+patch=1,EE,20EDBEA0,extended,ACA00044
+patch=1,EE,20EDBEA4,extended,66E3F640
+patch=1,EE,20EDBEA8,extended,ACA30040
+patch=1,EE,20EDBEAC,extended,8EF9076F
+patch=1,EE,20EDBEB0,extended,001418B8
+patch=1,EE,20EDBEB4,extended,8EE48FA3
+patch=1,EE,20EDBEB8,extended,0064182D
+patch=1,EE,20EDBEBC,extended,9C64000C
+patch=1,EE,20EDBEC0,extended,0320F809
+patch=1,EE,20EDBEC4,extended,001F1000
+patch=1,EE,20EDBEC8,extended,8EE38F9F
+patch=1,EE,20EDBECC,extended,2463FFFF
+patch=1,EE,20EDBED0,extended,1683FFEE
+patch=1,EE,20EDBED4,extended,0060A025
+patch=1,EE,20EDBED8,extended,24140000
+patch=1,EE,20EDBEDC,extended,10000004
+patch=1,EE,20EDBEE0,extended,24010000
+patch=1,EE,20EDBEF0,extended,2403006B
+patch=1,EE,20EDBEF4,extended,8EE46DC3
+patch=1,EE,20EDBEF8,extended,0081202D
+patch=1,EE,20EDBEFC,extended,A48300C4
+patch=1,EE,20EDBF00,extended,66940001
+patch=1,EE,20EDBF04,extended,8EE38F9F
+patch=1,EE,20EDBF08,extended,0283182A
+patch=1,EE,20EDBF0C,extended,1460FFF8
+patch=1,EE,20EDBF10,extended,24210060
+
+[Events\Mizo\Spawn All]
+description=Spawns all 6 players
+//Memory Check
+patch=1,EE,E0190008,extended,00EDBF10
+//Rewrite the whole function
+patch=1,EE,20EDBE84,extended,24140000
+patch=1,EE,20EDBEB0,extended,001418B8
+patch=1,EE,20EDBEB4,extended,8EE48FA3
+patch=1,EE,20EDBEB8,extended,0064182D
+patch=1,EE,20EDBEBC,extended,9C64000C
+patch=1,EE,20EDBEC0,extended,0320F809
+patch=1,EE,20EDBEC4,extended,001F1000
+patch=1,EE,20EDBEC8,extended,66940001
+patch=1,EE,20EDBECC,extended,8EE38F9F
+patch=1,EE,20EDBED0,extended,0283182A
+patch=1,EE,20EDBED4,extended,1460FFEC
+patch=1,EE,20EDBED8,extended,00401825
+patch=1,EE,20EDBEDC,extended,24140000
+patch=1,EE,20EDBEE0,extended,24030060
+patch=1,EE,20EDBEE4,extended,00741818
+patch=1,EE,20EDBEE8,extended,64630070
+patch=1,EE,20EDBEEC,extended,8EE46DC3
+patch=1,EE,20EDBEF0,extended,0064882D
+patch=1,EE,20EDBEF4,extended,2403006B
+patch=1,EE,20EDBEF8,extended,A6230054
+patch=1,EE,20EDBEFC,extended,66940001
+patch=1,EE,20EDBF00,extended,8EE36DC3
+patch=1,EE,20EDBF04,extended,80630041
+patch=1,EE,20EDBF08,extended,0283182A
+patch=1,EE,20EDBF0C,extended,1460FFF4
+
+[Events\Driver Never Taken\Allow selecting more Jaks]
+patch=1,EE,602DD978,extended,1000008E
+patch=1,EE,00020000,extended,0000005C
+
+[Events\Driver Never Taken\Allow selecting any (Host)]
+description=Enable this to allow clients to select any driver.
+patch=1,EE,E0013825,extended,00BCFA18
+patch=1,EE,20BCFA14,extended,00000000
+
+[Events\Driver Never Taken\Allow selecting any (if the host doesn't allow)]
+description=Works even when the host isn't allowing but produces invisible drivers.
+//Selection checks
+patch=1,EE,E00B0035,extended,00A868FC
+patch=1,EE,20A868F8,extended,8EE3C0E7
+patch=1,EE,20A86900,extended,9C63FFFC
+patch=1,EE,20A86904,extended,9C6300D4
+patch=1,EE,20A86908,extended,9C630020
+patch=1,EE,20A8690C,extended,AC600964
+patch=1,EE,20A86910,extended,AC600A9C
+patch=1,EE,20A86914,extended,AC6009B0
+patch=1,EE,20A86918,extended,AC600AE8
+patch=1,EE,20A8691C,extended,AC600188
+patch=1,EE,20A86920,extended,1000002C
+patch=1,EE,20A86924,extended,02E01825
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCF9C0
+patch=1,EE,20BCF9C4,extended,10000003
+
+[Events\Driver Never Taken\Allow selecting any (if host allows)]
+description=Recommended as it fixes invisible drivers but requires the host to allow.
+//Change load location
+patch=1,EE,E001F864,extended,00B4595C
+patch=1,EE,00B4595C,extended,00BCF85C
+//Allow selecting the same driver
+patch=1,EE,E0070010,extended,00BCF894
+patch=1,EE,20BCF858,extended,002F9824
+patch=1,EE,20BCF85C,extended,82C20144
+patch=1,EE,20BCF860,extended,8EE318B7
+patch=1,EE,20BCF864,extended,8C630098
+patch=1,EE,20BCF868,extended,00031878
+patch=1,EE,20BCF86C,extended,0062182D
+patch=1,EE,00BCF894,extended,28660001
+//Allow writing the driver ID
+patch=1,EE,E00103BC,extended,00BCF9C0
+patch=1,EE,20BCF9C4,extended,10000003
+
+[Events\Grand Prix\Enable (Enable first!)]
+description=Press R3+SELECT to enable
+patch=1,EE,E003FFFA,extended,0028361C
+patch=1,EE,602DB6F4,extended,8EE418B7
+patch=1,EE,00010002,extended,0000005C
+patch=1,EE,00000290,extended,00000000
+patch=1,EE,E003FFFA,extended,0028361C
+patch=1,EE,602DB6F4,extended,8C840098
+patch=1,EE,00020002,extended,0000005C
+patch=1,EE,00000294,extended,00000000
+patch=1,EE,E003FFFA,extended,0028361C
+patch=1,EE,602DB6F4,extended,02E4100A
+patch=1,EE,00020002,extended,0000005C
+patch=1,EE,00000298,extended,00000000
+
+[Events\Grand Prix\Reset Status]
+description=Press R3+SELECT to reset the status
+patch=1,EE,E003FFFA,extended,0028361C
+patch=1,EE,007B9D8C,extended,00000000
+patch=1,EE,407B9DF4,extended,00170001
+patch=1,EE,00000000,extended,00000000
+
+[Events\Grand Prix\Red Eco Cup]
+description=Hold R3+SELECT and press D-PAD UP
+patch=1,EE,E001FFEA,extended,0028361C
+patch=1,EE,207B9D88,extended,009937B0
+
+[Events\Grand Prix\Green Eco Cup]
+description=Hold R3+SELECT and press D-PAD RIGHT
+patch=1,EE,E001FFDA,extended,0028361C
+patch=1,EE,207B9D88,extended,009936E0
+
+[Events\Grand Prix\Blue Eco Cup]
+description=Hold R3+SELECT and press D-PAD DOWN
+patch=1,EE,E001FFBA,extended,0028361C
+patch=1,EE,207B9D88,extended,00993600
+
+[Events\Grand Prix\Yellow Eco Cup]
+description=Hold R3+SELECT and press D-PAD LEFT
+patch=1,EE,E001FF7A,extended,0028361C
+patch=1,EE,207B9D88,extended,00993530
+
+[Events\Grand Prix\Custom\Enable]
+description=Allows playing custom Cups
+patch=1,EE,E0081D9F,extended,00BD25B8
+patch=1,EE,20BD2594,extended,8EF91D9F
+patch=1,EE,20BD2598,extended,9F3905D4
+patch=1,EE,20BD259C,extended,12F90082
+patch=1,EE,20BD25A0,extended,93390008
+patch=1,EE,20BD25AC,extended,2739FFFF
+patch=1,EE,20BD25B0,extended,0079182A
+patch=1,EE,20BD25B4,extended,10600027
+patch=1,EE,20BD2654,extended,03201825
+
+[Events\Grand Prix\Custom\Disable Adventure Stuff (Unstable)]
+description=For Adventure mode only!
+patch=1,EE,E001001C,extended,00BD31A4 //Memory Check
+patch=1,EE,20BD3190,extended,10000007
+patch=1,EE,E0012025,extended,00EC4060 //Memory Check
+patch=1,EE,20EC405C,extended,10000017
+patch=1,EE,E0010030,extended,0133CB98 //Memory Check
+patch=1,EE,2133CB98,extended,02E01825
+patch=1,EE,E001200B,extended,01339B1C //Memory Check
+patch=1,EE,21339B1C,extended,02E02025
+
+[Events\Grand Prix (Visual Only)\Show Grand Prix results at race end]
+description=Hold R3+START and press D-PAD RIGHT to enable
+patch=1,EE,E002FFD3,extended,0028361C
+patch=1,EE,602DB65C,extended,00000000
+patch=1,EE,00020001,extended,000002B8
+
+[Events\Grand Prix (Visual Only)\Store Event Number]
+description=Hold R3+START and press D-PAD RIGHT to enable
+patch=1,EE,E005FFD3,extended,0028361C
+patch=1,EE,00BD2598,extended,9C6305D8
+patch=1,EE,20BD25A4,extended,64630001
+patch=1,EE,20BD25A8,extended,8EE41D9F
+patch=1,EE,20BD25AC,extended,AC8305D8
+patch=1,EE,20BD25B0,extended,10000028
+
+[Events\Grand Prix (Visual Only)\Reset]
+description=Hold R3+START and press D-PAD LEFT to reset
+patch=1,EE,E003FF73,extended,0028361C
+patch=1,EE,007B9D8C,extended,00000000
+patch=1,EE,407B9DF4,extended,00170001
+patch=1,EE,00000000,extended,00000000
+
+[Events\Grand Prix (Visual Only)\Disable]
+description=Hold R3+START and press D-PAD LEFT to disable
+patch=1,EE,E008FF73,extended,0028361C
+patch=1,EE,602DB65C,extended,12E30008
+patch=1,EE,00020001,extended,000002B8
+patch=1,EE,00BD2598,extended,9C6305D4
+patch=1,EE,20BD25A4,extended,8EE31D9F
+patch=1,EE,20BD25A8,extended,9C6305D8
+patch=1,EE,20BD25AC,extended,2C630002
+patch=1,EE,20BD25B0,extended,10600028
+patch=1,EE,10BD2700,extended,6464FFFD
+
+[Events\Disable Final Cutscene for Grand Prix]
+patch=1,EE,E001FFFD,extended,00BD2700
+patch=1,EE,10BD2700,extended,64640001
+
+// EXPERIMENTAL
+
+[Experimental\Drive Backwards]
+description=Press SELECT to fix displaying; START to reset.
+patch=1,EE,E0010018,extended,00BD18F8
+patch=1,EE,00BD18F8,extended,9C65001C
+//want-load does nothing
+patch=1,EE,E000FFFF,extended,00A5D6C8
+patch=1,EE,10A5D6C8,extended,64630000
+//Region, on-enter(want-display), as in SS
+patch=1,EE,E001000A,extended,00BBA37C
+patch=1,EE,20BBA37C,extended,1000000A
+//want-display 2
+patch=1,EE,E001001A,extended,009C89D4
+patch=1,EE,209C89D4,extended,00000000
+//SELECT = fix the display thingy
+patch=1,EE,E001FFFE,extended,0028361C
+patch=1,EE,20A820A0,extended,00000000
+//START = Default
+patch=1,EE,E001FFF7,extended,0028361C
+patch=1,EE,20A820A0,extended,10600031
+
+[Experimental\More Laps 2]
+patch=1,EE,E006200B,extended,013CCFA4
+//Increase the number of max laps
+patch=1,EE,213CCF1C,extended,2406FFFF
+patch=1,EE,213CCF20,extended,ACA60004
+patch=1,EE,213CCF24,extended,8CA50004
+//Minimum number of laps is 0
+patch=1,EE,213CCF9C,extended,0000302D
+patch=1,EE,213CCFA0,extended,ACA60000
+patch=1,EE,213CCFA4,extended,8CA50000
+//Check
+patch=1,EE,E00F0081,extended,013CCFAC
+//half-words
+patch=1,EE,202FDC74,extended,84860000
+patch=1,EE,202FDC78,extended,A4660000
+patch=1,EE,213CCF00,extended,84640081
+patch=1,EE,213CCF08,extended,A4640081
+patch=1,EE,213CCF0C,extended,84640081
+patch=1,EE,213CCF28,extended,A4640081
+patch=1,EE,213CCF2C,extended,84640081
+patch=1,EE,213CCF48,extended,A4640081
+patch=1,EE,213CCF60,extended,84640081
+patch=1,EE,213CCF68,extended,A4640081
+patch=1,EE,213CCF6C,extended,84640081
+patch=1,EE,213CCF88,extended,A4640081
+patch=1,EE,213CCF8C,extended,84640081
+patch=1,EE,213CCFA8,extended,A4640081
+patch=1,EE,213CCFAC,extended,84630081
+//Save the laps
+patch=1,EE,E0020000,extended,002FDCB0
+patch=1,EE,202FDCB0,extended,86A40000
+patch=1,EE,202FDCB4,extended,A6840000
+//1st
+patch=1,EE,E00B005A,extended,01C6FCB8
+patch=1,EE,21C6FCB8,extended,8463005A
+patch=1,EE,20EC2E94,extended,84A8005A
+patch=1,EE,20EC1078,extended,8484005A
+patch=1,EE,20EC1148,extended,8463005A
+patch=1,EE,20EC1154,extended,A483005A
+patch=1,EE,20EC1164,extended,8484005A
+patch=1,EE,20EC11AC,extended,8463005A
+patch=1,EE,20EC1368,extended,8463005A
+patch=1,EE,20EBD8B8,extended,8473005A
+patch=1,EE,20EC13E0,extended,8463005A
+patch=1,EE,20EC13FC,extended,8463005A
+//2nd
+patch=1,EE,E00B005A,extended,01C6FCB8
+patch=1,EE,20EC11B0,extended,A78301D8
+patch=1,EE,20EC11DC,extended,878501D8
+patch=1,EE,20EC1264,extended,878301D8
+patch=1,EE,20EC12BC,extended,878301D8
+patch=1,EE,20E6AE20,extended,846301D8
+patch=1,EE,20EBFE40,extended,878301D8
+//nop
+patch=1,EE,E002005B,extended,00EBF324
+patch=1,EE,20EBF324,extended,00000000
+patch=1,EE,20EBF3A4,extended,00000000
+
+[Experimental\Clan Challenge Offline]
+//is-clan-challenge
+patch=1,EE,602E0C54,extended,66E20004
+patch=1,EE,00020001,extended,0000004C
+//Allow only one player in Clan Challenge (can-start-clan-challenge)
+patch=1,EE,602E0CD0,extended,00000000
+patch=1,EE,00020001,extended,0000004C
+//Text fix (*challenge-clans* > random_text(0x391F))
+patch=1,EE,502E5120,extended,00000004
+patch=1,EE,002E0D2C,extended,00000000
+
+// GET ALL
+
+[Get All (Load Profile)\Get All Drivers]
+patch=1,EE,E0012025,extended,00BAE728
+patch=1,EE,20BAE72C,extended,2403FFFF
+
+[Get All (Load Profile)\Get All Tasks]
+patch=1,EE,E0061825,extended,00BAEAE0
+patch=1,EE,00BAEAA0,extended,1000000B
+patch=1,EE,20BAEAC4,extended,34840001
+patch=1,EE,20BAEACC,extended,ACA40000
+patch=1,EE,20BAEAD0,extended,8E840008
+patch=1,EE,20BAEAD4,extended,0064202A
+patch=1,EE,20BAEAD8,extended,1480FFF3
+patch=1,EE,20BAEADC,extended,00000000
+//
+patch=1,EE,E00230B8,extended,00BAEF80
+patch=1,EE,20BAEF84,extended,3C050001
+patch=1,EE,20BAEF88,extended,24A50003
+//
+patch=1,EE,E001282D,extended,00BAEDF8
+patch=1,EE,20BAEDFC,extended,24050001
+//
+patch=1,EE,E002282D,extended,00BAEA60
+patch=1,EE,20BAEA54,extended,24040003
+patch=1,EE,20BAEA68,extended,A4A40008
+
+[Get All (Load Profile)\Get All Vehicle Parts]
+patch=1,EE,E0071825,extended,00BAE9C8
+patch=1,EE,00BAE98C,extended,1000000A
+patch=1,EE,20BAE9AC,extended,34A50006
+patch=1,EE,20BAE9B4,extended,A0C5000A
+patch=1,EE,20BAE9B8,extended,8E850008
+patch=1,EE,20BAE9BC,extended,0085282A
+patch=1,EE,20BAE9C0,extended,14A0FFF4
+patch=1,EE,20BAE9C4,extended,00000000
+
+[Get All (Load Profile)\Get All Vehicles]
+patch=1,EE,E003001C,extended,00BAE828
+patch=1,EE,20BAE82C,extended,34630001
+patch=1,EE,20BAE830,extended,AE430030
+patch=1,EE,20BAE838,extended,24030000
+
+[Get All (Load Profile)\Get All Venues]
+patch=1,EE,E0071825,extended,00BAEAE0
+patch=1,EE,00BAEAA0,extended,1000000B
+patch=1,EE,20BAEAC4,extended,34840001
+patch=1,EE,20BAEACC,extended,ACA40000
+patch=1,EE,20BAEAD0,extended,8E840008
+patch=1,EE,20BAEAD4,extended,0064202A
+patch=1,EE,20BAEAD8,extended,1480FFF3
+patch=1,EE,20BAEADC,extended,00000000
+
+[Get All (Load Profile)\Mad Cash]
+patch=1,EE,E0042025,extended,00BAEAF4
+patch=1,EE,20BAEAF8,extended,3C0349B7
+patch=1,EE,20BAEAFC,extended,24631B00
+patch=1,EE,20BAEB00,extended,AEA3001C
+patch=1,EE,20BAEB08,extended,44030000
+
+[Get All (Load Profile)\Trick Out Vehicles]
+patch=1,EE,E004280A,extended,00BAE948
+patch=1,EE,20BAE898,extended,0000382D
+patch=1,EE,20BAE8D4,extended,0000382D
+patch=1,EE,20BAE910,extended,0000382D
+patch=1,EE,20BAE944,extended,0000302D
+
+// GAMEPLAY
+
+[Gameplay\No Saucer Drones Limit]
+description=Default limit is 5.
+patch=1,EE,602DD750,extended,286300FF
+patch=1,EE,00000001,extended,000003B4
+
+[Gameplay\No Peacemakers Limit]
+description=Default limit is 2.
+patch=1,EE,602DD750,extended,286300FF
+patch=1,EE,00000001,extended,0000032C
+
+[Gameplay\Disable Backwards Bot]
+patch=1,EE,E0011801,extended,002DF7F0
+patch=1,EE,002DF7F0,extended,002E1805
+
+[Gameplay\Jak always has Daxter on the vehicle]
+description=If Daxter as a driver is taken, Jak will still have him
+patch=1,EE,E0011825,extended,00BEE70C
+patch=1,EE,20BEE708,extended,00000000
+
+[Gameplay\Enable Mizo Skin + Voice Lines]
+description=Replaces G.T. Blitz
+//Replace model
+patch=1,EE,E0010004,extended,00BF1D7C
+patch=1,EE,20BF1D78,extended,00000000
+//Replace name
+patch=1,EE,E0014E49,extended,00B43438
+patch=1,EE,10B433E0,extended,000010AF
+//Replace Voice lines
+patch=1,EE,E0010012,extended,00BB8D78
+patch=1,EE,20BB8D7C,extended,00000000
+
+[Gameplay\Bad Weather (Saves to profile!)\Activate]
+patch=1,EE,602E35A0,extended,000000FF
+patch=1,EE,00000001,extended,0000043E
+
+[Gameplay\Bad Weather (Saves to profile!)\Deactivate]
+patch=1,EE,602E35A0,extended,00000000
+patch=1,EE,00000001,extended,0000043E
+
+[Gameplay\Mirrored Game (Saves to profile!)\Activate]
+patch=1,EE,602E35A0,extended,000000FF
+patch=1,EE,00000001,extended,0000043D
+
+[Gameplay\Mirrored Game (Saves to profile!)\Deactivate]
+patch=1,EE,602E35A0,extended,00000000
+patch=1,EE,00000001,extended,0000043D
+
+[Gameplay\Enable Tractor Beam\Race\At last place]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E75E0,extended,00000007
+patch=1,EE,00000001,extended,00000020
+patch=1,EE,602E75E0,extended,00070036
+patch=1,EE,00020001,extended,00000048
+
+[Gameplay\Enable Tractor Beam\Race\At second place]
+description=Replaces Turbo Lock with Tractor Beam
+patch=1,EE,602E75E4,extended,00000007
+patch=1,EE,00000001,extended,0000004E
+
+[Gameplay\Enable Tractor Beam\Race\At middle place]
+description=Replaces Turbo Lock with Tractor Beam
+patch=1,EE,602E75F0,extended,00000007
+patch=1,EE,00000001,extended,0000004E
+
+[Gameplay\Enable Tractor Beam\Arena\when leading]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E75F8,extended,00070002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Enable Tractor Beam\Arena\when tailing]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E760C,extended,00070002
+patch=1,EE,00020001,extended,00000024
+
+[Gameplay\Enable Tractor Beam\Arena\when middle]
+description=Adds Tractor Beam as a possible random weapon
+patch=1,EE,602E7610,extended,00070002
+patch=1,EE,00020001,extended,00000024
+
+// ONLINE-LAN
+
+[Online-LAN\DNAS Bypass]
+patch=1,EE,D1080274,extended,00000006
+patch=1,EE,01080268,extended,00000000
+patch=1,EE,D1080274,extended,00000006
+patch=1,EE,01080274,extended,00000005
+
+[Online-LAN\Events\Enable only Freeze Rally, Death Race, Rush Hour]
+patch=1,EE,602DF004,extended,6463FFFD
+patch=1,EE,00000001,extended,0000006C
+patch=1,EE,602DF004,extended,6463FFFD
+patch=1,EE,00000001,extended,00000084
+
+[Online-LAN\Events\Enable Time Trial for LAN]
+patch=1,EE,602DF004,extended,6463FFFC
+patch=1,EE,00000001,extended,00000104
+
+[Online-LAN\Events\Enable Time Trial for more players]
+patch=1,EE,602DF004,extended,6464FFFC
+patch=1,EE,00000001,extended,000001CC
+patch=1,EE,602DF004,extended,6464FFFC
+patch=1,EE,00000001,extended,00000200
+
+[Online-LAN\Events\Enable all events for LAN and Online]
+patch=1,EE,602DF004,extended,0000182D
+patch=1,EE,00020001,extended,000000E0
+
+[Online-LAN\Other\5 CPUs, 6 Players for events]
+description=Saves onto the event and map when trying to start the event
+patch=1,EE,E0031825,extended,00BCCD2C
+patch=1,EE,20BCCD18,extended,24030506
+patch=1,EE,20BCCD1C,extended,A483000C
+patch=1,EE,20BCCD24,extended,90840005
+
+[Online-LAN\Clan Challenge\Start a Clan Challenge with only one player]
+patch=1,EE,602E0CD0,extended,00000000
+patch=1,EE,00020001,extended,0000004C
+
+// SPLIT-SCREEN
+
+[Split-Screen\Fix crashing on other Events]
+patch=1,EE,E0060010,extended,00B28C44
+patch=1,EE,20B28C24,extended,10850005
+patch=1,EE,20B28C28,extended,9C620014
+patch=1,EE,00B28C2C,extended,9C62001C
+patch=1,EE,20B28C30,extended,14570002
+patch=1,EE,00B28C38,extended,9C620014
+
+[Split-Screen\Level load fix\Enable first!]
+description=2nd controller: L3+SELECT=ON, L3+START=OFF
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E002FFFC,extended,0028371C
+patch=1,EE,00BBA3AC,extended,9C730044 //Region, on-enter(want-display), as in SP
+patch=1,EE,20EB68F8,extended,AEE0745B //Reset the counter on start/restart
+//2nd controller: L3+START to deactivate
+patch=1,EE,E002FFF5,extended,0028371C
+patch=1,EE,00BBA3AC,extended,9C730048 //Region, on-enter(want-display), as in SP
+patch=1,EE,20EB68F8,extended,00000000 //Reset the counter on start/restart
+
+[Split-Screen\Level load fix\Variant 1]
+description=Loads when only one player passes (like in SP)
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E001FFFC,extended,0028371C
+patch=1,EE,00A5D6C8,extended,6463FFFE //Region, on-enter (want-load), as in SP
+//2nd controller: L3+START to deactivate
+patch=1,EE,E001FFF5,extended,0028371C
+patch=1,EE,00A5D6C8,extended,6463FFFF //Region, on-enter (want-load), as in SP
+
+[Split-Screen\Level load fix\Variant 2]
+description=Loads when two players passes
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E003FFFC,extended,0028371C
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A5D6C4,extended,8EE3745B
+patch=1,EE,20A5D6C8,extended,28630001
+patch=1,EE,20A5D6CC,extended,AEE3745B
+//2nd controller: L3+START to deactivate
+patch=1,EE,E003FFF5,extended,0028371C
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A5D6C4,extended,8EE3745F
+patch=1,EE,20A5D6C8,extended,6463FFFF
+patch=1,EE,20A5D6CC,extended,66E40004
+
+[Split-Screen\Level load fix\Force display always]
+description=Displays next level without passing trough region
+patch=1,EE,E0022178,extended,009C95F4
+patch=1,EE,209C9578,extended,00000000
+patch=1,EE,209C95F0,extended,00000000
+
+[Split-Screen\Continue Point Fixes\Tours]
+patch=1,EE,E004726B,extended,00992018
+patch=1,EE,20992000,extended,00992014
+patch=1,EE,20991F90,extended,00991FA4
+patch=1,EE,20991CB0,extended,00991CC4
+patch=1,EE,20991490,extended,009914A4
+
+[Split-Screen\Continue Point Fixes\Other Events]
+patch=1,EE,E0051801,extended,0098F610
+patch=1,EE,209932B0,extended,009932C4
+patch=1,EE,2098FD20,extended,00992D14
+patch=1,EE,2098FDC0,extended,00992F84
+patch=1,EE,2098FD70,extended,00992CA4
+patch=1,EE,2098F610,extended,0098F624
+
+[Split-Screen\Continue Point Fixes\Freeze Rally]
+patch=1,EE,E0147073,extended,009930A8
+patch=1,EE,20991C60,extended,00992AA4
+patch=1,EE,20990EA0,extended,009931A4
+patch=1,EE,20990DB0,extended,00992EF4
+patch=1,EE,20992700,extended,00991F34
+patch=1,EE,20990B80,extended,00993014
+patch=1,EE,20992D00,extended,00992654
+patch=1,EE,20990680,extended,00992124
+patch=1,EE,20991690,extended,009928E4
+patch=1,EE,20990720,extended,00992404
+patch=1,EE,20991930,extended,00991794
+patch=1,EE,20993090,extended,00993234
+patch=1,EE,209920C0,extended,00992494
+patch=1,EE,20990D60,extended,00992BF4
+patch=1,EE,209913A0,extended,00992854
+patch=1,EE,2098F9B0,extended,00992324
+patch=1,EE,20990C70,extended,00992C84
+patch=1,EE,20991B20,extended,00992DD4
+patch=1,EE,20991ED0,extended,00992E64
+patch=1,EE,2098F870,extended,00992244
+patch=1,EE,2098F8C0,extended,00992B14
+
+[Split-Screen\Continue Point Fixes\Time Trial]
+patch=1,EE,E014726B,extended,00990648
+patch=1,EE,20990630,extended,00992AA4
+patch=1,EE,209905E0,extended,009931A4
+patch=1,EE,20990590,extended,00992EF4
+patch=1,EE,20990540,extended,00991F34
+patch=1,EE,209904F0,extended,00993014
+patch=1,EE,20990450,extended,00992654
+patch=1,EE,20990400,extended,00992124
+patch=1,EE,209903B0,extended,009928E4
+patch=1,EE,20990360,extended,00992404
+patch=1,EE,20990310,extended,00991794
+patch=1,EE,20990270,extended,00993234
+patch=1,EE,20990220,extended,00992494
+patch=1,EE,209901D0,extended,00992BF4
+patch=1,EE,20990180,extended,00992854
+patch=1,EE,20990130,extended,00992324
+patch=1,EE,20990090,extended,00992C84
+patch=1,EE,20990040,extended,00992DD4
+patch=1,EE,2098FFF0,extended,00992E64
+patch=1,EE,2098FFA0,extended,00992244
+patch=1,EE,2098FF50,extended,00992B14
+
+[Split-Screen\Bypasses\Button Bypass]
+description=2nd controller = L3+R3 when on driver select
+patch=1,EE,E002FFF9,extended,0028371C
+patch=1,EE,602DD8E8,extended,002E1805
+patch=1,EE,00000001,extended,00000148
+
+[Split-Screen\Bypasses\Bypass event check for SS]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6464FFFD
+patch=1,EE,00000003,extended,000000A0
+patch=1,EE,00000020,extended,000001C0
+
+[Split-Screen\Bypasses\Bypass event check for SS (LAN/Online)]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6464FFFD
+patch=1,EE,00000003,extended,000000A0
+patch=1,EE,00000020,extended,0000068C
+
+[Split-Screen\Bypasses\Rush Hour check (LAN/Online)]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6464FFF0
+patch=1,EE,00000003,extended,000000D0
+patch=1,EE,00000020,extended,00000D6C
+
+[Split-Screen\Bypasses\Time Attack check (LAN/Online)]
+patch=1,EE,E0031805,extended,002E1078
+patch=1,EE,602DD708,extended,6463FFFA
+patch=1,EE,00000003,extended,000000D0
+patch=1,EE,00000020,extended,00000D34

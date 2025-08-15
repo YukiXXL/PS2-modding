@@ -1,0 +1,56 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=CHARACTER SELECT - CHARACTER SELECTION FIX
+
+//JAL replace
+patch=1,EE,2015DE18,extended,0C028040
+patch=1,EE,2015E024,extended,0C028040
+
+//Joker Function
+patch=1,EE,200A0100,extended,27BDFFE0
+patch=1,EE,200A0104,extended,30C2F000
+patch=1,EE,200A0108,extended,FFB00000
+patch=1,EE,200A010C,extended,0000802D
+patch=1,EE,200A0110,extended,FFB10008
+patch=1,EE,200A0114,extended,00A0882D
+patch=1,EE,200A0118,extended,10400024
+patch=1,EE,200A011C,extended,FFBF0010
+patch=1,EE,200A0120,extended,8C82009C
+patch=1,EE,200A0124,extended,10400010
+patch=1,EE,200A0128,extended,30C22000
+patch=1,EE,200A012C,extended,10400004
+patch=1,EE,200A0130,extended,30C28000
+patch=1,EE,200A0134,extended,10000016
+patch=1,EE,200A0138,extended,24100001
+patch=1,EE,200A013C,extended,00000000
+patch=1,EE,200A0140,extended,14400013
+patch=1,EE,200A0144,extended,30C21000
+patch=1,EE,200A0148,extended,54400011
+patch=1,EE,200A014C,extended,24100003
+patch=1,EE,200A0150,extended,30C24000
+patch=1,EE,200A0154,extended,1040000E
+patch=1,EE,200A0158,extended,00000000
+patch=1,EE,200A015C,extended,1000000C
+patch=1,EE,200A0160,extended,24100002
+patch=1,EE,200A0164,extended,00000000
+patch=1,EE,200A0168,extended,10400003
+patch=1,EE,200A016C,extended,30C28000
+patch=1,EE,200A0170,extended,10000007
+patch=1,EE,200A0174,extended,24100003
+patch=1,EE,200A0178,extended,54400005
+patch=1,EE,200A017C,extended,24100002
+patch=1,EE,200A0180,extended,30C21000
+patch=1,EE,200A0184,extended,14400002
+patch=1,EE,200A0188,extended,30C24000
+patch=1,EE,200A018C,extended,0002802B
+patch=1,EE,200A0190,extended,0C057354
+patch=1,EE,200A0194,extended,8E240000
+patch=1,EE,200A0198,extended,24040005
+patch=1,EE,200A019C,extended,00501021
+patch=1,EE,200A01A0,extended,90430002
+patch=1,EE,200A01A4,extended,0C056E4C
+patch=1,EE,200A01A8,extended,AE230000
+patch=1,EE,200A01AC,extended,DFB00000
+patch=1,EE,200A01B0,extended,DFB10008
+patch=1,EE,200A01B4,extended,DFBF0010
+patch=1,EE,200A01B8,extended,03E00008
+patch=1,EE,200A01BC,extended,27BD0020

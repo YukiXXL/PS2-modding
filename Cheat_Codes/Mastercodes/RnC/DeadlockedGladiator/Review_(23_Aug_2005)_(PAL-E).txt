@@ -1,0 +1,6 @@
+"Ratchet: Deadlocked Review (12 Sep 2005) (PAL-E) /ID SCES_532.85"
+//ELF CRC=8A22E23E
+//ENTRYPOINT = 00159238
+sceSifSendCmd   : 90129A00 0C04A628
+scePadRead      : 9013D7F0 0C0468BC
+main            : 90159AE4 0C04BC08

@@ -1,5 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=Allow the usage of the same character (Host)
-
-patch=1,EE,E0013825,extended,00BCF968
-patch=1,EE,20BCF964,extended,00000000

@@ -1,0 +1,15 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=by YukiXXL
+
+//Host Game fix
+patch=1,EE,203438C0,extended,00000000
+
+//Agency Cell fix
+patch=1,EE,202974C4,extended,00000000
+patch=1,EE,202974CC,extended,00000000
+//Contacts fix
+patch=1,EE,203426C4,extended,00000000
+patch=1,EE,203426CC,extended,24020001
+
+//Pick Region crash fix
+patch=1,EE,202BA780,extended,00000000

@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Disable final cutscene
+
+patch=1,EE,E001FFFD,extended,00BD2700
+patch=1,EE,10BD2700,extended,64640001

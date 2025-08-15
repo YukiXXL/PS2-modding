@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Force CPUs to use only one driver
+
+patch=1,EE,60B45970,extended,24050002
+patch=1,EE,00020001,extended,000006EC

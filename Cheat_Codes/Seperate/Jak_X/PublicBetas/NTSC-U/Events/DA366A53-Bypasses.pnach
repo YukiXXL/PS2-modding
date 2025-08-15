@@ -1,0 +1,8 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=EVENTS - BYPASSES
+
+//5 CPUs, 6 Players for events
+patch=1,EE,E0030027,extended,00BCD098
+patch=1,EE,20BCD088,extended,24040506 //addiu a0, zero, $0506
+patch=1,EE,20BCD08C,extended,A464000C //sh a0, $000c(v1)
+patch=1,EE,20BCD090,extended,90630005 //lbu v1, $0005(v1)

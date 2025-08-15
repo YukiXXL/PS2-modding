@@ -1,0 +1,5 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=ONLINE - OTHER
+
+//Start with only one player
+patch=1,EE,002AE050,extended,28410001

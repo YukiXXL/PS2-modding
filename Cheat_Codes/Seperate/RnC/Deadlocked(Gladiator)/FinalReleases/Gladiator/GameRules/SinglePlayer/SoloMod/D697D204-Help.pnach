@@ -1,0 +1,9 @@
+gametitle=Ratchet: Gladiator (PAL-E)
+comment=Fixes tutorials where bots are needed and uses COOP messages.
+
+//Fix Tutorials
+patch=1,EE,E001E8A8,extended,003D96BC
+patch=1,EE,203D96BC,extended,24020001
+//Fix Help Messages
+patch=1,EE,E001E8A8,extended,003D993C
+patch=1,EE,203D993C,extended,24020001

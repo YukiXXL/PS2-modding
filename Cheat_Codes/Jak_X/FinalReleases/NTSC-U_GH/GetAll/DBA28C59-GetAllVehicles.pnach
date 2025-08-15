@@ -1,7 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Get All Vehicles
-
-patch=1,EE,E003001C,extended,00BAE828 //Memory Check
-patch=1,EE,20BAE82C,extended,34630001 //ori v1, v1, $0001
-patch=1,EE,20BAE830,extended,AE430030 //sw v1, $0030(s2)
-patch=1,EE,20BAE838,extended,24030000 //v1 = 0

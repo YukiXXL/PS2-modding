@@ -1,0 +1,25 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=ENGINE TESTBED - MINOTAUR GLADIATOR
+
+//rlevel4_4b
+patch=1,EE,203BE904,extended,5F346C65
+patch=1,EE,103BE908,extended,00006234
+
+//MinotaurGladiator
+patch=1,EE,203BE918,extended,6F6E694D
+patch=1,EE,203BE91C,extended,72756174
+patch=1,EE,203BE920,extended,64616C47
+patch=1,EE,203BE924,extended,6F746169
+patch=1,EE,103BE928,extended,00000072
+
+//Y-axis fix
+patch=1,EE,1027FB5C,extended,3C01B000
+
+//Radius
+patch=1,EE,1027FB68,extended,3C01C340
+
+//Distance from each other
+patch=1,EE,1027FC90,extended,3C013EAA
+
+//Amount
+patch=1,EE,0027FC9C,extended,2A420013

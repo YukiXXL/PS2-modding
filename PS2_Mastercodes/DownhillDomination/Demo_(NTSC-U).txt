@@ -1,6 +1,0 @@
-"Downhill Domination Demo (NTSC-U) /ID SCUS_973.29"
-//ELF CRC=D97F7209
-//ENTRYPOINT = 0010A008
-sceSifSendCmd   : 90259EE0 0C096760
-scePadRead      : 90242B24 0C09465C
-main            : 901B4AC8 0C07E3FE

@@ -1,0 +1,9 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Force CPUs to use players driver
+
+patch=1,EE,602DC82C,extended,938303BC
+patch=1,EE,00020001,extended,000000D8
+patch=1,EE,602DC82C,extended,286200FF
+patch=1,EE,00020001,extended,000000DC
+patch=1,EE,602DC82C,extended,0062A00B
+patch=1,EE,00020001,extended,000000E0

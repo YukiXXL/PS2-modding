@@ -1,0 +1,19 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=OFFLINE CODENAMES: CODENAME STUFF: CODENAME ONLY - MENUS
+
+//In-Game Stats Menu
+patch=1,EE,2035C100,extended,3C120049
+patch=1,EE,2035C104,extended,8E524178
+
+//END MISSION
+//Load the codename
+patch=1,EE,00463394,extended,3C010049
+patch=1,EE,204633C0,extended,8C374178
+patch=1,EE,204633C4,extended,10000072
+//<Codename>
+patch=1,EE,204636C8,extended,26E60001
+//<Codename> managed to not get killed
+patch=1,EE,2046374C,extended,26E70001
+//<Codename> collateral
+patch=1,EE,0046250C,extended,3C010049
+patch=1,EE,20462514,extended,8C314178

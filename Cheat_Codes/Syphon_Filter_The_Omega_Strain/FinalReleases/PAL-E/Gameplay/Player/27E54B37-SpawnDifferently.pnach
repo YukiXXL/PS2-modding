@@ -1,9 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
-comment=GAMEPLAY - PLAYER - SPAWN DIFFERENTLY
-
-//Spawn on different location instead of enemy/friend
-patch=1,EE,201C26F8,extended,00000000
-//Bonus missions
-patch=1,EE,201C2628,extended,00000000
-//Fix for crashes
-patch=1,EE,201B7650,extended,24040001

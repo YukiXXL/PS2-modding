@@ -1,0 +1,6 @@
+"Tekken 4 Trade Demo (NTSC-U) /ID SLUS_280.12"
+//ELF CRC=5F327696
+//ENTRYPOINT = 00180088
+sceSifSendCmd   : 902801A8 0C0A0012
+scePadRead      : 9029264C 0C0A8465
+main            : 90196A18 0C0A6538

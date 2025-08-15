@@ -1,7 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=CPUs always have Dark Eco
-
-patch=1,EE,E00302C0,extended,00F2FF58
-patch=1,EE,20F2FF58,extended,3C033F80
-patch=1,EE,20F2FF5C,extended,44830000
-patch=1,EE,20F2FF60,extended,E44002C0

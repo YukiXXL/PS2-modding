@@ -1,0 +1,16 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=OFFLINE CODENAMES: CODENAME STUFF: CODENAME ONLY - GAMEPLAY
+
+//Show correct codename
+patch=1,EE,202BDEA8,extended,3C01004A
+patch=1,EE,202BDEAC,extended,8C2212A8
+
+//Radio comms
+patch=1,EE,2018CEF0,extended,3C01004A
+patch=1,EE,2018CEF4,extended,8C2212A8
+
+//Minimap
+patch=1,EE,2026E360,extended,3C01004A
+patch=1,EE,2026E364,extended,8C2512A8
+patch=1,EE,202A7340,extended,3C01004A
+patch=1,EE,202A7344,extended,8C2312A8

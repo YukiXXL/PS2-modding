@@ -1,0 +1,33 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=GAMEMODES - GAMEMODE NUMBER 9
+
+//Alternative GM No. 9
+//patch=1,EE,10123670,extended,0C04A25A
+
+//Change character for GM No. 9 (Last two numbers!)
+// 00,01 = Paul
+// 02,03 = Law
+// 05,06 = Lei
+// 07,08 = King
+// 09,0A = Yoshimitsu
+// 0C,0D = Nina
+// 0E,0F = Howarang
+// 10,11,12 = Xiaoling
+// 15,16 = Christie
+// 19,1A = Jin
+// 1C,1D = Julia
+// 20,21 = Brian
+// 24,25 = Kazuya
+// 26,27 = Lee
+// 29,2A = Steve
+// 2B,2C = Marduk
+// 2D,2E = Mokujin (use fix for movesets to avoid crashes)
+// 2F,30 = Jak-5
+// 3B,3C = Asuka
+// 46,47,48 = Raven
+// 49,4A = Feng
+
+//Left Side
+patch=1,EE,00128978,extended,24050024
+//Right Side
+patch=1,EE,00128984,extended,24050049

@@ -1,0 +1,10 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=PATCHES - OTHER
+
+//Flashlight and Night Vision fix
+patch=1,EE,203735F8,extended,48438000
+patch=1,EE,203735FC,extended,4B06521B
+
+//Other languages SNDVAG fix
+patch=1,EE,2049F5CC,extended,482E7325
+patch=1,EE,2049F5D0,extended,0000474F

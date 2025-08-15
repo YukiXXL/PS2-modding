@@ -1,0 +1,11 @@
+gametitle=Syphon Filter: The Omega Strain November Demo
+comment=OFFLINE PRESERVATION: MENUS - MISSION SETUP
+
+//Enable Mission Setup & Join Mission offline
+patch=1,EE,002749C0,extended,10400005
+patch=1,EE,00274B74,extended,10400008
+
+//Join any mission
+patch=1,EE,20274B60,extended,00000000
+//Join Training Center
+patch=1,EE,00274B48,extended,28410018

@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Virus (NTSC-K)
-comment=OFFLINE CODENAMES: MENUS: OFFLINE PRESERVATION - FIXES
-
-//Host Game fix
-patch=1,EE,20345B10,extended,00000000
-
-//Pick Region crash fix
-patch=1,EE,202BC5B0,extended,00000000

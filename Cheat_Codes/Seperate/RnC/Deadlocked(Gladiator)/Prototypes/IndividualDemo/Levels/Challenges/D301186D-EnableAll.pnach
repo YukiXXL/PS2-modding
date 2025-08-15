@@ -1,0 +1,14 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=CHALLENGES - ENABLE ALL
+
+//Enable All Challenges
+patch=1,EE,E001FDCA,extended,0063F70C
+patch=1,EE,2063F70C,extended,24020001
+
+//Include Unplayable Planets
+patch=1,EE,E0010018,extended,0063F6A0
+patch=1,EE,2063F6A0,extended,00000000
+
+//All Challenges available
+patch=1,EE,E001000F,extended,00532C2C
+patch=1,EE,20532C2C,extended,00000000

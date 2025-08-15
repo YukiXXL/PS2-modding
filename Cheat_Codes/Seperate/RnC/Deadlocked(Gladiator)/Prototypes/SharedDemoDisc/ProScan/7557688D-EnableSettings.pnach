@@ -1,0 +1,7 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=PROSCAN - ENABLE SETTINGS
+
+patch=1,EE,E0032021,extended,0059FC00
+patch=1,EE,2059FC04,extended,24020001
+patch=1,EE,2059FC08,extended,03E00008
+patch=1,EE,2059FC0C,extended,A0820000

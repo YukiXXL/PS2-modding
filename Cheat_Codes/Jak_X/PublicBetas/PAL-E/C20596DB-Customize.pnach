@@ -1,6 +1,0 @@
-gametitle=Jak X Beta Trial Code (PAL-E)
-comment=CUSTOMIZE
-
-//Falcon = Mongoose for customization
-patch=1,EE,E001D24D,extended,012E4888
-patch=1,EE,212E4888,extended,002CC5B1

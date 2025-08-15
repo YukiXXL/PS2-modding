@@ -1,0 +1,11 @@
+gametitle=Tekken 5 Final Release (PAL-E)
+comment=CHEATS
+
+//Bunch of Gold
+patch=1,EE,203F8BD8,extended,FFFFFFFF
+
+//Unlock all standard characters
+patch=1,EE,203F8B08,extended,FFFFFFFF
+
+//Unlock all movies
+patch=1,EE,203F8B10,extended,FFFFFFFF

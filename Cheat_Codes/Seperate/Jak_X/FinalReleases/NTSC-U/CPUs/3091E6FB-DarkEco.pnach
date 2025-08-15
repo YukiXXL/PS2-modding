@@ -1,0 +1,7 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=CPUs always have Dark Eco
+
+patch=1,EE,E00302C0,extended,00F2F518
+patch=1,EE,20F2F518,extended,3C033F80
+patch=1,EE,20F2F51C,extended,44830000
+patch=1,EE,20F2F520,extended,E44002C0

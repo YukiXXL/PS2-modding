@@ -1,9 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=RANDOMIZER MOD - ITEMS MAIN
-
-//jal to Joker function
-patch=1,EE,20275454,extended,0C028058
-
-//Branch
-patch=1,EE,200A0174,extended,3C040034 //lui a0, $0034
-patch=1,EE,200A0178,extended,80833820 //lb frames_2

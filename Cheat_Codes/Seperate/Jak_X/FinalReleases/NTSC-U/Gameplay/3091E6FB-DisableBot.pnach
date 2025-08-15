@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=GAMEPLAY - DISABLE BOT
+
+patch=1,EE,E0011601,extended,002DF5F0
+patch=1,EE,002DF5F0,extended,002E1605

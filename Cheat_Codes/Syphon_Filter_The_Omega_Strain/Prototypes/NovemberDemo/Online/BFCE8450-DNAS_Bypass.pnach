@@ -1,6 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo
-comment=ONLINE - DNAS BYPASS
-
-//DNAS Bypass
-patch=1,EE,20343940,extended,03e00008
-patch=1,EE,20343944,extended,00000000

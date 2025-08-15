@@ -1,9 +1,0 @@
-gametitle=Champions of Norrath Demo (NTSC-U)
-comment=SUPER NEW GAME
-
-patch=1,EE,201C33D8,extended,3C030041
-patch=1,EE,201C33DC,extended,24640E00
-patch=1,EE,201C33E0,extended,24050001
-patch=1,EE,201C33E4,extended,AF84D06C
-patch=1,EE,201C33E8,extended,10000180
-patch=1,EE,201C33EC,extended,AF85D068

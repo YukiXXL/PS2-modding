@@ -1,8 +1,0 @@
-gametitle=Jak X Beta Trial Code (NTSC-U)
-comment=ADDONS
-
-//Enable Mongoose
-patch=1,EE,E0030305,extended,002CA9E4
-patch=1,EE,602CC208,extended,80840006
-patch=1,EE,00000002,extended,00000230
-patch=1,EE,0000001C,extended,00000000

@@ -1,0 +1,28 @@
+gametitle=Syphon Filter: The Omega Virus (NTSC-K)
+comment=100% COMPLETE / T4
+
+//Play once for all objectives
+patch=1,EE,2033BCB8,extended,2401FFFF
+patch=1,EE,2033BCBC,extended,AC410084
+patch=1,EE,2033BCC8,extended,24020001
+
+//All Ratings
+patch=1,EE,2033B04C,extended,24010520
+patch=1,EE,2033B050,extended,AC610008
+patch=1,EE,2033B058,extended,24020001
+
+//All Solo Pars
+patch=1,EE,2033E128,extended,240301D6
+patch=1,EE,2033E130,extended,AE230000
+
+//All Team Pars
+patch=1,EE,2033E150,extended,240301D6
+patch=1,EE,2033E158,extended,AE230004
+
+//All Missions, No Collateral
+patch=1,EE,2033E190,extended,24020000
+patch=1,EE,2033E198,extended,AE220010
+
+//All Missions, No Deaths
+patch=1,EE,2033E178,extended,24020000
+patch=1,EE,2033E180,extended,AE220014

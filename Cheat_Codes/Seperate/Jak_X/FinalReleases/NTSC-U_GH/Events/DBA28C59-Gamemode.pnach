@@ -1,0 +1,8 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EVENTS - GAMEMODE
+
+//Save game mode to currently used address
+//Change the last hex-byte in second line
+patch=1,EE,E0020012,extended,00F21940
+patch=1,EE,20F21934,extended,24040011
+patch=1,EE,20F2193C,extended,A0640005

@@ -1,0 +1,6 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=OFFLINE CODENAMES: GAMEPLAY - PLAYER
+
+//Skin based on codename (Bonus missions "online")
+patch=1,EE,001B6378,extended,902421C4
+patch=1,EE,001B63B8,extended,902221C4

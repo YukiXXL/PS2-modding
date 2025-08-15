@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo
-comment=MENUS
-
-//Activate menu buttons
-patch=1,EE,003F2E98,extended,8F390014

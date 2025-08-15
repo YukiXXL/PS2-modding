@@ -1,0 +1,5 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=MISC
+
+//Red color health bars
+patch=1,EE,001D190C,extended,2405000C

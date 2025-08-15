@@ -1,5 +1,0 @@
-gametitle=Ratchet: Gladiator (PAL-E)
-comment=Enable Jak skin
-
-patch=1,EE,E001E8A8,extended,00620EE0
-patch=1,EE,20620EE0,extended,24020001

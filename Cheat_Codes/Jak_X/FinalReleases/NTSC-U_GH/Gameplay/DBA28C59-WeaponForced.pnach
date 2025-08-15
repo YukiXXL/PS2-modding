@@ -1,6 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Force a weapon that picks-up each time
-
-//Force a weapon that picks-up each time
-patch=1,EE,602E6AF8,extended,24050007
-patch=1,EE,00020001,extended,00000040

@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain November Demo
-comment=OFFLINE PRESERVATION: MENUS - FIXES
-
-//Pick Region crash fix
-patch=1,EE,2028F448,extended,00000000

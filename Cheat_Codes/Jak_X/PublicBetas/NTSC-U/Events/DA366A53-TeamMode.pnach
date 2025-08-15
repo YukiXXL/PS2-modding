@@ -1,9 +1,0 @@
-gametitle=Jak X Beta Trial Code (NTSC-U)
-comment=Changing back to the task changes the Default Team mode
-
-//a0 = task address
-patch=1,EE,E0041825,extended,00BD0010 //Memory Check
-patch=1,EE,20BCFFFC,extended,909902B8 //lbu t9, $0088(a0)
-patch=1,EE,20BD0000,extended,3B390020 //xori t9, t9, $0020
-patch=1,EE,20BD0004,extended,A09902B8 //sb t9, $0088(a0)
-patch=1,EE,20BD0008,extended,90840005 //lbu a0, $0005(a0)

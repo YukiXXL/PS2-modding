@@ -1,6 +1,0 @@
-gametitle=Ratchet: Deadlocked (NTSC-U)
-comment=PLANETS
-
-//Enable Dreadzone Interior
-patch=1,EE,E001000F,extended,006007FC
-patch=1,EE,006007FC,extended,24020010

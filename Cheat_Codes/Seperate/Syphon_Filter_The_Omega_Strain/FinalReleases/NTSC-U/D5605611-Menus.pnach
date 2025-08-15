@@ -1,0 +1,9 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=MENUS
+
+//Enable TEST button
+patch=1,EE,00506490,byte,1
+patch=1,EE,0051EEA8,byte,0
+
+//Awards 2 ratings/ranks on the back (Awards 3)
+patch=1,EE,00492A3C,extended,0000FF02

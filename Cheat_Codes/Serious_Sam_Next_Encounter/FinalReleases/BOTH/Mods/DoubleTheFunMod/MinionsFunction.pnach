@@ -1,8 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release
-comment=DOUBLE THE FUN MOD - MINIONS
-
-patch=1,EE,200A0114,extended,24050002 //Multiplier(a1) = 2
-//Joker Code
-patch=1,EE,200A0110,extended,8C64000C //Load TotalCount
-patch=1,EE,200A0118,extended,03E00008 //jr ra
-patch=1,EE,200A011C,extended,00852018 //Multiply TotalCount with Multiplier(a1)

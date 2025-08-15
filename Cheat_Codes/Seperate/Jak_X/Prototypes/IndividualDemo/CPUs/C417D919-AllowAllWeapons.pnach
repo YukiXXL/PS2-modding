@@ -1,0 +1,9 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=Allow CPUs to get all weapons (Novas, Turbo Lock)
+
+//Novas
+patch=1,EE,60265150,extended,2AA30020
+patch=1,EE,00000001,extended,00000098
+//Turbo Lock
+patch=1,EE,60264144,extended,2B830020
+patch=1,EE,00000001,extended,00000164

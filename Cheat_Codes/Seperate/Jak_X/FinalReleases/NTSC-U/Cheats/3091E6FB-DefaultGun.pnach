@@ -1,0 +1,12 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=CHEATS - DEFAULT GUN
+
+//cheat_default_gun_in_race
+patch=1,EE,E0021825,extended,00F20E64
+patch=1,EE,20F20E5C,extended,66E30004
+patch=1,EE,20F20E60,extended,AEE3DC63
+
+//default_gun_in_other_events
+patch=1,EE,E0020012,extended,00F20E50
+patch=1,EE,20F20E54,extended,10000058
+patch=1,EE,20F20E58,extended,00801825

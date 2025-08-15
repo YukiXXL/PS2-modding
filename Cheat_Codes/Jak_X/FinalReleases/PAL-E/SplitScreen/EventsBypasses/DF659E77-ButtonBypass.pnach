@@ -1,6 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=Using 2nd controller = L3+R3 when on car select
-
-patch=1,EE,E002FFF9,extended,0028361C
-patch=1,EE,602DD7E8,extended,002E1705
-patch=1,EE,00000001,extended,00000148

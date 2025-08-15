@@ -1,0 +1,5 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=Offline Preservation - Enable Online Menu
+
+//Enable Online in Offline
+patch=1,EE,1025CA98,extended,0C0A553E

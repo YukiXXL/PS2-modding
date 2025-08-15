@@ -1,0 +1,52 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Replaces Online exclusive levels.
+
+//egypt > canyon
+patch=1,EE,203BD7C0,extended,796E6163
+patch=1,EE,103BD7C4,extended,00006E6F
+//text replacement
+patch=1,EE,0036C160,extended,00000117
+patch=1,EE,0036C164,extended,00000118
+
+//flight > teeth
+patch=1,EE,203BD7C8,extended,74656574
+patch=1,EE,103BD7CC,extended,00000068
+//text replacement
+patch=1,EE,0036C16C,extended,0000012B
+patch=1,EE,0036C170,extended,0000012C
+
+//fort > venice
+patch=1,EE,203BD7D0,extended,696E6576
+patch=1,EE,103BD7D4,extended,00006563
+//text replacement
+patch=1,EE,0036C178,extended,0000012D
+patch=1,EE,0036C17C,extended,0000012E
+
+//maya > vertigo
+patch=1,EE,203BD7D8,extended,74726576
+patch=1,EE,203BD7DC,extended,006F6769
+//text replacement
+patch=1,EE,0036C184,extended,0000012F
+patch=1,EE,0036C188,extended,00000130
+
+//medieval > military
+patch=1,EE,203BD7E0,extended,696C696D
+patch=1,EE,203BD7E4,extended,79726174
+//text replacement
+patch=1,EE,0036C190,extended,00000123
+patch=1,EE,0036C194,extended,00000124
+
+//neo_tokyo > offworld
+patch=1,EE,203BD7F0,extended,7766666F
+patch=1,EE,203BD7F4,extended,646C726F
+patch=1,EE,003BD7F8,extended,00000000
+//text replacement
+patch=1,EE,0036C19C,extended,00000127
+patch=1,EE,0036C1A0,extended,00000128
+
+//russia > western
+patch=1,EE,203BD800,extended,74736577
+patch=1,EE,203BD804,extended,006E7265
+//text replacement
+patch=1,EE,0036C1A8,extended,00000133
+patch=1,EE,0036C1AC,extended,00000134

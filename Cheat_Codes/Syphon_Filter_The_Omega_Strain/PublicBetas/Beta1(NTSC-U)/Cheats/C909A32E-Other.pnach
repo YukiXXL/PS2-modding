@@ -1,5 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Public Beta 1 (NTSC-U)
-comment=CHEATS - MENUS
-
-//gCHEATS_ENABLED
-patch=1,EE,004AC548,byte,1

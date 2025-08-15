@@ -1,0 +1,19 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=GAMEPLAY - PLAYER - RADIO COMMS
+
+//Disable radio logs
+patch=1,EE,201C71A0,extended,00000000
+
+//Change comms voice. (Only change last 2 Hex values)
+// 15 = Teresa?
+// 16 = Imani
+// 17 = Stone
+// 18 = Zohar
+// 19 = Meggie
+// 1A = Mujari
+// 1B = Lian
+// 1C = Gabe
+// 1E = Quickchat Lady
+
+//Comms voice
+patch=1,EE,20330BF0,extended,24020018

@@ -1,5 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=CPUs use all drivers
-
-patch=1,EE,602E0B58,extended,00000000
-patch=1,EE,00020001,extended,00000070

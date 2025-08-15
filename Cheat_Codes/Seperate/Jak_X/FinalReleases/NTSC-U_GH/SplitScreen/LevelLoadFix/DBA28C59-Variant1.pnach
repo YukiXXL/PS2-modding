@@ -1,0 +1,10 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=L3+SELECT WHEN ON TOUR; L3+START WHEN NOT.
+
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E001FFFC,extended,0028371C
+patch=1,EE,00A5D6C8,extended,6463FFFE //Region, on-enter (want-load), as in SP
+
+//2nd controller: L3+START to deactivate
+patch=1,EE,E001FFF5,extended,0028371C
+patch=1,EE,00A5D6C8,extended,6463FFFF //Region, on-enter (want-load), as in SP

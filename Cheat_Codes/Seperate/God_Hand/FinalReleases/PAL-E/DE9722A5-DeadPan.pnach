@@ -1,0 +1,8 @@
+gametitle=God Hand Final Release (PAL-E)
+comment=TCRF
+
+//DEAD PAN
+patch=1,EE,201250A8,extended,00001021
+patch=1,EE,201251CC,extended,00001021
+patch=1,EE,20125264,extended,00002021
+patch=1,EE,20125338,extended,00001821

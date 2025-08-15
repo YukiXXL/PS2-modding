@@ -1,7 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=CPUs always have Dark Eco
-
-patch=1,EE,E00302C0,extended,00F30008
-patch=1,EE,20F30008,extended,3C033F80
-patch=1,EE,20F3000C,extended,44830000
-patch=1,EE,20F30014,extended,E44002C0

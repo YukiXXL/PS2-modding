@@ -1,9 +1,0 @@
-gametitle=Ratchet: Deadlocked (NTSC-U)
-comment=Fixes tutorials where bots are needed and uses COOP messages.
-
-//Fix Tutorials
-patch=1,EE,E001E828,extended,003D9214
-patch=1,EE,203D9214,extended,24020001
-//Fix Help Messages
-patch=1,EE,E001E828,extended,003D9494
-patch=1,EE,203D9494,extended,24020001

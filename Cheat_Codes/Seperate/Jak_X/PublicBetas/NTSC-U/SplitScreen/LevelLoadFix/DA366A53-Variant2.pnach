@@ -1,0 +1,16 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=L3+SELECT = ON; L3+START = OFF
+
+//2nd controller: L3+SELECT to activate
+patch=1,EE,E003FFFC,extended,00272D9C
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A80854,extended,8EE3745B
+patch=1,EE,20A80858,extended,28630001
+patch=1,EE,20A8085C,extended,AEE3745B
+
+//2nd controller: L3+START to deactivate
+patch=1,EE,E003FFF5,extended,00272D9C
+//Region, on-enter (want-load), after the second player passes
+patch=1,EE,00A80854,extended,8EE3745F
+patch=1,EE,20A80858,extended,6463FFFF
+patch=1,EE,20A8085C,extended,66E40004

@@ -1,0 +1,19 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=ONLINE/LAN - EVENTS
+
+//Enable events for LAN and Online
+//Freeze Rally, Death Race, Rush Hour
+patch=1,EE,E002FFFF,extended,0131D8B8
+patch=1,EE,0131D8A0,extended,6463FFFD
+patch=1,EE,0131D8B8,extended,6464FFFD
+//Time Trial for LAN
+patch=1,EE,E001FFFD,extended,0131D938
+patch=1,EE,0131D938,extended,6463FFFC
+//Enable Time Trial for more players
+//patch=1,EE,E002FFFD,extended,0131DA34
+//patch=1,EE,0131DA00,extended,6464FFFC
+//patch=1,EE,0131DA34,extended,6464FFFC
+
+//Enable all events for LAN and Online
+//patch=1,EE,E001182F,extended,0131D914
+//patch=1,EE,2131D914,extended,0000182D

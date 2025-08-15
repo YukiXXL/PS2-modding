@@ -1,6 +1,0 @@
-gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=VENDOR - OMEGA MODS
-
-patch=1,EE,E0020008,extended,005C4648
-patch=1,EE,205C4644,extended,24020001
-patch=1,EE,205C464C,extended,A0820000

@@ -1,0 +1,11 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+comment=OFFLINE CODENAMES: MENUS: CODENAME ONLY - BEGIN MISSION
+
+//Write codename and join filter
+patch=1,EE,202AB468,extended,90820045
+patch=1,EE,202AB46C,extended,8C840040
+patch=1,EE,202AB474,extended,3C01004A
+patch=1,EE,202AB478,extended,2484FFFF
+patch=1,EE,202AB47C,extended,AC24B778
+patch=1,EE,202AB480,extended,3C010058
+patch=1,EE,202AB488,extended,9022D424

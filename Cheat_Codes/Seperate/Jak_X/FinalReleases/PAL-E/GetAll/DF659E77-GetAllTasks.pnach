@@ -1,0 +1,22 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Get All Tasks (Adventure Mode Completed)
+
+patch=1,EE,E0061825,extended,00BAEA28 //Memory Check
+patch=1,EE,00BAE9E8,extended,1000000B //beq zero, zero, $00baead0
+patch=1,EE,20BAEA0C,extended,34840001 //ori a0, a0, $0001
+patch=1,EE,20BAEA14,extended,ACA40000 //sw a0, $0000(a1)
+patch=1,EE,20BAEA18,extended,8E840008 //lw a0, $0008(s4)
+patch=1,EE,20BAEA1C,extended,0064202A //slt a0, v1, a0
+patch=1,EE,20BAEA20,extended,1480FFF3 //bne a0, zero, $00baeaa8
+patch=1,EE,20BAEA24,extended,00000000 //nop
+//
+patch=1,EE,E00230B8,extended,00BAEEC8 //Memory Check
+patch=1,EE,20BAEECC,extended,3C050001 //lui a1, $0001
+patch=1,EE,20BAEED0,extended,24A50003 //addiu a1, a1, $0003
+//
+patch=1,EE,E001282D,extended,00BAED40 //Memory Check
+patch=1,EE,20BAED44,extended,24050001 //addiu a1, zero, $0001
+//
+patch=1,EE,E002282D,extended,00BAE9A8 //Memory Check
+patch=1,EE,20BAE99C,extended,24040003 //addiu a0, zero, $0003
+patch=1,EE,20BAE9B0,extended,A4A40008 //sh a0, $0008(a1)

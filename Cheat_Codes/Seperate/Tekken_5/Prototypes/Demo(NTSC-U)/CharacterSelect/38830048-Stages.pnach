@@ -1,0 +1,16 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=CHARACTER SELECT - STAGES
+
+//Enable selecting stages
+patch=1,EE,203A9BC0,extended,0015DCC0
+
+//Unlock all stages
+patch=1,EE,2015D258,extended,24E70001
+patch=1,EE,2015D25C,extended,24E4FFFF
+patch=1,EE,0015D264,extended,28E50010
+
+//Allow selecting a stage in CharSelect for Arcade
+patch=1,EE,2012A92C,extended,00000000
+
+//Allow selecting a stage in CharSelect for GM. 9
+patch=1,EE,20128990,extended,00000000

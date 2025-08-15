@@ -1,0 +1,6 @@
+gametitle=Jak X Beta Trial Code (NTSC-U)
+comment=CUSTOMIZE
+
+//Falcon = Mongoose for customization
+patch=1,EE,E001D14D,extended,012E4788
+patch=1,EE,212E4788,extended,002CC4B1

@@ -1,0 +1,7 @@
+gametitle= Tekken 4 (NTSC-U)
+comment=from TCRF
+
+//Force Progressive Scan picker
+patch=1,EE,001ED854,extended,24020000
+//PAL Version of the menu
+//patch=1,EE,001ED8DC,extended,24050004

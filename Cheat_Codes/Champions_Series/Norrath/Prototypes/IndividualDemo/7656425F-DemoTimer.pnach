@@ -1,8 +1,0 @@
-gametitle=Champions of Norrath Demo (NTSC-U)
-comment=DEMO TIMER
-
-//Turn off Demo end checks
-patch=1,EE,202C2948,extended,10000007
-
-//Turn off Demo Timer
-//patch=1,EE,002C293C,extended,24630000

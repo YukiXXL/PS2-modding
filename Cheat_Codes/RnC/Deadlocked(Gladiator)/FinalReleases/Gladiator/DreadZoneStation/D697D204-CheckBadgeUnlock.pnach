@@ -1,6 +1,0 @@
-gametitle=Ratchet: Gladiator (PAL-E)
-comment=CheckBadgeUnlock
-
-patch=1,EE,E0020017,extended,006C6F80
-patch=1,EE,206C6F70,extended,03E00008
-patch=1,EE,206C6F74,extended,24020001

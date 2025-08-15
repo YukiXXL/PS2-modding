@@ -1,0 +1,6 @@
+gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=Fix continue-points
+
+patch=1,EE,E0023F01,extended,00925508 //Memory Check
+patch=1,EE,20925448,extended,00928E74 //Jungle
+patch=1,EE,20925508,extended,00929114 //Clifftop

@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=Offline Preservation - Online Emulation - Staging Area
+
+//Bypass connecting errors
+patch=1,EE,0029A110,extended,24020000
+patch=1,EE,00295E70,extended,24020000
+
+//Set LobbyState = 9. Starts the game.
+patch=1,EE,00266D74,extended,10000003
+patch=1,EE,20266D84,extended,3C040037
+patch=1,EE,20266D88,extended,24020009
+patch=1,EE,20266D8C,extended,AC82E0B0

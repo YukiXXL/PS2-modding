@@ -1,0 +1,24 @@
+gametitle=Syphon Filter: The Omega Strain Public Beta 2 (PAL-E)
+comment=OFFLINE PRESERVATION: CODENAME STUFF - MENUS
+
+//EQUIPMENT SETUP
+//Beginning at it (Can crash if disabled when using codenames)
+patch=1,EE,001789B8,extended,90224884
+//After pressing square or triangle
+patch=1,EE,002C3084,extended,90224884
+patch=1,EE,002C3158,extended,90224884
+
+//Stats
+patch=1,EE,0036E1F4,extended,90224884
+patch=1,EE,004643F8,extended,90224884
+
+//START button
+patch=1,EE,002A84D4,extended,90224884
+
+//END MISSION
+//Marks and Eff award
+patch=1,EE,004653A0,extended,90224884
+//<Codename> managed to not get killed
+patch=1,EE,00465580,extended,90224884
+//Medals and stuff
+patch=1,EE,00462494,extended,90224884

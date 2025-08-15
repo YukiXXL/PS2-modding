@@ -1,0 +1,12 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=CHEATS - DEFAULT GUN
+
+//cheat_default_gun_in_race
+patch=1,EE,E0021825,extended,00F21954
+patch=1,EE,20F2194C,extended,66E30004
+patch=1,EE,20F21950,extended,AEE3DC63
+
+//default_gun_in_other_events
+patch=1,EE,E0020012,extended,00F21940
+patch=1,EE,20F21944,extended,10000058
+patch=1,EE,20F21948,extended,00801825

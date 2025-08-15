@@ -1,0 +1,21 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=CHEATS
+
+//ice-training-task as race gm
+patch=1,EE,E0020F98,extended,00980E28
+patch=1,EE,1098C9E8,extended,00000F11
+patch=1,EE,10980E28,extended,00000098
+
+//snow-training2-task as race gm
+patch=1,EE,E0020020,extended,0098B328
+patch=1,EE,1098B328,extended,00001020
+patch=1,EE,10980BF8,extended,0000009A
+
+//snow-training2-task as race gm
+patch=1,EE,E002B4C4,extended,0098B32C
+patch=1,EE,2098B32C,extended,00980CD4
+
+//drome-race-task -> artist-artist-task
+patch=1,EE,E002CFE4,extended,0098CE1C
+patch=1,EE,2098CE1C,extended,0097EB34
+patch=1,EE,1097EA78,extended,0000000E

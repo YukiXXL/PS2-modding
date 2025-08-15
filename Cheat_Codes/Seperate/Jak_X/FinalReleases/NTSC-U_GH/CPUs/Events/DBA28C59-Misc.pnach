@@ -1,0 +1,11 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=Other CPU event things
+
+//CPUs are seperate team than the player 1
+patch=1,EE,E0020010,extended,00BD1270
+patch=1,EE,20BD1264,extended,838300CB
+patch=1,EE,20BD1268,extended,10600009
+
+//CPUs can use any vehicle on any CUP
+patch=1,EE,602E0F7C,extended,10000019
+patch=1,EE,00020001,extended,00000008

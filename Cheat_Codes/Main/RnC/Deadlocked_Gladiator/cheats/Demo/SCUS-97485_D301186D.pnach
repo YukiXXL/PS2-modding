@@ -1,0 +1,449 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=Special thanks to Moose for the help tips.
+
+// DEMO
+
+[Demo\Disable Demo finished when beating all challenges]
+author=YukiXXL
+patch=1,EE,E001FFFF,extended,004000FC
+patch=1,EE,204000F4,extended,10000009
+
+[Demo\Disable Demo Timer (when AFK) in Main Menu]
+author=YukiXXL
+patch=1,EE,E0019868,extended,008F1204
+patch=1,EE,208F1200,extended,10000007
+
+// MULTIPLAYER
+
+[Multiplayer Menu\Enable]
+author=YukiXXL
+patch=1,EE,E0020084,extended,00714628
+patch=1,EE,2071461C,extended,10000030
+patch=1,EE,20714620,extended,24020016
+
+[Multiplayer Menu\Enable all options]
+author=YukiXXL
+patch=1,EE,E0010058,extended,00740208
+patch=1,EE,0074019C,extended,24050004 //OnlinePlay
+patch=1,EE,00740204,extended,24050004 //EditProfiles
+
+[Multiplayer Menu\Online Play Bypass]
+author=YukiXXL
+patch=1,EE,E001000C,extended,007403B4
+patch=1,EE,007403B4,extended,24030017
+
+[Multiplayer Menu\Online Play Bypass (Local Play function)]
+author=YukiXXL
+patch=1,EE,E001B10A,extended,0072C370
+patch=1,EE,1072C370,extended,0C1CEC7A
+
+[Multiplayer Menu\Enable All Local Play Options]
+author=YukiXXL
+patch=1,EE,E004202D,extended,0073AEDC
+patch=1,EE,0073AC9C,extended,24050004
+patch=1,EE,0073ACB4,extended,24050004
+patch=1,EE,0073AEA8,extended,24050004
+patch=1,EE,0073AED4,extended,24050004
+
+[Multiplayer Menu\Enable Mode Change for Local Play]
+author=YukiXXL
+description=Refreshes after changing the map.
+//Function Restore
+patch=1,EE,E0030005,extended,0072C308
+patch=1,EE,2072C2D4,extended,0240202D
+patch=1,EE,2072C2D8,extended,8E4301EC
+patch=1,EE,2072C304,extended,10003B54
+patch=1,EE,E002002C,extended,0073B044
+patch=1,EE,2073B040,extended,1000C49E
+patch=1,EE,2073B044,extended,00000000
+//Correct the address
+patch=1,EE,E0030058,extended,0072D3E4
+patch=1,EE,0073AF88,extended,8E440070
+patch=1,EE,0073AFB0,extended,8E440070
+patch=1,EE,0072D3E0,extended,8E040070
+
+[Multiplayer Menu\Go back from the lobby instead of quiting]
+author=YukiXXL
+patch=1,EE,E004202D,extended,0073E960
+patch=1,EE,2073E950,extended,3C030021
+patch=1,EE,2073E954,extended,8C63F10C
+patch=1,EE,2073E958,extended,24020013
+patch=1,EE,2073E95C,extended,AC6200EC
+
+// - PLAYER 1
+
+// -- CHARACTER
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Character\Change Enabled]
+author=YukiXXL
+description=Re-create the lobby to see the changes.
+patch=1,EE,2073E19C,extended,AE24021C
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Character\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+UP/DOWN.
+//Increment
+patch=1,EE,E001F3EF,extended,001D2702
+patch=1,EE,30000001,extended,0073E174
+//Decrement
+patch=1,EE,E001F3BF,extended,001D2702
+patch=1,EE,30100001,extended,0073E174
+//Reset if too high
+patch=1,EE,E0010014,extended,0073E174
+patch=1,EE,0073E174,extended,24040000
+//Reset if too low
+patch=1,EE,E00100FF,extended,0073E174
+patch=1,EE,0073E174,extended,24040013
+
+[Multiplayer Menu\Player 1\Dynamic\Character\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+UP/DOWN.
+//Increment
+patch=1,EE,E001F3EF,extended,001D2702
+patch=1,EE,30000001,extended,011CE01C
+//Decrement
+patch=1,EE,E001F3BF,extended,001D2702
+patch=1,EE,30100001,extended,011CE01C
+//Reset if too high
+patch=1,EE,E0010014,extended,011CE01C
+patch=1,EE,011CE01C,extended,00000000
+//Reset if too low
+patch=1,EE,E00100FF,extended,011CE01C
+patch=1,EE,011CE01C,extended,00000013
+
+// -- TEAM
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Team\Change Enabled]
+author=YukiXXL
+description=Re-create the lobby to see the changes.
+patch=1,EE,2073E1A0,extended,AE230220
+
+[Multiplayer Menu\Player 1\Non-Dynamic\Team\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+LEFT/RIGHT.
+//Increment
+patch=1,EE,E001F3DF,extended,001D2702
+patch=1,EE,30000001,extended,0073E170
+//Decrement
+patch=1,EE,E001F37F,extended,001D2702
+patch=1,EE,30100001,extended,0073E170
+//Reset if too high
+patch=1,EE,E001000B,extended,0073E170
+patch=1,EE,0073E170,extended,24030000
+//Reset if too low
+patch=1,EE,E00100FF,extended,0073E170
+patch=1,EE,0073E170,extended,2403000A
+
+[Multiplayer Menu\Player 1\Dynamic\Team\Change Enable Switching]
+author=YukiXXL
+description=L1+R1+LEFT/RIGHT.
+//Increment
+patch=1,EE,E001F3DF,extended,001D2702
+patch=1,EE,30000001,extended,011CE02C
+//Decrement
+patch=1,EE,E001F37F,extended,001D2702
+patch=1,EE,30100001,extended,011CE02C
+//Reset if too high
+patch=1,EE,E001000B,extended,011CE02C
+patch=1,EE,011CE02C,extended,00000000
+//Reset if too low
+patch=1,EE,E00100FF,extended,011CE02C
+patch=1,EE,011CE02C,extended,0000000A
+
+// PROSCAN
+
+[ProScan\Enable NTSC Progressive]
+author=YukiXXL
+patch=1,EE,E0017D18,extended,009160E0
+patch=1,EE,209160E0,extended,AC237D18
+
+[ProScan\Enable Progressive option in Settings]
+author=YukiXXL
+// save true to "is_buttonEnabled"
+patch=1,EE,E0032021,extended,0059BD40
+patch=1,EE,2059BD44,extended,24020001
+patch=1,EE,2059BD48,extended,03E00008
+patch=1,EE,2059BD4C,extended,A0820000
+//Sync Progressive option with "NTSCProgressive" function
+patch=1,EE,5016A0F4,extended,00000001
+patch=1,EE,00207D18,extended,00000000
+
+// VENDOR
+
+[Vendor\Enable all weapons]
+author=YukiXXL
+patch=1,EE,E0020008,extended,005C06B8
+patch=1,EE,205C06B4,extended,24020001
+patch=1,EE,205C06BC,extended,A0820000
+
+[Vendor\Enable all Omega Mods]
+author=YukiXXL
+patch=1,EE,E0020008,extended,005C06D0
+patch=1,EE,205C06CC,extended,24020001
+patch=1,EE,205C06D4,extended,A0820000
+
+[Vendor\Enable all bots upgrades]
+author=YukiXXL
+description=Requires Bot Shop
+patch=1,EE,E0020008,extended,005C06E8
+patch=1,EE,205C06E4,extended,24020001
+patch=1,EE,205C06EC,extended,A0820000
+
+[Vendor\Bots Shop]
+author=YukiXXL
+description=Replaces Help Log with Bots Shop
+patch=1,EE,E0040012,extended,00598DB4
+patch=1,EE,00598DB4,extended,24050010
+//Enable Extra Color
+patch=1,EE,005BFCE0,extended,2A020009
+//Fix applying items
+patch=1,EE,205A49F4,extended,24060003
+patch=1,EE,0054EF5C,extended,2C420008
+
+// LEVELS
+
+[Levels\Planets\Planets Selection screen]
+author=YukiXXL
+description=Replaces Main Menu with Quit and Quit with Planets Selection
+patch=1,EE,E003605E,extended,00598680
+patch=1,EE,10598580,extended,26068D28
+patch=1,EE,00598670,extended,3C060059
+patch=1,EE,1059867C,extended,24C69638
+//Planets Selection
+patch=1,EE,E0010007,extended,00589648
+patch=1,EE,00589648,extended,24050003
+
+[Levels\Planets\Enable All Planets]
+author=YukiXXL
+patch=1,EE,E001FE04,extended,0063F66C
+patch=1,EE,2063F66C,extended,24020001
+
+[Levels\Planets\Enable All Planets\Include Unplayable]
+author=YukiXXL
+patch=1,EE,E0010007,extended,0063F65C
+patch=1,EE,2063F65C,extended,00000000
+
+[Levels\Challenges\Enable All Challenges]
+author=YukiXXL
+patch=1,EE,E001FDCA,extended,0063F70C
+patch=1,EE,2063F70C,extended,24020001
+
+[Levels\Challenges\Enable All Challenges\Include Unplayable Planets]
+author=YukiXXL
+description=Doesn't work. Kept for reference.
+patch=1,EE,E0010018,extended,0063F6A0
+patch=1,EE,2063F6A0,extended,00000000
+
+[Levels\Challenges\All Challenges available]
+author=YukiXXL
+patch=1,EE,E001000F,extended,00532C2C
+patch=1,EE,20532C2C,extended,00000000
+
+[Levels\Challenges\Challenges Stay Visible After Beating]
+author=YukiXXL
+patch=1,EE,E0020004,extended,00532E1C
+patch=1,EE,20532E18,extended,24030001
+patch=1,EE,20532E20,extended,AC430010
+
+[Levels\CheckBadgeUnlock]
+author=YukiXXL
+description=Unlocks bunch of things. Kept for reference.
+patch=1,EE,E0020008,extended,0063F818
+patch=1,EE,2063F810,extended,03E00008
+patch=1,EE,2063F814,extended,24020001
+
+// CHEATS
+
+[Cheats\Bots\Bots have all abilities]
+author=YukiXXL
+patch=1,EE,E00101D0,extended,0054EDF4
+patch=1,EE,2054EDF4,extended,24020001
+
+[Cheats\Challenges\Unlock All Challenges]
+author=YukiXXL
+patch=1,EE,E0010008,extended,00532C68
+patch=1,EE,00532C64,extended,34420007
+
+[Cheats\Profile\Unlock Everything and enable all cheats]
+author=YukiXXL
+patch=1,EE,E001FFF9,extended,0090AEA0
+patch=1,EE,2090AE90,extended,34630001
+
+[Cheats\Profile\Get all weapons and Gadgets]
+author=YukiXXL
+patch=1,EE,E001FFFF,extended,0063F254
+patch=1,EE,1063F254,extended,24060000
+
+[Cheats\Profile\Weapons\Level\All Weapons Max Level (4)]
+author=YukiXXL
+patch=1,EE,E0010550,extended,0063CA58
+patch=1,EE,2063CA58,extended,24020003
+
+[Cheats\Profile\Weapons\Level\All Weapons Level 10 (Unused)]
+author=YukiXXL
+patch=1,EE,E0010550,extended,0063CA58
+patch=1,EE,2063CA58,extended,24020009
+
+[Cheats\Profile\Get All Omega Mods]
+author=YukiXXL
+patch=1,EE,E0012025,extended,0063E870
+patch=1,EE,2063E870,extended,240400FF
+
+[Cheats\Profile\Max Bolts]
+author=YukiXXL
+patch=1,EE,E0010020,extended,0062B874
+patch=1,EE,2062B870,extended,00631818
+
+// MISC
+
+[Misc\Weapons\Enable All Omega Mods for All Weapons]
+author=YukiXXL
+patch=1,EE,E0010003,extended,0063EC7C
+patch=1,EE,2063EC7C,extended,00000000
+
+// - CHANGE DIFFICULTY
+
+[Misc\Change Difficulty\Couch Potato]
+author=YukiXXL
+patch=1,EE,E0010002,extended,003E6B50
+patch=1,EE,003E6B50,extended,00000000
+
+[Misc\Change Difficulty\Contestant]
+author=YukiXXL
+patch=1,EE,E0010002,extended,003E6B50
+patch=1,EE,003E6B50,extended,00000001
+
+[Misc\Change Difficulty\Gladiator (Default)]
+author=YukiXXL
+patch=1,EE,E0010002,extended,003E6B50
+patch=1,EE,003E6B50,extended,00000002
+
+[Misc\Change Difficulty\Hero]
+author=YukiXXL
+patch=1,EE,E0010002,extended,003E6B50
+patch=1,EE,003E6B50,extended,00000003
+
+[Misc\Change Difficulty\Exterminator]
+author=YukiXXL
+patch=1,EE,E0010002,extended,003E6B50
+patch=1,EE,003E6B50,extended,00000004
+
+// GAME RULES
+
+[Game Rules\Enable Gadgets + Hidden in Quick Select]
+author=YukiXXL
+description=Requires enabling all weapons and gadgets.
+patch=1,EE,E005000E,extended,003D3778
+patch=1,EE,003D377C,extended,00000015
+patch=1,EE,003D3780,extended,0000000B
+patch=1,EE,003D3784,extended,0000000C
+patch=1,EE,003D3788,extended,0000000D
+patch=1,EE,003D378C,extended,00000011
+
+// - SINGLE PLAYER
+
+[Game Rules\Single Player\Replace Bot Commands (SP) with Gadgets (COOP)]
+author=YukiXXL
+patch=1,EE,E007938C,extended,00581040
+patch=1,EE,20593090,extended,24020001 //HUD elements
+patch=1,EE,20592B38,extended,24030001 //Gadgets texture
+patch=1,EE,205934B8,extended,24020001 //UpdateAvailableGadgets
+patch=1,EE,20581040,extended,24030001 //GetCurrentGadget
+patch=1,EE,20592D38,extended,24020001 //BotHud_IsSlotEmpty
+patch=1,EE,2063C6C4,extended,24020001 //UpdateQuickSelect
+patch=1,EE,2062B780,extended,24030001 //Get Gadgets
+
+[Game Rules\Single Player\Disable Bots]
+author=YukiXXL
+patch=1,EE,E002938C,extended,004BBAF8
+patch=1,EE,204BBAF8,extended,24030001 //Delete Moby
+patch=1,EE,2054F1FC,extended,24020001 //Fix Invisible HUD
+
+[Game Rules\Single Player\Team Color Blue (P2)]
+author=YukiXXL
+patch=1,EE,E0012E78,extended,0060A4D4
+patch=1,EE,2060A4D0,extended,AE002E9C
+
+// - COOPERATIVE
+
+[Game Rules\Cooperative\Unlimited Player Distance]
+author=YukiXXL
+description=Disables the line when players are too far away from each other.
+patch=1,EE,E001938C,extended,00439D34
+patch=1,EE,20439D34,extended,24030000
+
+[Game Rules\Cooperative\Disable teleporting a player]
+author=YukiXXL
+patch=1,EE,E001938C,extended,004AEE50
+patch=1,EE,204AEE50,extended,24030000
+
+[Game Rules\Cooperative\Replace Gadgets (COOP) with Bot Commands (SP)]
+author=YukiXXL
+patch=1,EE,E005938C,extended,00592D38
+patch=1,EE,2062B780,extended,24030000 //Enable writing Bot commands
+patch=1,EE,20593090,extended,24020000 //HUD elements
+patch=1,EE,20592E28,extended,24020000 //Help Messages
+patch=1,EE,20592D38,extended,24020000 //BotHud_IsSlotEmpty
+patch=1,EE,205934B8,extended,24020000 //UpdateAvailableGadgets
+
+[Game Rules\Cooperative\Enable Bots]
+author=YukiXXL
+patch=1,EE,E001938C,extended,004BBAF8
+patch=1,EE,204BBAF8,extended,24030000
+
+// EXTRAS
+
+// - SKIN
+
+[Extras\Skin\Marauder (0)]
+author=YukiXXL
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000000
+
+[Extras\Skin\Avenger (1)]
+author=YukiXXL
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000001
+
+[Extras\Skin\Promotional Armor (2)]
+author=YukiXXL
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000002
+
+[Extras\Skin\Crusader (3)]
+author=YukiXXL
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000003
+
+[Extras\Skin\Vindicator (4)]
+author=YukiXXL
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000004
+
+[Extras\Skin\Liberator (5)]
+author=YukiXXL
+patch=1,EE,E0010022,extended,004E289C
+patch=1,EE,10207C1C,extended,00000005
+
+// - CHEATS
+
+[Extras\Cheats\Enable Cheats Menu]
+author=YukiXXL
+description=Replaces Moves with Cheats
+patch=1,EE,E0010013,extended,00598E14
+patch=1,EE,00598E14,extended,24050014
+//Cheat 1
+patch=1,EE,503E3934,extended,00000001
+patch=1,EE,00207C61,extended,00000000
+//Cheat 2
+patch=1,EE,503E394C,extended,00000001
+patch=1,EE,00207C62,extended,00000000
+//Cheat 3
+patch=1,EE,503E3964,extended,00000001
+patch=1,EE,00207C69,extended,00000000
+//Cheat 4
+patch=1,EE,503E397C,extended,00000001
+patch=1,EE,00207C6B,extended,00000000
+//Cheat 5
+patch=1,EE,503E3994,extended,00000001
+patch=1,EE,00207C6F,extended,00000000

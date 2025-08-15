@@ -1,9 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Individual Demo (NTSC-U)
-comment=ADDONS
-
-//PAL
-patch=1,EE,00245540,extended,2402003C
-//PROSCAN
-patch=1,EE,0024558C,extended,2402003C
-//NTSC
-patch=1,EE,002455B0,extended,2402003C

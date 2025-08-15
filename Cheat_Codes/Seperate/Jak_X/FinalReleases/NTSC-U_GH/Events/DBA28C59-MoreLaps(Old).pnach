@@ -1,0 +1,13 @@
+gametitle=Jak X Final Release Greatest Hits (NTSC-U)
+comment=EVENTS - MORE LAPS AND TIME
+
+//Safe Check
+patch=1,EE,E006200B,extended,013CCFA4
+//Increase the number of max laps
+patch=1,EE,213CCF1C,extended,240600FF
+patch=1,EE,213CCF20,extended,ACA60004
+patch=1,EE,213CCF24,extended,8CA50004
+//Minimum number of laps is 0
+patch=1,EE,213CCF9C,extended,0000302D
+patch=1,EE,213CCFA0,extended,ACA60000
+patch=1,EE,213CCFA4,extended,8CA50000

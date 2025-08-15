@@ -1,0 +1,6 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=More teams
+
+patch=1,EE,E0020260,extended,0074721C
+patch=1,EE,00747214,extended,2402000B
+patch=1,EE,00747218,extended,2402000B

@@ -1,0 +1,5 @@
+gametitle=Soul Calibur III (NTSC-U)
+comment=ADDONS
+
+//Force Enable ProScan selection
+patch=1,EE,002032F0,extended,24050000

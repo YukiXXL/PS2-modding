@@ -1,9 +1,0 @@
-gametitle=Champions Return to Arms Final Release (NTSC-U)
-comment=EXPERIMENTAL - MAXIMUM DIFFICULTY
-
-//Highest difficulty 128 (using Debug menu, Vars...)
-patch=1,EE,101E37BC,extended,28430080
-
-//Difficulty multiplier
-patch=1,EE,201E5C28,extended,00000000
-patch=1,EE,101E5C38,extended,3C0148F6

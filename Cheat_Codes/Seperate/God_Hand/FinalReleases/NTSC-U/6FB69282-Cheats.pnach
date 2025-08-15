@@ -1,0 +1,8 @@
+gametitle=God Hand Final Release (NTSC-U)
+comment=CHEATS
+
+//Costumes have Double God Hands
+patch=1,EE,708BE370,extended,00000001
+
+//Force Double God Hands
+patch=1,EE,7056877E,extended,00000001

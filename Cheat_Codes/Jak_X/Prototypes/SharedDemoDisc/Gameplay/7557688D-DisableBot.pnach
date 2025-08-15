@@ -1,5 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=GAMEPLAY - DISABLE BOT
-
-patch=1,EE,E0013F01,extended,00261EF0
-patch=1,EE,00261EF0,extended,00263F05

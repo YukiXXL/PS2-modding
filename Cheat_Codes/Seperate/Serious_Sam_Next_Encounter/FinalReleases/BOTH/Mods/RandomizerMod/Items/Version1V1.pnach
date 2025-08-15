@@ -1,0 +1,7 @@
+gametitle=Serious Sam: Next Encounter Final Release
+comment=RANDOMIZER MOD - ITEMS 1 V1
+
+//Joker Function
+patch=1,EE,200A017C,extended,02238821 //item = item + frames
+patch=1,EE,200A0180,extended,3C04000A //lui v0, $000a
+patch=1,EE,200A0184,extended,00000000 

@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
-comment=OFFLINE CODENAMES: MENUS: OFFLINE PRESERVATION - FIXES
-
-//Host Game fix
-patch=1,EE,2033D830,extended,00000000
-
-//Pick Region crash fix
-patch=1,EE,202A9DB0,extended,00000000

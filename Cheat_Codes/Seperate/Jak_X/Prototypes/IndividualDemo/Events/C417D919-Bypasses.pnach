@@ -1,0 +1,8 @@
+gametitle=Jak X Demo (NTSC-U)
+comment=EVENTS - BYPASSES
+
+//5 CPUs, 6 Players for events
+patch=1,EE,E0030027,extended,00B7DF14
+patch=1,EE,20B7DF04,extended,24040506
+patch=1,EE,20B7DF08,extended,A484000C
+patch=1,EE,20B7DF10,extended,90630005

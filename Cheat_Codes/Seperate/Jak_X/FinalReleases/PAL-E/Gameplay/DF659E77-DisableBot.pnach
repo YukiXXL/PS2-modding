@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=GAMEPLAY - DISABLE BOT
+
+patch=1,EE,E0011701,extended,002DF6F0
+patch=1,EE,002DF6F0,extended,002E1705

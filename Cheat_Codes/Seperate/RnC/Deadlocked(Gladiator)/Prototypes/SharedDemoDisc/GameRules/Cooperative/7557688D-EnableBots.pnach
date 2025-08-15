@@ -1,0 +1,5 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=GAME RULES - COOPERATIVE - ENABLE BOTS
+
+patch=1,EE,E001AE7C,extended,004BEDC8
+patch=1,EE,204BEDC8,extended,24030000

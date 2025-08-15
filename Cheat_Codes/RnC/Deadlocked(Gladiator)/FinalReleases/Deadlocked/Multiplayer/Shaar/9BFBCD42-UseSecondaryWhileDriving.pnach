@@ -1,8 +1,0 @@
-gametitle=Ratchet: Deadlocked (NTSC-U)
-comment=Made from Local Multiplayer
-
-//Use secondary while driving
-patch=1,EE,2047B434,extended,24030000
-patch=1,EE,2047EADC,extended,24020000
-patch=1,EE,206194B8,extended,0000202D
-patch=1,EE,206194C0,extended,AE840034

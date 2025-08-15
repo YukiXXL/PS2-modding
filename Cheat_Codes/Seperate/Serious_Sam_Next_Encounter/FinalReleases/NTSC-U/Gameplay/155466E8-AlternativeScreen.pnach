@@ -1,0 +1,8 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=GAMEPLAY - ALTERNATIVE SCREEN
+
+//Alternative Screen Mode (Saved after starting Split-Screen game second time!)
+patch=1,EE,2027BDCC,extended,AC510018
+patch=1,EE,2027BDD0,extended,16200004
+//Reset to default (Saved after starting Split-Screen game second time!)
+//patch=1,EE,2027BDCC,extended,AC400018

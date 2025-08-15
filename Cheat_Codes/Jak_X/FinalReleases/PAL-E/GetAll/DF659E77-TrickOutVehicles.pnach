@@ -1,8 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=Trick Out Vehicles
-
-patch=1,EE,E004280A,extended,00BAE890 //Memory Check
-patch=1,EE,20BAE7E0,extended,0000382D //Engine
-patch=1,EE,20BAE81C,extended,0000382D //Gearbox
-patch=1,EE,20BAE858,extended,0000382D //Armor
-patch=1,EE,20BAE88C,extended,0000302D //Turbo

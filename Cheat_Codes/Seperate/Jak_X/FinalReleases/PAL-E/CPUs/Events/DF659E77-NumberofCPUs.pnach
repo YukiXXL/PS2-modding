@@ -1,0 +1,14 @@
+gametitle=Jak X Final Release (PAL-E)
+comment=Number of CPUs
+
+//5 CPUs on Death Race and Rush Hour
+patch=1,EE,E0010008,extended,00BCD40C
+patch=1,EE,00BCD408,extended,24130005
+
+//5 CPUs on Freeze Rally (and other)
+patch=1,EE,E0011825,extended,00BCD434
+patch=1,EE,00BCD42C,extended,24130005
+
+//5 CPUs on Boss Battle
+patch=1,EE,E0010002,extended,00BCD424
+patch=1,EE,00BCD420,extended,24130005

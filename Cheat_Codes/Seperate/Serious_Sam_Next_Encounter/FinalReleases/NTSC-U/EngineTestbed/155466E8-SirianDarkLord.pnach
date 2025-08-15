@@ -1,0 +1,22 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=ENGINE TESTBED - SIRIAN DARK LORD
+
+//Alevel12_4
+patch=1,EE,003BE900,extended,76656C41
+patch=1,EE,203BE904,extended,32316C65
+patch=1,EE,103BE908,extended,0000345F
+
+//SirianDarkLord
+patch=1,EE,203BE918,extended,69726953
+patch=1,EE,203BE91C,extended,61446E61
+patch=1,EE,203BE920,extended,6F4C6B72
+patch=1,EE,103BE924,extended,00006472
+
+//Radius
+patch=1,EE,1027FB68,extended,3C01C4A0
+
+//Distance from each other
+patch=1,EE,1027FC90,extended,3C013E44
+
+//Amount
+patch=1,EE,0027FC9C,extended,2A420021

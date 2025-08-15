@@ -1,8 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
-comment=GAMEPLAY - PLAYER - APPEARANCE
-
-//Random outfits during missions
-patch=1,EE,20407A7C,extended,10400020
-
-//Disable mission disguises
-patch=1,EE,00407A88,extended,24420000

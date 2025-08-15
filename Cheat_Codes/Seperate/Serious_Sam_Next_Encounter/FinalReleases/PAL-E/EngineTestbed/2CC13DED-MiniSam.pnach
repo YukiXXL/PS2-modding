@@ -1,0 +1,13 @@
+gametitle=Serious Sam: Next Encounter Final Release (PAL-E)
+comment=ENGINE TESTBED - MINI SAM
+
+//rlevel4_4b
+patch=1,EE,203BF574,extended,5F346C65
+patch=1,EE,103BF578,extended,00006234
+
+//minisam
+patch=1,EE,203BF588,extended,696E696D
+patch=1,EE,203BF58C,extended,006D6173
+
+//Y-axis fix
+patch=1,EE,1028037C,extended,3C01B000

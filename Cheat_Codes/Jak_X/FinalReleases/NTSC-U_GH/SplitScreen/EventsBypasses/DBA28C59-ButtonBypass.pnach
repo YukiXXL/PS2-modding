@@ -1,6 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Using 2nd controller = L3+R3 when on car select
-
-patch=1,EE,E002FFF9,extended,0028371C
-patch=1,EE,602DD8E8,extended,002E1805
-patch=1,EE,00000001,extended,00000148

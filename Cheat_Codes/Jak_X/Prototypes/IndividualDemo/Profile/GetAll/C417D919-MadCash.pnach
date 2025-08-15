@@ -1,7 +1,0 @@
-gametitle=Jak X Demo (NTSC-U)
-comment=GET ALL - C.R.E.A.M - Mad Cash
-
-patch=1,EE,E0031825,extended,00916090
-patch=1,EE,20916090,extended,3C064974
-patch=1,EE,2091609C,extended,34C62400
-patch=1,EE,209160B0,extended,44860000

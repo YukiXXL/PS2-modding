@@ -1,0 +1,16 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=CHALLENGES
+
+//Temporary Enable All Challenges (Including CUT)
+patch=1,EE,E002102D,extended,006C1728
+patch=1,EE,206C16C0,extended,00000000
+patch=1,EE,206C172C,extended,24020001
+
+//Temporary Challenges Always Visible
+patch=1,EE,E0020010,extended,00584DE0
+patch=1,EE,20584E68,extended,24020001
+patch=1,EE,20584F64,extended,24020001
+
+//All Challenges Unlocked (Saved)
+patch=1,EE,E001000F,extended,00584D2C
+patch=1,EE,20584D2C,extended,00000000

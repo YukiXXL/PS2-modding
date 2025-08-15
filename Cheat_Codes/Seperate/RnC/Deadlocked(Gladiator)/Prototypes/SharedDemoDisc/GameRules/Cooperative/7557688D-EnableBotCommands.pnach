@@ -1,0 +1,18 @@
+gametitle=Ratchet: Gladiator (Jak X & Ratchet: Gladiator Demo) (PAL-E)
+comment=GAME RULES - COOPERATIVE - ENABLE BOT COMMANDS
+
+//Enable writing Bot commands
+patch=1,EE,E001A30C,extended,0062FA98
+patch=1,EE,2062FA98,extended,24030000
+//HUD elements
+patch=1,EE,E001AE7C,extended,00596F50
+patch=1,EE,20596F50,extended,24020000
+//Help Messages
+patch=1,EE,E001AE7C,extended,00596CE8
+patch=1,EE,20596CE8,extended,24020000
+//BotHud_IsSlotEmpty
+patch=1,EE,E001AE7C,extended,00596BF8
+patch=1,EE,20596BF8,extended,24020000
+//UpdateAvailableGadgets
+patch=1,EE,E001AE7C,extended,00597378
+patch=1,EE,20597378,extended,24020000

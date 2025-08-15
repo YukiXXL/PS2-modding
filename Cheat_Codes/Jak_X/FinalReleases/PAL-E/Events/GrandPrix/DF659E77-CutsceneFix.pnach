@@ -1,5 +1,0 @@
-gametitle=Jak X Final Release (PAL-E)
-comment=Disable final cutscene
-
-patch=1,EE,E001FFFD,extended,00BD2650
-patch=1,EE,10BD2650,extended,64640001

@@ -1,0 +1,13 @@
+gametitle=Tekken 5 Demo (NTSC-U)
+comment=FIXES
+
+//Mokujin Movesets fix
+patch=1,EE,0039EB9C,extended,00000007
+patch=1,EE,0039EBB8,extended,00000003
+patch=1,EE,0039EBBC,extended,00000004
+patch=1,EE,0039EBC0,extended,00000005
+patch=1,EE,0039EBC4,extended,00000006
+patch=1,EE,0039EBCC,extended,00000008
+patch=1,EE,0039EBD0,extended,00000009
+patch=1,EE,0039EBDC,extended,0000000A
+patch=1,EE,0039EBE0,extended,0000000E

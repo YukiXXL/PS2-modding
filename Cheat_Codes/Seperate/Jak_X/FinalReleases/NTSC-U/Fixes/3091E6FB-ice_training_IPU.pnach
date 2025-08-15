@@ -1,0 +1,5 @@
+gametitle=Jak X Final Release (NTSC-U)
+comment=Fixes IPA on Icebound Citadel training
+
+patch=1,EE,E0010F98,extended,00980C28
+patch=1,EE,20980C5C,extended,0098CB84

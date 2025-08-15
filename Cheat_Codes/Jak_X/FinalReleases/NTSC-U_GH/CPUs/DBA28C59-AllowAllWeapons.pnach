@@ -1,9 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=Allow CPUs to get all weapons (Novas, Turbo Lock)
-
-//Novas
-patch=1,EE,602DD750,extended,00000020
-patch=1,EE,00000001,extended,000000CC
-//Turbo Lock
-patch=1,EE,602DC744,extended,00000020
-patch=1,EE,00000001,extended,00000164

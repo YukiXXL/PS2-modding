@@ -1,5 +1,0 @@
-gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
-comment=FIXES
-
-//Don't reset stream. Fixes speech on "Beast Beneath the Palace"
-patch=1,EE,001130B0,extended,24030002

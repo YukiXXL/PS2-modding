@@ -1,0 +1,23 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
+comment=GAMEPLAY - PVP
+
+//Agents as NPCs (Broken)
+patch=1,EE,002D7C74,extended,24020000
+
+//Friendly Fire ON
+patch=1,EE,20188A8C,extended,0000102D
+patch=1,EE,20265598,extended,0000102D
+patch=1,EE,201415D8,extended,0000102D
+patch=1,EE,2014191C,extended,0000102D
+
+//Targetable
+patch=1,EE,202743A4,extended,24020000 //Turn Blue to Green
+patch=1,EE,2022CBD4,extended,24020000 //No wallhack
+//as a host
+patch=1,EE,2016A774,extended,01435025
+patch=1,EE,2016A784,extended,01435025
+patch=1,EE,2016A794,extended,01435025
+patch=1,EE,2016A7A4,extended,01435025
+
+//Everyone Yellow (in case the upper doesn't work)
+patch=1,EE,203CC938,extended,24020001

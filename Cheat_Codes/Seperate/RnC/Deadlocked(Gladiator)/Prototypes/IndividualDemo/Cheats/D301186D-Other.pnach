@@ -1,0 +1,6 @@
+gametitle=Ratchet: Deadlocked Demo (NTSC-U)
+comment=CHEATS - OTHER
+
+//Bots have all abilities
+patch=1,EE,E00101D0,extended,0054EDF4
+patch=1,EE,2054EDF4,extended,24020001

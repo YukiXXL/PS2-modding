@@ -1,0 +1,12 @@
+gametitle=Serious Sam: Next Encounter Final Release (NTSC-U)
+comment=CHEATS - PROFILE
+
+//Have All Gold Medals (Temporary)
+patch=1,EE,202210EC,extended,24030003
+//Have All Gold Medals (Saved onto profile!)
+//patch=1,EE,202214F0,extended,3C04C000
+//patch=1,EE,202214F8,extended,AC440018
+
+//Unlock All Levels (Saved onto profile!)
+patch=1,EE,202209AC,extended,2403001F
+patch=1,EE,202209B0,extended,AC430018

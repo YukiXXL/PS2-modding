@@ -1,0 +1,5 @@
+gametitle=Ratchet: Deadlocked (NTSC-U)
+comment=RESPAWN TIMER
+
+patch=1,EE,2067A548,extended,24020001 //Death__4Herob
+patch=1,EE,2069FB78,extended,24030001 //Transitions__4Hero

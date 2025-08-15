@@ -1,0 +1,44 @@
+gametitle=Sonic Riders Demo (from OPM 102) (NTSC-U)
+comment=by YukiXXL.
+
+[Enable All Characters]
+author=YukiXXL
+patch=1,EE,002ECA04,extended,28630011
+patch=1,EE,002ECA30,extended,28610011
+patch=1,EE,202EE10C,extended,00000000 //Avatar icons
+
+[Enable All Gears]
+author=YukiXXL
+description=BROKEN! Used to see all the gears available.
+patch=1,EE,002ECB10,extended,29210019 //Set maximum beyond 8
+patch=1,EE,202ECB60,extended,00000000 //Allow usage of any for any
+
+[Menu\Force Main Menu]
+author=YukiXXL
+description=Forces Main Menu on startup.
+patch=1,EE,202C094C,extended,24050003
+
+[Menu\Drop to Main Menu]
+author=YukiXXL
+description=Drops to Main Menu after Title Screen.
+patch=1,EE,002C1330,extended,2403000D
+
+[Menu\Drop to Main Menu\Extra]
+author=YukiXXL
+description=SQUARE for Extras; TRIANGLE for Options.
+patch=1,EE,202C0414,extended,9E15FFD0
+patch=1,EE,202C041C,extended,30610101
+patch=1,EE,202C0420,extended,14200057
+patch=1,EE,202C0424,extended,A2A00031
+patch=1,EE,202C0428,extended,30610404
+patch=1,EE,202C042C,extended,14200003
+patch=1,EE,202C0430,extended,24020001
+patch=1,EE,202C0434,extended,24020002
+patch=1,EE,202C0438,extended,30610808
+patch=1,EE,202C043C,extended,14200050
+patch=1,EE,202C0440,extended,A2A20031
+patch=1,EE,202C0448,extended,00000000
+
+[Menu\Main Menu\Unlock Mission Mode]
+author=YukiXXL
+patch=1,EE,70903587,extended,00000007

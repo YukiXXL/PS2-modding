@@ -1,6 +1,0 @@
-gametitle=Syphon Filter: The Omega Strain Individual Demo (NTSC-U)
-comment=ONLINE - MENUS
-
-//Enable online lobby
-patch=1,EE,2033FA6C,extended,24A53980
-patch=1,EE,2033FA74,extended,24C63998

@@ -1,9 +1,0 @@
-gametitle=Jak X (Jak X & Ratchet: Gladiator Demo) (PAL-E)
-comment=Fixes collectables
-
-patch=1,EE,E0060010,extended,00AD0794
-patch=1,EE,20AD0774,extended,10850005
-patch=1,EE,20AD0778,extended,9C620014
-patch=1,EE,00AD077C,extended,9C62001C
-patch=1,EE,20AD0780,extended,14570002
-patch=1,EE,00AD0788,extended,9C620014
