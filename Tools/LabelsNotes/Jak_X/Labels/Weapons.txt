@@ -1,0 +1,47 @@
+- WEAPON TABLES -
+PB (PAL-E) = 002D61D8
+Demo (NTSC-U) = 0026EFD8
+Shared Demo (PAL-E) = 00269CD8
+
+- WEAPON IDS -
+Public Beta, Demos:
+-- Yellow --
+00 = None
+01 = Default Machine Gun
+02 = Vulcans
+03 = Grenades
+04 = Missiles
+05 = Super Turbo
+06 = Peacemaker
+11 = Super Nova
+-- Red --
+07 = Saucer Drone
+08 = Tractor Beam
+09 = Mines
+0A = Turret
+0B = Shield
+0C = Smokescreen
+0D = Oil Slick
+0E = Attack Drone
+0F = Turbo Inhibitor
+10 = Arachnid Mines
+
+Final Release:
+-- Yellow --
+00 = None
+01 = Default Machine Gun
+02 = Vulcans
+03 = Grenades
+04 = Missiles
+05 = Peacemaker
+0F = Super Nova
+-- Red --
+06 = Saucer Drone
+07 = Tractor Beam
+08 = Mines
+09 = Turret
+0A = Shield
+0B = Smokescreen
+0C = Oil Slick
+0D = Attack Drone
+0E = Turbo Inhibitor

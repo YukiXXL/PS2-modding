@@ -1,0 +1,17 @@
+- SHARED -
+
+00159570 - ParseBin__Fv
+00159488 - unpackbuff__FPcPv
+001596A8 - GetBootOptionsFromSettings__FPc
+
+00175170 - g_MissionLoad
+00175186 - write for mission start
+
+0024D8E0 - GSloc
+0024D8E4 - GSbase
+0024DC20 - gameMode
+0024DC78 - Level
+0024DDC0 - TN_difficultyLevel
+0024DED0 - g_NW_GameSettings
+
+0024F390 - mf_activeMissionIndex

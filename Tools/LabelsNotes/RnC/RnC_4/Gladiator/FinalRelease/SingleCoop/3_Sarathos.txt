@@ -1,0 +1,22 @@
+SARATHOS
+
+003AD4D0 - cs_table
+
+005B7718 - Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+0053AC78 - MF_UpdateProgress__Fv
+00676608 - CheckUnlockMission__8LevelBoxi
+
+005D03F0 - Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+
+00672CF0 - IsGadgetCoopOnly__9GadgetBoxi
+003A7160 - HudAmmo_QSItems
+
+00490BF0 - Disable Bots
+00559A50 - Bot_ResetGlobalComm__Fv
+0058F078 - GetHudEnterState__Fi | GetHudExitState__Fi (above "GetHudState__Fi")
+005A45A8 - Pointer from "BotHud_UpdateIcons"
+0061DBA0 - GetJuggSafeTeam__C4Hero
+
+00401E30 - Coop Unlimited Distance
+
+00240300 - MemSlots

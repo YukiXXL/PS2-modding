@@ -1,0 +1,15 @@
+Final Releases:
+NTSC-U Greatest Hits = 002E1801 (#f) ; 002E1805 (#t)
+NTSC-U Greatest Hits (Debug) = 002DF7F1 (#f) ; 002DF7F5 (#t)
+NTSC-U = 002E1601 (#f) ; 002E1605 (#t)
+NTSC-U (Debug) = 002DF571 (#f) ; 002DF575 (#t)
+PAL-E = 002E1701 (#f) ; 002E1705 (#t)
+PAL-E (Debug) = 002DF671 (#f) ; 002DF675 (#t)
+
+Public Betas:
+PAL-E (Beta Mode) = 002D0401 (#f) ; 002D0405 (#t)
+NTSC-U (Beta Mode) = 002D0301 (#f) ; 002D0305 (#t)
+
+Demos:
+PAL-E (Shared Demo) = 00263F01 (#f) ; 00263F05 (#t)
+NTSC-U (Individual Demo) = 00269201 (#f) ; 00269205 (#t)

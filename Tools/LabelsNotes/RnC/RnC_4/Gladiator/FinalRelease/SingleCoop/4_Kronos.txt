@@ -1,0 +1,22 @@
+KRONOS
+
+003AF610 - cs_table
+
+005DD938 - Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+0055F378 - MF_UpdateProgress__Fv
+0069CFD8 - CheckUnlockMission__8LevelBoxi
+
+005F6610 - Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+
+006996C0 - IsGadgetCoopOnly__9GadgetBoxi
+003A8F30 - HudAmmo_QSItems
+
+004C8C08 - Disable Bots
+0057FBF0 - Bot_ResetGlobalComm__Fv
+005B5208 - GetHudEnterState__Fi | GetHudExitState__Fi (above "GetHudState__Fi")
+005CA738 - Pointer from "BotHud_UpdateIcons"
+00644570 - GetJuggSafeTeam__C4Hero
+
+003E4BB8 - Coop Unlimited Distance
+
+00240740 - MemSlots

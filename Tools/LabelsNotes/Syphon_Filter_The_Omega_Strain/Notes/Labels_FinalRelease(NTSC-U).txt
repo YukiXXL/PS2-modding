@@ -1,0 +1,7 @@
+002771F8 - Blood splatter (00276DD8 - PAL)
+
+001763B0 - Load if has menu interactions
+
+(BodyHasDisguise__9cBackpackFv | BodyIsPickupable__9cBackpackFv)
+0025323C - Body ic pickable
+00253258 - Body has disguise

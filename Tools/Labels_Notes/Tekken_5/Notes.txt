@@ -1,3 +1,0 @@
-Title Screen start button (PRESS START) address:
-Final Release (NTSC-U) = 0021426C
-Demo (NTSC-U) = 00122A7C

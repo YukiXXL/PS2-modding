@@ -71,7 +71,9 @@ patch=1,EE,2031604C,extended,00000000
 author=YukiXXL
 patch=1,EE,001ACA48,extended,8F390014
 
-[Menus\Extended Agent Modify]
+// - AGENT CREATE
+
+[Menus\Agent Create\Extended Agent Modify]
 author=YukiXXL
 description=Change Game Type in Create Mission and return to New Agent menu.
 //Single = Enable
@@ -108,6 +110,201 @@ patch=1,EE,103B069C,extended,00000908
 [Menus\Fixes\Create Mission and Join Mission fix]
 author=YukiXXL
 patch=1,EE,20230E14,extended,1000002E
+
+[Menus\Fixes\Compare Fix]
+author=YukiXXL
+description=Used for "Agent Modify" but may prove useful as standalone.
+patch=1,EE,20312904,extended,26040004
+
+// - AGENT MODIFY
+
+[Menus\Agent Modify\Enable]
+author=YukiXXL
+description=Disables "Dossier".
+//"GuiAgentModify"
+patch=1,EE,200A0200,extended,41697547
+patch=1,EE,200A0204,extended,746E6567
+patch=1,EE,200A0208,extended,69646F4D
+patch=1,EE,200A020C,extended,00007966
+//"AGENTMOD"
+patch=1,EE,200A0210,extended,4E454741
+patch=1,EE,200A0214,extended,444F4D54
+patch=1,EE,000A0218,extended,00000000
+//Rewritten Code
+patch=1,EE,00312A8C,extended,8C250870
+patch=1,EE,20312A94,extended,0000902D
+patch=1,EE,00312AAC,extended,3C06000A
+patch=1,EE,20312AB4,extended,24C50200
+patch=1,EE,10312ABC,extended,24C60210
+patch=1,EE,20312AC8,extended,00000000
+patch=1,EE,20312ACC,extended,10000007
+patch=1,EE,20312AD0,extended,00000000
+//Fix Saving
+patch=1,EE,20395348,extended,3C010045
+patch=1,EE,2039534C,extended,3C06003D
+patch=1,EE,20395350,extended,8C241598
+patch=1,EE,20395354,extended,0220382D
+patch=1,EE,20395358,extended,24050003
+patch=1,EE,2039535C,extended,24C6A950
+patch=1,EE,20395360,extended,0C0C58FC
+patch=1,EE,20395364,extended,24080002
+patch=1,EE,20395368,extended,10000005
+patch=1,EE,2039536C,extended,00000000
+//Fix Exiting
+patch=1,EE,103953E8,extended,24A5C870
+patch=1,EE,103953F0,extended,24C6C888
+
+[Menus\Agent Modify\Extra\Beard Menus\Enable]
+author=YukiXXL
+description=Enables "Beardstyle" and "Beardcolor" menus.
+//beardstyle > bm_style
+patch=1,EE,203B6534,extended,735F6D62
+patch=1,EE,203B6538,extended,656C7974
+patch=1,EE,103B653C,extended,00000000
+//beardcolor > bm_color
+patch=1,EE,203B6548,extended,635F6D62
+patch=1,EE,203B654C,extended,726F6C6F
+patch=1,EE,103B6550,extended,00000000
+
+[Menus\Agent Modify\Extra\Beard Menus\Female parts fix (Static)]
+author=YukiXXL
+description=DO NOT USE WITH "Auto adjustment"!
+patch=1,EE,103B6434,extended,00001209
+patch=1,EE,103B6438,extended,0000120A
+
+[Menus\Agent Modify\Extra\Tattoos\Enable (Static)]
+author=YukiXXL
+description=DO NOT USE WITH "Auto adjustment"! "Tattos" menu for left arm, "Body" for right arm.
+patch=1,EE,103B6410,extended,00001001
+patch=1,EE,103B6414,extended,00000F01
+patch=1,EE,103B6444,extended,00001001
+patch=1,EE,103B6448,extended,00001101
+//modifyText
+patch=1,EE,203B6480,extended,74746174
+patch=1,EE,203B6484,extended,00736F6F
+patch=1,EE,203B6494,extended,63746170
+patch=1,EE,203B6498,extended,00736568
+
+[Menus\Agent Modify\Extra\More Parts\Auto adjustment\Enable]
+author=YukiXXL
+description=Sets positions of parts.
+patch=1,EE,203F0294,extended,0031DBB0
+
+[Menus\Agent Modify\Extra\More Parts\Auto adjustment\Create "blanks"]
+author=YukiXXL
+description=Adds missing parts.
+//Rewritten code
+patch=1,EE,203999DC,extended,0C028088
+patch=1,EE,203999E0,extended,24510060
+//Joker Code
+patch=1,EE,200A0220,extended,27BDFFF0
+patch=1,EE,200A0224,extended,FFBF0000
+patch=1,EE,200A0228,extended,0C067918
+patch=1,EE,200A022C,extended,26240040
+patch=1,EE,200A0230,extended,A62223C0
+patch=1,EE,200A0234,extended,8E020054
+patch=1,EE,200A0238,extended,94452420
+patch=1,EE,200A023C,extended,24510060
+patch=1,EE,200A0240,extended,0C0675E4
+patch=1,EE,200A0244,extended,26240040
+patch=1,EE,200A0248,extended,A62223C0
+patch=1,EE,200A024C,extended,8E020054
+patch=1,EE,200A0250,extended,0C04A0F0
+patch=1,EE,200A0254,extended,24440060
+patch=1,EE,200A0258,extended,DFBF0000
+patch=1,EE,200A025C,extended,03E00008
+patch=1,EE,200A0260,extended,27BD0010
+
+[Menus\Agent Modify\Extra\More Parts\Auto adjustment\Edit parts (PICK ONE)\Option 1\Enable]
+author=YukiXXL
+description=Hats, Eyewears, Shirts, Vests, Pants, Boots.
+//modifyText
+//boots
+patch=1,EE,203B6480,extended,746F6F62
+patch=1,EE,103B6484,extended,00000073
+//pants
+patch=1,EE,203B6494,extended,746E6170
+patch=1,EE,103B6498,extended,00000073
+//vest
+patch=1,EE,203B64A8,extended,74736576
+patch=1,EE,003B64AC,extended,00000000
+//shirt
+patch=1,EE,203B6520,extended,72696873
+patch=1,EE,103B6524,extended,00000074
+//eyewear
+patch=1,EE,203B655C,extended,77657965
+patch=1,EE,203B6560,extended,00726165
+//hat
+patch=1,EE,203B6570,extended,00746168
+//modifyPart (Female)
+//_LEGS
+patch=1,EE,203B6374,extended,4C5F0054
+patch=1,EE,203B6378,extended,00534745
+//_VEST
+patch=1,EE,203B637C,extended,5345565F
+patch=1,EE,003B6380,extended,485F0054
+//_SHIR, _MAKE, _GLAS
+patch=1,EE,203B63A0,extended,4948535F
+patch=1,EE,203B63A4,extended,4D5F0052
+patch=1,EE,203B63A8,extended,00454B41
+patch=1,EE,203B63AC,extended,4B414D5F
+patch=1,EE,203B63B0,extended,475F0045
+patch=1,EE,203B63B4,extended,0053414C
+//_HAT-
+patch=1,EE,203B63B8,extended,5441485F
+patch=1,EE,003B63BC,extended,425F002D
+//modifyPart (Male)
+//_LEGS, _VEST
+patch=1,EE,203B63C4,extended,47454C5F
+patch=1,EE,203B63C8,extended,565F0053
+patch=1,EE,203B63CC,extended,00545345
+//_SHIR
+patch=1,EE,203B63EC,extended,535F002D
+patch=1,EE,203B63F0,extended,00524948
+//_GLAS, _HAT-
+patch=1,EE,203B6400,extended,414C475F
+patch=1,EE,203B6404,extended,485F0053
+patch=1,EE,203B6408,extended,002D5441
+//modifyMenu (Female fix)
+patch=1,EE,E0020907,extended,003B6434
+patch=1,EE,003B6434,extended,00000F09
+patch=1,EE,003B6438,extended,00000F0A
+
+[Menus\Agent Modify\Extra\More Parts\Auto adjustment\Edit parts (PICK ONE)\Option 1\Model-Texture switch]
+author=YukiXXL
+description=In Create Mission: Story = Model; Single = Texture.
+//Story = Model
+patch=1,EE,E00C0000,extended,004D5ED4
+//FEMALE
+patch=1,EE,003B6410,extended,00000000
+patch=1,EE,003B6414,extended,00000000
+patch=1,EE,003B6418,extended,00000300
+patch=1,EE,003B6430,extended,00000000
+patch=1,EE,003B643C,extended,00000F00
+patch=1,EE,003B6440,extended,00000F00
+//MALE
+patch=1,EE,003B6444,extended,00000000
+patch=1,EE,003B6448,extended,00000000
+patch=1,EE,003B644C,extended,00000200
+patch=1,EE,003B6464,extended,00000000
+patch=1,EE,003B6470,extended,00000F00
+patch=1,EE,003B6474,extended,00000F00
+//Single = Texture
+patch=1,EE,E00C0001,extended,004D5ED4
+//FEMALE
+patch=1,EE,003B6410,extended,00000001
+patch=1,EE,003B6414,extended,00000001
+patch=1,EE,003B6418,extended,00000301
+patch=1,EE,003B6430,extended,00000001
+patch=1,EE,003B643C,extended,00000F01
+patch=1,EE,003B6440,extended,00000F01
+//MALE
+patch=1,EE,003B6444,extended,00000001
+patch=1,EE,003B6448,extended,00000001
+patch=1,EE,003B644C,extended,00000201
+patch=1,EE,003B6464,extended,00000001
+patch=1,EE,003B6470,extended,00000F01
+patch=1,EE,003B6474,extended,00000F01
 
 // - GAMEPLAY
 

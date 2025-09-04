@@ -1,0 +1,16 @@
+- SHARED -
+
+001579A0 - ParseBin__Fv
+001579F0 - GetBootOptionsFromSettings__FPc
+
+00171228 - g_MissionLoad
+0017123E - write for mission start
+
+0021DAA4 - mapOffset
+0021DAB4 - GSbase
+0021DE98 - Level
+0021DFE8 - gIntelligentFrameRate
+0021DFEC - TN_difficultyLevel
+0021E070 - g_NW_GameSettings
+
+0021EC58 - mf_activeMissionIndex

@@ -1,0 +1,12 @@
+-PLAYER STATS-
+*net-players*, load the pointer
+add player offset (ID * 4, ex. 2=8, 3=C) and 0xC to it. so player 1 would be at 0xC, player 2 at 0x10, etc.
+add 0xD4 from it and load the pointer.
+load pointer from 0x0.
+add:
+
+0x2AC - Health
+0x2BC - Turbo
+0x2C0 - Eco
+
+float. [0,1]

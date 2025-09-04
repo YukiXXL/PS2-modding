@@ -1,0 +1,17 @@
+KEYBOARD NEEDED!
+
+For Public Beta 1, "gCHEATS_ENABLED" is needed!
+Cheat menu and console (in-game) are opened with tilde key on the keyboard.
+
+Cheat codes:
+INVUL - Enables invulnerability (can be toggled by typing OFF/ON in-game like "cheat invul off" to turn off)
+LEVEL - I don't know what this one does
+COMPLETE - this one is better used in the menus. Completes all objectives
+WIN - does something when used in the menus but when used in-game, it completes the mission with par time and no deaths/collateral
+
+Command list:
+EXIT - Close Console
+CLS - Clear Console Screen
+VERSION - Version
+FULLCONS - Fullscreen Console
+HALFCONS - Halfscreen Console (DEFAULT)

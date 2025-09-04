@@ -1,0 +1,18 @@
+003F0628 - totalFrameTicks__6cTimer
+
+002313AC = Check if Loading is completed
+
+- AGENT MODIFY -
+00398BD8 = Dynamic memory load for parts. Saves to "savedPlayerSKLs".
+0039A128 - Save parts position (byte)
+003969D0 - Switching parts/textures (UserInterface__14GuiAgentModifyFii)
+
+Saving:
+00392730 - Save parts to MC (Create__10cAgentDataFRC3SKL)
+0031DD9C - SendMessage__9GuiWidgetFP9GuiWidgetQ23Gui7Messageii (onMessage__13GuiMessageBoxFP9GuiWidgetQ23Gui7Messageii)
+
+Pointers:
+001AD500 - Load here
+
+003EEC10 - __vt__14GuiAgentCreate
+003F0240 - __vt__14GuiAgentModify

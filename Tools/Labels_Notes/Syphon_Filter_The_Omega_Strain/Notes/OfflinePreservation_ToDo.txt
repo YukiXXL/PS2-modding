@@ -1,7 +1,0 @@
-
-- Able to type own name and have own Agency Cell
-- Custom region
-
-20A81FAC = Address for Offline Agency Cell
-205C911C = Address for Online Agency Cell
-20A8204C = Address for Region name

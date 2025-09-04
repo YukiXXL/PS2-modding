@@ -1,0 +1,24 @@
+STYGIA
+
+0026AB70 - MobyTexLocs
+
+003AC710 - cs_table
+
+005B19B0 - Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+00533738 - MF_UpdateProgress__Fv
+00670F40 - CheckUnlockMission__8LevelBoxi
+
+005CA688 - Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+
+0066D628 - IsGadgetCoopOnly__9GadgetBoxi
+003A64D0 - HudAmmo_QSItems
+
+004A75C0 - Disable Bots
+00553D40 - Bot_ResetGlobalComm__Fv
+00589310 - GetHudEnterState__Fi | GetHudExitState__Fi (above "GetHudState__Fi")
+0059E840 - Pointer from "BotHud_UpdateIcons"
+006184D8 - GetJuggSafeTeam__C4Hero
+
+00493078 - Coop Unlimited Distance
+
+00240240 - MemSlots
