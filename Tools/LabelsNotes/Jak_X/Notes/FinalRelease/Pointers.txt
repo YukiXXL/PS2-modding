@@ -9,3 +9,5 @@ Menu
 (BASE+5247) = control-hook-player
 
 (BASE-7081) = *net-players*
+
+(BASE-6B99) = *edit-stored-network-account*

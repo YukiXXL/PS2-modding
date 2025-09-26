@@ -1,6 +1,8 @@
 gametitle=Jak X Final Release Greatest Hits (NTSC-U)
 comment=Provided by YukiXXL. Special thanks to Luminar Light.
 
+// FIXES
+
 [Fixes\Universal Fix]
 description=In case the game crashes when changing drivers or in lobby
 patch=1,EE,602DC930,extended,10000003
@@ -36,6 +38,8 @@ description=Have the Deathmatch machine guns in Other Events
 patch=1,EE,E0020012,extended,00F21940
 patch=1,EE,20F21944,extended,10000058
 patch=1,EE,20F21948,extended,00801825
+
+// - VEHICLE STATUS
 
 [Cheats\Vehicle Status\Load Custom + Increase by 32\Engine]
 description=Load the upgrades + improve them by 32
@@ -95,6 +99,8 @@ patch=1,EE,00020000,extended,00000004
 patch=1,EE,602F4250,extended,00000031
 patch=1,EE,00010000,extended,00000008
 
+// - FROM DEBUG
+
 [Addons\From Debug Menu\Target Status]
 description=Show some info like MPH
 patch=1,EE,E00302BC,extended,00F16B80
@@ -115,6 +121,8 @@ patch=1,EE,E0011825,extended,00A8BB90
 patch=1,EE,10A8BB88,extended,8EE30137
 
 // CPUs
+
+// - EVENTS
 
 [CPUs\Events\Number of CPUs\5 CPUs on Death Race and Rush Hour]
 patch=1,EE,E0010008,extended,00BCD4BC
@@ -140,6 +148,8 @@ patch=1,EE,20BCD348,extended,10000027
 //Save 5 CPUs as a MAX
 patch=1,EE,20BCD428,extended,24050005
 patch=1,EE,20BCD458,extended,A045000D
+
+// - DRIVERS
 
 [CPUs\Drivers\Force CPUs to use players driver]
 description=CPUs will use the driver that the player uses
@@ -186,6 +196,8 @@ patch=1,EE,00000020,extended,00000654
 //Visuals
 patch=1,EE,602DF814,extended,00000000
 patch=1,EE,00010000,extended,00000010
+
+// - MORE PARTS
 
 [Customization\Customize more parts for secret vehicles\Daxtermobile]
 patch=1,EE,40488DE0,extended,00080001
@@ -259,6 +271,8 @@ patch=1,EE,20BD16DC,extended,A0830078
 patch=1,EE,20BD16E0,extended,90840005
 patch=1,EE,20BD16E4,extended,00000000
 
+// - OPTIONS
+
 [Events\Options\Circuit Race with Collectathon options]
 description=If it shows 0 Time Limit, goto Turbo Dash Adv. Opts. and return.
 patch=1,EE,502E01D0,extended,00000003
@@ -278,6 +292,8 @@ description=Do not change the Time Limit or anything like that!
 patch=1,EE,502E01D0,extended,00000003
 patch=1,EE,002DFA04,extended,00000000
 
+// - FORCED
+
 [Events\Forced Circuit task\on Training]
 description=Running Training gamemode as Circuit Race.
 patch=1,EE,602E75D4,extended,8EE2BECB
@@ -293,6 +309,8 @@ description=Change vehicle/color to apply.
 patch=1,EE,E0020012,extended,00F21940
 patch=1,EE,20F21934,extended,24040011
 patch=1,EE,20F2193C,extended,A0640005
+
+// - ADVENTURE SPECIFIC
 
 [Events\Adventure Specific\Play as Jak]
 patch=1,EE,E0017880,extended,00B6C0D4
@@ -325,6 +343,8 @@ patch=1,EE,20EC1F1C,extended,66E37880
 description=If dialogue doesn't play, enable this.
 patch=1,EE,E0012825,extended,00BAE28C
 patch=1,EE,20BAE290,extended,24040001
+
+// - BOSS FIGHT (MIZO)
 
 [Events\Mizo\Spawn 6th Mizo]
 description=Use only if 5th player is Mizo (ex. having 5 CPUs)
@@ -402,6 +422,8 @@ patch=1,EE,20EDBF04,extended,80630041
 patch=1,EE,20EDBF08,extended,0283182A
 patch=1,EE,20EDBF0C,extended,1460FFF4
 
+// - DRIVER NEVER TAKEN
+
 [Events\Driver Never Taken\Allow selecting more Jaks]
 patch=1,EE,602DD978,extended,1000008E
 patch=1,EE,00020000,extended,0000005C
@@ -447,6 +469,8 @@ patch=1,EE,00BCF894,extended,28660001
 //Allow writing the driver ID
 patch=1,EE,E00103BC,extended,00BCF9C0
 patch=1,EE,20BCF9C4,extended,10000003
+
+// - GRAND PRIX
 
 [Events\Grand Prix\Enable (Enable first!)]
 description=Press R3+SELECT to enable
@@ -547,7 +571,7 @@ patch=1,EE,20BD25AC,extended,2C630002
 patch=1,EE,20BD25B0,extended,10600028
 patch=1,EE,10BD2700,extended,6464FFFD
 
-[Events\Disable Final Cutscene for Grand Prix]
+[Events\Grand Prix\Custom\Disable Final Cutscene for Grand Prix]
 patch=1,EE,E001FFFD,extended,00BD2700
 patch=1,EE,10BD2700,extended,64640001
 
@@ -742,6 +766,8 @@ patch=1,EE,10B433E0,extended,000010AF
 patch=1,EE,E0010012,extended,00BB8D78
 patch=1,EE,20BB8D7C,extended,00000000
 
+// - BAD WEATHER
+
 [Gameplay\Bad Weather (Saves to profile!)\Activate]
 patch=1,EE,602E35A0,extended,000000FF
 patch=1,EE,00000001,extended,0000043E
@@ -750,6 +776,8 @@ patch=1,EE,00000001,extended,0000043E
 patch=1,EE,602E35A0,extended,00000000
 patch=1,EE,00000001,extended,0000043E
 
+// - MIRRORED GAME
+
 [Gameplay\Mirrored Game (Saves to profile!)\Activate]
 patch=1,EE,602E35A0,extended,000000FF
 patch=1,EE,00000001,extended,0000043D
@@ -757,6 +785,8 @@ patch=1,EE,00000001,extended,0000043D
 [Gameplay\Mirrored Game (Saves to profile!)\Deactivate]
 patch=1,EE,602E35A0,extended,00000000
 patch=1,EE,00000001,extended,0000043D
+
+// - TRACTOR BEAM
 
 [Gameplay\Enable Tractor Beam\Race\At last place]
 description=Adds Tractor Beam as a possible random weapon
@@ -797,6 +827,8 @@ patch=1,EE,D1080274,extended,00000006
 patch=1,EE,01080268,extended,00000000
 patch=1,EE,D1080274,extended,00000006
 patch=1,EE,01080274,extended,00000005
+
+// - EVENTS
 
 [Online-LAN\Events\Enable only Freeze Rally, Death Race, Rush Hour]
 patch=1,EE,602DF004,extended,6463FFFD
@@ -839,6 +871,8 @@ patch=1,EE,00B28C2C,extended,9C62001C
 patch=1,EE,20B28C30,extended,14570002
 patch=1,EE,00B28C38,extended,9C620014
 
+// - LEVEL LOAD FIX
+
 [Split-Screen\Level load fix\Enable first!]
 description=2nd controller: L3+SELECT=ON, L3+START=OFF
 //2nd controller: L3+SELECT to activate
@@ -879,6 +913,8 @@ description=Displays next level without passing trough region
 patch=1,EE,E0022178,extended,009C95F4
 patch=1,EE,209C9578,extended,00000000
 patch=1,EE,209C95F0,extended,00000000
+
+// - CONTINUE POINTS
 
 [Split-Screen\Continue Point Fixes\Tours]
 patch=1,EE,E004726B,extended,00992018
@@ -940,6 +976,8 @@ patch=1,EE,20990040,extended,00992DD4
 patch=1,EE,2098FFF0,extended,00992E64
 patch=1,EE,2098FFA0,extended,00992244
 patch=1,EE,2098FF50,extended,00992B14
+
+// - BYPASSES
 
 [Split-Screen\Bypasses\Button Bypass]
 description=2nd controller = L3+R3 when on driver select

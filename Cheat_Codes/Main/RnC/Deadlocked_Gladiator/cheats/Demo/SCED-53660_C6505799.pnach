@@ -198,7 +198,7 @@ patch=1,EE,205C4664,extended,A0820000
 [Vendor\Bots Shop]
 author=YukiXXL
 description=Replaces Help Log with Bots Shop
-patch=1,EE,E0010012,extended,0059CC74
+patch=1,EE,E0040012,extended,0059CC74
 patch=1,EE,0059CC74,extended,24050010
 //Enable Extra Color
 patch=1,EE,005C3C58,extended,2A020009
