@@ -1,0 +1,31 @@
+gametitle=Serious Sam: Next Encounter Final Release
+comment=RANDOMIZER MOD - UNUSED MINIONS
+
+// Rlevel3_1 (Gian Hornet)
+
+//Enabled
+patch=1,EE,E0040008,extended,000A0134
+patch=1,EE,200A0120,extended,0C070401
+patch=1,EE,200A0124,extended,25240E0D
+patch=1,EE,200A0128,extended,3C3B2726
+patch=1,EE,200A012C,extended,FFFFFFFF
+//Disabled
+patch=1,EE,E0030008,extended,000A0134
+patch=1,EE,200A0120,extended,0D0C0701
+patch=1,EE,200A0124,extended,2625240E
+patch=1,EE,200A0128,extended,FF3C3B27
+
+// Clevel8_3 (Reeban Tooth Fish)
+
+//Enabled
+patch=1,EE,E0040015,extended,000A0134
+patch=1,EE,200A0120,extended,0A060500
+patch=1,EE,200A0124,extended,15140C0B
+patch=1,EE,200A0128,extended,26251716
+patch=1,EE,200A012C,extended,FFFFFF3C
+//Disabled
+patch=1,EE,E0040015,extended,000A0134
+patch=1,EE,200A0120,extended,0B0A0500
+patch=1,EE,200A0124,extended,1615140C
+patch=1,EE,200A0128,extended,3C262517
+patch=1,EE,200A012C,extended,FFFFFFFF

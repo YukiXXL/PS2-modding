@@ -1,0 +1,30 @@
+gametitle=Syphon Filter: The Omega Strain Jampack Demo #1
+
+// WIDESCREEN
+
+[Patches\Widescreen 16:9 (Gameplay Only)]
+author=YukiXXL
+gsaspectratio=16:9
+patch=1,EE,0010CEAC,extended,3C033F40
+patch=1,EE,2010CEB0,extended,44831800
+patch=1,EE,2010CEB4,extended,46030003
+patch=1,EE,2010CEB8,extended,460318C3
+patch=1,EE,2010CEE0,extended,46031840
+patch=1,EE,2010CF2C,extended,E603007C
+patch=1,EE,2010CEE4,extended,0200202D
+
+[Patches\Widescreen 16:9 (HUD+Gameplay)]
+author=YukiXXL
+gsaspectratio=16:9
+patch=1,EE,0010CFC4,extended,3C033F40
+patch=1,EE,2010CFCC,extended,00000000
+
+[Patches\Widescreen 16:9 (1280x720)]
+author=YukiXXL
+gsaspectratio=16:9
+patch=1,EE,20117D54,extended,C4C10004
+patch=1,EE,20117D58,extended,C4C20000
+
+//FMV's fix
+//patch=1,EE,203F752C,extended,24101400
+//patch=1,EE,203F7534,extended,24127600

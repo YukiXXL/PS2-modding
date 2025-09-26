@@ -13,6 +13,10 @@ patch=1,EE,203907DC,extended,460318C3
 patch=1,EE,203907E0,extended,46031840
 patch=1,EE,20390854,extended,E603007C
 
+//HUD fix
+patch=1,EE,2039068C,extended,00000000
+patch=1,EE,00390694,extended,3C033F40
+
 // OTHER
 
 [Patches\NV and Flashlight Fix]

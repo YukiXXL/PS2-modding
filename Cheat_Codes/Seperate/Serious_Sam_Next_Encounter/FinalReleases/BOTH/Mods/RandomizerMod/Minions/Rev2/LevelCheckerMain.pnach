@@ -1,0 +1,21 @@
+gametitle=Serious Sam: Next Encounter Final Release
+comment=RANDOMIZER MOD - LEVEL CHECKER
+
+//Start
+patch=1,EE,200A0320,extended,27BDFFF0 //sp - 10
+patch=1,EE,200A0324,extended,FFBF0000 //sd ra, $0000(sp)
+patch=1,EE,200A0328,extended,0000082D //at = 0
+//lui v0, $0036
+//ori v0, v0, to LevelSet_2 "Rlevel3_2" pointer value"
+patch=1,EE,200A0334,extended,DCA70000 //ld a3, $0000(a1), where a1 is addr of next level
+patch=1,EE,200A0338,extended,8C590000 //lw t9, from LevelSet pointer level value
+patch=1,EE,200A033C,extended,DF390000 //ld t9, $0000(t9)
+patch=1,EE,200A0340,extended,14F90002 //compare a3, t9 and branch if not equal
+patch=1,EE,200A0344,extended,0000082D //at = 0
+patch=1,EE,200A0348,extended,2401002a //at = 2a
+patch=1,EE,200A034C,extended,3C02000A //lui v0, $000a
+//jal to "Fun_StringCopy"
+patch=1,EE,200A0354,extended,AC410134 //sw at to "JokerLevelChecker"
+patch=1,EE,200A0358,extended,DFBF0000 //ld ra, $0000(sp)
+patch=1,EE,200A035C,extended,03E00008 //jr ra
+patch=1,EE,200A0360,extended,27BD0010 //sp + 10

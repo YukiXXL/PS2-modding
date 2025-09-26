@@ -1,4 +1,5 @@
 002771F8 - Blood splatter (00276DD8 - PAL)
+00263FF0 - Taser Burns (00264640 - PAL)
 
 001763B0 - Load if has menu interactions
 

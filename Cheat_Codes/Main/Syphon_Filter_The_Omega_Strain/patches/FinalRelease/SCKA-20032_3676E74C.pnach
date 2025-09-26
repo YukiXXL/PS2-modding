@@ -3,7 +3,7 @@ gametitle=Syphon Filter: The Omega Virus (NTSC-K)
 // WIDESCREEN
 
 [Patches\Widescreen 16:9]
-author=nemesis2000
+author=nemesis2000 (pnach by Arapapa)
 gsaspectratio=16:9
 //gameplay
 patch=1,EE,0039A7D0,extended,3C043F40
@@ -13,14 +13,24 @@ patch=1,EE,2039A7DC,extended,460318C3
 patch=1,EE,2039A7E0,extended,46031840
 patch=1,EE,2039A854,extended,E603007C
 
+//HUD fix
+patch=1,EE,2039A68C,extended,00000000
+patch=1,EE,0039A694,extended,3C033F40
+
 //FMV's fix
-patch=1,EE,2041CBBC,extended,24101400
-patch=1,EE,2041CBC4,extended,24127600
+patch=1,EE,1041CBA4,extended,24126c00
+patch=1,EE,1041CBB0,extended,24102800
+patch=1,EE,1041CBBC,extended,24127600
+patch=1,EE,1041CBC4,extended,24101400
+
+//FMV's fix
+//patch=1,EE,2041CBBC,extended,24101400
+//patch=1,EE,2041CBC4,extended,24127600
 
 // OTHER
 
 [Patches\NV and Flashlight Fix]
-author=YukiXXL
+author=refraction
 description=Cop2 problems.
 patch=1,EE,20398898,extended,48438000
 patch=1,EE,2039889C,extended,4B06521B

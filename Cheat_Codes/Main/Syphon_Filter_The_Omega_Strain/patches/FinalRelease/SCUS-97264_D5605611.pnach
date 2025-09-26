@@ -13,6 +13,10 @@ patch=1,EE,203754EC,extended,460318C3
 patch=1,EE,203754F0,extended,46031840
 patch=1,EE,20375564,extended,E603007C
 
+//HUD fix
+patch=1,EE,2037539C,extended,00000000
+patch=1,EE,003753A4,extended,3C033F40
+
 //FMV's fix
 patch=1,EE,203F752C,extended,24101400
 patch=1,EE,203F7534,extended,24127600
@@ -20,7 +24,7 @@ patch=1,EE,203F7534,extended,24127600
 // OTHER
 
 [Patches\NV and Flashlight Fix]
-author=YukiXXL
+author=refraction
 description=Cop2 problems.
 patch=1,EE,203735F8,extended,48438000
 patch=1,EE,203735FC,extended,4B06521B
