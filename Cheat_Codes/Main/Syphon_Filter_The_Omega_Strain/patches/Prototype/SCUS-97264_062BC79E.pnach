@@ -1,5 +1,31 @@
 gametitle=SFOS Prototype Review Code Mar 6 2004 (NTSC-U)
 
+// WIDESCREEN
+
+[Patches\Widescreen (16:9)\Gameplay]
+author=nemesis2000
+gsaspectratio=16:9
+patch=1,EE,00397C10,extended,3C043F40
+patch=1,EE,20397C14,extended,44841800
+patch=1,EE,20397C18,extended,46030003
+patch=1,EE,20397C1C,extended,460318C3
+patch=1,EE,20397C20,extended,46031840
+patch=1,EE,20397C94,extended,E603007C
+
+[Patches\Widescreen (16:9)\HUD]
+author=nemesis2000
+gsaspectratio=16:9
+patch=1,EE,20397ACC,extended,00000000
+patch=1,EE,00397AD4,extended,3C033F40
+
+[Patches\Widescreen (16:9)\FMVs]
+author=nemesis2000
+gsaspectratio=16:9
+patch=1,EE,1041AF1C,extended,24127600
+patch=1,EE,1041AF24,extended,24101400
+
+// OTHER
+
 [Patches\Dongle protection bypass]
 author=YukiXXL
 patch=1,EE,0041D418,byte,0

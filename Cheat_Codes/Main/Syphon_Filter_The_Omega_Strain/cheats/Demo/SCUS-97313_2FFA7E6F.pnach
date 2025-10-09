@@ -415,6 +415,23 @@ author=YukiXXL
 patch=1,EE,2025F0E4,extended,00000000
 patch=1,EE,0025F230,extended,14800011 //Memory fix
 
+[Gameplay\Never remove backpacks]
+author=YukiXXL
+description=Remove_9cBackpack (CheckForRemoval_9cBackpack)
+patch=1,EE,202D0C90,extended,03E00008
+patch=1,EE,202D0C94,extended,00000000
+
+[Gameplay\Pick up any body\Disable Removing Dead Bodies]
+author=YukiXXL
+description=deadActiveNpcs (Deactivate_6cHuman).
+patch=1,EE,002193D0,extended,64140000
+
+[Gameplay\Pick up any body\Enable for every body you step on]
+author=YukiXXL
+description=BodyIsPickupable
+patch=1,EE,202D0EBC,extended,24030001
+patch=1,EE,202D0EC8,extended,A0C33AEC
+
 // MODS
 
 // - FAKE MP
