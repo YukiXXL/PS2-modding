@@ -312,6 +312,11 @@ description=Challenges stay unlocked trough the game.
 patch=1,EE,600A0054,extended,00000000
 patch=1,EE,00020001,extended,000006B4
 
+[DreadZone Station\Challenges\Permanently (Saved)\Unlock All Challenges]
+author=YukiXXL
+patch=1,EE,600A0054,extended,24020007
+patch=1,EE,00020001,extended,00000744
+
 [Story Mode\Menus\Challenges\CheckBadgeUnlock]
 author=YukiXXL
 description=Unlocks bunch of things. Kept for reference.
@@ -338,6 +343,9 @@ patch=1,EE,2064C50C,extended,24020001
 //PLANET TORVAL
 patch=1,EE,E001F809,extended,0066E864
 patch=1,EE,2066E864,extended,24020001
+//STYGIA
+patch=1,EE,E001F809,extended,0065B994
+patch=1,EE,2065B994,extended,24020001
 //GHOST STATION
 patch=1,EE,E002F809,extended,0066EBAC
 patch=1,EE,2066EB78,extended,00000000

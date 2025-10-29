@@ -2,7 +2,7 @@ gametitle=Syphon Filter: The Omega Strain Public Beta 1 (NTSC-U)
 
 // WIDESCREEN
 
-[Patches\Widescreen (16:9)\Gameplay]
+[Widescreen (16:9)\Gameplay]
 author=YukiXXL
 gsaspectratio=16:9
 patch=1,EE,00369510,extended,3C043F40
@@ -12,7 +12,7 @@ patch=1,EE,2036951C,extended,460318C3
 patch=1,EE,20369520,extended,46031840
 patch=1,EE,20369594,extended,E603007C
 
-[Patches\Widescreen (16:9)\HUD]
+[Widescreen (16:9)\HUD]
 author=YukiXXL
 gsaspectratio=16:9
 patch=1,EE,203693CC,extended,00000000
@@ -20,13 +20,13 @@ patch=1,EE,003693D4,extended,3C033F40
 
 // OTHER
 
-[Patches\NV and Flashlight Fix]
+[NV and Flashlight Fix]
 author=YukiXXL
 description=Cop2 problems.
 patch=1,EE,20367798,extended,48438000
 patch=1,EE,2036779C,extended,4B06521B
 
-[Patches\Offline button]
+[Offline button]
 author=YukiXXL
 description=gONLINE_ONLY is 0. Enables Offline play.
 patch=1,EE,00453938,byte,0

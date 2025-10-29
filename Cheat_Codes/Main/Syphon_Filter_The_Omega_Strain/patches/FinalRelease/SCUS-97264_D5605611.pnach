@@ -2,7 +2,7 @@ gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 
 // WIDESCREEN
 
-[Patches\Widescreen (16:9)\Gameplay]
+[Widescreen (16:9)\Gameplay]
 author=nemesis2000
 gsaspectratio=16:9
 patch=1,EE,003754E0,extended,3C043F40
@@ -12,13 +12,13 @@ patch=1,EE,203754EC,extended,460318C3
 patch=1,EE,203754F0,extended,46031840
 patch=1,EE,20375564,extended,E603007C
 
-[Patches\Widescreen (16:9)\HUD]
+[Widescreen (16:9)\HUD]
 author=nemesis2000
 gsaspectratio=16:9
 patch=1,EE,2037539C,extended,00000000
 patch=1,EE,003753A4,extended,3C033F40
 
-[Patches\Widescreen (16:9)\FMVs]
+[Widescreen (16:9)\FMVs]
 author=nemesis2000
 gsaspectratio=16:9
 patch=1,EE,103F752C,extended,24127600
@@ -26,7 +26,7 @@ patch=1,EE,103F7534,extended,24101400
 
 // OTHER
 
-[Patches\NV and Flashlight Fix]
+[NV and Flashlight Fix]
 author=refraction
 description=Cop2 problems.
 patch=1,EE,203735F8,extended,48438000

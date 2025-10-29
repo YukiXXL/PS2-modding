@@ -3,4 +3,4 @@ comment=PATCHES - OTHER
 
 //NV and Flashlight Fix
 patch=1,EE,203953F8,extended,48438000
-patch=1,EE,203735FC,extended,4B06521B
+patch=1,EE,203953FC,extended,4B06521B
