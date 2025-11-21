@@ -18,3 +18,5 @@ DREADZONE INTERIOR
 0063C1C0 - GetJuggSafeTeam__C4Hero
 
 003F3998 - Coop Unlimited Distance
+
+00684120 - Exit Vehicle

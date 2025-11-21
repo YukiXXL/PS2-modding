@@ -18,3 +18,5 @@ PLANET TORVAL
 00626BD8 - GetJuggSafeTeam__C4Hero
 
 00466B10 - Coop Unlimited Distance
+
+0066E738 - Exit Vehicle

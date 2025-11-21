@@ -20,3 +20,5 @@ STYGIA
 00613C80 - GetJuggSafeTeam__C4Hero
 
 00491AE8 - Coop Unlimited Distance
+
+0065B868 - Exit Vehicle

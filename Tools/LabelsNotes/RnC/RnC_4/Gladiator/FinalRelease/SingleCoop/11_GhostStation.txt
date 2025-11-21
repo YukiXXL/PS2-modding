@@ -18,3 +18,5 @@ GHOST STATION
 0062B9F0 - GetJuggSafeTeam__C4Hero
 
 003E7F90 - Coop Unlimited Distance
+
+006739D8 - Exit Vehicle

@@ -19,4 +19,6 @@ THE VALIX BELT
 
 003FDD18 - Coop Unlimited Distance
 
+00650BF8 - Exit Vehicle
+
 00240140 - MemSlots

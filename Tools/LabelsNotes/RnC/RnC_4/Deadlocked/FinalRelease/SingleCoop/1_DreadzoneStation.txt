@@ -19,6 +19,8 @@ DREADZONE STATION
 
 00492D40 - Coop Unlimited Distance
 
+006B0F18 - Exit Vehicle
+
 0067A4F8 - Death__4Herob
 0069EA40 - Transitions__4Hero
 

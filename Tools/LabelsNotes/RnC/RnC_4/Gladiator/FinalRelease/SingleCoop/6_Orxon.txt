@@ -19,4 +19,6 @@ ORXON
 
 003EF6C0 - Coop Unlimited Distance
 
+00668D18 - Exit Vehicle
+
 002401C0 - MemSlots

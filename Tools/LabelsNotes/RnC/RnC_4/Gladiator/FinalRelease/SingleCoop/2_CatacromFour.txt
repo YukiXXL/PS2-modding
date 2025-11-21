@@ -18,3 +18,5 @@ CATACROM FOUR
 0061DE90 - GetJuggSafeTeam__C4Hero
 
 003FF738 - Coop Unlimited Distance
+
+00665DF0 - Exit Vehicle

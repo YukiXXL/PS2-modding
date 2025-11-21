@@ -19,4 +19,6 @@ MARAXUS
 
 0047EA00 - Coop Unlimited Distance
 
+00679D88 - Exit Vehicle
+
 002404C0 - MemSlots

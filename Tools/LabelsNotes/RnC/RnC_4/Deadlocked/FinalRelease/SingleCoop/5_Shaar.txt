@@ -19,11 +19,20 @@ SHAAR
 
 00415838 - Coop Unlimited Distance
 
+00659528 - Exit Vehicle
+
 - SHOOT TO KILL
-003ABAE0 (p -> 004C6CA0) - ShootToKill
+003ABAE0 (switch) - Autopilot
 
-+0x64 - 3-CheckPlayers
-+0xA4 - 5-Run_and_CheckFinish
+1-Start
+2-
+3-CheckForHerosInsideVehicle
+4-Enable Autopilot
+5-Run_and_CheckFinish
++0x18 - Load Vehicle position
++0x20 - Define checkpoint range (float)
++0x48 - Get position and checkpoint range
++0x50 - Check if position is within the range (lower than range (float))
 
-+0x370 - FUN_PlayersCheck
+004C7010 - Fun_Hero_in_Vehicle
 lw v0, $02b8(v1) = 1st; lw v0, $02bc(v1) = 2nd

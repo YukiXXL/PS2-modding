@@ -18,3 +18,5 @@ ORXON
 0061C2A0 - GetJuggSafeTeam__C4Hero
 
 003EEF38 - Coop Unlimited Distance
+
+00663E00 - Exit Vehicle

@@ -21,4 +21,6 @@ STYGIA
 
 00493078 - Coop Unlimited Distance
 
+006604C0 - Exit Vehicle
+
 00240240 - MemSlots

@@ -18,182 +18,6 @@ author=YukiXXL
 patch=1,EE,E001202D,extended,005C5DC4
 patch=1,EE,205C5DBC,extended,24070001
 
-[Story Mode\PLANET CHECKER (MUST BE ON!)]
-author=YukiXXL
-description=Checks planet and writes offsets accordingly.
-//-RESET
-patch=1,EE,E0020000,extended,0021DFE8 //g_NW_GameSettings
-patch=1,EE,400A0050,extended,000C0001
-patch=1,EE,00000000,extended,00000000
-//-DREADZONE STATION and ARENA
-patch=1,EE,E00CFF70,extended,00492D40 // Check "GetJuggSafeTeam__C4Hero"
-patch=1,EE,200A0050,extended,00602D58 // Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
-patch=1,EE,200A0054,extended,00584678 // MF_UpdateProgress__Fv
-patch=1,EE,200A0058,extended,006C16B8 // CheckUnlockMission__8LevelBoxi
-patch=1,EE,200A005C,extended,0061B940 // Pointer from "MenuSkinScreen_UpdateItemList__Fv"
-patch=1,EE,200A0060,extended,006BDDC0 // IsGadgetCoopOnly__9GadgetBoxi
-patch=1,EE,200A0064,extended,003AE030 // HudAmmo_QSItems
-patch=1,EE,200A0068,extended,004A1F90 // Disable Bots
-patch=1,EE,200A006C,extended,005A52B0 // Bot_ResetGlobalComm__Fv
-patch=1,EE,200A0070,extended,005DA6E0 // GetHudEnterState__Fi | GetHudExitState__Fi (above "GetHudState__Fi")
-patch=1,EE,200A0074,extended,005EFAF8 // Pointer from "BotHud_UpdateIcons"
-patch=1,EE,200A0078,extended,00669348 // GetJuggSafeTeam__C4Hero
-patch=1,EE,200A007C,extended,00492D40 // Coop Unlimited Distance
-//-CATACROM FOUR
-patch=1,EE,E00CFF70,extended,003FEDB0
-patch=1,EE,200A0050,extended,005B3548
-patch=1,EE,200A0054,extended,00536D78
-patch=1,EE,200A0058,extended,00671638
-patch=1,EE,200A005C,extended,005CC130
-patch=1,EE,200A0060,extended,0066DD40
-patch=1,EE,200A0064,extended,003A7B80
-patch=1,EE,200A0068,extended,004A5438
-patch=1,EE,200A006C,extended,005560C8
-patch=1,EE,200A0070,extended,0058AF98
-patch=1,EE,200A0074,extended,005A0370
-patch=1,EE,200A0078,extended,00619338
-patch=1,EE,200A007C,extended,003FEDB0
-//-SARATHOS
-patch=1,EE,E00CFF70,extended,00401490
-patch=1,EE,200A0050,extended,005B3270
-patch=1,EE,200A0054,extended,00537138
-patch=1,EE,200A0058,extended,00671680
-patch=1,EE,200A005C,extended,005CBE58
-patch=1,EE,200A0060,extended,0066DD88
-patch=1,EE,200A0064,extended,003A70F0
-patch=1,EE,200A0068,extended,0048F4B0
-patch=1,EE,200A006C,extended,00555E98
-patch=1,EE,200A0070,extended,0058ACC0
-patch=1,EE,200A0074,extended,005A0098
-patch=1,EE,200A0078,extended,006191C8
-patch=1,EE,200A007C,extended,00401490
-//-KRONOS
-patch=1,EE,E00CFF70,extended,003E4500
-patch=1,EE,200A0050,extended,005D9290
-patch=1,EE,200A0054,extended,0055B638
-patch=1,EE,200A0058,extended,00697E50
-patch=1,EE,200A005C,extended,005F1E78
-patch=1,EE,200A0060,extended,00694558
-patch=1,EE,200A0064,extended,003A8EC0
-patch=1,EE,200A0068,extended,004C72D0
-patch=1,EE,200A006C,extended,0057BE38
-patch=1,EE,200A0070,extended,005B0C50
-patch=1,EE,200A0074,extended,005C6028
-patch=1,EE,200A0078,extended,0063F998
-patch=1,EE,200A007C,extended,003E4500
-//-SHAAR
-patch=1,EE,E00CFF70,extended,00415838
-patch=1,EE,200A0050,extended,005AB750
-patch=1,EE,200A0054,extended,0052EDB8
-patch=1,EE,200A0058,extended,00669CC8
-patch=1,EE,200A005C,extended,005C4338
-patch=1,EE,200A0060,extended,006663D0
-patch=1,EE,200A0064,extended,003A6A90
-patch=1,EE,200A0068,extended,004A6EA8
-patch=1,EE,200A006C,extended,0054E0C8
-patch=1,EE,200A0070,extended,005831A0
-patch=1,EE,200A0074,extended,00598578
-patch=1,EE,200A0078,extended,006119C8
-patch=1,EE,200A007C,extended,00415838
-//-ORXON
-patch=1,EE,E00CFF70,extended,003EEF38
-patch=1,EE,200A0050,extended,005B5CF0
-patch=1,EE,200A0054,extended,00537FF8
-patch=1,EE,200A0058,extended,00674B80
-patch=1,EE,200A005C,extended,005CE8D8
-patch=1,EE,200A0060,extended,00671288
-patch=1,EE,200A0064,extended,003A6CB0
-patch=1,EE,200A0068,extended,0047E730
-patch=1,EE,200A006C,extended,00558710
-patch=1,EE,200A0070,extended,0058D740
-patch=1,EE,200A0074,extended,005A2B18
-patch=1,EE,200A0078,extended,0061C2A0
-patch=1,EE,200A007C,extended,003EEF38
-//-THE VALIX BELT
-patch=1,EE,E00CFF70,extended,003FD4E8
-patch=1,EE,200A0050,extended,0059E9E8
-patch=1,EE,200A0054,extended,00520878
-patch=1,EE,200A0058,extended,0065CCB0
-patch=1,EE,200A005C,extended,005B75D0
-patch=1,EE,200A0060,extended,006593B8
-patch=1,EE,200A0064,extended,003A72D0
-patch=1,EE,200A0068,extended,004A7F00
-patch=1,EE,200A006C,extended,005416D0
-patch=1,EE,200A0070,extended,00576438
-patch=1,EE,200A0074,extended,0058B810
-patch=1,EE,200A0078,extended,00604A50
-patch=1,EE,200A007C,extended,003FD4E8
-//-PLANET TORVAL
-patch=1,EE,E00CFF70,extended,00466B10
-patch=1,EE,200A0050,extended,005C0668
-patch=1,EE,200A0054,extended,00542DB8
-patch=1,EE,200A0058,extended,0067EED8
-patch=1,EE,200A005C,extended,005D9250
-patch=1,EE,200A0060,extended,0067B5E0
-patch=1,EE,200A0064,extended,003A8140
-patch=1,EE,200A0068,extended,004BD9C8
-patch=1,EE,200A006C,extended,005631E8
-patch=1,EE,200A0070,extended,005980B8
-patch=1,EE,200A0074,extended,005AD490
-patch=1,EE,200A0078,extended,00626BD8
-patch=1,EE,200A007C,extended,00466B10
-//-STYGIA
-patch=1,EE,E00CFF70,extended,00491AE8
-patch=1,EE,200A0050,extended,005AD688
-patch=1,EE,200A0054,extended,0052FD78
-patch=1,EE,200A0058,extended,0066C138
-patch=1,EE,200A005C,extended,005C6270
-patch=1,EE,200A0060,extended,00668840
-patch=1,EE,200A0064,extended,003A64E0
-patch=1,EE,200A0068,extended,004A5EF8
-patch=1,EE,200A006C,extended,00550308
-patch=1,EE,200A0070,extended,005850D8
-patch=1,EE,200A0074,extended,0059A4B0
-patch=1,EE,200A0078,extended,00613C80
-patch=1,EE,200A007C,extended,00491AE8
-//-MARAXUS
-patch=1,EE,E00CFF70,extended,0047D570
-patch=1,EE,200A0050,extended,005C6BB0
-patch=1,EE,200A0054,extended,005493F8
-patch=1,EE,200A0058,extended,00685A00
-patch=1,EE,200A005C,extended,005DF798
-patch=1,EE,200A0060,extended,00682108
-patch=1,EE,200A0064,extended,003A7CE0
-patch=1,EE,200A0068,extended,004A1C50
-patch=1,EE,200A006C,extended,00569728
-patch=1,EE,200A0070,extended,0059E600
-patch=1,EE,200A0074,extended,005B39D8
-patch=1,EE,200A0078,extended,0062D1C8
-patch=1,EE,200A007C,extended,0047D570
-//-GHOST STATION
-patch=1,EE,E00CFF70,extended,003E7978
-patch=1,EE,200A0050,extended,005C0C98
-patch=1,EE,200A0054,extended,00542138
-patch=1,EE,200A0058,extended,0067F350
-patch=1,EE,200A005C,extended,005D9880
-patch=1,EE,200A0060,extended,0067BA58
-patch=1,EE,200A0064,extended,003A8710
-patch=1,EE,200A0068,extended,004A03D0
-patch=1,EE,200A006C,extended,005637B0
-patch=1,EE,200A0070,extended,005986E8
-patch=1,EE,200A0074,extended,005ADAC0
-patch=1,EE,200A0078,extended,00626E98
-patch=1,EE,200A007C,extended,003E7978
-//-DREADZONE INTERIOR
-patch=1,EE,E00CFF70,extended,003F3120
-patch=1,EE,200A0050,extended,005D0F68
-patch=1,EE,200A0054,extended,00553B78
-patch=1,EE,200A0058,extended,0068F828
-patch=1,EE,200A005C,extended,005E9B50
-patch=1,EE,200A0060,extended,0068BF30
-patch=1,EE,200A0064,extended,003AC610
-patch=1,EE,200A0068,extended,004B3228
-patch=1,EE,200A006C,extended,00573DF8
-patch=1,EE,200A0070,extended,005A8DF0
-patch=1,EE,200A0074,extended,005BDD08
-patch=1,EE,200A0078,extended,00637528
-patch=1,EE,200A007C,extended,003F3120
-
 // - CHALLENGES
 
 [Story Mode\Challenges\Fix IDs of CUT challenges\Sarathos]
@@ -284,6 +108,241 @@ patch=1,EE,00020001,extended,00001B90
 patch=1,EE,602404D8,extended,00000004
 patch=1,EE,00020001,extended,00001B90
 
+[Story Mode\Challenges\Disable Landstalker Autopilot\Shaar (Shoot To Kill)]
+author=YukiXXL
+description=Disables Landstalker autopilot and allows on-foot completion.
+//Memory Check
+patch=1,EE,E0071C04,extended,004C6D50
+//Set the final waypoint
+patch=1,EE,204C6D24,extended,8E420000
+patch=1,EE,204C6D30,extended,2442FFFF
+patch=1,EE,204C6D34,extended,AE020020
+//Check for "g_Hero" instead Landstalker
+patch=1,EE,204C6D48,extended,A2000425
+patch=1,EE,204C6D50,extended,3C020036
+patch=1,EE,204C6D54,extended,8C432B38
+patch=1,EE,204C6D5C,extended,D86200A0
+
+[Story Mode\Challenges\Disable Landstalker Autopilot\Orxon (Scoring with the Blarg)]
+author=YukiXXL
+description=Disables Landstalker autopilot and allows on-foot completion.
+//Memory Check
+patch=1,EE,E007228E,extended,00488778
+//Set the final waypoint
+patch=1,EE,2048874C,extended,8E420000
+patch=1,EE,20488758,extended,2442FFFF
+patch=1,EE,2048875C,extended,AE020020
+//Check for "g_Hero" instead Landstalker
+patch=1,EE,20488770,extended,A2000425
+patch=1,EE,20488778,extended,3C020036
+patch=1,EE,2048877C,extended,8C432B38
+patch=1,EE,20488784,extended,D86200A0
+
+[Story Mode\Challenges\Disable Landstalker Autopilot\Maraxus (Spider on a Wire)]
+author=YukiXXL
+description=Disables Landstalker autopilot and allows on-foot completion.
+//Memory Check
+patch=1,EE,E00784C8,extended,004E1060
+//Set the final waypoint
+patch=1,EE,204E1034,extended,8E420000
+patch=1,EE,204E1040,extended,2442FFFF
+patch=1,EE,204E1044,extended,AE020020
+//Check for "g_Hero" instead Landstalker
+patch=1,EE,204E1058,extended,A2000425
+patch=1,EE,204E1060,extended,3C020036
+patch=1,EE,204E1064,extended,8C432E38
+patch=1,EE,204E106C,extended,D86200A0
+
+// - PLANET CHECKER
+
+[Story Mode\PLANET CHECKER (MUST BE ON!)]
+author=YukiXXL
+description=Checks planet and writes offsets accordingly.
+//-RESET
+patch=1,EE,E0020000,extended,0021DFE8 //g_NW_GameSettings
+patch=1,EE,400A0050,extended,000D0001
+patch=1,EE,00000000,extended,00000000
+//-DREADZONE STATION and ARENA
+patch=1,EE,E00DFF70,extended,00492D40 // Check "GetJuggSafeTeam__C4Hero"
+patch=1,EE,200A0050,extended,00602D58 // Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+patch=1,EE,200A0054,extended,00584678 // MF_UpdateProgress__Fv
+patch=1,EE,200A0058,extended,006C16B8 // CheckUnlockMission__8LevelBoxi
+patch=1,EE,200A005C,extended,0061B940 // Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+patch=1,EE,200A0060,extended,006BDDC0 // IsGadgetCoopOnly__9GadgetBoxi
+patch=1,EE,200A0064,extended,003AE030 // HudAmmo_QSItems
+patch=1,EE,200A0068,extended,004A1F90 // Disable Bots
+patch=1,EE,200A006C,extended,005A52B0 // Bot_ResetGlobalComm__Fv
+patch=1,EE,200A0070,extended,005DA6E0 // GetHudEnterState__Fi | GetHudExitState__Fi (above "GetHudState__Fi")
+patch=1,EE,200A0074,extended,005EFAF8 // Pointer from "BotHud_UpdateIcons"
+patch=1,EE,200A0078,extended,00669348 // GetJuggSafeTeam__C4Hero
+patch=1,EE,200A007C,extended,00492D40 // Coop Unlimited Distance
+patch=1,EE,200A0080,extended,006B0F18 // Exit Vehicle
+//-CATACROM FOUR
+patch=1,EE,E00DFF70,extended,003FEDB0
+patch=1,EE,200A0050,extended,005B3548
+patch=1,EE,200A0054,extended,00536D78
+patch=1,EE,200A0058,extended,00671638
+patch=1,EE,200A005C,extended,005CC130
+patch=1,EE,200A0060,extended,0066DD40
+patch=1,EE,200A0064,extended,003A7B80
+patch=1,EE,200A0068,extended,004A5438
+patch=1,EE,200A006C,extended,005560C8
+patch=1,EE,200A0070,extended,0058AF98
+patch=1,EE,200A0074,extended,005A0370
+patch=1,EE,200A0078,extended,00619338
+patch=1,EE,200A007C,extended,003FEDB0
+patch=1,EE,200A0080,extended,00660E98
+//-SARATHOS
+patch=1,EE,E00DFF70,extended,00401490
+patch=1,EE,200A0050,extended,005B3270
+patch=1,EE,200A0054,extended,00537138
+patch=1,EE,200A0058,extended,00671680
+patch=1,EE,200A005C,extended,005CBE58
+patch=1,EE,200A0060,extended,0066DD88
+patch=1,EE,200A0064,extended,003A70F0
+patch=1,EE,200A0068,extended,0048F4B0
+patch=1,EE,200A006C,extended,00555E98
+patch=1,EE,200A0070,extended,0058ACC0
+patch=1,EE,200A0074,extended,005A0098
+patch=1,EE,200A0078,extended,006191C8
+patch=1,EE,200A007C,extended,00401490
+patch=1,EE,200A0080,extended,00660DB0
+//-KRONOS
+patch=1,EE,E00DFF70,extended,003E4500
+patch=1,EE,200A0050,extended,005D9290
+patch=1,EE,200A0054,extended,0055B638
+patch=1,EE,200A0058,extended,00697E50
+patch=1,EE,200A005C,extended,005F1E78
+patch=1,EE,200A0060,extended,00694558
+patch=1,EE,200A0064,extended,003A8EC0
+patch=1,EE,200A0068,extended,004C72D0
+patch=1,EE,200A006C,extended,0057BE38
+patch=1,EE,200A0070,extended,005B0C50
+patch=1,EE,200A0074,extended,005C6028
+patch=1,EE,200A0078,extended,0063F998
+patch=1,EE,200A007C,extended,003E4500
+patch=1,EE,200A0080,extended,00687580
+//-SHAAR
+patch=1,EE,E00DFF70,extended,00415838
+patch=1,EE,200A0050,extended,005AB750
+patch=1,EE,200A0054,extended,0052EDB8
+patch=1,EE,200A0058,extended,00669CC8
+patch=1,EE,200A005C,extended,005C4338
+patch=1,EE,200A0060,extended,006663D0
+patch=1,EE,200A0064,extended,003A6A90
+patch=1,EE,200A0068,extended,004A6EA8
+patch=1,EE,200A006C,extended,0054E0C8
+patch=1,EE,200A0070,extended,005831A0
+patch=1,EE,200A0074,extended,00598578
+patch=1,EE,200A0078,extended,006119C8
+patch=1,EE,200A007C,extended,00415838
+patch=1,EE,200A0080,extended,00659528
+//-ORXON
+patch=1,EE,E00DFF70,extended,003EEF38
+patch=1,EE,200A0050,extended,005B5CF0
+patch=1,EE,200A0054,extended,00537FF8
+patch=1,EE,200A0058,extended,00674B80
+patch=1,EE,200A005C,extended,005CE8D8
+patch=1,EE,200A0060,extended,00671288
+patch=1,EE,200A0064,extended,003A6CB0
+patch=1,EE,200A0068,extended,0047E730
+patch=1,EE,200A006C,extended,00558710
+patch=1,EE,200A0070,extended,0058D740
+patch=1,EE,200A0074,extended,005A2B18
+patch=1,EE,200A0078,extended,0061C2A0
+patch=1,EE,200A007C,extended,003EEF38
+patch=1,EE,200A0080,extended,00663E00
+//-THE VALIX BELT
+patch=1,EE,E00DFF70,extended,003FD4E8
+patch=1,EE,200A0050,extended,0059E9E8
+patch=1,EE,200A0054,extended,00520878
+patch=1,EE,200A0058,extended,0065CCB0
+patch=1,EE,200A005C,extended,005B75D0
+patch=1,EE,200A0060,extended,006593B8
+patch=1,EE,200A0064,extended,003A72D0
+patch=1,EE,200A0068,extended,004A7F00
+patch=1,EE,200A006C,extended,005416D0
+patch=1,EE,200A0070,extended,00576438
+patch=1,EE,200A0074,extended,0058B810
+patch=1,EE,200A0078,extended,00604A50
+patch=1,EE,200A007C,extended,003FD4E8
+patch=1,EE,200A0080,extended,0064C3E0
+//-PLANET TORVAL
+patch=1,EE,E00DFF70,extended,00466B10
+patch=1,EE,200A0050,extended,005C0668
+patch=1,EE,200A0054,extended,00542DB8
+patch=1,EE,200A0058,extended,0067EED8
+patch=1,EE,200A005C,extended,005D9250
+patch=1,EE,200A0060,extended,0067B5E0
+patch=1,EE,200A0064,extended,003A8140
+patch=1,EE,200A0068,extended,004BD9C8
+patch=1,EE,200A006C,extended,005631E8
+patch=1,EE,200A0070,extended,005980B8
+patch=1,EE,200A0074,extended,005AD490
+patch=1,EE,200A0078,extended,00626BD8
+patch=1,EE,200A007C,extended,00466B10
+patch=1,EE,200A0080,extended,0066E738
+//-STYGIA
+patch=1,EE,E00DFF70,extended,00491AE8
+patch=1,EE,200A0050,extended,005AD688
+patch=1,EE,200A0054,extended,0052FD78
+patch=1,EE,200A0058,extended,0066C138
+patch=1,EE,200A005C,extended,005C6270
+patch=1,EE,200A0060,extended,00668840
+patch=1,EE,200A0064,extended,003A64E0
+patch=1,EE,200A0068,extended,004A5EF8
+patch=1,EE,200A006C,extended,00550308
+patch=1,EE,200A0070,extended,005850D8
+patch=1,EE,200A0074,extended,0059A4B0
+patch=1,EE,200A0078,extended,00613C80
+patch=1,EE,200A007C,extended,00491AE8
+patch=1,EE,200A0080,extended,0065B868
+//-MARAXUS
+patch=1,EE,E00DFF70,extended,0047D570
+patch=1,EE,200A0050,extended,005C6BB0
+patch=1,EE,200A0054,extended,005493F8
+patch=1,EE,200A0058,extended,00685A00
+patch=1,EE,200A005C,extended,005DF798
+patch=1,EE,200A0060,extended,00682108
+patch=1,EE,200A0064,extended,003A7CE0
+patch=1,EE,200A0068,extended,004A1C50
+patch=1,EE,200A006C,extended,00569728
+patch=1,EE,200A0070,extended,0059E600
+patch=1,EE,200A0074,extended,005B39D8
+patch=1,EE,200A0078,extended,0062D1C8
+patch=1,EE,200A007C,extended,0047D570
+patch=1,EE,200A0080,extended,00674DB0
+//-GHOST STATION
+patch=1,EE,E00DFF70,extended,003E7978
+patch=1,EE,200A0050,extended,005C0C98
+patch=1,EE,200A0054,extended,00542138
+patch=1,EE,200A0058,extended,0067F350
+patch=1,EE,200A005C,extended,005D9880
+patch=1,EE,200A0060,extended,0067BA58
+patch=1,EE,200A0064,extended,003A8710
+patch=1,EE,200A0068,extended,004A03D0
+patch=1,EE,200A006C,extended,005637B0
+patch=1,EE,200A0070,extended,005986E8
+patch=1,EE,200A0074,extended,005ADAC0
+patch=1,EE,200A0078,extended,00626E98
+patch=1,EE,200A007C,extended,003E7978
+patch=1,EE,200A0080,extended,0066EA80
+//-DREADZONE INTERIOR
+patch=1,EE,E00DFF70,extended,003F3120
+patch=1,EE,200A0050,extended,005D0F68
+patch=1,EE,200A0054,extended,00553B78
+patch=1,EE,200A0058,extended,0068F828
+patch=1,EE,200A005C,extended,005E9B50
+patch=1,EE,200A0060,extended,0068BF30
+patch=1,EE,200A0064,extended,003AC610
+patch=1,EE,200A0068,extended,004B3228
+patch=1,EE,200A006C,extended,00573DF8
+patch=1,EE,200A0070,extended,005A8DF0
+patch=1,EE,200A0074,extended,005BDD08
+patch=1,EE,200A0078,extended,00637528
+patch=1,EE,200A007C,extended,003F3120
+patch=1,EE,200A0080,extended,0067F088
+
 // - MENUS
 
 [Story Mode\Menus\Planets\Enable Dreadzone Interior Planet]
@@ -312,7 +371,7 @@ description=Challenges stay unlocked trough the game.
 patch=1,EE,600A0054,extended,00000000
 patch=1,EE,00020001,extended,000006B4
 
-[DreadZone Station\Challenges\Permanently (Saved)\Unlock All Challenges]
+[Story Mode\Menus\Challenges\Permanently (Saved)\Unlock All Challenges]
 author=YukiXXL
 patch=1,EE,600A0054,extended,24020007
 patch=1,EE,00020001,extended,00000744
@@ -329,27 +388,10 @@ patch=1,EE,00020001,extended,00000174
 
 [Story Mode\Gameplay\Exit from a Vehicle at any time]
 author=YukiXXL
-//CATACROM FOUR
-patch=1,EE,E001F809,extended,00660FC4
-patch=1,EE,20660FC4,extended,24020001
-//KRONOS
-patch=1,EE,E002F809,extended,006876AC
-patch=1,EE,20687678,extended,00000000
-patch=1,EE,206876AC,extended,24020001
-//THE VALIX BELT
-patch=1,EE,E002F809,extended,0064C50C
-patch=1,EE,2064C4D8,extended,00000000
-patch=1,EE,2064C50C,extended,24020001
-//PLANET TORVAL
-patch=1,EE,E001F809,extended,0066E864
-patch=1,EE,2066E864,extended,24020001
-//STYGIA
-patch=1,EE,E001F809,extended,0065B994
-patch=1,EE,2065B994,extended,24020001
-//GHOST STATION
-patch=1,EE,E002F809,extended,0066EBAC
-patch=1,EE,2066EB78,extended,00000000
-patch=1,EE,2066EBAC,extended,24020001
+patch=1,EE,600A0080,extended,00000000
+patch=1,EE,00020001,extended,000000F8
+patch=1,EE,600A0080,extended,00000000
+patch=1,EE,00020001,extended,0000012C
 
 [Story Mode\Gameplay\Enable Gadgets in Quick Select]
 author=YukiXXL

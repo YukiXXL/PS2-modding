@@ -19,4 +19,6 @@ KRONOS
 
 003E4BB8 - Coop Unlimited Distance
 
+0068C558 - Exit Vehicle
+
 00240740 - MemSlots

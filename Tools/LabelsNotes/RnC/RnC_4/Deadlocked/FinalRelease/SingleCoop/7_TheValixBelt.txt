@@ -18,3 +18,5 @@ THE VALIX BELT
 00604A50 - GetJuggSafeTeam__C4Hero
 
 003FD4E8 - Coop Unlimited Distance
+
+0064C3E0 - Exit Vehicle

@@ -18,3 +18,5 @@ KRONOS
 0063F998 - GetJuggSafeTeam__C4Hero
 
 003E4500 - Coop Unlimited Distance
+
+00687580 - Exit Vehicle

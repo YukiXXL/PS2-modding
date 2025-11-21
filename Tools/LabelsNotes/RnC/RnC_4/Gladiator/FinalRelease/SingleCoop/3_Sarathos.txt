@@ -19,4 +19,6 @@ SARATHOS
 
 00401E30 - Coop Unlimited Distance
 
+00665B88 - Exit Vehicle
+
 00240300 - MemSlots

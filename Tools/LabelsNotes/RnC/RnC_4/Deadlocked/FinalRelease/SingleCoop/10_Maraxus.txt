@@ -18,3 +18,5 @@ MARAXUS
 0062D1C8 - GetJuggSafeTeam__C4Hero
 
 0047D570 - Coop Unlimited Distance
+
+00674DB0 - Exit Vehicle
