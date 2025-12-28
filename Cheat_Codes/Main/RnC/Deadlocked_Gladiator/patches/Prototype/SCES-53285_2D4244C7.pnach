@@ -1,0 +1,11 @@
+gametitle=Ratchet: Gladiator Review Prototype (October, 2005) (PAL-E)
+comment=Dumped by ImNotEli. Dongle bypass by YukiXXL
+
+[Dongle Protection Bypass]
+patch=1,EE,E006802D,extended,004EF718
+patch=1,EE,204EF700,extended,3C08004C
+patch=1,EE,204EF704,extended,350859B4
+patch=1,EE,204EF708,extended,3C090021
+patch=1,EE,204EF70C,extended,2529BEC0
+patch=1,EE,204EF710,extended,03E00008
+patch=1,EE,204EF714,extended,AD280000

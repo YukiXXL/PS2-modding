@@ -1,0 +1,109 @@
+gametitle=Ratchet and Clank (E3 Demo) (NTSC-U)
+comment=Provided by YukiXXL
+
+[Unused Models\Early Nanotech\Always Enabled]
+author=tcrf.net
+description=Fire the Devastator to spawn the object.
+patch=1,EE,E0010099,extended,00241C84
+patch=1,EE,10241C84,extended,24040176
+
+[Unused Models\Early Nanotech\on button press]
+author=tcrf.net
+description=R3+START=activated; R3+SELECT=deactivated.
+patch=1,EE,E001FFF3,extended,00136502
+patch=1,EE,10241C84,extended,24040176
+patch=1,EE,E001FFFA,extended,00136502
+patch=1,EE,10241C84,extended,24040099
+
+[Debug\Activate Debug Menu]
+author=tcrf.net
+description=Press L3 to activate.
+patch=1,EE,E001FFFD,extended,00136502
+patch=1,EE,00152790,extended,00000001
+
+[Debug\Enable Cheats]
+author=tcrf.net
+description="L1+R1+L2+R2" to unlock all.
+patch=1,EE,E0013448,extended,0019A8C0
+patch=1,EE,0019A924,extended,00000001
+
+[Menus\Show Menus\Help]
+author=YukiXXL
+description=Fix needed for "Hints" item!
+patch=1,EE,E0023140,extended,0019A0E8
+patch=1,EE,4019A07C,extended,00080004
+patch=1,EE,00000003,extended,00000000
+
+[Menus\Show Menus\Options]
+author=YukiXXL
+description=Fix needed!
+patch=1,EE,E0023010,extended,0019A660
+patch=1,EE,4019A5F4,extended,00080004
+patch=1,EE,00000003,extended,00000000
+
+[Menus\Show Menus\Map (SELECT)]
+author=YukiXXL
+description=Enable other 2 options.
+patch=1,EE,E00430D8,extended,00199D88
+//Define menu switching
+patch=1,EE,20199DD0,extended,00199E18
+patch=1,EE,20199DD4,extended,00199DE0
+//Enable menus
+patch=1,EE,40199D6C,extended,00020008
+patch=1,EE,00000003,extended,00000000
+
+[Menus\Show Menus\Map (SELECT)\Galactic Map]
+author=YukiXXL
+description=Selecting "Galactic Map" opens "Level Select".
+patch=1,EE,E0029E18,extended,00199DD0
+patch=1,EE,20199D90,extended,000A0100
+patch=1,EE,000A0108,extended,00000011
+
+[Menus\Show Menus\Map (SELECT)\Galactic Map (Alternative)]
+author=YukiXXL
+description=Highlight "Galactic Map" and exit out.
+patch=1,EE,E0019E18,extended,00199C44
+patch=1,EE,0015278C,extended,00000001
+patch=1,EE,E0030010,extended,0019A8D0
+patch=1,EE,2019A8D4,extended,00199C38 //Fixes TLB errors
+patch=1,EE,20199C44,extended,00199DA8 //Resets highlighted menu
+patch=1,EE,0015278C,extended,00000000 //OpenLevelSelect is false
+
+[Menus\Show Menus\Map (SELECT)\Galactic Map\Only show available levels]
+author=YukiXXL
+patch=1,EE,20137518,extended,01000000
+
+[Menus\Show Menus\Fixes\Help Menu]
+author=YukiXXL
+description=Fixes thumbnails from crashing the game.
+patch=1,EE,E1010008,extended,3019A190
+patch=1,EE,1019A000,extended,001343F8
+patch=1,EE,E1010009,extended,2019A190
+patch=1,EE,1019A000,extended,00134400
+
+[Menus\Show Menus\Fixes\Options Menu (Thumbnails)]
+author=YukiXXL
+description=Fixes thumbnails loop softlock.
+patch=1,EE,E0014440,extended,0019A5B8
+patch=1,EE,1019A5B8,extended,001343D8
+
+[Menus\Show Menus\Fixes\Options Menu (Text)]
+author=YukiXXL
+description=Fixes text crash.
+patch=1,EE,E0013290,extended,0019A6DC
+patch=1,EE,2019A6DC,extended,0019A108
+
+[Menus\Show Menus\Fixes\Options Menu (Text) (Alternative)]
+author=YukiXXL
+description=In case the first one causes problems.
+patch=1,EE,E1010000,extended,3019A6B0
+patch=1,EE,2019A6DC,extended,00000000
+patch=1,EE,E1010001,extended,2019A6B0
+patch=1,EE,2019A6DC,extended,00153290
+
+[Menus\Moves\Replace Propeller thumbnails with Thruster]
+author=YukiXXL
+patch=1,EE,501343F0,extended,00000004
+patch=1,EE,001343E0,extended,00000000
+patch=1,EE,501343F8,extended,00000004
+patch=1,EE,001343E8,extended,00001730

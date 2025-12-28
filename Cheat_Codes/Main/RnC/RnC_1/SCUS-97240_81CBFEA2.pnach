@@ -1,0 +1,73 @@
+gametitle=Ratchet and Clank (EB Games Demo) (NTSC-U)
+comment=Provided by YukiXXL
+
+[Debug\Activate Debug Menu]
+author=tcrf.net
+description=Press L3 to activate.
+patch=1,EE,E001FFFD,extended,00138E02
+patch=1,EE,00155D1C,extended,00000001
+
+[Debug\Enable Cheats]
+author=tcrf.net
+description="L1+R1+L2+R2" to unlock all; R3 to open Debug menu.
+patch=1,EE,E001C180,extended,00239F38
+patch=1,EE,001AC224,extended,00000001
+patch=1,EE,E001C500,extended,00273D48
+patch=1,EE,001AC5A4,extended,00000001
+
+[Menus\Show Menus\Help]
+author=YukiXXL
+description=Fix needed for "Hints" item!
+patch=1,EE,E0024ED1,extended,001AB2E8
+patch=1,EE,401AB2AC,extended,00050004
+patch=1,EE,00000002,extended,00000000
+// BLACKWATER
+patch=1,EE,E0024ED1,extended,001AB668
+patch=1,EE,401AB62C,extended,00050004
+patch=1,EE,00000002,extended,00000000
+
+[Menus\Show Menus\Map (SELECT)]
+author=YukiXXL
+description=Enable other 2 options.
+patch=1,EE,E0044ECB,extended,001AAF38
+//Define menu switching
+patch=1,EE,201AAF7C,extended,001AAFB8
+patch=1,EE,201AAF80,extended,001AAF88
+//Enable menus
+patch=1,EE,401AAF1C,extended,00020008
+patch=1,EE,00000002,extended,00000000
+// BLACKWATER
+patch=1,EE,E0044ECB,extended,001AB2B8
+//Define menu switching
+patch=1,EE,201AB2FC,extended,001AB338
+patch=1,EE,201AB300,extended,001AB308
+//Enable menus
+patch=1,EE,401AB29C,extended,00020008
+patch=1,EE,00000002,extended,00000000
+
+[Menus\Show Menus\Map (SELECT)\Galactic Map]
+author=YukiXXL
+description=Selecting "Galactic Map" opens "Level Select".
+patch=1,EE,000A0108,extended,00000011
+// METROPOLIS
+patch=1,EE,E001AFB8,extended,001AAF7C
+patch=1,EE,201AAF40,extended,000A0100
+// BLACKWATER
+patch=1,EE,E001B338,extended,001AB2FC
+patch=1,EE,201AB2C0,extended,000A0100
+
+[Menus\Show Menus\Fixes\Help Menu]
+author=YukiXXL
+description=Fixes thumbnails from crashing the game.
+patch=1,EE,E0016A00,extended,001AB204
+patch=1,EE,101AB204,extended,00136B18
+// BLACKWATER
+patch=1,EE,E0016A00,extended,001AB584
+patch=1,EE,101AB584,extended,00136B18
+
+[Menus\Moves\Replace Propeller thumbnails with Thruster]
+author=YukiXXL
+patch=1,EE,501369F0,extended,00000004
+patch=1,EE,001369E0,extended,00000000
+patch=1,EE,501369F8,extended,00000004
+patch=1,EE,001369E8,extended,00000000
