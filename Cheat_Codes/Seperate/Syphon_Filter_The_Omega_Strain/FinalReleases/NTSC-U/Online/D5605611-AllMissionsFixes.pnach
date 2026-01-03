@@ -11,18 +11,34 @@ patch=1,EE,204ACB8C,extended,00000006
 patch=1,EE,204ACB98,extended,00000007
 patch=1,EE,204ACB9C,extended,00000008
 
-//Bypass the OnlineIndextoLevel checking
-//1st check bypass
-patch=1,EE,2033E674,extended,3C010049
-patch=1,EE,2033E678,extended,8C24B7A4
-//2nd check bypass
-patch=1,EE,2033EAE0,extended,3C010049
-patch=1,EE,2033EAE8,extended,8C25B7A4
-
-//Training Lobby ID fix
+// TRAINING
+//Lobby ID fix
 patch=1,EE,204ACBA4,extended,00000000
-//Training Bypass Level ID check
+//Bypass Level ID check
 patch=1,EE,00295E88,extended,28410018
-//Training Level ID fix
+//Level ID fix
 patch=1,EE,D048B7A4,extended,00000017
 patch=1,EE,0048B7A4,extended,00000011
+
+//Bypass the OnlineIndextoLevel checking
+//1st check bypass
+patch=1,EE,2033E674,extended,3C020049
+patch=1,EE,1033E678,extended,8C44B7A4
+//2nd check bypass
+patch=1,EE,2033EAE0,extended,3C020049
+patch=1,EE,1033EAE8,extended,8C45B7A4
+
+//(Not needed but just in case)
+//Join Mission
+patch=1,EE,202AC5E4,extended,3C030049
+patch=1,EE,102AC5EC,extended,8C63B7A4
+//Create Mission
+patch=1,EE,202A0E34,extended,3C030049
+patch=1,EE,102A0E40,extended,8C62B7A4
+
+//Other
+patch=1,EE,202AB07C,extended,3C030049
+patch=1,EE,102AB080,extended,8C63B7A4
+//
+patch=1,EE,202CA8DC,extended,00131880
+patch=1,EE,002CA8F4,extended,2A620011

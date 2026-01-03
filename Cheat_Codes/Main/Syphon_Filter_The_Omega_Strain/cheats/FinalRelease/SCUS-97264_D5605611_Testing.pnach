@@ -1,26 +1,36 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 
-[Testing\Body is pickable and has disguise (Host)]
+[Testing\Gameplay\NPCs\Body is pickable and has disguise (Host)]
 patch=1,EE,201491FC,extended,24020001
 patch=1,EE,2014923C,extended,24020001
 
-[Testing\Body is pickable and has disguise (Client)]
+[Testing\Gameplay\NPCs\Body is pickable and has disguise (Client)]
 patch=1,EE,201B61B0,extended,240E0001
 patch=1,EE,201B61E0,extended,A2AE3469
 patch=1,EE,201B6D68,extended,A2AE3468
 patch=1,EE,201B7DD0,extended,A28E3468
 patch=1,EE,0017759C,extended,24420000
 
-[Testing\Never remove backpacks]
+[Testing\Gameplay\NPCs\Never remove backpacks]
 patch=1,EE,20254770,extended,03E00008
 patch=1,EE,20254774,extended,00000000
 
-[Testing\Force Unused Dialogue on every objective completed]
+[Testing\Gameplay\Player\Radio\Force Unused Dialogue on every objective completed]
 patch=1,EE,20225B50,extended,0040302D
 patch=1,EE,202260C8,extended,00000000
 patch=1,EE,20228C18,extended,0040302D
 
-[Testing\Force Unused Dialogue on every objective completed]
-patch=1,EE,00225b50,word,0040302d
-patch=1,EE,002260c8,word,00000000
-patch=1,EE,00228c18,word,0040302d
+[Testing\Online\Enable All Missions\Workarounds\Join Mission]
+patch=1,EE,202AC5E4,extended,3C030049
+patch=1,EE,102AC5EC,extended,8C63B7A4
+
+[Testing\Online\Enable All Missions\Workarounds\Create Mission]
+patch=1,EE,202A0E34,extended,3C030049
+patch=1,EE,102A0E40,extended,8C62B7A4
+
+[Testing\Online\Enable All Missions\Workarounds\Other]
+patch=1,EE,202AB07C,extended,3C030049
+patch=1,EE,102AB080,extended,8C63B7A4
+//
+patch=1,EE,202CA8DC,extended,00131880
+patch=1,EE,002CA8F4,extended,2A620011
