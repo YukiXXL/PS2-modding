@@ -37,12 +37,12 @@ patch=1,EE,E003F809,extended,0067D01C
 patch=1,EE,0067D010,extended,24050004
 
 [Misc\Menus\Bypass Server Start]
-patch=1,EE,E001F54A,extended,0067D484
-patch=1,EE,0067D484,extended,24020001
+patch=1,EE,E0010012,extended,0067D490
+patch=1,EE,2067D484,extended,24020001
 
 [Misc\Menus\Server Start Offline]
-patch=1,EE,E001F54A,extended,0067D484
-patch=1,EE,0067D484,extended,0C18784C
+patch=1,EE,E0010012,extended,0067D490
+patch=1,EE,2067D484,extended,0C18784C
 
 [Misc\Menus\Demo Lobby]
 //Function

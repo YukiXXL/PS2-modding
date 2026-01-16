@@ -27,7 +27,7 @@ Yemen: Arms Bazaar:
 - Clients start with K-BAR while host starts with nothing.
 - Stealth fails immediately.
 - VIP can still be killed and credentials can be taken but guards won't take them so it still fails the objective on entering the market.
-- Thae-bok Jon still spawns.
+- Thae-bok Jon still spawns even if stealth has failed.
 - When host or client is collecting the tape, the camera angle change will occur only on host screen.
 - Destroying all communication equipments doesn't spawn Khorsh's Thugs.
 - Nobody can pick up the grenades for Zohar so mission cannot be completed.
