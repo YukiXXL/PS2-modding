@@ -1,6 +1,54 @@
 gametitle=Ratchet: Deadlocked (NTSC-U)
 comment=Special thanks to Moose for the help tips.
 
+// BOOT
+
+[BOOT Multiplayer\Boot into\Enabled]
+author=Agent Moose
+description=boot = goey
+patch=1,EE,20157C8C,extended,A38484EA
+patch=1,EE,2021EDBC,extended,00000001
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitNotRelevantRightNow]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,FFFFFFFF
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToMain]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000000
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToQuit]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000001
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToNetworkDown]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000002
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToOnline]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000003
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToGameOver]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000004
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToLocalGameOver]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000005
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToProfileSelect]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000006
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToProfile]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000007
+
+[BOOT Multiplayer\Boot into\eNWLobbyInitToDebug]
+author=Agent Moose
+patch=1,EE,2021DE80,extended,00000008
+
 // MULTIPLAYER
 
 [Multiplayer\Local\More Teams]

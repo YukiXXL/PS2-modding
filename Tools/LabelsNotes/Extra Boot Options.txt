@@ -1,0 +1,2 @@
+by: Agent Moose
+In the system.cnf file there is a boot2:, which normally just has the regular boot direcotry (cdrom0:scus_97465;1).  Although it doesn't seem to work for me, you should be able to change the boot directory to say, BOPT=multi to boot into multiplayer.  gooey would boot a gui that you specified.  The boot options also allowed you to set other options, such as progressive scan, widescreen,  x and y screen offset, ect.

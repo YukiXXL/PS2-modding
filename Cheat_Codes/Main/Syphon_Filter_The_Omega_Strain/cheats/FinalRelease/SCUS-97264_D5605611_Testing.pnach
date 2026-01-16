@@ -19,18 +19,3 @@ patch=1,EE,20254774,extended,00000000
 patch=1,EE,20225B50,extended,0040302D
 patch=1,EE,202260C8,extended,00000000
 patch=1,EE,20228C18,extended,0040302D
-
-[Testing\Online\Enable All Missions\Workarounds\Join Mission]
-patch=1,EE,202AC5E4,extended,3C030049
-patch=1,EE,102AC5EC,extended,8C63B7A4
-
-[Testing\Online\Enable All Missions\Workarounds\Create Mission]
-patch=1,EE,202A0E34,extended,3C030049
-patch=1,EE,102A0E40,extended,8C62B7A4
-
-[Testing\Online\Enable All Missions\Workarounds\Other]
-patch=1,EE,202AB07C,extended,3C030049
-patch=1,EE,102AB080,extended,8C63B7A4
-//
-patch=1,EE,202CA8DC,extended,00131880
-patch=1,EE,002CA8F4,extended,2A620011
