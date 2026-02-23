@@ -1,46 +1,72 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 
+// BOOT
+
+[Boot\Video Mode\PAL]
+author=YukiXXL
+patch=1,EE,20165690,extended,0000102D
+patch=1,EE,2045A5AC,extended,0000102D
+
 // CHEATS
 
 // - PROFILE
 
-[Cheats\Profile\COMPLETE]
+[Cheats\Profile\T4\All Objectives]
 author=YukiXXL
-description=Unlock Everything possible.
-//Play once for all objectives
 patch=1,EE,20333B58,extended,2401FFFF
 patch=1,EE,20333B5C,extended,AC410084
 patch=1,EE,20333B68,extended,24020001
-//All Ratings
+
+[Cheats\Profile\T4\All Ratings]
+author=YukiXXL
 patch=1,EE,20332EEC,extended,24010520
 patch=1,EE,20332EF0,extended,AC610008
 patch=1,EE,20332EF8,extended,24020001
-//All Solo Pars
+
+[Cheats\Profile\T4\All Solo Pars]
+author=YukiXXL
 patch=1,EE,20335F28,extended,24030122
 patch=1,EE,20335F30,extended,AE030000
-//All Team Pars
+
+[Cheats\Profile\T4\All Team Pars]
+author=YukiXXL
 patch=1,EE,20335F40,extended,240300AA
 patch=1,EE,20335F50,extended,AE030004
-//All Missions, No Collateral
+
+[Cheats\Profile\T4\All Missions, No Collateral]
+author=YukiXXL
 patch=1,EE,20335F90,extended,24020000
 patch=1,EE,20335F98,extended,AE020010
-//All Missions, No Deaths
+
+[Cheats\Profile\T4\All Missions, No Deaths]
+author=YukiXXL
 patch=1,EE,20335F78,extended,24020000
 patch=1,EE,20335F80,extended,AE020014
 
 // - MENUS
 
-[Cheats\Menus\Open Levels]
-author=gamehacking.org
-patch=1,EE,20333030,extended,24020001
-
 [Cheats\Menus\Unlock All Levels]
 author=gamehacking.org
 patch=1,EE,20333020,extended,2002FFFF
 
+[Cheats\Menus\Open Levels]
+author=gamehacking.org
+patch=1,EE,20333030,extended,24020001
+
 // - GAMEPLAY
 
-[Cheats\Gameplay\Levitation Code]
+[Cheats\Gameplay\Freeze Timer (Offline Play)]
+author=gamehacking.org
+patch=1,EE,20245870,extended,AE0006DC
+patch=1,EE,20245874,extended,44800000
+
+[Cheats\Gameplay\Write Par Time with minimum objectives completed]
+author=YukiXXL
+patch=1,EE,20335B34,extended,64140001
+
+// -- PLAYER
+
+[Cheats\Gameplay\Player\Levitation Code]
 author=gamehacking.org
 description=Press L3 to activate; R3 to deactivate. L3+/\ to go UP; L3+X to go DOWN.
 patch=1,EE,100FFE00,extended,00000000
@@ -64,7 +90,7 @@ patch=1,EE,200FFE0C,extended,46020000
 patch=1,EE,200FFE10,extended,E4400008
 patch=1,EE,200FFE14,extended,08067D23
 
-[Cheats\Gameplay\Quick Hero Only (X3)]
+[Cheats\Gameplay\Player\Quick Hero Only (X3)]
 author=gamehacking.org
 patch=1,EE,200FFF00,extended,3C03004F
 patch=1,EE,200FFF04,extended,8C637858
@@ -76,24 +102,7 @@ patch=1,EE,200FFF1C,extended,44810000
 patch=1,EE,200FFF20,extended,080EB6A5
 patch=1,EE,203ADA90,extended,0803FFC0
 
-[Cheats\Gameplay\Infinite Ammo/No Reload]
-author=gamehacking.org
-patch=1,EE,20140B9C,extended,00000000
-
-[Cheats\Gameplay\Infinite Health]
-author=gamehacking.org
-patch=1,EE,200C2000,extended,00062821
-patch=1,EE,200C2004,extended,44850000
-patch=1,EE,200C2008,extended,46800020
-patch=1,EE,200C200C,extended,08091078
-patch=1,EE,200C2010,extended,E6200040
-patch=1,EE,2024CED8,extended,0C030800
-
-[Cheats\Gameplay\Infinite Armor]
-author=gamehacking.org
-patch=1,EE,20187988,extended,00000000
-
-[Cheats\Gameplay\Immune To Fire/Falls/Bullets]
+[Cheats\Gameplay\Player\God Mode]
 author=gamehacking.org
 patch=1,EE,200FFFC0,extended,3C01004F
 patch=1,EE,200FFFC4,extended,8C217858
@@ -102,15 +111,37 @@ patch=1,EE,200FFFD0,extended,E6800040
 patch=1,EE,200FFFD8,extended,080F32EE
 patch=1,EE,203CCBB0,extended,0803FFF0
 
-[Cheats\Gameplay\Invisible (No Awareness)]
+[Cheats\Gameplay\Player\Infinite Armor]
+author=gamehacking.org
+patch=1,EE,20187988,extended,00000000
+
+[Cheats\Gameplay\Player\Invisible (No Awareness)]
 author=gamehacking.org
 patch=1,EE,2016CA2C,extended,0805B37A
 
-[Cheats\Gameplay\Non-Aggressive AI]
-author=gamehacking.org
-patch=1,EE,2016DDB0,extended,03E00008
+// --- BELARUS 2
 
-[Cheats\Gameplay\1 Hit Kill]
+[Cheats\Gameplay\Player\Belarus 2\Plant infinite C4s on B2]
+author=YukiXXL
+patch=1,EE,D048B7A4,extended,00010005
+patch=1,EE,203D9880,extended,00000000
+//Disable when not B2
+patch=1,EE,D048B7A4,extended,00110005
+patch=1,EE,203D9880,extended,0C0F665C
+
+// -- WEAPONS
+
+[Cheats\Gameplay\Weapons\Max Ammo (All Weapons)]
+author=gamehacking.org
+patch=1,EE,2013FC2C,extended,340203E7
+patch=1,EE,2013FC30,extended,00401023
+patch=1,EE,2013FC34,extended,AE22000C
+
+[Cheats\Gameplay\Weapons\Infinite Ammo/No Reload]
+author=gamehacking.org
+patch=1,EE,20140B9C,extended,00000000
+
+[Cheats\Gameplay\Weapons\1 Hit Kill]
 author=gamehacking.org
 patch=1,EE,200FFEC0,extended,3C01004F
 patch=1,EE,200FFEC4,extended,8C217858
@@ -119,54 +150,21 @@ patch=1,EE,200FFED0,extended,08061E1E
 patch=1,EE,200FFED8,extended,08061DDA
 patch=1,EE,20187760,extended,0803FFB0
 
-[Cheats\Gameplay\Max Ammo (All Weapons)]
-author=gamehacking.org
-patch=1,EE,2013FC2C,extended,340203E7
-patch=1,EE,2013FC30,extended,00401023
-patch=1,EE,2013FC34,extended,AE22000C
+// -- NPCs
 
-[Cheats\Gameplay\Stop Timer]
+[Cheats\Gameplay\NPCs\Non-Aggressive AI]
 author=gamehacking.org
-patch=1,EE,20244FE4,extended,24003634
+patch=1,EE,2016DDB0,extended,03E00008
 
-[Cheats\Gameplay\Freeze Timer]
-author=gamehacking.org
-patch=1,EE,20245870,extended,AE0006DC
-patch=1,EE,20245874,extended,44800000
+// -- EQUIPMENT MODIFY
 
-[Cheats\Gameplay\Open Weapons]
+[Cheats\Gameplay\Equipment Modify\Open Weapons]
 author=gamehacking.org
 patch=1,EE,20332B5C,extended,24020001
 
-[Cheats\Gameplay\Unlock All Weapons]
+[Cheats\Gameplay\Equipment Modify\Unlock All Weapons]
 author=gamehacking.org
 patch=1,EE,20332B50,extended,2003FFFF
-
-[Cheats\Gameplay\Plant infinite C4s on B2]
-author=YukiXXL
-patch=1,EE,203D9880,extended,00000000
-
-[Cheats\Gameplay\Write Par Time with minimum objectives completed]
-author=YukiXXL
-patch=1,EE,20335B34,extended,64140001
-
-// ADDONS
-
-[Addons\PAL video mode]
-author=YukiXXL
-patch=1,EE,201656A0,extended,00000000
-
-[Addons\60 FPS]
-author=YukiXXL
-description=60 in-game. Menus are 60 by default.
-patch=1,EE,00165468,extended,2402003C
-patch=1,EE,001654A8,extended,2402003C
-patch=1,EE,00165728,extended,2402003C
-
-[Addons\60 FPS (Constant)]
-author=YukiXXL
-description=Keeps 60 in menus and gameplay.
-patch=1,EE,005383D4,extended,0000003C
 
 // MENUS
 
@@ -194,14 +192,40 @@ patch=1,EE,0039376C,extended,24060000
 author=YukiXXL
 patch=1,EE,20186FD8,extended,1040001F
 
-[Gameplay\Toss Body instead of laying it down]
-author=YukiXXL
-patch=1,EE,0024A254,extended,2402002D
-
 [Gameplay\Normal Death replaced with Falling Death]
 author=YukiXXL
 patch=1,EE,00186DA8,extended,24020000
 patch=1,EE,20186DDC,extended,24110002
+
+// - PLAYER
+
+[Gameplay\Player\Toss Body instead of Laying Down]
+author=YukiXXL
+patch=1,EE,2024A248,extended,24030001
+
+// - FPS
+
+[Gameplay\FPS\60(Constant)]
+author=YukiXXL
+description=Keeps 60 in menus and gameplay.
+patch=1,EE,005383D4,extended,0000003C
+
+[Gameplay\FPS\NTSC\60]
+author=YukiXXL
+description=60 in-game. Menus are 60 by default.
+patch=1,EE,00165468,extended,2402003C
+patch=1,EE,00165728,extended,2402003C
+
+[Gameplay\FPS\PROSCAN\60]
+author=YukiXXL
+description=60 in-game. Menus are 60 by default.
+patch=1,EE,001654A8,extended,2402003C
+
+[Gameplay\FPS\PAL\60]
+author=YukiXXL
+description=60 in-game. Menus are 60 by default.
+patch=1,EE,00165488,extended,2402003C
+patch=1,EE,001656B8,extended,2402003C
 
 // - BONUS MISSIONS
 
@@ -221,7 +245,7 @@ patch=1,EE,0014A7D8,extended,24040000
 
 [Gameplay\Bonus Missions\Disable forcing weapons on Kyrgzstan and Chechnya]
 author=YukiXXL
-patch=1,EE,203E1A84,extended,00000000
+patch=1,EE,103E1A80,extended,24A5D8E0
 
 // - EQUIPMENT MODIFY
 
@@ -248,7 +272,7 @@ patch=1,EE,002BDB18,extended,24020007
 [Gameplay\Player\Auto-aim at legs (Jampack demo like)]
 author=YukiXXL
 description=Headshot ability needed!
-patch=1,EE,00248764,extended,24510005
+patch=1,EE,00184BE4,extended,24020003
 
 [Gameplay\Player\Enable picking up Minigun]
 author=YukiXXL
@@ -261,8 +285,25 @@ patch=1,EE,0024C8BC,extended,24020008
 
 // -- APPEARANCE
 
-[Gameplay\Player\Appearance\Random outfits during missions]
+[Gameplay\Player\Appearance\Different disguise]
+author=YukiXXL
+description=This is just a skin. Replaces disguises.
 patch=1,EE,20407A7C,extended,10400020
+
+[Gameplay\Player\Appearance\Random disguise]
+author=YukiXXL
+description=This is just a skin. Replaces disguises.
+patch=1,EE,20407A54,extended,16200008
+patch=1,EE,20407A58,extended,3C010053
+patch=1,EE,20407A5C,extended,DC253878
+patch=1,EE,20407A60,extended,90263874
+patch=1,EE,20407A64,extended,00C53021
+patch=1,EE,20407A68,extended,A0263874
+patch=1,EE,20407A6C,extended,90263874
+patch=1,EE,20407A70,extended,00D7102A
+patch=1,EE,20407A74,extended,1040FFFB
+patch=1,EE,20407A78,extended,90263874
+patch=1,EE,20407A7C,extended,14D10020
 
 [Gameplay\Player\Appearance\Disable mission disguises]
 author=YukiXXL
@@ -327,16 +368,26 @@ patch=1,EE,20330BF0,extended,2402001E
 
 // - NPCs
 
-[Gameplay\NPCs\Friendly Killable]
-description=Removes invulnerability from specific friendly NPCs.
-patch=1,EE,201490EC,extended,0000102D
+[Gameplay\NPCs\Remove Invulnerability from friendly (Host)]
+description=Removes invulnerability from specific friendly NPCs (Imani, Lian, Stone, Gabe).
+patch=1,EE,20148F88,extended,0000102D //SetNotGasable
+patch=1,EE,20148FB8,extended,0000102D //SetNotTaserable
+patch=1,EE,20149018,extended,0000102D //SetFireInvuln
+patch=1,EE,201490EC,extended,0000102D //SetInvulnerable
+
+[Gameplay\NPCs\Remove Invulnerability from friendly (Client)]
+description=Removes invulnerability from specific friendly NPCs (Imani, Lian, Stone, Gabe).
+patch=1,EE,202655E0,extended,24020000
+//IsInvulnerable
+patch=1,EE,201B8750,extended,24050000
+patch=1,EE,201B8760,extended,A08533A4
 
 [Gameplay\NPCs\Give a third weapon]
 author=YukiXXL
 description=Workers get weapons and any other NPC without one.
 patch=1,EE,001B6718,extended,2A020003
 
-[Gameplay\NPCs\Disable auto-killing]
+[Gameplay\NPCs\Disable Kill script]
 author=YukiXXL
 patch=1,EE,20149FC4,extended,00000000
 

@@ -1,30 +1,50 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
 
+// BOOT
+
+[Boot\Video Mode\NTSC]
+author=YukiXXL
+patch=1,EE,20175DF4,extended,24020001
+patch=1,EE,20378D4C,extended,24020001
+
+[Boot\FrontEnd\NTSC]
+author=YukiXXL
+description=Use NTSC version icons.
+patch=1,EE,202A81CC,extended,24020001
+
 // CHEATS
 
 // - PROFILE
 
-[Cheats\Profile\COMPLETE]
+[Cheats\Profile\T4\All Objectives]
 author=YukiXXL
-description=Unlock Everything possible.
-//Play once for all objectives
 patch=1,EE,20339AF8,extended,2401FFFF
 patch=1,EE,20339AFC,extended,AC410084
 patch=1,EE,20339B08,extended,24020001
-//All Ratings
+
+[Cheats\Profile\T4\All Ratings]
+author=YukiXXL
 patch=1,EE,20338E8C,extended,24010520
 patch=1,EE,20338E90,extended,AC610008
 patch=1,EE,20338E98,extended,24020001
-//All Solo Pars
+
+[Cheats\Profile\T4\All Solo Pars]
+author=YukiXXL
 patch=1,EE,2033BF08,extended,2403015E
 patch=1,EE,2033BF10,extended,AE030000
-//All Team Pars
+
+[Cheats\Profile\T4\All Team Pars]
+author=YukiXXL
 patch=1,EE,2033BF30,extended,240300E6
 patch=1,EE,2033BF38,extended,AE030004
-//All Missions, No Collateral
+
+[Cheats\Profile\T4\All Missions, No Collateral]
+author=YukiXXL
 patch=1,EE,2033BF70,extended,24020000
 patch=1,EE,2033BF78,extended,AE020010
-//All Missions, No Deaths
+
+[Cheats\Profile\T4\All Missions, No Deaths]
+author=YukiXXL
 patch=1,EE,2033BF58,extended,24020000
 patch=1,EE,2033BF60,extended,AE020014
 
@@ -40,7 +60,18 @@ patch=1,EE,20338F6C,extended,24020001
 
 // - GAMEPLAY
 
-[Cheats\Gameplay\Levitation Code]
+[Cheats\Gameplay\Freeze Timer]
+author=gamehacking.org
+patch=1,EE,2023B720,extended,AE0006DC
+patch=1,EE,2023B724,extended,44800000
+
+[Cheats\Gameplay\Write Par Time with minimum objectives completed]
+author=YukiXXL
+patch=1,EE,2033BB14,extended,64140001
+
+// -- PLAYER
+
+[Cheats\Gameplay\Player\Levitation Code]
 author=gamehacking.org
 description=Press L3 To Activate, Press R3 To Stop. Whilst In Levitation Mode; Press L3+Triangle To Go Up; L3+X To Go Down.
 patch=1,EE,100FFE00,extended,00000000
@@ -64,7 +95,7 @@ patch=1,EE,200FFE0C,extended,46020000
 patch=1,EE,200FFE10,extended,E4400008
 patch=1,EE,200FFE14,extended,08067E7F
 
-[Cheats\Gameplay\Quick Hero Only (X3)]
+[Cheats\Gameplay\Player\Quick Hero Only (X3)]
 author=gamehacking.org
 patch=1,EE,200FFF00,extended,3C030050
 patch=1,EE,200FFF04,extended,8C63F658
@@ -76,55 +107,7 @@ patch=1,EE,200FFF1C,extended,44810000
 patch=1,EE,200FFF20,extended,080F3D19
 patch=1,EE,203CF460,extended,0803FFC0
 
-[Cheats\Gameplay\Unlimited Health]
-author=gamehacking.org
-patch=1,EE,200C2000,extended,24052710
-patch=1,EE,200C2004,extended,44850000
-patch=1,EE,200C2008,extended,46800020
-patch=1,EE,200C200C,extended,0808E824
-patch=1,EE,200C2010,extended,E6200040
-patch=1,EE,20242E00,extended,0C030800
-
-[Cheats\Gameplay\Unlimited Armor]
-author=gamehacking.org
-patch=1,EE,20187E18,extended,00000000
-
-[Cheats\Gameplay\Unlimited Ammo (No Reload)]
-author=gamehacking.org
-patch=1,EE,2014404C,extended,00000000
-
-[Cheats\Gameplay\Unlimited Grenades]
-author=gamehacking.org
-patch=1,EE,20145508,extended,24003634
-
-[Cheats\Gameplay\Invisible (No Awareness)]
-author=gamehacking.org
-patch=1,EE,2016B53C,extended,0805AE3E
-
-[Cheats\Gameplay\Non Aggressive AI]
-author=gamehacking.org
-patch=1,EE,2016C8C0,extended,03E00008
-
-[Cheats\Gameplay\Freeze Timer]
-author=gamehacking.org
-patch=1,EE,2023B720,extended,AE0006DC
-patch=1,EE,2023B724,extended,44800000
-
-[Cheats\Gameplay\Stop Timer]
-author=gamehacking.org
-patch=1,EE,2023AE8C,extended,3C104270
-patch=1,EE,2023AE94,extended,44900000
-
-[Cheats\Gameplay\1 Hit Kill]
-author=gamehacking.org
-patch=1,EE,200FFEC0,extended,3C010050
-patch=1,EE,200FFEC4,extended,8C21F658
-patch=1,EE,200FFEC8,extended,14350002
-patch=1,EE,200FFED0,extended,08061F42
-patch=1,EE,200FFED8,extended,08061EFE
-patch=1,EE,20187BF0,extended,0803FFB0
-
-[Cheats\Gameplay\God Mode]
+[Cheats\Gameplay\Player\God Mode]
 author=gamehacking.org
 patch=1,EE,200FFFC0,extended,3C010050
 patch=1,EE,200FFFC4,extended,8C21F658
@@ -133,21 +116,58 @@ patch=1,EE,200FFFD0,extended,E6800040
 patch=1,EE,200FFFD8,extended,080FB962
 patch=1,EE,203EE580,extended,0803FFF0
 
-[Cheats\Gameplay\Open Weapons]
+[Cheats\Gameplay\Player\Unlimited Armor]
 author=gamehacking.org
-patch=1,EE,20338AFC,extended,24020001
+patch=1,EE,20187E18,extended,00000000
 
-[Cheats\Gameplay\Unlock All Weapons]
+[Cheats\Gameplay\Player\Invisible (No Awareness)]
 author=gamehacking.org
-patch=1,EE,20338AF0,extended,2003FFFF
+patch=1,EE,2016B53C,extended,0805AE3E
 
-[Cheats\Gameplay\Plant infinite C4s on B2]
+[Cheats\Gameplay\Player\Plant infinite C4s on B2]
 author=YukiXXL
 patch=1,EE,203FB290,extended,00000000
 
-[Cheats\Gameplay\Write Par Time with minimum objectives completed]
+// -- WEAPONS
+
+[Cheats\Gameplay\Weapons\Unlimited Ammo (No Reload)]
+author=gamehacking.org
+patch=1,EE,2014404C,extended,00000000
+
+[Cheats\Gameplay\Weapons\Unlimited Grenades]
+author=gamehacking.org
+patch=1,EE,20145508,extended,24003634
+
+[Cheats\Gameplay\Weapons\1 Hit Kill]
+author=gamehacking.org
+patch=1,EE,200FFEC0,extended,3C010050
+patch=1,EE,200FFEC4,extended,8C21F658
+patch=1,EE,200FFEC8,extended,14350002
+patch=1,EE,200FFED0,extended,08061F42
+patch=1,EE,200FFED8,extended,08061EFE
+patch=1,EE,20187BF0,extended,0803FFB0
+
+// -- NPCs
+
+[Cheats\Gameplay\NPCs\Non Aggressive AI]
+author=gamehacking.org
+patch=1,EE,2016C8C0,extended,03E00008
+
+// -- EQUIPMENT MODIFY
+
+[Cheats\Gameplay\Equipment Modify\Open Weapons]
+author=gamehacking.org
+patch=1,EE,20338AFC,extended,24020001
+
+[Cheats\Gameplay\Equipment Modify\Unlock All Weapons]
+author=gamehacking.org
+patch=1,EE,20338AF0,extended,2003FFFF
+
+// MENUS
+
+[Menus\Options\Enable ProScan option]
 author=YukiXXL
-patch=1,EE,2033BB14,extended,64140001
+patch=1,EE,2029CDBC,extended,10000022
 
 // ADDONS
 
