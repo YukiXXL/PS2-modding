@@ -168,6 +168,11 @@ patch=1,EE,20332B50,extended,2003FFFF
 
 // MENUS
 
+[Menus\Always Enable Online button]
+author=YukiXXL
+patch=1,EE,202A061C,extended,24120001
+patch=1,EE,202A0630,extended,24120001
+
 [Menus\Enable TEST button]
 author=YukiXXL
 patch=1,EE,00506490,byte,1
@@ -197,12 +202,6 @@ author=YukiXXL
 patch=1,EE,00186DA8,extended,24020000
 patch=1,EE,20186DDC,extended,24110002
 
-// - PLAYER
-
-[Gameplay\Player\Toss Body instead of Laying Down]
-author=YukiXXL
-patch=1,EE,2024A248,extended,24030001
-
 // - FPS
 
 [Gameplay\FPS\60(Constant)]
@@ -210,20 +209,15 @@ author=YukiXXL
 description=Keeps 60 in menus and gameplay.
 patch=1,EE,005383D4,extended,0000003C
 
-[Gameplay\FPS\NTSC\60]
+[Gameplay\FPS\60]
 author=YukiXXL
 description=60 in-game. Menus are 60 by default.
+// NTSC
 patch=1,EE,00165468,extended,2402003C
 patch=1,EE,00165728,extended,2402003C
-
-[Gameplay\FPS\PROSCAN\60]
-author=YukiXXL
-description=60 in-game. Menus are 60 by default.
+//PROSCAN
 patch=1,EE,001654A8,extended,2402003C
-
-[Gameplay\FPS\PAL\60]
-author=YukiXXL
-description=60 in-game. Menus are 60 by default.
+// PAL
 patch=1,EE,00165488,extended,2402003C
 patch=1,EE,001656B8,extended,2402003C
 
@@ -268,6 +262,10 @@ author=YukiXXL
 patch=1,EE,002BDB18,extended,24020007
 
 // - PLAYER
+
+[Gameplay\Player\Toss Body instead of Laying Down]
+author=YukiXXL
+patch=1,EE,2024A248,extended,24030001
 
 [Gameplay\Player\Auto-aim at legs (Jampack demo like)]
 author=YukiXXL
@@ -328,43 +326,61 @@ patch=1,EE,201B7020,extended,24040001
 author=YukiXXL
 patch=1,EE,201C71A0,extended,00000000
 
-// -- RADIO COMMS - CHANGE COMMS VOICE
+[Gameplay\Player\Radio Comms\Enable Voice comms on Bonus Missions]
+patch=1,EE,60532AF8,extended,00000017 //Italy
+patch=1,EE,00020001,extended,0000005C
+//Kyrgzstan
+patch=1,EE,60532AF8,extended,0000001B
+patch=1,EE,00020001,extended,000000A4
+//Chechnya
+patch=1,EE,60532AF8,extended,0000001A
+patch=1,EE,00020001,extended,00000104
+//Montenegro
+patch=1,EE,60532AF8,extended,0000001C
+patch=1,EE,00020001,extended,0000017C
 
-[Gameplay\Player\Radio Comms\Change comms voice\Teresa]
+// -- RADIO COMMS - FORCE COMMS VOICE
+
+[Gameplay\Player\Radio Comms\Force Comms voice\Teresa]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,24020015
 
-[Gameplay\Player\Radio Comms\Change comms voice\Imani]
+[Gameplay\Player\Radio Comms\Force Comms voice\Imani]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,24020016
 
-[Gameplay\Player\Radio Comms\Change comms voice\Stone]
+[Gameplay\Player\Radio Comms\Force Comms voice\Stone]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,24020017
 
-[Gameplay\Player\Radio Comms\Change comms voice\Zohar]
+[Gameplay\Player\Radio Comms\Force Comms voice\Zohar]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,24020018
 
-[Gameplay\Player\Radio Comms\Change comms voice\Meggie]
+[Gameplay\Player\Radio Comms\Force Comms voice\Meggie]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,24020019
 
-[Gameplay\Player\Radio Comms\Change comms voice\Mujari]
+[Gameplay\Player\Radio Comms\Force Comms voice\Mujari]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,2402001A
 
-[Gameplay\Player\Radio Comms\Change comms voice\Lian]
+[Gameplay\Player\Radio Comms\Force Comms voice\Lian]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,2402001B
 
-[Gameplay\Player\Radio Comms\Change comms voice\Gabe]
+[Gameplay\Player\Radio Comms\Force Comms voice\Gabe]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,2402001C
 
-[Gameplay\Player\Radio Comms\Change comms voice\Quickchat Lady]
+[Gameplay\Player\Radio Comms\Force Comms voice\Quickchat Lady]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,2402001E
+
+[Gameplay\Player\Radio Comms\Force Comms voice\Disabled]
+author=YukiXXL
+description=Like on Bonus Missions.
+patch=1,EE,20330BF0,extended,2402FFFF
 
 // - NPCs
 
@@ -387,9 +403,17 @@ author=YukiXXL
 description=Workers get weapons and any other NPC without one.
 patch=1,EE,001B6718,extended,2A020003
 
-[Gameplay\NPCs\Disable Kill script]
+[Gameplay\NPCs\Disable Kill script (Host)]
 author=YukiXXL
 patch=1,EE,20149FC4,extended,00000000
+
+[Gameplay\NPCs\Disable Kill script (Client)]
+author=YukiXXL
+patch=1,EE,2014B3E8,extended,44806000
+
+[Gameplay\NPCs\Body is pickable and has disguise]
+patch=1,EE,2014F868,extended,24020101
+patch=1,EE,2014F86C,extended,A6023468
 
 // -- ENABLE ALL SPAWNS
 
@@ -401,24 +425,6 @@ patch=1,EE,201B422C,extended,00000000
 author=YukiXXL
 description=Fixes crashing and black screen when dying.
 patch=1,EE,001B433C,extended,1440000E
-
-// -- ENEMIES AIM FASTER
-
-[Gameplay\NPCs\Enemies aim faster:\Hard]
-author=YukiXXL
-patch=1,EE,2022FAD0,extended,14400005
-
-[Gameplay\NPCs\Enemies aim faster:\Very Hard]
-author=YukiXXL
-patch=1,EE,2022FC9C,extended,00000000
-
-[Gameplay\NPCs\Enemies aim faster:\Ultra Hard]
-author=YukiXXL
-patch=1,EE,2022FB20,extended,00000000
-
-[Gameplay\NPCs\Enemies aim faster:\No Range]
-author=YukiXXL
-patch=1,EE,0022FCE8,extended,24020000
 
 // - WEATHER
 
@@ -442,6 +448,7 @@ patch=1,EE,10232718,extended,0C08C9CC
 [Gameplay\Weather\Change weather on missions that support it\Myanmar\Atmospheric effect]
 author=YukiXXL
 patch=1,EE,10232718,extended,0C08CAFC
+
 // - WEATHER - TORONTO 3
 [Gameplay\Weather\Change weather on missions that support it\Toronto 3\Myanmar Fog]
 author=YukiXXL
@@ -462,6 +469,7 @@ patch=1,EE,102326F8,extended,0C08C9CC
 [Gameplay\Weather\Change weather on missions that support it\Toronto 3\Atmospheric effect]
 author=YukiXXL
 patch=1,EE,102326F8,extended,0C08CAFC
+
 // - WEATHER - TOKYO
 [Gameplay\Weather\Change weather on missions that support it\Tokyo\Myanmar Fog]
 author=YukiXXL
@@ -482,6 +490,7 @@ patch=1,EE,102326D8,extended,0C08C9CC
 [Gameplay\Weather\Change weather on missions that support it\Tokyo\Atmospheric effect]
 author=YukiXXL
 patch=1,EE,102326D8,extended,0C08CAFC
+
 // - WEATHER - LORELEI
 [Gameplay\Weather\Change weather on missions that support it\Lorelei\Myanmar Fog]
 author=YukiXXL
@@ -502,6 +511,7 @@ patch=1,EE,102326B8,extended,0C08C9CC
 [Gameplay\Weather\Change weather on missions that support it\Lorelei\Atmospheric effect]
 author=YukiXXL
 patch=1,EE,102326B8,extended,0C08CAFC
+
 // - WEATHER - BELARUS 2
 [Gameplay\Weather\Change weather on missions that support it\Belarus 2\Myanmar Fog]
 author=YukiXXL
@@ -573,80 +583,182 @@ patch=1,EE,002A3AE0,extended,28410001
 
 // MODS
 
+// - DUAL WIELD
+
 [Mods\Dual Wield\Enable]
 author=YukiXXL
-description="Open Weapons" cheat NEEDED! Start the mission twice!
-patch=1,EE,002BD984,extended,24020006 //Back = Goggles
-patch=1,EE,002BDA28,extended,24020007 //Auxiliary = Flashlight
-//Show goggles and P.I.D in Equip
-patch=1,EE,002BF38C,extended,24040004
-patch=1,EE,002BF390,extended,24050004
-//Give the enemy one more weapon
-patch=1,EE,001B6698,extended,10A2000D
-patch=1,EE,201B66A8,extended,AC2521CC
-patch=1,EE,201B66D0,extended,8C2521CC
-patch=1,EE,201B66D4,extended,1000FFF2
-// ANIMATIONS
-//Animation change for all weapons
-patch=1,EE,20143540,extended,24020001
-patch=1,EE,20489D60,extended,00000000
-//Dual Wield Ability enabled
-patch=1,EE,202BD704,extended,00000000
-// NEW CODES
-//Back, Auxiliary weapons save as sidearm
-patch=1,EE,200FFE24,extended,28610006
-patch=1,EE,200FFE28,extended,10200003
-patch=1,EE,200FFE30,extended,24030003
-patch=1,EE,200FFE34,extended,A0430030
-patch=1,EE,200FFE38,extended,03E00008
-patch=1,EE,200FFE3C,extended,8E020088
-patch=1,EE,202BF124,extended,0C03FF89
-patch=1,EE,202BF128,extended,90430030
+description=Placeholder
 
-// - OFFLINE CODENAMES
+// - FAKE MULTIPLAYER
 
-[Mods\Offline Codenames\Enable]
+[Mods\Fake Multiplayer\Enable Online menus]
 author=YukiXXL
-// MENUS
-//Enable Mission Setup & Join Mission offline
+description=Enable Online menus in Offline.
+patch=1,EE,002A0244,extended,24A5AEB0
+patch=1,EE,002A024C,extended,24C6AEC8
+patch=1,EE,202CB78C,extended,00000000
+//Mission Setup and Join Mission
 patch=1,EE,2033C618,extended,00000000
 patch=1,EE,2033C620,extended,24020001
 patch=1,EE,20295E94,extended,00000000 //Join any mission
 patch=1,EE,00295E88,extended,28410018 //Join Training Center
-// GAMEPLAY
-//Enable online objectives + dialogues
+// - FIXES
+patch=1,EE,2033D830,extended,00000000 //Host Game fix
+patch=1,EE,202A9DB0,extended,00000000 //Pick Region crash fix
+
+[Mods\Fake Multiplayer\Enable Online menus\Enable Hosting Mission]
+author=YukiXXL
+description=Uses "FakeMP" byte. Number of agents = Codename.
+//Write codename
+patch=1,EE,002A0F9C,extended,3C010049
+patch=1,EE,202A0FA8,extended,2484FFFF
+patch=1,EE,202A0FAC,extended,AC244178
+//SuccessLobbyConnect
+patch=1,EE,002A0FC0,extended,12400046
+patch=1,EE,2012EEA8,extended,00000000 //Somekind of error fix
+//Online, Offline enabler
+patch=1,EE,00167FF8,extended,A02321C4
+patch=1,EE,001680A4,extended,A02021C4
+patch=1,EE,002A159C,extended,24050001 //Min num agents = 1
+
+[Mods\Fake Multiplayer\Enable Online menus\Enable Hosting Mission\Gameplay]
+author=YukiXXL
+description=Do not use with "Offline Codenames"! Breaks "Solo" missions!
+patch=1,EE,001B7020,extended,902221C4 //Online controller (Important Dependecy)
+//EQSETUP
+patch=1,EE,001685D8,extended,902221C4 //Beginning at it (Crash if disabled when using codenames)
+//Belarus 2 C4 stacks bug fix
+patch=1,EE,0016882C,extended,902221C4
+patch=1,EE,20168838,extended,00000000
+//After pressing square or triangle
+patch=1,EE,002BCD24,extended,902221C4
+patch=1,EE,002BCDF8,extended,902221C4
+//START button
+patch=1,EE,002A21E4,extended,902221C4
+//Quit fix
+patch=1,EE,0013489C,extended,902221C4
+patch=1,EE,0013492C,extended,10400008
+//SetStatus
+patch=1,EE,20184C60,extended,3C030057
+patch=1,EE,20184C64,extended,24632194
+//GetStatus
+patch=1,EE,20184C80,extended,3C020057
+patch=1,EE,20184C84,extended,24422194
+//HasHeadset
+patch=1,EE,20184CA0,extended,3C020057
+patch=1,EE,20184CA4,extended,24422194
+//STATUS
+patch=1,EE,00456434,extended,902221C4
+patch=1,EE,00462418,extended,902221C4
+//STATUS-END
+patch=1,EE,004635A0,extended,902221C4 //<Codename> managed to not get killed
+patch=1,EE,004604B4,extended,902221C4 //Medals and stuff
+//GAMEPLAY
+patch=1,EE,002B1558,extended,902221C4 //Show correct codename
+patch=1,EE,0018C814,extended,902221C4 //Radio comms
+patch=1,EE,00244FF0,extended,903021C4 //Out of time (Team)
+//Minimap
+patch=1,EE,0026DAE4,extended,902221C4
+patch=1,EE,002C91B4,extended,902221C4
+//Codename spelling and dependecies
+patch=1,EE,0013681C,extended,902221C4
+patch=1,EE,00185C84,extended,902221C4
+patch=1,EE,0012EE54,extended,902221C4
+
+[Mods\Fake Multiplayer\Enable Online menus\Enable Hosting Mission\Gameplay\Enable End Mission extra dialogues]
+author=YukiXXL
+description=Marksmanship and Efficiency rewards.
+patch=1,EE,004633C0,extended,902221C4
+
+[Mods\Fake Multiplayer\Enable Online menus\Enable Hosting Mission\Gameplay\Show Countdown in Equipment Setup]
+author=YukiXXL
+patch=1,EE,002A36BC,extended,902221C4 //Show timer instead of "WAITING FOR HOST"
+//Show timer and count in Equipment Modify
+patch=1,EE,002C0400,extended,902321C4
+patch=1,EE,002C0E3C,extended,902221C4
+
+// -- GAMEPLAY
+
+// --- ENABLE ONLINE OBJECTIVES
+[Mods\Fake Multiplayer\Gameplay\Enable online objectives + dialogues\Always]
+author=YukiXXL
+patch=1,EE,2012F818,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Enable online objectives + dialogues\Based on "FakeMP"]
+author=YukiXXL
 patch=1,EE,0012F818,extended,902221C4
-//Team Par
+
+// ---- PAR TIME
+[Mods\Fake Multiplayer\Gameplay\Enable online objectives + dialogues\Include Team Objectives for Par Time\Always]
+author=YukiXXL
+patch=1,EE,20335A78,extended,24050001
+
+[Mods\Fake Multiplayer\Gameplay\Enable online objectives + dialogues\Include Team Objectives for Par Time\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,00335A78,extended,902521C4
+
+// --- TEAM PAR
+[Mods\Fake Multiplayer\Gameplay\Enable Team Par\Always]
+author=YukiXXL
+patch=1,EE,20368CB8,extended,24050001
+patch=1,EE,20368D8C,extended,24020001
+patch=1,EE,20462594,extended,24050001 //Check if completed Par Time
+patch=1,EE,20335B60,extended,24020001 //Write Time
+
+[Mods\Fake Multiplayer\Gameplay\Enable Team Par\Based on "FakeMP"]
+author=YukiXXL
 patch=1,EE,00368CB8,extended,902521C4
 patch=1,EE,00368D8C,extended,902221C4
 patch=1,EE,00462594,extended,902521C4 //Check if completed Par Time
 patch=1,EE,00335B60,extended,902221C4 //Write Time
-//Buddy Climb
-patch=1,EE,00171894,extended,902221C4
-patch=1,EE,0018D734,extended,24030031 //Animation Change
-// CODENAME STUFF
-patch=1,EE,00464D44,extended,902221C4 //Quickchat enabled
-patch=1,EE,0045E33C,extended,902221C4 //Show codename on the right
 
-[Mods\Offline Codenames\Variant\Codename Only]
+// --- BUDDY CLIMB
+[Mods\Fake Multiplayer\Gameplay\Enable Buddy Climb\Always]
 author=YukiXXL
-description=Have different codename in offline.
-// MENUS
-// - BEGIN MISSION
-//Write codename and join filter
-patch=1,EE,202A0F98,extended,90820045
-patch=1,EE,202A0F9C,extended,8C840040
-patch=1,EE,202A0FA4,extended,3C010049
-patch=1,EE,202A0FA8,extended,2484FFFF
-patch=1,EE,202A0FAC,extended,AC244178
-patch=1,EE,202A0FB0,extended,3C010057
-patch=1,EE,202A0FB8,extended,A02221C4
-// - MENUS
-patch=1,EE,20297508,extended,00000000 //Join Mission button
-patch=1,EE,00295EA4,extended,24050006 //Join Mission is Create Mission
-patch=1,EE,002A159C,extended,24050000 //Min num agents = 0
-// CODENAME STUFF
-// - GAMEPLAY
+patch=1,EE,20171894,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Enable Buddy Climb\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,00171894,extended,902221C4
+
+// ---- CHANGE ANIMATION
+[Mods\Fake Multiplayer\Gameplay\Enable Buddy Climb\Change Animation]
+author=YukiXXL
+patch=1,EE,0018D734,extended,24030031
+
+// --- QUICKCHAT
+[Mods\Fake Multiplayer\Gameplay\Enable Quickchat\Always]
+author=YukiXXL
+patch=1,EE,20464D44,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Enable Quickchat\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,00464D44,extended,902221C4
+
+// --- SHOW CODENAME
+[Mods\Fake Multiplayer\Gameplay\Show Codename HUD\Always]
+author=YukiXXL
+patch=1,EE,2045E33C,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Show Codename HUD\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,0045E33C,extended,902221C4
+
+// --- SKIN
+[Mods\Fake Multiplayer\Gameplay\Bonus Missions\Skin based on codename\Always]
+author=YukiXXL
+patch=1,EE,201B6378,extended,24040001
+patch=1,EE,201B63B8,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Bonus Missions\Skin based on codename\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,001B6378,extended,902421C4
+patch=1,EE,001B63B8,extended,902221C4
+
+// - OFFLINE CODENAME CHANGER
+
+[Mods\Offline Codename Changer\Enable]
+author=YukiXXL
 //Show correct codename
 patch=1,EE,202B15B8,extended,3C010049
 patch=1,EE,202B15BC,extended,8C224178
@@ -675,96 +787,37 @@ patch=1,EE,2046374C,extended,26E70001
 patch=1,EE,0046250C,extended,3C010049
 patch=1,EE,20462514,extended,8C314178
 
-[Mods\Offline Codenames\Variant\Offline Preservation]
+[Mods\Offline Codename Changer\Enable\Trough Menus]
 author=YukiXXL
-description=Online-like experience offline.
-// MENUS
-// - BEGIN MISSION
-//Write codename
-patch=1,EE,002A0F9C,extended,3C010049
+description=Join Filter = "FakeMP" ; Num of agents = Codename.
+//Write codename and join filter
+patch=1,EE,202A0F98,extended,90820045
+patch=1,EE,202A0F9C,extended,8C840040
+patch=1,EE,202A0FA4,extended,3C010049
 patch=1,EE,202A0FA8,extended,2484FFFF
 patch=1,EE,202A0FAC,extended,AC244178
-//SuccessLobbyConnect
-patch=1,EE,002A0FC0,extended,12400046
-patch=1,EE,2012EEA8,extended,00000000 //Somekind of error fix
-//Online, Offline enabler
-patch=1,EE,00167FF8,extended,A02321C4
-patch=1,EE,001680A4,extended,A02021C4
-// - FIXES
-//Host Game fix
-patch=1,EE,2033D830,extended,00000000
-//Pick Region crash fix
-patch=1,EE,202A9DB0,extended,00000000
-// - MENUS
-//Enable Online lobby in offline
-patch=1,EE,002A0244,extended,24A5AEB0
-patch=1,EE,002A024C,extended,24C6AEC8
-patch=1,EE,202CB78C,extended,00000000
-patch=1,EE,002A159C,extended,24050001 //Min num agents = 1
-// CODENAME STUFF
-// - FIXES
-//Belarus 2 C4 stacks bug fix
-patch=1,EE,0016882C,extended,902221C4
-patch=1,EE,20168838,extended,00000000
-//Quit fix
-patch=1,EE,0013489C,extended,902221C4
-patch=1,EE,0013492C,extended,10400008
-// - GAMEPLAY
-patch=1,EE,002B1558,extended,902221C4 //Show correct codename
-patch=1,EE,0018C814,extended,902221C4 //Radio comms
-patch=1,EE,00244FF0,extended,903021C4 //Out of time (Team)
-//Minimap
-patch=1,EE,0026DAE4,extended,902221C4
-patch=1,EE,002C91B4,extended,902221C4
-//Codename spelling and dependecies
-patch=1,EE,0013681C,extended,902221C4
-patch=1,EE,00185C84,extended,902221C4
-patch=1,EE,0012EE54,extended,902221C4
-// - MAIN
-//Online controller (Responsible for codenames)
-patch=1,EE,001B7020,extended,902221C4
-// - MENUS
-//EQUIPMENT SETUP
-//Beginning at it (Can crash if disabled when using codenames)
-patch=1,EE,001685D8,extended,902221C4
-//After pressing square or triangle
-patch=1,EE,002BCD24,extended,902221C4
-patch=1,EE,002BCDF8,extended,902221C4
-//Stats
-patch=1,EE,00456434,extended,902221C4
-patch=1,EE,00462418,extended,902221C4
-//START button
-patch=1,EE,002A21E4,extended,902221C4
-//END MISSION
-patch=1,EE,004633C0,extended,902221C4 //Marks and Eff award
-patch=1,EE,004635A0,extended,902221C4 //<Codename> managed to not get killed
-patch=1,EE,004604B4,extended,902221C4 //Medals and stuff
-// COUNTDOWN
-//SetStatus
-patch=1,EE,20184C60,extended,3C030057
-patch=1,EE,20184C64,extended,24632194
-//GetStatus
-patch=1,EE,20184C80,extended,3C020057
-patch=1,EE,20184C84,extended,24422194
-//HasHeadset
-patch=1,EE,20184CA0,extended,3C020057
-patch=1,EE,20184CA4,extended,24422194
-//Show timer instead of "WAITING FOR HOST"
-patch=1,EE,002A36BC,extended,902221C4
-//Show timer and count in Equipment Modify
-patch=1,EE,002C0400,extended,902321C4
-patch=1,EE,002C0E3C,extended,902221C4
+patch=1,EE,202A0FB0,extended,3C010057
+patch=1,EE,202A0FB8,extended,A02221C4
+// - MSNSETUP
+patch=1,EE,20297508,extended,00000000 //Join Mission button
+patch=1,EE,00295EA4,extended,24050006 //Join Mission is Create Mission
+patch=1,EE,002A159C,extended,24050000 //Min num agents = 0
 
-[Mods\Offline Codenames\Optional\Check Team objectives]
+[Mods\Offline Codename Changer\Enable\Always\Cobra]
 author=YukiXXL
-description=Write Par Time if Team objectives are also completed.
-patch=1,EE,00335A78,extended,902521C4
+patch=1,EE,20494178,extended,00000000
 
-[Mods\Offline Codenames\Optional\Skin based on codename]
+[Mods\Offline Codename Changer\Enable\Always\Python]
 author=YukiXXL
-description=Bonus missions "online".
-patch=1,EE,001B6378,extended,902421C4
-patch=1,EE,001B63B8,extended,902221C4
+patch=1,EE,20494178,extended,00000001
+
+[Mods\Offline Codename Changer\Enable\Always\Viper]
+author=YukiXXL
+patch=1,EE,20494178,extended,00000002
+
+[Mods\Offline Codename Changer\Enable\Always\Dragon]
+author=YukiXXL
+patch=1,EE,20494178,extended,00000003
 
 // - PVP
 

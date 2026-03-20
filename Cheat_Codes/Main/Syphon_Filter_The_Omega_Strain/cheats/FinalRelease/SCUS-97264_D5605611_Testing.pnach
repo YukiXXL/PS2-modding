@@ -1,21 +1,82 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 
-[Testing\Gameplay\NPCs\Body is pickable and has disguise (Host)]
-patch=1,EE,201491FC,extended,24020001
-patch=1,EE,2014923C,extended,24020001
-
-[Testing\Gameplay\NPCs\Body is pickable and has disguise (Client)]
-patch=1,EE,201B61B0,extended,240E0001
-patch=1,EE,201B61E0,extended,A2AE3469
-patch=1,EE,201B6D68,extended,A2AE3468
-patch=1,EE,201B7DD0,extended,A28E3468
-patch=1,EE,0017759C,extended,24420000
+[Testing\Gameplay\NPCs are Player]
+patch=1,EE,001C2258,extended,24060001 //Everybody is you
+patch=1,EE,00176D44,extended,24050000 //No fade on death
+patch=1,EE,20187B50,extended,00000000 //Cannot die
 
 [Testing\Gameplay\NPCs\Never remove backpacks]
 patch=1,EE,20254770,extended,03E00008
 patch=1,EE,20254774,extended,00000000
 
-[Testing\Gameplay\Player\Radio\Force Unused Dialogue on every objective completed]
+[Testing\Gameplay\Player\Radio\Unused\Objective Suceed\Enable script usage]
+description=Testing needed to see if the script is actually used.
 patch=1,EE,20225B50,extended,0040302D
+
+[Testing\Gameplay\Player\Radio\Unused\Objective Suceed\Enable dialogue on every objective]
+description=Script usage must be enabled!
 patch=1,EE,202260C8,extended,00000000
-patch=1,EE,20228C18,extended,0040302D
+
+[Testing\Gameplay\Player\Radio\Unused\Objective Fail\Enable script usage]
+description=Testing needed to see if the script is actually used.
+patch=1,EE,20225A00,extended,0040302D
+
+[Testing\Gameplay\Player\Radio\Unused\Objective Fail\Enable dialogue on every objective]
+description=Script usage must be enabled!
+patch=1,EE,20226190,extended,00000000
+
+[Testing\Gameplay\Player\Radio\Unused\Fast Teamwork Par Time]
+description=Replaces "Mission Complete" at the end of the mission.
+patch=1,EE,00226084,word,24040015
+
+[Testing\Gameplay\HUD\Green Health Meter]
+patch=1,EE,000a0100,word,dc47ff50
+patch=1,EE,000a0104,word,3c01004a
+patch=1,EE,000a0108,word,dc267328
+patch=1,EE,000a010c,word,14c70025
+//for "healthmeter"
+patch=1,EE,000a0110,word,0000382d
+patch=1,EE,000a0114,word,24460014 //addr to the first gradient
+patch=1,EE,000a0118,word,3c013f80 //at = 1.0
+patch=1,EE,000a011c,word,8cc30004 //load Green value
+patch=1,EE,000a0120,word,10610009 //check if Green is 1.0
+patch=1,EE,000a0124,word,3c013e4c //lui at
+patch=1,EE,000a0128,word,3c033ecc //lui v1
+patch=1,EE,000a012c,word,44830800 //v1 = 0.4
+patch=1,EE,000a0130,word,c4c00000 //load Red
+patch=1,EE,000a0134,word,c4c50004 //load Green
+patch=1,EE,000a0138,word,e4c00004 //save Red to Green
+patch=1,EE,000a013c,word,46012940 //Green=Green+0.4
+patch=1,EE,000a0140,word,e4c50000 //save Green to Red
+patch=1,EE,000a0144,word,e4c50008 //save Green to Blue
+patch=1,EE,000a0148,word,44810800 //at=0.2
+patch=1,EE,000a014c,word,c4c3000c //load Alpha
+patch=1,EE,000a0150,word,460118c1 //Alpha=Alpha-0.2
+patch=1,EE,000a0154,word,e4c3000c //save Alpha
+patch=1,EE,000a0158,word,24e70001 //counter+1
+patch=1,EE,000a015c,word,28e10005 //is lower or equal to 5
+patch=1,EE,000a0160,word,1420ffed //loop
+patch=1,EE,000a0164,word,24c60010 //next gradient
+patch=1,EE,000a0168,word,2446a6c4
+//addr to "backgroundfortext" and load values
+patch=1,EE,000a016c,word,c4c00000
+patch=1,EE,000a0170,word,c4c50004
+patch=1,EE,000a0174,word,c4c40008
+patch=1,EE,000a0178,word,c4c3000c
+//for "white_outline"
+patch=1,EE,000a017c,word,24460af8
+patch=1,EE,000a0180,word,0000382d
+patch=1,EE,000a0184,word,e4c00000
+patch=1,EE,000a0188,word,e4c50004
+patch=1,EE,000a018c,word,e4c40008
+patch=1,EE,000a0190,word,e4c3000c
+patch=1,EE,000a0194,word,24e70001
+patch=1,EE,000a0198,word,28e10008
+patch=1,EE,000a019c,word,1420fff9
+patch=1,EE,000a01a0,word,24c60010
+patch=1,EE,000a01a4,word,03e00008
+patch=1,EE,000a01a8,word,0000382d
+patch=1,EE,000a01ac,word,00000000
+patch=1,EE,000a01b0,word,00000000
+patch=1,EE,000a01b4,word,00000000
+patch=1,EE,003efdd4,word,0c028040
