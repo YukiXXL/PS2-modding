@@ -1,0 +1,987 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00000080:
+.word	_align_segment
+00100000:
+.undef	indata
+00100008:
+.undef	ENTRYPOINT
+0013d080:
+.undef	main
+
+#	Arguments
+0013d168:
+.undef	Check_for_dash
+0013d1f0:
+.undef	-g
+0013d230:
+.undef	-l[LevelName]
+0013d270:
+.undef	-r
+0013d290:
+.undef	-sg, -so
+0013d298:
+.undef	g
+0013d2b8:
+.undef	o
+0013d2d4:
+.undef	n	;-son, otherwise no scripts
+0013d2e8:
+.undef	-h	;Host Game (-h -gLEVEL)
+0013d328:
+.undef	-n	;Join Game (-nIP -gLEVEL)
+0013d3e0:
+.undef	-a	;Disable m_Adaptor
+0013d3f0:
+.undef	-p
+0013d408:
+.undef	-x	;Use with -l (-x -lLEVEL)
+0013d460:
+.undef	-f
+0013d550:
+.undef	Exit
+
+00533400:
+.word	num_gameargs
+00533444:
+.undef	Launch Parameters	;"cdrom0:\ELF.ELF -args"
+
+#	boot
+004ffba0:
+.byte	Boot_MenuCurrent
+.byte	Boot_MenuPrevious
+004ffbb0:
+.byte	Boot_
+.byte	Boot_Movies
+.byte	Boot_Frontend
+004ffbb4:
+.byte	Boot_
+.byte	Boot_RestrictLevels
+
+0055c740:
+.byte	isProScan	;12cMoviePlayer
+
+#	language
+003fe0b0:
+.undef	GetLanguageName	;14nGlobalizationFQ214nGlobalization9eLanguage
+003fe0d0:
+.undef	GetLanguageName	;14nGlobalizationFv
+003fe100:
+.undef	SetLanguage	;14nGlobalizationFQ214nGlobalization9eLanguage
+003fe110:
+.undef	SetMachineLanguage	;14nGlobalizationFv
+0055d470:
+.byte	sLanguage	;14nGlobalization
+
+#	video_mode
+00165420:
+.undef	SetVideoMode	;8cMachineFQ28cMachine10eVideoMode
+00165458:
+.undef	NTSC
+00165478:
+.undef	PAL
+00165498:
+.undef	PROSCAN
+001654b0:
+.undef	Change Video Mode
+
+#	file_operations
+0036cd80:
+.undef	CloseHog	;8cHogFileFv
+0036d5d0:
+.undef	__dt	;8cHogFileFv
+0036d630:
+.undef	__ct	;8cHogFileFv
+0036e220:
+.undef	__dt	;8cFileManFv
+0036e4b0:
+.undef	__ct	;8cFileManFPCcR8cHogFileb
+
+#	GameOptions
+00299800:
+.undef	DeactivateGroup	;14GuiGameOptionsFv
+0045a3a0:
+.undef	Apply	;12cGameOptionsFi
+
+#	GUI
+00414790:
+.undef	Manager	;3GuiFv
+004147a0:
+.undef	Canvas	;3GuiFv
+004147b0:
+.undef	Destroy	;3GuiFv
+#	GUI_MissionSetup
+002a0f60:
+.undef	CreateMission	;15GuiMissionSetupFv
+002a1590:
+.undef	CycleNumAgents	;15GuiMissionSetupFb
+002a159c:
+.undef	MinNumAgents
+002a15b4:
+.undef	MaxNumAgents
+002a1600:
+.undef	CycleJoinFilter	;15GuiMissionSetupFb
+002a1670:
+.undef	UpdateTextLabels	;15GuiMissionSetupFv
+0044e960:
+.undef	CreateGame	;8SFOLobbyFiiQ28SFOLobby10FilterMode
+#	GUI_CommandCenter
+00295ce8:
+.undef	Online Command Center
+00295d70:
+.undef	Create Game
+00295dd0:
+.undef	Play Mission
+00295e50:
+.undef	Join Mission
+00295e80:
+.undef	Branch Online
+#	GUI_Game
+004562e0:
+.undef	ActivateOption	;12GuiStartMenuFi
+0045dd90:
+.undef	ActivateQuickChat	;13GuiGameScreenFb
+00463390:
+.undef	PlayQuips	;20GuiEndGameStatisticsFv
+
+#	Game_Objective
+00227670:
+.undef	AddObjective	;13cObjectiveManFi
+00228050:
+.undef	ClearMapObject	;10cObjectiveFb
+00228d90:
+.undef	Add	;10cObjectiveFv
+00229000:
+.undef	Activate	;10cObjectiveFv
+00229900:
+.undef	__ct	;10cObjectiveFi
+003339e0:
+.undef	AreObjectivesComplete	;10cAgentDataFPc
+00333b90:
+.undef	AddObjective	;10cAgentDataFPCcb
+
+#	Weapon
+00143df0:
+.undef	Add	;7cWeaponFibbbb
+001450f0:
+.undef	CloseWeaponsHog	;9cWeaponDBFv
+00145160:
+.undef	OpenWeaponsHog	;9cWeaponDBFv
+
+#	Agent(Player)
+0012ed60:
+.undef	AllAgentDataReceived	;11cGameSystemFv
+0012ee30:
+.undef	ClearCurrentAgentData	;11cGameSystemFv
+00131400:
+.undef	SetPlayer__11cGameSystemFP7cPlayer
+00136710:
+.undef	InitAgentData	;11cGameSystemFv
+002c9170:
+.undef	GetAgentName	;13cGameFrontEndFR7pStringib
+00333860:
+.undef	CompleteRequirement	;10cAgentDataFQ210cAgentData16eAchievementTypePc
+00333890:
+.undef	WildcardCompare	;10cAgentDataFPCcPCcc
+00333f10:
+.undef	AddScore	;10cAgentDataFQ210cAgentData11eScoreTypesi
+005c911c:
+.qword	Agency Cell Online
+00a81fac:
+.qword	Agency Cell Offline
+
+#	Checkpoint
+00131410:
+.undef	AddTeleport	;11cGameSystemFP5cGOBJ
+0022e420:
+.undef	InitNet	;20cNotifyCheckpointMsgFv
+0022e5e0:
+.undef	InitNet	;17cAddCheckpointMsgFv
+
+#	4cDMEF
+0042a780:
+.undef	ConnectToGame	;4cDMEFPQ24cDME7tServer
+0042a870:
+.undef	ConnectToGame	;4cDMEFPQ24cDME7tServer
+0042ab00:
+.undef	ConnectAsClient	;4cDMEFPQ24cDME7tServer
+00429cb0:
+.undef	AddToAvgLatency	;4cDMEFi
+0042aec0:
+.undef	CreateServerList	;4cDMEFv
+0042af00:
+.undef	Init	;4cDMEFv
+
+#	4cHud
+00244240:
+.undef	ClearTargetNow	;4cHudFv
+002426e0:
+.undef	DeactivateQuickChat	;4cHudFv
+002427f0:
+.undef	DeactivateMap	;4cHudFv
+00244280:
+.undef	ClearTarget	;4cHudFv
+00242740:
+.undef	ActivateQuickChat	;4cHudFv
+00242870:
+.undef	ActivateMap	;4cHudFv
+00242900:
+.undef	DeactivateObjectiveMenu	;4cHudFv
+
+0026d940:
+.undef	AddCallouts	;4cMapFv
+
+#	4cMan
+0038c920:
+.undef	BuildMan	;4cManFi
+00390fc0:
+.undef	AddCostume	;4cManFP3SKL
+
+#	4cNPC
+0014a710:
+.undef	GetItemCount	;4cNPCFPCc
+0014a720:
+.undef	RemoveItem	;4cNPCFPCci
+0014a730:
+.undef	AddItem	;4cNPCFPCci
+0014a740:
+.undef	SetNotTargetable	;4cNPCFb
+0014a750:
+.undef	SetNotTaserable	;4cNPCFb
+0014a760:
+.undef	SetUnconscious	;4cNPCFv
+0014a7c0:
+.undef	SetFireInvulnerability	;4cNPCFb
+0014a7d0:
+.undef	DontDropWeapons	;4cNPCFv
+0014a7f0:
+.undef	EquipGoggles	;4cNPCFb
+0014a800:
+.undef	RequestDeathAnimation	;4cNPCFPc
+0014a810:
+.undef	SetInvulnerable	;4cNPCFbb
+0014b600:
+.undef	SetAggressiveness	;4cNPCFf
+0014b610:
+.undef	DeactivateDead	;4cNPCFb
+00157800:
+.undef	Activate	;4cNPCFP5cGOBJ
+004ea190:
+.word	activeList	;4cNPC
+
+#	6cHuman
+00185c70:
+.undef	GetAgentData	;6cHumanFv
+001861f0:
+.undef	AdjustMaxClips	;6cHumanFi
+00186bf0:
+.undef	Die	;6cHumanFiP5cGOBJiQ23WDB14eWpnDamageTypePC7cVector
+0018c770:
+.undef	PlayQuip	;6cHumanFi
+0018d2c0:
+.undef	HandleInteraction	;6cHumanFRCQ27nMSGLIB14cCharActionMsg
+001a92a0:
+.undef	HandleActionRequest	;6cHumanFRCQ27nMSGLIB14cCharActionMsg
+001b6ab0:
+.undef	__ct	;6cHumanFR11cPopulationQ26cHuman14eCharacterTypeP3SKLPCQ24cNPC16cGeneratorParams
+0022b660:
+.undef	ChooseAutoTarget	;FPC6cHumanPC5cGOBJ
+0049d020:
+.undef	boneIdLookupTable	;6cHuman
+
+#	7cNetObj
+0055c770:
+.word	aPlayers	;7cNetObj
+0055c780:
+.byte	m_nRemoteClients	;7cNetObj
+0055c7a0:
+.word	m_MapOfNetObjs	;7cNetObj
+0055c7b0:
+.word	m_nGlobalObjID	;7cNetObj
+.nop
+.word	m_nTimeToBeExecuted	;7cNetObj
+.nop
+.word	PingInfo	;7cNetObj
+
+#	7cMemMan
+0036b070:
+.undef	DisallowConsolidation	;7cMemManFv
+0036b080:
+.undef	AllowConsolidation	;7cMemManFv
+0036b090:
+.undef	HaveAllocationInRange	;7cMemManFPvPv
+0036b180:
+.undef	Allocate	;7cMemManFiUiPCci
+
+#	9cAirTaser
+004f8350:
+.word	sTasers	;9cAirTaser
+004f8360:
+.qword	q_TaserBurn1
+.qword	q_TaserBurn2
+.qword	q_TaserBurn3
+.qword	q_TaserBurn4
+.qword	q_TaserBurn5
+
+#	9cBackpack
+001762c0:
+.undef	BeginPickup	;7cPlayerFP9cBackpack
+00254990:
+.undef	CheckForRemoval	;9cBackpackFv
+00254da0:
+.undef	AutoPickup	;9cBackpackFP6cHuman
+00255af0:
+.undef	AddWeapon	;9cBackpackFiiib
+002568f0:
+.undef	Update	;9cBackpackFf
+00257f30:
+.undef	__ct	;9cBackpackFR11cPopulation
+002570c0:
+.undef	RemoveAll	;9cBackpackFv
+00255d90:
+.undef	BodyHasDisguise	;9cBackpackFv
+00255e50:
+.undef	BodyIsPickupable	;9cBackpackFv
+
+#	10cXViewport
+00375390:
+.undef	BuildOrtho	;10cXViewportCFv
+003754a0:
+.undef	BuildPersp	;10cXViewportCFv
+
+#	11cHudLoading
+00271d80:
+.undef	Activate	;11cHudLoadingFv
+00271c60:
+.undef	ActivateHost	;11cHudLoadingFb
+00271bf0:
+.undef	ActivatePressX	;11cHudLoadingFb
+00271cd0:
+.undef	Deactivate	;11cHudLoadingFv
+
+#	defined_cc
+0048a1c8:
+.float	IncreasedArmorMul	;18@human_cc@
+.undef
+.float	IncreasedHealthMul	;18@human_cc@
+.undef
+.float	HumanFireIntensity	;18@human_cc@
+.undef
+.float	HumanFireRad	;18@human_cc@
+.undef
+.float	FireReliefPerSecond	;18@human_cc@
+.undef
+.float	OnFireDmgPerSecond	;18@human_cc@
+.undef
+.float	FireDmgToIgnite	;18@human_cc@
+.undef
+.float	ReaimPerSecond	;18@human_cc@
+.undef
+.float	MaxRecoil	;18@human_cc@
+.undef
+.float	MaxRecoilAdjust	;18@human_cc@
+.undef
+.float	ArmorPenetrationResistance	;18@human_cc@
+.undef
+.float	BodyPenetrationResistance	;18@human_cc@
+.undef
+.float	HeadPenetrationResistance	;18@human_cc@
+.undef
+.word	@42558
+.undef
+.word	StartingArmor
+.undef
+.float	ChokeResistTime	;18@human_cc@
+.undef
+.float	ChokeTime	;18@human_cc@
+.undef
+.float	GrenadeThrowPos	;18@human_cc@
+.undef
+.float	TurnOnIRPos	;18@human_cc@
+.undef
+.float	KnifeStabPos	;18@human_cc@
+.undef
+.float	KnifeSlitPos	;18@human_cc@
+.undef
+.float	StunBatonHitPos	;18@human_cc@
+.undef
+.float	NeckSnapPos	;18@human_cc@
+.undef
+.float	StarUpAngle	;18@human_cc@
+0048a290:
+.word	shotgunFrontAnims$47321
+.word
+.word
+.word
+.float	targetBones$47649
+.undef
+.float	humanHeadAim
+.undef
+.float	humanKneeAim
+.undef
+.float	HitInnocentNpcChance
+.undef
+.word	@48133
+.undef
+.float	BlindRampUp	;18@human_cc@
+.undef
+.float	IncreasedAmmoMul	;18@human_cc@
+.undef
+.word	particleEffectDefs
+.word
+.word
+.undef
+.word	particleEffectDefsCnt
+
+0048b2d0:
+.float	TremorCamFactor	;19@tremor_cc@
+.undef
+.word	TremorMinRumble	;19@tremor_cc@
+.undef
+.word	TremorMaxRumble	;19@tremor_cc@
+.undef
+.float	TremorRandPct	;19@tremor_cc@
+.undef
+.word	Keyboard
+0048b308:
+.byte	mOwnsController	;14cHudTargetInfo
+0048b310:
+.float	DangerMag	;23@hudTargets_cc@
+.undef
+.float	BloodDecalDist	;19@bullet_cc@
+.undef
+.float	BloodDecalRad	;19@bullet_cc@
+.undef
+.float	BlastDecalRad	;19@bullet_cc@
+.undef
+.float	MinFTScale	;19@bullet_cc@
+.undef
+.float	MaxFTScale	;19@bullet_cc@
+.undef
+.word	FTPower	;19@bullet_cc@
+.undef
+.half	@37962
+.undef
+.word	levelName	;25@hud_netlobby_cc@
+
+0048baa0:
+.byte	quipNames
+0048bc18:
+.byte	@31445
+0048bc20:
+.byte	@31459
+0048bc40:
+.word	mColumnWidths	;14GuiMissionList
+0048bc60:
+.word	mDisplaySettings	;14GuiMissionList
+0048bcc8:
+.byte	@30460
+0048bcd0:
+.byte	@30474
+0048bd00:
+.byte	@31665
+0048bd08:
+.byte	@31679
+0048bd10:
+.word	chatMenus	;25@GuiQuickChat_cc@
+
+0048bd88:
+.word	isInit
+.undef
+.word	gSceMc2SysInfo
+
+004937c0:
+.word	uCodeStartEEAddrs	;7cVU0Man
+.word
+.word
+.undef
+.word	uCodeEndEEAddrs	;7cVU0Man
+.word
+.word
+.undef
+.word	uCodeEndVUAddrs	;7cVU0Man
+.word
+.word
+.undef
+.float	defaultScrollDelay
+00493800:
+.byte	MACkeymap$7200
+00493840:
+.byte	MACkeymapSHIFT$7201
+00493878:
+.word	classId__9bool	;SOBJ
+.undef
+.word	classId__9void	;SOBJ
+.undef
+.word	classId__8int	;SOBJ
+.undef
+.word	classId__10float	;SOBJ
+.undef
+.word	classId__11string	;SOBJ
+.undef
+.word	classId__10Label	;SOBJ
+004938b0:
+.word	typeNames$8613
+.byte	enabled	;18cScriptInterpreter
+
+00493a10:
+.byte	m_ToUpdate	;7cNetObj
+.byte
+.byte
+.byte
+.undef
+.byte	bFirstTime$21072
+00493a20:
+.word	kLanguageName	;14nGlobalization
+.word
+.word
+.word
+.word
+.word
+.word
+.undef
+.word	kLanguageStringsSpecifier	;14nGlobalization
+.word
+.word
+.word
+.word
+.word
+.word
+
+00493a70:
+.qword	LOD_Table
+.qword
+.qword
+.qword
+.word	DEPENDANCIES
+
+00494140:
+.word	kVScrollBarName	;27@guiArrayWidget_cc@
+.undef
+.word	kCursorName	;27@guiArrayWidget_cc@
+.undef
+.word	@9837
+.undef
+.word	@10040
+.undef
+.word	@11341
+.undef
+.word	@11355
+.undef
+.byte	m_MachineType	;4cDME
+00494178:
+.word	m_nClientIndex	;4cDME
+.undef
+.word	m_MaxClients	;4cDME
+.undef
+.word	m_BufferSize	;4cDME
+.undef
+.byte	m_Adaptor	;4cDME
+004941a0:
+.byte	bRestart$11920
+
+004f7a50:
+.word	effects_10nSfxLoader
+
+#	BtnNames
+0048ba28:
+.word	kOnlineButtonName	;35@GuiOnlineOfflineSelect_cc@
+.undef
+.word	kOfflineButtonName	;35@GuiOnlineOfflineSelect_cc@
+.undef
+.word	kLANButtonName	;35@GuiOnlineOfflineSelect_cc@
+.undef
+.word	kNumAgentsName	;28@GuiMissionSetup_cc@
+.undef
+.word	kJoinFilterName	;28@GuiMissionSetup_cc@
+.undef
+.word	kNumAgentsText	;28@GuiMissionSetup_cc@
+.undef
+.word	kJoinFilterText	;28@GuiMissionSetup_cc@
+.undef
+.word	kBeginMissionBtn	;28@GuiMissionSetup_cc@
+.undef
+.word	kMissionNameText	;28@GuiMissionSetup_cc@
+0048ba78:
+.word	kReadyBtnName	;30@GuiEquipmentSetup_cc@
+
+0048bb58:
+.word	kMessageBoxName	;26@GuiMessageBox_cc@
+.undef
+.word	kTitleTextName	;26@GuiMessageBox_cc@
+.undef
+.word	kMessageTextName	;26@GuiMessageBox_cc@
+.undef
+.word	kButton1Name	;26@GuiMessageBox_cc@
+.undef
+.word	kButton2Name	;26@GuiMessageBox_cc@
+.undef
+.word	kMB_Accept	;26@GuiMessageBox_cc@
+.undef
+.word	kMB_Decline	;26@GuiMessageBox_cc@
+.undef
+.word	kMB_OK	;26@GuiMessageBox_cc@
+.undef
+.word	kMB_Yes	;26@GuiMessageBox_cc@
+.undef
+.word	kMB_No	;26@GuiMessageBox_cc@
+.undef
+.word	kMB_Cancel	;26@GuiMessageBox_cc@
+.undef
+.word	kShowToggleBtnName	;30@GuiNetJoinMission_cc@
+.undef
+.word	kOnlinePrefsBtnName	;30@GuiNetJoinMission_cc@
+.undef
+.word	kHostGameBtnName	;30@GuiNetJoinMission_cc@
+.undef
+.word	kRegionTxtName	;30@GuiNetJoinMission_cc@
+.undef
+.word	kMissionTxtName	;30@GuiNetJoinMission_cc@
+.undef
+.word	kShowGames	;30@GuiNetJoinMission_cc@
+.undef
+.word	kShowPlayers	;30@GuiNetJoinMission_cc@
+.undef
+.word	kMUISServerLabel	;29@GuiOnlineOptions_cc@
+.undef
+.word	kRegionServerLabel	;9@GuiOnlineOptions_cc@
+.undef
+.word	kAgentTxtLabel	;29@GuiOnlineOptions_cc@
+.undef
+.word	kRegionListTitleName	;29@GuiOnlineOptions_cc@
+.undef
+.word	kRegionListName	;29@GuiOnlineOptions_cc@
+.undef
+.word	kRegionListCursorName	;29@GuiOnlineOptions_cc@
+0048bc28:
+.word	kColumnHeaderName	;27@GuiMissionList_cc@
+.undef
+.word	kOfflineElementString	;27@GuiMissionList_cc@
+
+0048bcb8:
+.word	kInviteContactBtnName	;27@GuiNetContacts_cc@
+.undef
+.word	kRemoveContactBtnName	;27@GuiNetContacts_cc@
+0048bcd8:
+.word	kResignCellBtnName	;29@GuiNetAgencyCell_cc@
+.undef
+.word	kInviteAgentBtnName	;29@GuiNetAgencyCell_cc@
+.undef
+.word	kSetMessageBtnName	;29@GuiNetAgencyCell_cc@
+.undef
+.word	kCellTxtName	;29@GuiNetAgencyCell_cc@
+.undef
+.word	kAgencyMessageTxtName	;29@GuiNetAgencyCell_cc@
+
+#	colors
+004a9260:
+.word	textColor	;25@hud_netlobby_cc@
+.word
+.word
+.word
+004bf6b0:
+.word	kDefaultColor	;27@guiArrayWidget_cc@
+.word
+.word
+.word
+.word	kFocusColor	;27@guiArrayWidget_cc@
+.word
+.word
+.word
+.word	kRowColumnColor	;27@guiArrayWidget_cc@
+.word
+.word
+.word
+
+#	AgentModify
+0048b450:
+.byte	camoTextString
+0048b460:
+.word	camoText
+0048b470:
+.byte	agentPart
+0048b500:
+.byte	agentMenu
+0048b560:
+.byte	agentText
+
+#	SKL
+00493a60:
+.word	savedPlayerSex
+0055d4f8:
+.word	masterSKLs
+0055d510:
+.qword	savedPlayerSKLs
+.qword	_SHAPE
+.qword	_HARD
+.qword	_SKEL
+.qword	_BOOT
+.qword	_BOOT_TEX
+.qword	_OTHER
+
+#	loading
+004ee470:
+.word	manLoadingFlag
+.undef
+.dword	mLastUpdateTime$44521
+.byte	allowMovieEnd$44562
+004ee488:
+.byte	bServer$44652
+004ee490:
+.byte	bFoundServer$44659
+004ee498:
+.word	lobby$44728
+.undef
+.byte	netInit$44729
+004ee4a8:
+.dword	lastTime$44730
+.byte	@GUARD@lastTime$44730
+004ee4b8:
+.dword	lastTime$44792
+.byte	@GUARD@lastTime$44792
+004ee4c8:
+.float	loadingFrameCounter
+.undef
+.float	loadingFrameTotal
+.undef
+.byte	loadingRetrievedFrameTotal
+004ee4e0:
+.byte	threadWaitHost
+004ee4e8:
+.word	thread_stack
+.undef
+.byte	threadLoadingLastMessage
+004ee4f8:
+.word	threadSkipFrame
+.undef
+.word	threadHudLoading
+.undef
+.word	threadFont
+.undef
+.word	threadContinueStr
+.undef
+.word	threadLoadingStr
+
+#	net_stuff
+0048c450:
+.word	JoinConnectionIndex
+.byte	gbMyClientAccepted
+.byte
+.byte
+.byte
+.word	DmeInitialized
+.word	TimeOfLastTimebasePing
+.word	gUPnPMaxMallocCeiling
+.word	ActiveNetObjectCount
+.word	NetLocalConnectCallback
+.word	NetLocalConnectCallbackData
+.word	NetLocalDisconnectCallback
+.word	NetLocalDisconnectCallbackData
+.word	gpJoinCompleteCallbackData
+.word	gpRemoteClientEventCallbackData
+.word	gpfHostChangeCallback
+.word	gpHostChangeCallbackData
+.word	gpfSMChangeCallback
+.word	gpSMChangeCallbackData
+.word	gpfSystemMessageCallback
+.word	gpSystemMessageCallbackData
+.word	gLastNetTime
+.word	gMesgLayerSendBufferSize
+.word	gMesgLayerReceiveBufferSize
+.byte	gbEchoRequestsEnabled
+.byte
+.byte
+.byte
+.word	gpStreamChannels
+.byte	gbUDPEnabled
+.byte
+.byte
+.byte
+.word	gP2P
+.byte	gbKeyPairAvailable
+.byte
+.byte
+.byte
+.word	gszDmeVersionStringDummy
+
+#	scripts
+003d9ba0:
+.undef	AddDup	;Q210ScriptPriv6cGroupFP7cSystem
+
+#	other(ported)
+00139070:
+.undef	__ct	;Q23std37__list_deleter<PCv,15cAllocator<PCv>>FRC15cAllocator<PCv>
+00165610:
+.undef	CalcFrameTime	;8cMachineFb
+001674e0:
+.undef	CreateNetworkLobbyScreen	;8cMachineFv
+00171880:
+.undef	HandleInteract	;12cBuddyHotboxFP5cGOBJ
+00178c60:
+.undef	__dt	;11cPopulationFv
+00178d40:
+.undef	__ct	;11cPopulationFPCcR8cHogFile
+001c3b00:
+.undef	DeallocateAllAnimationBuffers	;7cLoaderFv
+001c43a0:
+.undef	compare	;Q23std54basic_string<c,Q23std14char_traits<c>,13cAllocator<c>>CFPCc
+001c75c0:
+.undef	AddToPlaylist	;10cGameSoundFRC6cSndFxQ26cSndFx10sndhandles
+
+0020f990:
+.undef	__ct	;Q28nMSGGAME13cPlaySoundMsgFRC6cSndFxP5cGOBJ
+00221d20:
+.undef	__ct	;10cGeneratorFR11cPopulation
+002887c0:
+.undef	__dt	;Q23std29vector<PCc,15cAllocator<PCc>>Fv
+002888c0:
+.undef	__ct	;Q23std57vector<15cSkaSwitchValue,29cAllocator<15cSkaSwitchValue>>Fv
+002e9a10:
+.undef	NetRegisterMessageStart
+
+00330b80:
+.undef	GetCommander	;10cAgentDataFPCc
+0033c300:
+.undef	__ct	;Q23std57vector<15cSkaSwitchValue,29cAllocator<15cSkaSwitchValue>>Fv
+0036a160:
+.undef	AddPad	;9cJoystickFiii
+003c9d60:
+.undef	__dt	;8cMessageFv
+003d76d0:
+.undef	addGameFunc	;Q210ScriptPriv11cScriptBaseFPCcPFPii_iPiiPPib
+003d9ba0:
+.undef	AddDup	;Q210ScriptPriv6cGroupFP7cSystem
+003e02f0:
+.undef	allocString	;18cScriptInterpreterFPCc
+003e8de0:
+.undef	Activate	;17cInterfaceElementFb
+003eebe0:
+.undef	Activate	;15cInterfaceModelFbb
+
+0040b790:
+.undef	Add	;12cBaseObjListFP7cSystem
+00470a70:
+.undef	Add	;10cInventoryFPCci
+004934a0:
+.undef	_initedAdapter
+004c7500:
+.undef	__sinit_gameSound.cc
+004de0f0:
+.undef	__vt	;14cNetCalloutMsg
+004ee550:
+.undef	name	;Q28nMSGGAME10cAIMessage
+
+0055a818:
+.word	mFrameTicks	;8nDevices
+
+#	other(custom)
+0014b628:
+.undef	isDeactivated
+0014b638:
+.undef	isInvisible
+0014b648:
+.undef	isNotDeactivated
+0014b65c:
+.undef	isPickable
+
+0016882c:
+.undef	B2_EQSETUP_BUG
+0016a690:
+.undef	cTeamFv
+0016c9d0:
+.undef	AddAwareness	;9cAITargetFP5cGOBJQ23cAI18eCauseForAwarenessf
+00186ca0:
+.undef	Tased
+00186cb0:
+.undef	Dropped Down
+00186cc8:
+.undef	Killed in Air
+00186ce0:
+.undef	Default (Hanging)
+00186d20:
+.undef	DeathAnimCheck
+00186d38:
+.undef	Fall Onto Back
+00186d9c:
+.undef	Death	;Normally, v0 = a1
+00186da8:
+.undef	Death	;is on the ledge
+00186e50:
+.undef	Death	;Save Animation number
+
+00186fd8:
+.undef	Collateral Count
+001874b0:
+.undef	Damage (isInv)
+001b6418:
+.undef	BonusMission_PythonSKL
+001b6438:
+.undef	BonusMission_ViperSKL
+001b6458:
+.undef	BonusMission_DragonSKL
+001b6478:
+.undef	BonusMission_CobraSKL
+001b6498:
+.undef	BonusMission_SKL_Not_Found
+001b6718:
+.undef	Check 2 Slots
+001b6fe8:
+.undef	Online Controller
+001b7048:
+.undef	Branch Online
+001b7088:
+.undef	Load the codename (a2)
+001b70d8:
+.undef	Codename into online	;v0 = ClientIndex + 1
+001b70f8:
+.undef	Branch Offline
+
+00210170:
+.undef	cAtmosphericEffectMsg
+002771f8:
+.undef	Blood Splat
+002a3ae0:
+.undef	Check for 2 Agents
+002bd6e8:
+.undef	AB_DualWield
+002d1dc0:
+.undef	HostButton	;Codename has to be 0
+
+00335b50:
+.undef	Check for ParTime
+003efe08:
+.undef	Colors_Read
+
+004624e0:
+.undef	Codename collateral
+0048c458:
+.word	cActivateBodyTossMsg
+004ffc04:
+.word	MSNSETUP_dynamic
+004ffbd4:
+.word	g_bRendering	;Setting to 1 unrenders everything in front
+004ffbe0:
+.word	g_bSpawninOnePlace (NPC)
+004ffc28:
+.byte
+.byte	b_BlackScreen
+
+00588058:
+.word	np$8931
+.word	errno
+.word	nTotalSent
+.word	nNotSent
+.word	nReceived
+.word	CurrentNetTime
+.word	MyAddressInfo
+
+#	Return(jr ra)
+0014b670:
+.undef	Return
+001c8dd8:
+.undef	Return
+00228fc0:
+.undef	Return
+003e1a90:
+.undef	Return
