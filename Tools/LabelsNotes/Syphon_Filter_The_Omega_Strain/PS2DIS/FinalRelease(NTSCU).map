@@ -45,7 +45,7 @@
 00533400:
 .word	num_gameargs
 00533444:
-.undef	Launch Parameters	;"cdrom0:\ELF.ELF -args"
+.code	Launch Parameters	;"cdrom0:\ELF.ELF -args"
 
 #	boot
 004ffba0:
@@ -75,8 +75,6 @@
 .byte	sLanguage	;14nGlobalization
 
 #	video_mode
-00165420:
-.undef	SetVideoMode	;8cMachineFQ28cMachine10eVideoMode
 00165458:
 .undef	NTSC
 00165478:
@@ -99,6 +97,10 @@
 .undef	__ct	;8cFileManFPCcR8cHogFileb
 
 #	GameOptions
+002996d0:
+.undef	RevertProscan	;14GuiGameOptionsFb
+00299780:
+.undef	ExitScreen	;14GuiGameOptionsFv
 00299800:
 .undef	DeactivateGroup	;14GuiGameOptionsFv
 0045a3a0:
@@ -145,23 +147,15 @@
 00463390:
 .undef	PlayQuips	;20GuiEndGameStatisticsFv
 
-#	Game_Objective
-00227670:
-.undef	AddObjective	;13cObjectiveManFi
-00228050:
-.undef	ClearMapObject	;10cObjectiveFb
-00228d90:
-.undef	Add	;10cObjectiveFv
-00229000:
-.undef	Activate	;10cObjectiveFv
-00229900:
-.undef	__ct	;10cObjectiveFi
-003339e0:
-.undef	AreObjectivesComplete	;10cAgentDataFPc
-00333b90:
-.undef	AddObjective	;10cAgentDataFPCcb
-
 #	Weapon
+0013fb50:
+.undef	GetGoggleEntry	;7cWeaponCFv
+0013fb90:
+.undef	Reload	;7cWeaponFv
+00142c50:
+.undef	DrawWeapon	;7cWeaponFQ27cWeapon8eWpnSlot
+00143c50:
+.undef	DrawWeapon	;7cWeaponFv
 00143df0:
 .undef	Add	;7cWeaponFibbbb
 001450f0:
@@ -169,35 +163,111 @@
 00145160:
 .undef	OpenWeaponsHog	;9cWeaponDBFv
 
-#	Agent(Player)
-0012ed60:
-.undef	AllAgentDataReceived	;11cGameSystemFv
-0012ee30:
-.undef	ClearCurrentAgentData	;11cGameSystemFv
-00131400:
-.undef	SetPlayer__11cGameSystemFP7cPlayer
-00136710:
-.undef	InitAgentData	;11cGameSystemFv
-002c9170:
-.undef	GetAgentName	;13cGameFrontEndFR7pStringib
-00333860:
-.undef	CompleteRequirement	;10cAgentDataFQ210cAgentData16eAchievementTypePc
-00333890:
-.undef	WildcardCompare	;10cAgentDataFPCcPCcc
-00333f10:
-.undef	AddScore	;10cAgentDataFQ210cAgentData11eScoreTypesi
-005c911c:
-.qword	Agency Cell Online
-00a81fac:
-.qword	Agency Cell Offline
-
-#	Checkpoint
-00131410:
-.undef	AddTeleport	;11cGameSystemFP5cGOBJ
-0022e420:
+#	InitNet
+00165bc0:
+.undef	InitDME	;8cMachineFv
+002d1940:
+.undef	InitNet	;9cNetHumanFv
+002c7a00:
+.undef	InitNet	;13tNetGeneratorFv
+002d78c0:
+.undef	InitNet	;Q28nMSGGAME11cNetPathMsgFv
+002d0fe0:
+.undef	InitNet	;Q28nMSGGAME22cNetGeneratorCreateMsgFv
+002d16e0:
+.undef	InitNet	;Q28nMSGGAME22cNetGeneratorDeleteMsgFv
+002d74a0:
+.undef	InitNet	;Q28nMSGGAME16cNetObjectiveMsgFv
+00316bb0:
+.undef	InitNet	;Q28nMSGGAME13cNetWeaponMsgFv
+0025e330:
+.undef	InitNet	;Q28nMSGGAME16cSwitchBodiesMsgFv
+0025dff0:
+.undef	InitNet	;Q28nMSGGAME15cRestoreBodyMsgFv
+0021d600:
+.undef	InitNet	;Q28nMSGGAME21cGeneratorMessageBaseFv
+0021d190:
+.undef	InitNet	;Q28nMSGGAME21cGeneratorDataMessageFv
+00270100:
+.undef	InitNet	;Q28nMSGGAME10cAIDeadMsgFv
+002702c0:
+.undef	InitNet	;Q28nMSGGAME17cAIDeactivatedMsgFv
+00270470:
+.undef	InitNet	;Q28nMSGGAME15cAIActivatedMsgFv
+0026fed0:
+.undef	InitNet	;Q28nMSGGAME21cAIWaypointReachedMsgFv
+0026fbf0:
+.undef	InitNet	;Q28nMSGGAME24cAIDestinationReachedMsgFv
+0026f930:
+.undef	InitNet	;Q28nMSGGAME18cAINewAwarenessMsgFv
+0026f6f0:
+.undef	InitNet	;Q28nMSGGAME15cAIBodyMovedMsgFv
+0026f2b0:
+.undef	InitNet	;Q28nMSGGAME17cAIUnconsciousMsgFv
+0026f4e0:
+.undef	InitNet	;Q28nMSGGAME19cAIDisguiseTakenMsgFv
+0020e420:
+.undef	InitNet	;Q28nMSGGAME12cEndLevelMsgFv
+0020f540:
+.undef	InitNet	;Q28nMSGGAME13cPlaySoundMsgFv
+0020ee70:
+.undef	InitNet	;Q28nMSGGAME13cStopSoundMsgFv
+0020e950:
+.undef	InitNet	;18cNetCreateBlastMsgFv
+002c64d0:
+.undef	InitNet	;14cNetCalloutMsgFv
+002c5270:
+.undef	InitNet	;14cNetShatterMsgFv
+00316860:
+.undef	InitNet	;25cNetRemoveHudObjectiveMsgFv
+003240c0:
+.undef	InitNet	;10cNIShuttleFv
+0023faa0:
+.undef	InitNet	;12cNICameraMsgFv
+0023f890:
+.undef	InitNet	;11cNetNPCMsgsFv
+002d7020:
+.undef	InitNet	;11cNetCopyMsgFv
+002c5ac0:
+.undef	InitNet	;11cRespawnMsgFv
+0022e240:
 .undef	InitNet	;20cNotifyCheckpointMsgFv
-0022e5e0:
+0022e420:
 .undef	InitNet	;17cAddCheckpointMsgFv
+0022e5e0:
+.undef	InitNet	;AddCheckpointMsg
+002d2850:
+.undef	InitNet	;12cNetLabelMsgFv
+00170080:
+.undef	InitNet	;10cHotboxMsgFv
+00211820:
+.undef	InitNet	;20cGOBJTriggerEventMsgFv
+00211540:
+.undef	InitNet	;19cNetLockElevatorMsgFv
+002120d0:
+.undef	InitNet	;13cElevatorGOBJFv
+00212920:
+.undef	InitNet	;11cPathedGOBJFv
+00316550:
+.undef	InitNet	;12cNetScoreMsgFv
+002107f0:
+.undef	InitNet	;Elevator
+0016a690:
+.undef	InitNet	;5cTeamFv
+002c7460:
+.undef	InitNet	;12netCreateNPCFv
+002c7560:
+.undef	InitNet	;15netCreatePlayerFv
+00282240:
+.undef	InitNet	;7cNetMsgFv
+003fb250:
+.undef	NetInit	;7cNetObjFv
+
+#	3SKL
+00406dc0:
+.undef	CountAttribs	;3SKLFv
+00406e00:
+.undef	RemoveBlanks	;3SKLFv
 
 #	4cDMEF
 0042a780:
@@ -214,21 +284,24 @@
 .undef	Init	;4cDMEFv
 
 #	4cHud
-00244240:
-.undef	ClearTargetNow	;4cHudFv
+002426d0:
+.undef	SetOwner	;4cHudFRC9cObjectId
 002426e0:
 .undef	DeactivateQuickChat	;4cHudFv
-002427f0:
-.undef	DeactivateMap	;4cHudFv
-00244280:
-.undef	ClearTarget	;4cHudFv
 00242740:
 .undef	ActivateQuickChat	;4cHudFv
+002427f0:
+.undef	DeactivateMap	;4cHudFv
 00242870:
 .undef	ActivateMap	;4cHudFv
 00242900:
 .undef	DeactivateObjectiveMenu	;4cHudFv
-
+00244240:
+.undef	ClearTargetNow	;4cHudFv
+00244280:
+.undef	ClearTarget	;4cHudFv
+00244fa0:
+.undef	NextFrame	;4cHudFf
 0026d940:
 .undef	AddCallouts	;4cMapFv
 
@@ -237,6 +310,8 @@
 .undef	BuildMan	;4cManFi
 00390fc0:
 .undef	AddCostume	;4cManFP3SKL
+00391210:
+.undef	RemoveCostume	;4cManFv
 
 #	4cNPC
 0014a710:
@@ -261,6 +336,10 @@
 .undef	RequestDeathAnimation	;4cNPCFPc
 0014a810:
 .undef	SetInvulnerable	;4cNPCFbb
+0014b550:
+.undef	SetFireMode	;4cNPCFQ212cNpcTransfer9eFireModei
+0014b570:
+.undef	ResumeAIMode	;4cNPCFv
 0014b600:
 .undef	SetAggressiveness	;4cNPCFf
 0014b610:
@@ -270,6 +349,13 @@
 004ea190:
 .word	activeList	;4cNPC
 
+#	5cFont
+0036a300:
+.undef	Display	;5cFontCFPCcRC5tRGBAiif
+
+0036a330:
+.undef	Display	;5cFontCFPCcRC5tRGBAffffff
+
 #	6cHuman
 00185c70:
 .undef	GetAgentData	;6cHumanFv
@@ -277,10 +363,20 @@
 .undef	AdjustMaxClips	;6cHumanFi
 00186bf0:
 .undef	Die	;6cHumanFiP5cGOBJiQ23WDB14eWpnDamageTypePC7cVector
+00187360:
+.undef	ReceiveDamage	;6cHumanFfP5cGOBJQ23WDB12eHitLocationQ23WDB14eWpnDamageTypePibPC7cVector
+001898f0:
+.undef	Respawn	;6cHumanFv
+0018a950:
+.undef	HandleDeath	;6cHumanFRCQ27nMSGLIB14cCharActionMsg
 0018c770:
 .undef	PlayQuip	;6cHumanFi
 0018d2c0:
 .undef	HandleInteraction	;6cHumanFRCQ27nMSGLIB14cCharActionMsg
+00196480:
+.undef	DoMeleeAttack	;6cHumanFP6cHumanb
+001992b0:
+.undef	RequestEquipGoggles	;6cHumanFbb
 001a92a0:
 .undef	HandleActionRequest	;6cHumanFRCQ27nMSGLIB14cCharActionMsg
 001b6ab0:
@@ -314,6 +410,16 @@
 0036b180:
 .undef	Allocate	;7cMemManFiUiPCci
 
+#	8cMachine
+00165420:
+.undef	SetVideoMode	;8cMachineFQ28cMachine10eVideoMode
+00165610:
+.undef	CalcFrameTime	;8cMachineFb
+00165630:
+.undef	InitINI	;8cMachineFv
+001674e0:
+.undef	CreateNetworkLobbyScreen	;8cMachineFv
+
 #	9cAirTaser
 004f8350:
 .word	sTasers	;9cAirTaser
@@ -327,6 +433,8 @@
 #	9cBackpack
 001762c0:
 .undef	BeginPickup	;7cPlayerFP9cBackpack
+00254770:
+.undef	Remove	;9cBackpackFv
 00254990:
 .undef	CheckForRemoval	;9cBackpackFv
 00254da0:
@@ -343,12 +451,314 @@
 .undef	BodyHasDisguise	;9cBackpackFv
 00255e50:
 .undef	BodyIsPickupable	;9cBackpackFv
+004f7f30:
+.word	sBackpacks	;9cBackpack
+
+#	9SFOLevels
+004acb30:
+.word	OnlineIndexToLevel	;9SFOLevels (Which levels are valid for online)
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+004acb60:
+.word	LevelIndexToOnline	;9SFOLevels (Online lobbies)
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+004acbb0:
+.byte	UseLevelCharacter	;9SFOLevels
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+004acbd0:
+.byte	UseLevelWeapon	;9SFOLevels
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+004acc70:
+.byte	OnlineLevels	;9SFOLevels
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+004acc90:
+.float	StreamBuf	;9SFOLevels
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+004acce0:
+.float	MapScale	;9SFOLevels
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+004acd30:
+.byte	LevelValid	;9SFOLevels (What levels are available)
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+
+#	10cAgentData
+00330b80:
+.undef	GetCommander	;10cAgentDataFPCc
+00330c30:
+.undef	GetParTime	;10cAgentDataFPCcb
+00333860:
+.undef	CompleteRequirement	;10cAgentDataFQ210cAgentData16eAchievementTypePc
+00333890:
+.undef	WildcardCompare	;10cAgentDataFPCcPCcc
+003339e0:
+.undef	AreObjectivesComplete	;10cAgentDataFPc
+00333b90:
+.undef	AddObjective	;10cAgentDataFPCcb
+00333df0:
+.undef	ResetStats	;10cAgentDataFv
+00333f10:
+.undef	AddScore	;10cAgentDataFQ210cAgentData11eScoreTypesi
+
+00532ad0:
+.code	sRatingRecords	;10cAgentData
+00532af0:
+.code	sBonusLevelRecords	;10cAgentData
+00532b10:
+.code	sBonusWeaponRecords	;10cAgentData
+00532b30:
+.code	sPartData	;10cAgentData
+00532b50:
+.code	sRanks	;10cAgentData
+00532b70:
+.code	sDossiers	;10cAgentData
+00532b90:
+.code	sParTimes	;10cAgentData
+00532bb0:
+.code	sOmegaRequirements	;10cAgentData
+00532bc0:
+.word	sObjectiveBitIndex	;10cAgentData
+.nop
+.word	classId	;Q210cAgentData16eScoreTypes_SOBJ
+.nop
+.word	classId	;Q210cAgentData23eSpecialBonusTypes_SOBJ
+.nop
+.word	classId	;15cAgentData_SOBJ
+
+#	10cObjective
+00228050:
+.undef	ClearMapObject	;10cObjectiveFb
+00228190:
+.undef	SetMapObject	;10cObjectiveFP5cGOBJPCcb
+002283a0:
+.undef	SetPluralLabel	;10cObjectiveFPCcb
+00228490:
+.undef	SetSingleLabel	;10cObjectiveFPCcb
+00228580:
+.undef	SetFailLabel	;10cObjectiveFPCcb
+00228670:
+.undef	SetCompleteLabel	;10cObjectiveFPCcb
+00228760:
+.undef	SetAddLabel	;10cObjectiveFPCcb
+00228850:
+.undef	SetMapLabel	;10cObjectiveFPCcb
+00228940:
+.undef	SetMenuLabel	;10cObjectiveFPCcb
+00228a30:
+.undef	SetNameLabel	;10cObjectiveFPCcb
+00228be0:
+.undef	SetPartialSuccess	;10cObjectiveFi
+00228c30:
+.undef	SucceedPart	;10cObjectiveFv
+00228d50:
+.undef	Succeed	;10cObjectiveFv
+00228d90:
+.undef	Add	;10cObjectiveFv
+00228dc0:
+.undef	Fail	;10cObjectiveFv
+
+00228e10:
+.undef	HandleMessage	;10cObjectiveFRC8cMessage
+00228e78:
+.undef	Objective Fail
+00228e88:
+.undef	Objective Succeed
+00228e98:
+.undef	Objective SucceedPart
+00228ea8:
+.undef	Objective PartialSuccess
+00228ec0:
+.undef	Objective SetMapObject
+00228ef0:
+.undef	Objective ClearMapObject
+00228f08:
+.undef	Objective SetNameLabel
+00228f20:
+.undef	Objective SetMenuLabel
+00228f38:
+.undef	Objective SetMapLabel
+00228f50:
+.undef	Objective SetAddLabel
+00228f68:
+.undef	Objective SetCompleteLabel
+00228f80:
+.undef	Objective SetFailLabel
+00228f98:
+.undef	Objective SetSingleLabel
+00228fb0:
+.undef	Objective SetPluralLabel
+
+00229000:
+.undef	Activate	;10cObjectiveFv
+00229900:
+.undef	__ct	;10cObjectiveFi
+
+004a5e20:
+.word	ObjectiveFunctions
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
 
 #	10cXViewport
 00375390:
 .undef	BuildOrtho	;10cXViewportCFv
 003754a0:
 .undef	BuildPersp	;10cXViewportCFv
+
+#	10nGameSound
+001c6720:
+.undef	PlayQuip	;10nGameSoundFPcP5cGOBJi
+001c67c0:
+.undef	PlayQuip	;10nGameSoundFPcib
+001c6a00:
+.undef	PlayMusic	;10nGameSoundFPcP5cGOBJ
+
+#	11cGameSystem
+0012ed60:
+.undef	AllAgentDataReceived	;11cGameSystemFv
+0012ee30:
+.undef	ClearCurrentAgentData	;11cGameSystemFv
+0012ff50:
+.undef	EndMovie	;11cGameSystemFv
+0012ff80:
+.undef	PlayMovie	;11cGameSystemFv
+00131400:
+.undef	SetPlayer	;11cGameSystemFP7cPlayer
+00131410:
+.undef	AddTeleport	;11cGameSystemFP5cGOBJ
+001314f0:
+.undef	GetAgentData	;11cGameSystemFi
+00136710:
+.undef	InitAgentData	;11cGameSystemFv
 
 #	11cHudLoading
 00271d80:
@@ -359,6 +769,58 @@
 .undef	ActivatePressX	;11cHudLoadingFb
 00271cd0:
 .undef	Deactivate	;11cHudLoadingFv
+
+#	12GuiQuickChat
+002b1350:
+.undef	onInput	;12GuiQuickChatFR10InputEvent
+002b1970:
+.undef	Reset	;12GuiQuickChatFv
+
+#	13cGameFrontEnd
+002c9170:
+.undef	GetAgentName	;13cGameFrontEndFR7pStringib
+0051eea0:
+.byte	mLaunchedLAN	;13cGameFrontEnd
+0051eea8:
+.byte	mLaunchedOnline	;13cGameFrontEnd
+
+#	13cObjectiveMan
+002270a0:
+.undef	GetFailedObjectives	;13cObjectiveManFPP10cObjectivei
+002270c0:
+.undef	GetSucceededObjectives	;13cObjectiveManFPP10cObjectiveib
+002270e0:
+.undef	GetParameters	;13cObjectiveManFPP10cObjectivei
+00227100:
+.undef	GetCurrentObjectives	;13cObjectiveManFPP10cObjectivei
+00227120:
+.undef	GetObjectiveCount	;13cObjectiveManFv
+00227170:
+.undef	GrabObjectives	;13cObjectiveManFPP10cObjectiveiiiiii
+00227670:
+.undef	AddObjective	;13cObjectiveManFi
+
+#	15GuiMissionSetup
+005064a8:
+.byte	mConnectRecievedCallback	;15GuiMissionSetup
+005064b0:
+.word	mConnectParam1	;15GuiMissionSetup
+005064b8:
+.word	mConnectParam2	;15GuiMissionSetup
+
+#	17GuiNetJoinMission
+002a8b60:
+.undef	DisplayAgentList	;17GuiNetJoinMissionFv
+002a8be0:
+.undef	DisplayGameList	;17GuiNetJoinMissionFv
+
+#	17GuiEquipmentSetup
+002a2170:
+.undef	onMessage	;17GuiEquipmentSetupFP9GuiWidgetQ23Gui7Messageii
+002a3a10:
+.undef	onAdd	;17GuiEquipmentSetupFf
+002a3bf0:
+.undef	onAdd	;17GuiEquipmentSetupFv
 
 #	defined_cc
 0048a1c8:
@@ -580,11 +1042,59 @@
 .byte	m_Adaptor	;4cDME
 004941a0:
 .byte	bRestart$11920
-
 004f7a50:
 .word	effects_10nSfxLoader
 
-#	BtnNames
+005429b0:
+.word	DATA_NOT_FOUND	;17cSkeletonDataBank
+005723b0:
+.byte	m_QuitReason__4cDME
+005723b8:
+.byte	m_bDisconnectLobby__4cDME
+005723c0:
+.byte	m_bServerAddressSet__4cDME
+005723c8:
+.byte	m_bInCallback__4cDME
+005723d0:
+.byte	m_Inited__4cDME
+005723d8:
+.float	m_fAvgLatency__4cDME
+.nop
+.float	m_fTotalLatency__4cDME
+.nop
+.word	m_nNumLatency__4cDME
+.nop
+.word	m_Connects__4cDME
+.nop
+.byte	m_bGameLocked__4cDME
+00572400:
+.byte	m_bPlayGame__4cDME
+00572408:
+.byte	m_bRestart__4cDME
+00572410:
+.byte	m_bHostDisconnect__4cDME
+00572418:
+.byte	m_bDisconnectPlayer__4cDME
+00572420:
+.byte	m_FrameReset__4cDME
+00572430:
+.word	m_GameConnections__4cDME
+00572468:
+.byte	m_bAttemptNextGameConnection__4cDME
+00572470:
+.word	m_nCurrentGameConnectionIndex__4cDME
+.nop
+.word	m_nNumValidGameConnections__4cDME
+.nop
+.word	m_SFOLobby__4cDME
+.nop
+.byte	m_SFOLobbyActive__4cDME
+005724a0:
+.word	m_ListOfGames__4cDME
+005724b0:
+.byte	m_CurrState__4cDME
+
+#	Buttons and Strings
 0048ba28:
 .word	kOnlineButtonName	;35@GuiOnlineOfflineSelect_cc@
 .undef
@@ -723,7 +1233,7 @@
 #	loading
 004ee470:
 .word	manLoadingFlag
-.undef
+.nop
 .dword	mLastUpdateTime$44521
 .byte	allowMovieEnd$44562
 004ee488:
@@ -732,7 +1242,7 @@
 .byte	bFoundServer$44659
 004ee498:
 .word	lobby$44728
-.undef
+.nop
 .byte	netInit$44729
 004ee4a8:
 .dword	lastTime$44730
@@ -742,25 +1252,25 @@
 .byte	@GUARD@lastTime$44792
 004ee4c8:
 .float	loadingFrameCounter
-.undef
+.nop
 .float	loadingFrameTotal
-.undef
+.nop
 .byte	loadingRetrievedFrameTotal
 004ee4e0:
 .byte	threadWaitHost
 004ee4e8:
 .word	thread_stack
-.undef
+.nop
 .byte	threadLoadingLastMessage
 004ee4f8:
 .word	threadSkipFrame
-.undef
+.nop
 .word	threadHudLoading
-.undef
+.nop
 .word	threadFont
-.undef
+.nop
 .word	threadContinueStr
-.undef
+.nop
 .word	threadLoadingStr
 
 #	net_stuff
@@ -810,18 +1320,22 @@
 .undef	AddDup	;Q210ScriptPriv6cGroupFP7cSystem
 
 #	other(ported)
+0012f810:
+.undef	IsMultiplayer	;17@unnamed@game_cc@Fv (Workers Objective)
 00139070:
 .undef	__ct	;Q23std37__list_deleter<PCv,15cAllocator<PCv>>FRC15cAllocator<PCv>
-00165610:
-.undef	CalcFrameTime	;8cMachineFb
-001674e0:
-.undef	CreateNetworkLobbyScreen	;8cMachineFv
+0013d770:
+.undef	GetSceneBelongingTo	;13cSceneManagerCFPC5cGOBJ
+0013d9f0:
+.undef	GetSceneManager__Fv
 00171880:
 .undef	HandleInteract	;12cBuddyHotboxFP5cGOBJ
 00178c60:
 .undef	__dt	;11cPopulationFv
 00178d40:
 .undef	__ct	;11cPopulationFPCcR8cHogFile
+001ba130:
+.undef	Call	;15cHumanRespawnCBFv
 001c3b00:
 .undef	DeallocateAllAnimationBuffers	;7cLoaderFv
 001c43a0:
@@ -833,21 +1347,47 @@
 .undef	__ct	;Q28nMSGGAME13cPlaySoundMsgFRC6cSndFxP5cGOBJ
 00221d20:
 .undef	__ct	;10cGeneratorFR11cPopulation
+0024aaf0:
+.undef	PrintDebugInfoToScreen	;15cPlayerControlsCFRC13cPlayerCameraPC5cGOBJ
+00224e00:
+.undef	IsActivationLoaded	;11nActivationFPC8cTerrain
+00225cd0:
+.undef	GetObjectiveManager__Fv
+0025e6e0:
+.undef	StartFade	;12cScreenFaderFQ212cScreenFader9eFadeTypef
+00245400:
+.undef	PlayCommanderQuip__Fii
 002887c0:
 .undef	__dt	;Q23std29vector<PCc,15cAllocator<PCc>>Fv
 002888c0:
 .undef	__ct	;Q23std57vector<15cSkaSwitchValue,29cAllocator<15cSkaSwitchValue>>Fv
+002a01c0:
+.undef	onMessage	;22GuiOnlineOfflineSelectFP9GuiWidgetQ23Gui7Messageii
+002a0970:
+.undef	onAdd	;22GuiOnlineOfflineSelectFv
+002a9240:
+.undef	onAdd	;17GuiNetJoinMissionFv
+002bd560:
+.undef	onMessage	;18GuiEquipmentModifyFP9GuiWidgetQ23Gui7Messageii
+002cae30:
+.undef	PushMessageBox	;13cGameFrontEndFiPCcPCcP9GuiWidgeti
 002e9a10:
 .undef	NetRegisterMessageStart
 
-00330b80:
-.undef	GetCommander	;10cAgentDataFPCc
 0033c300:
 .undef	__ct	;Q23std57vector<15cSkaSwitchValue,29cAllocator<15cSkaSwitchValue>>Fv
+0033c320:
+.undef	PushLobbyScreen	;14GuiLobbyScreenFi
+0033f250:
+.undef	onAdd	;21GuiMissionLobbyScreenFv
+003688c0:
+.undef	onAdd	;13GuiObjectivesFv
 0036a160:
 .undef	AddPad	;9cJoystickFiii
 003c9d60:
 .undef	__dt	;8cMessageFv
+003ccb00:
+.undef	ReceiveDamage	;5cGOBJFfP5cGOBJQ23WDB12eHitLocationQ23WDB14eWpnDamageTypePibPC7cVector
 003d76d0:
 .undef	addGameFunc	;Q210ScriptPriv11cScriptBaseFPCcPFPii_iPiiPPib
 003d9ba0:
@@ -861,6 +1401,14 @@
 
 0040b790:
 .undef	Add	;12cBaseObjListFP7cSystem
+00456160:
+.undef	PushStartMenu	;12GuiStartMenuFP9GuiWidget
+004624e0:
+.undef	onWake	;20GuiEndGameObjectivesFv
+00464d20:
+.undef	ProcessInputEvent	;13GuiGameCanvasFR10InputEvent
+004709c0:
+.undef	Remove	;10cInventoryFPCci
 00470a70:
 .undef	Add	;10cInventoryFPCci
 004934a0:
@@ -872,10 +1420,29 @@
 004ee550:
 .undef	name	;Q28nMSGGAME10cAIMessage
 
+00506488:
+.byte	gONLINE_ONLY	;Only Online button is available
+00506490:
+.byte	gLAN_AVAILABLE	;Enables LAN button
+00506500:
+.word	playerLocal
+.nop
+.word	EQ_CountDown
+.nop
+.float	EQ_Timer
+
+
 0055a818:
 .word	mFrameTicks	;8nDevices
 
 #	other(custom)
+0013489c:
+.undef	Quit Fix
+00143ec0:
+.undef	Weapon_SaveID
+001480e8:
+.undef	Save Comms Voices
+
 0014b628:
 .undef	isDeactivated
 0014b638:
@@ -891,6 +1458,7 @@
 .undef	cTeamFv
 0016c9d0:
 .undef	AddAwareness	;9cAITargetFP5cGOBJQ23cAI18eCauseForAwarenessf
+
 00186ca0:
 .undef	Tased
 00186cb0:
@@ -937,26 +1505,101 @@
 001b70f8:
 .undef	Branch Offline
 
+001b7478:
+.undef	Weapon_Save
+
+001ba408:
+.undef	Player_DisableInv
 00210170:
 .undef	cAtmosphericEffectMsg
+
+00245054:
+.undef	OutOfTime 1
+002450a8:
+.undef	OutOfTime 2
+00245120:
+.undef	OutOfTime 3
+
 002771f8:
 .undef	Blood Splat
+
+002a01fc:
+.undef	GUIONOFFSEL_Online
+002a0270:
+.undef	GUIONOFFSEL_Offline
+002a02e8:
+.undef	GUIONOFFSEL_LAN
+
 002a3ae0:
 .undef	Check for 2 Agents
+002a9db0:
+.undef	Region Crash
+002b1538:
+.undef	Quickchat_Codename
 002bd6e8:
 .undef	AB_DualWield
 002d1dc0:
 .undef	HostButton	;Codename has to be 0
 
+00335a70:
+.undef	Objectives_Check
+00335ad8:
+.undef	Branch Offline
+00335b20:
+.undef	Objectives_Completed
+00335b28:
+.undef	Objectives_Completed
+00335b30:
+.undef	Objectives_Missed
+00335b38:
+.undef	Objectives_Recheck
 00335b50:
 .undef	Check for ParTime
-003efe08:
-.undef	Colors_Read
+00335b60:
+.undef	Par Time Write
 
-004624e0:
-.undef	Codename collateral
+0033c5d0:
+.undef	GUI_Load
+0033c608:
+.undef	GUI_OnlineLobbyMenus
+0033c630:
+.undef	GUI_FailedToConnect
+
+003efe08:
+.undef	Colors Read
+00462590:
+.undef	Par Record
+00464d44:
+.undef	QuickchatCall	;This is where to activate Quickchat
+
 0048c458:
 .word	cActivateBodyTossMsg
+0049dbe0:
+.word	Death Animations
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+
+004b9b30:
+.word	GUI by ID
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+
 004ffc04:
 .word	MSNSETUP_dynamic
 004ffbd4:
@@ -966,6 +1609,8 @@
 004ffc28:
 .byte
 .byte	b_BlackScreen
+004ffc90:
+.qword	Launch GUI	;TEST
 
 00588058:
 .word	np$8931
@@ -985,3 +1630,9 @@
 .undef	Return
 003e1a90:
 .undef	Return
+
+#	Agent(Player)
+005c911c:
+.qword	Agent_AgencyCellOnline
+00a81fac:
+.qword	Agent_AgencyCellOffline
