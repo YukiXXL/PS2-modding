@@ -1,0 +1,475 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00000080:
+.word	_align_segment
+0010a000:
+.undef	indata
+0010a008:
+.undef	ENTRYPOINT
+001b6708:
+.undef	main
+
+0020e520:
+.undef	Boot_SecurityCheck
+
+
+#	AI
+00182290:
+.undef	Fun_isAllowedAI
+001822b4:
+.undef	AI = 9
+.undef
+.undef	AI = 5
+.undef
+.undef	AI = 7
+.undef
+.undef	AI = 0
+
+001b89c8:
+.undef	Fun_AI
+
+0028c490:
+.word	AI_LEVELS
+
+#	Career
+0014de90:
+.undef	Fun_CareerTourProgress
+001821e8:
+.undef	GetCareerLevels
+00194a10:
+.undef	Career_GetSavedGame
+
+00194c48:
+.undef	Career_GetNextRace
+00194c6c:
+.undef	Load Track Number
+
+00194c80:
+.undef	Career_GetCurrentStage
+
+001efa78:
+.undef	Fun_Career
+
+004226c0:
+.byte	Career_Super_Current
+004225d0:
+.byte	Career_MX_Current
+
+#	Custom Tournament
+001e3568:
+.undef	Fun_CustomTourneyAddLevel
+
+001e3650:
+.undef	CustomTourney_LevelList
+001e3710:
+.undef	LoopCheck
+
+001e3810:
+.undef	CustomTourney_AddLevel
+
+#	Cheats Menu
+0012cf68:
+.undef	Fun_Codes
+0017f050:
+.undef	Fun_CheckCheatCode
+001e6e80:
+.undef	Fun_ActivateCode
+
+#	Game
+0016bc98:
+.undef	Fun_StartGame
+0016bee0:
+.undef	Load g_GameMode
+0016bf04:
+.undef	isMoshbowl
+0016bf10:
+.undef	isNotTraining
+
+00182330:
+.undef	Fun_LoadingScreen
+0018234c:
+.undef	isPodium
+00182360:
+.undef	isDualSlalom
+00182378:
+.undef	isSuperJump
+0018238c:
+.undef	isMoshBowl
+001823a0:
+.undef	isTraining
+00182460:
+.undef	isRace
+00182490:
+.undef	LOADBAR1
+
+0018dfc8:
+.undef	Fun_LoadRaceEndMenu
+
+001ef5d0:
+.undef	Fun_Moshbowl
+001ef978:
+.undef	isMultiPlayer
+
+001f43c0:
+.undef	Fun_GetReady
+001f76b8:
+.undef	Fun_PrepareGame
+0023d0b0:
+.undef	Fun_RiderCamera
+
+#	Levels
+0015cae0:
+.undef	LevelList_in-game
+0015cb50:
+.undef	LoopCheck
+
+0015cc90:
+.undef	LevelList_in-gameSelected
+0015cd10:
+.undef	LoopCheck
+
+00182728:
+.undef	Peru_FR
+0018e3a8:
+.undef	isLevelEnabled
+00193f68:
+.undef	Get_isLevelUnlocked
+001989c0:
+.undef	LevelList_PickupEditor
+00198ac0:
+.undef	LevelList_LevelPicked
+001ba3b8:
+.undef	Fun_LoadLevel
+001f8440:
+.undef	GetUnlockedLevels
+
+001f8628:
+.undef	LevelList_Menu
+001f86b0:
+.undef	LoopCheck
+
+00296f60:
+.word	Level_IDs
+004b2840:
+.word	g_LevelID
+
+#	Menus
+0015e238:
+.undef	PauseMenu
+0015e3f4:
+.undef	isPostersLocked
+.undef	isMultiPlayer
+
+001ba7d0:
+.undef	Fun_RaceEndMenu
+001bab50:
+.undef	isOnePlayer
+001bac18:
+.undef	isTwoPlayer
+001baca4:
+.undef	isThreeFourPlayers
+
+001eb4d0:
+.undef	Fun_Game
+001ebcac:
+.undef	StartingScreen
+001ebcf4:
+.undef	Demo
+001ebd40:
+.undef	MainMenu
+001ebd58:
+.undef	NewOrLoad
+001ebd68:
+.undef	SinglePlayer
+001ebd78:
+.undef	MP_EventSelect
+001ebd90:
+.undef	MultiPlayer
+001ebda8:
+.undef	Single_Event
+001ebdb8:
+.undef	Career
+001ebdd8:
+.undef	Options
+001ebe40:
+.undef	SP_RiderSelect
+001ebea0:
+.undef	SP_ContinueSavedGame
+001ebeb0:
+.undef	MP_ContinueSavedGame
+
+001ed5b8:
+.undef	Fun_MainMenu
+001ed620:
+.undef	Save m_MenuNext
+
+001ef0e0:
+.undef	Fun_SingleEvent
+001ef3d8:
+.undef	isFreestyle
+001ef3f0:
+.undef	isRace
+001ef400:
+.undef	isRace(NoAI)
+001ef460:
+.undef	Load Number_of_Players
+001ef4c4:
+.undef	isMultiPlayer
+
+001f0160:
+.undef	Fun_Options
+001f0198:
+.undef	DisableButtons
+001f01c8:
+.undef	UnlockRidersBikes
+001f01dc:
+.undef	Number_of_Items	;9 - UnlockRidersBikes(Test)
+
+001f3b98:
+.undef	Fun_NewOrLoad
+001f3d24:
+.undef	isMultiPlayer
+
+001f7420:
+.undef	Fun_MenuWriteButtons
+001f7498:
+.undef	WriteButton
+
+00238f48:
+.undef	GetAttractTime
+
+#	Multi Player
+0015d0c8:
+.undef	Fun_3-4P_RaceEndMenu
+
+0018b4c8:
+.undef	Fun_MultiplayerPrepare
+0018bcf0:
+.undef	Check_MP_Riders
+00193f38:
+.undef	isLevelForMP
+
+001edd28:
+.undef	Fun_MP_EventSelect
+001ede1c:
+.undef	Disable_2P_Modes
+001ee014:
+.undef	MP_SingleEvent
+001ee040:
+.undef	MP_Arcade
+001ee068:
+.undef	MP_CustomTournament
+001ee0bc:
+.undef	MP_MoshBowl
+001ee0ec:
+.undef	MP_SuperJump
+001ee114:
+.undef	MP_DualSlalom
+
+001ee8a8:
+.undef	Fun_MPContinueSavedGame
+001eebd4:
+.undef	isArcade
+
+001eed78:
+.undef	Fun_MultiPlayer
+001eeff4:
+.undef	isThreePlayers
+001ef008:
+.undef	isFourPlayers
+001ef018:
+.undef	SavePlayers
+
+0023d610:
+.undef	WriteNumberofScreens
+
+00296b10:
+.word	GUI_MultiPlayer
+
+#	Other
+001822d8:
+.undef	check_data_limit
+00261f00:
+.undef	JR-RA
+
+#	Peds
+00127738:
+.undef	Fun_Peds
+00127cc8:
+.undef	Fun_PedsMP
+00192f68:
+.undef	Fun_PedsLoading
+
+#	Pickup Editor
+00197518:
+.undef	Fun_PickupEditor
+00197590:
+.undef	Check if Level is Valid
+001975ec:
+.undef	144_Pickups
+00197604:
+.undef	60_Pickups
+0019761c:
+.undef	65_Pickups
+00197630:
+.undef	0_Pickups
+
+001981a0:
+.undef	PickupEditor_Add
+
+#	Riders
+00147170:
+.undef	Fun_WriteRiders
+001471dc:
+.undef	if true, AI crashes on 3,4P
+
+0018e408:
+.undef	isRiderEnabled
+00193e30:
+.undef	Fun_DemoRiders
+00193fc8:
+.undef	Fun_UnlockRiders
+00193fe8:
+.undef	GetUnlockedRiders
+
+#	Single Player
+001ed900:
+.undef	Fun_SinglePlayer
+001edb70:
+.undef	SP_SingleEvent
+001edb90:
+.undef	SP_Career
+001edba4:
+.undef	SP_Arcade
+001edbd4:
+.undef	SP_SuperJump
+001edbf0:
+.undef	SP_Training
+001edc64:
+.undef	SP_MoshBowl
+
+001ee2a0:
+.undef	Fun_SPContinueSavedGame
+001f24b8:
+.undef	Fun_SP_RiderSelect
+
+00296af0:
+.word	GUI_SinglePlayer
+
+
+#	DEFINED
+0026ee50:
+.word	LEVELS
+0026eea4:
+.word	LEVELS_DUAL-SLALOM
+0026eeac:
+.word	LEVELS_MOSHBOWL
+0026eeb8:
+.word	LEVELS_FUJIPRACTICE(CUT)
+.word	LEVELS_SUPERJUMP
+.word	LEVELS_TRAINING
+.word	LEVELS_PODIUMSUPER
+.word	LEVELS_PODIUMSPECIAL
+.word	LEVELS_PODIUMARCADE
+0026ef60:
+.word	LOADING_SCREENS
+0026f0d8:
+.word	LEVEL_TYPES
+002758d8:
+.word	STRINGS_MAINMENU
+002758e8:
+.word	STRINGS_SP
+00275908:
+.word	STRINGS_MP
+00275938:
+.word	STRINGS_SP_LOAD
+00275960:
+.word	STRINGS_MP_LOAD
+
+0028d9b8:
+.word	144_Pickups_Totals
+0028d9d0:
+.word	60_Pickups_Totals
+0028d9e8:
+.word	65_Pickups_Totals
+0028da00:
+.word	LEVELS_PICKUPEDITOR
+
+0029de9c:
+.word	m_AttractTimerGoal
+0029ded8:
+.word	m_Menu
+0029deec:
+.word	m_PreviousMenu
+
+0029e450:
+.word	Number_of_Screens
+
+0029df84:
+.byte
+.byte
+.byte	CursorUp
+.byte	CursorDown
+.byte
+.byte
+.byte
+.byte	X-Select
+
+0029e3d8:
+.word	m_AttractTimer
+
+003c6350:
+.qword	LoadingScreenTemp	;ALP, LTRAIN, etc.
+
+004346b0:
+.word	Unlocked_Riders
+.word	Unlocked_Levels
+00434738:
+.byte	unlock_PickupsEditor
+.byte
+.byte
+.byte	unlock_Moshbowl
+.byte	unlock_DualSlalom
+.byte	unlock_CustomTournament
+.byte	unlock_SuperJump
+.byte	unlock_Posters
+
+004b25dc:
+.byte	r_Rider00
+.byte	r_Rider01
+.byte	r_Rider02
+.byte	r_Rider03
+.byte	r_Rider04
+.byte	r_Rider05
+.byte	r_Rider06
+.byte	r_Rider07
+.byte	r_Rider08
+.byte	r_Rider09
+.byte	r_Rider10
+.byte	r_Rider11
+.byte	r_Rider12
+.byte	r_Rider13
+.byte	r_Rider14
+.byte	r_Rider15
+
+004b26ac:
+.word	g_GameMode
+.word	g_isNotSE
+
+004b2900:
+.word	UserPickups
+
+004c6d78:
+.word	m_Cursor
+.code
+.word	m_MenuNext
+004c6da4:
+.word	m_NumberofItems
+
+004b2828:
+.word	Number_of_Players
+.word	Number_of_AI
+
+004bd714:
+.word	m_isDisabledAI
