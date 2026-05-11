@@ -43,7 +43,7 @@
 00194c48:
 .undef	Career_GetNextRace
 00194c6c:
-.undef	Load Track Number
+.undef	load track number
 
 00194c80:
 .undef	Career_GetCurrentStage
@@ -63,7 +63,7 @@
 001e3650:
 .undef	CustomTourney_LevelList
 001e3710:
-.undef	LoopCheck
+.undef	loop check
 
 001e3810:
 .undef	CustomTourney_AddLevel
@@ -80,26 +80,26 @@
 0016bc98:
 .undef	Fun_StartGame
 0016bee0:
-.undef	Load g_GameMode
+.undef	load g_GameMode
 0016bf04:
-.undef	isMoshbowl
+.undef	is Moshbowl
 0016bf10:
-.undef	isNotTraining
+.undef	is not Training
 
 00182330:
 .undef	Fun_LoadingScreen
 0018234c:
-.undef	isPodium
+.undef	is Podium
 00182360:
-.undef	isDualSlalom
+.undef	is DualSlalom
 00182378:
-.undef	isSuperJump
+.undef	is SuperJump
 0018238c:
-.undef	isMoshBowl
+.undef	is MoshBowl
 001823a0:
-.undef	isTraining
+.undef	is Training
 00182460:
-.undef	isRace
+.undef	is Race
 00182490:
 .undef	LOADBAR1
 
@@ -109,7 +109,7 @@
 001ef5d0:
 .undef	Fun_Moshbowl
 001ef978:
-.undef	isMultiPlayer
+.undef	is MultiPlayer
 
 001f43c0:
 .undef	Fun_GetReady
@@ -122,12 +122,12 @@
 0015cae0:
 .undef	LevelList_in-game
 0015cb50:
-.undef	LoopCheck
+.undef	loop check
 
 0015cc90:
 .undef	LevelList_in-gameSelected
 0015cd10:
-.undef	LoopCheck
+.undef	loop check
 
 00182728:
 .undef	Peru_FR
@@ -158,17 +158,17 @@
 0015e238:
 .undef	PauseMenu
 0015e3f4:
-.undef	isPostersLocked
-.undef	isMultiPlayer
+.undef	is PostersLocked
+.undef	is MultiPlayer
 
 001ba7d0:
 .undef	Fun_RaceEndMenu
 001bab50:
-.undef	isOnePlayer
+.undef	is 1 Player
 001bac18:
-.undef	isTwoPlayer
+.undef	is 2 Players
 001baca4:
-.undef	isThreeFourPlayers
+.undef	is 3-4 Players
 
 001eb4d0:
 .undef	Fun_Game
@@ -202,39 +202,39 @@
 001ed5b8:
 .undef	Fun_MainMenu
 001ed620:
-.undef	Save m_MenuNext
+.undef	save m_MenuNext
 
 001ef0e0:
 .undef	Fun_SingleEvent
 001ef3d8:
-.undef	isFreestyle
+.undef	is Freestyle
 001ef3f0:
-.undef	isRace
+.undef	is Race
 001ef400:
-.undef	isRace(NoAI)
+.undef	is Race(NoAI)
 001ef460:
-.undef	Load Number_of_Players
+.undef	load Number_of_Players
 001ef4c4:
-.undef	isMultiPlayer
+.undef	is MultiPlayer
 
 001f0160:
 .undef	Fun_Options
 001f0198:
-.undef	DisableButtons
+.undef	disable buttons
 001f01c8:
-.undef	UnlockRidersBikes
+.undef	unlock riders bikes
 001f01dc:
-.undef	Number_of_Items	;9 - UnlockRidersBikes(Test)
+.undef	number of items	;9 - UnlockRidersBikes(Test)
 
 001f3b98:
 .undef	Fun_NewOrLoad
 001f3d24:
-.undef	isMultiPlayer
+.undef	is MultiPlayer
 
 001f7420:
 .undef	Fun_MenuWriteButtons
 001f7498:
-.undef	WriteButton
+.undef	write button
 
 00238f48:
 .undef	GetAttractTime
@@ -246,14 +246,15 @@
 0018b4c8:
 .undef	Fun_MultiplayerPrepare
 0018bcf0:
-.undef	Check_MP_Riders
+.undef	check MultiPlayer riders
+
 00193f38:
 .undef	isLevelForMP
 
 001edd28:
 .undef	Fun_MP_EventSelect
 001ede1c:
-.undef	Disable_2P_Modes
+.undef	disable 2P modes
 001ee014:
 .undef	MP_SingleEvent
 001ee040:
@@ -270,16 +271,16 @@
 001ee8a8:
 .undef	Fun_MPContinueSavedGame
 001eebd4:
-.undef	isArcade
+.undef	is Arcade
 
 001eed78:
 .undef	Fun_MultiPlayer
 001eeff4:
-.undef	isThreePlayers
+.undef	is 3 Players
 001ef008:
-.undef	isFourPlayers
+.undef	is 4 Players
 001ef018:
-.undef	SavePlayers
+.undef	save Players
 
 0023d610:
 .undef	WriteNumberofScreens
@@ -395,6 +396,132 @@
 .word	65_Pickups_Totals
 0028da00:
 .word	LEVELS_PICKUPEDITOR
+
+0029cae0:
+.byte	"MOAB"
+0029caf0:
+.byte	"PERU"
+0029cb20:
+.byte	"FUJI"
+0029cb48:
+.byte	"BC"
+.byte
+.byte
+.byte
+.undef
+.byte	"CITY"
+.byte
+.byte
+.byte
+.undef
+.byte	"DUAL"
+.byte
+.byte
+.byte
+.undef
+.byte	"MOSH"
+.byte
+.byte
+.byte
+0029cba8:
+.byte	"ALP2"
+0029cc00:
+.byte	"BC2"
+0029cc28:
+.byte	"ALP"
+.byte
+.byte
+.byte
+.undef
+.byte	"MOA"
+.byte
+.byte
+.byte
+.undef
+.byte	"JUN"
+.byte
+.byte
+.byte
+.undef
+.byte	"PER"
+.byte
+.byte
+.byte
+.undef
+.byte	"GLA"
+.byte
+.byte
+.byte
+.undef
+.byte	"AUB"
+.byte
+.byte
+.byte
+.undef
+.byte	"FUJ"
+.byte
+.byte
+.byte
+.undef
+.byte	"CIT"
+.byte
+.byte
+.byte
+.undef
+.byte	"DUA"
+.byte
+.byte
+.byte
+.undef
+.byte	"MOS"
+.byte
+.byte
+.byte
+.undef
+.byte	"MON"
+.byte
+.byte
+.byte
+.undef
+.byte	"TRA"
+.byte
+.byte
+.byte
+.undef
+.byte	"POD"
+.byte
+.byte
+.byte
+.undef
+.byte	"MX"
+.byte
+.byte
+.byte
+.undef
+.byte	"TD"
+.byte
+.byte
+.byte
+.undef
+.byte	"FR"
+.byte
+.byte
+.byte
+.undef
+.byte	"SC"
+.byte
+.byte
+.byte
+.undef
+.byte	"AR"
+.byte
+.byte
+.byte
+.undef
+.byte	"FS"
+.byte
+.byte
+.byte
 
 0029de9c:
 .word	m_AttractTimerGoal

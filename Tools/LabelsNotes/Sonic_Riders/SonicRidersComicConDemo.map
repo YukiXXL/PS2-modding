@@ -1,0 +1,330 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00100000:
+.undef	indata
+00100008:
+.undef	ENTRYPOINT
+0015b940:
+.undef	main
+
+
+#	Character
+002fbd60:
+.undef	CharacterAvatars
+002fbe20:
+.undef	lower than maximum	;Maximum = 8
+
+002fcba0:
+.undef	CharacterAvatarIcons
+002fcc04:
+.undef	is missing
+
+002fcc50:
+.undef	CharacterStatus
+002fcd44:
+.undef	lower than maximum	;Maximum = 8
+
+002fe4b8:
+.undef	CharacterSelect
+002fe684:
+.undef	write charselect pos
+002fe740:
+.undef	check character ID	;load character ID to v0
+.undef	lower than maximum	;Maximum = 8
+
+00439a90:
+.byte	Characters
+.byte
+.byte
+.byte	Sonic_model
+00439b73:
+.byte	Eggman_model
+00439c93:
+.byte	E1000R_model
+
+#	Fun_
+0018cff0:
+.undef	Fun_GameStart
+
+002fb1d0:
+.undef	Fun_SwitchCharacter
+002fb200:
+.undef	lower than maximum	;Maximum = 8
+002fb21c:
+.undef	lower than maximum	;Maximum = 8
+
+002fb2a0:
+.undef	Fun_SwitchGears
+
+002fcfc0:
+.undef	func_PlayerEntry
+
+#	GUI
+0044e300:
+.word	GUI_SubStartMenu
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GUI_SubMainMenu
+.word
+.word
+
+0044e370:
+.word	GameModes
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+
+0044e3a0:
+.word	GUI_STARTUP
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+
+0044e3d0:
+.word	GUIs
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+
+#	GUI_SubStartMenu
+002ce5c0:
+.undef	StartMenu_SubMenu
+002ce5d8:
+.undef	load SubMenuID
+
+002ce608:
+.undef	StartMenu_2
+
+002ce7a0:
+.undef	StartMenu_6
+002ce7b8:
+.undef	check pressed buttons
+002ce7e0:
+.undef	is start button pressed
+002ce7e8:
+.undef	check timer
+002ce814:
+.undef	is attract timer up
+
+002ce834:
+.undef	StartMenu_7
+002ce85c:
+.undef	StartMenu_8
+
+#	GUI_SubMainMenu
+002ce9d0:
+.undef	GUI_GameStart
+002cea80:
+.undef	GUI_Extras
+002ceb20:
+.undef	GUI_Options
+
+#	GameModes
+002d1160:
+.undef	FreeRace
+
+#	GUI_STARTUP
+002cee78:
+.undef	STARTUP_MainMenu
+
+#	GUIs
+002d10e8:
+.undef	GUI_StartRace
+002d1134:
+.undef	load game mode
+
+002cebc0:
+.undef	GUI_Load
+002cec24:
+.undef	GUI_Startup
+002cf6d4:
+.undef	GUI_PressStart
+002cf7a0:
+.undef	GUI_MenuStartup
+
+002cf9e4:
+.undef	GUI_MainMenu	;Load_SubMenu_ID
+002cfa18:
+.undef	is Extras/Options
+002cfa38:
+.undef	up
+002cfaa4:
+.undef	down
+002cfb10:
+.undef	select
+002cfb5c:
+.undef	back
+
+002cfcec:
+.undef	up
+002cfd28:
+.undef	down
+002cfd70:
+.undef	select
+002cfe64:
+.undef	back
+
+002d0110:
+.undef	GUI_MissionMode
+002d0138:
+.undef	pressed button
+002d01b4:
+.undef	select/back
+002d0238:
+.undef	up
+002d02bc:
+.undef	down
+002d0340:
+.undef	select
+002d03e0:
+.undef	back
+
+002d0778:
+.undef	GUI_TrackSelectDemo
+002d079c:
+.undef	select
+002d07ec:
+.undef	player entry
+002d081c:
+.undef	back
+
+002d102c:
+.undef	GUI_MissionMenu
+
+002d18d0:
+.undef	idle
+.undef	return
+
+#	Other
+002dc550:
+.undef	Missions
+002dd27c:
+.undef	StartMission
+
+002f4c60:
+.undef	TrackSelectDemo
+002f4d24:
+.undef	pressed left
+002f4d38:
+.undef	selected Metal City
+002f4d44:
+.undef	pressed right
+002f4d58:
+.undef	selected Green Cave
+002f4e6c:
+.undef	return
+.undef	return
+
+003e1e90:
+.word
+.word
+.word
+.word
+.word
+.word
+003e1eb0:
+.word	GameStart
+.word
+.word
+.word
+.word
+.word
+003e1ed0:
+.word
+.word
+.word
+.word
+.word
+.word
+003e1ef0:
+.word
+.word
+.word
+.word
+.word
+.word
+
+004551b0:
+.word	AttractScreen_ButtonsPress
+
+0093ab47:
+.byte	unlocked_MissionMode
+0093ddac:
+.word	MenuID
+0093ddec:
+.word	SubMenuID
+0093e1c4:
+.code	Something
+
+00947669:
+.byte	m_bTS_MenuID
+0094766c:
+.word	GameModeID
