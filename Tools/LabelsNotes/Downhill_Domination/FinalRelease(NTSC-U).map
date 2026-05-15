@@ -29,6 +29,7 @@
 001b89c8:
 .undef	Fun_AI
 
+
 0028c490:
 .word	AI_LEVELS
 
@@ -50,6 +51,7 @@
 
 001efa78:
 .undef	Fun_Career
+
 
 004226c0:
 .byte	Career_Super_Current
@@ -86,23 +88,6 @@
 0016bf10:
 .undef	is not Training
 
-00182330:
-.undef	Fun_LoadingScreen
-0018234c:
-.undef	is Podium
-00182360:
-.undef	is DualSlalom
-00182378:
-.undef	is SuperJump
-0018238c:
-.undef	is MoshBowl
-001823a0:
-.undef	is Training
-00182460:
-.undef	is Race
-00182490:
-.undef	LOADBAR1
-
 0018dfc8:
 .undef	Fun_LoadRaceEndMenu
 
@@ -117,6 +102,37 @@
 .undef	Fun_PrepareGame
 0023d0b0:
 .undef	Fun_RiderCamera
+
+
+0029e450:
+.word	Number_of_Screens
+
+004b26ac:
+.word	g_GameMode
+.word	g_isNotSE
+
+004b2828:
+.word	Number_of_Players
+.word	Number_of_AI
+004b2840:
+.word	g_LevelID
+
+#	GUIs
+002758d8:
+.word	STRINGS_MAINMENU
+002758e8:
+.word	STRINGS_SP
+00275908:
+.word	STRINGS_MP
+00275938:
+.word	STRINGS_SP_LOAD
+00275960:
+.word	STRINGS_MP_LOAD
+
+00296af0:
+.word	GUI_SinglePlayer
+00296b10:
+.word	GUI_MultiPlayer
 
 #	Levels
 0015cae0:
@@ -149,10 +165,59 @@
 001f86b0:
 .undef	LoopCheck
 
+
+0026ee50:
+.word	LEVELS
+0026eea4:
+.word	LEVELS_DUAL-SLALOM
+.word
+.word	LEVELS_MOSHBOWL
+.word
+.word
+.word	LEVELS_FUJIPRACTICE(CUT)
+.word	LEVELS_SUPERJUMP
+.word	LEVELS_TRAINING
+.word	LEVELS_PODIUMSUPER
+.word	LEVELS_PODIUMSPECIAL
+.word	LEVELS_PODIUMARCADE
+
+0028d9b8:
+.word	144_Pickups_Totals
+0028d9d0:
+.word	60_Pickups_Totals
+0028d9e8:
+.word	65_Pickups_Totals
+0028da00:
+.word	LEVELS_PICKUPEDITOR
+
 00296f60:
 .word	Level_IDs
-004b2840:
-.word	g_LevelID
+
+#	Loading Screen
+00182330:
+.undef	Fun_LoadingScreen
+0018234c:
+.undef	is Podium
+00182360:
+.undef	is DualSlalom
+00182378:
+.undef	is SuperJump
+0018238c:
+.undef	is MoshBowl
+001823a0:
+.undef	is Training
+00182460:
+.undef	is Race
+00182490:
+.undef	LOADBAR1
+
+0026ef60:
+.word	LOADING_SCREENS
+0026f0d8:
+.word	LEVEL_TYPES
+
+003c6350:
+.qword	LoadingScreenTemp	;ALP, LTRAIN, etc.
 
 #	Menus
 0015e238:
@@ -171,7 +236,7 @@
 .undef	is 3-4 Players
 
 001eb4d0:
-.undef	Fun_Game
+.undef	Fun_GameScreen
 001ebcac:
 .undef	StartingScreen
 001ebcf4:
@@ -239,6 +304,40 @@
 00238f48:
 .undef	GetAttractTime
 
+
+0029de9c:
+.word	m_AttractTimerGoal
+0029ded8:
+.word	m_Menu
+0029deec:
+.word	m_PreviousMenu
+
+0029df84:
+.byte
+.byte
+.byte	CursorUp
+.byte	CursorDown
+.byte
+.byte
+.byte
+.byte	X-Select
+
+0029e3d8:
+.word	m_AttractTimer
+
+004b2900:
+.word	UserPickups
+
+004bd714:
+.word	m_isDisabledAI
+
+004c6d78:
+.word	m_Cursor
+.code
+.word	m_MenuNext
+004c6da4:
+.word	m_NumberofItems
+
 #	Multi Player
 0015d0c8:
 .undef	Fun_3-4P_RaceEndMenu
@@ -284,9 +383,6 @@
 
 0023d610:
 .undef	WriteNumberofScreens
-
-00296b10:
-.word	GUI_MultiPlayer
 
 #	Other
 001822d8:
@@ -334,6 +430,25 @@
 00193fe8:
 .undef	GetUnlockedRiders
 
+
+004b25dc:
+.byte	r_Rider00
+.byte	r_Rider01
+.byte	r_Rider02
+.byte	r_Rider03
+.byte	r_Rider04
+.byte	r_Rider05
+.byte	r_Rider06
+.byte	r_Rider07
+.byte	r_Rider08
+.byte	r_Rider09
+.byte	r_Rider10
+.byte	r_Rider11
+.byte	r_Rider12
+.byte	r_Rider13
+.byte	r_Rider14
+.byte	r_Rider15
+
 #	Single Player
 001ed900:
 .undef	Fun_SinglePlayer
@@ -355,48 +470,22 @@
 001f24b8:
 .undef	Fun_SP_RiderSelect
 
-00296af0:
-.word	GUI_SinglePlayer
+#	Unlocked
+004346b0:
+.word	Unlocked_Riders
+.word	Unlocked_Levels
+00434738:
+.byte	Unlocked_PickupsEditor
+.byte
+.byte
+.byte	Unlocked_Moshbowl
+.byte	Unlocked_DualSlalom
+.byte	Unlocked_CustomTournament
+.byte	Unlocked_SuperJump
+.byte	Unlocked_Posters
 
 
 #	DEFINED
-0026ee50:
-.word	LEVELS
-0026eea4:
-.word	LEVELS_DUAL-SLALOM
-0026eeac:
-.word	LEVELS_MOSHBOWL
-0026eeb8:
-.word	LEVELS_FUJIPRACTICE(CUT)
-.word	LEVELS_SUPERJUMP
-.word	LEVELS_TRAINING
-.word	LEVELS_PODIUMSUPER
-.word	LEVELS_PODIUMSPECIAL
-.word	LEVELS_PODIUMARCADE
-0026ef60:
-.word	LOADING_SCREENS
-0026f0d8:
-.word	LEVEL_TYPES
-002758d8:
-.word	STRINGS_MAINMENU
-002758e8:
-.word	STRINGS_SP
-00275908:
-.word	STRINGS_MP
-00275938:
-.word	STRINGS_SP_LOAD
-00275960:
-.word	STRINGS_MP_LOAD
-
-0028d9b8:
-.word	144_Pickups_Totals
-0028d9d0:
-.word	60_Pickups_Totals
-0028d9e8:
-.word	65_Pickups_Totals
-0028da00:
-.word	LEVELS_PICKUPEDITOR
-
 0029cae0:
 .byte	"MOAB"
 0029caf0:
@@ -519,84 +608,3 @@
 .byte
 .undef
 .byte	"FS"
-.byte
-.byte
-.byte
-
-0029de9c:
-.word	m_AttractTimerGoal
-0029ded8:
-.word	m_Menu
-0029deec:
-.word	m_PreviousMenu
-
-0029e450:
-.word	Number_of_Screens
-
-0029df84:
-.byte
-.byte
-.byte	CursorUp
-.byte	CursorDown
-.byte
-.byte
-.byte
-.byte	X-Select
-
-0029e3d8:
-.word	m_AttractTimer
-
-003c6350:
-.qword	LoadingScreenTemp	;ALP, LTRAIN, etc.
-
-004346b0:
-.word	Unlocked_Riders
-.word	Unlocked_Levels
-00434738:
-.byte	unlock_PickupsEditor
-.byte
-.byte
-.byte	unlock_Moshbowl
-.byte	unlock_DualSlalom
-.byte	unlock_CustomTournament
-.byte	unlock_SuperJump
-.byte	unlock_Posters
-
-004b25dc:
-.byte	r_Rider00
-.byte	r_Rider01
-.byte	r_Rider02
-.byte	r_Rider03
-.byte	r_Rider04
-.byte	r_Rider05
-.byte	r_Rider06
-.byte	r_Rider07
-.byte	r_Rider08
-.byte	r_Rider09
-.byte	r_Rider10
-.byte	r_Rider11
-.byte	r_Rider12
-.byte	r_Rider13
-.byte	r_Rider14
-.byte	r_Rider15
-
-004b26ac:
-.word	g_GameMode
-.word	g_isNotSE
-
-004b2900:
-.word	UserPickups
-
-004c6d78:
-.word	m_Cursor
-.code
-.word	m_MenuNext
-004c6da4:
-.word	m_NumberofItems
-
-004b2828:
-.word	Number_of_Players
-.word	Number_of_AI
-
-004bd714:
-.word	m_isDisabledAI

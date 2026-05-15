@@ -1,0 +1,497 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00000080:
+.word	_align_segment
+0010a000:
+.undef	indata
+0010a008:
+.undef	ENTRYPOINT
+001b4a90:
+.undef	main
+
+0020be58:
+.undef	Boot_SecurityCheck
+
+#	_main
+001b4d34:
+.undef	load g_GameMode
+001b4e60:
+.undef	load level
+001b508c:
+.undef	load level
+.undef
+.undef	save g_LevelName
+
+
+#	AI
+00180d90:
+.undef	Fun_isAllowedAI
+00180db4:
+.undef	AI = 9
+.undef
+.undef	AI = 5
+.undef
+.undef	AI = 7
+.undef
+.undef	AI = 0
+
+001b6d48:
+.undef	Fun_AI
+001b6d68:
+.undef	load g_GameMode
+001b6d9c:
+.undef	load Number_of_Players
+001b6db8:
+.undef	load g_Level
+001b6dc4:
+.undef	AI_FR
+001b6de8:
+.undef	AI_TD
+001b6df8:
+.undef	AI_MX
+001b6e04:
+.undef	is MultiPlayer
+001b6e18:
+.undef	AI_FR
+001b6e30:
+.undef	AI_TD
+001b6e48:
+.undef	AI_MX
+.undef	AI_MX
+001b6e70:
+.undef	disable AI if v1=1
+
+
+004bae14:
+.word	m_isDisabledAI
+
+#	Career
+00180ce8:
+.undef	GetCareerLevels
+00180d10:
+.undef	Career_MX
+.undef
+.undef
+.undef
+.undef	Career_TD
+.undef
+.undef
+.undef
+.undef	Career_FR
+.undef
+.undef
+.undef
+.undef	Career_SC
+.undef
+.undef
+.undef
+.undef	Career_AR
+.undef
+.undef
+.undef
+.undef	Career_FS
+
+001932d0:
+.undef	Fun_CareerTournaments
+
+
+00289bf0:
+.word	CAREER
+
+#	Cheat Codes
+0012cf58:
+.undef	Fun_Codes
+
+0017db50:
+.undef	Fun_CheckCheatCode
+
+001e4670:
+.undef	Fun_ActivateCode
+
+002ae7f8:
+.word	g_CheatActivated
+.word	g_Cheats
+
+#	Custom Tournament
+001e0e40:
+.undef	CustomTourney_TrackList
+001e0f00:
+.undef	loop check
+001e0f78:
+.undef	disabled
+
+#	Game
+0014e0b8:
+.undef	Awards
+
+0015b928:
+.undef	in-game_NewLevel
+0015b998:
+.undef	loop check
+0015b9f4:
+.undef	disabled
+
+0015bad8:
+.undef	in-game_NewLevelSelected
+0015bb58:
+.undef	loop check
+0015bbb4:
+.undef	disabled
+.undef	disabled
+
+001b8738:
+.undef	Fun_LoadLevel
+
+001ed178:
+.undef	Fun_Moshbowl
+001ed520:
+.undef	is Multiplayer
+
+001efe78:
+.undef	Fun_RiderSelect
+
+001f1d00:
+.undef	Fun_GetReady
+
+001f5d78:
+.undef	GetLevelID
+
+0023a9c8:
+.undef	Fun_RiderCamera
+
+
+0037c418:
+.word	g_Camera
+
+004afdac:
+.word	g_GameMode
+.word	g_isNotSingleEvent
+
+004aff28:
+.word	Number_of_Players
+.word	Number_of_AI
+
+004aff40:
+.word	g_LevelID
+
+#	GUIs
+00294200:
+.word	GUI_SinglePlayer
+00294220:
+.word	GUI_MultiPlayer
+
+#	Loading Screen
+00180e30:
+.undef	Fun_LoadingScreen
+00180e54:
+.undef	is not Podium
+00180e68:
+.undef	is Single Event
+.undef	is not Single Event
+.undef	LDC1
+
+0026c8e0:
+.word	LOADING_SCREENS
+0026ca58:
+.word	LEVEL_TYPES
+0026ca70:
+.word	MX_LEVELS
+0026ca90:
+.word	TD_LEVELS
+0026cab0:
+.word	FR_LEVELS
+0026cad0:
+.word	SC_LEVELS
+0026cae0:
+.word	AR_LEVELS
+0026cb18:
+.word	FS_LEVELS
+
+003c3a40:
+.qword	LoadingScreenTemp	;ALP, LTRAIN, etc.
+
+#	Levels
+001925f0:
+.undef	Fun_LevelSelectCheck
+
+
+0026c7d0:
+.word	LEVELS
+0026c824:
+.word	LEVELS_DUAL-SLALOM
+.word
+.word	LEVELS_MOSHBOWL
+.word
+.word
+.word	LEVELS_FUJIPRACTICE(CUT)
+.word	LEVELS_SUPERJUMP
+.word	LEVELS_TRAINING
+.word	LEVELS_PODIUMSUPER
+.word	LEVELS_PODIUMSPECIAL
+.word	LEVELS_PODIUMARCADE
+
+00294680:
+.word	Level_IDs	;Alpine_FR
+.word	Alpine_MX
+.word	Alpine_TD
+
+#	Menus
+0018cab8:
+.undef	Fun_Enable
+
+001e8c80:
+.undef	Fun_GameScreen
+001e9470:
+.undef	load menu
+001e9494:
+.undef	StartingDemoScreen
+001e9528:
+.undef	MainMenu
+001e9540:
+.undef	NewOrLoad
+001e9550:
+.undef	SinglePlayer
+001e9560:
+.undef	MP_EventSelect
+001e9578:
+.undef	MultiPlayer
+001e9590:
+.undef	Single_Event
+001e95c0:
+.undef	Options
+001e9628:
+.undef	RiderSelect
+001e9638:
+.undef	SinglePlayer_RiderSelected
+001e9658:
+.undef	GetReadyToRace
+001e9678:
+.undef	MoshBowl
+
+001f14d8:
+.undef	Fun_NewOrLoad
+
+001eaf08:
+.undef	Fun_MainMenu
+
+001f4da8:
+.undef	Fun_MenuWriteButtons
+001f4e20:
+.undef	write button	;0 = Enabled , 1 = Disabled
+
+
+00293f40:
+.word	MENUS
+
+0029afc8:
+.byte	b_SinglePlayer
+.byte	b_Multiplayer
+.byte	b_Options
+.byte
+.undef
+.byte	b_SingleEvent
+.byte	b_Career
+.byte	b_Arcade
+.byte	b_Moshbowl
+.byte	b_SuperJump
+.byte	b_Training
+
+0029b684:
+.byte
+.byte
+.byte	CursorUp
+.byte	CursorDown
+.byte
+.byte
+.byte
+.byte	X-Select
+
+0029b71c:
+.word	m_RiderSelected
+
+0029b750:
+.word	CurrentTrackName
+
+0029b5d8:
+.word	m_Menu
+0029b5ec:
+.word	m_PreviousMenu	;subMenu1
+
+004c429c:
+.word	m_PreviousMenu2	;subMenu2
+
+004c43e8:
+.word	m_CurrentMenu
+
+004c44a4:
+.word	m_NumberofItems
+004c44b0:
+.word	NextMenu
+
+#	MultiPlayer
+00189c58:
+.undef	Fun_MultiplayerPrepare
+0018a488:
+.undef	check MultiPlayer riders
+
+001eb8d0:
+.undef	Fun_MP_EventSelect
+001eb9c4:
+.undef	disable 2P Modes
+001ebb7c:
+.undef	load Number_of_Players
+001ebbbc:
+.undef	MP_SingleEvent
+001ebbe8:
+.undef	MP_Arcade
+001ebc10:
+.undef	MP_CustomTournament
+001ebc64:
+.undef	MP_Moshbowl
+001ebc94:
+.undef	MP_SuperJump
+001ebcbc:
+.undef	MP_DualSlalom
+001ebd50:
+.undef	load Number_of_Players
+
+001ec8e0:
+.undef	Fun_MultiPlayer
+001ecb74:
+.undef	save m_PreviousMenu
+
+001ecc88:
+.undef	Fun_MP_SingleEvent
+001ecca4:
+.undef	used for check and disable
+001eccec:
+.undef	disable "Race (No AI)"
+001ecd00:
+.undef	number of items
+001ecd28:
+.undef	disable "Time Trial"
+001ecd3c:
+.undef	number of items
+001ecd68:
+.undef	disable "Time Trial"
+.undef
+.undef	disable "Race (No AI)"
+001ecd80:
+.undef	number of items
+001ecf80:
+.undef	is Freestyle
+001ecf98:
+.undef	is Race
+001ecfa8:
+.undef	is Race (NoAI)
+
+001f65e0:
+.undef	MP_TrackSelection
+
+001f67c8:
+.undef	MP_TrackSelected
+001f67dc:
+.undef	load MP_TrackNumber
+
+
+004c5650:
+.word	MP_TrackNumber
+
+#	Options
+001edd08:
+.undef	Fun_Options
+001edd40:
+.undef	disable buttons
+001edd70:
+.undef	Unlock Riders Bikes (Test)	;Menu_ID
+001edd84:
+.undef	number of items	;9 = UnlockRidersBikes(Test)
+
+#	Peds
+00127728:
+.undef	Fun_Peds
+
+00127cb8:
+.undef	Fun_PedsMP
+
+001577f0:
+.undef	Peds
+00157888:
+.undef	is 3 Players
+001578b0:
+.undef	is 4 Players
+
+001915f0:
+.undef	Fun_PedsLoading
+
+#	Riders
+001924b8:
+.undef	Fun_DemoRiders
+
+00192670:
+.undef	Fun_UnlockRiders
+
+
+004afcdc:
+.byte	r_Rider00
+.byte	r_Rider01
+.byte	r_Rider02
+.byte	r_Rider03
+.byte	r_Rider04
+.byte	r_Rider05
+.byte	r_Rider06
+.byte	r_Rider07
+.byte	r_Rider08
+.byte	r_Rider09
+.byte	r_Rider10
+.byte	r_Rider11
+.byte	r_Rider12
+.byte	r_Rider13
+.byte	r_Rider14
+.byte	r_Rider15
+
+004c4010:
+.word	r_SP_Rider
+
+#	Single Player
+001eb260:
+.undef	Fun_SinglePlayer
+001eb4e8:
+.undef	SP_SingleEvent
+001eb4f4:
+.undef	SP_Career
+001eb570:
+.undef	SP_Arcade
+001eb5a0:
+.undef	SP_SuperJump
+001eb5bc:
+.undef	SP_Training
+001eb5c4:
+.undef	SP_Garage
+001eb630:
+.undef	SP_Moshbowl
+
+001ef550:
+.undef	Fun_SP_RiderSelected
+
+001f5f60:
+.undef	SP_TrackSelection
+
+
+004c5130:
+.word	SP_TrackNumber
+
+#	Unlocked
+00431db0:
+.word	Unlocked_Riders
+.word	Unlocked_Levels
+00431e38:
+.byte	Unlocked_PickupsEditor
+.byte
+.byte
+.byte	Unlocked_Moshbowl
+.byte	Unlocked_DualSlalom
+.byte	Unlocked_CustomTournament
+.byte	Unlocked_SuperJump
+.byte	Unlocked_Posters

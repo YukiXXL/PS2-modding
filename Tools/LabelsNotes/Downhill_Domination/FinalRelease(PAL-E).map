@@ -77,6 +77,53 @@
 0016d754:
 .undef	is not Training
 
+00190b00:
+.undef	Fun_LoadRaceEndMenu
+
+001f3668:
+.undef	Fun_Moshbowl
+001f3a10:
+.undef	is MultiPlayer
+
+001f8378:
+.undef	Fun_GetReady
+001fbc28:
+.undef	Fun_PrepareGame
+002431f8:
+.undef	Fun_RiderCamera
+
+
+002c8678:
+.word	Number_of_Screens
+
+004dc9ac:
+.word	g_GameMode
+.word	g_isNotSE
+
+004dcb28:
+.word	Number_of_Players
+.word	Number_of_AI
+004dcb40:
+.word	g_LevelID
+
+#	GUIs
+002bea20:
+.word	GUI_SinglePlayer
+002bea40:
+.word	GUI_MultiPlayer
+
+0027fae8:
+.word	STRINGS_MAINMENU
+0027faf8:
+.word	STRINGS_SP
+0027fb18:
+.word	STRINGS_MP
+0027fb48:
+.word	STRINGS_SP_LOAD
+0027fb70:
+.word	STRINGS_MP_LOAD
+
+#	Loading Screen
 001847a8:
 .undef	Fun_LoadingScreen
 001847c4:
@@ -94,20 +141,13 @@
 00184908:
 .undef	LOADBAR1
 
-00190b00:
-.undef	Fun_LoadRaceEndMenu
+002761e0:
+.word	LOADING_SCREENS
+00276718:
+.word	LEVEL_TYPES
 
-001f3668:
-.undef	Fun_Moshbowl
-001f3a10:
-.undef	is MultiPlayer
-
-001f8378:
-.undef	Fun_GetReady
-001fbc28:
-.undef	Fun_PrepareGame
-002431f8:
-.undef	Fun_RiderCamera
+003f05d0:
+.qword	LoadingScreenTemp	;ALP, LTRAIN, etc.
 
 #	Levels
 0015daf0:
@@ -129,10 +169,33 @@
 001fd710:
 .undef	GetUnlockedLevels
 
+
+002760d0:
+.word	LEVELS
+00276124:
+.word	LEVELS_DUAL-SLALOM
+.word
+.word	LEVELS_MOSHBOWL
+.word
+.word
+.word	LEVELS_FUJIPRACTICE(CUT)
+.word	LEVELS_SUPERJUMP
+.word	LEVELS_TRAINING
+.word	LEVELS_PODIUMSUPER
+.word	LEVELS_PODIUMSPECIAL
+.word	LEVELS_PODIUMARCADE
+
+002a8a50:
+.word	144_Pickups_Totals
+002a8a68:
+.word	60_Pickups_Totals
+002a8a80:
+.word	65_Pickups_Totals
+002a8aa0:
+.word	LEVELS_PICKUPEDITOR
+
 002bf2c0:
 .word	Level_IDs
-004dcb40:
-.word	g_LevelID
 
 #	Menus
 0015f370:
@@ -219,6 +282,37 @@
 0023f090:
 .undef	GetAttractTime
 
+
+002c8164:
+.word	m_AttractTimerGoal
+002c81a0:
+.word	m_Menu
+002c81b4:
+.word	m_PreviousMenu
+
+002c824c:
+.byte
+.byte
+.byte	CursorUp
+.byte	CursorDown
+.byte
+.byte
+.byte
+.byte	X-Select
+
+002c8600:
+.word	m_AttractTimer
+
+004e7a14:
+.word	m_isDisabledAI
+
+004f1550:
+.word	m_Cursor
+.code
+.word	m_MenuNext
+004f157c:
+.word	m_NumberofItems
+
 #	Multi Player
 0018de88:
 .undef	Fun_MultiplayerPrepare
@@ -262,5 +356,222 @@
 00243758:
 .undef	WriteNumberofScreens
 
-002bea40:
-.word	GUI_MultiPlayer
+#	Other
+00184750:
+.undef	check_data_limit
+
+#	Peds
+001277e0:
+.undef	Fun_Peds
+00127d70:
+.undef	Fun_PedsMP
+00195b80:
+.undef	Fun_PedsLoading
+
+#	Pickup Editor
+0019a730:
+.undef	Fun_PickupEditor
+0019a7a8:
+.undef	Check if Level is Valid
+0019a804:
+.undef	144_Pickups
+0019a81c:
+.undef	60_Pickups
+0019a834:
+.undef	65_Pickups
+0019a848:
+.undef	0_Pickups
+
+#	Riders
+00147908:
+.undef	Fun_WriteRiders
+00147974:
+.undef	if true, AI crashes on 3,4P
+
+00190f40:
+.undef	isRiderEnabled
+00196a48:
+.undef	Fun_DemoRiders
+00196be0:
+.undef	Fun_UnlockRiders
+00196c00:
+.undef	GetUnlockedRiders
+
+
+004dc8dc:
+.byte	r_Rider00
+.byte	r_Rider01
+.byte	r_Rider02
+.byte	r_Rider03
+.byte	r_Rider04
+.byte	r_Rider05
+.byte	r_Rider06
+.byte	r_Rider07
+.byte	r_Rider08
+.byte	r_Rider09
+.byte	r_Rider10
+.byte	r_Rider11
+.byte	r_Rider12
+.byte	r_Rider13
+.byte	r_Rider14
+.byte	r_Rider15
+
+#	Single Player
+001f1978:
+.undef	Fun_SinglePlayer
+001f1be8:
+.undef	SP_SingleEvent
+001f1c08:
+.undef	SP_Career
+001f1c1c:
+.undef	SP_Arcade
+001f1c4c:
+.undef	SP_SuperJump
+001f1c68:
+.undef	SP_Training
+001f1cdc:
+.undef	SP_MoshBowl
+
+001f2318:
+.undef	Fun_SPContinueSavedGame
+001f6470:
+.undef	Fun_SP_RiderSelect
+
+#	Unlocked
+0045e9c0:
+.word	Unlocked_Riders
+.word	Unlocked_Levels
+0045ea48:
+.byte	Unlocked_PickupsEditor
+.byte
+.byte
+.byte	Unlocked_Moshbowl
+.byte	Unlocked_DualSlalom
+.byte	Unlocked_CustomTournament
+.byte	Unlocked_SuperJump
+.byte	Unlocked_Posters
+
+
+#	DEFINED
+002c5c48:
+.byte	"MOAB"
+002c5c58:
+.byte	"PERU"
+002c5c88:
+.byte	"FUJI"
+002c5cb0:
+.byte	"BC"
+.byte
+.byte
+.byte
+.undef
+.byte	"CITY"
+.byte
+.byte
+.byte
+.undef
+.byte	"DUAL"
+.byte
+.byte
+.byte
+.undef
+.byte	"MOSH"
+.byte
+.byte
+.byte
+002c5d10:
+.byte	"ALP2"
+002c5d68:
+.byte	"BC2"
+002c5d90:
+.byte	"ALP"
+.byte
+.byte
+.byte
+.undef
+.byte	"MOA"
+.byte
+.byte
+.byte
+.undef
+.byte	"JUN"
+.byte
+.byte
+.byte
+.undef
+.byte	"PER"
+.byte
+.byte
+.byte
+.undef
+.byte	"GLA"
+.byte
+.byte
+.byte
+.undef
+.byte	"AUB"
+.byte
+.byte
+.byte
+.undef
+.byte	"FUJ"
+.byte
+.byte
+.byte
+.undef
+.byte	"CIT"
+.byte
+.byte
+.byte
+.undef
+.byte	"DUA"
+.byte
+.byte
+.byte
+.undef
+.byte	"MOS"
+.byte
+.byte
+.byte
+.undef
+.byte	"MON"
+.byte
+.byte
+.byte
+.undef
+.byte	"TRA"
+.byte
+.byte
+.byte
+.undef
+.byte	"POD"
+.byte
+.byte
+.byte
+.undef
+.byte	"MX"
+.byte
+.byte
+.byte
+.undef
+.byte	"TD"
+.byte
+.byte
+.byte
+.undef
+.byte	"FR"
+.byte
+.byte
+.byte
+.undef
+.byte	"SC"
+.byte
+.byte
+.byte
+.undef
+.byte	"AR"
+.byte
+.byte
+.byte
+.undef
+.byte	"FS"
