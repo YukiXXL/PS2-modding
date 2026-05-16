@@ -1,8 +1,6 @@
 #	PS2 Memory Map
 #	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
 
-00000080:
-.word	_align_segment
 0010a000:
 .undef	indata
 0010a008:

@@ -1,8 +1,0 @@
-002771F8 - Blood splatter (00276DD8 - PAL)
-00263FF0 - Taser Burns (00264640 - PAL)
-
-001763B0 - Load if has menu interactions
-
-(BodyHasDisguise__9cBackpackFv | BodyIsPickupable__9cBackpackFv)
-0025323C - Body is pickable
-00253258 - Body has disguise
