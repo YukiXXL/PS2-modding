@@ -553,6 +553,8 @@
 .undef	AddProjectedDecal	;9cDecalManFRC7cVectorfiPC7cVector
 
 #	CUSTOM
+00264640:
+.undef	Taser Burns
 00276dd8:
 .undef	Blood Splat
 

@@ -1,0 +1,34 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+002313AC:
+.undef	check if Loading is completed
+
+003F0628:
+.dword	totalFrameTicks__6cTimer
+
+#	AGENT MODIFY
+003969D0:
+.undef	UserInterface__14GuiAgentModifyFii	;Switching parts/textures
+
+00398BD8:
+.undef	Dynamic memory load for parts	;Saves to "savedPlayerSKLs"
+
+0039A128:
+.undef	Save parts position	;byte
+
+#	Saving
+0031DD9C:
+.undef	SendMessage__Saving
+
+00392730:
+.undef	Save parts to MC	;Create__10cAgentDataFRC3SKL
+
+#	Pointers
+001AD500:
+.undef	Load here
+
+003EEC10:
+.undef	__vt__14GuiAgentCreate
+003F0240:
+.undef	__vt__14GuiAgentModify

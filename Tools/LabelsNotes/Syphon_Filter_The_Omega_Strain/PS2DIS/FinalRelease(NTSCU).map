@@ -2587,9 +2587,18 @@
 .undef	WPN
 0016882c:
 .undef	B2_EQSETUP_BUG
+001763B0:
+.undef	Load if has menu interactions
 001b422c:
 .undef	StartSpawns	;Spawning enemy on the start
 
+0025323C:
+.undef	Body is pickable
+00253258:
+.undef	Body has disguise
+
+00263FF0:
+.undef	Taser Burns
 002771f8:
 .undef	Blood Splat
 
