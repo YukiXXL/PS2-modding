@@ -61,6 +61,7 @@
 0055c740:
 .byte	isProScan	;12cMoviePlayer
 
+#	FUNCTIONS
 
 #	AgentData
 00330b80:
@@ -117,6 +118,8 @@
 .undef	WildcardCompare	;10cAgentDataFPCcPCcc
 003339e0:
 .undef	AreObjectivesComplete	;10cAgentDataFPc
+00333b10:
+.undef	IsObjectiveComplete	;10cAgentDataFPCc
 00333b90:
 .undef	AddObjective_AgentData	;10cAgentDataFPCcb
 00333df0:
@@ -189,11 +192,11 @@
 .code	sOmegaRequirements	;10cAgentData
 00532bc0:
 .word	sObjectiveBitIndex	;10cAgentData
-.nop
+.code
 .word	classId_eScoreTypes	;Q210cAgentData16eScoreTypes_SOBJ
-.nop
+.code
 .word	classId_eSpecialBonusTypes	;Q210cAgentData23eSpecialBonusTypes_SOBJ
-.nop
+.code
 .word	classId_cAgentData	;15cAgentData_SOBJ
 
 #	AirTaser
@@ -881,9 +884,9 @@
 .word	m_MapOfNetObjs	;7cNetObj
 0055c7b0:
 .word	m_nGlobalObjID	;7cNetObj
-.nop
+.code
 .word	m_nTimeToBeExecuted	;7cNetObj
-.nop
+.code
 .word	PingInfo	;7cNetObj
 
 #	NetNPC
@@ -1001,27 +1004,27 @@
 
 004ea3d0:
 .word	classId_AIModeChangeMsg	;Q28nMSGGAME21cAIModeChangeMsg_SOBJ
-.nop
+.code
 .word	SOBJClassId_AIModeChangeMsg	;Q28nMSGGAME16cAIModeChangeMsg
-.nop
+.code
 .word	var_Script	;Q28nMSGGAME11nScript7216
-.nop
+.code
 .word	name_AIModeChangeMsg	;Q28nMSGGAME16cAIModeChangeMsg
-.nop
+.code
 .word	classId_NPC	;9cNPC_SOBJ
-.nop
+.code
 .word	SOBJClassId_NPC	;4cNPC
-.nop
+.code
 .word	classId_Mode	;Q24cNPC10eMode_SOBJ
-.nop
+.code
 .word	classId_AimMode	;Q24cNPC13eAimMode_SOBJ
-.nop
+.code
 .word	classId_AimSubtarget	;Q24cNPC18eAimSubtarget_SOBJ
-.nop
+.code
 .word	classId_TravelSpeed	;Q24cNPC17eTravelSpeed_SOBJ
-.nop
+.code
 .word	classId_Action	;Q24cNPC12eAction_SOBJ
-.nop
+.code
 .word	classId_WeaponPreference	;Q24cNPC22eWeaponPreference_SOBJ
 
 #	Objective
@@ -1423,7 +1426,8 @@
 .undef	GetShellCasing	;9cWeaponDBFi
 
 
-#	defined_cc
+#	DEFINED_CC
+
 0048a1c8:
 .float	IncreasedArmorMul	;18human_cc
 .undef
@@ -1605,7 +1609,7 @@
 .undef
 .word	FTPower	;19bullet_cc
 .undef
-.half	@37962
+.float	@37962
 .undef
 .word	levelName	;25hud_netlobby_cc
 
@@ -1732,8 +1736,33 @@
 
 005429b0:
 .word	DATA_NOT_FOUND	;17cSkeletonDataBank
+0055a300:
+.code	mJoystick	;8nDevices
 00571774:
 .word	sPlayerID
+
+005721a8:
+.word	m_nConnectionIndex	;4cDME
+.code
+.byte	g_bNetSvrResponse
+005721b8:
+.byte	m_bRestarting	;4cDME
+005721c0:
+.byte	m_bIsHost	;4cDME
+005721c4:
+.byte	m_bIsFakeMP	;Made for Online objectives code
+.byte
+.byte	EQS_CountDown_Fake	;Used for EQS Countdown
+.byte	HasHeadset_Fake	;Used for HasHeadset
+.byte	m_bIsMultiplayer	;4cDME
+005721d0:
+.byte	m_bNetSync	;4cDME
+005721d8:
+.byte	m_bQuit	;4cDME
+005721e0:
+.byte	m_ErrStr	;4cDME
+005721f0:
+.byte	m_ErrMsg	;4cDME
 
 005723b0:
 .byte	m_QuitReason	;4cDME
@@ -1747,13 +1776,13 @@
 .byte	m_Inited	;4cDME
 005723d8:
 .float	m_fAvgLatency	;4cDME
-.nop
+.code
 .float	m_fTotalLatency	;4cDME
-.nop
+.code
 .word	m_nNumLatency	;4cDME
-.nop
+.code
 .word	m_Connects	;4cDME
-.nop
+.code
 .byte	m_bGameLocked	;4cDME
 00572400:
 .byte	m_bPlayGame	;4cDME
@@ -1771,11 +1800,11 @@
 .byte	m_bAttemptNextGameConnection	;4cDME
 00572470:
 .word	m_nCurrentGameConnectionIndex	;4cDME
-.nop
+.code
 .word	m_nNumValidGameConnections	;4cDME
-.nop
+.code
 .word	m_SFOLobby	;4cDME
-.nop
+.code
 .byte	m_SFOLobbyActive	;4cDME
 005724a0:
 .word	m_ListOfGames	;4cDME
@@ -1986,6 +2015,9 @@
 .undef
 .word	kAgencyMessageTxtName	;29GuiNetAgencyCell_cc
 
+004aa110:
+.byte	"rank"
+
 #	colors
 004a9260:
 .word	textColor	;25hud_netlobby_cc
@@ -2009,7 +2041,7 @@
 #	loading
 004ee470:
 .word	manLoadingFlag
-.nop
+.code
 .dword	mLastUpdateTime$44521
 .byte	allowMovieEnd$44562
 004ee488:
@@ -2018,7 +2050,7 @@
 .byte	bFoundServer$44659
 004ee498:
 .word	lobby$44728
-.nop
+.code
 .byte	netInit$44729
 004ee4a8:
 .dword	lastTime$44730
@@ -2028,25 +2060,25 @@
 .byte	@GUARD@lastTime$44792
 004ee4c8:
 .float	loadingFrameCounter
-.nop
+.code
 .float	loadingFrameTotal
-.nop
+.code
 .byte	loadingRetrievedFrameTotal
 004ee4e0:
 .byte	threadWaitHost
 004ee4e8:
 .word	thread_stack
-.nop
+.code
 .byte	threadLoadingLastMessage
 004ee4f8:
 .word	threadSkipFrame
-.nop
+.code
 .word	threadHudLoading
-.nop
+.code
 .word	threadFont
-.nop
+.code
 .word	threadContinueStr
-.nop
+.code
 .word	threadLoadingStr
 
 #	net_stuff
@@ -2310,7 +2342,7 @@
 .undef	script_GetAiMode	;"cNPC"
 
 0049b850:
-.byte
+.byte	"cNPC"
 
 #	cPlayer
 00175630:
@@ -2488,6 +2520,8 @@
 .undef	SetRelative	;11cRADAR_GOBJFRC9cObjectId
 0026bde0:
 .undef	Start_Rumble	;14nRumbleManagerFibifi
+002797c0:
+.undef	AddProjectedDecal	;9cDecalManFRC7cVectorfiPC7cVector
 002887c0:
 .undef	__dt_std29vector	;Q23std29vector<PCc,15cAllocator<PCc>>Fv
 002888c0:
@@ -2539,9 +2573,9 @@
 .byte	gLAN_AVAILABLE	;Enables LAN button
 00506500:
 .word	playerLocal
-.nop
+.code
 .word	EQ_CountDown
-.nop
+.code
 .float	EQ_Timer
 
 0055a818:
@@ -2598,6 +2632,8 @@
 .byte	b_BlackScreen
 004ffc90:
 .qword	Launch GUI	;TEST
+005383d4:
+.word	FPS
 
 #	Agent(Player)
 00533790:

@@ -1,0 +1,583 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00000080:
+.word	_align_segment
+00100000:
+.undef	indata
+00100008:
+.undef	ENTRYPOINT
+0013d420:
+.undef	main
+
+
+#	FUNCTIONS
+
+#	AgentData
+00336b20:
+.undef	GetCommander	;10cAgentDataFPCc
+00336bd0:
+.undef	GetParTime	;10cAgentDataFPCcb
+00338800:
+.undef	HasUnseenZeusItems	;10cAgentDataFii
+00338870:
+.undef	SetZeusItemSeen	;10cAgentDataFiiib
+003388f0:
+.undef	SeenZeusItem	;10cAgentDataFiii
+00338950:
+.undef	HasZeusItem	;10cAgentDataFiii
+003389b0:
+.undef	UnlockZeus	;10cAgentDataFiii
+00338a60:
+.undef	GetWeaponIndices	;10cAgentDataFP9cArray<i>
+00338b50:
+.undef	IsDossierUnlocked	;10cAgentDataFi
+00338bc0:
+.undef	HasCommendation	;10cAgentDataFPc
+00338c80:
+.undef	HasMedal	;10cAgentDataFPc
+00338d40:
+.undef	HasSpecialRating	;10cAgentDataFPc
+00338e00:
+.undef	HasRating	;10cAgentDataFPc
+00338ee0:
+.undef	HadSpecialBonus	;10cAgentDataFQ210cAgentData18eSpecialBonusTypes
+00338f30:
+.undef	HasSpecialBonus	;10cAgentDataFQ210cAgentData18eSpecialBonusTypes
+00338f80:
+.undef	HasBonusLevel	;10cAgentDataF1
+00338ff0:
+.undef	UnlockWeapon	;10cAgentDataFPCc
+00339060:
+.undef	UnlockLevel	;10cAgentDataFPc
+003390d0:
+.undef	UnlockRequirement	;10cAgentDataFQ210cAgentData16eAchievementTypePc
+00339110:
+.undef	FindRequirement	;10cAgentDataFQ210cAgentData16eAchievementTypePc
+00339200:
+.undef	GetRequirements	;10cAgentDataFQ210cAgentData16eAchievementTypeiP40cArray<Q210cAgentData16tRequirementInfo>
+00339460:
+.undef	GetAchievements	;10cAgentDataFQ210cAgentData16eAchievementTypeP40cArray<Q210cAgentData16tAchievementInfo>
+003395a0:
+.undef	GetRatings	;10cAgentDataFP40cArray<Q210cAgentData16tAchievementInfo>
+00339740:
+.undef	GetWpnIndex	;10cAgentDataFi
+00339800:
+.undef	CompleteRequirement	;10cAgentDataFQ210cAgentData16eAchievementTypePc
+00339830:
+.undef	WildcardCompare	;10cAgentDataFPCcPCcc
+00339980:
+.undef	AreObjectivesComplete	;10cAgentDataFPc
+00339ab0:
+.undef	IsObjectiveComplete	;10cAgentDataFPCc
+00339b30:
+.undef	AddObjective_AgentData	;10cAgentDataFPCcb
+00339d90:
+.undef	ResetStats	;10cAgentDataFv
+00339e80:
+.undef	GetStat	;10cAgentDataFQ210cAgentData11eScoreTypes
+00339eb0:
+.undef	AddScore	;10cAgentDataFQ210cAgentData11eScoreTypesi
+00339fa0:
+.undef	SetSkl	;10cAgentDataFRC3SKL
+0033a730:
+.undef	Load_AgentData	;10cAgentDataFPCci
+0033b050:
+.undef	UpdateAchievements	;10cAgentDataFb
+0033b1c0:
+.undef	UpdateRatings	;10cAgentDataFb
+0033b2a0:
+.undef	UnlockPrize	;10cAgentDataFi
+0033b330:
+.undef	UpdateAchievement	;10cAgentDataFPQ210cAgentData12tAchievementRCQ210cAgentData6Recordb
+0033b3d0:
+.undef	GetLevelRequirements	;10cAgentDataFPCcP40cArray<Q210cAgentData16tRequirementInfo>
+0033b640:
+.undef	UpdateLevelObjectives	;10cAgentDataFPCcPQ210cAgentData13tMissionStats
+
+#	Human
+001850f0:
+.undef	SetStatus	;6cHumanFUc
+00185110:
+.undef	GetStatus	;6cHumanFv
+00185130:
+.undef	HasHeadset	;6cHumanFv
+00185150:
+.undef	IsNetworked	;6cHumanFv
+00185160:
+.undef	IsGeneratorCreated	;6cHumanFv
+00185170:
+.undef	Shock	;6cHumanFbffb
+
+#	Machine
+00175b80:
+.undef	SetVideoMode	;8cMachineFQ28cMachine10eVideoMode
+
+#	PlayerControls
+00240070:
+.undef	HandleInteractButtonPress	;15cPlayerControlsFfR6cHuman
+00240100:
+.undef	Toss Body
+.undef	Lay Down Body
+
+#	SFOLevels
+004b2510:
+.word	OnlineIndexToLevel	;9SFOLevels (Which levels are valid for online)
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+004b2540:
+.word	LevelIndexToOnline	;9SFOLevels (Online lobbies)
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+004b2590:
+.byte	UseLevelCharacter	;9SFOLevels
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+004b25b0:
+.byte	UseLevelWeapon	;9SFOLevels
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+004b2650:
+.byte	OnlineLevels	;9SFOLevels
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+004b2670:
+.float	StreamBuf	;9SFOLevels
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+004b26c0:
+.float	MapScale	;9SFOLevels
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+.float
+004b2710:
+.byte	LevelValid	;9SFOLevels (What levels are available)
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+
+#	SKL
+00568738:
+.word	masterSKLs
+00568740:
+.qword	savedPlayerSKLs
+.qword	_SHAPE
+.qword	_HARD
+.qword	_SKEL
+.qword	_BOOT
+.qword	_BOOT_TEX
+.qword	_OTHER
+
+#	video_mode
+00175bb8:
+.undef	vMode_NTSC
+00175bd8:
+.undef	vMode_PAL
+00175bf8:
+.undef	vMode_PROSCAN
+00175c10:
+.undef	vMode_Change Video Mode
+
+
+#	DEFINED_CC
+
+00492040:
+.float	TremorCamFactor	;19tremor_cc
+.undef
+.word	TremorMinRumble	;19tremor_cc
+.undef
+.word	TremorMaxRumble	;19tremor_cc
+.undef
+.float	TremorRandPct	;19tremor_cc
+.undef
+.word	Keyboard
+00492078:
+.byte	mOwnsController	;14cHudTargetInfo
+00492080:
+.float	DangerMag	;23hudTargets_cc
+.undef
+.float	BloodDecalDist	;19bullet_cc
+.undef
+.float	BloodDecalRad	;19bullet_cc
+.undef
+.float	BlastDecalRad	;19bullet_cc
+.undef
+.float	MinFTScale	;19bullet_cc
+.undef
+.float	MaxFTScale	;19bullet_cc
+.undef
+.word	FTPower	;19bullet_cc
+.undef
+.float	@37962
+.undef
+.word	levelName	;25hud_netlobby_cc
+
+0050e180:
+.word	playerLocal
+.code
+.word	EQ_CountDown
+.code
+.float	EQ_Timer
+
+0057d408:
+.word	m_nConnectionIndex	;4cDME
+.code
+.byte	g_bNetSvrResponse
+0057d418:
+.byte	m_bRestarting	;4cDME
+0057d420:
+.byte	m_bIsHost	;4cDME
+0057d424:
+.byte	m_bIsFakeMP	;Made for Online objectives code
+.byte
+.byte	EQS_CountDown_Fake	;Used for EQS Countdown
+.byte	HasHeadset_Fake	;Used for HasHeadset
+.byte	m_bIsMultiplayer	;4cDME
+0057d430:
+.byte	m_bNetSync	;4cDME
+0057d438:
+.byte	m_bQuit	;4cDME
+0057d440:
+.byte	m_ErrStr	;4cDME
+0057d450:
+.byte	m_ErrMsg	;4cDME
+
+#	Buttons and Strings
+004923c0:
+.word	kMemSlot1Name	;25GuiAgentLoad_cc
+.undef
+.word	kMemSlot2Name	;25GuiAgentLoad_cc
+004923e0:
+.word	kBackgroundCircle	;29GuiCommandCenter_cc
+.undef
+.word	kOnlineButtonGrp	;29GuiCommandCenter_cc
+.undef
+.word	kOfflineButtonGrp	;29GuiCommandCenter_cc
+.undef
+.word	kLevelName1Txt	;29GuiCommandCenter_cc
+.undef
+.word	kLevelName2Txt	;29GuiCommandCenter_cc
+.undef
+.word	kAltTitleTxt	;29GuiCommandCenter_cc
+.undef
+.word	kAgentTxt	;29GuiCommandCenter_cc
+.undef
+.word	kRankTxt	;29GuiCommandCenter_cc
+.undef
+.word	kCLPTxt	;29GuiCommandCenter_cc
+.undef
+.word	kRegionValue	;29GuiCommandCenter_cc
+.undef
+.word	kRegionLabel	;29GuiCommandCenter_cc
+.undef
+.word	kPersonnelBtn	;29GuiCommandCenter_cc
+.undef
+.word	kOnlineBtn	;29GuiCommandCenter_cc
+.undef
+.word	kUnlockBtn	;29GuiCommandCenter_cc
+.undef
+.word	kTrainingBtn	;29GuiCommandCenter_cc
+.undef
+.word	kNavigateArrows	;29GuiCommandCenter_cc
+.undef
+.word	kNavigateDpad1	;29GuiCommandCenter_cc
+.undef
+.word	kNavigateDpad2	;29GuiCommandCenter_cc
+.undef
+.word	kWidgetGrpNames	;29GuiCommandCenter_cc
+.word
+.word
+.word
+.word
+.word
+.word	kPlayMission	;29GuiCommandCenter_cc
+.undef
+.word	kZeusFiles	;29GuiCommandCenter_cc
+.undef
+.word	kJoinMission	;29GuiCommandCenter_cc
+.undef
+.word	kAgencyCell	;29GuiCommandCenter_cc
+.undef
+.word	kContacts	;29GuiCommandCenter_cc
+.undef
+.word	kOnlinePrefs	;29GuiCommandCenter_cc
+.undef
+.word	kModifyAgent	;29GuiCommandCenter_cc
+.undef
+.word	kDossier	;29GuiCommandCenter_cc
+.undef
+.word	kRank	;29GuiCommandCenter_cc
+.undef
+.word	kRatings	;29GuiCommandCenter_cc
+.undef
+.word	kStatistics	;29GuiCommandCenter_cc
+.undef
+.word	kSpecialRatings	;29GuiCommandCenter_cc
+.undef
+.word	kCommendations	;29GuiCommandCenter_cc
+.undef
+.word	kMedals	;29GuiCommandCenter_cc
+.undef
+.word	kOmegaStrain	;29GuiCommandCenter_cc
+.undef
+.word	kZeusButtons	;29GuiCommandCenter_cc
+.word
+.word
+.word
+.word
+.word
+.word	kBonusReqGroup	;29GuiCommandCenter_cc
+.undef
+.word	kBonusReqList	;29GuiCommandCenter_cc
+00492530:
+.byte	mGuiState	;16GuiCommandCenter
+.byte
+.byte
+.byte
+.word	Selected_Level
+
+00492848:
+.word	kOnlineButtonName	;35GuiOnlineOfflineSelect_cc
+.undef
+.word	kOfflineButtonName	;35GuiOnlineOfflineSelect_cc
+.undef
+.word	kLANButtonName	;35GuiOnlineOfflineSelect_cc
+.undef
+.word	kRegionButtonName	;35GuiOnlineOfflineSelect_cc
+00492b20:
+.word	kNumAgentsName	;28GuiMissionSetup_cc
+.undef
+.word	kJoinFilterName	;28GuiMissionSetup_cc
+.undef
+.word	kNumAgentsText	;28GuiMissionSetup_cc
+.undef
+.word	kJoinFilterText	;28GuiMissionSetup_cc
+.undef
+.word	kBeginMissionBtn	;28GuiMissionSetup_cc
+.undef
+.word	kMissionNameText	;28GuiMissionSetup_cc
+00492b58:
+.word	kReadyBtnName	;30GuiEquipmentSetup_cc
+
+00492c38:
+.word	kMessageBoxName	;26GuiMessageBox_cc
+.undef
+.word	kTitleTextName	;26GuiMessageBox_cc
+.undef
+.word	kMessageTextName	;26GuiMessageBox_cc
+.undef
+.word	kButton1Name	;26GuiMessageBox_cc
+.undef
+.word	kButton2Name	;26GuiMessageBox_cc
+.undef
+.word	kMB_Accept	;26GuiMessageBox_cc
+.undef
+.word	kMB_Decline	;26GuiMessageBox_cc
+.undef
+.word	kMB_OK	;26GuiMessageBox_cc
+.undef
+.word	kMB_Yes	;26GuiMessageBox_cc
+.undef
+.word	kMB_No	;26GuiMessageBox_cc
+.undef
+.word	kMB_Cancel	;26GuiMessageBox_cc
+.undef
+.word	kShowToggleBtnName	;30GuiNetJoinMission_cc
+.undef
+.word	kOnlinePrefsBtnName	;30GuiNetJoinMission_cc
+.undef
+.word	kHostGameBtnName	;30GuiNetJoinMission_cc
+.undef
+.word	kRegionTxtName	;30GuiNetJoinMission_cc
+.undef
+.word	kMissionTxtName	;30GuiNetJoinMission_cc
+.undef
+.word	kShowGames	;30GuiNetJoinMission_cc
+.undef
+.word	kShowPlayers	;30GuiNetJoinMission_cc
+00492cc8:
+.word	kColumnHeaderName	;27GuiMissionList_cc
+.undef
+.word	kOfflineElementString	;27GuiMissionList_cc
+00492db0:
+.word	kMUISServerLabel	;29GuiOnlineOptions_cc
+.undef
+.word	kRegionServerLabel	;9GuiOnlineOptions_cc
+.undef
+.word	kAgentTxtLabel	;29GuiOnlineOptions_cc
+.undef
+.word	kRegionListTitleName	;29GuiOnlineOptions_cc
+.undef
+.word	kRegionListName	;29GuiOnlineOptions_cc
+.undef
+.word	kRegionListCursorName	;29GuiOnlineOptions_cc
+
+00492d58:
+.word	kInviteContactBtnName	;27GuiNetContacts_cc
+.undef
+.word	kRemoveContactBtnName	;27GuiNetContacts_cc
+00492d78:
+.word	kResignCellBtnName	;29GuiNetAgencyCell_cc
+.undef
+.word	kInviteAgentBtnName	;29GuiNetAgencyCell_cc
+.undef
+.word	kSetMessageBtnName	;29GuiNetAgencyCell_cc
+.undef
+.word	kCellTxtName	;29GuiNetAgencyCell_cc
+.undef
+.word	kAgencyMessageTxtName	;29GuiNetAgencyCell_cc
+
+004b1350:
+.byte	"rank"
+
+
+#	SCRIPTS
+
+#	RELOADSYS
+0012fa60:
+.undef	script_IsMultiplayer	;"RELOADSYS"
+0012fa80:
+.undef	IsMultiplayer	;17game_cc@Fv (Workers Objective)
+
+#	OTHER
+00279220:
+.undef	AddProjectedDecal	;9cDecalManFRC7cVectorfiPC7cVector
+
+#	CUSTOM
+00276dd8:
+.undef	Blood Splat
+
+002a3dc8:
+.undef	Disable Online Only
+.undef
+.undef	Disable LAN
+
+00543504:
+.word	FPS
+
+#	Jokers
+000a00a0:
+.qword	b_TaserBurn1
+.qword	b_TaserBurn2
+.qword	b_TaserBurn3
+.qword	b_TaserBurn4
+.qword	b_TaserBurn5
+
+000a0100:
+.undef	JokerStart_EnableBlood
+000a0278:
+.undef	JokerEnd_EnableBlood
+
+000a0280:
+.undef	JokerStart_TaserBurns
+000a0420:
+.undef	JokerEnd_TaserBurns
