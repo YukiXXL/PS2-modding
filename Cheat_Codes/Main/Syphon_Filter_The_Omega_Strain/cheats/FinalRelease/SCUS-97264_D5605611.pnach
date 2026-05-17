@@ -327,7 +327,9 @@ author=YukiXXL
 patch=1,EE,201C71A0,extended,00000000
 
 [Gameplay\Player\Radio Comms\Enable Voice comms on Bonus Missions]
-patch=1,EE,60532AF8,extended,00000017 //Italy
+author=YukiXXL
+//Italy
+patch=1,EE,60532AF8,extended,00000017
 patch=1,EE,00020001,extended,0000005C
 //Kyrgzstan
 patch=1,EE,60532AF8,extended,0000001B
@@ -357,7 +359,7 @@ patch=1,EE,20330BF0,extended,24020017
 author=YukiXXL
 patch=1,EE,20330BF0,extended,24020018
 
-[Gameplay\Player\Radio Comms\Force Comms voice\Meggie]
+[Gameplay\Player\Radio Comms\Force Comms voice\Maggie]
 author=YukiXXL
 patch=1,EE,20330BF0,extended,24020019
 
