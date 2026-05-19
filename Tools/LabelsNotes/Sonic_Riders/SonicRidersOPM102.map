@@ -1,0 +1,289 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00100000:
+.undef	indata
+00100008:
+.undef	ENTRYPOINT
+0012bb80:
+.undef	main
+
+
+#	Character
+002ee0c0:
+.undef	CharacterAvatarIcons
+002ee11c:
+.undef	is missing
+
+0041195c:
+.undef	Characters
+.byte	Sonic	;Type
+.byte	Sonic_	;Type 2
+.byte	Sonic_	;is Left Handed
+.byte	Sonic_Model
+.undef
+.float
+.undef
+.byte	Sonic_Dash
+.byte
+.byte
+.byte
+.byte	Sonic_Limit
+.byte
+.byte
+.byte
+.byte	Sonic_Power
+.byte
+.byte
+.byte
+.byte	Sonic_Curve
+.byte
+.byte
+.byte
+.byte	Tails	;Type
+.byte	Tails_	;Type 2
+.byte	Tails_	;is Left Handed
+.byte	Tails_Model
+
+#	GameStart
+0015c5d0:
+.undef	Fun_GameStart
+
+003b9fd0:
+.word	GameStart
+.word
+.word
+.word
+.word
+.word
+
+#	GUI
+002c0840:
+.undef	GUI_Load
+
+00426ff0:
+.word	GUI_SubStartMenu
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GUI_SubMainMenu
+.word
+.word
+
+00427070:
+.word	GUI_STARTUP
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+
+004270a0:
+.word	GUIs
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+
+#	GUI_SubStartMenu
+002c0240:
+.undef	StartMenu_SubMenu
+
+002c0288:
+.undef	StartMenu_2
+
+002c03fc:
+.undef	StartMenu_6
+002c0418:
+.undef	is START button pressed
+002c042c:
+.undef	is Attract Timer up
+
+002c044c:
+.undef	StartMenu_7
+002c0474:
+.undef	StartMenu_8
+
+002c0554:
+.undef	return
+002c0580:
+.undef	pressed START button
+
+002c0630:
+.undef	return
+.undef	return
+
+#	GUI_SubMainMenu
+002c0650:
+.undef	GUI_GameStart
+002c0700:
+.undef	GUI_Extras
+002c07a0:
+.undef	GUI_Options
+
+#	GUI_STARTUP
+002c08ac:
+.undef	GUI_Startup
+
+002c0b60:
+.undef	STARTUP_MainMenu
+
+#	GUIs
+002c200c:
+.undef	GUI_StartRace
+002c1220:
+.undef	GUI_TitleScreen
+002c1250:
+.undef	GUI_PressStart
+002c1350:
+.undef	GUI_MenuStartup
+002c1410:
+.undef	GUI_MainMenu
+002c14f0:
+.undef	GUI_NormalRace
+002c1938:
+.undef	GUI_TrackSelectDemo
+002c19b0:
+.undef	GUI_PlayerEntry
+002c1cbc:
+.undef	GUI_PreTitleScreen
+002c1fc0:
+.undef	GUI_DemoRace
+
+002c26c4:
+.undef	return
+
+002c304c:
+.undef	idle
+.undef	return
+
+#	GUI_MenuStartup
+002c1384:
+.undef	load submenu ID
+
+#	GUI_MainMenu
+002c1440:
+.undef	is Extras/Options
+002c1498:
+.undef	back
+002c2714:
+.undef	up
+002c2778:
+.undef	down
+002c27dc:
+.undef	select
+
+#	GUI_NormalRace
+002c156c:
+.undef	back
+002c2878:
+.undef	up
+002c28a8:
+.undef	down
+002c28d8:
+.undef	select
+
+002c2924:
+.undef	Free Race
+002c2954:
+.undef	Time Attack
+002c2984:
+.undef	Grand Prix
+
+#	GUI_TrackSelectDemo
+002c2df4:
+.undef	select or back
+002c2e08:
+.undef	select
+002c2e1c:
+.undef	player entry
+002c2e84:
+.undef	back
+
+
+#	PlayerEntry
+002ee160:
+.undef	PlayerEntry
+
+002eca00:
+.undef	Fun_PlayerEntry
+
+002ecad0:
+.undef	Fun_SwitchGears
+002ecadc:
+.undef	is Shadow
+002ecb10:
+.undef	maximum allowed
+
+#	TrackSelectDemo
+002e4cf0:
+.undef	TrackSelectDemo
+002e4dd8:
+.undef	select
+002e4ea4:
+.undef	left
+002e4ebc:
+.undef	right
+002e4ed4:
+.undef	back
+002e4f2c:
+.undef	idle
+.undef	return
+
+00427d80:
+.word	TrackSelect_switch
+.word
+.word
+.word
+.word
+.word
+.word
+
+
+#	OTHER
+.byte	unlocked_MissionMode

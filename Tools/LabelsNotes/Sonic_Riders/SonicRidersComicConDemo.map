@@ -43,24 +43,22 @@
 00439c93:
 .byte	E1000R_model
 
-#	Fun_
+#	GameStart
 0018cff0:
 .undef	Fun_GameStart
 
-002fb1d0:
-.undef	Fun_SwitchCharacter
-002fb200:
-.undef	lower than maximum	;Maximum = 8
-002fb21c:
-.undef	lower than maximum	;Maximum = 8
-
-002fb2a0:
-.undef	Fun_SwitchGears
-
-002fcfc0:
-.undef	func_PlayerEntry
+003e1eb0:
+.word	GameStart
+.word
+.word
+.word
+.word
+.word
 
 #	GUI
+002cebc0:
+.undef	GUI_Load
+
 0044e300:
 .word	GUI_SubStartMenu
 .word
@@ -192,6 +190,9 @@
 .undef	FreeRace
 
 #	GUI_STARTUP
+002cec24:
+.undef	GUI_Startup
+
 002cee78:
 .undef	STARTUP_MainMenu
 
@@ -201,10 +202,6 @@
 002d1134:
 .undef	load game mode
 
-002cebc0:
-.undef	GUI_Load
-002cec24:
-.undef	GUI_Startup
 002cf6d4:
 .undef	GUI_PressStart
 002cf7a0:
@@ -263,12 +260,30 @@
 .undef	idle
 .undef	return
 
-#	Other
+#	Mission
 002dc550:
 .undef	Missions
 002dd27c:
 .undef	StartMission
 
+0093ab47:
+.byte	unlocked_MissionMode
+
+#	PlayerEntry
+002fb1d0:
+.undef	Fun_SwitchCharacter
+002fb200:
+.undef	lower than maximum	;Maximum = 8
+002fb21c:
+.undef	lower than maximum	;Maximum = 8
+
+002fb2a0:
+.undef	Fun_SwitchGears
+
+002fcfc0:
+.undef	PlayerEntry
+
+#	TrackSelectDemo
 002f4c60:
 .undef	TrackSelectDemo
 002f4d24:
@@ -283,40 +298,10 @@
 .undef	return
 .undef	return
 
-003e1e90:
-.word
-.word
-.word
-.word
-.word
-.word
-003e1eb0:
-.word	GameStart
-.word
-.word
-.word
-.word
-.word
-003e1ed0:
-.word
-.word
-.word
-.word
-.word
-.word
-003e1ef0:
-.word
-.word
-.word
-.word
-.word
-.word
-
+#	OTHER
 004551b0:
 .word	AttractScreen_ButtonsPress
 
-0093ab47:
-.byte	unlocked_MissionMode
 0093ddac:
 .word	MenuID
 0093ddec:
