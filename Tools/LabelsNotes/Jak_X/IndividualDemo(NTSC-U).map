@@ -1,0 +1,80 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+001f953c:
+.undef	ENTRYPOINT
+001f9940:
+.undef	main
+
+0025d0c0:
+.word	gameargs
+.word	gameargs
+
+#	BOOT
+001f99d0:
+.undef	Booting
+
+0020e600:
+.word	.data
+.word
+.word	MasterDebug
+.word	DebugSegment
+.word
+.word
+.word	DebugSymbols
+.word
+.half
+.half	Language
+.word
+.word
+.word
+.word
+.word
+.word	KernelLevel	;#f
+0020e6b8:
+.byte	Boot_Mode	;Launch Argument
+
+#	FUN
+001fbcf0:
+.undef	Fun_JR-RA
+.undef
+.undef	Fun_initheap
+
+001fcea4:
+.undef	Fun_InitMachine
+001fcf0c:
+.undef	InitHeap
+
+001feb08:
+.undef	Fun_GetMenu
+
+
+#	DEFINED
+0020b680:
+.byte	*stack-size*
+0020b690:
+.byte	*kernel-boot-message*
+0020b6a8:
+.byte	*user*
+0020b6b0:
+.byte	*kernel-boot-mode*
+0020b6c8:
+.byte	"boot"
+0020b6d0:
+.byte	*kernel-boot-level*
+0020b6e8:
+.byte	#f
+0020b6f0:
+.byte	*kernel-boot-art-group*
+0020b708:
+.byte	"game"
+0020b710:
+.byte	"engine"
+0020b718:
+.byte	"common"
+0020b720:
+.byte	"play-boot"
+0020b730:
+.byte	"cdrom0:"
+0020b738:
+.byte	"host0:"
