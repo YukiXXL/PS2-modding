@@ -1,0 +1,15 @@
+gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+
+// BOOT
+
+[Boot\Enable Localization Test]
+author=YukiXXL
+patch=1,EE,0064FBD8,byte,1
+
+[Menus\Training\Enable Training 4]
+author=YukiXXL
+comment=Multiplayer Training Mission
+patch=1,EE,0038679C,extended,28420004 //max 4 to the right
+patch=1,EE,00386820,extended,24020003 //reset to 4 when going left from 1
+patch=1,EE,00386CDC,extended,2a010004 //text strings
+patch=1,EE,20386AB8,extended,00000000 //disable GUI cursor (fixes crashes)
