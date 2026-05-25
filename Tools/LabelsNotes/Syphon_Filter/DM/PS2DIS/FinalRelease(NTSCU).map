@@ -18,21 +18,74 @@
 00140530:
 .undef	Boot_CheckArguments
 
+
 0064fbb0:
 .byte
 0064fbb8:
-.word
+.word	w_stringsStart
 .code
-.word
+.word	w_stringsEnd
 .code
-.word
+.word	w_stringsEnd
 .code
-.byte
+.byte	b_Language
 0064fbd8:
-.byte	b_EnableLocalizationTest
+.byte	b_UseMemStickLocalization
 0064fbe0:
 .byte
 .byte
+
+#	- LANGUAGE
+0041b710:
+.undef	lang_Language_strcasecmp
+0041b730:
+.undef	lang_FindLanguage
+0041b750:
+.undef	lang_LoadLanguage
+0041b760:
+.undef	lang_SetLanguage
+
+
+0052ae00:
+.word	Languages
+.word
+.word
+.word
+.word
+.word
+.word
+0052ae20:
+.word	Languages_initials
+.word
+.word
+.word
+.word
+.word
+.word
+
+0056b6d0:
+.byte	"E"
+0056b6d8:
+.byte	"E_UK"
+0056b6e0:
+.byte	"F"
+0056b6e8:
+.byte	"I"
+0056b6f0:
+.byte	"G"
+0056b6f8:
+.byte	"S"
+0056b700:
+.byte	"J"
+0056b708:
+.byte	"{STRING}"
+
+#	BLOOD
+005c90b0:
+.undef	p_Blood
+
+00584590:
+.undef	Blood
 
 #	MENUS
 00432c00:
@@ -41,6 +94,16 @@
 #	- TRAINING
 003862d0:
 .undef	Fun_TrainLevelCheck
+
+00412860:
+.undef	JR-RA
+
+005df5a0:
+.word	Train_sel
+.undef
+.word
+.word
+.word	p_Default
 
 #	-- TrainingLevels
 0056c344:
@@ -73,11 +136,16 @@
 
 003867c8:
 .undef	left
+00386810:
+.undef	set cursor
 
 0038682c:
 .undef	select
 00386834:
 .undef	load training cursor ID	;n-1
+
+00386510:
+.undef	Training 4 crash
 
 #	-- GuiTrainingSelect
 005db32c:
@@ -95,4 +163,10 @@
 00365f4c:
 .undef	Multi Player
 
-#	OTHER
+
+#	DEFINED
+00576c78:
+.byte	" V"
+00576c88:
+.word
+.word

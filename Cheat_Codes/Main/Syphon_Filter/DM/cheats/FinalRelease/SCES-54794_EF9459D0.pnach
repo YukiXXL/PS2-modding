@@ -1,0 +1,7 @@
+gametitle=Syphon Filter: Dark Mirror Final Release (PAL-E)
+
+// BOOT
+
+[Boot\Enable Localization Test]
+author=YukiXXL
+patch=1,EE,00660f98,byte,1

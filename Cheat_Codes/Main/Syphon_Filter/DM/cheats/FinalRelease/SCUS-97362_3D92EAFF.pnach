@@ -1,10 +1,12 @@
-gametitle=Syphon Filter: The Omega Strain Final Release (PAL-E)
+gametitle=Syphon Filter: Dark Mirror Final Release (NTSC-U)
 
 // BOOT
 
 [Boot\Enable Localization Test]
 author=YukiXXL
 patch=1,EE,0064FBD8,byte,1
+
+// MENUS
 
 [Menus\Training\Enable Training 4]
 author=YukiXXL
