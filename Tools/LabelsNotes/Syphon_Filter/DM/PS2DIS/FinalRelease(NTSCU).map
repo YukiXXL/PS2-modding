@@ -87,11 +87,46 @@
 00584590:
 .undef	Blood
 
+#	MACHINE
+0018cf90:
+.undef	SetVideoMode	;8cMachineFQ28cMachine10eVideoMode
+
 #	MENUS
 00432c00:
 .undef	Fun_LoadGui
 
-#	- TRAINING
+#	- MenusSelection
+
+005d02fc:
+.word	p_MenusSelection
+00240cc0:
+.undef	MenusSelection
+
+00240e90:
+.undef	toggle
+
+00241054:
+.undef	Target Lock
+00241084:
+.undef	Zoom Remember
+002410f0:
+.undef	Audio Mode
+00241130:
+.undef	Subtitles
+
+#	- MAIN MENU
+005da1ac:
+.word	p_MainMenu
+00365d80:
+.undef	MainMenu
+00365e74:
+.undef	Single Player
+00365f4c:
+.undef	Multi Player
+
+#	- SINGLE PLAYER
+
+#	-- TRAINING
 003862d0:
 .undef	Fun_TrainLevelCheck
 
@@ -105,7 +140,7 @@
 .word
 .word	p_Default
 
-#	-- TrainingLevels
+#	--- TrainingLevels
 0056c344:
 .word	p_TrainingLevels_GuiCursor
 0042c83c:
@@ -116,7 +151,7 @@
 00386a70:
 .undef	dynamic_TrainingLevels
 
-#	-- Training_LevelCursor
+#	--- Training_LevelCursor
 005db2dc:
 .word	p_Training_LevelCursor
 00386600:
@@ -147,24 +182,29 @@
 00386510:
 .undef	Training 4 crash
 
-#	-- GuiTrainingSelect
+#	--- GuiTrainingSelect
 005db32c:
 .word	p_GuiTrainingSelect
 003862c0:
 .undef	GuiTrainingSelect
 
-#	- MAIN MENU
-005da1ac:
-.word	p_MainMenu
-00365d80:
-.undef	MainMenu
-00365e74:
-.undef	Single Player
-00365f4c:
-.undef	Multi Player
-
 
 #	DEFINED
+00529d08:
+.word
+.undef
+.word
+.undef
+.word	CTRL_MAP_FILE_%d
+.undef
+.word
+.undef
+.word
+.undef
+.word
+.undef
+.word
+
 00576c78:
 .byte	" V"
 00576c88:

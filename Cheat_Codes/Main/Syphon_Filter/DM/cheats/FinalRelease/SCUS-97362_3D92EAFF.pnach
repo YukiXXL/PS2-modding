@@ -8,6 +8,8 @@ patch=1,EE,0064FBD8,byte,1
 
 // MENUS
 
+// - TRAINING
+
 [Menus\Training\Enable Training 4]
 author=YukiXXL
 comment=Multiplayer Training Mission
@@ -15,3 +17,41 @@ patch=1,EE,0038679C,extended,28420004 //max 4 to the right
 patch=1,EE,00386820,extended,24020003 //reset to 4 when going left from 1
 patch=1,EE,00386CDC,extended,2a010004 //text strings
 patch=1,EE,20386AB8,extended,00000000 //disable GUI cursor (fixes crashes)
+
+// - OPTIONS
+
+[Menus\Options\Target Lock]
+author=YukiXXL
+comment=Uses Rumble label
+patch=1,EE,002423B4,extended,24A511D0
+patch=1,EE,20242494,extended,0000102D
+//Help Text
+patch=1,EE,205411E0,extended,545F444F
+patch=1,EE,205411E4,extended,65677261
+patch=1,EE,205411E8,extended,636F4C74
+patch=1,EE,005411EC,extended,0000006B
+
+[Menus\Options\Subtitles]
+author=YukiXXL
+comment=Uses Audio Mode label
+patch=1,EE,00241F48,extended,3042FFFF //Fix for displaying subtitles
+//Replace the values for strcmp
+patch=1,EE,202426A8,extended,0000102D
+patch=1,EE,002426F8,extended,24A512C0
+//Help Text
+patch=1,EE,205412D0,extended,535F444F
+patch=1,EE,205412D4,extended,69746275
+patch=1,EE,205412D8,extended,73656C74
+
+[Menus\Options\PAL Video Mode]
+author=YukiXXL
+comment=Replaces "ProScan" option
+patch=1,EE,00242888,extended,24030002
+
+// GAMEPLAY
+
+[Gameplay\FPS\60]
+author=YukiXXL
+patch=1,EE,0018CFEC,extended,2403003C
+patch=1,EE,0018D018,extended,2403003C
+patch=1,EE,0018D044,extended,2403003C

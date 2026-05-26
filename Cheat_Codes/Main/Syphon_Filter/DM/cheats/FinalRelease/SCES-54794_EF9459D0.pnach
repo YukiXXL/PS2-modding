@@ -5,3 +5,43 @@ gametitle=Syphon Filter: Dark Mirror Final Release (PAL-E)
 [Boot\Enable Localization Test]
 author=YukiXXL
 patch=1,EE,00660f98,byte,1
+
+// MENUS
+
+// - OPTIONS
+
+[Menus\Options\Target Lock]
+author=YukiXXL
+comment=Uses Rumble label
+patch=1,EE,00242244,extended,24A5D580
+patch=1,EE,20242324,extended,0000102D
+//Help Text
+patch=1,EE,2054D590,extended,545F444F
+patch=1,EE,2054D594,extended,65677261
+patch=1,EE,2054D598,extended,636F4C74
+patch=1,EE,2054D59C,extended,0000006B
+
+[Menus\Options\Subtitles]
+author=YukiXXL
+comment=Uses Audio Mode label
+patch=1,EE,00241DC8,extended,3042FFFF //Fix for displaying subtitles
+//Replace the values for strcmp
+patch=1,EE,20242590,extended,0000102D
+patch=1,EE,002425E0,extended,24A5D670
+//Help Text
+patch=1,EE,2054D680,extended,535F444F
+patch=1,EE,2054D684,extended,69746275
+patch=1,EE,2054D688,extended,73656C74
+
+[Menus\Options\ProScan]
+author=YukiXXL
+comment=Replaces "Widescreen" option
+patch=1,EE,20242780,extended,24020004
+
+// GAMEPLAY
+
+[Gameplay\FPS\60]
+author=YukiXXL
+patch=1,EE,0018CB4C,extended,2403003C
+patch=1,EE,0018CB78,extended,2403003C
+patch=1,EE,0018CBA4,extended,2403003C
