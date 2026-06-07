@@ -19,6 +19,10 @@
 .undef	Boot_CheckArguments
 
 
+00634f81:
+.byte
+.byte	b_SkippableCutscene
+.byte	b_Cheats
 0064fbb0:
 .byte
 0064fbb8:
