@@ -534,9 +534,6 @@
 .undef
 .word	kAgencyMessageTxtName	;29GuiNetAgencyCell_cc
 
-004b1350:
-.byte	"rank"
-
 
 #	SCRIPTS
 
@@ -549,6 +546,12 @@
 #	OTHER
 00279220:
 .undef	AddProjectedDecal	;9cDecalManFRC7cVectorfiPC7cVector
+
+
+#	STRINGS
+004b1350:
+.byte	"rank"
+
 
 #	CUSTOM
 00264640:

@@ -91,6 +91,16 @@
 00584590:
 .undef	Blood
 
+#	GAMEPLAY
+002cf5fc:
+.undef	Headshot
+
+00498090:
+.undef	IsInvulnerable
+
+005e7fa0:
+.undef	PlayerData
+
 #	MACHINE
 0018cf90:
 .undef	SetVideoMode	;8cMachineFQ28cMachine10eVideoMode
@@ -208,6 +218,18 @@
 .word
 .undef
 .word
+
+005342c0:
+.byte	"EASY"
+005342d0:
+.byte	"HARD"
+005342f0:
+.byte	"1"
+00534308:
+.byte	"PAL"
+
+005343c8:
+.byte	"0"
 
 00576c78:
 .byte	" V"

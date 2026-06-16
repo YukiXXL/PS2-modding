@@ -68,7 +68,7 @@
 .word	Save word for the menu	;sw s7, 0x4C(v0)
 
 
-#	DEFINED
+#	STRINGS
 00206290:
 .byte	*stack-size*
 002062a0:

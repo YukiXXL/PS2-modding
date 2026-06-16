@@ -639,6 +639,8 @@
 .undef	GetAgentData_Human	;6cHumanFv
 001861f0:
 .undef	AdjustMaxClips	;6cHumanFi
+00186830:
+.undef	SetBlinded	;6cHumanFfb
 
 00186f30:
 .undef	UpdateStats	;6cHumanFP5cGOBJQ23WDB14eWpnDamageTypei
@@ -723,6 +725,10 @@
 001b7478:
 .undef	Weapon_Save
 
+001b8740:
+.undef	IsInvulnerable	;6cHumanCFv
+001b8750:
+.undef	SetInvulnerable	;6cHumanFb
 001ba130:
 .undef	Call_HumanRespawn	;15cHumanRespawnCBFv
 001ba408:
@@ -732,6 +738,8 @@
 .undef	ChooseAutoTarget	;FPC6cHumanPC5cGOBJ
 0022c210:
 .undef	SeedPlayerLos	;FPC6cHumanP15cPlayerControls
+002596e0:
+.undef	GasCheck	;11cAreaEffectFP6cHuman
 0049d020:
 .undef	boneIdLookupTable	;6cHuman
 
@@ -1344,6 +1352,11 @@
 .undef	CountAttribs	;3SKLFv
 00406e00:
 .undef	RemoveBlanks	;3SKLFv
+
+00407830:
+.undef	LoadSKLHog	;6SKLHogFR8cHogFile
+00407b00:
+.undef	no disguise
 
 #	SpecFxDefs
 00232730:
@@ -2013,9 +2026,6 @@
 .undef
 .word	kAgencyMessageTxtName	;29GuiNetAgencyCell_cc
 
-004aa110:
-.byte	"rank"
-
 #	colors
 004a9260:
 .word	textColor	;25hud_netlobby_cc
@@ -2339,9 +2349,6 @@
 0014a6e0:
 .undef	script_GetAiMode	;"cNPC"
 
-0049b850:
-.byte	"cNPC"
-
 #	cPlayer
 00175630:
 .undef	script_SwitchBodies	;"cPlayer"
@@ -2354,9 +2361,9 @@
 00175eb0:
 .undef	script_SetInvulnerable	;"cPlayer"
 
-#	cScriptInterpreter
-003d9870:
-.undef	Script_Remove	;"cScriptInterpreter"
+#	HUMAN
+00185140:
+.undef	script_SetNotGasable	;"HUMAN"
 
 #	Objective
 00225050:
@@ -2379,6 +2386,10 @@
 .undef	script_AddObjective	;"Objective"
 00225bf0:
 .undef	script_cObjectiveMan	;"Objective"
+
+#	cScriptInterpreter
+003d9870:
+.undef	Script_Remove	;"cScriptInterpreter"
 
 #	RELOADSYS
 0012f7f0:
@@ -2579,6 +2590,14 @@
 0055a818:
 .word	mFrameTicks	;8nDevices
 
+
+#	STRINGS
+0049b850:
+.byte	"cNPC"
+004aa110:
+.byte	"rank"
+004be970:
+.byte	"ID_"
 
 #	CUSTOM
 00145a38:

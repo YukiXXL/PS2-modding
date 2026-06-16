@@ -6,6 +6,13 @@ gametitle=Syphon Filter: Dark Mirror Final Release (NTSC-U)
 author=YukiXXL
 patch=1,EE,0064FBD8,byte,1
 
+// CHEATS
+
+[Cheats\Enable Cheats]
+author=YukiXXL
+description=Press "START" in the Options to Unlock All.
+patch=1,EE,1018D32C,extended,24C643C8
+
 // MENUS
 
 // - TRAINING
@@ -55,3 +62,53 @@ author=YukiXXL
 patch=1,EE,0018CFEC,extended,2403003C
 patch=1,EE,0018D018,extended,2403003C
 patch=1,EE,0018D044,extended,2403003C
+
+// - NPC
+
+[Gameplay\NPC\Enable Head Aiming]
+author=YukiXXL
+patch=1,EE,2027FF64,extended,24030001
+
+[Gameplay\NPC\Remove Invulnerability]
+author=YukiXXL
+patch=1,EE,2027BDF0,extended,0000282D
+patch=1,EE,2027FEF8,extended,0000102D
+
+[Gameplay\NPC\Remove Not-Taserable]
+author=YukiXXL
+patch=1,EE,2027FDAC,extended,0000102D
+
+[Gameplay\NPC\Remove Not-Gasable]
+author=YukiXXL
+patch=1,EE,202805DC,extended,0000102D
+patch=1,EE,2027FD7C,extended,0000102D
+
+[Gameplay\NPC\Remove Not-Targetable]
+author=YukiXXL
+patch=1,EE,2027FD4C,extended,0000102D
+
+[Gameplay\NPC\Does Not Ignore Blast Force]
+author=YukiXXL
+patch=1,EE,2027FF88,extended,0000102D
+
+[Gameplay\NPC\Is Pickable]
+author=YukiXXL
+patch=1,EE,2027FFE8,extended,24020001
+
+[Gameplay\NPC\Has Disguise]
+author=YukiXXL
+patch=1,EE,2027FFB0,extended,24050001
+
+// -- Melee
+
+[Gameplay\NPC\Melee\Set Contextual Melee]
+author=YukiXXL
+patch=1,EE,2027F6B0,extended,24050001
+
+[Gameplay\NPC\Melee\Allow Normal Melee]
+author=YukiXXL
+patch=1,EE,2027F688,extended,24020001
+
+[Gameplay\NPC\Melee\Remove "DisallowAllMelee"]
+author=YukiXXL
+patch=1,EE,2027F640,extended,0000282D

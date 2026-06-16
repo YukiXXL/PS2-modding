@@ -119,6 +119,17 @@ patch=1,EE,20187988,extended,00000000
 author=gamehacking.org
 patch=1,EE,2016CA2C,extended,0805B37A
 
+[Cheats\Gameplay\Player\Is Invulnerable]
+author=YukiXXL
+patch=1,EE,604F7858,extended,00000001
+patch=1,EE,00000001,extended,000033A4
+
+[Cheats\Gameplay\Player\Not Gassable]
+author=YukiXXL
+description=Like having CHA suit on.
+patch=1,EE,604F7858,extended,00000001
+patch=1,EE,00000001,extended,0000346B
+
 // --- BELARUS 2
 
 [Cheats\Gameplay\Player\Belarus 2\Plant infinite C4s on B2]

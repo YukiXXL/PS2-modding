@@ -450,7 +450,7 @@
 .byte	Unlocked_Posters
 
 
-#	DEFINED
+#	STRINGS
 002c5c48:
 .byte	"MOAB"
 002c5c58:

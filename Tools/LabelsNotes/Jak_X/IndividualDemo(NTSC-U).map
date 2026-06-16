@@ -49,7 +49,7 @@
 .undef	Fun_GetMenu
 
 
-#	DEFINED
+#	STRINGS
 0020b680:
 .byte	*stack-size*
 0020b690:
