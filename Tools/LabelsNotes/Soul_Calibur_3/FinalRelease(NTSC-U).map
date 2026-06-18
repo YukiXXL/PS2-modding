@@ -1,0 +1,95 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00100000:
+.undef	indata
+00100008:
+.undef	ENTRYPOINT
+0018e240:
+.undef	main
+
+
+#	BOOT
+00203308:
+.undef	Fun_BootMenu
+00203340:
+.undef	ProScan if 0
+
+002035a0:
+.undef	BootUp
+
+002038b8:
+.undef	StartGame
+
+004ee7d8:
+.word	BootUp_Menus
+
+00507e48:
+.word	BootMenu
+
+#	- VIDEO MODE
+002032f4:
+.undef	enable ProScan
+
+002035e8:
+.undef	Progressive Scan
+
+00203848:
+.undef	NTSC
+00203870:
+.undef	ProScan
+00203898:
+.undef	Normal
+
+005046c8:
+.half	vidmode_NTSC
+.half	vidmode_ProScan
+.half	vidmode_NormalMode
+
+#	CHARACTERS
+0028f390:
+.undef	Fun_UnlockedCharacters
+0028f3ac:
+.undef	is character unlocked?
+0028f3bc:
+.undef	character locked
+.undef
+.undef
+.undef	character unlocked
+
+#	MENUS
+001283e0:
+.undef	Fun_LoadMenu
+
+00197528:
+.undef	Fun_SaveNextMenu
+
+00198628:
+.undef	LoadMenuAddress
+00198670:
+.undef	Fun_LoadMenuAddress1
+00198690:
+.undef	Fun_LoadMenuAddress2
+001986b0:
+.undef	Fun_LoadMenuAddress3
+
+004ee008:
+.word	m_CurrentMenu
+.word	m_NextMenu
+
+004ee7e8:
+.word	Menus
+
+#	OTHER
+00128df0:
+.undef	save adress
+
+0018e728:
+.undef	save menu
+0018e74c:
+.undef	s1 = v0
+0018e768:
+.undef	t0 = s1
+
+0046e190:
+.word	ButtonPress

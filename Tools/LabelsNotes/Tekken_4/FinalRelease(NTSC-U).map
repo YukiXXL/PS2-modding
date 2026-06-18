@@ -1,0 +1,207 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+00180080:
+.undef	indata
+00180088:
+.undef	ENTRYPOINT
+001969f8:
+.undef	main
+
+
+#	BOOT
+001ed850:
+.undef	Boot Up
+
+#	- PROGRESSIVE MODE
+001e2268:
+.undef	Fun_Progressive 2
+001ed448:
+.undef	Fun_Progressive 1
+
+001ed550:
+.undef	Fun_Progressive
+
+001ed864:
+.undef	NotEnablingProgressive
+001ed8d8:
+.undef	Progressive_Mode
+001ed930:
+.undef	Progressive_Mode
+
+#	CHARACTERS
+001e2f50:
+.undef	Fun_CharacterCheck
+
+001ec0a0:
+.undef	isCharacterUnlocked
+
+0035789c:
+.word	CharactersEnabled
+
+0036c318:
+.word	CharactersUnlocked
+.word
+.word
+.word
+.word
+
+#	- CHARACTERS DATA
+002ba620:
+.word	CharactersData
+
+00356650:
+.word	Paul 1
+.word	Paul 2
+
+00356690:
+.word	Kuma
+.word	Panda
+
+#	- CHARACTER SELECT
+001dd7f8:
+.undef	Fun_CharacterSelect
+001e2da0:
+.undef	Fun_CharSelect1
+
+001f45e0:
+.undef	CharacterSelect
+
+0036c340:
+.word	CharacterSelect_P1
+
+#	GAME
+00196d70:
+.undef	in-game
+
+001a8f30:
+.undef	Fun_ResetGame
+
+002a8bf8:
+.word	g_GameMode
+.byte	g_EnableP2
+.byte
+.byte
+.byte
+.word
+.byte	g_ScreenSelect	;0 = Normal ; 1 = Quick
+
+#	- 2P
+001bb6c0:
+.undef	2P_isEnabledSave
+.undef
+.undef	2P_isEnabledLoad
+
+00357828:
+.word	2P_Enabled
+
+#	- GAME MODES
+0030d060:
+.word	GameModes
+
+001dda48:
+.undef	Versus
+001dda54:
+.undef	enable Quick Select
+.undef
+.undef
+.undef	disable 2P	;it forces it anyway
+
+001ddce8:
+.undef	Tekken Force	;disable 2P
+
+00205358:
+.undef	TekkenForce
+.undef
+.undef
+.undef
+.undef	Training
+.undef
+.undef
+.undef
+.undef	OtherGM
+
+#	-- GAME MODES 2P ALLOW
+0030efa0:
+.word	GameModes_2PAllow
+
+001e4150:
+.undef	OnlyOnePlayer
+001e4168:
+.undef	SecondPlayerAllowed
+001e4208:
+.undef	Practice
+
+#	- STAGES
+001e3618:
+.undef	Fun_Stages
+
+001e9e60:
+.undef	isStageUnlocked
+
+002a8c28:
+.word	g_TekkenForceStage
+0036c490:
+.word	StageCursor
+.code
+.word	StagesMaximum
+.code
+.code
+.word	g_Stage
+
+#	- TURBO MODE
+00197dc0:
+.undef	SaveTurboMode
+.undef
+.undef	isTurboModeEnabled
+
+0035778c:
+.word	g_TurboMode
+
+#	MENUS
+00197888:
+.undef	Fun_SaveGroupMenu
+001978a0:
+.undef	Fun_LoadGroupMenu
+00197a18:
+.undef	Fun_SaveMenuID_ToLoad
+00197a28:
+.undef	Fun_LoadMenuID
+
+0030d3c0:
+.word	Menus
+
+00357d38:
+.word	m_GroupMenuID
+.word	m_GroupMenuID_ToLoad
+.code
+.word	m_Menu
+.word	m_MenuID_ToLoad
+
+#	- START MENU
+00196f60:
+.undef	Fun_Start
+
+001de5b8:
+.undef	Fun_PressStart
+001de688:
+.undef	PressedStart
+
+#	- PAUSE MENU
+001a8fc0:
+.undef	isGamePaused
+
+001a9100:
+.undef	Fun_PauseGame
+001a91d4:
+.undef	pause
+
+0030a2c8:
+.word	g_CanBePaused
+003580a8:
+.word	g_isPaused
+
+#	OTHER
+003566c8:
+.word	Something
+.word
