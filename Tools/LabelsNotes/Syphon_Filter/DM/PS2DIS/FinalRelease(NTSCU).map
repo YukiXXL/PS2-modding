@@ -85,11 +85,27 @@
 .byte	"{STRING}"
 
 #	BLOOD
+002338e0:
+.undef	Fun_Blood
+
 005c90b0:
-.undef	p_Blood
+.undef	p_BloodDef
 
 00584590:
-.undef	Blood
+.undef	BloodDef
+
+00526020:
+.float	BloodDecalDist
+.undef
+.float	BloodDecalRad
+.undef
+.float	BrainDecalRad
+.undef
+.float	kDecalOffsetPct
+.undef
+.word
+.undef
+.float	BulletOffY
 
 #	GAMEPLAY
 002cf5fc:

@@ -1,0 +1,23 @@
+#	PSP Memory Map
+
+08800000:
+.undef	PPSSPP_UserMemory	;Address From
+
+#	BLOOD
+08e5915c:
+.undef	p_Blood
+
+08a96a60:
+.undef	Blood
+0882469c:
+.undef	Fun_Blood
+
+08e00228:
+.float	BloodDecalDist
+.float	BloodDecalRad
+.float	BrainDecalRad
+.float
+.float
+.word
+.float
+.float	BulletOffY
