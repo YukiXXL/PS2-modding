@@ -67,11 +67,11 @@
 00198628:
 .undef	LoadMenuAddress
 00198670:
-.undef	Fun_LoadMenuAddress1
+.undef	Fun_LoadMenuAddress
 00198690:
-.undef	Fun_LoadMenuAddress2
+.undef	Fun_LoadMenuAddress
 001986b0:
-.undef	Fun_LoadMenuAddress3
+.undef	Fun_LoadMenuAddress
 
 004ee008:
 .word	m_CurrentMenu

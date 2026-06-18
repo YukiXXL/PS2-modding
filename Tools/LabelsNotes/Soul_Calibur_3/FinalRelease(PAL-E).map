@@ -82,11 +82,11 @@
 00198a00:
 .undef	LoadMenuAddress
 00198a48:
-.undef	Fun_LoadMenuAddress1
+.undef	Fun_LoadMenuAddress
 00198a68:
-.undef	Fun_LoadMenuAddress2
+.undef	Fun_LoadMenuAddress
 00198a88:
-.undef	Fun_LoadMenuAddress3
+.undef	Fun_LoadMenuAddress
 
 004f3808:
 .word	m_CurrentMenu

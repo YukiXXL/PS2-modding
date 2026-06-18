@@ -15,9 +15,9 @@
 
 #	- PROGRESSIVE MODE
 001ec6b0:
-.undef	Fun_Progressive 1
+.undef	Fun_Progressive
 0022dcb0:
-.undef	Fun_Progressive 1
+.undef	Fun_Progressive
 
 001ec988:
 .undef	ProgressiveMode
@@ -58,7 +58,7 @@
 .word	Lei 1
 .word	Lei 2
 
-0036cb60:
+0036cb78:
 .word	Nina 1
 .word	Nina 2
 
@@ -94,8 +94,6 @@
 
 0030dd28:
 .half	CharacterSelectIDs
-.half
-.half
 .half
 .half
 .half
@@ -371,7 +369,7 @@
 
 
 #	CUSTOM
-00081000:
+000a0400:
 .code	RestorePauseCode_Start
-00081088:
+000a0488:
 .code	RestorePauseCode_End
