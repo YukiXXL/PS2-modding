@@ -108,6 +108,10 @@
 .float	BulletOffY
 
 #	GAMEPLAY
+001f3eb0:
+.undef	Fun_TargetLock
+.undef	load TargetLock value	;0x03 = Disabled ; 0x43 = Enabled
+
 002cf5fc:
 .undef	Headshot
 
@@ -132,6 +136,18 @@
 00240cc0:
 .undef	MenusSelection
 
+#	- MAIN MENU
+005da1ac:
+.word	p_MainMenu
+00365d80:
+.undef	MainMenu
+00365e74:
+.undef	Single Player
+00365f4c:
+.undef	Multi Player
+
+#	- OPTIONS
+
 00240e90:
 .undef	toggle
 
@@ -144,15 +160,10 @@
 00241130:
 .undef	Subtitles
 
-#	- MAIN MENU
-005da1ac:
-.word	p_MainMenu
-00365d80:
-.undef	MainMenu
-00365e74:
-.undef	Single Player
-00365f4c:
-.undef	Multi Player
+00526108:
+.word	VidMode
+.word
+.word
 
 #	- SINGLE PLAYER
 

@@ -50,10 +50,17 @@ patch=1,EE,205412D0,extended,535F444F
 patch=1,EE,205412D4,extended,69746275
 patch=1,EE,205412D8,extended,73656C74
 
-[Menus\Options\PAL Video Mode]
+// -- VIDEO MODE
+
+[Menus\Options\Video Mode\Widescreen ProScan]
 author=YukiXXL
-comment=Replaces "ProScan" option
+patch=1,EE,00242890,extended,24020014
+
+[Menus\Options\Video Mode\PAL Video Mode]
+author=YukiXXL
+comment=Replaces "ProScan", Widescreen included.
 patch=1,EE,00242888,extended,24030002
+patch=1,EE,00242890,extended,24020012
 
 // GAMEPLAY
 

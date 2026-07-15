@@ -1,0 +1,67 @@
+gametitle=Syphon Filter: Dark Mirror Final Release (NTSC-U)
+
+// BOOT
+
+[Boot\Enable Localization Test]
+author=YukiXXL
+patch=1,EE,00659B58,byte,1
+
+[Boot\Disable Demo Mode]
+author=YukiXXL
+patch=1,EE,20246A40,extended,0000102D
+
+// - VIDEO SIZE
+
+[Boot\Video Size\Widescreen]
+author=YukiXXL
+patch=1,EE,2018CDD4,extended,24020001
+
+// - VIDEO MODE
+
+[Boot\Video Mode\ProScan]
+author=YukiXXL
+patch=1,EE,2018D0C4,extended,24020001
+
+[Boot\Video Mode\PAL]
+author=YukiXXL
+patch=1,EE,2018CDAC,extended,24020001
+
+// MENUS
+
+// - OPTIONS
+
+[Menus\Options\Target Lock]
+author=YukiXXL
+comment=Uses Rumble label
+patch=1,EE,10241D94,extended,24A56340
+patch=1,EE,20241E74,extended,0000102D
+//Help Text
+patch=1,EE,20546350,extended,545F444F
+patch=1,EE,20546354,extended,65677261
+patch=1,EE,20546358,extended,636F4C74
+patch=1,EE,2054635C,extended,0000006B
+
+[Menus\Options\Subtitles]
+author=YukiXXL
+comment=Uses Audio Mode label
+patch=1,EE,00241928,extended,3042FFFF //Fix for displaying subtitles
+//Replace the values for strcmp
+patch=1,EE,202420c8,extended,0000102D
+patch=1,EE,00242118,extended,24A56430
+//Help Text
+patch=1,EE,20546440,extended,535F444F
+patch=1,EE,20546444,extended,69746275
+patch=1,EE,20546448,extended,73656C74
+
+// GAMEPLAY
+
+[Gameplay\FPS\60]
+author=YukiXXL
+patch=1,EE,0018CADC,extended,2403003C
+patch=1,EE,0018CB08,extended,2403003C
+patch=1,EE,0018CB34,extended,2403003C
+
+[Cheats\Enable Cheats]
+author=YukiXXL
+description=Press "START" in the Options to Unlock All.
+patch=1,EE,1018CE1C,extended,24C69528

@@ -2665,6 +2665,9 @@
 00533790:
 .qword	string_Codename
 
+0053dc44:
+.word	volume_GameVoices
+
 005c911c:
 .qword	Agent_AgencyCellOnline
 00a81fac:

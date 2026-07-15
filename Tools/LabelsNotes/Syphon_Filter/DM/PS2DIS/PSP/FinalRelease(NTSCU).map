@@ -7,6 +7,13 @@
 08e5915c:
 .undef	p_Blood
 
+08a0e2c8:
+.undef	TargetLock
+08a078e0:
+.undef	Fun_TargetLockEnabled
+08a078f0:
+.undef	Fun_TargetLock
+
 08a96a60:
 .undef	Blood
 0882469c:

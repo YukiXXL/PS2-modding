@@ -6,6 +6,16 @@ gametitle=Syphon Filter: Dark Mirror Final Release (PAL-E)
 author=YukiXXL
 patch=1,EE,00660f98,byte,1
 
+// -- VIDEO MODE
+
+[Boot\Video Mode\NTSC]
+author=YukiXXL
+patch=1,EE,2018CE1C,extended,0000102D
+
+[Boot\Video Mode\NTSC\ProScan]
+author=YukiXXL
+patch=1,EE,2018D134,extended,24020001
+
 // CHEATS
 
 [Cheats\Enable Cheats]
@@ -39,11 +49,6 @@ patch=1,EE,002425E0,extended,24A5D670
 patch=1,EE,2054D680,extended,535F444F
 patch=1,EE,2054D684,extended,69746275
 patch=1,EE,2054D688,extended,73656C74
-
-[Menus\Options\ProScan]
-author=YukiXXL
-comment=Replaces "Widescreen" option
-patch=1,EE,20242780,extended,24020004
 
 // GAMEPLAY
 
