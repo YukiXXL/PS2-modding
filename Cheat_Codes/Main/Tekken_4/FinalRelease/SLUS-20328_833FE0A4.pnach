@@ -3,7 +3,7 @@ gametitle= Tekken 4 (NTSC-U)
 [Addons\Force Progressive Scan picker]
 author=YukiXXL
 description=Enables the ProScan menu on Fast Boot mode.
-patch=1,EE,001ED854,extended,24020000
+patch=2,EE,001ED854,extended,24020000
 
 [Gameplay\Enable Turbo Mode]
 author=TCRF.net

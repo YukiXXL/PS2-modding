@@ -4,8 +4,8 @@ gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 
 [Boot\Video Mode\PAL]
 author=YukiXXL
-patch=1,EE,20165690,extended,0000102D
-patch=1,EE,2045A5AC,extended,0000102D
+patch=0,EE,20165690,extended,0000102D
+patch=0,EE,2045A5AC,extended,0000102D
 
 // CHEATS
 

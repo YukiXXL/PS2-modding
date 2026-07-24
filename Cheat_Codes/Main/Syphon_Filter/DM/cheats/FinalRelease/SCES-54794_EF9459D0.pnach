@@ -4,24 +4,24 @@ gametitle=Syphon Filter: Dark Mirror Final Release (PAL-E)
 
 [Boot\Enable Localization Test]
 author=YukiXXL
-patch=1,EE,00660f98,byte,1
+patch=2,EE,00660f98,byte,1
 
 // -- VIDEO MODE
 
 [Boot\Video Mode\NTSC]
 author=YukiXXL
-patch=1,EE,2018CE1C,extended,0000102D
+patch=0,EE,2018CE1C,extended,0000102D
 
 [Boot\Video Mode\NTSC\ProScan]
 author=YukiXXL
-patch=1,EE,2018D134,extended,24020001
+patch=0,EE,2018D134,extended,24020001
 
 // CHEATS
 
 [Cheats\Enable Cheats]
 author=YukiXXL
 description=Press "START" in the Options to Unlock All.
-patch=1,EE,1018CE8C,extended,24C60748
+patch=0,EE,1018CE8C,extended,24C60748
 
 // MENUS
 

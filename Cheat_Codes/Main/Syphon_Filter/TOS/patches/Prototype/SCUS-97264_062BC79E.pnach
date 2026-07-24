@@ -28,7 +28,7 @@ patch=1,EE,1041AF24,extended,24101400
 
 [Dongle protection bypass]
 author=YukiXXL
-patch=1,EE,0041D418,byte,0
+patch=0,EE,0041D418,byte,0
 
 [NV and Flashlight Fix]
 author=YukiXXL

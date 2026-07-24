@@ -50,18 +50,18 @@ patch=1,EE,0097FF1C,extended,00000000
 
 [Boot Mode\Retail]
 description=Boots the game into the Retail mode.
-patch=1,EE,E0016562,extended,00272638
-patch=1,EE,20272638,extended,79616C70
+patch=2,EE,E0016562,extended,00272638
+patch=2,EE,20272638,extended,79616C70
 
 [Boot Mode\Preview (Retail)]
 description=Boots the game into the Preview mode.
-patch=1,EE,E0012638,extended,0025BDA0
-patch=1,EE,1025BDA0,extended,24C6D3D0
+patch=2,EE,E0012638,extended,0025BDA0
+patch=2,EE,1025BDA0,extended,24C6D3D0
 
 [Boot Mode\Kiosk]
 description=Boots the game into the Kiosk mode.
-patch=1,EE,E0012638,extended,0025BDA0
-patch=1,EE,1025BDA0,extended,24C6D370
+patch=2,EE,E0012638,extended,0025BDA0
+patch=2,EE,1025BDA0,extended,24C6D370
 
 // ADDONS
 

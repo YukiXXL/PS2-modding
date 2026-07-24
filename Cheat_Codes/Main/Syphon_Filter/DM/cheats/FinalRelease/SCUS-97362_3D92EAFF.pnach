@@ -4,14 +4,14 @@ gametitle=Syphon Filter: Dark Mirror Final Release (NTSC-U)
 
 [Boot\Enable Localization Test]
 author=YukiXXL
-patch=1,EE,0064FBD8,byte,1
+patch=2,EE,0064FBD8,byte,1
 
 // CHEATS
 
 [Cheats\Enable Cheats]
 author=YukiXXL
 description=Press "START" in the Options to Unlock All.
-patch=1,EE,1018D32C,extended,24C643C8
+patch=0,EE,1018D32C,extended,24C643C8
 
 // MENUS
 

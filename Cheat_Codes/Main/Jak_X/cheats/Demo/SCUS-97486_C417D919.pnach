@@ -11,19 +11,19 @@ patch=1,EE,2091CD10,extended,00269201
 
 [Boot Mode\Retail]
 description=Boots the game into the Retail mode.
-patch=1,EE,2020E6B8,extended,79616C70
+patch=2,EE,2020E6B8,extended,79616C70
 
 [Boot Mode\Preview (Retail)]
 description=Boots the game into the Preview mode.
-patch=1,EE,101FDFD0,extended,24C6A9B0
+patch=2,EE,101FDFD0,extended,24C6A9B0
 
 [Boot Mode\Kiosk]
 description=Boots the game into the Kiosk mode.
-patch=1,EE,101FDFD0,extended,24C6A950
+patch=2,EE,101FDFD0,extended,24C6A950
 
 [Boot Mode\Beta]
 description=Boots the game into the Beta mode.
-patch=1,EE,101FDFD0,extended,24C6A980
+patch=2,EE,101FDFD0,extended,24C6A980
 
 // BETA MODE
 

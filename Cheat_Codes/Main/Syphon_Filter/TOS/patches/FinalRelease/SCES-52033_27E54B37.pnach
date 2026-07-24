@@ -31,3 +31,9 @@ author=refraction
 description=Cop2 problems.
 patch=1,EE,203953F8,extended,48438000
 patch=1,EE,203953FC,extended,4B06521B
+
+[Fix Cutscsenes Post-Playback Faulty Transition]
+author=Leyo
+description=Fix 2 Full-VRAM Black Clears (Alpha 128 -> Alpha 0), preventing leftover Alpha data from corrupting the later Depth Buffer.
+patch=1,EE,00419E7C,extended,24070000
+patch=1,EE,003A1444,extended,24080000

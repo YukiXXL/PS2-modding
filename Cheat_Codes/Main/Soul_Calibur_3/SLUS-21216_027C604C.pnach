@@ -3,7 +3,7 @@ gametitle=Soul Calibur III (NTSC-U)
 [Addons\Force Enable ProScan selection]
 author=YukiXXL
 description=Allows selecting ProScan in Fast Boot mode.
-patch=1,EE,002032F0,extended,24050000
+patch=2,EE,002032F0,extended,24050000
 
 [Misc\Extended Bonus Characters\Have characters unlocked]
 author=YukiXXL

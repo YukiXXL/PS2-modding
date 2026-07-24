@@ -37,7 +37,7 @@ patch=2,EE,2025AD04,extended,24040010
 // Rewrite init heap function call for global heap.
 patch=2,EE,2025AD74,extended,8E04CDC0
 patch=2,EE,2025AD78,extended,3C0604D3
-patch=2,EE,2025AD7C,extended,34C61C10
+patch=2,EE,2025AD7C,extended,34C62810
 patch=2,EE,2025AD80,extended,00402825
 patch=2,EE,2025AD88,extended,00000000
 
