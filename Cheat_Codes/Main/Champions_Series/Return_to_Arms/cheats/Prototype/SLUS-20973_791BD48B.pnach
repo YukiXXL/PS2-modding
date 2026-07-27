@@ -19,20 +19,60 @@ patch=1,EE,20223C40,extended,00000000
 
 // TORMENTC
 
-['tormentc' is missing so replace it with:\torment0]
+[Levels\'tormentc' is missing so replace it with:\torment0]
 author=YukiXXL
 description=The Turtle is your friend
 patch=1,EE,2050E5E8,extended,6D726F74
 patch=1,EE,2050E5EC,extended,30746E65
 
-['tormentc' is missing so replace it with:\torment1]
+[Levels\'tormentc' is missing so replace it with:\torment1]
 author=YukiXXL
 description=Good for you
 patch=1,EE,2050E5E8,extended,6D726F74
 patch=1,EE,2050E5EC,extended,31746E65
 
-['tormentc' is missing so replace it with:\torbonus]
+[Levels\'tormentc' is missing so replace it with:\torbonus]
 author=YukiXXL
 description=Unfinished Bonus Level
 patch=1,EE,2050E5E8,extended,62726F74
 patch=1,EE,2050E5EC,extended,73756E6F
+
+// ENDINGS
+
+[Levels\Ending Levels\Good]
+author=YukiXXL
+description=Replaces "bossgood"
+patch=1,EE,2050E790,extended,67646E65
+patch=1,EE,2050E794,extended,00646F6F
+
+[Levels\Ending Levels\Evil]
+author=YukiXXL
+description=Replaces "bossevil"
+patch=1,EE,2050E7A0,extended,62646E65
+patch=1,EE,2050E7A4,extended,00006461
+
+// UNUSED
+
+[Levels\Unused Levels\fearboss]
+author=YukiXXL
+description=Replaces "bossevil"
+patch=1,EE,2050E7A0,extended,72616566
+patch=1,EE,2050E7A4,extended,73736F62
+
+[Levels\Unused Levels\nitmar1]
+author=YukiXXL
+description=Replaces "nit1"
+patch=1,EE,2050E708,extended,6D74696E
+patch=1,EE,2050E70C,extended,00317261
+
+[Levels\Unused Levels\obsfor1]
+author=YukiXXL
+description=Replaces "obsidian"
+patch=1,EE,2050E780,extended,6673626F
+patch=1,EE,2050E784,extended,0031726F
+
+[Levels\Unused Levels\shame1]
+author=YukiXXL
+description=Replaces "blood1"
+patch=1,EE,2050E4D0,extended,6D616873
+patch=1,EE,2050E4D4,extended,00003165
