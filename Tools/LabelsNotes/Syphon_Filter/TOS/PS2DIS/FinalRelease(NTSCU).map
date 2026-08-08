@@ -2589,6 +2589,8 @@
 
 0055a818:
 .word	mFrameTicks	;8nDevices
+0055a830:
+.word	mMemCard	;8nDevices
 
 
 #	STRINGS

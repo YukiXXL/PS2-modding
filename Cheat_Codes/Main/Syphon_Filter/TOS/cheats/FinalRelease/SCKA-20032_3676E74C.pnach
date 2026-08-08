@@ -488,8 +488,8 @@ patch=1,EE,202AD17C,extended,AC2412A8
 patch=1,EE,002AD190,extended,1260006F
 patch=1,EE,2012F118,extended,00000000 //Somekind of error fix
 //Online, Offline enabler
+patch=1,EE,00135154,extended,A020F8E4
 patch=1,EE,001788C0,extended,A023F8E4
-patch=1,EE,0017896C,extended,A020F8E4
 // - FIXES
 //Host Game fix
 patch=1,EE,20345B10,extended,00000000
