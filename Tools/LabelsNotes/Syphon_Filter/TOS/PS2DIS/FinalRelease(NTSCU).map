@@ -330,6 +330,8 @@
 .undef	SetPlayer	;11cGameSystemFP7cPlayer
 00131410:
 .undef	AddTeleport	;11cGameSystemFP5cGOBJ
+00131470:
+.undef	PauseGame	;11cGameSystemFb
 001314f0:
 .undef	GetAgentData_GameSystem	;11cGameSystemFi
 
@@ -692,6 +694,8 @@
 .undef	ThrowGrenade	;6cHumanFRC9cObjectIdRC7cVectorf
 001992b0:
 .undef	RequestEquipGoggles	;6cHumanFbb
+001a3780:
+.undef	HandleDoneDying	;6cHumanFv
 001a92a0:
 .undef	HandleActionRequest	;6cHumanFRCQ27nMSGLIB14cCharActionMsg
 
@@ -1151,6 +1155,12 @@
 
 0024aaf0:
 .undef	PrintDebugInfoToScreen	;15cPlayerControlsCFRC13cPlayerCameraPC5cGOBJ
+
+#	ScreenFader
+0025e6e0:
+.undef	StartFade	;12cScreenFaderFQ212cScreenFader9eFadeTypef
+0025e5b0:
+.undef	Render	;12cScreenFaderCFv
 
 #	ScriptInterpreter
 003e02f0:
@@ -2307,6 +2317,12 @@
 
 #	SCRIPTS
 
+#	CHKP
+0022e1a0:
+.undef	script_ReSpawn	;"CHKP"
+0022e1d0:
+.undef	ReSpawn	;FP7cPlayer (Bonus Missions)
+
 #	cNPC
 00148e90:
 .undef	script_ForceOnRadar	;"cNPC"
@@ -2361,9 +2377,22 @@
 00175eb0:
 .undef	script_SetInvulnerable	;"cPlayer"
 
+#	HOTBOX
+0016fbb0:
+.undef	script_HotboxDisable	;"HBOX"
+0016fbe0:
+.undef	HotboxDisable	;7cHotboxFi
+
+0016fcd0:
+.undef	script_HotboxEnable	;"HBOX"
+0016fd00:
+.undef	HotboxEnable	;7cHotboxFi
+
 #	HUMAN
 00185140:
 .undef	script_SetNotGasable	;"HUMAN"
+00185330:
+.undef	script_SetPlayerWeapons	;"HUMAN"
 
 #	Objective
 00225050:
@@ -2392,6 +2421,11 @@
 .undef	Script_Remove	;"cScriptInterpreter"
 
 #	RELOADSYS
+0012f6e0:
+.undef	script_ResetLevel	;"RELOADSYS"
+0012f700:
+.undef	ResetLevel	;17game_cc@Fv (Bonus Level Restart)
+
 0012f7f0:
 .undef	script_IsMultiplayer	;"RELOADSYS"
 0012f810:
@@ -2433,12 +2467,18 @@
 .undef	__sinit_game.cc
 004c3b80:
 .undef	__sinit_npc.cc
+004c5d90:
+.undef	__sinit_hotbox.cc
 004c6180:
 .undef	__sinit_player.cc
+004c6c40:
+.undef	__sinit_human.cc
 004c7500:
 .undef	__sinit_gameSound.cc
 004cdb40:
 .undef	__sinit_Objective.cc
+004ced30:
+.undef	__sinit_Checkpoint.cc
 004d28b0:
 .undef	__sinit_tank.cc
 004d2e80:
@@ -2521,8 +2561,6 @@
 .undef	IsActivationLoaded	;11nActivationFPC8cTerrain
 00225cd0:
 .undef	GetObjectiveManager__Fv
-0025e6e0:
-.undef	StartFade	;12cScreenFaderFQ212cScreenFader9eFadeTypef
 00245400:
 .undef	PlayCommanderQuip__Fii
 00261350:
@@ -2596,6 +2634,12 @@
 #	STRINGS
 0049b850:
 .byte	"cNPC"
+0049c940:
+.byte	"HBOX"
+004a5fc8:
+.byte	"Fail"
+004a6728:
+.byte	"CHKP"
 004aa110:
 .byte	"rank"
 004be970:
@@ -2611,7 +2655,7 @@
 001b422c:
 .undef	StartSpawns	;Spawning enemy on the start
 
-0025323C:
+0025323c:
 .undef	Body is pickable
 00253258:
 .undef	Body has disguise

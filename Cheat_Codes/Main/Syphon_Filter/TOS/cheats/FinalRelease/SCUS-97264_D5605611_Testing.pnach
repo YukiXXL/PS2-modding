@@ -1,5 +1,15 @@
 gametitle=Syphon Filter: The Omega Strain Final Release (NTSC-U)
 
+[Testing\Online\Bonus Missions\Disable Level Reset]
+patch=1,EE,2012F6E8,extended,00000000 //"ResetLevel"
+patch=1,EE,201485E8,extended,00000000 //"ResetNpc"
+patch=1,EE,203DFB08,extended,00000000 //"ClearSchedules"
+
+[Testing\Bonus Missions\NPCs\Disable Bonus Mission Hotbox Script]
+patch=1,EE,201763B0,extended,24020000
+patch=1,EE,201763C8,extended,AE820184
+patch=1,EE,201763D0,extended,24080001
+
 [Testing\Gameplay\NPCs are Player]
 patch=1,EE,001C2258,extended,24060001 //Everybody is you
 patch=1,EE,00176D44,extended,24050000 //No fade on death

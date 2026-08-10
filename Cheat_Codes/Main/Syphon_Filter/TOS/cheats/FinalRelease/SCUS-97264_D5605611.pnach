@@ -202,6 +202,10 @@ patch=1,EE,201354A0,extended,00000000
 
 // GAMEPLAY
 
+[Gameplay\Start Level as a Client]
+author=YukiXXL
+patch=1,EE,103E1A80,extended,24A5D8E0
+
 [Gameplay\Everyone invisible]
 author=YukiXXL
 patch=1,EE,0039376C,extended,24060000
@@ -250,9 +254,18 @@ patch=1,EE,00000000,extended,00000000
 author=YukiXXL
 patch=1,EE,0014A7D8,extended,24040000
 
-[Gameplay\Bonus Missions\Disable forcing weapons on Kyrgzstan and Chechnya]
+[Gameplay\Bonus Missions\Disable Forcing Weapons]
 author=YukiXXL
-patch=1,EE,103E1A80,extended,24A5D8E0
+patch=1,EE,20175BF0,extended,03E00008 //script_AddWeapon
+patch=1,EE,20175BF4,extended,0000102D
+patch=1,EE,20185330,extended,03E00008 //script_SetPlayerWeapons
+patch=1,EE,20185334,extended,0000102D
+
+[Gameplay\Bonus Missions\Disable Force Respawn]
+author=YukiXXL
+description=Failing objective does not restart the mission
+patch=1,EE,2022E1B0,extended,00000000 //script_ReSpawn
+patch=1,EE,0017759C,extended,24420000 //Hotbox_Enabled
 
 // - EQUIPMENT MODIFY
 
@@ -762,6 +775,15 @@ patch=1,EE,2045E33C,extended,24020001
 [Mods\Fake Multiplayer\Gameplay\Show Codename HUD\Based on "FakeMP"]
 author=YukiXXL
 patch=1,EE,0045E33C,extended,902221C4
+
+// --- PAUSE GAME
+[Mods\Fake Multiplayer\Gameplay\Time continues during Pause\Always]
+author=YukiXXL
+patch=1,EE,2013147C,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Time continues during Pause\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,0013147C,extended,902221C4
 
 // --- SKIN
 [Mods\Fake Multiplayer\Gameplay\Bonus Missions\Skin based on codename\Always]
