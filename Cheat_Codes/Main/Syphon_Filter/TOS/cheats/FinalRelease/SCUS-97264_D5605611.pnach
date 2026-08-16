@@ -417,31 +417,21 @@ description=For the dialogue in C1, train station where the last sample is.
 patch=1,EE,20149434,extended,00000000
 
 [Gameplay\NPCs\Remove Invulnerability from friendly]
-description=Removes invulnerability from NPCs (Imani, Lian, Stone, Gabe).
+description=Removes invulnerability from NPCs (Imani, Lian, Stone, Gabe)(Host).
 patch=1,EE,20148F88,extended,0000102D //SetNotGasable
 patch=1,EE,20148FB8,extended,0000102D //SetNotTaserable
 patch=1,EE,20149018,extended,0000102D //SetFireInvuln
 patch=1,EE,201490EC,extended,0000102D //SetInvulnerable
-
-[Gameplay\NPCs\Remove Invulnerability from friendly (Client)]
-description=Removes invulnerability from specific friendly NPCs (Imani, Lian, Stone, Gabe).
-patch=1,EE,202655E0,extended,24020000
-//IsInvulnerable
-patch=1,EE,201B8750,extended,24050000
-patch=1,EE,201B8760,extended,A08533A4
 
 [Gameplay\NPCs\Give a third weapon]
 author=YukiXXL
 description=Workers get weapons and any other NPC without one.
 patch=1,EE,001B6718,extended,2A020003
 
-[Gameplay\NPCs\Disable Kill script (Host)]
+[Gameplay\NPCs\Disable Kill script]
 author=YukiXXL
+description=Disables auto-killing (Host).
 patch=1,EE,20149FC4,extended,00000000
-
-[Gameplay\NPCs\Disable Kill script (Client)]
-author=YukiXXL
-patch=1,EE,2014B3E8,extended,44806000
 
 [Gameplay\NPCs\Body is pickable and has disguise]
 patch=1,EE,2014F868,extended,24020101
@@ -457,6 +447,42 @@ patch=1,EE,201B422C,extended,00000000
 author=YukiXXL
 description=Fixes crashing and black screen when dying.
 patch=1,EE,001B433C,extended,1440000E
+
+// -- SET SKILL LEVEL
+
+[Gameplay\NPC\Set Skill Level]
+description=ENABLE FIRST!
+patch=1,EE,20149AF0,extended,44826000
+
+[Gameplay\NPC\Set Skill Level\to 0.5]
+patch=1,EE,20149AE8,extended,3c023f00
+
+[Gameplay\NPC\Set Skill Level\to 1.0]
+patch=1,EE,20149AE8,extended,3c023f80
+
+[Gameplay\NPC\Set Skill Level\to 1.5]
+patch=1,EE,20149AE8,extended,3c023fc0
+
+[Gameplay\NPC\Set Skill Level\to 2.0]
+patch=1,EE,20149AE8,extended,3c024000
+
+[Gameplay\NPC\Set Skill Level\to 2.5]
+patch=1,EE,20149AE8,extended,3c024020
+
+[Gameplay\NPC\Set Skill Level\to 3.0]
+patch=1,EE,20149AE8,extended,3c024040
+
+[Gameplay\NPC\Set Skill Level\to 3.5]
+patch=1,EE,20149AE8,extended,3c024060
+
+[Gameplay\NPC\Set Skill Level\to 4.0]
+patch=1,EE,20149AE8,extended,3c024080
+
+[Gameplay\NPC\Set Skill Level\to 4.5]
+patch=1,EE,20149AE8,extended,3c024090
+
+[Gameplay\NPC\Set Skill Level\to 5.0]
+patch=1,EE,20149AE8,extended,3c0240a0
 
 // - WEATHER
 
