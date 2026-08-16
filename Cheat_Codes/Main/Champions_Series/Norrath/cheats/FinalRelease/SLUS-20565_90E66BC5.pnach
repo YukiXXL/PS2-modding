@@ -1,5 +1,7 @@
 gametitle=Champions of Norrath Final Release (NTSC-U)
 
+// CHEATS
+
 [Cheats\All difficulties available]
 author=YukiXXL
 description=Unlocks all difficulties.
@@ -7,19 +9,29 @@ patch=1,EE,0042E300,extended,00000003
 
 // DEBUG
 
-[Misc\Enable Debug Mode]
+[Debug\Enable Debug Mode]
 author=TCRF.net
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,00485AAC,extended,00000001
 
-[Misc\Enable Debug Mode (Alternative)]
+[Debug\Enable Debug Mode (Alternative)]
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,2025066C,extended,00000000
 
-// OTHER
+// GAMEPLAY
 
-[Misc\Increase difficulty by 1]
+[Gameplay\Increase difficulty by 1]
 author=YukiXXL
 description=Increases the selected difficulty by one.
 patch=1,EE,001C92DC,extended,26820002
+
+// ONLINE
+
+[Online\DNAS Bypass]
+author=Krhacken,Switz0018
+description=Made with KrHACKen's DNAS Patcher.
+patch=1,EE,D1228C3C,extended,00000006
+patch=1,EE,01228C30,extended,00000000
+patch=1,EE,D1228C3C,extended,00000006
+patch=1,EE,01228C3C,extended,00000005

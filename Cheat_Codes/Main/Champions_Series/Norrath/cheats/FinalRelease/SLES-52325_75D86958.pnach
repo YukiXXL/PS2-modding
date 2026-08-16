@@ -1,16 +1,34 @@
 gametitle=Champions of Norrath Final Release (PAL-E)
 
+// CHEATS
+
 [Cheats\All difficulties available]
 author=YukiXXL
 description=Unlocks all difficulties.
 patch=1,EE,00443168,extended,00000003
 
-[Misc\Enable Debug Mode]
+// DEBUG
+
+[Debug\Enable Debug Mode]
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,2025C6B0,extended,00000000
 
-[Misc\Increase difficulty by 1]
+// GAMEPLAY
+
+[Gameplay\Increase difficulty by 1]
 author=YukiXXL
 description=Increases the selected difficulty by one.
 patch=1,EE,001D0014,extended,26A20002
+
+// ONLINE
+
+[Online\DNAS Bypass]
+author=Krhacken,Switz0018
+description=Made with Krhackens DNAS_Patcher
+patch=1,EE,D1233F6E,extended,000003E0
+patch=1,EE,21233F70,extended,03E00008
+patch=1,EE,D1233F6E,extended,000003E0
+patch=1,EE,11233F76,extended,0000ACC3
+patch=1,EE,D1233F6E,extended,000003E0
+patch=1,EE,21233F6C,extended,34030005

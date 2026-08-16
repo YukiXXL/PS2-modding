@@ -12,35 +12,28 @@ author=YukiXXL
 description=Allows selecting locked difficulties.
 patch=1,EE,201E285C,extended,00000000
 
-// MISC
+// DEBUG
 
-// - DEBUG
-
-[Misc\Enable Debug Mode]
+[Debug\Enable Debug Mode]
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,004FA7E0,extended,00000001
 
-[Misc\Enable Debug Mode (Alternative)]
+[Debug\Enable Debug Mode (Alternative)]
 author=YukiXXL
 description=D-Pad Down + R1 = Level up ; L2 + R2 + Start = Debug menu
 patch=1,EE,20218070,extended,00000000
 
-// - DIFFICULTY
+// MENUS
 
-[Misc\Increase difficulty by 1]
+[Menus\LAN Mode]
 author=YukiXXL
-description=Legendary = Epic difficulty (cut diff)
-patch=1,EE,001E2854,extended,26900002
+description=Enables LAN Mode? Replaces Online option.
+patch=1,EE,201E2610,extended,10000006
 
-[Misc\Epic Arena]
-author=YukiXXL
-description=Change Arena difficulty to Epic.
-patch=1,EE,001E2784,extended,24020005
+// - EPIC DIFFICULTY
 
-// -- EPIC
-
-[Misc\Epic Difficulty\Enable]
+[Menus\Epic Difficulty]
 author=YukiXXL
 description=Enables Epic difficulty menu.
 patch=1,EE,204F8778,extended,0053F100
@@ -49,14 +42,30 @@ patch=1,EE,2053F104,extended,7261685F
 patch=1,EE,2053F108,extended,74736564
 patch=1,EE,2053F10C,extended,00000032
 
-[Misc\Epic Difficulty\Remove settings menu]
+[Menus\Epic Difficulty\Remove settings menu]
 author=YukiXXL
 description=Removes and disables settings menu for clean diff select menu.
 patch=1,EE,204F8788,extended,00000000
 
-// - OTHER
+// GAMEPLAY
 
-[Misc\LAN Mode]
+// - DIFFICULTY
+
+[Gameplay\Difficulty\Increase difficulty by 1]
 author=YukiXXL
-description=Enables LAN Mode?
-patch=1,EE,201E2610,extended,10000006
+description=Legendary = Epic difficulty (cut diff)
+patch=1,EE,001E2854,extended,26900002
+
+[Gameplay\Difficulty\Epic Arena]
+author=YukiXXL
+description=Change Arena difficulty to Epic.
+patch=1,EE,001E2784,extended,24020005
+
+// ONLINE
+
+[Online\DNAS Bypass]
+author=Switz0018
+description=No Sony code was harmed here.
+patch=3,EE,20340E18,extended,24030001
+patch=3,EE,20340E28,extended,24030001
+patch=3,EE,20340E34,extended,24030400
