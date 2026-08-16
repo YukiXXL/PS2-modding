@@ -2354,10 +2354,14 @@
 .undef	script_SetHasDisguise	;"cNPC"
 00149230:
 .undef	script_SetPickupable	;"cNPC"
+00149420:
+.undef	script_AddAwarenessOfPlayers	;"cNPC"
 00149450:
 .undef	script_SetMaxActiveNpcCount	;"cNPC"
 00149970:
 .undef	script_AddWeapon	;"cNPC"
+00149ae0:
+.undef	script_SetSkill	;"cNPC"
 00149f70:
 .undef	script_SetAggressiveness	;"cNPC"
 00149fb0:

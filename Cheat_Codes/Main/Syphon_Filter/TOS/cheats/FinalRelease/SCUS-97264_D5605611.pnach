@@ -412,8 +412,12 @@ patch=1,EE,20330BF0,extended,2402FFFF
 
 // - NPCs
 
-[Gameplay\NPCs\Remove Invulnerability from friendly (Host)]
-description=Removes invulnerability from specific friendly NPCs (Imani, Lian, Stone, Gabe).
+[Gameplay\NPC\Disable script "AddAwarenessOfPlayers"]
+description=For the dialogue in C1, train station where the last sample is.
+patch=1,EE,20149434,extended,00000000
+
+[Gameplay\NPCs\Remove Invulnerability from friendly]
+description=Removes invulnerability from NPCs (Imani, Lian, Stone, Gabe).
 patch=1,EE,20148F88,extended,0000102D //SetNotGasable
 patch=1,EE,20148FB8,extended,0000102D //SetNotTaserable
 patch=1,EE,20149018,extended,0000102D //SetFireInvuln
