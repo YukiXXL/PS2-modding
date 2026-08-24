@@ -1,0 +1,37 @@
+TIME TRIAL:
+Eastern Tour (hvtrtt) = 002DA5D1
+Northern Tour (sptrtt) = 002DA5D5
+Southern Tour (ictrtt) = 002DA589
+Western Tour (krtrtt) = 002DA599
+
+FREEZE RALLY:
+Eastern Tour (havttbox) = 002DFF6D
+Northern Tour (spattbox) = 002E0135
+Southern Tour (icettbox) = 002E63E9
+Western Tour (krattbox) = 002E5891
+
+TURBO DASH:
+Eastern Tour (havtfoot) = 002DFF71
+Northern Tour (spatfoot) = 002E0139
+Southern Tour (icetfoot) = 002E63E5
+Western Tour (kratfoot) = 002E5889
+
+COLLECTATHON:
+Desert Arena (desclct) = 002E422D
+Dirt Stadium (kcrsclct) = 002DEF61
+Mar Coliseum (coliclct) = 002DE71D
+
+REVERSI:
+Desert Arena (desrev) = 002E6A75
+Mar Coliseum (colirev) = 002DE721
+
+SPORT HUNT:
+Desert Arena (deshunt) = 002DE699
+Desert Arena (deshunt2) = 002DE715
+(FILE NOT EXISTING. NEVER LOADING!) Mar Coliseum (colhunt) = 002E6A11
+
+
+drone = 002DE9C5
+raceweap = 002E0525
+
+*unknown-symbol-name* = 002E84F5

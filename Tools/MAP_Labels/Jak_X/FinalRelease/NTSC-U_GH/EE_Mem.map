@@ -1,0 +1,1942 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+
+002e17f8:
+.word	Base Address
+.word	Base Address
+.word	Base Address	;#false
+.word	Base Address	;#true
+
+#	BOOT
+00282f00:
+.word	.data
+.word
+.word	MasterDebug
+.word	DebugSegment
+.word
+.word
+.word	DebugSymbols
+.word
+.half
+.half	Language
+.word
+.word
+.word
+.word
+.word
+.word	KernelLevel	;#f
+00282fb8:
+.byte	Boot_Mode	;Launch Argument
+
+#	GAMEPLAY
+00486b74:
+.byte	Car Performance presets
+
+00f65f44:
+.undef	Weapon Load
+
+#	- CPU
+00c2357c:
+.undef	Save "Player" ID
+00f1f9f4:
+.undef	Load player a1
+00f1fd48:
+.undef	Load CPU a1
+
+00f64928:
+.undef	CPU check Turbo Lock
+00f64b00:
+.undef	CPU check Nova
+
+00f20f50:
+.undef	CPU stats
+
+#	- EVENTS
+
+#	-- GRAND PRIX
+00bd25ac:
+.undef	is LastTask
+00e6d614:
+.undef	GP check
+
+#	- WEAPONS
+00f63af8:
+.undef	load GameMode
+00f63c04:
+.undef	is Left Weapon (1)
+00f63ca0:
+.undef	is Right Weapon (2)
+
+#	MENUS
+
+#	- EVENTS
+
+#	-- CPU NUMBER
+00bcd1d8:
+.undef	Event_CPUNumber
+
+00bcd2dc:
+.undef	is Time Attack
+00bcd344:
+.undef	is Artist
+.undef	check Game Mode
+00bcd3c8:
+.undef	is Sport Hunt
+00bcd3dc:
+.undef	is Other GM
+.undef
+.undef
+.undef	is Circuit
+.undef
+.undef	Load CPU_num	;pointer address
+00bcd41c:
+.undef	CPU set to MAX
+00bcd444:
+.undef	load MAX CPUs
+00bcd468:
+.undef	2nd Check
+.undef	is Death Race
+.undef
+.undef
+.undef
+.undef	is Rush Hour
+00bcd4a4:
+.undef	is Freeze Rally
+.undef
+.undef
+.undef	Spawn Number
+.undef
+.undef	CPU_num Death Race,Rush Hour
+.undef
+.undef
+.undef	is Boss,Mizo GM
+00bcd4dc:
+.undef	CPU_num = ZERO
+.undef
+.undef
+.undef	Vehicles MAX Limit
+
+#	-- EVENT ADVANCE OPTIONS
+013cb294:
+.undef	Event_AdvanceOptions
+
+013cb2e0:
+.undef	is Circuit
+013cb2f4:
+.undef	AdvOpt_Circuit
+013cb3a0:
+.undef	AdvOpt_Circuit
+
+013cb560:
+.undef	is TimeAttack
+013cb58c:
+.undef	AdvOpt_TimeAttack
+013cb638:
+.undef	AdvOpt_TimeAttack
+
+013cb7f8:
+.undef	is TurboDash
+013cb810:
+.undef	AdvOpt_TurboDash
+013cb8bc:
+.undef	AdvOpt_TurboDash
+
+013cb954:
+.undef	is FreezeRally
+013cb96c:
+.undef	AdvOpt_FreezeRally
+013cba18:
+.undef	AdvOpt_FreezeRally
+
+013cba9c:
+.undef	is RushHour
+013cbab4:
+.undef	AdvOpt_RushHour
+013cbb60:
+.undef	AdvOpt_RushHour
+
+013cbbf8:
+.undef	is DeathRace
+013cbc10:
+.undef	AdvOpt_DeathRace
+013cbcbc:
+.undef	AdvOpt_DeathRace
+
+013cbd54:
+.undef	is Deathmatch
+013cbd68:
+.undef	is SportHunt
+013cbd7c:
+.undef	is Collectathon
+013cbd90:
+.undef	is ArtifactRace
+013cbda4:
+.undef	is CTF
+013cbddc:
+.undef	is Deathmatch
+013cbdf0:
+.undef	is Assassin
+013cbe10:
+.undef	AdvOpt_Arena
+013cbebc:
+.undef	AdvOpt_Arena
+
+013cbf68:
+.undef	is Collectathon
+013cbf80:
+.undef	AdvOpt_Collectathon
+013cc02c:
+.undef	AdvOpt_Collectathon
+
+013cc0d8:
+.undef	is ArtifactRace
+013cc0f0:
+.undef	AdvOpt_ArtifactRace
+013cc19c:
+.undef	AdvOpt_ArtifactRace
+
+013cc25c:
+.undef	is Assassin
+013cc274:
+.undef	AdvOpt_Assassin
+013cc320:
+.undef	AdvOpt_Assassin
+
+013cc444:
+.undef	is CTF
+013cc45c:
+.undef	AdvOpt_CTF
+013cc508:
+.undef	AdvOpt_CTF
+
+013cc5dc:
+.undef	is OtherGM
+013cc5e8:
+.undef	AdvOpt_Other
+013cc694:
+.undef	AdvOpt_Other
+
+#	-- GAME MODES
+00b60298:
+.word	GM_Freeze Rally
+00b60278:
+.word	GM_Rush Hour
+00b60268:
+.word	GM_Time Trial
+
+#	- SECRETS
+007b9bf0:
+.byte
+.byte	Mirrored
+.byte	Bad Weather
+.byte
+
+#	OTHER
+002f1800:
+.word	false
+.word	true
+
+002f9924:
+.word	#f
+.byte	"#f"
+.byte
+.byte
+.byte
+.undef
+.word
+.word	#t
+.byte	"#t"
+
+#	- DEFINED
+002f9804:
+.word	string character number
+.byte	"*unknown-symbol-name*"
+
+#	LEVELS
+
+#	- ARENAS
+
+#	-- DESERT ARENA
+002f422c:
+.word	LEVEL_DesertArena - Collectathon (desclct)	;value-ffff=level_pointer
+002f6a74:
+.word	LEVEL_DesertArena - Reversi (desrev)	;value-ffff=level_pointer
+002ee698:
+.word	LEVEL_DesertArena - Sport Hunt (deshunt)	;value-ffff=level_pointer
+002ee714:
+.word	LEVEL_DesertArena - Sport Hunt (deshunt2)	;value-ffff=level_pointer
+
+#	-- DIRT STADIUM
+002eef60:
+.word	LEVEL_DirtStadium - Collectathon (kcrsclct)	;value-ffff=level_pointer
+
+#	-- MAR COLISEUM
+002ee71c:
+.word	LEVEL_MarColiseum - Collectathon (coliclct)	;value-ffff=level_pointer
+002ee720:
+.word	LEVEL_MarColiseum - Reversi (colirev)	;value-ffff=level_pointer
+002f6a10:
+.word	LEVEL_MarColiseum - Sport Hunt (colhunt)(MISSING!)	;value-ffff=level_pointer
+
+#	- TRACKS
+
+#	-- EASTERN TOUR
+002ea5d0:
+.word	LEVEL_EasternTour - Time Trial (hvtrtt)	;value-ffff=level_pointer
+002eff6c:
+.word	LEVEL_EasternTour - Freeze Rally (havttbox)	;value-ffff=level_pointer
+002eff70:
+.word	LEVEL_EasternTour - Turbo Dash (havtfoot)	;value-ffff=level_pointer
+
+#	-- NORTHERN TOUR
+002ea5d4:
+.word	LEVEL_NorthernTour - Time Trial (sptrtt)	;value-ffff=level_pointer
+002f0134:
+.word	LEVEL_NorthernTour - Freeze Rally (spattbox)	;value-ffff=level_pointer
+002f0138:
+.word	LEVEL_NorthernTour - Turbo Dash (spatfoot)	;value-ffff=level_pointer
+
+#	-- EASTERN TOUR
+002ea588:
+.word	LEVEL_EasternTour - Time Trial (ictrtt)	;value-ffff=level_pointer
+002f63e8:
+.word	LEVEL_EasternTour - Freeze Rally (icettbox)	;value-ffff=level_pointer
+009e6ec4:
+.word	LEVEL_EasternTour - Turbo Dash (icetfoot)	;value-ffff=level_pointer
+
+#	-- WESTERN TOUR
+002ea598:
+.word	LEVEL_WesternTour - Time Trial (krtrtt)	;value-ffff=level_pointer
+002f5890:
+.word	LEVEL_WesternTour - Freeze Rally (krattbox)	;value-ffff=level_pointer
+002f5888:
+.word	LEVEL_WesternTour - Turbo Dash (kratfoot)	;value-ffff=level_pointer
+
+#	- OTHER
+002ee9c4:
+.word	LEVEL_drone (DeathRace/RushHour)	;value-ffff=level_pointer
+002f0524:
+.word	LEVEL_raceweap (StartLine)	;value-ffff=level_pointer
+002f84f4:
+.word	LEVEL_*unknown-symbol-name*	;value-ffff=level_pointer
+
+#	TASKS
+
+#	- ARENAS
+
+#	-- DESERT ARENA
+
+#	--- TAG
+00980f50:
+.word	TASK_DESERT ARENA (TAG)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00981014:
+.word	string character number
+.byte	"desarena-king-of-hill-task"
+
+#	--- ARTIFACT
+00989560:
+.word	TASK_DESERT ARENA (ARTIFACT)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00989650:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"desarena-artifact-task"
+
+#	--- DEATHMATCH
+0098ad40:
+.word	TASK_DESERT ARENA (DEATHMATCH)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+0098ae30:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"desarena-deathmatch-task"
+
+#	-- DIRT STADIUM
+
+#	--- TAG
+009803a0:
+.word	TASK_DIRT STADIUM (TAG)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00980464:
+.word	string character number
+.byte	"kcross-king-of-hill-task"
+
+#	--- ARTIFACT
+00989ee0:
+.word	TASK_DIRT STADIUM (ARTIFACT)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00989fb0:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"kcross-artifact-task"
+
+#	--- SPORT HUNT
+0098c3f0:
+.word	TASK_DIRT STADIUM (SPORT HUNT)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+0098c4c0:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"kcross-hunt-task"
+
+#	--- DEATHMATCH
+0098d430:
+.word	TASK_DIRT STADIUM (DEATHMATCH)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+0098d510:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"kcross-deathmatch-task"
+
+#	-- MAR COLISEUM
+
+#	--- TAG
+009809c0:
+.word	TASK_MAR COLISEUM (TAG)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00980a94:
+.word	string character number
+.byte	"coliseum-king-of-hill-task"
+
+#	--- ARTIFACT
+00987820:
+.word	TASK_MAR COLISEUM (ARTIFACT)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+009878f0:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"coliseum-artifact-task"
+
+#	--- DEATHMATCH
+0098bc30:
+.word	TASK_MAR COLISEUM (DEATHMATCH)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+0098bd20:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"coliseum-deathmatch-task"
+
+#	- TRACKS
+
+#	-- EASTERN TOUR
+
+#	--- TIME TRIAL
+00982240:
+.word	TASK_EASTERN TOUR (TIME TRIAL)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+.word
+.undef
+.undef
+.undef
+.undef
+.word	p -> High Scores
+.word	p -> High Scores
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+.undef
+.undef
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+00982350:
+.word	p(+2) -> single player levels
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word
+.word
+.word	string character number
+.byte	"havtour-timetrial-task"
+
+#	--- RACE
+00989b80:
+.word	TASK_EASTERN TOUR (RACE)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00989cc0:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"havtour-race-task"
+
+#	-- NORTHERN TOUR
+
+#	--- TIME TRIAL
+00981a00:
+.word	TASK_NORTHERN TOUR (TIME TRIAL)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+.word
+.undef
+.undef
+.undef
+.undef
+.word	p -> High Scores
+.word	p -> High Scores
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+.undef
+.undef
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+00981b10:
+.word	p(+2) -> single player levels
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word
+.word
+.word	string character number
+.byte	"spatour-timetrial-task"
+
+#	--- RACE
+00988f80:
+.word	TASK_NORTHERN TOUR (RACE)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+009890c0:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"spatour-race-task"
+
+#	-- EASTERN TOUR
+
+#	--- TIME TRIAL
+009811c0:
+.word	TASK_EASTERN TOUR (TIME TRIAL)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+.word
+.undef
+.undef
+.undef
+.undef
+.word	p -> High Scores
+.word	p -> High Scores
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+.undef
+.undef
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+009812d0:
+.word	p(+2) -> single player levels
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word
+.word
+.word	string character number
+.byte	"icetour-timetrial-task"
+
+#	--- RACE
+00986c60:
+.word	TASK_EASTERN TOUR (RACE)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00986da0:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"icetour-race-task"
+
+#	-- WESTERN TOUR
+
+#	--- BOSS BATTLE
+0097ed20:
+.word	TASK_WESTERN TOUR (MIZO)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+0097edd8:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"kratour-boss-battle-task"
+
+#	--- TIME TRIAL
+00982a80:
+.word	TASK_WESTERN TOUR (TIME TRIAL)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+.word
+.undef
+.undef
+.undef
+.undef
+.word	p -> High Scores
+.word	p -> High Scores
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+.undef
+.undef
+.undef
+.word
+.word	number of High Scores
+.word	number of High Scores
+.word
+.float	1st place
+.float	2nd place
+.float	3rd place
+.float	4th place
+.float	5th place
+00982b90:
+.word	p(+2) -> single player levels
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word
+.word
+.word	string character number
+.byte	"kratour-timetrial-task"
+
+#	--- RACE
+00989d30:
+.word	TASK_WESTERN TOUR (RACE)
+.word	task display name	;value+ffff=pointer->name
+.byte	task ID
+.byte	task GM
+.byte
+.byte
+.word	task name
+.byte	max number of drivers
+.byte	max number of CPUs
+.byte	min number of req players
+.byte
+.word
+.byte	task flags
+.byte
+.byte
+.byte
+.word	task powerups
+.word	p -> task levels
+.undef
+.undef
+.word
+.word	adventure cutscene
+.word
+.word	adventure intro voice
+.word	task IPU video
+.float	Bronze Medal
+.float	Bronze Medal
+.float	Silver Medal
+.float	Silver Medal
+.float	Gold Medal
+.float	Gold Medal
+.undef
+.word
+.word
+.word	task level	;value+ffff=pointer->name
+.undef
+.undef
+.word
+.undef
+.undef
+.byte	task settings default
+.byte
+.byte
+.byte
+.undef
+.byte	task settings current
+.byte
+.byte
+.byte
+.undef
+.byte	task settings Grand Prix
+.byte
+.byte
+.byte
+00989e70:
+.word	p(+2) -> single player levels
+.word	p(+2) -> next
+.word	p(+2) -> split-screen level
+.word
+.word	level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_ss
+.word	p(+2) -> next
+.word	task_level_ss	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_ss_display	;value+ffff=pointer->name
+.word
+.word	level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	offset_sp
+.word	p(+2) -> next
+.word	task_level_sp	;value+ffff=pointer->name
+.word	p(+2) -> next
+.word	task_level_sp_display	;value+ffff=pointer->name
+.word
+.word
+.word	string character number
+.byte	"kratour-race-task"
+
+#	WEAPON TABLES
+002da808:
+.word	*weapon-select-table-yellow-training*
+.word	*weapon-select-table-red-training*
+
+002de404:
+.word	*weapon-select-table-yellow-default*
+.word	*weapon-select-table-red-default*
+
+002de418:
+.word	*weapon-select-table-red-even*
+.word	*weapon-select-table-yellow-even*
+
+002df090:
+.word	*weapon-select-table-yellow-boss-battle*
+.word	*weapon-select-table-red-boss-battle*
+
+002e75d4:
+.word	somekind of function
+.word	*weapon-select-table-red-race-penultimate*
+.word	*weapon-select-table-yellow-deathmatch-tailing*
+.word	*weapon-select-table-red-race-last*
+.word	*weapon-select-table-red-race-second*
+.word	*weapon-select-table-yellow-race-second*
+.word	*weapon-select-table-yellow-deathmatch-leading*
+.word	*weapon-select-table-red-race-middle*
+.word	*weapon-select-table-yellow-race-first*
+.word	*weapon-select-table-red-deathmatch-leading*
+.word	*weapon-select-table-yellow-race-middle*
+.word	*weapon-select-table-yellow-race-last*
+.word	*weapon-select-table-red-race-first*
+.word	*weapon-select-table-yellow-deathmatch-middle*
+.word	*weapon-select-table-red-deathmatch-tailing*
+.word	*weapon-select-table-red-deathmatch-middle*
+.word	*weapon-select-table-yellow-race-penultimate*
+
+002e85d8:
+.word	*weapon-select-table-yellow-deathrace*
+.word	*weapon-select-table-red-deathrace*

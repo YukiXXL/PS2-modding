@@ -566,6 +566,14 @@
 00463390:
 .undef	PlayQuips_GuiStartMenu	;20GuiEndGameStatisticsFv
 
+#	HotboxMan
+00170660:
+.undef	Update_Hotbox	;10cHotboxManF7cVectorP17cLList<P7cHotbox>
+00171260:
+.undef	CanInteract	;10cHotboxManFb
+00172ae0:
+.undef	__ct_Hotbox	;7cHotboxFR11cPopulationi
+
 #	Hud
 00242190:
 .undef	UpdateWeapon	;4cHudFPC5cGOBJ

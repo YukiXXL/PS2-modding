@@ -1,7 +1,0 @@
-gametitle=Jak X Final Release Greatest Hits (NTSC-U)
-comment=ALL - levels
-
-drone = 002DE9C5
-raceweap = 002E0525
-
-*unknown-symbol-name* = 002E84F5
