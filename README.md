@@ -2,16 +2,21 @@ Welcome to my repository where I will store cheat codes and modded save games or
 Any contributers are welcome. :)
 
 # Table of contents <br/>
-### **Cheat_Codes**:<br/>
-### **- PNACHs**:<br/>
-### 
-### **PNACH_V2** (Codes for the new pnach system) <br/>
-### **PS2_Mastercodes** (Codes for enabling the codes on PS2 hardware) <br/>
-### **Save files** (Custom save files) <br/>
-### **Tools** (Tools for modding purposes):<br/>
-- **Cheat Engine Tables** (Tables for use with Cheat Engine)<br/>
-- **PS2DIS** (Premade files with labels for use with PS2DIS)<br/>
+## - Cheat Codes -<br/>
+### PNACHs:<br/>
+***Seperate*** = Each is a seperate file (for PCSX2 1.6)<br/>
+***Single*** = Everything is combined into one (for PCSX2 2.x)<br/>
+### RAW:<br/>
+***Mastercodes*** = Needed for cheat devices to initialize the codes<br/>
+## - Save files -
+Modded save files
+## - Tools -
+***Cheat Engine Tables*** = Tables for use with Cheat Engine<br/>
+***MAP Labels*** = Labels made in PS2DIS<br/>
+***Notes*** = Useful notes during modding
+
 <br/>
+
 # Converting codes (Guide)<br/>
 Cheats here are made for PCSX2 emulator which uses RAW type. To convert it into RAW(Unencrypted) format, simply copy the address and value and add space inbetween: <br/>
 <br/>
