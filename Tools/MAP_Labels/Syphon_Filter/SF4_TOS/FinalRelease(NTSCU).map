@@ -2368,14 +2368,33 @@
 .undef	script_SetMaxActiveNpcCount	;"cNPC"
 00149970:
 .undef	script_AddWeapon	;"cNPC"
+
 00149ae0:
 .undef	script_SetSkill	;"cNPC"
+0022f2d0:
+.undef	SetSkill	;19cGameGobjControllerFf
+
 00149f70:
 .undef	script_SetAggressiveness	;"cNPC"
 00149fb0:
 .undef	script_Kill	;"cNPC"
+
+0014a150:
+.undef	script_SetAimSubtarget	;"cNPC"
+0014A180:
+.undef	SetAimSubtarget	;4cNPCFQ24cNPC13eAimSubtarget
+
 0014a6e0:
 .undef	script_GetAiMode	;"cNPC"
+
+00149ce0:
+.undef	script_RequestAction	;"cNPC"
+0014d8f0:
+.undef	RequestAction	;4cNPCFQ24cNPC7eActioni
+.undef
+.undef
+.undef
+.undef	DoAction	;4cNPCFQ24cNPC7eActionfi
 
 #	cPlayer
 00175630:
