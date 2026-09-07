@@ -1,0 +1,157 @@
+gametitle=Jak X Preview (NTSC-U)
+comment=Provided by YukiXXL
+
+// FIXES
+
+[Fixes\Precursor Temple Wrong "level chunk"]
+description=Fixes displaying wrong levels
+patch=1,EE,E003A249,extended,009E1698
+patch=1,EE,109E1698,extended,002C8561
+patch=1,EE,109E1AB8,extended,002C8CB1
+patch=1,EE,109E1AC0,extended,002C8561
+
+// ADDONS
+
+[Addons\Extended Music\Part 1]
+description=Only replaces current music (leaving one blank for Part 2)
+//dtouch4b > secondi2
+patch=1,EE,602D048C,extended,6F636573
+patch=1,EE,00020002,extended,0000714C
+patch=1,EE,00000004,extended,00000000
+patch=1,EE,602D048C,extended,3269646E
+patch=1,EE,00020002,extended,0000714C
+patch=1,EE,00000008,extended,00000000
+//biltouch > secondi
+patch=1,EE,602D048C,extended,6F636573
+patch=1,EE,00020002,extended,000071F8
+patch=1,EE,00000004,extended,00000000
+patch=1,EE,602D048C,extended,0069646E
+patch=1,EE,00020002,extended,000071F8
+patch=1,EE,00000008,extended,00000000
+
+[Addons\Extended Music\Part 2]
+description=Adds the rest.
+patch=1,EE,400A0100,extended,000D0004
+patch=1,EE,002E82A4,extended,00000000
+//3 words
+//ass
+patch=1,EE,000A0104,extended,00000003
+patch=1,EE,200A0108,extended,00737361
+//run
+patch=1,EE,000A0114,extended,00000003
+patch=1,EE,200A0118,extended,006E7572
+//4 words
+patch=1,EE,400A0124,extended,00030004
+patch=1,EE,00000004,extended,00000000
+//bird
+patch=1,EE,200A0128,extended,64726962
+//flat
+patch=1,EE,200A0138,extended,74616C66
+//heli
+patch=1,EE,200A0148,extended,696C6568
+//5 words
+patch=1,EE,400A0154,extended,00040004
+patch=1,EE,00000005,extended,00000000
+//angle
+patch=1,EE,200A0158,extended,6C676E61
+patch=1,EE,000A015C,extended,00000065
+//flat2
+patch=1,EE,200A0168,extended,74616C66
+patch=1,EE,000A016C,extended,00000032
+//harsh
+patch=1,EE,200A0178,extended,73726168
+patch=1,EE,000A017C,extended,00000068
+//touch
+patch=1,EE,200A0188,extended,63756F74
+patch=1,EE,000A018C,extended,00000068
+//6 words
+patch=1,EE,400A0194,extended,00030004
+patch=1,EE,00000006,extended,00000000
+//frozen
+patch=1,EE,200A0198,extended,7A6F7266
+patch=1,EE,100A019C,extended,00006E65
+//reborn
+patch=1,EE,200A01A8,extended,6F626572
+patch=1,EE,100A01AC,extended,00006E72
+//touch2
+patch=1,EE,200A01B8,extended,63756F74
+patch=1,EE,100A01BC,extended,00003268
+//7 words
+//theater
+patch=1,EE,000A01C4,extended,00000007
+patch=1,EE,200A01C8,extended,61656874
+patch=1,EE,200A01CC,extended,00726574
+//pointers
+patch=1,EE,602D048C,extended,000A0104
+patch=1,EE,00020001,extended,00007150
+patch=1,EE,602D048C,extended,000A0114
+patch=1,EE,00020001,extended,00007154
+patch=1,EE,602D048C,extended,000A0124
+patch=1,EE,00020001,extended,00007158
+patch=1,EE,602D048C,extended,000A0134
+patch=1,EE,00020001,extended,0000715C
+patch=1,EE,602D048C,extended,000A0144
+patch=1,EE,00020001,extended,00007160
+patch=1,EE,602D048C,extended,000A0154
+patch=1,EE,00020001,extended,00007164
+patch=1,EE,602D048C,extended,000A0164
+patch=1,EE,00020001,extended,00007168
+patch=1,EE,602D048C,extended,000A0174
+patch=1,EE,00020001,extended,0000716C
+patch=1,EE,602D048C,extended,000A0184
+patch=1,EE,00020001,extended,00007170
+patch=1,EE,602D048C,extended,000A0194
+patch=1,EE,00020001,extended,00007174
+patch=1,EE,602D048C,extended,000A01A4
+patch=1,EE,00020001,extended,00007178
+patch=1,EE,602D048C,extended,000A01B4
+patch=1,EE,00020001,extended,0000717C
+patch=1,EE,602D048C,extended,000A01C4
+patch=1,EE,00020001,extended,00007180
+//function
+patch=1,EE,E00A1825,extended,00BE3E38
+patch=1,EE,00BE3D18,extended,24040010
+patch=1,EE,00BE3DB4,extended,14640021
+patch=1,EE,20BE3DF0,extended,24210001
+patch=1,EE,20BE3DF4,extended,1461000E
+patch=1,EE,20BE3E0C,extended,02E7382D
+patch=1,EE,20BE3E34,extended,1000FFEE
+patch=1,EE,20BE3E38,extended,64E70004
+patch=1,EE,20BE3E3C,extended,24010002
+patch=1,EE,20BE3E40,extended,1000FFEB
+patch=1,EE,20BE3E44,extended,64077150
+
+[Addons\Hidden\Enable Mongoose]
+patch=1,EE,E0030001,extended,002CC77C
+patch=1,EE,602CC108,extended,80840006
+patch=1,EE,00000002,extended,0000027C
+patch=1,EE,0000001C,extended,00000000
+
+// GET ALL
+
+[Get All\New Game\Vehicles]
+patch=1,EE,E002FF59,extended,0097BD7C
+patch=1,EE,2097BB44,extended,AC61003C
+patch=1,EE,2097BD80,extended,24010001
+
+[Get All\New Game\Vehicles Parts]
+patch=1,EE,E0012825,extended,0097BE2C
+patch=1,EE,2097BE28,extended,00000000
+
+[Get All\New Game\Tasks]
+patch=1,EE,E005FFF2,extended,0097BF64
+patch=1,EE,2097BF44,extended,ACA10020
+patch=1,EE,2097BF48,extended,ACA10058
+patch=1,EE,2097BF4C,extended,A0A10048
+patch=1,EE,2097BF50,extended,A0A1004A
+patch=1,EE,2097BF68,extended,24010003
+
+[Get All\New Game\C.R.E.A.M - Mad Cash]
+patch=1,EE,E0031825,extended,0097BAA4
+patch=1,EE,2097BAA4,extended,3C014974
+patch=1,EE,2097BAB0,extended,34212400
+patch=1,EE,2097BAD0,extended,44810000
+
+[Get All\New Game\Trick Out Vehicles]
+patch=1,EE,E00128B8,extended,0097BD4C
+patch=1,EE,0097BD48,extended,C4A00008
