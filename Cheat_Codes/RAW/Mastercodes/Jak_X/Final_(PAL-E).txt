@@ -3,4 +3,4 @@
 //ENTRYPOINT = 001001B4
 sceSifSendCmd   : 90117510 0C045CEC
 scePad2Read     : 901C7438 0C042C85
-main            : 90275FBC 0C042CF2
+main            : 902667D4 0C097373

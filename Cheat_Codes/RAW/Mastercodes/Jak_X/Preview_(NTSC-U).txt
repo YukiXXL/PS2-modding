@@ -1,0 +1,6 @@
+"Jak X: Combat Racing Preview (NTSC-U) /ID SCUS_974.29"
+//ELF CRC=C417D919
+//ENTRYPOINT = 001001B4
+sceSifSendCmd   : 901151D0 0C04541C
+scePad2Read     : 901C8F88 0C042C69
+main            : 9025767C 0C093813

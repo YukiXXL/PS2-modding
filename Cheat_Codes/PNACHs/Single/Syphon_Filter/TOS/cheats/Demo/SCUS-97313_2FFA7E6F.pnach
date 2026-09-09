@@ -313,7 +313,13 @@ author=YukiXXL
 description=It shows loading Debug text instead.
 patch=1,EE,201FA3F0,extended,00000000
 
-[Menus\Gameplay\Equipment\Enable Equipment Menu\Enabled]
+[Menus\Gameplay\Equipment\Enable Equipment Menu\Equipment Setup Fix]
+author=YukiXXL
+description=NEEDED!
+patch=1,EE,2032FB8C,extended,24020001
+patch=1,EE,2032FC38,extended,24020001
+
+[Menus\Gameplay\Equipment\Enable Equipment Menu (Ver 1)\Enabled]
 author=YukiXXL
 description=ENABLE THIS FIRST!
 //Rewritten Code
@@ -366,20 +372,70 @@ patch=1,EE,200A0160,extended,DFBF0000
 patch=1,EE,200A0164,extended,03E00008
 patch=1,EE,200A0168,extended,27BD0010
 
-[Menus\Gameplay\Equipment\Enable Equipment Menu\ENABLE ONE\Setup]
+[Menus\Gameplay\Equipment\Enable Equipment Menu (Ver 1)\ENABLE ONE\Setup]
 author=YukiXXL
 description=Start with EqSetup, like in online.
 patch=1,EE,200A0138,extended,24A5D030 //"GuiEquipmentSetup"
 patch=1,EE,200A0140,extended,24C6D048 //"eqsetup"
-//eqsetup fix
-patch=1,EE,2032FB8C,extended,24020001
-patch=1,EE,2032FC38,extended,24020001
 
-[Menus\Gameplay\Equipment\Enable Equipment Menu\ENABLE ONE\Modify]
+[Menus\Gameplay\Equipment\Enable Equipment Menu (Ver 1)\ENABLE ONE\Modify]
 author=YukiXXL
 description=Start with EqModify, like in offline.
 patch=1,EE,200A0138,extended,24A5BB90 //"GuiEquipmentModify"
 patch=1,EE,200A0140,extended,24C6BBA8 //"eqmodify"
+
+[Menus\Gameplay\Equipment\Enable Equipment Menu (Ver 2)\Enabled]
+author=YukiXXL
+description=ENABLE THIS FIRST!
+patch=1,EE,200A0100,extended,1462001F
+patch=1,EE,200A0104,extended,8C2215A0
+patch=1,EE,200A0108,extended,8C510030
+patch=1,EE,200A010C,extended,1220001C
+patch=1,EE,200A0110,extended,90225D0C
+patch=1,EE,200A0114,extended,1040001C
+patch=1,EE,200A0118,extended,822227FB
+patch=1,EE,200A011C,extended,1040001A
+patch=1,EE,200A0120,extended,0200202D
+patch=1,EE,200A0124,extended,0C08BCFC
+patch=1,EE,200A012C,extended,3C010045
+patch=1,EE,200A0130,extended,3C040042
+patch=1,EE,200A0134,extended,A0205D0C
+patch=1,EE,200A0138,extended,24020001
+patch=1,EE,200A013C,extended,2484AB00
+patch=1,EE,200A0140,extended,A02215BD
+patch=1,EE,200A0144,extended,0C040548
+patch=1,EE,200A0148,extended,FC205D10
+patch=1,EE,200A014C,extended,0C06AB58
+patch=1,EE,200A0150,extended,3C05003D
+patch=1,EE,200A0154,extended,3C06003D
+patch=1,EE,200A0158,extended,0040202D
+//a1 arg (GuiEquipment...)
+patch=1,EE,200A0160,extended,0C06B9EC
+//a2 arg (eq...)
+patch=1,EE,200A0168,extended,0C06AB5C
+patch=1,EE,200A016C,extended,0040882D
+patch=1,EE,200A0170,extended,0040202D
+patch=1,EE,200A0174,extended,0220282D
+patch=1,EE,200A0178,extended,0C06ACE0
+patch=1,EE,200A017C,extended,0000302D
+patch=1,EE,200A0180,extended,0808C510
+patch=1,EE,200A0188,extended,0808C48A
+//Rewritten Code
+patch=1,EE,202311E8,extended,A0225D0C
+patch=1,EE,20231220,extended,08028040
+patch=1,EE,20231224,extended,24020010
+
+[Menus\Gameplay\Equipment\Enable Equipment Menu (Ver 2)\ENABLE ONE\Setup]
+author=YukiXXL
+description=Start with EqSetup, like in online.
+patch=1,EE,200A015C,extended,24A5D030 //"GuiEquipmentSetup"
+patch=1,EE,200A0164,extended,24C6D048 //"eqsetup"
+
+[Menus\Gameplay\Equipment\Enable Equipment Menu (Ver 2)\ENABLE ONE\Modify]
+author=YukiXXL
+description=Start with EqModify, like in offline.
+patch=1,EE,200A015C,extended,24A5BB90 //"GuiEquipmentModify"
+patch=1,EE,200A0164,extended,24C6BBA8 //"eqmodify"
 
 [Menus\Gameplay\Equipment\Open Weapons]
 author=YukiXXL

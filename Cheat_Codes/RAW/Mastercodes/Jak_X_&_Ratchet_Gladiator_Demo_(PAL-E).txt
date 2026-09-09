@@ -9,7 +9,7 @@ main            : 9012AF80 0C049572
 //ENTRYPOINT = 001F3D3C
 sceSifSendCmd   : 90113550 0C044CFC
 scePad2Read     : 901B08A8 0C042889
-main            : 901FFDB4 0C0428F6
+main            : 901F4184 0C07AA33
 
 "Ratchet: Gladiator Demo (PAL-E) /ID RATCHETD.ELF"
 //ELF CRC=C6505799
