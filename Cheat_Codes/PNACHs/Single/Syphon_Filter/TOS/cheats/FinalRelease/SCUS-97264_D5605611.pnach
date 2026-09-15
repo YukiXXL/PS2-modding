@@ -455,34 +455,34 @@ description=ENABLE FIRST!
 patch=1,EE,20149AF0,extended,44826000
 
 [Gameplay\NPC\Set Skill Level\to 0.5]
-patch=1,EE,20149AE8,extended,3c023f00
+patch=1,EE,20149AE8,extended,3C023F00
 
 [Gameplay\NPC\Set Skill Level\to 1.0]
-patch=1,EE,20149AE8,extended,3c023f80
+patch=1,EE,20149AE8,extended,3C023F80
 
 [Gameplay\NPC\Set Skill Level\to 1.5]
-patch=1,EE,20149AE8,extended,3c023fc0
+patch=1,EE,20149AE8,extended,3C023FC0
 
 [Gameplay\NPC\Set Skill Level\to 2.0]
-patch=1,EE,20149AE8,extended,3c024000
+patch=1,EE,20149AE8,extended,3C024000
 
 [Gameplay\NPC\Set Skill Level\to 2.5]
-patch=1,EE,20149AE8,extended,3c024020
+patch=1,EE,20149AE8,extended,3C024020
 
 [Gameplay\NPC\Set Skill Level\to 3.0]
-patch=1,EE,20149AE8,extended,3c024040
+patch=1,EE,20149AE8,extended,3C024040
 
 [Gameplay\NPC\Set Skill Level\to 3.5]
-patch=1,EE,20149AE8,extended,3c024060
+patch=1,EE,20149AE8,extended,3C024060
 
 [Gameplay\NPC\Set Skill Level\to 4.0]
-patch=1,EE,20149AE8,extended,3c024080
+patch=1,EE,20149AE8,extended,3C024080
 
 [Gameplay\NPC\Set Skill Level\to 4.5]
-patch=1,EE,20149AE8,extended,3c024090
+patch=1,EE,20149AE8,extended,3C024090
 
 [Gameplay\NPC\Set Skill Level\to 5.0]
-patch=1,EE,20149AE8,extended,3c0240a0
+patch=1,EE,20149AE8,extended,3C0240A0
 
 // - WEATHER
 
@@ -741,6 +741,33 @@ patch=1,EE,002C0E3C,extended,902221C4
 
 // -- GAMEPLAY
 
+// --- PAUSE GAME
+[Mods\Fake Multiplayer\Gameplay\Time continues on Pause\Always]
+author=YukiXXL
+patch=1,EE,2013147C,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Time continues on Pause\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,0013147C,extended,902221C4
+
+// --- SHOW CODENAME
+[Mods\Fake Multiplayer\Gameplay\Show Codename HUD\Always]
+author=YukiXXL
+patch=1,EE,2045E33C,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Show Codename HUD\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,0045E33C,extended,902221C4
+
+// --- QUICKCHAT
+[Mods\Fake Multiplayer\Gameplay\Enable Quickchat\Always]
+author=YukiXXL
+patch=1,EE,20464D44,extended,24020001
+
+[Mods\Fake Multiplayer\Gameplay\Enable Quickchat\Based on "FakeMP"]
+author=YukiXXL
+patch=1,EE,00464D44,extended,902221C4
+
 // --- ENABLE ONLINE OBJECTIVES
 [Mods\Fake Multiplayer\Gameplay\Enable online objectives + dialogues\Always]
 author=YukiXXL
@@ -787,33 +814,6 @@ patch=1,EE,00171894,extended,902221C4
 [Mods\Fake Multiplayer\Gameplay\Enable Buddy Climb\Change Animation]
 author=YukiXXL
 patch=1,EE,0018D734,extended,24030031
-
-// --- QUICKCHAT
-[Mods\Fake Multiplayer\Gameplay\Enable Quickchat\Always]
-author=YukiXXL
-patch=1,EE,20464D44,extended,24020001
-
-[Mods\Fake Multiplayer\Gameplay\Enable Quickchat\Based on "FakeMP"]
-author=YukiXXL
-patch=1,EE,00464D44,extended,902221C4
-
-// --- SHOW CODENAME
-[Mods\Fake Multiplayer\Gameplay\Show Codename HUD\Always]
-author=YukiXXL
-patch=1,EE,2045E33C,extended,24020001
-
-[Mods\Fake Multiplayer\Gameplay\Show Codename HUD\Based on "FakeMP"]
-author=YukiXXL
-patch=1,EE,0045E33C,extended,902221C4
-
-// --- PAUSE GAME
-[Mods\Fake Multiplayer\Gameplay\Time continues during Pause\Always]
-author=YukiXXL
-patch=1,EE,2013147C,extended,24020001
-
-[Mods\Fake Multiplayer\Gameplay\Time continues during Pause\Based on "FakeMP"]
-author=YukiXXL
-patch=1,EE,0013147C,extended,902221C4
 
 // --- SKIN
 [Mods\Fake Multiplayer\Gameplay\Bonus Missions\Skin based on codename\Always]
