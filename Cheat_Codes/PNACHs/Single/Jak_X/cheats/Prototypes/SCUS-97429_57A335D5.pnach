@@ -10,6 +10,11 @@ patch=1,EE,109E1698,extended,002C8561
 patch=1,EE,109E1AB8,extended,002C8CB1
 patch=1,EE,109E1AC0,extended,002C8561
 
+[Fixes\Northern Tour Crash]
+description=Fixes 'tpage' wrong pointer
+patch=1,EE,E001002D,extended,002C9D04
+patch=1,EE,202C9A3C,extended,00000000
+
 // ADDONS
 
 [Addons\Extended Music\Part 1]
@@ -29,20 +34,21 @@ patch=1,EE,602D048C,extended,0069646E
 patch=1,EE,00020002,extended,000071F8
 patch=1,EE,00000008,extended,00000000
 
-[Addons\Extended Music\Part 2]
-description=Adds the rest.
+[Addons\Extended Music\Part 2\Add Strings]
 patch=1,EE,400A0100,extended,000D0004
 patch=1,EE,002E82A4,extended,00000000
 //3 words
 //ass
-patch=1,EE,000A0104,extended,00000003
+patch=1,EE,200A0104,extended,00000003
 patch=1,EE,200A0108,extended,00737361
 //run
-patch=1,EE,000A0114,extended,00000003
+patch=1,EE,200A0114,extended,00000003
 patch=1,EE,200A0118,extended,006E7572
 //4 words
 patch=1,EE,400A0124,extended,00030004
 patch=1,EE,00000004,extended,00000000
+patch=1,EE,400A012C,extended,00030004
+patch=1,EE,00000000,extended,00000000
 //bird
 patch=1,EE,200A0128,extended,64726962
 //flat
@@ -54,34 +60,35 @@ patch=1,EE,400A0154,extended,00040004
 patch=1,EE,00000005,extended,00000000
 //angle
 patch=1,EE,200A0158,extended,6C676E61
-patch=1,EE,000A015C,extended,00000065
+patch=1,EE,200A015C,extended,00000065
 //flat2
 patch=1,EE,200A0168,extended,74616C66
-patch=1,EE,000A016C,extended,00000032
+patch=1,EE,200A016C,extended,00000032
 //harsh
 patch=1,EE,200A0178,extended,73726168
-patch=1,EE,000A017C,extended,00000068
+patch=1,EE,200A017C,extended,00000068
 //touch
 patch=1,EE,200A0188,extended,63756F74
-patch=1,EE,000A018C,extended,00000068
+patch=1,EE,200A018C,extended,00000068
 //6 words
 patch=1,EE,400A0194,extended,00030004
 patch=1,EE,00000006,extended,00000000
 //frozen
 patch=1,EE,200A0198,extended,7A6F7266
-patch=1,EE,100A019C,extended,00006E65
+patch=1,EE,200A019C,extended,00006E65
 //reborn
 patch=1,EE,200A01A8,extended,6F626572
-patch=1,EE,100A01AC,extended,00006E72
+patch=1,EE,200A01AC,extended,00006E72
 //touch2
 patch=1,EE,200A01B8,extended,63756F74
-patch=1,EE,100A01BC,extended,00003268
+patch=1,EE,200A01BC,extended,00003268
 //7 words
 //theater
-patch=1,EE,000A01C4,extended,00000007
+patch=1,EE,200A01C4,extended,00000007
 patch=1,EE,200A01C8,extended,61656874
 patch=1,EE,200A01CC,extended,00726574
-//pointers
+
+[Addons\Extended Music\Part 2\Add Pointers]
 patch=1,EE,602D048C,extended,000A0104
 patch=1,EE,00020001,extended,00007150
 patch=1,EE,602D048C,extended,000A0114
@@ -108,18 +115,18 @@ patch=1,EE,602D048C,extended,000A01B4
 patch=1,EE,00020001,extended,0000717C
 patch=1,EE,602D048C,extended,000A01C4
 patch=1,EE,00020001,extended,00007180
-//function
-patch=1,EE,E00A1825,extended,00BE3E38
+
+[Addons\Extended Music\Part 2\Add Function]
+patch=1,EE,E009C4AC,extended,00BE3E4C
 patch=1,EE,00BE3D18,extended,24040010
-patch=1,EE,00BE3DB4,extended,14640021
+patch=1,EE,00BE3DB4,extended,1464001E
 patch=1,EE,20BE3DF0,extended,24210001
-patch=1,EE,20BE3DF4,extended,1461000E
-patch=1,EE,20BE3E0C,extended,02E7382D
-patch=1,EE,20BE3E34,extended,1000FFEE
-patch=1,EE,20BE3E38,extended,64E70004
-patch=1,EE,20BE3E3C,extended,24010002
-patch=1,EE,20BE3E40,extended,1000FFEB
-patch=1,EE,20BE3E44,extended,64077150
+patch=1,EE,20BE3DF4,extended,14610010
+patch=1,EE,20BE3E0C,extended,00000000
+patch=1,EE,20BE3E30,extended,24010002
+patch=1,EE,20BE3E34,extended,66E7714C
+patch=1,EE,20BE3E38,extended,1000FFED
+patch=1,EE,20BE3E3C,extended,24E70004
 
 [Addons\Hidden\Enable Mongoose]
 patch=1,EE,E0030001,extended,002CC77C
