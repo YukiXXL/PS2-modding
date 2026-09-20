@@ -1,0 +1,151 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+0014fa80:
+.undef	indata
+0014fa88:
+.undef	ENTRYPOINT
+00323dcc:
+.undef	main
+0035c6a0:
+.undef	Exit
+
+#	CHARACTER
+004fee38:
+.word	Badger
+
+#	GAME
+001eb950:
+.undef	Fun_SetArenaID
+
+00203210:
+.undef	Fun_CameraZooms
+00203238:
+.undef	Camera 1 offset Y	;f=60
+.undef
+.undef	Camera 0 Rotation Y	;HEX=7500
+.undef	Camera All Rotation Y	;f=-25
+.undef
+.undef	Camera 1 Rotation Y	;HEX=10000
+.undef	Camera 0 Zoom	;f=170
+.undef
+.undef	Camera 2 Rotation Y	;HEX=12000
+.undef	Camera 1 Zoom	;f=340
+.undef
+.undef	Camera 2 Zoom	;f=450
+.undef
+.undef	Camera 0 Offset Y	;f=90
+.undef
+.undef	Camera 2 Offset Y	;f=150
+.undef
+.undef	Camera 0 Rotation Y	;f=40
+.undef
+.undef	Camera 1 Rotation Y	;f=20
+.undef
+.undef	Camera 2 Rotation Y	;f=-20
+.undef
+.undef	Camera All Zoom	;f=-1
+.undef
+.undef	save Cam 0 Rotation Y
+.undef	save Cam 1 Rotation Y
+.undef	save Cam 2 Rotation Y
+.undef	save Cam 0 Zoom
+.undef	save Cam 1 Zoom
+.undef	save Cam 2 Zoom
+.undef	save Cam 0 Offset Y
+.undef	save Cam 1 Offset Y
+.undef	save Cam 2 Offset Y
+.undef	save Cam 0 Rotation Y
+.undef	save Cam 1 Rotation Y
+.undef	save Cam 2 Rotation Y
+.undef	save Cam All Rotation Y
+.undef	save Cam All Zoom
+.undef	save Cam All Offset Y
+.undef	save Cam All Rotation Y
+
+00304bc8:
+.undef	Fun_PreLoad
+003056cc:
+.undef	Fun_GetKill
+
+004d8ae0:
+.word	numOfPlayers
+
+004f7110:
+.word	PVP_ArenaLevelID
+.word
+.word
+.word	isVS
+.word	isArena
+.word	isOnline
+
+008e7340:
+.byte
+.byte
+.byte
+.byte	NextArenaID
+
+#	LEVELS
+00503798:
+.word	Levels PVE Arenas
+005037b8:
+.word	Levels PVP Arenas
+
+#	MENUS
+001e08f0:
+.undef	Menu_Frontend
+
+0053d050:
+.word	Menu_Functions
+001e15f8:
+.undef	Menu_MainMenu
+001e17e8:
+.undef	Menu_NewGame
+001e1888:
+.undef	Menu_Multiplayer
+001e18e8:
+.undef	Menu_GameMode
+
+004f6b78:
+.word	Menu_ID
+004f6b7c:
+.word	Menu_Pointer
+
+004f6b88:
+.word	Menu Main Menu
+004f6bd8:
+.word	Menu Demo
+004f6bf8:
+.word	Menu Start New Game
+004f6c28:
+.word	Menu MultiPlayer
+004f6c68:
+.word	Menu SinglePlayer
+004f6cd8:
+.word	Menu Missions
+004f6db8:
+.word	Menu Netplay
+004f6de8:
+.word	Menu Number of Players
+004f6e38:
+.word	Menu Difficulties
+004f6e88:
+.word	Menu Options
+
+
+#	Undefined Strings
+0053d008:
+.byte	"vs"
+
+005571b0:
+.byte	"Adv."
+005571f8:
+.byte	"Leg."
+00557200:
+.byte	"Epic"
+00557208:
+.byte	"5"
+00557210:
+.byte	"10"
+00557218:
+.byte	"25"

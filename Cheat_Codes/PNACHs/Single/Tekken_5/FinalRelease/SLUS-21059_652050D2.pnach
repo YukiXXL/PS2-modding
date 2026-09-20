@@ -36,6 +36,10 @@ patch=1,EE,203E4638,extended,FFFFFFFF
 author=gamehacking.org
 patch=1,EE,203E4568,extended,FFFFFFFF
 
+[Cheats\Unlock Devil Jin]
+author=YukiXXL
+patch=1,EE,003E5638,extended,00000002
+
 [Cheats\Unlock all movies]
 author=gamehacking.org
 patch=1,EE,203E4570,extended,FFFFFFFF

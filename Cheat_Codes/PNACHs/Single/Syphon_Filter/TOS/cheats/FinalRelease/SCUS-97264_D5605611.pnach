@@ -413,10 +413,12 @@ patch=1,EE,20330BF0,extended,2402FFFF
 // - NPCs
 
 [Gameplay\NPC\Disable script "AddAwarenessOfPlayers"]
+author=YukiXXL
 description=For the dialogue in C1, train station where the last sample is.
 patch=1,EE,20149434,extended,00000000
 
 [Gameplay\NPCs\Remove Invulnerability from friendly]
+author=YukiXXL
 description=Removes invulnerability from NPCs (Imani, Lian, Stone, Gabe)(Host).
 patch=1,EE,20148F88,extended,0000102D //SetNotGasable
 patch=1,EE,20148FB8,extended,0000102D //SetNotTaserable
@@ -434,6 +436,7 @@ description=Disables auto-killing (Host).
 patch=1,EE,20149FC4,extended,00000000
 
 [Gameplay\NPCs\Body is pickable and has disguise]
+author=YukiXXL
 patch=1,EE,2014F868,extended,24020101
 patch=1,EE,2014F86C,extended,A6023468
 
@@ -450,38 +453,56 @@ patch=1,EE,001B433C,extended,1440000E
 
 // -- SET SKILL LEVEL
 
+[Gameplay\NPC\Set Skill Level\Go for the head]
+author=YukiXXL
+description=OPTIONAL!
+patch=1,EE,001599D0,extended,10000002
+patch=1,EE,201599DC,extended,0000382D
+patch=1,EE,201599E4,extended,AE47011C
+
 [Gameplay\NPC\Set Skill Level]
+author=YukiXXL
 description=ENABLE FIRST!
 patch=1,EE,20149AF0,extended,44826000
 
 [Gameplay\NPC\Set Skill Level\to 0.5]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C023F00
 
 [Gameplay\NPC\Set Skill Level\to 1.0]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C023F80
 
 [Gameplay\NPC\Set Skill Level\to 1.5]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C023FC0
 
 [Gameplay\NPC\Set Skill Level\to 2.0]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C024000
 
 [Gameplay\NPC\Set Skill Level\to 2.5]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C024020
 
 [Gameplay\NPC\Set Skill Level\to 3.0]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C024040
 
 [Gameplay\NPC\Set Skill Level\to 3.5]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C024060
 
 [Gameplay\NPC\Set Skill Level\to 4.0]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C024080
 
 [Gameplay\NPC\Set Skill Level\to 4.5]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C024090
 
 [Gameplay\NPC\Set Skill Level\to 5.0]
+author=YukiXXL
 patch=1,EE,20149AE8,extended,3C0240A0
 
 // - WEATHER
@@ -598,7 +619,16 @@ author=1UP
 patch=1,EE,2044B7A0,extended,03E00008
 patch=1,EE,2044B7A4,extended,00000000
 
-[Online\Enable All Missions]
+[Online\Number of Min-Max agents is 1-8]
+author=YukiXXL
+patch=1,EE,002A159C,extended,24050001
+patch=1,EE,002A15B4,extended,24060008
+
+[Online\Start with only one player]
+author=YukiXXL
+patch=1,EE,002A3AE0,extended,28410001
+
+[Online\Missions\Enable All]
 author=YukiXXL
 description=Play Solo Missions Online.
 //All missions online
@@ -630,14 +660,12 @@ patch=1,EE,1033E678,extended,8C44B7A4
 patch=1,EE,2033EAE0,extended,3C020049
 patch=1,EE,1033EAE8,extended,8C45B7A4
 
-[Online\Number of Min-Max agents is 1-8]
+[Online\Missions\Disable Level Reset]
 author=YukiXXL
-patch=1,EE,002A159C,extended,24050001
-patch=1,EE,002A15B4,extended,24060008
-
-[Online\Start with only one player]
-author=YukiXXL
-patch=1,EE,002A3AE0,extended,28410001
+description=Workaround for Bonus Missions.
+patch=1,EE,2012F6E8,extended,00000000 //"ResetLevel"
+patch=1,EE,201485E8,extended,00000000 //"ResetNpc"
+patch=1,EE,203DFB08,extended,00000000 //"ClearSchedules"
 
 // MODS
 
@@ -893,12 +921,14 @@ patch=1,EE,20494178,extended,00000003
 // - PVP
 
 [Mods\PVP\Friendly Fire ON]
+author=YukiXXL
 patch=1,EE,20188A8C,extended,0000102D
 patch=1,EE,20265598,extended,0000102D
 patch=1,EE,201415D8,extended,0000102D
 patch=1,EE,2014191C,extended,0000102D
 
 [Mods\PVP\Targetable]
+author=YukiXXL
 patch=1,EE,202743A4,extended,24020000 //Turn Blue to Green
 patch=1,EE,2022CBD4,extended,24020000 //No wallhack
 //as a host
@@ -908,5 +938,6 @@ patch=1,EE,2016A794,extended,01435025
 patch=1,EE,2016A7A4,extended,01435025
 
 [Mods\PVP\Everyone Yellow]
+author=YukiXXL
 description=Just in case if the upper doesn't work.
 patch=1,EE,203CC938,extended,24020001
