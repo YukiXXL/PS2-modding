@@ -46,7 +46,7 @@
 .word	Player2_CharacterID
 .byte	Player1_CharacterCostume
 .byte	Player2_CharacterCostume
-.byte
+.byte	PartyMode_Players
 .byte	Level_ID
 
 002f4830:
@@ -75,7 +75,7 @@
 .undef	Load Game
 
 001b05f0:
-.undef	Fun_DisableChar
+.undef	Fun_DisableUnlockable
 
 001b07c0:
 .undef	Fun_LevelCheck
@@ -95,6 +95,19 @@
 .undef	Levels_None
 002eb8f0:
 .word	Levels_GameMode
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
 
 0030f920:
 .word	Menu_Current

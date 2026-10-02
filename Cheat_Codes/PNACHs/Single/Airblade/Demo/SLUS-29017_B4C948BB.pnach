@@ -1,5 +1,12 @@
 gametitle=Airblade (Demo) (NTSC-U)
 
+// CHEATS
+
+[Cheats\Enable all Unlockables]
+author=YukiXXL
+description=Riders + Stunt Attack. Other riders missing model (crash)!
+patch=1,EE,201B05F4,extended,24020001
+
 // MENUS
 
 [Menus\Any menu is select-able]
@@ -59,13 +66,6 @@ patch=1,EE,2019B81C,extended,A202000F
 patch=1,EE,001308D0,extended,24030000
 patch=1,EE,001308F0,extended,24030000
 
-// - RIDERS
-
-[Menus\Riders\Enable all riders]
-author=YukiXXL
-description=Non-present crash the game!
-patch=1,EE,201B05F4,extended,24020001
-
 // - P1 ALWAYS AS
 
 [Menus\Riders\Player 1\Always As\Ethan]
@@ -95,3 +95,7 @@ patch=1,EE,20131938,extended,AE020004
 [Gameplay\Multiplayer\60 FPS]
 author=YukiXXL
 patch=1,EE,0012F804,extended,24040000
+
+[Gameplay\Multiplayer\Enable SP objects]
+author=YukiXXL
+patch=1,EE,2023E828,extended,24020001

@@ -1,0 +1,52 @@
+gametitle=Airblade Final Release (PAL-E)
+
+// CHEATS
+[Cheats\All Levels And Stunt Attacks Are Unlocked]
+author=codejunkies
+patch=1,EE,20327CB8,extended,00000001
+patch=1,EE,20327CD0,extended,00000001
+patch=1,EE,20327CE8,extended,00000001
+patch=1,EE,20327D00,extended,00000001
+patch=1,EE,20327D18,extended,00000001
+
+[Cheats\Unlock All Levels]
+author=YukiXXL
+description=for Score Attack on Training
+patch=1,EE,00327C88,extended,00000001
+
+[Cheats\Unlock All Levels (Alternative)]
+author=YukiXXL
+description=for Score Attack on Training
+patch=1,EE,002F1C64,extended,00000001
+
+// MENUS
+
+// - LEVELS
+
+[Menus\Levels\Enable all levels]
+author=YukiXXL
+description=Does not save to MC!
+patch=1,EE,402F01B0,extended,000E0001
+patch=1,EE,001B51F8,extended,00000000
+
+[Menus\Levels\Enable Hidden Training level]
+author=YukiXXL
+patch=1,EE,001A2EB0,extended,24100000
+patch=1,EE,001B4CC0,extended,24110000
+patch=1,EE,201B5050,extended,10000004
+
+// GAMEPLAY
+
+[Gameplay\Multiplayer\Always enabled]
+author=YukiXXL
+description=WARNING! SP GAME MODES CRASH!
+patch=1,EE,201331B4,extended,38420005
+patch=1,EE,201331B8,extended,AE020004
+
+[Gameplay\Multiplayer\60 FPS]
+author=YukiXXL
+patch=1,EE,00131084,extended,24040000
+
+[Gameplay\Multiplayer\Enable SP objects]
+author=YukiXXL
+patch=1,EE,202431F8,extended,24020001
