@@ -12,7 +12,10 @@
 
 #	CHARACTER
 004fee38:
-.word	Badger
+.word	char_Badger
+
+004ffd38:
+.word	char_DragonDozekar
 
 #	GAME
 001eb950:
@@ -62,6 +65,11 @@
 .undef	save Cam All Zoom
 .undef	save Cam All Offset Y
 .undef	save Cam All Rotation Y
+
+00244e4c:
+.undef	Fun_SummonBadger
+00310940:
+.undef	Summon Badger
 
 00304bc8:
 .undef	Fun_PreLoad

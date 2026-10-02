@@ -1,0 +1,49 @@
+- PROTOTYPE -
+
+"Ratchet: Deadlocked Review (12 Sep 2005) (NTSC-U) /ID SCUS_974.65"
+//ELF CRC=F436BAFF
+//ENTRYPOINT = 00157668
+sceSifSendCmd   : 90129A80 0C04A648
+scePadRead      : 9013BBF8 0C0468DC
+main            : 90157E00 0C04BC18
+
+"Ratchet: Deadlocked Review (12 Sep 2005) (PAL-E) /ID SCES_532.85"
+//ELF CRC=8A22E23E
+//ENTRYPOINT = 00159238
+sceSifSendCmd   : 90129A00 0C04A628
+scePadRead      : 9013D7F0 0C0468BC
+main            : 90159AE4 0C04BC08
+
+- DEMO -
+
+"Ratchet: Deadlocked Demo (NTSC-U) /ID SCUS_974.85"
+//ELF CRC=D301186D
+//ENTRYPOINT = 00156180
+sceSifSendCmd   : 90129780 0C04A588
+scePadRead      : 9013CEB0 0C046874
+main            : 90156624 0C04BAC8
+
+- BETA -
+
+"Ratchet: Deadlocked Multiplayer Beta (NTSC-U) /ID SCUS_974.87"
+//ELF CRC=BDF8A887
+//ENTRYPOINT = 001575F0
+sceSifSendCmd   : 90129980 0C04A608
+scePadRead      : 9013CF30 0C0468F4
+main            : 90157BBC 0C04BB08
+
+- RETAIL -
+
+"Ratchet: Deadlocked (NTSC-U) /ID SCUS_974.65"
+//ELF CRC=9BFBCD42
+//ENTRYPOINT = 00800008
+sceSifSendCmd   : 90129B40 0C04A678
+scePadRead      : 9013BA78 0C0468DC
+main            : 90157C80 0C04BBB8
+
+"Ratchet: Gladiator (PAL-E) /ID SCES_532.85"
+//ELF CRC=D697D204
+//ENTRYPOINT = 00800008
+sceSifSendCmd   : 90129B40 0C04A678
+scePadRead      : 9013BA78 0C0468DC
+main            : 90157C80 0C04BBB8

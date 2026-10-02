@@ -1,0 +1,103 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+0022e5d0:
+.undef	indata
+0022e5d8:
+.undef	ENTRYPOINT
+00190d70:
+.undef	_main
+
+#	GAMEPLAY
+001308d0:
+.undef	Fun_DisableMovement
+001308e0:
+.undef	Fun_DisableMovement
+
+00131910:
+.undef	Fun_LoadGameMode
+00131990:
+.undef	is not Multiplayer
+
+002589a0:
+.undef	Fun_FrameRate
+
+#	- SCREEN
+00220b00:
+.undef	Screen_Single	;Story
+
+00222540:
+.undef	Screen_Multi	;Score Attack
+
+#	GLOBAL
+002f4770:
+.word	Players_Number_Write
+002f4780:
+.word	Players_Valid_Write
+
+70003fc0:
+.word	Players_Number_Read
+70003fd0:
+.word	Players_Valid_Read
+
+002f4810:
+.word	GameMode_ID
+.word	Player1_CharacterID
+.word	Player2_CharacterID
+.byte	Player1_CharacterCostume
+.byte	Player2_CharacterCostume
+.byte
+.byte	Level_ID
+
+002f4830:
+.word	SplitScreen_Style	;Horizontal, Vertical - 0,1 = Normal ; 2,3 = Wide
+
+002f486c:
+.word	DisablePlayerMovement
+.undef
+.undef
+.word	DisablePlayerMovement
+
+#	MENU
+00193ab0:
+.undef	Fun_SaveNextMenu
+
+0019b610:
+.undef	SinglePlayer_Menu
+0019b7a0:
+.undef	Load Game
+0019b7e4:
+.undef	Story Mode
+
+0019edb0:
+.undef	MultiPlayer_Menu
+0019efa0:
+.undef	Load Game
+
+001b05f0:
+.undef	Fun_DisableChar
+
+001b07c0:
+.undef	Fun_LevelCheck
+001b07f4:
+.undef	Levels_StoryMode
+001b0820:
+.undef	Levels_DowntownOnly
+001b0834:
+.undef	Levels_Freestyle
+001b088c:
+.undef	Levels_StuntAttack
+001b08a0:
+.undef	Levels_ScoreAttack
+001b08f0:
+.undef	Levels_All
+.undef
+.undef	Levels_None
+002eb8f0:
+.word	Levels_GameMode
+
+0030f920:
+.word	Menu_Current
+.word
+.word	Menu_Next
+.word	Menu_Previous

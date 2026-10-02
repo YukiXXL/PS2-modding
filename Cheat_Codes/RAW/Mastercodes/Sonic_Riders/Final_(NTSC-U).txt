@@ -1,6 +1,0 @@
-"Sonic Riders /ID SLUS_213.31"
-//ELF CRC=B44896B7
-//ENTRYPOINT = 00100008
-sceSifSendCmd   : 90105850 0C0415BC
-scePadRead      : 9010F0D0 0C0DFA12
-main            : 90154914 0C081278

@@ -1,0 +1,31 @@
+- PROTOTYPE -
+
+"Downhill Domination Alpha (NTSC-U) /ID SCUS_971.77"
+//ELF CRC=80E56BA3
+sceSifSendCmd   : 900A36D8 0C028D5E
+main            : 900A01EC 0C0287CC
+
+- DEMO -
+
+"Downhill Domination Demo (NTSC-U) /ID SCUS_973.29"
+//ELF CRC=D97F7209
+//ENTRYPOINT = 0010A008
+sceSifSendCmd   : 90259EE0 0C096760
+scePadRead      : 90242B24 0C09465C
+main            : 901B4AC8 0C07E3FE
+
+- RETAIL -
+
+"Downhill Domination (NTSC-U) /ID SCUS_971.77"
+//ELF CRC=5AE01D98
+//ENTRYPOINT = 0010A008
+sceSifSendCmd   : 9025C5A0 0C097110
+scePadRead      : 9024520C 0C095014
+main            : 901B6740 0C07EDB0
+
+"Downhill Domination (PAL-E) /ID SLES_522.02"
+//ELF CRC=73671EFD
+//ENTRYPOINT = 0010A008
+sceSifSendCmd   : 90262720 0C098970
+scePadRead      : 9024F104 0C096868
+main            : 901BA3A8 0C080396

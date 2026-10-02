@@ -1,0 +1,13 @@
+"Serious Sam: Next Encounter (NTSC-U) /ID SLUS_209.07"
+//ELF CRC=155466E8
+//ENTRYPOINT = 00100008
+sceSifSendCmd   : 9031F178 0C0C7C06
+scePadRead      : 902FA0EC 0C0C440D
+main            : 901002B4 0C0A87CC
+
+"Serious Sam: Next Encounter (PAL-E) /ID SLES_524.50"
+//ELF CRC=2CC13DED
+//ENTRYPOINT = 00100008
+sceSifSendCmd   : 9031FC78 0C0C7EC6
+scePadRead      : 902FABEC 0C0C46CD
+main            : 901002B4 0C0A8A8C

@@ -1,0 +1,56 @@
+- PROTOTYPE -
+
+"Jak X: Combat Racing Preview (NTSC-U) /ID SCUS_974.29"
+//ELF CRC=C417D919
+//ENTRYPOINT = 001001B4
+sceSifSendCmd   : 901151D0 0C04541C
+scePad2Read     : 901C8F88 0C042C69
+main            : 9025767C 0C093813
+
+- DEMO -
+
+"Jak X: Combat Racing Demo (NTSC-U) /ID SCUS_974.86"
+//ELF CRC=C417D919
+//ENTRYPOINT = 001F953C
+sceSifSendCmd   : 90113550 0C044CFC
+scePad2Read     : 901B4768 0C042889
+main            : 901F997C 0C07C0D3
+
+- PUBLIC BETA -
+
+"Jak X: Combat Racing Public Beta (NTSC-U) /ID SCUS_974.88"
+//ELF CRC=DA366A53
+//ENTRYPOINT = 001001B4
+sceSifSendCmd   : 901151D0 0C04541C
+scePad2Read     : 901C8F90 0C042C69
+main            : 9025766C 0C093813
+
+"Jak X: Combat Racing Public Beta (PAL-E) /ID TCES_532.86"
+//ELF CRC=C20596DB
+//ENTRYPOINT = 001001B4
+sceSifSendCmd   : 901151D0 0C04541C
+scePad2Read     : 901C8F90 0C042C69
+main            : 9025766C 0C093813
+
+- RETAIL -
+
+"Jak X: Combat Racing (NTSC-U) /ID SCUS_974.29"
+//ELF CRC=3091E6FB
+//ENTRYPOINT = 001001B4
+sceSifSendCmd   : 90117510 0C045CEC
+scePad2Read     : 901C7438 0C042C85
+main            : 902667D4 0C097373
+
+"Jak X: Combat Racing (PAL-E) /ID SCES_532.86"
+//ELF CRC=DF659E77
+//ENTRYPOINT = 001001B4
+sceSifSendCmd   : 90117510 0C045CEC
+scePad2Read     : 901C7438 0C042C85
+main            : 902667D4 0C097373
+
+"Jak X: Combat Racing Greatest Hits (NTSC-U) /ID SCUS_974.29"
+//ELF CRC=DBA28C59
+//ENTRYPOINT = 001001B4
+sceSifSendCmd   : 90117698 0C045D4E
+scePad2Read     : 901C7658 0C042C85
+main            : 90266A54 0C097413

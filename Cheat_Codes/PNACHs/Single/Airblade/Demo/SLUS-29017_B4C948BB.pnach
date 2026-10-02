@@ -1,0 +1,97 @@
+gametitle=Airblade (Demo) (NTSC-U)
+
+// MENUS
+
+[Menus\Any menu is select-able]
+author=YukiXXL
+patch=1,EE,2019F804,extended,0000102D
+patch=1,EE,2019F808,extended,AC820008
+
+[Menus\Enable ONLY working locked menus]
+author=YukiXXL
+//Single Player
+patch=1,EE,0019B754,extended,34420000
+patch=1,EE,0019B768,extended,34420000
+patch=1,EE,0019B77C,extended,34420000
+patch=1,EE,0019B790,extended,34420000
+//Multi Player
+patch=1,EE,0019EEAC,extended,34630000
+patch=1,EE,0019EEC0,extended,34630000
+patch=1,EE,0019EED4,extended,34630000
+patch=1,EE,0019EEE8,extended,34630000
+//Pause Menu
+// - Score Attack
+patch=1,EE,00195754,extended,34420000
+patch=1,EE,00195768,extended,34420000
+// - Story Mode
+patch=1,EE,001957F8,extended,34420000
+patch=1,EE,0019580C,extended,34420000
+patch=1,EE,00195820,extended,34420000
+//Options
+patch=1,EE,0019E304,extended,34420000
+//Additional Features
+patch=1,EE,0019F430,extended,34420000
+patch=1,EE,0030E588,extended,00000001
+patch=1,EE,0030E5A8,extended,00000001
+// - music player
+patch=1,EE,0030DE28,extended,00000001
+patch=1,EE,4030DE68,extended,00060008
+patch=1,EE,00000001,extended,00000000
+
+// - LEVELS
+
+[Menus\Levels\Enable all levels]
+author=YukiXXL
+description=Non-present crash the game!
+patch=1,EE,0019E858,extended,24100000
+patch=1,EE,201B07C0,extended,10000003
+patch=1,EE,402EB8F0,extended,000E0001
+patch=1,EE,001B08F0,extended,00000000
+
+[Menus\Levels\Downtown ONLY for all Modes]
+author=YukiXXL
+patch=1,EE,402EB8F0,extended,00070001
+patch=1,EE,001B0820,extended,00000000
+patch=1,EE,0019F020,extended,24020002 //Party Mode
+//Training Fix
+patch=1,EE,2019B81C,extended,A202000F
+// - Movement
+patch=1,EE,001308D0,extended,24030000
+patch=1,EE,001308F0,extended,24030000
+
+// - RIDERS
+
+[Menus\Riders\Enable all riders]
+author=YukiXXL
+description=Non-present crash the game!
+patch=1,EE,201B05F4,extended,24020001
+
+// - P1 ALWAYS AS
+
+[Menus\Riders\Player 1\Always As\Ethan]
+author=YukiXXL
+patch=1,EE,002F4814,extended,00000000
+
+[Menus\Riders\Player 1\Always As\Kat]
+author=YukiXXL
+patch=1,EE,002F4814,extended,00000001
+
+[Menus\Riders\Player 1\Always As\Costume\1]
+author=YukiXXL
+patch=1,EE,002F481C,extended,00000000
+
+[Menus\Riders\Player 1\Always As\Costume\2]
+author=YukiXXL
+patch=1,EE,002F481C,extended,00000001
+
+// GAMEPLAY
+
+[Gameplay\Multiplayer\Always enabled]
+author=YukiXXL
+description=WARNING! SP GAME MODES CRASH!
+patch=1,EE,20131934,extended,38420005
+patch=1,EE,20131938,extended,AE020004
+
+[Gameplay\Multiplayer\60 FPS]
+author=YukiXXL
+patch=1,EE,0012F804,extended,24040000

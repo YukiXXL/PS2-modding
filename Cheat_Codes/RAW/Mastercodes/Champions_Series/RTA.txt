@@ -1,0 +1,41 @@
+- PROTOTYPE -
+
+"Champions: Return to Arms Alpha (NTSC-U) /ID SLUS_209.73"
+//ELF CRC=791BD48B
+//ENTRYPOINT = 0014DCE0
+sceSifSendCmd   : 90346A58 0C0D1A3E
+main            : 9032B428 0C0E0C8E
+
+- DEMO -
+
+"Champions: Return to Arms Demo (NTSC-U) /ID SLUS_290.88"
+//ELF CRC=7B564230
+//ENTRYPOINT = 00100008
+main            : 901000D4 0C040092
+
+"Champions: Return to Arms Demo (NTSC-U) /ID CORE.ELF"
+//ELF CRC=C723B6C6
+//ENTRYPOINT = 0014DCA0
+sceSifSendCmd   : 9034BB98 0C0D2E8E
+main            : 90330428 0C0E21B6
+
+"Champions: Return to Arms Demo (NTSC-U) /ID SCE_DD.ELF"
+//ELF CRC=52BD4A42
+//ENTRYPOINT = 0010038C
+sceSifSendCmd   : 90101428 0C0404B2
+
+- RETAIL -
+
+"Champions: Return to Arms (NTSC-U) /ID SLUS_209.73"
+//ELF CRC=4028A55F
+//ENTRYPOINT = 0014FA88
+sceSifSendCmd   : 90355B18 0C0D566E
+scePadRead      : 903512D8 0C0ED7C3
+main            : 90323E10 0C0EB4C4
+
+"Champions: Return to Arms (PAL-E) /ID SLES_530.39"
+//ELF CRC=5C64E73A
+//ENTRYPOINT = 0014FA78
+sceSifSendCmd   : 90357418 0C0D5CAE
+scePadRead      : 90352BB0 0C0EDE03
+main            : 90325164 0C0EBB04
