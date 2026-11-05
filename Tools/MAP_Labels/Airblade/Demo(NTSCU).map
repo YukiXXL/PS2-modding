@@ -8,26 +8,84 @@
 00190d70:
 .undef	_main
 
+00131c30:
+.undef	GameOpen
+00131490:
+.undef	GameLoop
+00131a60:
+.undef	GameClose
+
 #	GAMEPLAY
 001308d0:
-.undef	Fun_DisableMovement
-001308e0:
-.undef	Fun_DisableMovement
+.undef	TsGameVoiceOverIsPlaying
+.undef
+.undef
+.undef
+.undef	TsGameVoiceOverPlay
 
+0016d8a0:
+.undef	TsResourceGetResource
+0016d9e0:
+.undef	TsResourceLoadStream
+
+00176d10:
+.undef	TsMenuGetGameParams
 00131910:
-.undef	Fun_LoadGameMode
+.undef	TsGameSetGameType
 00131990:
 .undef	is not Multiplayer
+001b06f0:
+.undef	TsProgressInitialiseNewExtras
+
+00131880:
+.undef	TsGameGetGameMode
+001318a0:
+.undef	TsGameModeChange
+
+0023e430:
+.undef	TsGameTypeStateChange
+0023e470:
+.undef	GameTypeStateChange
+
+0023e760:
+.undef	TsGameTypeStopSurfers
+.undef
+.undef
+.undef
+.undef	TsGameTypeCreateHud
+.undef
+.undef
+.undef
+.undef	TsGameTypeIsResourceAvailable
 
 002589a0:
-.undef	Fun_FrameRate
+.undef	TsVBlankSkip
 
-#	- SCREEN
-00220b00:
-.undef	Screen_Single	;Story
-
+#	Game Modes
 00222540:
-.undef	Screen_Multi	;Score Attack
+.undef	_TsGTScoreAttack2PTriggerApply
+
+#	- STORY
+0021ff00:
+.undef	TsGTStoryOpen
+00220360:
+.undef	_TsGTStoryUpdate
+00220240:
+.undef	_TsGTStoryPlayerAction
+0022d560:
+.undef	TsHudStoryCreate
+00220b00:
+.undef	_TsGTSoryApplyTrigger
+00220fc0:
+.undef	_TsGTStoryStateChange
+00220130:
+.undef	_TsGTStoryGetData
+0021ffd0:
+.undef	_TsGTSToryRestart
+00328a10:
+.word	_siGStoryInterface
+00328a40:
+.word	_gtGStory
 
 #	GLOBAL
 002f4770:
@@ -53,10 +111,10 @@
 .word	SplitScreen_Style	;Horizontal, Vertical - 0,1 = Normal ; 2,3 = Wide
 
 002f486c:
-.word	DisablePlayerMovement
+.word	GameVoiceOverPlaying
 .undef
 .undef
-.word	DisablePlayerMovement
+.word	GameVoiceOverPlaying
 
 #	MENU
 00193ab0:
@@ -75,10 +133,14 @@
 .undef	Load Game
 
 001b05f0:
-.undef	Fun_DisableUnlockable
+.undef	TsProgressIsExtraActive
+
+#	- LEVELS
+00191290:
+.undef	TsMenuItemMakeLevel
 
 001b07c0:
-.undef	Fun_LevelCheck
+.undef	TsProgressLevelStateGet
 001b07f4:
 .undef	Levels_StoryMode
 001b0820:

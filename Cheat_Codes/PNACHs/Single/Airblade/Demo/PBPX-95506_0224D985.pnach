@@ -1,0 +1,131 @@
+gametitle=Airblade (Demo) (PAL-E) (PlayStation 2 - Demo Disc 2001)
+
+// DEMO
+
+[Demo\Disable Demo Time]
+author=YukiXXL
+patch=1,EE,201324CC,extended,2403FFFF
+patch=1,EE,20132500,extended,2403FFFF
+
+[Demo\Disable Demo Sales]
+author=YukiXXL
+description=Restarts the game when Demo should be over.
+patch=1,EE,2022FAE0,extended,03E00008
+patch=1,EE,2022FAE4,extended,00000000
+
+// - SAVING
+
+[Demo\Saving\Enable Progression]
+author=YukiXXL
+description=TsProgressUserSettings
+patch=1,EE,20132460,extended,24040001
+patch=1,EE,201324A4,extended,24040001
+
+[Demo\Saving\Enable Save/Load Menus]
+author=YukiXXL
+patch=1,EE,0019E35C,extended,34420000
+patch=1,EE,0019E370,extended,34420000
+
+// CHEATS
+
+[Cheats\Enable all Unlockables]
+author=YukiXXL
+description=Riders + Stunt Attack. Other riders missing model (crash)!
+patch=1,EE,201B0164,extended,24020001
+
+// MENUS
+
+[Menus\Any menu is select-able]
+author=YukiXXL
+patch=1,EE,2019F940,extended,0000102D
+patch=1,EE,2019F944,extended,AC820008
+
+[Menus\Enable ONLY working locked menus]
+author=YukiXXL
+//Additional Features
+patch=1,EE,0019F504,extended,34420000
+patch=1,EE,0030E8A8,extended,00000001
+//Single Player
+patch=1,EE,0019B7F4,extended,34420000
+patch=1,EE,0019B808,extended,34420000
+patch=1,EE,0019B830,extended,34420000
+//Multi Player
+patch=1,EE,0019EF3C,extended,34630000
+patch=1,EE,0019EF50,extended,34630000
+patch=1,EE,0019EF64,extended,34630000
+patch=1,EE,0019EF78,extended,34630000
+//Pause Menu
+// - Score Attack
+patch=1,EE,001968C4,extended,34420000
+patch=1,EE,001968D8,extended,34420000
+// - Story Mode
+patch=1,EE,0019697C,extended,34420000
+patch=1,EE,00196990,extended,34420000
+patch=1,EE,001969A4,extended,34420000
+
+// - LEVELS
+
+[Menus\Levels\Enable all levels]
+author=YukiXXL
+description=Non-present crash the game!
+patch=1,EE,201B0330,extended,10000003
+patch=1,EE,402E6EB0,extended,000E0001
+patch=1,EE,001B0460,extended,00000000
+
+[Menus\Levels\Downtown ONLY for all Modes]
+author=YukiXXL
+patch=1,EE,402E6EB0,extended,00070001
+patch=1,EE,001B0390,extended,00000000
+patch=1,EE,0019F0AC,extended,24020002 //Party Mode
+
+[Menus\Levels\Enable Training]
+author=YukiXXL
+patch=1,EE,0019B81C,extended,34420000
+//Training Fix
+patch=1,EE,2019B8BC,extended,A202000F
+patch=1,EE,2023FAF0,extended,00000000 //Disable TsGameVoiceOverPlay
+
+// - P1 ALWAYS AS
+
+[Menus\Riders\Player 1\Always As\Ethan]
+author=YukiXXL
+patch=1,EE,002F1314,extended,00000000
+
+[Menus\Riders\Player 1\Always As\Kat]
+author=YukiXXL
+patch=1,EE,002F1314,extended,00000001
+
+[Menus\Riders\Player 1\Always As\Costume\1]
+author=YukiXXL
+patch=1,EE,002F131C,extended,00000000
+
+[Menus\Riders\Player 1\Always As\Costume\2]
+author=YukiXXL
+patch=1,EE,002F131C,extended,00000001
+
+// GAMEPLAY
+
+// - STORY
+
+[Gameplay\Story\Enable Helicopter scene]
+author=YukiXXL
+description=Cutscene does not exist!
+patch=1,EE,0021F504,extended,24050009
+patch=1,EE,0021F518,extended,24020000
+patch=1,EE,001B2038,extended,24420000 //Continue Game = Replays Level
+
+// - MULTIPLAYER
+
+[Gameplay\Multiplayer\Always enabled]
+author=YukiXXL
+description=WARNING! SP GAME MODES CRASH!
+patch=1,EE,20131BD4,extended,38420001
+patch=1,EE,20131BD8,extended,AE020004
+
+[Gameplay\Multiplayer\60 FPS]
+author=YukiXXL
+patch=1,EE,00130374,extended,24040000
+
+[Gameplay\Multiplayer\Enable SP objects]
+author=YukiXXL
+patch=1,EE,2023C5C8,extended,24020001
