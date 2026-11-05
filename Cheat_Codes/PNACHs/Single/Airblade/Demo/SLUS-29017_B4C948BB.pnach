@@ -16,10 +16,19 @@ patch=1,EE,2019F808,extended,AC820008
 
 [Menus\Enable ONLY working locked menus]
 author=YukiXXL
+//Options
+patch=1,EE,0019E304,extended,34420000
+//Additional Features
+patch=1,EE,0019F430,extended,34420000
+patch=1,EE,0030E588,extended,00000001
+patch=1,EE,0030E5A8,extended,00000001
+// - music player
+patch=1,EE,0030DE28,extended,00000001
+patch=1,EE,4030DE68,extended,00060008
+patch=1,EE,00000001,extended,00000000
 //Single Player
 patch=1,EE,0019B754,extended,34420000
 patch=1,EE,0019B768,extended,34420000
-patch=1,EE,0019B77C,extended,34420000
 patch=1,EE,0019B790,extended,34420000
 //Multi Player
 patch=1,EE,0019EEAC,extended,34630000
@@ -34,16 +43,6 @@ patch=1,EE,00195768,extended,34420000
 patch=1,EE,001957F8,extended,34420000
 patch=1,EE,0019580C,extended,34420000
 patch=1,EE,00195820,extended,34420000
-//Options
-patch=1,EE,0019E304,extended,34420000
-//Additional Features
-patch=1,EE,0019F430,extended,34420000
-patch=1,EE,0030E588,extended,00000001
-patch=1,EE,0030E5A8,extended,00000001
-// - music player
-patch=1,EE,0030DE28,extended,00000001
-patch=1,EE,4030DE68,extended,00060008
-patch=1,EE,00000001,extended,00000000
 
 // - LEVELS
 
@@ -60,11 +59,14 @@ author=YukiXXL
 patch=1,EE,402EB8F0,extended,00070001
 patch=1,EE,001B0820,extended,00000000
 patch=1,EE,0019F020,extended,24020002 //Party Mode
+
+[Menus\Levels\Enable Training]
+author=YukiXXL
+patch=1,EE,0019B77C,extended,34420000
 //Training Fix
 patch=1,EE,2019B81C,extended,A202000F
-// - Movement
-patch=1,EE,001308D0,extended,24030000
-patch=1,EE,001308F0,extended,24030000
+patch=1,EE,20241DA0,extended,00000000
+patch=1,EE,20241DA8,extended,00000000
 
 // - P1 ALWAYS AS
 
@@ -85,6 +87,17 @@ author=YukiXXL
 patch=1,EE,002F481C,extended,00000001
 
 // GAMEPLAY
+
+// - STORY
+
+[Gameplay\Story\Enable Helicopter scene]
+author=YukiXXL
+description=Cutscene does not exist!
+patch=1,EE,0022072C,extended,24050009
+patch=1,EE,00220740,extended,24020000
+patch=1,EE,001B25A8,extended,24420000 //Continue Game = Replays Level
+
+// - MULTIPLAYER
 
 [Gameplay\Multiplayer\Always enabled]
 author=YukiXXL

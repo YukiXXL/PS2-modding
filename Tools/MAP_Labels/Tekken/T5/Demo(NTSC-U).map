@@ -433,7 +433,7 @@
 .undef
 .undef	number of stages
 00129734:
-.undef	laod stage
+.undef	load stage
 .undef
 .undef	v0 = Stage
 

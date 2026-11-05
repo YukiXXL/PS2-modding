@@ -50,3 +50,12 @@ patch=1,EE,00131084,extended,24040000
 [Gameplay\Multiplayer\Enable SP objects]
 author=YukiXXL
 patch=1,EE,202431F8,extended,24020001
+
+// - CHARACTER
+[Gameplay\Character\Character picked stays for Training and Story]
+author=YukiXXL
+description=Choose a game mode where you pick a character, run it and Quit.
+patch=1,EE,2019FDD8,extended,00000000
+patch=1,EE,2019FDDC,extended,00000000
+patch=1,EE,2019FE2C,extended,00000000
+patch=1,EE,2019FE30,extended,00000000
