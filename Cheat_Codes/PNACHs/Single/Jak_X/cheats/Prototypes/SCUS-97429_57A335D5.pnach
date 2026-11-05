@@ -15,6 +15,11 @@ description=Fixes 'tpage' wrong pointer
 patch=1,EE,E001002D,extended,002C9D04
 patch=1,EE,202C9A3C,extended,00000000
 
+[Fixes\Vehicle Status in Exhibiton]
+description=Uses your saved Vehicle status
+patch=1,EE,602CA4A8,extended,10000025
+patch=1,EE,00020000,extended,00000000
+
 // ADDONS
 
 [Addons\Extended Music\Part 1]
@@ -47,14 +52,15 @@ patch=1,EE,200A0118,extended,006E7572
 //4 words
 patch=1,EE,400A0124,extended,00030004
 patch=1,EE,00000004,extended,00000000
-patch=1,EE,400A012C,extended,00030004
-patch=1,EE,00000000,extended,00000000
 //bird
 patch=1,EE,200A0128,extended,64726962
+patch=1,EE,200A012C,extended,00000000
 //flat
 patch=1,EE,200A0138,extended,74616C66
+patch=1,EE,200A013C,extended,00000000
 //heli
 patch=1,EE,200A0148,extended,696C6568
+patch=1,EE,200A014C,extended,00000000
 //5 words
 patch=1,EE,400A0154,extended,00040004
 patch=1,EE,00000005,extended,00000000
@@ -90,31 +96,31 @@ patch=1,EE,200A01CC,extended,00726574
 
 [Addons\Extended Music\Part 2\Add Pointers]
 patch=1,EE,602D048C,extended,000A0104
-patch=1,EE,00020001,extended,00007150
+patch=1,EE,00020000,extended,00007150
 patch=1,EE,602D048C,extended,000A0114
-patch=1,EE,00020001,extended,00007154
+patch=1,EE,00020000,extended,00007154
 patch=1,EE,602D048C,extended,000A0124
-patch=1,EE,00020001,extended,00007158
+patch=1,EE,00020000,extended,00007158
 patch=1,EE,602D048C,extended,000A0134
-patch=1,EE,00020001,extended,0000715C
+patch=1,EE,00020000,extended,0000715C
 patch=1,EE,602D048C,extended,000A0144
-patch=1,EE,00020001,extended,00007160
+patch=1,EE,00020000,extended,00007160
 patch=1,EE,602D048C,extended,000A0154
-patch=1,EE,00020001,extended,00007164
+patch=1,EE,00020000,extended,00007164
 patch=1,EE,602D048C,extended,000A0164
-patch=1,EE,00020001,extended,00007168
+patch=1,EE,00020000,extended,00007168
 patch=1,EE,602D048C,extended,000A0174
-patch=1,EE,00020001,extended,0000716C
+patch=1,EE,00020000,extended,0000716C
 patch=1,EE,602D048C,extended,000A0184
-patch=1,EE,00020001,extended,00007170
+patch=1,EE,00020000,extended,00007170
 patch=1,EE,602D048C,extended,000A0194
-patch=1,EE,00020001,extended,00007174
+patch=1,EE,00020000,extended,00007174
 patch=1,EE,602D048C,extended,000A01A4
-patch=1,EE,00020001,extended,00007178
+patch=1,EE,00020000,extended,00007178
 patch=1,EE,602D048C,extended,000A01B4
-patch=1,EE,00020001,extended,0000717C
+patch=1,EE,00020000,extended,0000717C
 patch=1,EE,602D048C,extended,000A01C4
-patch=1,EE,00020001,extended,00007180
+patch=1,EE,00020000,extended,00007180
 
 [Addons\Extended Music\Part 2\Add Function]
 patch=1,EE,E009C4AC,extended,00BE3E4C
