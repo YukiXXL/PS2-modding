@@ -5,11 +5,3 @@
 .undef	ENTRYPOINT
 00100bd4:
 .undef	main
-
-001f5940:
-.word	gameargs
-.word	gameargs
-
-00143290:
-.word	gameargs
-.word	gameargs

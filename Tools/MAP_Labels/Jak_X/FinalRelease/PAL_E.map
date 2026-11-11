@@ -1,15 +1,37 @@
 #	PS2 Memory Map
 #	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
 
-
-002e17f8:
+002e16f8:
 .word	Base Address
 .word	Base Address
 .word	Base Address	;#false
 .word	Base Address	;#true
 
+#	POINTERS
+002db1d8:
+.word	*net-world*	;Players stats
+
+002df240:
+.word	v-wpn-num-available
+002dd650:
+.word	v-wpn-get-mask
+002dfa78:
+.word	v-wpn-mask-selection-table!
+002dc644:
+.word	v-wpn-choose-random
+
+002e6948:
+.word	control-hook-player
+
+002da680:
+.word	*net-players*
+
+002dab68:
+.word	*edit-stored-network-account*
+
+
 #	BOOT
-00282f00:
+00282d80:
 .word	.data
 .word
 .word	MasterDebug
@@ -26,46 +48,46 @@
 .word
 .word
 .word	KernelLevel	;#f
-00282fb8:
+00282e38:
 .byte	Boot_Mode	;Launch Argument
 
 #	GAMEPLAY
-00486b74:
+00486a74:
 .byte	Car Performance presets
 
-00f65f44:
+00f65e94:
 .undef	Weapon Load
 
 #	- CPU
-00c2357c:
+00c234cc:
 .undef	Save "Player" ID
-00f1f9f4:
+00f1f944:
 .undef	Load player a1
-00f1fd48:
+00f1fc98:
 .undef	Load CPU a1
 
-00f64928:
+00f64878:
 .undef	CPU check Turbo Lock
-00f64b00:
+00f64a50:
 .undef	CPU check Nova
 
-00f20f50:
+00f20ea0:
 .undef	CPU stats
 
 #	- EVENTS
 
 #	-- GRAND PRIX
-00bd25ac:
+00bd24fc:
 .undef	is LastTask
-00e6d614:
+00e6d564:
 .undef	GP check
 
 #	- WEAPONS
-00f63af8:
+00f63a48:
 .undef	load GameMode
-00f63c04:
+00f63b54:
 .undef	is Left Weapon (1)
-00f63ca0:
+00f63bf0:
 .undef	is Right Weapon (2)
 
 #	MENUS
@@ -73,35 +95,35 @@
 #	- EVENTS
 
 #	-- CPU NUMBER
-00bcd1d8:
+00bcd128:
 .undef	Event_CPUNumber
 
-00bcd2dc:
+00bcd22c:
 .undef	is Time Attack
-00bcd344:
+00bcd294:
 .undef	is Artist
 .undef	check Game Mode
-00bcd3c8:
+00bcd318:
 .undef	is Sport Hunt
-00bcd3dc:
+00bcd32c:
 .undef	is Other GM
 .undef
 .undef
 .undef	is Circuit
 .undef
 .undef	Load CPU_num	;pointer address
-00bcd41c:
+00bcd36c:
 .undef	CPU set to MAX
-00bcd444:
+00bcd394:
 .undef	load MAX CPUs
-00bcd468:
+00bcd3b8:
 .undef	2nd Check
 .undef	is Death Race
 .undef
 .undef
 .undef
 .undef	is Rush Hour
-00bcd4a4:
+00bcd3f4:
 .undef	is Freeze Rally
 .undef
 .undef
@@ -111,133 +133,207 @@
 .undef
 .undef
 .undef	is Boss,Mizo GM
-00bcd4dc:
+00bcd42c:
 .undef	CPU_num = ZERO
 .undef
 .undef
 .undef	Vehicles MAX Limit
 
 #	-- EVENT ADVANCE OPTIONS
-013cb294:
+013cb1e4:
 .undef	Event_AdvanceOptions
 
-013cb2e0:
+013cb230:
 .undef	is Circuit
-013cb2f4:
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_Circuit
-013cb3a0:
+013cb2f0:
 .undef	AdvOpt_Circuit
 
-013cb560:
+013cb4b0:
 .undef	is TimeAttack
-013cb58c:
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_TimeAttack
-013cb638:
+013cb588:
 .undef	AdvOpt_TimeAttack
 
-013cb7f8:
+013cb748:
 .undef	is TurboDash
-013cb810:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_TurboDash
-013cb8bc:
+013cb80c:
 .undef	AdvOpt_TurboDash
 
-013cb954:
+013cb8a4:
 .undef	is FreezeRally
-013cb96c:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_FreezeRally
-013cba18:
+013cb968:
 .undef	AdvOpt_FreezeRally
 
-013cba9c:
+013cb9ec:
 .undef	is RushHour
-013cbab4:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_RushHour
-013cbb60:
+013cbab0:
 .undef	AdvOpt_RushHour
 
-013cbbf8:
+013cbb48:
 .undef	is DeathRace
-013cbc10:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_DeathRace
-013cbcbc:
+013cbc0c:
 .undef	AdvOpt_DeathRace
 
-013cbd54:
+013cbca4:
 .undef	is Deathmatch
-013cbd68:
+.undef
+.undef
+.undef
+.undef
 .undef	is SportHunt
-013cbd7c:
+.undef
+.undef
+.undef
+.undef
 .undef	is Collectathon
-013cbd90:
+.undef
+.undef
+.undef
+.undef
 .undef	is ArtifactRace
-013cbda4:
+.undef
+.undef
+.undef
+.undef
 .undef	is CTF
-013cbddc:
+013cbd2c:
 .undef	is Deathmatch
-013cbdf0:
+.undef
+.undef
+.undef
+.undef
 .undef	is Assassin
-013cbe10:
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_Arena
-013cbebc:
+013cbe0c:
 .undef	AdvOpt_Arena
 
-013cbf68:
+013cbeb8:
 .undef	is Collectathon
-013cbf80:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_Collectathon
-013cc02c:
+013cbf7c:
 .undef	AdvOpt_Collectathon
 
-013cc0d8:
+013cc028:
 .undef	is ArtifactRace
-013cc0f0:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_ArtifactRace
-013cc19c:
+013cc0ec:
 .undef	AdvOpt_ArtifactRace
 
-013cc25c:
+013cc1ac:
 .undef	is Assassin
-013cc274:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_Assassin
-013cc320:
+013cc270:
 .undef	AdvOpt_Assassin
 
-013cc444:
+013cc394:
 .undef	is CTF
-013cc45c:
+.undef
+.undef
+.undef
+.undef
+.undef
 .undef	AdvOpt_CTF
-013cc508:
+013cc458:
 .undef	AdvOpt_CTF
 
-013cc5dc:
+013cc52c:
 .undef	is OtherGM
-013cc5e8:
+.undef
+.undef
 .undef	AdvOpt_Other
-013cc694:
+013cc5e4:
 .undef	AdvOpt_Other
 
 #	-- GAME MODES
-00b60298:
-.word	GM_Freeze Rally
-00b60278:
-.word	GM_Rush Hour
-00b60268:
+00b60168:
 .word	GM_Time Trial
+.word
+.word
+.word
+.word	GM_Rush Hour
+.word
+.word
+.word
+.word	GM_Death Race
+.word
+.word
+.word
+.word	GM_Freeze Rally
 
 #	- SECRETS
-007b9bf0:
+007b9af0:
 .byte
 .byte	Mirrored
 .byte	Bad Weather
 .byte
 
 #	OTHER
-002f1800:
+002f1700:
 .word	false
 .word	true
 
-002f9924:
+002f9824:
 .word	#f
 .byte	"#f"
 .byte
@@ -249,76 +345,97 @@
 .byte	"#t"
 
 #	- DEFINED
-002f9804:
+002f9704:
 .word	string character number
 .byte	"*unknown-symbol-name*"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+
 
 #	LEVELS
 
 #	- ARENAS
 
 #	-- DESERT ARENA
-002f422c:
+002f412c:
 .word	LEVEL_DesertArena - Collectathon (desclct)	;value-ffff=level_pointer
-002f6a74:
+002f6974:
 .word	LEVEL_DesertArena - Reversi (desrev)	;value-ffff=level_pointer
-002ee698:
+002ee598:
 .word	LEVEL_DesertArena - Sport Hunt (deshunt)	;value-ffff=level_pointer
-002ee714:
+002ee614:
 .word	LEVEL_DesertArena - Sport Hunt (deshunt2)	;value-ffff=level_pointer
 
 #	-- DIRT STADIUM
-002eef60:
+002eee60:
 .word	LEVEL_DirtStadium - Collectathon (kcrsclct)	;value-ffff=level_pointer
 
 #	-- MAR COLISEUM
-002ee71c:
+002ee61c:
 .word	LEVEL_MarColiseum - Collectathon (coliclct)	;value-ffff=level_pointer
-002ee720:
+002ee620:
 .word	LEVEL_MarColiseum - Reversi (colirev)	;value-ffff=level_pointer
-002f6a10:
+002f6910:
 .word	LEVEL_MarColiseum - Sport Hunt (colhunt)(MISSING!)	;value-ffff=level_pointer
 
 #	- TRACKS
 
 #	-- EASTERN TOUR
-002ea5d0:
+002ea4d0:
 .word	LEVEL_EasternTour - Time Trial (hvtrtt)	;value-ffff=level_pointer
-002eff6c:
+002efe6c:
 .word	LEVEL_EasternTour - Freeze Rally (havttbox)	;value-ffff=level_pointer
-002eff70:
+002efe70:
 .word	LEVEL_EasternTour - Turbo Dash (havtfoot)	;value-ffff=level_pointer
 
 #	-- NORTHERN TOUR
-002ea5d4:
+002ea4d4:
 .word	LEVEL_NorthernTour - Time Trial (sptrtt)	;value-ffff=level_pointer
-002f0134:
+002f0034:
 .word	LEVEL_NorthernTour - Freeze Rally (spattbox)	;value-ffff=level_pointer
-002f0138:
+002f0038:
 .word	LEVEL_NorthernTour - Turbo Dash (spatfoot)	;value-ffff=level_pointer
 
 #	-- EASTERN TOUR
-002ea588:
+002ea488:
 .word	LEVEL_EasternTour - Time Trial (ictrtt)	;value-ffff=level_pointer
-002f63e8:
+002f62e8:
 .word	LEVEL_EasternTour - Freeze Rally (icettbox)	;value-ffff=level_pointer
-009e6ec4:
+009e6dc4:
 .word	LEVEL_EasternTour - Turbo Dash (icetfoot)	;value-ffff=level_pointer
 
 #	-- WESTERN TOUR
-002ea598:
+002ea498:
 .word	LEVEL_WesternTour - Time Trial (krtrtt)	;value-ffff=level_pointer
-002f5890:
+002f5790:
 .word	LEVEL_WesternTour - Freeze Rally (krattbox)	;value-ffff=level_pointer
-002f5888:
+002f5788:
 .word	LEVEL_WesternTour - Turbo Dash (kratfoot)	;value-ffff=level_pointer
 
 #	- OTHER
-002ee9c4:
+002ee8c4:
 .word	LEVEL_drone (DeathRace/RushHour)	;value-ffff=level_pointer
-002f0524:
+002f0424:
 .word	LEVEL_raceweap (StartLine)	;value-ffff=level_pointer
-002f84f4:
+002f83f4:
 .word	LEVEL_*unknown-symbol-name*	;value-ffff=level_pointer
 
 #	TASKS
@@ -328,7 +445,7 @@
 #	-- DESERT ARENA
 
 #	--- TAG
-00980f50:
+00980e50:
 .word	TASK_DESERT ARENA (TAG)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -383,12 +500,37 @@
 .byte
 .byte
 .byte
-00981014:
+00980f14:
 .word	string character number
 .byte	"desarena-king-of-hill-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- ARTIFACT
-00989560:
+00989460:
 .word	TASK_DESERT ARENA (ARTIFACT)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -443,7 +585,7 @@
 .byte
 .byte
 .byte
-00989650:
+00989550:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -467,9 +609,30 @@
 .word
 .word	string character number
 .byte	"desarena-artifact-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- DEATHMATCH
-0098ad40:
+0098ac40:
 .word	TASK_DESERT ARENA (DEATHMATCH)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -524,7 +687,7 @@
 .byte
 .byte
 .byte
-0098ae30:
+0098ad30:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -548,11 +711,34 @@
 .word
 .word	string character number
 .byte	"desarena-deathmatch-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	-- DIRT STADIUM
 
 #	--- TAG
-009803a0:
+009802a0:
 .word	TASK_DIRT STADIUM (TAG)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -607,12 +793,35 @@
 .byte
 .byte
 .byte
-00980464:
+00980364:
 .word	string character number
 .byte	"kcross-king-of-hill-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- ARTIFACT
-00989ee0:
+00989de0:
 .word	TASK_DIRT STADIUM (ARTIFACT)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -667,7 +876,7 @@
 .byte
 .byte
 .byte
-00989fb0:
+00989eb0:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -691,9 +900,28 @@
 .word
 .word	string character number
 .byte	"kcross-artifact-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- SPORT HUNT
-0098c3f0:
+0098c2f0:
 .word	TASK_DIRT STADIUM (SPORT HUNT)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -748,7 +976,7 @@
 .byte
 .byte
 .byte
-0098c4c0:
+0098c3c0:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -772,9 +1000,24 @@
 .word
 .word	string character number
 .byte	"kcross-hunt-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- DEATHMATCH
-0098d430:
+0098d330:
 .word	TASK_DIRT STADIUM (DEATHMATCH)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -829,7 +1072,7 @@
 .byte
 .byte
 .byte
-0098d510:
+0098d410:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -853,11 +1096,32 @@
 .word
 .word	string character number
 .byte	"kcross-deathmatch-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	-- MAR COLISEUM
 
 #	--- TAG
-009809c0:
+009808c0:
 .word	TASK_MAR COLISEUM (TAG)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -912,12 +1176,37 @@
 .byte
 .byte
 .byte
-00980a94:
+00980994:
 .word	string character number
 .byte	"coliseum-king-of-hill-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- ARTIFACT
-00987820:
+00987720:
 .word	TASK_MAR COLISEUM (ARTIFACT)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -972,7 +1261,7 @@
 .byte
 .byte
 .byte
-009878f0:
+009877f0:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -996,9 +1285,30 @@
 .word
 .word	string character number
 .byte	"coliseum-artifact-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- DEATHMATCH
-0098bc30:
+0098bb30:
 .word	TASK_MAR COLISEUM (DEATHMATCH)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1053,7 +1363,7 @@
 .byte
 .byte
 .byte
-0098bd20:
+0098bc20:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -1077,13 +1387,36 @@
 .word
 .word	string character number
 .byte	"coliseum-deathmatch-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	- TRACKS
 
 #	-- EASTERN TOUR
 
 #	--- TIME TRIAL
-00982240:
+00982140:
 .word	TASK_EASTERN TOUR (TIME TRIAL)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1167,7 +1500,7 @@
 .float	3rd place
 .float	4th place
 .float	5th place
-00982350:
+00982250:
 .word	p(+2) -> single player levels
 .word
 .word	level_sp	;value+ffff=pointer->name
@@ -1183,9 +1516,30 @@
 .word
 .word	string character number
 .byte	"havtour-timetrial-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- RACE
-00989b80:
+00989a80:
 .word	TASK_EASTERN TOUR (RACE)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1240,7 +1594,7 @@
 .byte
 .byte
 .byte
-00989cc0:
+00989bc0:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -1264,11 +1618,27 @@
 .word
 .word	string character number
 .byte	"havtour-race-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	-- NORTHERN TOUR
 
 #	--- TIME TRIAL
-00981a00:
+00981900:
 .word	TASK_NORTHERN TOUR (TIME TRIAL)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1352,7 +1722,7 @@
 .float	3rd place
 .float	4th place
 .float	5th place
-00981b10:
+00981a10:
 .word	p(+2) -> single player levels
 .word
 .word	level_sp	;value+ffff=pointer->name
@@ -1368,9 +1738,30 @@
 .word
 .word	string character number
 .byte	"spatour-timetrial-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- RACE
-00988f80:
+00988e80:
 .word	TASK_NORTHERN TOUR (RACE)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1425,7 +1816,7 @@
 .byte
 .byte
 .byte
-009890c0:
+00988fc0:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -1449,11 +1840,27 @@
 .word
 .word	string character number
 .byte	"spatour-race-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	-- EASTERN TOUR
 
 #	--- TIME TRIAL
-009811c0:
+009810c0:
 .word	TASK_EASTERN TOUR (TIME TRIAL)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1537,7 +1944,7 @@
 .float	3rd place
 .float	4th place
 .float	5th place
-009812d0:
+009811d0:
 .word	p(+2) -> single player levels
 .word
 .word	level_sp	;value+ffff=pointer->name
@@ -1553,9 +1960,30 @@
 .word
 .word	string character number
 .byte	"icetour-timetrial-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- RACE
-00986c60:
+00986b60:
 .word	TASK_EASTERN TOUR (RACE)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1610,7 +2038,7 @@
 .byte
 .byte
 .byte
-00986da0:
+00986ca0:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -1634,11 +2062,27 @@
 .word
 .word	string character number
 .byte	"icetour-race-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	-- WESTERN TOUR
 
 #	--- BOSS BATTLE
-0097ed20:
+0097ec20:
 .word	TASK_WESTERN TOUR (MIZO)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1693,7 +2137,7 @@
 .byte
 .byte
 .byte
-0097edd8:
+0097ecd8:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -1715,11 +2159,36 @@
 .word	task_level_sp_display	;value+ffff=pointer->name
 .word
 .word
+.word
+.word
 .word	string character number
 .byte	"kratour-boss-battle-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- TIME TRIAL
-00982a80:
+00982980:
 .word	TASK_WESTERN TOUR (TIME TRIAL)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1803,7 +2272,7 @@
 .float	3rd place
 .float	4th place
 .float	5th place
-00982b90:
+00982a90:
 .word	p(+2) -> single player levels
 .word
 .word	level_sp	;value+ffff=pointer->name
@@ -1819,9 +2288,30 @@
 .word
 .word	string character number
 .byte	"kratour-timetrial-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	--- RACE
-00989d30:
+00989c30:
 .word	TASK_WESTERN TOUR (RACE)
 .word	task display name	;value+ffff=pointer->name
 .byte	task ID
@@ -1876,7 +2366,7 @@
 .byte
 .byte
 .byte
-00989e70:
+00989d70:
 .word	p(+2) -> single player levels
 .word	p(+2) -> next
 .word	p(+2) -> split-screen level
@@ -1900,25 +2390,41 @@
 .word
 .word	string character number
 .byte	"kratour-race-task"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	WEAPON TABLES
-002da808:
+002da708:
 .word	*weapon-select-table-yellow-training*
 .word	*weapon-select-table-red-training*
 
-002de404:
+002de304:
 .word	*weapon-select-table-yellow-default*
 .word	*weapon-select-table-red-default*
 
-002de418:
+002de318:
 .word	*weapon-select-table-red-even*
 .word	*weapon-select-table-yellow-even*
 
-002df090:
+002def90:
 .word	*weapon-select-table-yellow-boss-battle*
 .word	*weapon-select-table-red-boss-battle*
 
-002e75d4:
+002e74d4:
 .word	somekind of function
 .word	*weapon-select-table-red-race-penultimate*
 .word	*weapon-select-table-yellow-deathmatch-tailing*
@@ -1937,6 +2443,6 @@
 .word	*weapon-select-table-red-deathmatch-middle*
 .word	*weapon-select-table-yellow-race-penultimate*
 
-002e85d8:
+002e84d8:
 .word	*weapon-select-table-yellow-deathrace*
 .word	*weapon-select-table-red-deathrace*
