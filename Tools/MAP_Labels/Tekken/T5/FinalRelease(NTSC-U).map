@@ -8,6 +8,10 @@
 001f0790:
 .undef	main
 
+
+0014fb00:
+.undef	.gcc_except_table
+
 #	CHARACTERS
 00152b50:
 .word	Character_IDs
@@ -50,6 +54,21 @@
 .word
 .word
 .word
+
+
+001555b4:
+.word	Pausing
+.word	isPaused
+.word	Active_isPaused
+
+001f92b8:
+.undef	Fun_PauseMenu1
+
+001f9e28:
+.undef	FunUnused_PausedMenu1
+
+0020c208:
+.undef	FunUnused_PausedMenu2
 
 0021426C:
 .undef	PRESS START

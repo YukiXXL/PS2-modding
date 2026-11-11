@@ -93,19 +93,19 @@ patch=1,EE,002B8B48,extended,00000002
 
 [Gameplay\Rounds\Number of Rounds\2]
 author=YukiXXL
-patch=1,EE,002B8B60,byte,2
+patch=1,EE,00121F74,extended,24040002
 
 [Gameplay\Rounds\Number of Rounds\3]
 author=YukiXXL
-patch=1,EE,002B8B60,byte,3
+patch=1,EE,00121F74,extended,24040003
 
 [Gameplay\Rounds\Number of Rounds\4]
 author=YukiXXL
-patch=1,EE,002B8B60,byte,4
+patch=1,EE,00121F74,extended,24040004
 
 [Gameplay\Rounds\Number of Rounds\5]
 author=YukiXXL
-patch=1,EE,002B8B60,byte,5
+patch=1,EE,00121F74,extended,24040005
 
 // GAMEMODES
 
@@ -446,6 +446,10 @@ patch=1,EE,00128984,extended,2405002E
 
 // CHARACTER SELECT
 
+[Character Select\Enable Mokujin]
+author=YukiXXL
+patch=1,EE,0039E674,extended,00126E80
+
 [Character Select\Enable\Version 1]
 author=YukiXXL
 patch=1,EE,201222F4,extended,0C0488EE
@@ -557,9 +561,10 @@ patch=1,EE,0015E214,extended,24040000
 author=YukiXXL
 patch=1,EE,0015E1CC,extended,24040000
 
-[Character Select\Table\31 characters\Jinpachi layout (Visual Only)]
+[Character Select\Table\31 characters\Jinpachi layout]
 author=YukiXXL
 patch=1,EE,2019A9E8,extended,26E5DDA0
+patch=1,EE,203AA03C,extended,001F141B
 
 [Character Select\Table\31 characters\Unfinished (32 characters)]
 author=YukiXXL

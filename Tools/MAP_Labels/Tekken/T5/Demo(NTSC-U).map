@@ -33,8 +33,16 @@
 00122418:
 .undef	Fun_Load Character
 
+00126e78:
+.undef	CharaDisabled
+.undef
+.undef	CharaEnabled
+
 00126e88:
 .undef	Fun_Load Character Address
+
+00126f60:
+.undef	Fun_is Character Enabled
 
 00126fb8:
 .undef	Fun_Load Characters Unlocked
@@ -650,11 +658,14 @@
 00108f78:
 .undef	Fun_PauseMenu1
 
+00109e70:
+.undef	FunUnused_PausedMenu1
+
 0010c028:
 .undef	Fun_Unpause
 
 0011a9d8:
-.undef	FunUnused_PausedMenu
+.undef	FunUnused_PausedMenu2
 
 002bbd90:
 .word	m_bCanUnpause
