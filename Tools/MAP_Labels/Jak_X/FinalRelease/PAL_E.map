@@ -105,7 +105,10 @@
 .undef	check Game Mode
 00bcd318:
 .undef	is Sport Hunt
-00bcd32c:
+.undef
+.undef
+.undef
+.undef
 .undef	is Other GM
 .undef
 .undef
@@ -391,7 +394,6 @@
 #	-- MAR COLISEUM
 002ee61c:
 .word	LEVEL_MarColiseum - Collectathon (coliclct)	;value-ffff=level_pointer
-002ee620:
 .word	LEVEL_MarColiseum - Reversi (colirev)	;value-ffff=level_pointer
 002f6910:
 .word	LEVEL_MarColiseum - Sport Hunt (colhunt)(MISSING!)	;value-ffff=level_pointer
@@ -403,7 +405,6 @@
 .word	LEVEL_EasternTour - Time Trial (hvtrtt)	;value-ffff=level_pointer
 002efe6c:
 .word	LEVEL_EasternTour - Freeze Rally (havttbox)	;value-ffff=level_pointer
-002efe70:
 .word	LEVEL_EasternTour - Turbo Dash (havtfoot)	;value-ffff=level_pointer
 
 #	-- NORTHERN TOUR
@@ -411,24 +412,22 @@
 .word	LEVEL_NorthernTour - Time Trial (sptrtt)	;value-ffff=level_pointer
 002f0034:
 .word	LEVEL_NorthernTour - Freeze Rally (spattbox)	;value-ffff=level_pointer
-002f0038:
 .word	LEVEL_NorthernTour - Turbo Dash (spatfoot)	;value-ffff=level_pointer
 
 #	-- EASTERN TOUR
 002ea488:
 .word	LEVEL_EasternTour - Time Trial (ictrtt)	;value-ffff=level_pointer
-002f62e8:
-.word	LEVEL_EasternTour - Freeze Rally (icettbox)	;value-ffff=level_pointer
-009e6dc4:
+002f62e4:
 .word	LEVEL_EasternTour - Turbo Dash (icetfoot)	;value-ffff=level_pointer
+.word	LEVEL_EasternTour - Freeze Rally (icettbox)	;value-ffff=level_pointer
 
 #	-- WESTERN TOUR
 002ea498:
 .word	LEVEL_WesternTour - Time Trial (krtrtt)	;value-ffff=level_pointer
-002f5790:
-.word	LEVEL_WesternTour - Freeze Rally (krattbox)	;value-ffff=level_pointer
 002f5788:
 .word	LEVEL_WesternTour - Turbo Dash (kratfoot)	;value-ffff=level_pointer
+.word
+.word	LEVEL_WesternTour - Freeze Rally (krattbox)	;value-ffff=level_pointer
 
 #	- OTHER
 002ee8c4:
