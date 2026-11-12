@@ -1,0 +1,73 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+0021ea54:
+.word	mf_levelControllerInterface
+.word	mf_activeMissionIndex
+.word	mf_missionStatus
+.undef
+.word	mf_deathsInMission
+
+
+00240140:
+.undef	MemSlots
+
+003a6cb0:
+.undef	HudAmmo_QSItems
+
+003ad210:
+.float	cs_table
+
+00537ff8:
+.undef	MF_UpdateProgress__Fv
+005b5cf0:
+.undef	Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+005b3690:
+.undef	MenuPlanet_SetupPlanetTourneyList__Fv
+00674b80:
+.undef	CheckUnlockMission__8LevelBoxi
+
+005ce8d8:
+.undef	Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+005cf078:
+.undef	MenuSkinScreen_UpdateItemList__Fv
+
+00671230:
+.undef	AddToQuickSelect__9GadgetBoxiii
+00671288:
+.undef	IsGadgetCoopOnly__9GadgetBoxi
+006712b8:
+.undef	IsGadgetQuickSelectable__9GadgetBoxi
+
+0047e730:
+.undef	Bot_EnableDisable
+00558710:
+.undef	Bot_ResetGlobalComm__Fv
+
+005a2b18:
+.undef	Pointer from "BotHud_UpdateIcons"
+005a34f0:
+.undef	BotHud_UpdateIcons__Fv
+
+0058d740:
+.undef	GetHudEnterState__Fi
+0058d880:
+.undef	GetHudState__Fi
+0058d9b0:
+.undef	GetHudExitState__Fi
+00663e00:
+.undef	ExitVehicle
+
+0061c2a0:
+.undef	GetJuggSafeTeam__C4Hero
+003eef38:
+.undef	CubicLineDistanceCheck
+
+0062d450:
+.undef	Death__4Herob
+00651928:
+.undef	Transitions__4Hero
+
+#	ARENA
+005baab0:
+.undef	MenuArena_UpdateArenaList__Fv

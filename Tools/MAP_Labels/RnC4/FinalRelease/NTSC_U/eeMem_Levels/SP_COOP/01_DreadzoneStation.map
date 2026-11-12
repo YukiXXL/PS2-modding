@@ -9,6 +9,9 @@
 .word	mf_deathsInMission
 
 
+00243700:
+.undef	MemSlots
+
 003ae030:
 .undef	HudAmmo_QSItems
 
