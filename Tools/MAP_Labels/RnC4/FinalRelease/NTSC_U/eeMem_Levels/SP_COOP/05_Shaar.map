@@ -11,6 +11,44 @@
 
 00240140:
 .undef	MemSlots
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Mem_Load_on_Death
+.word	Mem_Load_on_Restart
+.word	Mem_Current
 
 003a6a90:
 .undef	HudAmmo_QSItems
@@ -56,12 +94,12 @@
 00583410:
 .undef	GetHudExitState__Fi
 00659528:
-.undef	ExitVehicle
+.undef	VehicleExit
 
 006119c8:
 .undef	GetJuggSafeTeam__C4Hero
 00415838:
-.undef	CubicLineDistanceCheck
+.undef	CoopDistanceCheck
 
 00622b78:
 .undef	Death__4Herob

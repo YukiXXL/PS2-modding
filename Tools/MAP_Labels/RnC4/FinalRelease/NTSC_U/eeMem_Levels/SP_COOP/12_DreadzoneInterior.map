@@ -1,0 +1,111 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+0021ea94:
+.word	mf_levelControllerInterface
+.word	mf_activeMissionIndex
+.word	mf_missionStatus
+.undef
+.word	mf_deathsInMission
+
+
+00240240:
+.undef	MemSlots
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Mem_Load_on_Death
+.word	Mem_Load_on_Restart
+.word	Mem_Current
+
+003ac610:
+.undef	HudAmmo_QSItems
+
+003b2d30:
+.float	cs_table
+
+00553b78:
+.undef	MF_UpdateProgress__Fv
+005d0f68:
+.undef	Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+005ce908:
+.undef	MenuPlanet_SetupPlanetTourneyList__Fv
+0068f828:
+.undef	CheckUnlockMission__8LevelBoxi
+
+005e9b50:
+.undef	Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+005ea2f0:
+.undef	MenuSkinScreen_UpdateItemList__Fv
+
+0068bed8:
+.undef	AddToQuickSelect__9GadgetBoxiii
+0068bf30:
+.undef	IsGadgetCoopOnly__9GadgetBoxi
+0068bf60:
+.undef	IsGadgetQuickSelectable__9GadgetBoxi
+
+004b3228:
+.undef	Bot_EnableDisable
+00573df8:
+.undef	Bot_ResetGlobalComm__Fv
+
+005bdd08:
+.undef	Pointer from "BotHud_UpdateIcons"
+005be6e0:
+.undef	BotHud_UpdateIcons__Fv
+
+005a8df0:
+.undef	GetHudEnterState__Fi
+005a8f30:
+.undef	GetHudState__Fi
+005a9060:
+.undef	GetHudExitState__Fi
+0067f088:
+.undef	VehicleExit
+
+00637528:
+.undef	GetJuggSafeTeam__C4Hero
+003f3120:
+.undef	CoopDistanceCheck
+
+006486d8:
+.undef	Death__4Herob
+0066cbb0:
+.undef	Transitions__4Hero
+
+#	ARENA
+005d5d28:
+.undef	MenuArena_UpdateArenaList__Fv

@@ -1,0 +1,11 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+0038a0b0:
+.undef	HudAmmo_QSItems
+
+00615b68:
+.undef	GB_VehicleExitDriver__FP11VehicleBaseP4HerobT2
+
+00627fc0:
+.undef	HasGadget__9GadgetBoxi

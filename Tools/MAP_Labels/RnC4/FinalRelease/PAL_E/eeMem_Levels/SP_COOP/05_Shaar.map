@@ -1,0 +1,238 @@
+#	PS2 Memory Map
+#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+
+0021ead4:
+.word	mf_levelControllerInterface
+.word	mf_activeMissionIndex
+.word	mf_missionStatus
+.undef
+.word	mf_deathsInMission
+
+
+002401c0:
+.undef	MemSlots
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Mem_Load_on_Death
+.word	Mem_Load_on_Restart
+.word	Mem_Current
+
+003a6a80:
+.undef	HudAmmo_QSItems
+
+003ace90:
+.float	cs_table
+
+005325f8:
+.undef	MF_UpdateProgress__Fv
+005af8f8:
+.undef	Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+005ad298:
+.undef	MenuPlanet_SetupPlanetTourneyList__Fv
+0066e950:
+.undef	CheckUnlockMission__8LevelBoxi
+
+005c85d0:
+.undef	Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+005c8d78:
+.undef	MenuSkinScreen_UpdateItemList__Fv
+
+0066afe0:
+.undef	AddToQuickSelect__9GadgetBoxiii
+0066b038:
+.undef	IsGadgetCoopOnly__9GadgetBoxi
+0066b068:
+.undef	IsGadgetQuickSelectable__9GadgetBoxi
+
+004a84b0:
+.undef	Bot_EnableDisable
+00551980:
+.undef	Bot_ResetGlobalComm__Fv
+
+0059c788:
+.undef	Pointer from "BotHud_UpdateIcons"
+0059d160:
+.undef	BotHud_UpdateIcons__Fv
+
+00587258:
+.undef	GetHudEnterState__Fi
+00587398:
+.undef	GetHudState__Fi
+005874c8:
+.undef	GetHudExitState__Fi
+0065e000:
+.undef	VehicleExit
+
+006160a0:
+.undef	GetJuggSafeTeam__C4Hero
+00416110:
+.undef	CoopDistanceCheck
+
+00627368:
+.undef	Death__4Herob
+0064b938:
+.undef	Transitions__4Hero
+
+#	ARENA
+005b46b8:
+.undef	MenuArena_UpdateArenaList__Fv
+
+#	SHOOT TO KILL (LANDSTALKER)
+003abaa0:
+.word	ShootToKill_Autopilot
+.word
+.word
+.word
+.word
+.word
+.word
+
+004c84d8:
+.undef	01_Start
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	02
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	03_CheckPlayers
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	04
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	05_Run_and_CheckFinish
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	load Vehicle position
+.undef
+.undef	define checkpoint range	;float
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	get position and checkpoint range
+.undef
+.undef	check if position is within the range	;lower than range (float)
+
+004c8848:
+.undef	Fun_Hero_in_Vehicle
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	load P1
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	load P1
+.undef
+.undef	load P1
+.undef
+.undef
+.undef
+.undef	load P2
+.undef
+.undef
+.undef	load P2
+
+004c9308:
+.undef	Fun_LandstalkerSphereDamage
+004c93b0:
+.undef	?
+.undef	load weapon ID that did damage
+.undef
+.undef	is missiles
+.undef
+.undef	is not jumped on???
+.undef
+.undef	6 layer damage
+.undef
+.undef	is front guns
+.undef
+.undef	?

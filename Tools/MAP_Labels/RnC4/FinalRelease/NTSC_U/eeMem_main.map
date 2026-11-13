@@ -1,12 +1,6 @@
 #	PS2 Memory Map
 #	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
 
-001579a0:
-.undef	ParseBin__Fv
-001579f0:
-.undef	GetBootOptionsFromSettings__FPc
-
-
 001711a8:
 .word	g_MissionLoad
 .word
@@ -61,8 +55,8 @@
 
 0021ddcc:
 .word	pPad0
-.word
-.word
+.word	pPad1
+.word	pDebugPad
 
 0021de10:
 .word	Level
@@ -81,7 +75,9 @@
 .byte
 .byte
 .byte
-0021de50:
+.undef
+.undef
+.undef
 .word	CheatsEverActivated
 .byte
 .byte
@@ -95,8 +91,8 @@
 .byte
 .byte
 .byte
-
-0021de68:
+.undef
+.undef
 .byte
 .byte	gParsedBootOptions
 .byte
@@ -115,3 +111,19 @@
 .word	g_NW_GameSettings
 .word
 .word	g_NW_GameOptions
+
+0021e678:
+.word	MyHero
+.word	g_newlevel
+.word
+.word	pendingGameMode
+.word	screenMode
+.word
+.word
+.word	g_gameType
+.word	g_gameRules
+.undef
+.word	CoreSoundCnt
+.undef
+.word	EngScratchPadSize
+.word	ShadowScratchPadSize
