@@ -1,5 +1,5 @@
-#	PS2 Memory Map
-#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+#	PS2 Memory Map (EE Memory)
+#	Jak X: Combat Racing (SCES_532.86)
 
 002e16f8:
 .word	Base Address

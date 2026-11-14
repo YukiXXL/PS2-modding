@@ -1,5 +1,6 @@
-#	PS2 Memory Map
-#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+#	PS2 Memory Map (EE Memory)
+#	Ratchet Deadlocked (SCUS_974.65)
+#	Single Player / Cooperative - Maraxus
 
 0021ea54:
 .word	mf_levelControllerInterface
@@ -109,3 +110,132 @@
 #	ARENA
 005cb970:
 .undef	MenuArena_UpdateArenaList__Fv
+
+#	LANDSTALKER AUTOPILOT
+003acf60:
+.word	Autopilot_Init
+.word
+.word
+.word
+.word
+.word
+.word
+
+004e0f08:
+.undef	LandstalkerAutopilot
+004e0fb0:
+.undef	01_Start
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	02
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	03_CheckPlayers
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	04
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	05_Run_and_CheckFinish
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	load Vehicle position
+.undef
+.undef	define checkpoint range	;float
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	get position and checkpoint range
+.undef
+.undef	check if position is within the range	;lower than range (float)
+
+004e1320:
+.undef	Fun_Hero_in_Vehicle
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	load P1
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	load P1
+.undef
+.undef	load P1
+.undef
+.undef
+.undef
+.undef	load P2
+.undef
+.undef
+.undef	load P2
+
+004e1de0:
+.undef	Fun_LandstalkerSphereDamage
+004e1e88:
+.undef	load layer damage done
+.undef	load weapon ID that did damage
+.undef
+.undef	is missiles
+.undef
+.undef	is not jumped on???
+.undef
+.undef	6 layer damage
+.undef
+.undef	is front guns
+.undef
+.undef	is lower than damage taken

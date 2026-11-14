@@ -1,5 +1,5 @@
 #	PS2 Memory Map
-#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+#	Downhill Domination Demo (SCUS_973.29)
 
 0010a000:
 .undef	indata

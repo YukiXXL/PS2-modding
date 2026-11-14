@@ -1,5 +1,5 @@
 #	PS2 Memory Map
-#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+#	Tekken 5 Demo (SLUS_211.60)
 
 00100000:
 .undef	indata
