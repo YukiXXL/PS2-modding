@@ -1,0 +1,9 @@
+#	PS2 Memory Map
+#	Serious Sam: Next Encounter
+
+00100000:
+.undef	indata
+00100008:
+.undef	ENTRYPOINT
+001002a8:
+.undef	main

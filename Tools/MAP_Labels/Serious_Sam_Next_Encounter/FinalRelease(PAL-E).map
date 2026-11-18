@@ -1,0 +1,907 @@
+#	PS2 Memory Map
+#	Serious Sam: Next Encounter
+
+00100000:
+.undef	indata
+00100008:
+.undef	ENTRYPOINT
+001002a8:
+.undef	main
+002a2a30:
+.undef	_main
+0032a6d8:
+.undef	Fun_DebugTextWrite
+
+#	BOOT (GAME SCENE)
+0010f0d0:
+.undef	Fun_GameScene_Save
+
+#	GAME
+0033d7c0:
+.word	BUILD_VER
+0033d854:
+.word	w_skipWorldLink
+0033db54:
+.word	Game_CurrentScene
+.word	Game_LoadScene
+.word	Game_AnimsRunning
+.word	Game_Paused
+.word	NetGame_
+.word	NetGame_
+.word	Game_PausedWorld
+.word
+.word	Game_SkipCutscene
+.float	Game_CutsceneSkipFoward
+.word	Game_Lags
+.word	Game_NoGameScreen
+.word
+.dword	Music_Atlantis City
+.word
+.word
+.word
+.word
+.dword	Music_Atlantis Tower
+.word
+.word
+.word
+.word
+.dword	Music_China Outside
+.word
+.word
+.word
+.word
+.dword	Music_China Caves
+.word
+.word
+.word
+.word
+.dword	Music_Rome Outside
+.word
+.word
+.word
+.word
+.dword	Music_Rome Arena
+.word
+.word
+.word
+.word
+.dword	Music_Rome Neptune
+.word
+.word
+.word
+.word
+.dword	Music_Menu
+.word
+.word
+.word
+.word
+.dword	Music_Credits
+.word
+.word
+.word
+.word
+.dword	Music_Hidden
+.word
+.word
+.word
+.word
+.dword	Music_Killing Spree
+.word
+.word
+.word
+.word
+.dword
+
+#	- GAMESETUP
+0027cdb8:
+.undef	Fun_Difficulty
+0027ce20:
+.undef	Fun_Friendly Fire
+0027ceb0:
+.undef	Fun_WeaponSet
+0027cf30:
+.undef	Fun_AllowPowerUps
+
+0027cfb8:
+.undef	Fun_Rules
+.undef
+.undef
+.undef	a1 = a0 (isOnline)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GM_SP
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GM_Coop
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GM_Fragmatch
+.undef
+.undef
+.undef
+.undef
+.undef	GM_Fragmatch_Online
+.undef
+.undef	GM_HTF
+.undef
+.undef
+.undef
+.undef
+.undef	GM_HTF_Online
+.undef
+.undef	GM_PTB
+.undef
+.undef
+.undef
+.undef
+.undef	GM_PTB_Online
+.undef	load MP rules
+
+#	- ITEMS
+00275838:
+.undef	Fun_Game_SpawnItem
+00275880:
+.undef	load item model
+0027592c:
+.undef	SpawnItem_Load_1
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	SpawnItem_Load_2
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	SpawnItem_Load_3
+002759b0:
+.undef	SpawnItem_Check
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	HP+10	;a1 = 01
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	HP+25	;a1 = 02
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	HP+50	;a1 = 03
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	HP+100	;a1 = 04
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	AR+5	;a1 = 05
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	AR+25	;a1 = 06
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	AR+50	;a1 = 07
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	AR+100	;a1 = 08
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	AR+200	;a1 = 09
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS SKATES	;a1 = 0A
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS INVULNERABILITY	;a1 = 0B
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS DAMAGE	;a1 = 0C
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS SMARTBOMB	;a1 = 0D
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS BUBBLEGUM	;a1 = 0E
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS RING	;a1 = 0F
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS GLASSES	;a1 = 10
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	9MM BULLETS	;a1 = 13
+.undef
+.undef
+.undef	RICOCHET BULLETS	;a1 = 14
+.undef
+.undef
+.undef
+.undef	is SinglePlayer	;item ID
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	is Multiplayer	;item ID = 9mm bullets
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	HOMING BULLETS	;a1 = 15
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SHOTGUN SHELLS	;a1 = 16
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SNIPER BULLETS	;a1 = 17
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	NAPALM	;a1 = 18
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	LIQUID NITROGEN	;a1 = 19
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	LAUGHING GAS	;a1 = 1A
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	LIMPET GRENADES	;a1 = 1C
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SPIDER MINES	;a1 = 1D
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	GRENADES	;a1 = 1B
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	ROCKETS	;a1 = 1E
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	HEAT SEEKING ROCKETS	;a1 = 1F
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SONIC ROCKETS	;a1 = 20
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	POWER CELLS	;a1 = 21
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	CANNON BALLS	;a1 = 22
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	CHAINSAW	;a1 = 23
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	DESERT EAGLE	;a1 = 24
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	UZI	;a1 = 25
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SHOTGUN	;a1 = 26
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	MINIGUN	;a1 = 27
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	ROCKET LAUNCHER	;a1 = 28
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	GRENADE LAUNCHER	;a1 = 29
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	FLAMER	;a1 = 2A
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SNIPER RIFLE	;a1 = 2B
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SIRIAN POWER GUN	;a1 = 2C
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SBC CANNON	;a1 = 2D
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	SERIOUS BOMB	;a1 = 37
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	GREEN AMMOPACK	;a1 = 11
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	RED AMMOPACK	;a1 = 12
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	HP+5 AND OTHER	;a1 = 0 and 2E-36
+.undef
+.undef
+.undef	item visual model
+.undef
+.undef
+.undef	UNKNOWN ITEM
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	SpawnItem_Return
+
+003bdbe0:
+.word	ItemIDs	;Item00_Health+5
+.word	Item01_Health+10
+.word	Item02_Health+25
+.word	Item03_Health+50
+.word	Item04_Health+100
+.word	Item05_Armor+5
+.word	Item06_Armor+25
+.word	Item07_Armor+50
+.word	Item08_Armor+100
+.word	Item09_Armor+200
+.word	Item0A_SeriousSkates
+.word	Item0B_SeriousInvulnerability
+.word	Item0C_SeriousDamage
+.word	Item0D_SeriousSmartbomb
+.word	Item0E_SeriousBubblegum
+.word	Item0F_SeriousRing
+.word	Item10_SeriousGlasses
+.word	Item11_GreenAmmopack
+.word	Item12_RedAmmopack
+.word	Item13_9mmBullets
+.word	Item14_RicochetBullets
+.word	Item15_HomingBullets
+.word	Item16_ShotgunShells
+.word	Item17_SniperBullets
+.word	Item18_Napalm
+.word	Item19_LiquidNitrogen
+.word	Item1A_LaughingGas
+.word	Item1B_Grenades
+.word	Item1C_LimpetGrenades
+.word	Item1D_SpiderMines
+.word	Item1E_Rockets
+.word	Item1F_HeatSeekingRockets
+.word	Item20_SonicRockets
+.word	Item21_PowerCells
+.word	Item22_CannonBalls
+.word	Item23_Chainsaw
+.word	Item24_DesertEagle
+.word	Item25_Uzi
+.word	Item26_Shotgun
+.word	Item27_Minigun
+.word	Item28_RocketLauncher
+.word	Item29_GrenadeLauncher
+.word	Item2A_Flamer
+.word	Item2B_SniperRifle
+.word	Item2C_SirianPowerGun
+.word	Item2D_Cannon
+.word	Item2E_KeyItem
+.word	Item2F_KeyItem
+.word	Item30_
+.word	Item31_
+.word	Item32_
+.word	Item33_
+.word	Item34_
+.word	Item35_
+.word	Item36_Treasure
+.word	Item37_SeriousBomb
+
+#	- ONLINE
+00293980:
+.undef	Fun_LoadConnection
+.undef
+.undef
+.undef
+.undef	Fun_SaveConnection
+
+00295428:
+.undef	Fun_isGameRunning
+.undef
+.undef
+.undef
+.undef	Fun_GetLobbyState
+.undef
+.undef	Fun_SetLobbyState
+
+00656a78:
+.word	Net_isConnected
+
+#	MENUS (GUI)
+00256048:
+.undef	Fun_LoadMenu1
+00255fd0:
+.undef	Fun_LoadMenu2
+
+00256498:
+.undef	Fun_LoadMenuSound
+
+00256e68:
+.undef	Fun_WriteGUIObject
+
+00267cd8:
+.undef	Fun_StartGame
+00267c40:
+.undef	Fun_StartLevel
+
+#	- FRONTEND
+00279788:
+.undef	load menu music
+
+00267718:
+.undef	Fun_FrontEnd
+
+0025c670:
+.undef	WriteGUI_MainMenu
+0025c848:
+.undef	GUI_SamModel
+0025c908:
+.undef	GUI_SinglePlayer
+0025c934:
+.undef	if false = Select Profile
+0025c9ac:
+.undef	if false = Select Level
+0025caa8:
+.undef	GUI_Multiplayer
+0025cae0:
+.undef	GUI_Online
+0025cb70:
+.undef	GUI_ProfileSettings
+0025cc18:
+.undef	GUI_Credits
+
+0025d470:
+.undef	WriteGUI_SinglePlayer
+
+0025f388:
+.undef	WriteGUI_Multiplayer
+0025f4d4:
+.undef	host local game
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	host local game
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	host local game
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	host local game
+.undef	host local game
+0025f6b0:
+.undef	GameSetup.Local
+0025fe68:
+.undef	LocalMP_SelectProfiles
+00260760:
+.undef	LocalMP_LockPlayer
+002600e8:
+.undef	LocalMP_StartGame
+002603f8:
+.undef	Fun_PlayersReady
+
+00260dd0:
+.undef	WriteGUI_Online
+00264400:
+.undef	GameSetup.Online
+00264d40:
+.undef	Online_JoinGame
+00264d78:
+.undef	Online_HostGame
+00261898:
+.undef	Online_StagingArea_Hosting
+00263cf0:
+.undef	Online_StartGame
+00262860:
+.undef	Online_StagingArea_LateJoin
+002632a8:
+.undef	Online_StagingArea_LateJoin2
+
+00266ea0:
+.undef	WriteGUI_ProfileSettings	;also used for SP
+0025d788:
+.undef	WriteGUI_LevelChooser
+
+#	- LEVELSET
+0025f978:
+.undef	LevelSet_Local
+002647d0:
+.undef	LevelSet_Online
+
+#	- ONLINE
+00264ea0:
+.undef	Fun_NetGUI
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	NetGUI_InitNet
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	NetGUI_GameList
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	NetGUI_StagingArea
+.undef
+.undef
+.undef
+.undef
+.undef	NetGUI_JoiningStagingArea
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	NetGUI_HostingGame
+.undef
+.undef
+.undef	NetGUI_ConnectingToHost
+
+00264fd8:
+.undef	NetMenus
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	NetMenu_
+.undef
+.undef
+.undef
+.undef	NetMenu_Access
+.undef
+.undef
+.undef
+.undef	NetMenu_InitInterface
+.undef
+.undef
+.undef
+.undef	NetMenu_Login
+.undef
+.undef
+.undef
+.undef	NetMenu_DNAS
+.undef
+.undef
+.undef
+.undef	NetMenu_
+.undef
+.undef
+.undef
+.undef	NetMenu_
+.undef
+.undef
+.undef
+.undef	NetMenu_DNAS_Result
+.undef
+.undef
+.undef
+.undef	NetMenu_DNAS_Shutdown
+.undef
+.undef
+.undef
+.undef	NetMenu_RetrieveGameList
+.undef
+.undef
+.undef
+.undef	NetMenu_GameList
+.undef
+.undef
+.undef
+.undef	NetMenu_GameList
+.undef
+.undef
+.undef
+.undef	NetMenu_StagingArea
+.undef
+.undef
+.undef
+.undef	NetMenu_StagingArea
+.undef
+.undef
+.undef
+.undef	NetMenu_StagingArea
+.undef
+.undef
+.undef
+.undef	NetMenu_JoiningStagingArea
+.undef
+.undef
+.undef
+.undef	NetMenu_
+.undef
+.undef
+.undef
+.undef	NetMenu_
+.undef
+.undef
+.undef
+.undef	NetMenu_HostingGame
+.undef
+.undef
+.undef
+.undef	NetMenu_Nothing
+.undef
+.undef
+.undef
+.undef	NetMenu_Nothing
+.undef
+.undef
+.undef
+.undef	NetMenu_ConnectingToHost
+.undef
+.undef
+.undef
+.undef	NetMenu_Nothing
+.undef
+.undef
+.undef
+.undef	NetMenu_Nothing
+.undef
+.undef
+.undef
+.undef	NetMenu_Connected
+.undef
+.undef	NetMenu_Exit
+
+00266088:
+.undef	Fun_GameStagingState
+
+00266da0:
+.undef	JR_RA
+.undef
+.undef	JR_RA
+00266e18:
+.undef	JR_RA
+.undef
+.undef	JR_RA
+
+00294e30:
+.undef	Fun_GameStaging
+
+00295df8:
+.undef	Fun_HostStartGame
+
+00295f28:
+.undef	Fun_CheckLobbyState
+
+0029b050:
+.undef	Fun_SetLobbyState
+
+002a0e80:
+.undef	Fun v0 = 1
+
+003bb9b0:
+.word	Network_GUI_IDs	;NetGUI00_
+.word	NetGUI01_
+.word	NetGUI02_
+.word	NetGUI03_
+.word	NetGUI04_
+.word	NetGUI05_
+.word
+.word
+.word	NetMenuIDs	;NetMenu00_Exit
+.word	NetMenu01_
+.word	NetMenu02_Access
+.word	NetMenu03_InitInterface
+.word	NetMenu04_Login
+.word	NetMenu05_DNAS
+.word	NetMenu06_
+.word	NetMenu07_
+.word	NetMenu08_DNASResult
+.word	NetMenu09_DNASShutdown
+.word	NetMenu0A_RetrieveGameList
+.word	NetMenu0B_GameList
+.word	NetMenu0C_GameList
+.word	NetMenu0D_StagingArea
+.word	NetMenu0E_StagingArea
+.word	NetMenu0F_StagingArea
+.word	NetMenu10_JoiningStagingArea
+.word	NetMenu11_
+.word	NetMenu12_
+.word	NetMenu13_HostingGame
+.word	NetMenu14_Nothing
+.word	NetMenu15_Nothing
+.word	NetMenu16_ConnectingToHost
+.word	NetMenu17_Nothing
+.word	NetMenu18_Nothing
+.word	NetMenu19_Connected
+.word	NetMenu1A_Exit
