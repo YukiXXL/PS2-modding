@@ -1,5 +1,5 @@
 #	PS2 Memory Map
-#	$Id: ps2.map,v 1.3 2002/01/13 21:44:31 cvs Exp $
+#	Sonic Riders Comic-Con Demo (SLUS_291.79)
 
 00100000:
 .undef	indata

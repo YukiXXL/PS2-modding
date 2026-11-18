@@ -1,0 +1,112 @@
+#	PS2 Memory Map (EE Memory)
+#	Ratchet Gladiator (SCES_532.85)
+#	Single Player / Cooperative - Dreadzone Interior
+
+0021eb14:
+.word	mf_levelControllerInterface
+.word	mf_activeMissionIndex
+.word	mf_missionStatus
+.undef
+.word	mf_deathsInMission
+
+
+00240340:
+.undef	MemSlots
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Mem_Load_on_Death
+.word	Mem_Load_on_Restart
+.word	Mem_Current
+
+003ac680:
+.undef	HudAmmo_QSItems
+
+003b2d70:
+.float	cs_table
+
+00557978:
+.undef	MF_UpdateProgress__Fv
+005d56d0:
+.undef	Pointer from "MenuPlanet_SetupPlanetTourneyList__Fv"
+005d3070:
+.undef	MenuPlanet_SetupPlanetTourneyList__Fv
+00694a70:
+.undef	CheckUnlockMission__8LevelBoxi
+
+005ee3a8:
+.undef	Pointer from "MenuSkinScreen_UpdateItemList__Fv"
+005eeb50:
+.undef	MenuSkinScreen_UpdateItemList__Fv
+
+00691100:
+.undef	AddToQuickSelect__9GadgetBoxiii
+00691158:
+.undef	IsGadgetCoopOnly__9GadgetBoxi
+00691188:
+.undef	IsGadgetQuickSelectable__9GadgetBoxi
+
+004b4a80:
+.undef	Bot_EnableDisable
+00577c70:
+.undef	Bot_ResetGlobalComm__Fv
+
+005c24d8:
+.undef	Pointer from "BotHud_UpdateIcons"
+005c2eb0:
+.undef	BotHud_UpdateIcons__Fv
+
+005ad468:
+.undef	GetHudEnterState__Fi
+005ad5a8:
+.undef	GetHudState__Fi
+005ad6d8:
+.undef	GetHudExitState__Fi
+00684120:
+.undef	VehicleExit
+
+0063c1c0:
+.undef	GetJuggSafeTeam__C4Hero
+003f3998:
+.undef	CoopDistanceCheck
+
+0064d488:
+.undef	Death__4Herob
+00671a58:
+.undef	Transitions__4Hero
+
+#	ARENA
+005da490:
+.undef	MenuArena_UpdateArenaList__Fv
