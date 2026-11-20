@@ -144,12 +144,6 @@
 .word
 .word	Net_GameRunning
 
-<<<<<<< Updated upstream
-#	- ONLINE
-00295ff8:
-.undef	Fun_OnlineState
-
-=======
 #	- MULTIKILL
 00212070:
 .undef	Fun_MultikillReset
@@ -243,7 +237,6 @@
 00656a78:
 .word	Net_isConnected
 
->>>>>>> Stashed changes
 #	- GAMESETUP
 0027cdb8:
 .undef	Fun_Difficulty
@@ -258,11 +251,7 @@
 .undef	Fun_Rules
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//isOnline
-=======
 .undef	// is Online
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
@@ -934,11 +923,7 @@
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//load item model
-=======
 .undef	// load item model
->>>>>>> Stashed changes
 0027592c:
 .undef	SpawnItem_Load_1
 .undef
@@ -968,161 +953,97 @@
 .undef	HP+10	;a1 = 01
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+25	;a1 = 02
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+50	;a1 = 03
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+100	;a1 = 04
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+5	;a1 = 05
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+25	;a1 = 06
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+50	;a1 = 07
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+100	;a1 = 08
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+200	;a1 = 09
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS SKATES	;a1 = 0A
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS INVULNERABILITY	;a1 = 0B
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS DAMAGE	;a1 = 0C
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS SMARTBOMB	;a1 = 0D
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS BUBBLEGUM	;a1 = 0E
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS RING	;a1 = 0F
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS GLASSES	;a1 = 10
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	9MM BULLETS	;a1 = 13
@@ -1134,310 +1055,186 @@
 .undef
 .undef	is SinglePlayer	;item ID
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	is Multiplayer	;item ID = 9mm bullets
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	HOMING BULLETS	;a1 = 15
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SHOTGUN SHELLS	;a1 = 16
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SNIPER BULLETS	;a1 = 17
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	NAPALM	;a1 = 18
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	LIQUID NITROGEN	;a1 = 19
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	LAUGHING GAS	;a1 = 1A
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	LIMPET GRENADES	;a1 = 1C
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SPIDER MINES	;a1 = 1D
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	GRENADES	;a1 = 1B
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	ROCKETS	;a1 = 1E
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	HEAT SEEKING ROCKETS	;a1 = 1F
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SONIC ROCKETS	;a1 = 20
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	POWER CELLS	;a1 = 21
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	CANNON BALLS	;a1 = 22
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	CHAINSAW	;a1 = 23
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	DESERT EAGLE	;a1 = 24
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	UZI	;a1 = 25
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SHOTGUN	;a1 = 26
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	MINIGUN	;a1 = 27
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	ROCKET LAUNCHER	;a1 = 28
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	GRENADE LAUNCHER	;a1 = 29
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	FLAMER	;a1 = 2A
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SNIPER RIFLE	;a1 = 2B
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SIRIAN POWER GUN	;a1 = 2C
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SBC CANNON	;a1 = 2D
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS BOMB	;a1 = 37
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	GREEN AMMOPACK	;a1 = 11
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	RED AMMOPACK	;a1 = 12
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+5 AND OTHER	;a1 = 0 and 2E-36
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//item visual model
-=======
 .undef	// item visual model
->>>>>>> Stashed changes
 .undef
 .undef
 .undef	UNKNOWN ITEM
@@ -1679,8 +1476,6 @@
 .undef
 .undef	FrontEnd_Return
 
-<<<<<<< Updated upstream
-=======
 
 003bbf20:
 .word	GUIMenu0_MainMenu
@@ -1689,7 +1484,6 @@
 .word	GUIMenu3_HoldTheFlag
 .word	GUIMenu4_PassTheBomb
 
->>>>>>> Stashed changes
 #	- MAIN MENU
 0025c670:
 .undef	WriteGUI_MainMenu
@@ -1698,15 +1492,9 @@
 0025c908:
 .undef	GUI_SinglePlayer
 0025c934:
-<<<<<<< Updated upstream
-.undef	//false = SelectProfile
-0025c9ac:
-.undef	//false = SelectLevel
-=======
 .undef	// false = SelectProfile
 0025c9ac:
 .undef	// false = SelectLevel
->>>>>>> Stashed changes
 0025caa8:
 .undef	GUI_Multiplayer
 0025cae0:
@@ -1724,43 +1512,26 @@
 0025f388:
 .undef	WriteGUI_Multiplayer
 0025f4d4:
-<<<<<<< Updated upstream
-.undef	//host local game
-=======
 .undef	// host local game
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//host local game
-=======
 .undef	// host local game
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//host local game
-=======
 .undef	// host local game
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//host local game
-.undef	//host local game
-=======
 .undef	// host local game
 .undef	// host local game
->>>>>>> Stashed changes
 
 0025f978:
 .undef	LevelSet_Local
@@ -1780,29 +1551,17 @@
 00260dd0:
 .undef	WriteGUI_Online
 00261178:
-<<<<<<< Updated upstream
-.undef	//Online LevelSet
-=======
 .undef	// Online LevelSet
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//Online LevelSet
-.undef
-.undef
-.undef
-.undef	//Online LevelSet
-=======
 .undef	// Online LevelSet
 .undef
 .undef
 .undef
 .undef	// Online LevelSet
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
@@ -1810,59 +1569,35 @@
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//GameSetup.Online
-=======
 .undef	// GameSetup.Online
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//GameSetup.Online
-=======
 .undef	// GameSetup.Online
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//GameSetup.Online
-=======
 .undef	// GameSetup.Online
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//GameSetup.Online
-=======
 .undef	// GameSetup.Online
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//GameSetup.Online
-.undef
-.undef
-.undef
-.undef	//GameSetup.Online
-=======
 .undef	// GameSetup.Online
 .undef
 .undef
 .undef
 .undef	// GameSetup.Online
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
@@ -1898,29 +1633,17 @@
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//Host Game
-=======
 .undef	// Host Game
->>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
-<<<<<<< Updated upstream
-.undef	//Host Game
-.undef
-.undef
-.undef
-.undef	//Host Game
-=======
 .undef	// Host Game
 .undef
 .undef
 .undef
 .undef	// Host Game
->>>>>>> Stashed changes
 
 002647d0:
 .undef	LevelSet_Online
@@ -2200,43 +1923,11 @@
 
 00220018:
 .undef	PlayerProfiles.Profile
-<<<<<<< Updated upstream
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	GameSetup.Player
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	MultiPlayerInfo.Model
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-=======
 00220040:
 .undef	GameSetup.Player
 00220068:
 .undef	MultiPlayerInfo.Model
 00220090:
->>>>>>> Stashed changes
 .undef	NetworkProfiles.Profile0
 .undef
 .undef
@@ -2247,40 +1938,9 @@
 .undef
 .undef
 .undef	is Online	;a1 = isMP
-<<<<<<< Updated upstream
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	PlayerModel.Name
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-=======
 002200e0:
 .undef	PlayerModel.Name
 00220128:
->>>>>>> Stashed changes
 .undef	PlayerModel.SoundSet
 
 002203f0:
@@ -2300,10 +1960,6 @@
 .undef	LevelViewer
 0025e690:
 .undef	GUI_LevelViewer
-<<<<<<< Updated upstream
-0025f110:
-.undef	Write_LevelViewer
-=======
 
 0025f110:
 .undef	Write_LevelViewer
@@ -2357,4 +2013,3 @@
 .word	LevelSet1_LevelsNumber
 .word	LevelSet2_LevelsNumber
 .word	LevelSet3_LevelsNumber
->>>>>>> Stashed changes
