@@ -17,6 +17,9 @@
 .undef	Fun_GameScene_Save
 
 #	GAME
+0036c208:
+.word	CurrentMovie
+
 0033d7c0:
 .word	BUILD_VER
 0033d854:
@@ -141,15 +144,111 @@
 .word
 .word	Net_GameRunning
 
+<<<<<<< Updated upstream
 #	- ONLINE
 00295ff8:
 .undef	Fun_OnlineState
 
+=======
+#	- MULTIKILL
+00212070:
+.undef	Fun_MultikillReset
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// reset
+
+00212100:
+.undef	Fun_MultikillEntry
+00212144:
+.undef	Multikill1_Start
+00212160:
+.undef	Multikill1_Add
+002121d4:
+.undef	Multikill1_KillingSpree
+0021229c:
+.undef	Multikill1_KillingSpreeStoreKills
+002122c4:
+.undef	Multikill1_Go
+
+002122e0:
+.undef	Fun_Multikill
+00212324:
+.undef	Multikill2_Start
+00212350:
+.undef	Multikill2_Add
+002123a4:
+.undef	Multikill2_Fading
+00212408:
+.undef	Multikill2_KillingSpreeActive
+00212468:
+.undef	Multikill2_KillingSpreeEnding
+00212504:
+.undef	Multikill2_KillingSpreeEnd
+002125bc:
+.undef	mk_AddingScore
+00212674:
+.undef	Multikill2_KillingSpreeStoreKills
+002126f8:
+.undef	Multikill2_Standby
+
+
+003b7740:
+.word	Multikill1_0_Start
+.word	Multikill1_1_Add
+.word	Multikill1_2_Add
+.word	Multikill1_3_Add
+.word	Multikill1_4_Go
+.word	Multikill1_5_Go
+.word	Multikill1_6_SpreeStoreKills
+.word	Multikill1_7_SpreeStoreKills
+
+003b77d0:
+.word	Multikill2_0_Standby
+.word	Multikill2_1_Start
+.word	Multikill2_2_Add
+.word	Multikill2_3_Fading
+.word	Multikill2_4_SpreeActive
+.word	Multikill2_5_SpreeEnding
+.word	Multikill2_6_SpreeEnd
+.word	Multikill2_7_SpreeStoreKills
+
+#	- ONLINE
+00293980:
+.undef	Fun_LoadConnection
+.undef
+.undef
+.undef
+.undef	Fun_SaveConnection
+
+00295428:
+.undef	Fun_isGameRunning
+.undef
+.undef
+.undef
+.undef	Fun_GetLobbyState
+.undef
+.undef	Fun_SetLobbyState
+
+00295ff8:
+.undef	Fun_OnlineState
+
+00656a78:
+.word	Net_isConnected
+
+>>>>>>> Stashed changes
 #	- GAMESETUP
 0027cdb8:
 .undef	Fun_Difficulty
 0027ce20:
-.undef	Fun_Friendly Fire
+.undef	Fun_FriendlyFire
 0027ceb0:
 .undef	Fun_WeaponSet
 0027cf30:
@@ -159,7 +258,11 @@
 .undef	Fun_Rules
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//isOnline
+=======
+.undef	// is Online
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef
@@ -208,7 +311,610 @@
 .undef	GM_PTB_Online
 .undef	load MP rules
 
-#	- ITEMS
+#	- ENTITIES
+0027624c:
+.undef	e_Copier
+00276268:
+.undef	e_MovingBrush
+00276284:
+.undef	e_Camera
+002762a0:
+.undef	e_Teleport
+002762bc:
+.undef	e_WatchPlayers
+00276300:
+.undef	e_EnemySpawner
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load EnemySpawner ID
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	check EnemySpawner ID
+002763b4:
+.undef	e_Cutscene
+002763c8:
+.undef	e_ParticlesHolder
+002763e4:
+.undef	e_EnemyMarker
+00276400:
+.undef	e_DoorController
+0027641c:
+.undef	e_Marker
+00276438:
+.undef	e_Trigger
+00276454:
+.undef	e_MusicChanger
+00276470:
+.undef	e_SoundHolder
+0027648c:
+.undef	e_Damager
+002764a8:
+.undef	e_MessageHolder
+002764c4:
+.undef	e_PlayerMarker
+002764e0:
+.undef	e_WorldLink
+002764fc:
+.undef	e_Touchfield
+00276518:
+.undef	e_Switch
+00276534:
+.undef	e_Vehicle
+00276550:
+.undef	e_ModelHolder2
+0027656c:
+.undef	e_ModelDestruction
+00276588:
+.undef	e_Bouncepad
+002765a4:
+.undef	e_RollingStone
+002765c0:
+.undef	e_DestroyableArhitecture
+002765dc:
+.undef	e_Arrow
+002765f8:
+.undef	e_Lockdown
+00276638:
+.undef	e_WarpPlayers
+00276654:
+.undef	e_MPFlag
+0027668c:
+.undef	e_ParWatcher
+002766a8:
+.undef	e_FMVPlayer
+002766c0:
+.undef	e_Load
+
+003bdd40:
+.word	Entity0_Copier
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity1_Teleport
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity2_WatchPlayers
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity3_EnemySpawner
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity4_DoorController
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity5_Marker
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity6_MovingBrush
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity7_Trigger
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity8_MusicChanger
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity9_SoundHolder
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	EntityA_Damager
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	EntityB_Camera
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	EntityC_MessageHolder
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	EntityD_PlayerMarker
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	EntityE_EnemyMarker
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	EntityF_WorldLink
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity10_TouchField
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity11_Switch
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity12_Vehicle
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity13_ModelHolder2
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity14_ModelDestruction
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity15_Bouncepad
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity16_RollingStone
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity17_DestroyableArhitecture
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity18_Arrow
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity19_Lockdown
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity1A_WarpPlayers
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity1B_Cutscene
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity1C_Cutscene
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity1D_ParticlesHolder
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity1E_MPFlag
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity1F_ParWatcher
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Entity20_FMVPlayer
+
+#	-- ENEMY SPAWNER
+001d76d0:
+.undef	Fun_eEnemySpawner
+
+001d77b8:
+.undef	EnemySpawner
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load TotalCount
+
+001d79e0:
+.undef	EnemySpawnerCheck
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	SpawnerType_Simple
+.undef
+.undef
+.undef
+.undef	SpawnerType_Respawner(Single)
+.undef
+.undef
+.undef
+.undef	SpawnerType_Respawner(Group)
+.undef
+.undef
+.undef
+.undef	SpawnerType_Checking
+
+001d7aa8:
+.undef	Fun_AddrEnemySpawner
+
+001d7c38:
+.undef	// Load the Total Count
+
+
+00392040:
+.word	eEnemySpawner
+
+#	--- AIs
+001759c0:
+.undef	AI_GiantHornet
+0017beb0:
+.undef	AI_TongueHarpy
+0017ca90:
+.undef	AI_TweedleDumDum
+
+#	-- ITEMS
 00275838:
 .undef	Fun_Game_SpawnItem
 .undef
@@ -228,7 +934,11 @@
 .undef
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//load item model
+=======
+.undef	// load item model
+>>>>>>> Stashed changes
 0027592c:
 .undef	SpawnItem_Load_1
 .undef
@@ -258,97 +968,161 @@
 .undef	HP+10	;a1 = 01
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+25	;a1 = 02
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+50	;a1 = 03
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+100	;a1 = 04
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+5	;a1 = 05
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+25	;a1 = 06
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+50	;a1 = 07
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+100	;a1 = 08
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	AR+200	;a1 = 09
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS SKATES	;a1 = 0A
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS INVULNERABILITY	;a1 = 0B
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS DAMAGE	;a1 = 0C
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS SMARTBOMB	;a1 = 0D
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS BUBBLEGUM	;a1 = 0E
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS RING	;a1 = 0F
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS GLASSES	;a1 = 10
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	9MM BULLETS	;a1 = 13
@@ -360,186 +1134,310 @@
 .undef
 .undef	is SinglePlayer	;item ID
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	is Multiplayer	;item ID = 9mm bullets
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	HOMING BULLETS	;a1 = 15
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SHOTGUN SHELLS	;a1 = 16
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SNIPER BULLETS	;a1 = 17
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	NAPALM	;a1 = 18
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	LIQUID NITROGEN	;a1 = 19
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	LAUGHING GAS	;a1 = 1A
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	LIMPET GRENADES	;a1 = 1C
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SPIDER MINES	;a1 = 1D
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	GRENADES	;a1 = 1B
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	ROCKETS	;a1 = 1E
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	HEAT SEEKING ROCKETS	;a1 = 1F
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SONIC ROCKETS	;a1 = 20
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	POWER CELLS	;a1 = 21
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	CANNON BALLS	;a1 = 22
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	CHAINSAW	;a1 = 23
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	DESERT EAGLE	;a1 = 24
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	UZI	;a1 = 25
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SHOTGUN	;a1 = 26
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	MINIGUN	;a1 = 27
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	ROCKET LAUNCHER	;a1 = 28
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	GRENADE LAUNCHER	;a1 = 29
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	FLAMER	;a1 = 2A
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SNIPER RIFLE	;a1 = 2B
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SIRIAN POWER GUN	;a1 = 2C
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SBC CANNON	;a1 = 2D
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	SERIOUS BOMB	;a1 = 37
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	GREEN AMMOPACK	;a1 = 11
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	RED AMMOPACK	;a1 = 12
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	HP+5 AND OTHER	;a1 = 0 and 2E-36
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//item visual model
+=======
+.undef	// item visual model
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef	UNKNOWN ITEM
@@ -554,7 +1452,7 @@
 .undef	SpawnItem_Return
 
 003bdbe0:
-.word	ItemIDs	;Item00_Health+5
+.word	Item00_Health+5
 .word	Item01_Health+10
 .word	Item02_Health+25
 .word	Item03_Health+50
@@ -611,26 +1509,6 @@
 .word	Item36_Treasure
 .word	Item37_SeriousBomb
 
-#	- ONLINE
-00293980:
-.undef	Fun_LoadConnection
-.undef
-.undef
-.undef
-.undef	Fun_SaveConnection
-
-00295428:
-.undef	Fun_isGameRunning
-.undef
-.undef
-.undef
-.undef	Fun_GetLobbyState
-.undef
-.undef	Fun_SetLobbyState
-
-00656a78:
-.word	Net_isConnected
-
 #	MENUS (GUI)
 00256048:
 .undef	Fun_LoadMenu1
@@ -648,13 +1526,170 @@
 00267c40:
 .undef	Fun_StartLevel
 
+#	- CHEATS AND UNLOCK
+002213b0:
+.undef	Fun_UnlockTable
+
 #	- FRONTEND
 00279788:
 .undef	load menu music
 
 00267718:
 .undef	Fun_FrontEnd
+002678c4:
+.undef	FrontEnd_MainMenu
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_Cooperative
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_Deathmatch
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_Online
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_Offline
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_HoldTheFlag
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_PassTheBomb
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_BackToStagingArea
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	FrontEnd_Return
 
+<<<<<<< Updated upstream
+=======
+
+003bbf20:
+.word	GUIMenu0_MainMenu
+.word	GUIMenu1_Cooperative
+.word	GUIMenu2_Deathmatch
+.word	GUIMenu3_HoldTheFlag
+.word	GUIMenu4_PassTheBomb
+
+>>>>>>> Stashed changes
 #	- MAIN MENU
 0025c670:
 .undef	WriteGUI_MainMenu
@@ -663,9 +1698,15 @@
 0025c908:
 .undef	GUI_SinglePlayer
 0025c934:
+<<<<<<< Updated upstream
 .undef	//false = SelectProfile
 0025c9ac:
 .undef	//false = SelectLevel
+=======
+.undef	// false = SelectProfile
+0025c9ac:
+.undef	// false = SelectLevel
+>>>>>>> Stashed changes
 0025caa8:
 .undef	GUI_Multiplayer
 0025cae0:
@@ -683,26 +1724,43 @@
 0025f388:
 .undef	WriteGUI_Multiplayer
 0025f4d4:
+<<<<<<< Updated upstream
 .undef	//host local game
+=======
+.undef	// host local game
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//host local game
+=======
+.undef	// host local game
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//host local game
+=======
+.undef	// host local game
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef
 .undef
 .undef
+<<<<<<< Updated upstream
 .undef	//host local game
 .undef	//host local game
+=======
+.undef	// host local game
+.undef	// host local game
+>>>>>>> Stashed changes
 
 0025f978:
 .undef	LevelSet_Local
@@ -722,17 +1780,29 @@
 00260dd0:
 .undef	WriteGUI_Online
 00261178:
+<<<<<<< Updated upstream
+.undef	//Online LevelSet
+=======
+.undef	// Online LevelSet
+>>>>>>> Stashed changes
+.undef
+.undef
+.undef
+.undef
+.undef
+<<<<<<< Updated upstream
 .undef	//Online LevelSet
 .undef
 .undef
 .undef
-.undef
-.undef
 .undef	//Online LevelSet
+=======
+.undef	// Online LevelSet
 .undef
 .undef
 .undef
-.undef	//Online LevelSet
+.undef	// Online LevelSet
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef
@@ -740,35 +1810,59 @@
 .undef
 .undef
 .undef
+<<<<<<< Updated upstream
+.undef	//GameSetup.Online
+=======
+.undef	// GameSetup.Online
+>>>>>>> Stashed changes
+.undef
+.undef
+.undef
+.undef
+.undef
+<<<<<<< Updated upstream
+.undef	//GameSetup.Online
+=======
+.undef	// GameSetup.Online
+>>>>>>> Stashed changes
+.undef
+.undef
+.undef
+.undef
+.undef
+<<<<<<< Updated upstream
+.undef	//GameSetup.Online
+=======
+.undef	// GameSetup.Online
+>>>>>>> Stashed changes
+.undef
+.undef
+.undef
+.undef
+.undef
+<<<<<<< Updated upstream
+.undef	//GameSetup.Online
+=======
+.undef	// GameSetup.Online
+>>>>>>> Stashed changes
+.undef
+.undef
+.undef
+.undef
+.undef
+<<<<<<< Updated upstream
 .undef	//GameSetup.Online
 .undef
 .undef
 .undef
-.undef
-.undef
 .undef	//GameSetup.Online
+=======
+.undef	// GameSetup.Online
 .undef
 .undef
 .undef
-.undef
-.undef
-.undef	//GameSetup.Online
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	//GameSetup.Online
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	//GameSetup.Online
-.undef
-.undef
-.undef
-.undef	//GameSetup.Online
+.undef	// GameSetup.Online
+>>>>>>> Stashed changes
 .undef
 .undef
 .undef
@@ -804,17 +1898,29 @@
 .undef
 .undef
 .undef
+<<<<<<< Updated upstream
+.undef	//Host Game
+=======
+.undef	// Host Game
+>>>>>>> Stashed changes
+.undef
+.undef
+.undef
+.undef
+.undef
+<<<<<<< Updated upstream
 .undef	//Host Game
 .undef
 .undef
 .undef
-.undef
-.undef
 .undef	//Host Game
+=======
+.undef	// Host Game
 .undef
 .undef
 .undef
-.undef	//Host Game
+.undef	// Host Game
+>>>>>>> Stashed changes
 
 002647d0:
 .undef	LevelSet_Online
@@ -1036,7 +2142,7 @@
 .undef	Fun v0 = 1
 
 003bb9b0:
-.word	Network_GUI_IDs	;NetGUI00_
+.word	NetGUI00_
 .word	NetGUI01_
 .word	NetGUI02_
 .word	NetGUI03_
@@ -1044,7 +2150,7 @@
 .word	NetGUI05_
 .word
 .word
-.word	NetMenuIDs	;NetMenu00_Exit
+.word	NetMenu00_Exit
 .word	NetMenu01_
 .word	NetMenu02_Access
 .word	NetMenu03_InitInterface
@@ -1094,6 +2200,7 @@
 
 00220018:
 .undef	PlayerProfiles.Profile
+<<<<<<< Updated upstream
 .undef
 .undef
 .undef
@@ -1123,6 +2230,13 @@
 .undef
 .undef
 .undef
+=======
+00220040:
+.undef	GameSetup.Player
+00220068:
+.undef	MultiPlayerInfo.Model
+00220090:
+>>>>>>> Stashed changes
 .undef	NetworkProfiles.Profile0
 .undef
 .undef
@@ -1133,6 +2247,7 @@
 .undef
 .undef
 .undef	is Online	;a1 = isMP
+<<<<<<< Updated upstream
 .undef
 .undef
 .undef
@@ -1161,6 +2276,11 @@
 .undef
 .undef
 .undef
+=======
+002200e0:
+.undef	PlayerModel.Name
+00220128:
+>>>>>>> Stashed changes
 .undef	PlayerModel.SoundSet
 
 002203f0:
@@ -1180,5 +2300,61 @@
 .undef	LevelViewer
 0025e690:
 .undef	GUI_LevelViewer
+<<<<<<< Updated upstream
 0025f110:
 .undef	Write_LevelViewer
+=======
+
+0025f110:
+.undef	Write_LevelViewer
+0025f208:
+.undef	// is Coop
+0025f228:
+.undef	Write_LevelViewer_Return
+
+#	-- LEVELS (SET)
+0025f248:
+.undef	Fun_LostLevels
+
+00275170:
+.undef	Fun_LevelSetNumCheck
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// check if smaller than Max Number
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// V0 = Level Name
+.undef	not valid
+
+
+0036bec8:
+.word	LevelSet_0
+0036c048:
+.word	LevelSet_1
+0036c090:
+.word	LevelSet_2
+0036c118:
+.word	LevelSet_3
+
+0036c1c0:
+.word	LevelSet0_MainLevels
+.word	LevelSet1_Multiplayer
+.word	LevelSet2_LostLevels
+.word	LevelSet3_Online
+
+003bd818:
+.word	LevelSet0_LevelsNumber
+.word	LevelSet1_LevelsNumber
+.word	LevelSet2_LevelsNumber
+.word	LevelSet3_LevelsNumber
+>>>>>>> Stashed changes
