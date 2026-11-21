@@ -12,9 +12,18 @@
 0032a6d8:
 .undef	Fun_DebugTextWrite
 
-#	BOOT (GAME SCENE)
-0010f0d0:
-.undef	Fun_GameScene_Save
+
+#	BOOT
+
+#	- BOOLEAN
+00104ecc:
+.undef	is False
+00104f0c:
+.undef	is True
+00105d90:
+.undef	Fun_BooleanWrite
+00106cc8:
+.undef	Fun_BooleanSave
 
 #	GAME
 0036c208:
@@ -25,18 +34,18 @@
 0033d854:
 .word	w_skipWorldLink
 0033db54:
-.word	Game_CurrentScene
-.word	Game_LoadScene
-.word	Game_AnimsRunning
-.word	Game_Paused
+.word	g_CurrentScene
+.word	g_LoadScene
+.word	g_AnimsRunning
+.word	g_Paused
 .word	NetGame_
 .word	NetGame_
-.word	Game_PausedWorld
+.word	g_PausedWorld
 .word
-.word	Game_SkipCutscene
-.float	Game_CutsceneSkipFoward
-.word	Game_Lags
-.word	Game_NoGameScreen
+.word	g_SkipCutscene
+.float	g_CutsceneSkipFoward
+.word	g_Lags
+.word	g_NoGameScreen
 .word
 .dword	Music_Atlantis City
 .word
@@ -105,7 +114,7 @@
 .word
 .word
 .word
-.word	Net_isConnected
+.word	Net_Callback
 .word
 .word
 .word
@@ -138,11 +147,40 @@
 .word
 .word
 .word	Net_OnlineState
-.word	Net_wIsMultiplayer
+.word	Net_isMultiplayer
 .word
 .word
 .word
 .word	Net_GameRunning
+
+#	- GAME SCENE
+0010f0d0:
+.undef	Fun_GameScene_Save
+
+00272d18:
+.undef	GameScene_MainMenu
+00272f18:
+.undef	GameScene_Loading
+
+00273df0:
+.undef	Fun_LoadLevel
+00273f20:
+.undef	// Texture Quality
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	is SinglePlayer
+.undef	is Online	;Texture Quality
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	is Multiplayer
 
 #	- MULTIKILL
 00212070:
@@ -301,6 +339,43 @@
 .undef	load MP rules
 
 #	- ENTITIES
+002751e0:
+.undef	Fun_SpawnEntities
+002752d8:
+.undef	is item
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	is enemy
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	is other
+
 0027624c:
 .undef	e_Copier
 00276268:
@@ -891,9 +966,408 @@
 001d7c38:
 .undef	// Load the Total Count
 
+00275ef0:
+.undef	Fun_eSpawnEnemy
 
 00392040:
 .word	eEnemySpawner
+
+
+00627fc0:
+.word	eES_NumOfEnemySpawners
+.word	eES_NumOfEnemies
+
+#	--- MINIONS
+001e6b58:
+.undef	Fun_MinionModelLoad
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	KAMIKAZE
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	KAMIKAZE MK II
+001e6c50:
+.undef	MINI SAM
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	NO MINION MODEL
+.undef
+.undef	SIRIAN WEREBULL
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	REEBAN TOOTH FISH
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	MECHA-ARACHNOID
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	ALDURAN REPTILOID (GREEN)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	ALDURAN REPTILOID (RED)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	BIO-MECHANOID (MINOR)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	BIO-MECHANOID (MAJOR)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	BEHEADED ROCKETEER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	BEHEADED FIRECRACKER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	BEHEADED BOMBERMAN
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	WEREBULL (JUVENILE)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	WITCH HARPY
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	TWEEDLE DUM DUM
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	DIB DIB DUM DUM
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	DUM DUM
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	KLEER KNIGHT
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	PORCINE BERSERKER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	LEGIONNAIRE ANT
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	LEGIONNAIRE ANT LEADER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	CHARIOT HARPY
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	DEVIL STALLION
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	ELEPHANT GUNNER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	WICKER MAN
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	TEMPLE GUARDIAN
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	LEIKUNG WARRIOR
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	PHOENIX BOMBER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	MONKEY ZOMBIE
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GUANDI SORCERER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	OCTOCHOP
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	ATLANTEAN
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	CARCINUS LURKER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	KILLERMARI
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	KILLERMARI RIDER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	ATLANTEAN DEPTHLURKER
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	DIABLOTAUR
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	EMPEROR HYDRA (FIRE)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	EMPEROR HYDRA (DRILL)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	EMPEROR HYDRA (LASER)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	SIRIAN DARKLORD
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	EMPEROR HYDRA
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GIANT HORNET
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	MinionModelLoad_Return
+
+003b3c70:
+.word	eMinionModel0_Kamikaze
+.word	eMinionModel1_Kamikaze MK II
+.word	eMinionModel2_Mini Sam
+.word	eMinionModel3_Marsh Hopper	;Crash
+.word	eMinionModel4_Giant Hornet	;Crash
+.word	eMinionModel5_Sirian Werebull
+.word	eMinionModel6_Reeban Tooth Fish
+.word	eMinionModel7_Mecha-Arachnoid
+.word	eMinionModel8_Alduran Reptiloid (Green)
+.word	eMinionModel9_Alduran Reptiloid (Red)
+.word	eMinionModelA_Bio-Mechanoid (Minor)
+.word	eMinionModelB_Bio-Mechanoid (Major)
+.word	eMinionModelC_Beheaded Rocketeer
+.word	eMinionModelD_Beheaded Firecracker
+.word	eMinionModelE_Beheaded Bomberman
+.word	eMinionModelF_Werebull (Juvenile)
+.word	eMinionModel10_Dib Dib Dum Dum
+.word	eMinionModel11_Dum Dum Large
+.word	eMinionModel12_Kleer Knight
+.word	eMinionModel13_Witch Harpy
+.word	eMinionModel14_Tweedle Dum Dum
+.word	eMinionModel15_Dum Dum Small
+.word	eMinionModel16_Porcine Berserker
+.word	eMinionModel17_Legionnaire Ant
+.word	eMinionModel18_Chariot Harpy
+.word	eMinionModel19_Devil Stallion
+.word	eMinionModel1A_Elephant Gunner
+.word	eMinionModel1B_Legionnaire Ant Leader
+.word	eMinionModel1C_Wicker Man
+.word	eMinionModel1D_Temple Guardian
+.word	eMinionModel1E_Leikung Warrior
+.word	eMinionModel1F_Phoenix Bomber
+.word	eMinionModel20_Monkey Zombie
+.word	eMinionModel21_Guandi Sorcerer
+.word	eMinionModel22_Octochop	;Also used in Geothermal Tunnels
+.word	eMinionModel23_Atlantean
+.word	eMinionModel24_Carcinus Lurker
+.word	eMinionModel25_Killermari	;Geothermal Tunnels
+.word	eMinionModel26_Killermari Rider
+.word	eMinionModel27_Atlantean Depthlurker	;Geothermal Tunnels
+.word	eMinionModel28_Diablotaur
+.word	eMinionModel29_Emperor Hydra (Drill)
+.word	eMinionModel2A_Sirian Darklord
+.word	eMinionModel2B_Emperor Hydra (Fire)
+.word	eMinionModel2C_Emperor Hydra (Laser)
+.word	eMinionModel2D_Emperor Hydra
+
+003be270:
+.word	eMinion0_Kamikaze
+.word	eMinion1_Kamikaze MK II
+.word	eMinion2_Mini Sam
+.word	eMinion3_Marsh Hopper	;Crash
+.word	eMinion4_Giant Hornet	;Temple of Mars
+.word	eMinion5_Sirian Werebull
+.word	eMinion6_Reeban Tooth Fish
+.word	eMinion7_Mecha-Arachnoid
+.word	eMinion8_Alduran Reptiloid (Green)
+.word	eMinion9_Alduran Reptiloid (Red)
+.word	eMinionA_Bio-Mechanoid (Minor)
+.word	eMinionB_Bio-Mechanoid (Major)
+.word	eMinionC_Beheaded Rocketeer
+.word	eMinionD_Porcine Berserker
+.word	eMinionE_Legionnaire Ant
+.word	eMinionF_Chariot Harpy
+.word	eMinion10_Devil Stallion
+.word	eMinion11_Elephant Gunner
+.word	eMinion12_Legionnaire Ant Leader
+.word	eMinion13_Wicker Man
+.word	eMinion14_Temple Guardian
+.word	eMinion15_Leikung Warrior
+.word	eMinion16_Phoenix Bomber
+.word	eMinion17_Monkey Zombie
+.word	eMinion18_Guandi Sorcerer
+.word	eMinion19_Octochop	;Also used in Geothermal Tunnels
+.word	eMinion1A_Atlantean
+.word	eMinion1B_Carcinus Lurker
+.word	eMinion1C_Killermari	;Geothermal Tunnels
+.word	eMinion1D_Killermari Rider
+.word	eMinion1E_Atlantean Depthlurker	;Geothermal Tunnels
+.word	eMinion1F_Diablotaur
+.word	eMinion20_Emperor Hydra
+.word	eMinion21_Sirian Darklord
+.word	eMinion22_Werebull (Juvenile)	;Via Aurelia
+.word	eMinion23_Dib Dib Dum Dum
+.word	eMinion24_Dum Dum Large
+.word	eMinion25_Kleer Knight
+.word	eMinion26_Witch Harpy
+.word	eMinion27_Tweedle Dum Dum
+.word	eMinion28_Dum Dum Small
+.word	eMinion29_
+.word	eMinion2A_
+.word	eMinion2B_
+.word	eMinion2C_
+.word	eMinion2D_
+.word	eMinion2E_
+.word	eMinion2F_
+.word	eMinion30_
+.word	eMinion31_
+.word	eMinion32_
+.word	eMinion33_
+.word	eMinion34_
+.word	eMinion35_
+.word	eMinion36_
+.word	eMinion37_
+.word	eMinion38_
+.word	eMinion39_
+.word	eMinion3A_
+.word	eMinion3B_Beheaded Firecracker
+.word	eMinion3C_Beheaded Bomberman
 
 #	--- AIs
 001759c0:
@@ -905,7 +1379,7 @@
 
 #	-- ITEMS
 00275838:
-.undef	Fun_Game_SpawnItem
+.undef	Fun_eSpawnItem
 .undef
 .undef
 .undef
@@ -1249,62 +1723,62 @@
 .undef	SpawnItem_Return
 
 003bdbe0:
-.word	Item00_Health+5
-.word	Item01_Health+10
-.word	Item02_Health+25
-.word	Item03_Health+50
-.word	Item04_Health+100
-.word	Item05_Armor+5
-.word	Item06_Armor+25
-.word	Item07_Armor+50
-.word	Item08_Armor+100
-.word	Item09_Armor+200
-.word	Item0A_SeriousSkates
-.word	Item0B_SeriousInvulnerability
-.word	Item0C_SeriousDamage
-.word	Item0D_SeriousSmartbomb
-.word	Item0E_SeriousBubblegum
-.word	Item0F_SeriousRing
-.word	Item10_SeriousGlasses
-.word	Item11_GreenAmmopack
-.word	Item12_RedAmmopack
-.word	Item13_9mmBullets
-.word	Item14_RicochetBullets
-.word	Item15_HomingBullets
-.word	Item16_ShotgunShells
-.word	Item17_SniperBullets
-.word	Item18_Napalm
-.word	Item19_LiquidNitrogen
-.word	Item1A_LaughingGas
-.word	Item1B_Grenades
-.word	Item1C_LimpetGrenades
-.word	Item1D_SpiderMines
-.word	Item1E_Rockets
-.word	Item1F_HeatSeekingRockets
-.word	Item20_SonicRockets
-.word	Item21_PowerCells
-.word	Item22_CannonBalls
-.word	Item23_Chainsaw
-.word	Item24_DesertEagle
-.word	Item25_Uzi
-.word	Item26_Shotgun
-.word	Item27_Minigun
-.word	Item28_RocketLauncher
-.word	Item29_GrenadeLauncher
-.word	Item2A_Flamer
-.word	Item2B_SniperRifle
-.word	Item2C_SirianPowerGun
-.word	Item2D_Cannon
-.word	Item2E_KeyItem
-.word	Item2F_KeyItem
-.word	Item30_
-.word	Item31_
-.word	Item32_
-.word	Item33_
-.word	Item34_
-.word	Item35_
-.word	Item36_Treasure
-.word	Item37_SeriousBomb
+.word	eItem00_Health+5
+.word	eItem01_Health+10
+.word	eItem02_Health+25
+.word	eItem03_Health+50
+.word	eItem04_Health+100
+.word	eItem05_Armor+5
+.word	eItem06_Armor+25
+.word	eItem07_Armor+50
+.word	eItem08_Armor+100
+.word	eItem09_Armor+200
+.word	eItem0A_SeriousSkates
+.word	eItem0B_SeriousInvulnerability
+.word	eItem0C_SeriousDamage
+.word	eItem0D_SeriousSmartbomb
+.word	eItem0E_SeriousBubblegum
+.word	eItem0F_SeriousRing
+.word	eItem10_SeriousGlasses
+.word	eItem11_GreenAmmopack
+.word	eItem12_RedAmmopack
+.word	eItem13_9mmBullets
+.word	eItem14_RicochetBullets
+.word	eItem15_HomingBullets
+.word	eItem16_ShotgunShells
+.word	eItem17_SniperBullets
+.word	eItem18_Napalm
+.word	eItem19_LiquidNitrogen
+.word	eItem1A_LaughingGas
+.word	eItem1B_Grenades
+.word	eItem1C_LimpetGrenades
+.word	eItem1D_SpiderMines
+.word	eItem1E_Rockets
+.word	eItem1F_HeatSeekingRockets
+.word	eItem20_SonicRockets
+.word	eItem21_PowerCells
+.word	eItem22_CannonBalls
+.word	eItem23_Chainsaw
+.word	eItem24_DesertEagle
+.word	eItem25_Uzi
+.word	eItem26_Shotgun
+.word	eItem27_Minigun
+.word	eItem28_RocketLauncher
+.word	eItem29_GrenadeLauncher
+.word	eItem2A_Flamer
+.word	eItem2B_SniperRifle
+.word	eItem2C_SirianPowerGun
+.word	eItem2D_Cannon
+.word	eItem2E_KeyItem
+.word	eItem2F_KeyItem
+.word	eItem30_
+.word	eItem31_
+.word	eItem32_
+.word	eItem33_
+.word	eItem34_
+.word	eItem35_
+.word	eItem36_Treasure
+.word	eItem37_SeriousBomb
 
 #	MENUS (GUI)
 00256048:
