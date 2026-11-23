@@ -881,8 +881,13 @@
 .undef	// save HP
 001f7f58:
 .undef	Minion_AutoKill
+
 001f0240:
 .undef	Minion_Damage
+001f02f4:
+.undef	Damage by Minion
+.undef
+.undef	Damage by Player
 001fa428:
 .undef	Minion_TakeDamage
 
@@ -1297,6 +1302,11 @@
 .word	LegionnaireAntAI
 00331880:
 .undef	cLegionnaireAntAI
+
+00381ea8:
+.word	MechAAI
+0032f928:
+.undef	cMechAAI
 
 0017ca90:
 .undef	AI_TweedleDumDum
@@ -1745,6 +1755,19 @@
 .byte
 .byte
 .byte
+003bdb08:
+.byte	"Models/items"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	-- WEAPONS AND AMMO
 
@@ -1810,6 +1833,11 @@
 .undef
 .undef
 .undef	weapons get dual
+
+002249d8:
+.undef	Fun_WeaponCHange_R1
+00224b30:
+.undef	Fun_WeaponCHange_L1
 
 00225988:
 .undef	Fun_WeaponPickUp
@@ -2204,6 +2232,37 @@
 
 00345ad0:
 .word	Difficulties
+003b4820:
+.byte	"Easy"
+.byte
+.byte
+.byte
+.word
+.byte	"Normal"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte	"Hard"
+.byte
+.byte
+.byte
+.word
+.byte	"Serious"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte	"%s%s"
+.byte
+.byte
+.byte
 
 00345d3c:
 .word	Cheat_AllWeapons
@@ -2273,7 +2332,13 @@
 .word	GamePointerAddr
 .word	GamePointerAddr
 
+006b03e0:
+.word	g_CurrentLevel
+
 #	- GAME SETUP
+00251be0:
+.undef	GameSetup_MaximumValue
+
 002709f8:
 .undef	Fun_EndScreen
 00270f84:
@@ -2564,6 +2629,9 @@
 .undef	CutsceneTriggers
 
 #	-- GIBS
+00174ec0:
+.undef	is Not Frozen
+
 0023ae18:
 .undef	Fun_GibsModels
 
@@ -2748,6 +2816,25 @@
 .undef	Fun_StartGame
 00267c40:
 .undef	Fun_StartLevel
+
+
+00255604:
+.undef	Menu_LoadGUI?
+002556f4:
+.undef	Menus?
+00256380:
+.undef	Menu_Load?
+
+003ba540:
+.word	Menus_GUI?
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Menus_Options/Online?
 
 #	- MOVEMENT
 00257008:
@@ -3598,3 +3685,150 @@
 .word	LevelSet1_LevelsNumber
 .word	LevelSet2_LevelsNumber
 .word	LevelSet3_LevelsNumber
+
+
+
+#	CUSTOM
+000a0100:
+.undef	DoubleAmmo_Start
+.undef
+.undef
+.undef	DoubleAmmo_End
+.undef	DoubleMinions_Start
+.undef
+.undef
+.undef	DoubleMinions_End
+.byte	RandomMinionsIDs_Start
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte	RandomMinionsIDs_End
+.word	JokerLevelChecker
+.word	JokerRandNumber
+000a0160:
+.undef	RandomItems_Start	;RandomItems2_Start
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	RandomItems_End
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	RandomItems2_End
+000a01e0:
+.undef	RandomMusic_Start
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	RandomMusic_End
+000a0240:
+.undef	RandomSpeech_Start
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	RandomSpeech_End
+000a02a0:
+.undef	RandomMinions_Start
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	RandomMinions_End
+000a0320:
+.undef	LevelChecker_Start
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	LevelChecker_End
