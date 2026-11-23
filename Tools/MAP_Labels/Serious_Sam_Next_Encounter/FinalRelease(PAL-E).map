@@ -14,6 +14,199 @@
 
 
 #	BOOT
+00276b88:
+.undef	Boot
+00276c34:
+.undef	DisableSkipping_All
+
+00276ca0:
+.undef	Fun_ShowBootScreens
+00276e7c:
+.undef	DisableSkipping_Single
+
+
+003be848:
+.word	BOOT_Legal
+.word	BOOT_TYPE	;0=TEXTURE;1=VIDEO
+.word
+.word	BOOT_Publisher
+.word	BOOT_TYPE	;0=TEXTURE;1=VIDEO
+.word
+.word	BOOT_Climax
+.word	BOOT_TYPE	;0=TEXTURE;1=VIDEO
+.word
+.word	BOOT_Croteam
+.word	BOOT_TYPE	;0=TEXTURE;1=VIDEO
+.word
+.word	BOOT_SamLogo
+.word	BOOT_TYPE	;0=TEXTURE;1=VIDEO
+.word
+.word	BOOT_Title
+.word	BOOT_TYPE	;0=TEXTURE;1=VIDEO
+
+#	- GAME SCENE
+0010f0d0:
+.undef	Fun_GameScene_Save
+
+00272d18:
+.undef	GameScene_MainMenu
+00272f18:
+.undef	GameScene_Loading
+
+
+0039bc08:
+.word	GameScene_1
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GameScene_2
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GameScene_5
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GameScene_3
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GameScene_4
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GameScene_6
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	GameScene_7
+
+#	-- GAME SCENE 1
+00337310:
+.undef	GS1 "Boot Scene"
+
+002773a8:
+.undef	GS1_LanguageSelect
+0011bee8:
+.undef	Fun_Language_Save
+0011bf10:
+.undef	Fun_Language_Load
+
+#	-- GAME SCENE 2
+00337320:
+.undef	GS2 "Credits Scene"
+00277bc8:
+.undef	GS2_CreditsScene
+
+#	-- GAME SCENE 3
+00337370:
+.undef	GS3 "FrontEndScene"
+
+00279650:
+.undef	GS3_FrontEndScene
+00279788:
+.undef	menu music ID
+
+#	-- GAME SCENE 4
+003373e8:
+.undef	GS4 "GameScene"
+00279ad8:
+.undef	GS4_GameScene
+
+#	-- GAME SCENE 5
+00337320:
+.undef	GS5 "Collision Test"
+00278648:
+.undef	GS5_CollisionTest
+
+#	-- GAME SCENE 6
+003374e0:
+.undef	GS6 "InitMenu"
+0027fa70:
+.undef	GS6_InitMenu
+
+#	-- GAME SCENE 7
+003374f0:
+.undef	GS7 "EngineTest"
+
+00280208:
+.undef	GS7_EngineTest
+0028037c:
+.undef	// Y-axis
+.undef
+.undef
+.undef	// Radius
+
+
+003be9d8:
+.byte	"Collision Test"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
 
 #	- BOOLEAN
 00104ecc:
@@ -25,322 +218,14 @@
 00106cc8:
 .undef	Fun_BooleanSave
 
-#	GAME
-0036c208:
-.word	CurrentMovie
-
-0033d7c0:
-.word	BUILD_VER
-0033d854:
-.word	w_skipWorldLink
-0033db54:
-.word	g_CurrentScene
-.word	g_LoadScene
-.word	g_AnimsRunning
-.word	g_Paused
-.word	NetGame_
-.word	NetGame_
-.word	g_PausedWorld
-.word
-.word	g_SkipCutscene
-.float	g_CutsceneSkipFoward
-.word	g_Lags
-.word	g_NoGameScreen
-.word
-.dword	Music_Atlantis City
-.word
-.word
-.word
-.word
-.dword	Music_Atlantis Tower
-.word
-.word
-.word
-.word
-.dword	Music_China Outside
-.word
-.word
-.word
-.word
-.dword	Music_China Caves
-.word
-.word
-.word
-.word
-.dword	Music_Rome Outside
-.word
-.word
-.word
-.word
-.dword	Music_Rome Arena
-.word
-.word
-.word
-.word
-.dword	Music_Rome Neptune
-.word
-.word
-.word
-.word
-.dword	Music_Menu
-.word
-.word
-.word
-.word
-.dword	Music_Credits
-.word
-.word
-.word
-.word
-.dword	Music_Hidden
-.word
-.word
-.word
-.word
-.dword	Music_Killing Spree
-.word
-.word
-.word
-.word
-.dword
-
-0036df44:
-.word	cdrom_ELF
-.word	Launch argument?
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word	Net_Callback
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word	Net_GameOver
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word	Net_OnlineState
-.word	Net_isMultiplayer
-.word
-.word
-.word
-.word	Net_GameRunning
-
-#	- GAME SCENE
-0010f0d0:
-.undef	Fun_GameScene_Save
-
-00272d18:
-.undef	GameScene_MainMenu
-00272f18:
-.undef	GameScene_Loading
-
-00273df0:
-.undef	Fun_LoadLevel
-00273f20:
-.undef	// Texture Quality
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	is SinglePlayer
-.undef	is Online	;Texture Quality
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	is Multiplayer
-
-#	- MULTIKILL
-00212070:
-.undef	Fun_MultikillReset
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	// reset
-
-00212100:
-.undef	Fun_MultikillEntry
-00212144:
-.undef	Multikill1_Start
-00212160:
-.undef	Multikill1_Add
-002121d4:
-.undef	Multikill1_KillingSpree
-0021229c:
-.undef	Multikill1_KillingSpreeStoreKills
-002122c4:
-.undef	Multikill1_Go
-
-002122e0:
-.undef	Fun_Multikill
-00212324:
-.undef	Multikill2_Start
-00212350:
-.undef	Multikill2_Add
-002123a4:
-.undef	Multikill2_Fading
-00212408:
-.undef	Multikill2_KillingSpreeActive
-00212468:
-.undef	Multikill2_KillingSpreeEnding
-00212504:
-.undef	Multikill2_KillingSpreeEnd
-002125bc:
-.undef	mk_AddingScore
-00212674:
-.undef	Multikill2_KillingSpreeStoreKills
-002126f8:
-.undef	Multikill2_Standby
 
 
-003b7740:
-.word	Multikill1_0_Start
-.word	Multikill1_1_Add
-.word	Multikill1_2_Add
-.word	Multikill1_3_Add
-.word	Multikill1_4_Go
-.word	Multikill1_5_Go
-.word	Multikill1_6_SpreeStoreKills
-.word	Multikill1_7_SpreeStoreKills
+#	ENTITIES
+001046f8:
+.undef	Fun_GetEntityValue
 
-003b77d0:
-.word	Multikill2_0_Standby
-.word	Multikill2_1_Start
-.word	Multikill2_2_Add
-.word	Multikill2_3_Fading
-.word	Multikill2_4_SpreeActive
-.word	Multikill2_5_SpreeEnding
-.word	Multikill2_6_SpreeEnd
-.word	Multikill2_7_SpreeStoreKills
-
-#	- ONLINE
-00293980:
-.undef	Fun_LoadConnection
-.undef
-.undef
-.undef
-.undef	Fun_SaveConnection
-
-00295428:
-.undef	Fun_isGameRunning
-.undef
-.undef
-.undef
-.undef	Fun_GetLobbyState
-.undef
-.undef	Fun_SetLobbyState
-
-00295ff8:
-.undef	Fun_OnlineState
-
-00656a78:
-.word	Net_isConnected
-
-#	- GAMESETUP
-0027cdb8:
-.undef	Fun_Difficulty
-0027ce20:
-.undef	Fun_FriendlyFire
-0027ceb0:
-.undef	Fun_WeaponSet
-0027cf30:
-.undef	Fun_AllowPowerUps
-
-0027cfb8:
-.undef	Fun_Rules
-.undef
-.undef
-.undef	// is Online
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	GM_SP
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	GM_Coop
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	GM_Fragmatch
-.undef
-.undef
-.undef
-.undef
-.undef	GM_Fragmatch_Online
-.undef
-.undef	GM_HTF
-.undef
-.undef
-.undef
-.undef
-.undef	GM_HTF_Online
-.undef
-.undef	GM_PTB
-.undef
-.undef
-.undef
-.undef
-.undef	GM_PTB_Online
-.undef	load MP rules
-
-#	- ENTITIES
 002751e0:
-.undef	Fun_SpawnEntities
+.undef	Fun_EntitiesSpawn
 002752d8:
 .undef	is item
 .undef
@@ -456,6 +341,7 @@
 .undef	e_FMVPlayer
 002766c0:
 .undef	e_Load
+
 
 003bdd40:
 .word	Entity0_Copier
@@ -790,9 +676,9 @@
 .word
 .word	Entity20_FMVPlayer
 
-#	-- ENEMY SPAWNER
+#	- ENEMY SPAWNER
 001d76d0:
-.undef	Fun_eEnemySpawner
+.undef	Fun_EnemySpawner
 
 001d77b8:
 .undef	EnemySpawner
@@ -967,17 +853,39 @@
 .undef	// Load the Total Count
 
 00275ef0:
-.undef	Fun_eSpawnEnemy
+.undef	Fun_EnemySpawn
 
 00392040:
 .word	eEnemySpawner
 
 
 00627fc0:
-.word	eES_NumOfEnemySpawners
-.word	eES_NumOfEnemies
+.word	EnemySpawner_NumOfEnemySpawners
+.word	EnemySpawner_NumOfEnemies
 
-#	--- MINIONS
+#	-- MINIONS
+00176ff8:
+.undef	Minion_Killed
+001ef378:
+.undef	Minion_Kill
+
+001f4790:
+.undef	Minion_Difficulty
+001f4870:
+.undef	// load HP
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// save HP
+001f7f58:
+.undef	Minion_AutoKill
+001f0240:
+.undef	Minion_Damage
+001fa428:
+.undef	Minion_TakeDamage
+
 001e6b58:
 .undef	Fun_MinionModelLoad
 .undef
@@ -1258,6 +1166,7 @@
 .undef
 .undef	MinionModelLoad_Return
 
+
 003b3c70:
 .word	eMinionModel0_Kamikaze
 .word	eMinionModel1_Kamikaze MK II
@@ -1369,17 +1278,57 @@
 .word	eMinion3B_Beheaded Firecracker
 .word	eMinion3C_Beheaded Bomberman
 
-#	--- AIs
+#	-- MINION AI
+001f1468:
+.undef	Fun_AI_Dumb
+0037b2d0:
+.word	DumbAI
+0032cec0:
+.undef	cDumbAI
+
+0037dad0:
+.word	Minion_GiantHornet
 001759c0:
 .undef	AI_GiantHornet
-0017beb0:
-.undef	AI_TongueHarpy
+
+001aa1a0:
+.undef	Fun_AI_LegionnaireAnt
+00389af0:
+.word	LegionnaireAntAI
+00331880:
+.undef	cLegionnaireAntAI
+
 0017ca90:
 .undef	AI_TweedleDumDum
+00382218:
+.word	TweedleDumDumAI
+0032fc88:
+.undef	cTweedleDumDumAI
 
-#	-- ITEMS
+00380a68:
+.word	Minion_WitchHarpy
+0017beb0:
+.undef	AI_Harpy
+0018a3c8:
+.undef	Fun_AI_Harpy
+00382148:
+.word	TongueHarpyAI
+0032fbf8:
+.undef	cTongueHarpyAI
+
+0018a9a8:
+.undef	Fun_AI_ToothFish
+003821b0:
+.word	ToothFishAI
+0032fc28:
+.undef	cToothFishAI
+
+#	- ITEMS (MODELS)
+002265c8:
+.undef	Fun_ItemSpawnMP
+
 00275838:
-.undef	Fun_eSpawnItem
+.undef	Fun_ItemSpawn
 .undef
 .undef
 .undef
@@ -1399,23 +1348,23 @@
 .undef
 .undef	// load item model
 0027592c:
-.undef	SpawnItem_Load_1
+.undef	ItemSpawn_Load_1
 .undef
 .undef
 .undef
 .undef
 .undef
 .undef
-.undef	SpawnItem_Load_2
+.undef	ItemSpawn_Load_2
 .undef
 .undef
 .undef
 .undef
 .undef
 .undef
-.undef	SpawnItem_Load_3
+.undef	ItemSpawn_Load_3
 002759b0:
-.undef	SpawnItem_Check
+.undef	ItemSpawn_Check
 .undef
 .undef
 .undef
@@ -1720,7 +1669,8 @@
 .undef
 .undef
 .undef
-.undef	SpawnItem_Return
+.undef	ItemSpawn_Return
+
 
 003bdbe0:
 .word	eItem00_Health+5
@@ -1779,8 +1729,1010 @@
 .word	eItem35_
 .word	eItem36_Treasure
 .word	eItem37_SeriousBomb
+.byte	"Models/enemies"
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+.byte
+
+#	-- WEAPONS AND AMMO
+
+#	--- AMMO
+001fbc98:
+.undef	Fun_AmmoValues
+001fbd10:
+.undef	Ammo Pickup Count
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef	// store value
+001fbd68:
+.undef	Ammo Max Count
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef	// store value
+001fbdb8:
+.undef	Ammo Green Ammo Pack
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef	// store value
+001fbe08:
+.undef	Ammo Red Ammo Pack
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load value
+.undef	// store value
+
+001fbe70:
+.undef	Fun_AmmoReset
+001fbeb0:
+.undef	Fun_AmmoPickUpGreenBag
+
+001fc018:
+.undef	Fun_WeaponAmmoDefault
+
+#	--- WEAPONS
+00221e28:
+.undef	Fun_WeaponsSetup
+00221ea4:
+.undef	weapons number of other	;3 = switch between one/two
+.undef
+.undef	weapons number of Deagles/Uzis	;3 = switch between one/two
+00221f9c:
+.undef	weapons duo
+00222048:
+.undef	weapons get single
+.undef
+.undef
+.undef	weapons get dual
+
+00225988:
+.undef	Fun_WeaponPickUp
+
+001fda88:
+.undef	Fun_Weapon2ndModel
+
+
+003b8b58:
+.word	WeaponReticules
+.word	WeaponReticules
+
+#	- SOUND HOLDER
+0011b200:
+.undef	Fun_SFX_Load
+0011b5d0:
+.undef	Fun_SFX_Load
+
+001dfb80:
+.undef	SoundHolder_StreamPlayer
+001dfcac:
+.undef	// v0 = Address
+.undef
+.undef
+.undef	// load stream
+
+00112aa8:
+.undef	Fun_StreamLoad
+00112b00:
+.undef	load Stream
+
+00112d00:
+.undef	Fun_StreamLoader
+.undef
+.undef	// s1 = a0 (stream)
+.undef
+.undef
+.undef
+.undef
+.undef	// a1 = s1 (stream)
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// stream to left and fill with zeros
+.undef	// stream to right and fill with zeros
+.undef
+.undef
+.undef
+.undef	Stream Load
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	is Valid Stream
+
+00112e50:
+.undef	Fun_StreamReset
+
+
+003ea5d8:
+.word	Stream
+.word
+.float	MusicVolume_Light
+.float	MusicVolume_Medium
+.float	MusicVolume_Heavy
+.float	MusicVolume_Start
+.float	MusicVolFade_Light
+.float	MusicVolFade_Medium
+.float	MusicVolFade_Heavy
+
+#	- MUSIC CHANGER
+00112f28:
+.undef	Fun_MusicStartSave
+
+001dd808:
+.undef	MusicChangerTrigger
+
+001dd870:
+.undef	MusicChangerStream
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// v1 = Address
+.undef
+.undef
+.undef
+.undef
+.undef	// a0 = Stream
+
+00112db0:
+.undef	Fun_MusicStream_Save
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// s2 = a0 (stream)
+00112e2c:
+.undef	// save Stream
+
+#	- TRIGGER
+001e0e50:
+.undef	Fun_TriggerCount
+001e0eac:
+.undef	// is Normal Enemy?
+.undef
+.undef
+.undef	// load triggs
+.undef	// add one
+.undef	// save triggs
+.undef	// load TriggerCount
+001e0ef4:
+.undef	// V0 != TriggerCount
+001e0f4c:
+.undef	// load TriggerCount
+.undef
+.undef
+.undef
+.undef	TriggerCount reached
+001e1020:
+.undef	BossKilled
+
+001e1090:
+.undef	Fun_TriggeringAllTargets
+
+
+
+#	GAME MAIN
+00106dd8:
+.undef	Fun_StringCopy
+
+001272f0:
+.undef	Frames Control
+00128b78:
+.undef	TextureQuality_Save
+00128a80:
+.undef	ScreensNumber_Save
+
+002c22d0:
+.undef	Fun_ScreenMode_Set
+002c1c50:
+.undef	Fun_ScreenMode
+002c21d8:
+.undef	Fun_ScreenMode_FMV
+002c2278:
+.undef	Fun_ScreenMode_Game
+
+#	GAME
+00105858:
+.undef	Fun_LoadValue
+00105a60:
+.undef	Fun_Values
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Values
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Values
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Values
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Values
+00106bd0:
+.undef	Fun_Change
+
+001255f8:
+.undef	Fun_RenderEngine
+
+0020bce8:
+.undef	GameStart
+0020ca28:
+.undef	AI disabled save
+
+0025a140:
+.undef	Fun_Paused 1
+0025a008:
+.undef	Fun_Paused 2
+
+00295428:
+.undef	Fun_isGameRunning
+.undef
+.undef
+.undef
+.undef	Fun_GetLobbyState
+.undef
+.undef
+.undef
+.undef	Fun_SetLobbyState
+
+
+0036c208:
+.word	CurrentMovie
+0036c350:
+.word	Fake byte	;Made by YukiXXL
+.word
+.word
+.word
+.word
+.word
+.word	g_FreezeFPSModel
+.word	g_Restart	;1 = Force restarts level
+.word	g_Restart	;1 = Force restarts level
+.word	g_FirstScreen	;1 = Gets to the first screen
+.word	g_FinishLevel	;1 = Finishes level
+.word
+.word	g_Gamemode	;0 = SP; 1 = COOP; 2 = DM;...
+.word	g_PlayersNumber
+.word
+.word
+.word	Net_UseChat
+
+0033d7c0:
+.word	BUILD_VER
+0033d854:
+.word	w_skipWorldLink
+0033db54:
+.word	g_CurrentScene
+.word	g_LoadScene
+.word	g_AnimsRunning
+.word	g_Paused
+.word	NetGame_
+.word	NetGame_
+.word	g_PausedWorld
+.word
+.word	g_SkipCutscene
+.float	g_CutsceneSkipFoward
+.word	g_Lags
+.word	g_NoGameScreen
+.word
+.dword	Music_Atlantis City
+.word
+.word
+.word
+.word
+.dword	Music_Atlantis Tower
+.word
+.word
+.word
+.word
+.dword	Music_China Outside
+.word
+.word
+.word
+.word
+.dword	Music_China Caves
+.word
+.word
+.word
+.word
+.dword	Music_Rome Outside
+.word
+.word
+.word
+.word
+.dword	Music_Rome Arena
+.word
+.word
+.word
+.word
+.dword	Music_Rome Neptune
+.word
+.word
+.word
+.word
+.dword	Music_Menu
+.word
+.word
+.word
+.word
+.dword	Music_Credits
+.word
+.word
+.word
+.word
+.dword	Music_Hidden
+.word
+.word
+.word
+.word
+.dword	Music_Killing Spree
+.word
+.word
+.word
+.word
+.dword
+
+00342e80:
+.word	lang_Language
+
+00343118:
+.word	message_TextIDs
+
+003442a4:
+.word	RednerEngine_USB
+.word	RenderEngine_FrameRate
+.word	RenderEngine_Lights
+.word	RenderEngine_Instances
+.word	RenderEngine_GameItems
+.word	RenderEngine_Cameras
+003442f0:
+.word	g_ScreenNumber
+.word	g_FadeIn
+.word	g_FramesSkip
+.word
+.word
+.word
+.word	g_FramesAnim
+.word
+.word
+.word
+.word
+.word
+.word	g_Frames2
+.word
+.word	GPU_Hang2
+.word	GPU_Hang1
+.word
+.word
+.word	g_Frames1
+.word
+.word
+.word	g_TextureQuality	;0 = SP; 1 = MP
+
+003444d8:
+.word	Rendering_Level
+.float	RenderingDist_Entities
+.float	RenderingDist_World
+.float	RenderingDist_LOD
+
+00345ad0:
+.word	Difficulties
+
+00345d3c:
+.word	Cheat_AllWeapons
+.word	Cheat_GodMode
+.word	Cheat_InfiniteAmmo
+.word	isNextLevel
+
+00345db8:
+.word	Medals
+
+00345fd4:
+.word	g_BloodyGibs	;0=Hippy; 1=Lots
+
+0036df44:
+.word	cdrom_ELF
+.word	Launch argument?
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Net_Callback
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Net_GameOver
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	Net_OnlineState
+.word	Net_isMultiplayer
+.word
+.word
+.word
+.word	Net_GameRunning
+
+003ba680:
+.word	Keyboard
+
+0063d570:
+.word	GamePointerAddr
+.word	GamePointerAddr
+
+#	- GAME SETUP
+002709f8:
+.undef	Fun_EndScreen
+00270f84:
+.undef	// check medal requirement
+00270fb0:
+.undef	is Not Easy difficulty
+
+0027cdb8:
+.undef	Fun_Difficulty
+0027ce20:
+.undef	Fun_FriendlyFire
+0027ceb0:
+.undef	Fun_WeaponSet
+0027cf30:
+.undef	Fun_AllowPowerUps
+
+0027cfb8:
+.undef	Fun_Rules
+.undef
+.undef
+.undef	// is Online
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GM_SP
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GM_Coop
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	GM_Fragmatch
+.undef
+.undef
+.undef
+.undef
+.undef	GM_Fragmatch_Online
+.undef
+.undef	GM_HTF
+.undef
+.undef
+.undef
+.undef
+.undef	GM_HTF_Online
+.undef
+.undef	GM_PTB
+.undef
+.undef
+.undef
+.undef
+.undef	GM_PTB_Online
+.undef	load MP rules
+
+
+003bf1c0:
+.word	Rules
+
+#	-- ONLINE
+00293980:
+.undef	Fun_LoadConnection
+.undef
+.undef
+.undef
+.undef	Fun_SaveConnection
+
+00295fa8:
+.undef	Fun_Net_MP_Save
+.undef
+.undef
+.undef
+.undef	Fun_Net_MP_Load
+00295ff8:
+.undef	Fun_OnlineState
+
+0029b160:
+.undef	Fun_PlayerList_Clear
+0029b318:
+.undef	Fun_PlayerList_Populate
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// if v1 not 0, a0 = v0
+
+
+0065a060:
+.word	Net_PlayerList
+00656a78:
+.word	Net_isConnected
+
+#	- LOADING SCENE
+0013f538:
+.undef	Fun_TexturesLoad
+
+00143b58:
+.undef	Fun_ResWorldMesh
+0014427c:
+.undef	// is not -1
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// is not -1
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// is not -1
+
+00273df0:
+.undef	Fun_LoadLevel
+00273f20:
+.undef	// Texture Quality
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	is SinglePlayer
+.undef	is Online	;Texture Quality
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	is Multiplayer
+
+#	- GAMEPLAY
+001045b8:
+.undef	Fun_MessageLoad
+0011c390:
+.undef	Fun_TextAddr
+00254680:
+.undef	Fun_TextLoad
+
+00109d50:
+.undef	Fun_Gameplay
+
+002040b0:
+.undef	Fun_FallDamage
+00204100:
+.undef	// is activated
+
+0021b748:
+.undef	GameRun
+0021b958:
+.undef	// freeze position
+0021bd70:
+.undef	// Disable AI
+.undef
+.undef
+.undef
+.undef
+.undef	Flying enabled
+0021c268:
+.undef	is Controller Connected
+
+#	-- CHECKPOINT
+002024a8:
+.undef	Checkpoint
+
+00211590:
+.undef	CHECKPOINT
+002115d0:
+.undef	Checkpoint_Trigger
+002116b8:
+.undef	Checkpoint_ExitCutscene
+002116ec:
+.undef	save Weapons Ammo
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Checkpoint_Return
+.undef	Checkpoint_Return
+
+00212a18:
+.undef	Fun_SaveWpnsAmmo
+
+003b76a0:
+.undef	CheckpointTriggers
+
+#	-- CUTSCENE
+0010f8a0:
+.undef	Fun_GamePaused_Save
+.undef
+.undef
+.undef
+.undef	Fun_AnimsRunning_Save
+.undef
+.undef
+.undef
+.undef	Fun_NetGame_Save
+.undef
+.undef
+.undef
+.undef	Fun_NetGame_Save
+.undef
+.undef
+.undef
+.undef	Fun_PausedWorld_Save
+.undef
+.undef
+.undef
+.undef	Fun_RenderSkip_Begin
+0010f930:
+.undef	Fun_RenderSkip_End
+
+001d4240:
+.undef	CUTSCENE
+001d4284:
+.undef	Cutscene_Trigger
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Cutscene_StartCutscene
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Cutscene_EndCutscene
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Cutscene_RequestEndCutscene
+001d4388:
+.undef	Cutscene_SubtitleRequest
+001d4410:
+.undef	Cutscene_Nope
+.undef	Cutscene_Go
+
+001d4428:
+.undef	Fun_CutscenePlaying
+
+
+003b1350:
+.undef	CutsceneTriggers
+
+#	-- GIBS
+0023ae18:
+.undef	Fun_GibsModels
+
+0023b190:
+.undef	Fun_GibsType
+0023b1c0:
+.undef	Fun_BloodyGibs
+0023b240:
+.undef	// Frozen
+.undef
+.undef	// None
+
+
+003b9990:
+.word	GibsType
+
+#	-- MULTIPLAYER
+00220470:
+.undef	Fun_ScreenManager
+
+00221538:
+.undef	Fun_SplitScreenCheck
+
+0027bd48:
+.undef	Fun_SystemSetup.ScreenMode
+0027c2e8:
+.undef	SysSetupScreen_SP/Coop
+.undef
+.undef	SysSetupScreen_Deathmatch
+.undef
+.undef	SysSetupScreen_CTF
+.undef
+.undef	SysSetupScreen_PTB
+0027c4e4:
+.undef	SysSetupScreen_SP/Coop
+.undef
+.undef	SysSetupScreen_Deathmatch
+.undef
+.undef	SysSetupScreen_CTF
+.undef
+.undef	SysSetupScreen_PTB
+0027c54c:
+.undef	ScreenMode_TwoPlayer
+0027c564:
+.undef	ScreenMode_ThreePlayer
+0027c5c0:
+.undef	ScreenMode_FourPlayer
+0027c630:
+.undef	ScreenMode_Online
+0027c668:
+.undef	ScreenMode_OnePlayer
+
+0027d960:
+.undef	Fun_HudPosition
+0027d9a8:
+.undef	// Y-Axis
+.undef
+.undef	is offline
+
+
+003befd0:
+.word	SysSetupScreen_GM
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	SysSetupScreen_HUD
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	SysSetupScreen_Players
+
+#	-- MULTIKILL
+00212070:
+.undef	Fun_MultikillReset
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// reset
+
+00212100:
+.undef	Fun_MultikillEntry
+00212144:
+.undef	Multikill1_Start
+00212160:
+.undef	Multikill1_Add
+002121d4:
+.undef	Multikill1_KillingSpree
+0021229c:
+.undef	Multikill1_KillingSpreeStoreKills
+002122c4:
+.undef	Multikill1_Go
+
+002122e0:
+.undef	Fun_Multikill
+00212324:
+.undef	Multikill2_Start
+00212350:
+.undef	Multikill2_Add
+002123a4:
+.undef	Multikill2_Fading
+00212408:
+.undef	Multikill2_KillingSpreeActive
+00212468:
+.undef	Multikill2_KillingSpreeEnding
+00212504:
+.undef	Multikill2_KillingSpreeEnd
+002125bc:
+.undef	mk_AddingScore
+00212674:
+.undef	Multikill2_KillingSpreeStoreKills
+002126f8:
+.undef	Multikill2_Standby
+
+
+003b7740:
+.word	Multikill1_0_Start
+.word	Multikill1_1_Add
+.word	Multikill1_2_Add
+.word	Multikill1_3_Add
+.word	Multikill1_4_Go
+.word	Multikill1_5_Go
+.word	Multikill1_6_SpreeStoreKills
+.word	Multikill1_7_SpreeStoreKills
+
+003b77d0:
+.word	Multikill2_0_Standby
+.word	Multikill2_1_Start
+.word	Multikill2_2_Add
+.word	Multikill2_3_Fading
+.word	Multikill2_4_SpreeActive
+.word	Multikill2_5_SpreeEnding
+.word	Multikill2_6_SpreeEnd
+.word	Multikill2_7_SpreeStoreKills
+
+#	-- PLAYER RESPAWN (SPAWN)
+001fc0d0:
+.undef	Fun_LoadCurrentAmmo
+001fc0f0:
+.undef	Fun_Respawn
+
+00226008:
+.undef	Fun_WeaponSpawn
+002260ac:
+.undef	WeaponGet Second Deagle?
+002261a8:
+.undef	// Has Weapon
+
+00226220:
+.undef	Fun_PlayerSpawnType
 
 #	MENUS (GUI)
+002519e0:
+.undef	Fun_Menu_WriteOption
+
 00256048:
 .undef	Fun_LoadMenu1
 00255fd0:
@@ -1797,7 +2749,133 @@
 00267c40:
 .undef	Fun_StartLevel
 
-#	- CHEATS AND UNLOCK
+#	- MOVEMENT
+00257008:
+.undef	Fun_LoadMenu
+
+0025bcf8:
+.undef	Menu_UP
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Menu_DOWN
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Menu_LEFT
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Menu_RIGHT
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Menu_BACK	;TRIANGLE
+0025bde8:
+.undef	Fun_SelectMenu
+
+
+003bad70:
+.word	MenuMovement
+
+#	- UNLOCKABLES
+
+#	-- CHEATS
+001646b0:
+.undef	Fun_Cheat_Fly
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_Level
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_All
+
+0020cf18:
+.undef	Fun_Cheats_Apply
+
+00212ac0:
+.undef	Fun_CheatShowHideWeapon
+00212aec:
+.undef	Cheat_HideWeaponModel
+.undef
+.undef	Cheat_ShowWeaponModel
+.undef
+.undef
+.undef	Cheat_ShowWeaponModel
+.undef
+.undef
+.undef	Fun_Cheat_AllWeapons_Save
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_GodMode_Save
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_InfiniteAmmo_Save
+
+00270720:
+.undef	Fun_Cheats
+
+#	-- MEDALS
+00220f38:
+.undef	Fun_MedalLoad
+
+002212b0:
+.undef	Fun_GoldMedals
+00221340:
+.undef	// load score
+
 002213b0:
 .undef	Fun_UnlockTable
 
@@ -2022,6 +3100,9 @@
 .undef	Fun_PlayersReady
 
 #	- ONLINE
+00217048:
+.undef	Fun_ChatBox
+
 00260dd0:
 .undef	WriteGUI_Online
 00261178:
@@ -2323,6 +3404,15 @@
 .undef
 .undef	JR_RA
 
+002666f8:
+.undef	Fun_StagingArea1
+00266a58:
+.undef	Fun_StagingArea2
+00266ab8:
+.undef	Fun_StagingArea3
+00266b00:
+.undef	Fun_JoiningStagingArea
+
 00294e30:
 .undef	Fun_GameStaging
 
@@ -2333,10 +3423,30 @@
 .undef	Fun_CheckLobbyState
 
 0029b050:
-.undef	Fun_SetLobbyState
+.undef	Fun_SetLobbyGameStage
 
 002a0e80:
 .undef	Fun v0 = 1
+
+002a1028:
+.undef	Fun_NetFailed
+
+
+00356884:
+.word	Online_LoadGUI
+.word	Online_ToLoadGUI
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word
+.word	DNAS
 
 003bb9b0:
 .word	NetGUI00_
@@ -2375,23 +3485,16 @@
 .word	NetMenu19_Connected
 .word	NetMenu1A_Exit
 
-00356884:
-.word	Online_LoadGUI
-.word	Online_ToLoadGUI
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word
-.word	DNAS
+003c3b70:
+.word	NetMenuFail00_
 
 #	- PROFILE SETTINGS
+0020bb20:
+.undef	Fun_Profiles
+
+002112a0:
+.undef	Fun_PlayerModel
+
 00266ea0:
 .undef	WriteGUI_ProfileSettings	;also used for SP
 
@@ -2417,10 +3520,10 @@
 00220128:
 .undef	PlayerModel.SoundSet
 
-002203f0:
-.undef	Fun_LoadProfile2
 00220620:
 .undef	Fun_LoadProfile1
+002203f0:
+.undef	Fun_LoadProfile2
 
 
 003b8690:
@@ -2443,6 +3546,9 @@
 .undef	Write_LevelViewer_Return
 
 #	-- LEVELS (SET)
+002207a8:
+.undef	Fun_LevelMax
+
 0025f248:
 .undef	Fun_LostLevels
 
@@ -2465,6 +3571,11 @@
 .undef
 .undef	// V0 = Level Name
 .undef	not valid
+
+002139f0:
+.undef	Fun_NextLevel
+0027d5e0:
+.undef	Fun_LevelNext
 
 
 0036bec8:
