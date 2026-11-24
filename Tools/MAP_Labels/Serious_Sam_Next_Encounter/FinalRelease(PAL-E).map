@@ -1,5 +1,5 @@
 #	PS2 Memory Map
-#	Serious Sam: Next Encounter
+#	Serious Sam: Next Encounter (SLES_524.50)
 
 00100000:
 .undef	indata
@@ -1847,8 +1847,21 @@
 
 
 003b8b58:
-.word	WeaponReticules
-.word	WeaponReticules
+.word	WeaponReticule00_Drill
+.word	WeaponReticule01_SingleHawks
+.word	WeaponReticule02_Uzi
+.word	WeaponReticule03_Shotgun
+.word	WeaponReticule04_Minigun
+.word	WeaponReticule05_GrenadeLauncher
+.word	WeaponReticule06_RocketLauncher
+.word	WeaponReticule07_GasGun
+.word	WeaponReticule08_SniperRifle
+.word	WeaponReticule09_PowerGun
+.word	WeaponReticule0A_Cannon
+.word	WeaponReticule0B_SeriousBomb
+
+0068d678:
+.word	WeaponSet.temp
 
 #	- SOUND HOLDER
 0011b200:
@@ -1994,7 +2007,10 @@
 .undef	ScreensNumber_Save
 
 002c22d0:
-.undef	Fun_ScreenMode_Set
+.undef	Fun_Boot_ScreenMode
+002c233c:
+.undef	video mode 1
+.undef	video mode 2
 002c1c50:
 .undef	Fun_ScreenMode
 002c21d8:
@@ -2336,15 +2352,14 @@
 .word	g_CurrentLevel
 
 #	- GAME SETUP
+00220470:
+.undef	Fun_ScreenManager
+
+00251b00:
+.undef	TimeLimit
+
 00251be0:
 .undef	GameSetup_MaximumValue
-
-002709f8:
-.undef	Fun_EndScreen
-00270f84:
-.undef	// check medal requirement
-00270fb0:
-.undef	is Not Easy difficulty
 
 0027cdb8:
 .undef	Fun_Difficulty
@@ -2443,6 +2458,10 @@
 .undef
 .undef
 .undef	// if v1 not 0, a0 = v0
+0029b350:
+.undef	Fun_PlayerList_Save
+0029b458:
+.undef	Player List Save
 
 
 0065a060:
@@ -2476,10 +2495,17 @@
 .undef
 .undef	// is not -1
 
+00241830:
+.undef	PickupEffects
+002418c4:
+.undef	Pickup Effects Quality
+00241914:
+.undef	// check Gamemode
+
 00273df0:
 .undef	Fun_LoadLevel
 00273f20:
-.undef	// Texture Quality
+.undef	Texture Quality Saving
 .undef
 .undef
 .undef
@@ -2507,11 +2533,6 @@
 00109d50:
 .undef	Fun_Gameplay
 
-002040b0:
-.undef	Fun_FallDamage
-00204100:
-.undef	// is activated
-
 0021b748:
 .undef	GameRun
 0021b958:
@@ -2525,6 +2546,20 @@
 .undef	Flying enabled
 0021c268:
 .undef	is Controller Connected
+
+#	-- PLAYER
+0014ced0:
+.undef	Player_Position
+0014d234:
+.undef	position save Z-Axis
+
+001e28b8:
+.undef	Player_Warp	;Cooperative
+
+002040b0:
+.undef	Fun_FallDamage
+00204100:
+.undef	// is activated
 
 #	-- CHECKPOINT
 002024a8:
@@ -2649,9 +2684,6 @@
 .word	GibsType
 
 #	-- MULTIPLAYER
-00220470:
-.undef	Fun_ScreenManager
-
 00221538:
 .undef	Fun_SplitScreenCheck
 
@@ -2798,6 +2830,16 @@
 .undef	Fun_PlayerSpawnType
 
 #	MENUS (GUI)
+00251130:
+.undef	Num of Options (temp)	;Number of options
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	// load max number of options
+
 002519e0:
 .undef	Fun_Menu_WriteOption
 
@@ -2896,75 +2938,6 @@
 
 003bad70:
 .word	MenuMovement
-
-#	- UNLOCKABLES
-
-#	-- CHEATS
-001646b0:
-.undef	Fun_Cheat_Fly
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	Fun_Cheat_Level
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef
-.undef	Fun_Cheat_All
-
-0020cf18:
-.undef	Fun_Cheats_Apply
-
-00212ac0:
-.undef	Fun_CheatShowHideWeapon
-00212aec:
-.undef	Cheat_HideWeaponModel
-.undef
-.undef	Cheat_ShowWeaponModel
-.undef
-.undef
-.undef	Cheat_ShowWeaponModel
-.undef
-.undef
-.undef	Fun_Cheat_AllWeapons_Save
-.undef
-.undef
-.undef
-.undef	Fun_Cheat_GodMode_Save
-.undef
-.undef
-.undef
-.undef	Fun_Cheat_InfiniteAmmo_Save
-
-00270720:
-.undef	Fun_Cheats
-
-#	-- MEDALS
-00220f38:
-.undef	Fun_MedalLoad
-
-002212b0:
-.undef	Fun_GoldMedals
-00221340:
-.undef	// load score
-
-002213b0:
-.undef	Fun_UnlockTable
 
 #	- FRONTEND
 00279788:
@@ -3143,6 +3116,17 @@
 0025cc18:
 .undef	GUI_Credits
 
+#	- END GAME SCREEN
+00220a30:
+.undef	Statistics_Screen
+
+002709f8:
+.undef	Fun_EndScreen
+00270f84:
+.undef	// check medal requirement
+00270fb0:
+.undef	is Not Easy difficulty
+
 #	- SINGLE PLAYER
 0025d470:
 .undef	WriteGUI_SinglePlayer
@@ -3185,6 +3169,8 @@
 .undef	LocalMP_StartGame
 002603f8:
 .undef	Fun_PlayersReady
+00260960:
+.undef	Multiplayer_StartGame
 
 #	- ONLINE
 00217048:
@@ -3686,6 +3672,90 @@
 .word	LevelSet2_LevelsNumber
 .word	LevelSet3_LevelsNumber
 
+006acec0:
+.word	Profile0.NextLevel
+
+#	-- PAUSE MENU
+0026f6e0:
+.undef	WriteGUI_PauseMenu
+0026f810:
+.undef	PauseMenu
+
+#	UNLOCKABLES
+
+#	- CHEATS
+001646b0:
+.undef	Fun_Cheat_Fly
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_Level
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_All
+
+0020cf18:
+.undef	Fun_Cheats_Apply
+
+00212ac0:
+.undef	Fun_CheatShowHideWeapon
+00212aec:
+.undef	Cheat_HideWeaponModel
+.undef
+.undef	Cheat_ShowWeaponModel
+.undef
+.undef
+.undef	Cheat_ShowWeaponModel
+.undef
+.undef
+.undef	Fun_Cheat_AllWeapons_Save
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_GodMode_Save
+.undef
+.undef
+.undef
+.undef	Fun_Cheat_InfiniteAmmo_Save
+
+00270720:
+.undef	Fun_Cheats
+
+#	- MEDALS
+00220f38:
+.undef	Fun_MedalLoad
+
+002212b0:
+.undef	Fun_GoldMedals
+00221340:
+.undef	// load score
+
+002213b0:
+.undef	Fun_UnlockTable
+
+00271a30:
+.undef	Fun_Medals
+00271a90:
+.undef	// check medal requirement
+00271b04:
+.undef	is Not Easy difficulty
 
 
 #	CUSTOM

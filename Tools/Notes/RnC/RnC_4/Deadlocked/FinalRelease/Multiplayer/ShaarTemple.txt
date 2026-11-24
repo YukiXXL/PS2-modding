@@ -1,8 +1,0 @@
-SHAAR TEMPLE
-
-0021E698 - g_gameRules
-00627FC0 - HasGadget__9GadgetBoxi
-
-0038A0B0 - HudAmmo_QSItems
-
-00615B68 - GB_VehicleExitDriver__FP11VehicleBaseP4HerobT2
